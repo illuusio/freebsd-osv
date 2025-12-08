@@ -47,10 +47,6 @@
             "url": "https://raw.githubusercontent.com/python/cpython/84471935ed2f62b8c5758fd544c7d37076fe0fa5/Misc/NEWS"
         },
         {
-            "type": "WEB",
-            "url": "https://raw.githubusercontent.com/python/cpython/84471935ed2f62b8c5758fd544c7d37076fe0fa5/Misc/NEWS"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-0876"
         },

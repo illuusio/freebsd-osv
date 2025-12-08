@@ -64,10 +64,6 @@
         {
             "type": "WEB",
             "url": "http://www.exploitdevelopment.com/Vulnerabilities/2010-WEB-001.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://awstats.sourceforge.net/docs/awstats_changelog.txt"
         }
     ],
     "schema_version": "1.7.0",

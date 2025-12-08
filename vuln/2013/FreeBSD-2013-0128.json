@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-2249"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.apache.org/dist/httpd/Announcement2.4.html"
         }
     ],
     "schema_version": "1.7.0",

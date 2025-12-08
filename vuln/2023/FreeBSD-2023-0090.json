@@ -148,10 +148,6 @@
             "url": "https://lists.x.org/archives/xorg-announce/2023-March/003374.html"
         },
         {
-            "type": "WEB",
-            "url": "https://lists.x.org/archives/xorg-announce/2023-March/003374.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-1393"
         }

@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.securityfocus.com/bid/100866"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/LibRaw/LibRaw/issues/100"
         },
         {

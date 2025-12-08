@@ -66,10 +66,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-28858"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-24wv-mv5m-xv4h"
         }
     ],
     "schema_version": "1.7.0",

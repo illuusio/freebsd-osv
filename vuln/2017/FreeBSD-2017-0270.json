@@ -62,10 +62,6 @@
             "url": "https://www.openssl.org/news/secadv/20171102.txt"
         },
         {
-            "type": "WEB",
-            "url": "https://www.openssl.org/news/secadv/20171102.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-3735"
         },

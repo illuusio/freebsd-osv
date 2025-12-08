@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.lighttpd.net/assets/2007/9/9/lighttpd_sa_2007_12.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://secweb.se/en/advisories/lighttpd-fastcgi-remote-vulnerability/"
         },
         {

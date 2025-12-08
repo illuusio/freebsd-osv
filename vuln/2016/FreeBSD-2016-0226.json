@@ -61,14 +61,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=209534"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.openafs.org/pages/security/OPENAFS-SA-2016-001.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.openafs.org/pages/security/OPENAFS-SA-2016-002.txt"
         }
     ],
     "schema_version": "1.7.0",

@@ -377,10 +377,6 @@
             "url": "https://github.com/git/git/security/advisories/GHSA-qm7j-c969-7j4q"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/git/git/security/advisories/GHSA-qm7j-c969-7j4q"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-5260"
         }

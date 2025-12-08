@@ -51,10 +51,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-4221"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.zerodayinitiative.com/advisories/ZDI-10-229/"
         }
     ],
     "schema_version": "1.7.0",

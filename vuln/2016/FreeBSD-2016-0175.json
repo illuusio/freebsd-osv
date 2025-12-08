@@ -111,10 +111,6 @@
         {
             "type": "REPORT",
             "url": "https://www.reviewboard.org/docs/releasenotes/djblets/0.9.2/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.reviewboard.org/docs/releasenotes/djblets/0.9.2/"
         }
     ],
     "schema_version": "1.7.0",

@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.gulftech.org/?node=research&article_id=00087-07012005"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.hardened-php.net/advisory-022005.php"
         }
     ],

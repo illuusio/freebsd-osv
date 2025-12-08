@@ -47,10 +47,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-26112"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-c33w-24p9-8m24"
         }
     ],
     "schema_version": "1.7.0",

@@ -52,10 +52,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://cups.org/blog.php?L1082"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.kb.cert.org/vuls/id/810572"
         }
     ],

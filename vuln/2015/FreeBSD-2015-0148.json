@@ -73,14 +73,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=201065"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.elastic.co/blog/logstash-1-4-3-released"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.elastic.co/blog/logstash-forwarder-0-4-0-released"
         }
     ],
     "schema_version": "1.7.0",

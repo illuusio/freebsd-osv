@@ -87,10 +87,6 @@
             "url": "https://lists.nlnetlabs.nl/pipermail/unbound-users/2020-May/006833.html"
         },
         {
-            "type": "WEB",
-            "url": "https://lists.nlnetlabs.nl/pipermail/unbound-users/2020-May/006833.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-12662"
         },

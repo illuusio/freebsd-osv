@@ -181,10 +181,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-0845"
         },
         {
-            "type": "WEB",
-            "url": "http://bugs.python.org/issue14001"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=789790"
         },

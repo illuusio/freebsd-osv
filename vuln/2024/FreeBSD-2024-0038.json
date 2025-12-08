@@ -60,14 +60,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-5841"
-        },
-        {
-            "type": "WEB",
-            "url": "https://takeonme.org/cves/CVE-2023-5841.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.2.2"
         }
     ],
     "schema_version": "1.7.0",

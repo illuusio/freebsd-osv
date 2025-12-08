@@ -113,14 +113,6 @@
         {
             "type": "REPORT",
             "url": "http://gaim.sourceforge.net/security/?id=8"
-        },
-        {
-            "type": "WEB",
-            "url": "http://gaim.sourceforge.net/security/?id=7"
-        },
-        {
-            "type": "WEB",
-            "url": "http://gaim.sourceforge.net/security/?id=8"
         }
     ],
     "schema_version": "1.7.0",

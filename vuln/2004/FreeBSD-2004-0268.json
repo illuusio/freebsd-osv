@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2004-4"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.exaprobe.com/labs/advisories/esa-2004-1213.html"
         }
     ],

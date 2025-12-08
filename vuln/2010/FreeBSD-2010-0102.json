@@ -49,10 +49,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://article.gmane.org/gmane.comp.horde.announce/516"
-        },
-        {
-            "type": "WEB",
             "url": "http://git.horde.org/diff.php/imp/docs/CHANGES?rt=horde&r1=1.699.2.424&r2=1.699.2.430&ty=h"
         }
     ],

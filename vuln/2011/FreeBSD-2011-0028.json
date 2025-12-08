@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openoffice.org/security/bulletin.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/40775/"
         }
     ],

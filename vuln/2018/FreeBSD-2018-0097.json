@@ -101,10 +101,6 @@
             "url": "https://nodejs.org/en/blog/vulnerability/march-2018-security-releases/"
         },
         {
-            "type": "WEB",
-            "url": "https://nodejs.org/en/blog/vulnerability/march-2018-security-releases/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-7158"
         },

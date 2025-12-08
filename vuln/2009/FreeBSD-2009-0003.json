@@ -68,10 +68,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/31519"
-        },
-        {
-            "type": "WEB",
             "url": "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=495432"
         }
     ],

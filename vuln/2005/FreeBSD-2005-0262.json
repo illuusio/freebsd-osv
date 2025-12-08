@@ -51,10 +51,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.kb.cert.org/vuls/id/778916"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=166163"
         }
     ],
     "schema_version": "1.7.0",

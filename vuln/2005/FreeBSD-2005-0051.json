@@ -50,10 +50,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-response_splitting"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.squid-cache.org/bugs/show_bug.cgi?id=1200"
         },
         {

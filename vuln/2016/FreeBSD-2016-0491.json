@@ -62,10 +62,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://legalhackers.com/advisories/PHPMailer-Exploit-Remote-Code-Exec-CVE-2016-10033-Vuln.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/PHPMailer/PHPMailer/blob/master/SECURITY.md"
         },
         {

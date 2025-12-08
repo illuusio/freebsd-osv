@@ -42,10 +42,6 @@
             "url": "https://docs.python.org/3/whatsnew/changelog.html#python-3-8-4-final"
         },
         {
-            "type": "WEB",
-            "url": "https://docs.python.org/3/whatsnew/changelog.html#python-3-8-4-final"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-15523"
         }

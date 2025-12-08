@@ -87,10 +87,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-24736"
-        },
-        {
-            "type": "WEB",
-            "url": "https://groups.google.com/g/redis-db/c/7iWUlwtoDqU"
         }
     ],
     "schema_version": "1.7.0",

@@ -67,18 +67,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/664-20161201-core-elevated-privileges.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/665-20161202-core-shell-upload.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/666-20161203-core-information-disclosure.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.joomla.org/announcements/release-news/5693-joomla-3-6-5-released.html"
         }
     ],

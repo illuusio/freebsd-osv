@@ -54,10 +54,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.korelogic.com/Resources/Advisories/KL-001-2016-003.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://openwall.com/lists/oss-security/2016/07/01/2"
         },
         {

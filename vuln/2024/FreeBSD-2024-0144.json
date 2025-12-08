@@ -127,10 +127,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-5469"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2024/06/12/patch-release-gitlab-17-0-2-released/"
         }
     ],
     "schema_version": "1.7.0",

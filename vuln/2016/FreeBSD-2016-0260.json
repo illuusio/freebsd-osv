@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-7521"
-        },
-        {
-            "type": "WEB",
-            "url": "http://mail-archives.apache.org/mod_mbox/hive-user/201601.mbox/%3C20160128205008.2154F185EB%40minotaur.apache.org%3E"
         }
     ],
     "schema_version": "1.7.0",

@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://article.gmane.org/gmane.comp.horde.announce/515"
-        },
-        {
-            "type": "WEB",
             "url": "http://cvs.horde.org/diff.php/horde/docs/CHANGES?rt=horde&r1=1.515.2.607&r2=1.515.2.620&ty=h"
         },
         {

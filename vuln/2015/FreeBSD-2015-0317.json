@@ -39,10 +39,6 @@
         {
             "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2015/10/04/2"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.opensmtpd.org/announces/release-5.7.3.txt"
         }
     ],
     "schema_version": "1.7.0",

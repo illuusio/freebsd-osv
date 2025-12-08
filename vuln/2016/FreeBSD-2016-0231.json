@@ -55,10 +55,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-4303"
-        },
-        {
-            "type": "WEB",
-            "url": "https://raw.githubusercontent.com/esnet/security/master/cve-2016-4303/esnet-secadv-2016-0001.txt.asc"
         }
     ],
     "schema_version": "1.7.0",

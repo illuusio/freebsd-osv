@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.squirrelmail.org/security/issue/2006-06-01"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/20406/"
         }
     ],

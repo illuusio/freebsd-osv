@@ -64,32 +64,16 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-33198"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/golang/go/issues/45910"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-33197"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/golang/go/issues/46313"
         },
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-33195"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/golang/go/issues/46241"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-33196"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/golang/go/issues/46242"
         }
     ],
     "schema_version": "1.7.0",

@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.securityfocus.com/bid/99868/discuss"
-        },
-        {
-            "type": "WEB",
             "url": "http://blog.senr.io/blog/devils-ivy-flaw-in-widely-used-third-party-code-impacts-millions"
         },
         {

@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "http://www.ratbox.org/ASA-2012-12-31.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.ratbox.org/ASA-2012-12-31.txt"
         }
     ],
     "schema_version": "1.7.0",

@@ -73,10 +73,6 @@
         {
             "type": "REPORT",
             "url": "https://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html"
         }
     ],
     "schema_version": "1.7.0",

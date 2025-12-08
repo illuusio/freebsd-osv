@@ -131,10 +131,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-7810"
-        },
-        {
-            "type": "WEB",
-            "url": "https://tomcat.apache.org/security-6.html#Fixed_in_Apache_Tomcat_6.0.44"
         }
     ],
     "schema_version": "1.7.0",

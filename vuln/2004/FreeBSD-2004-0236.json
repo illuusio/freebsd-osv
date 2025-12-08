@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://deicide.siyahsapka.org/hafiye_esc.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.enderunix.org/hafiye/"
         }
     ],

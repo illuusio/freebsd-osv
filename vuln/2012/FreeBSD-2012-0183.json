@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://secunia.com/advisories/50598/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/50598/"
         }
     ],
     "schema_version": "1.7.0",

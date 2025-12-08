@@ -264,10 +264,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.mozilla.org/en-US/security/advisories/mfsa2018-26/"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.mozilla.org/en-US/security/advisories/mfsa2018-27/"
         }
     ],

@@ -50,10 +50,6 @@
             "url": "https://www.apache.org/dist/httpd/CHANGES_2.4.39"
         },
         {
-            "type": "WEB",
-            "url": "https://httpd.apache.org/security/vulnerabilities_24.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-0211"
         },

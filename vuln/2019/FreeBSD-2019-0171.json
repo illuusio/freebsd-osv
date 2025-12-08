@@ -255,10 +255,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://docs.djangoproject.com/en/1.11/releases/1.11.23/"
-        },
-        {
-            "type": "WEB",
             "url": "https://docs.djangoproject.com/en/2.1/releases/2.1.11/"
         },
         {

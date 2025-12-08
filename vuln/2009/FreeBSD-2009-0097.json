@@ -52,10 +52,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/35076/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.trapkit.de/advisories/TKADV2009-006.txt"
         }
     ],

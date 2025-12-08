@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://lists.gnupg.org/pipermail/gnupg-announce/2006q3/000229.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.gnupg.org/pipermail/gnupg-announce/2006q3/000229.html"
         }
     ],
     "schema_version": "1.7.0",

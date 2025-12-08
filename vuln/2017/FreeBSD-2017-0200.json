@@ -76,10 +76,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2017/q3/422"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugs.gnu.org/28350"
         }
     ],

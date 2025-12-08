@@ -271,10 +271,6 @@
             "url": "http://secunia.com/advisories/13481/"
         },
         {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/13481/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2004-1019"
         },

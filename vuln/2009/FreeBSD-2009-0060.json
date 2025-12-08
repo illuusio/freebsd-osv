@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-0186"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/33980/"
         }
     ],
     "schema_version": "1.7.0",

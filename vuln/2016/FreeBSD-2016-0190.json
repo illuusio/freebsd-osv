@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.phpmyfaq.de/security/advisory-2016-04-11"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.htbridge.com/advisory/HTB23300"
         }
     ],

@@ -42,10 +42,6 @@
             "url": "https://www.sympa.org/security_advisories"
         },
         {
-            "type": "WEB",
-            "url": "https://www.sympa.org/security_advisories"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-1306"
         }

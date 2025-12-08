@@ -237,10 +237,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2004-1308"
         },
         {
-            "type": "WEB",
-            "url": "http://www.idefense.com/application/poi/display?id=174&type=vulnerabilities"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://www.kb.cert.org/vuls/id/125598"
         }

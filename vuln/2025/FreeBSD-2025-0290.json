@@ -54,14 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-58364"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/OpenPrinting/cups/security/advisories/GHSA-4c68-qgrh-rmmq"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/OpenPrinting/cups/security/advisories/GHSA-7qx3-r744-6qv4"
         }
     ],
     "schema_version": "1.7.0",

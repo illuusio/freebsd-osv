@@ -91,10 +91,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-0497"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.coresecurity.com/content/openfire-multiple-vulnerabilities"
         }
     ],
     "schema_version": "1.7.0",

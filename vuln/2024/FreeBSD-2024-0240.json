@@ -54,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-45492"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/libexpat/libexpat/blob/master/expat/Changes"
         }
     ],
     "schema_version": "1.7.0",

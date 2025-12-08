@@ -417,10 +417,6 @@
             "url": "http://www.nntp.perl.org/group/perl.perl5.porters/2016/07/msg238271.html"
         },
         {
-            "type": "WEB",
-            "url": "http://www.nntp.perl.org/group/perl.perl5.porters/2016/07/msg238271.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-1238"
         }

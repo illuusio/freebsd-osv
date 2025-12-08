@@ -114,10 +114,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-5014"
-        },
-        {
-            "type": "WEB",
-            "url": "https://moodle.org/security/"
         }
     ],
     "schema_version": "1.7.0",

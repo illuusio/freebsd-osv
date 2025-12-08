@@ -58,10 +58,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/38117"
-        },
-        {
-            "type": "WEB",
-            "url": "http://sourceforge.net/mailarchive/message.php?msg_name=E1NS2s4-0001PE-F2%403bkjzd1.ch3.sourceforge.com"
         }
     ],
     "schema_version": "1.7.0",

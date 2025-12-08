@@ -67,10 +67,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/38257/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.wireshark.org/security/wnpa-sec-2010-02.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -180,10 +180,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://httpd.apache.org/security/vulnerabilities_13.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://seclists.org/fulldisclosure/2011/Oct/232"
         }
     ],

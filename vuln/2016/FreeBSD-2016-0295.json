@@ -45,10 +45,6 @@
             "url": "https://github.com/libgd/libgd/releases/tag/gd-2.2.3"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/libgd/libgd/releases/tag/gd-2.2.3"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-5766"
         },

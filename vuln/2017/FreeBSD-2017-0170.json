@@ -42,10 +42,6 @@
             "url": "https://bugs.launchpad.net/ubuntu/+source/sqlite3/+bug/1700937"
         },
         {
-            "type": "WEB",
-            "url": "https://bugs.launchpad.net/ubuntu/+source/sqlite3/+bug/1700937"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-10989"
         }

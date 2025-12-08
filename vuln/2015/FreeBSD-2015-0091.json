@@ -282,10 +282,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.ocert.org/advisories/ocert-2015-006.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/rawstudio/rawstudio/commit/983bda1f0fa5fa86884381208274198a620f006e"
         },
         {

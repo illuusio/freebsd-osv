@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://fossil.bsdsx.fr/mohawk/tktview?name=1707f0e351"
-        },
-        {
-            "type": "WEB",
             "url": "http://fossil.bsdsx.fr/mohawk/tktview?name=1c7565019e"
         }
     ],

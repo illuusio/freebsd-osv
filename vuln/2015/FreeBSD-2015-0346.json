@@ -118,10 +118,6 @@
             "url": "https://www.wireshark.org/docs/relnotes/wireshark-1.12.8.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.wireshark.org/docs/relnotes/wireshark-1.12.8.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-7830"
         }

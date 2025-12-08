@@ -44,10 +44,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=151055"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.phpmyfaq.de/advisory_2010-09-28.php"
         }
     ],
     "schema_version": "1.7.0",

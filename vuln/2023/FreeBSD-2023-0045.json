@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-0361"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gnutls.org/security-new.html#GNUTLS-SA-2020-07-14"
         }
     ],
     "schema_version": "1.7.0",

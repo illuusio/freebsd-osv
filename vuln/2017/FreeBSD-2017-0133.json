@@ -42,10 +42,6 @@
             "url": "https://roundcube.net/news/2017/04/28/security-updates-1.2.5-1.1.9-and-1.0.11"
         },
         {
-            "type": "WEB",
-            "url": "https://roundcube.net/news/2017/04/28/security-updates-1.2.5-1.1.9-and-1.0.11"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-8114"
         }

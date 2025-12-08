@@ -48,10 +48,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.securityfocus.com/bid/19450/info"
-        },
-        {
-            "type": "WEB",
-            "url": "http://aluigi.altervista.org/adv/alsapbof-adv.txt"
         }
     ],
     "schema_version": "1.7.0",

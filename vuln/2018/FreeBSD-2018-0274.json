@@ -63,10 +63,6 @@
             "url": "https://doc.powerdns.com/recursor/changelog/4.1.html"
         },
         {
-            "type": "WEB",
-            "url": "https://doc.powerdns.com/recursor/changelog/4.1.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-10851"
         },

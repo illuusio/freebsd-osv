@@ -57,10 +57,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/vincentbernat/lldpd/raw/0.7.19/NEWS"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2015/10/30/2"
         }
     ],

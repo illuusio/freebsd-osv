@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-0037"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/34138/"
         }
     ],
     "schema_version": "1.7.0",

@@ -89,10 +89,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-3057"
         },
         {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security/83-20130404-core-xss-vulnerability.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-3056"
         },

@@ -72,10 +72,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://hg.moinmo.in/moin/1.9/raw-file/1.9.6/docs/CHANGES"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.debian.org/security/2012/dsa-2593"
         }
     ],

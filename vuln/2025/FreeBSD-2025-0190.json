@@ -142,10 +142,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-3415"
-        },
-        {
-            "type": "WEB",
-            "url": "https://grafana.com/blog/2025/06/13/grafana-security-update-medium-severity-security-release-for-cve-2025-3415/"
         }
     ],
     "schema_version": "1.7.0",

@@ -76,10 +76,6 @@
         {
             "type": "DISCUSSION",
             "url": "http://marc.theaimsgroup.com/?l=full-disclosure&m=110911451613135"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/14359/"
         }
     ],
     "schema_version": "1.7.0",

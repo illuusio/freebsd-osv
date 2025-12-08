@@ -61,10 +61,6 @@
             "url": "https://bitcoincore.org/en/2018/09/20/notice/"
         },
         {
-            "type": "WEB",
-            "url": "https://bitcoincore.org/en/2018/09/20/notice/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-17144"
         }

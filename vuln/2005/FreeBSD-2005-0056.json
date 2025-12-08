@@ -44,10 +44,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=77513"
-        },
-        {
-            "type": "WEB",
-            "url": "http://security.lss.hr/en/index.php?page=details&ID=LSS-2005-01-01"
         }
     ],
     "schema_version": "1.7.0",

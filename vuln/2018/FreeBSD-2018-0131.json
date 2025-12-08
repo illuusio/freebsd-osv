@@ -44,10 +44,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://curl.haxx.se/docs/security.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://curl.haxx.se/docs/adv_2018-82c2.html"
         },
         {

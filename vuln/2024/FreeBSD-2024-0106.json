@@ -104,10 +104,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://element.io/blog/security-release-synapse-1-105-1/"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/element-hq/synapse/security/advisories/GHSA-3h7q-rfh9-xm4v"
         }
     ],

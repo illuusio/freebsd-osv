@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-0454"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.samba.org/samba/security/CVE-2007-0454.html"
         }
     ],
     "schema_version": "1.7.0",

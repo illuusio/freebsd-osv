@@ -101,10 +101,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-1261"
-        },
-        {
-            "type": "WEB",
-            "url": "http://gaim.sourceforge.net/security/index.php?id=16"
         }
     ],
     "schema_version": "1.7.0",

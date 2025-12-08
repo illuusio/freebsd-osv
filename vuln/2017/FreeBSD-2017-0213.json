@@ -80,10 +80,6 @@
             "url": "https://bugs.php.net/bug.php?id=74435"
         },
         {
-            "type": "WEB",
-            "url": "https://bugs.php.net/bug.php?id=74435"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-7890"
         }

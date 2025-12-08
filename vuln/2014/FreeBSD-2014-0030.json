@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://savannah.nongnu.org/bugs/?41697"
-        },
-        {
-            "type": "WEB",
-            "url": "http://savannah.nongnu.org/bugs/?41697"
         }
     ],
     "schema_version": "1.7.0",

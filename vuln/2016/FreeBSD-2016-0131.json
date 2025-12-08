@@ -48,10 +48,6 @@
         {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-0739"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.libssh.org/2016/02/23/libssh-0-7-3-security-and-bugfix-release/"
         }
     ],
     "schema_version": "1.7.0",

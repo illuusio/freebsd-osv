@@ -47,10 +47,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.securityfocus.com/bid/33256/info"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.securityfocus.com/bid/33256"
         }
     ],
     "schema_version": "1.7.0",

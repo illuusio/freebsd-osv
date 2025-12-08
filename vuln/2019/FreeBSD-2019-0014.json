@@ -95,10 +95,6 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=2018-18074"
-        },
-        {
-            "type": "ADVISORY",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-18074"
         },
         {

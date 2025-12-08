@@ -89,10 +89,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/libssh2/libssh2/releases/tag/libssh2-1.8.1"
-        },
-        {
-            "type": "WEB",
             "url": "https://libssh2.org/CVE-2019-3855.html"
         },
         {

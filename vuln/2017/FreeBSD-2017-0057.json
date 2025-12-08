@@ -43,10 +43,6 @@
             "url": "https://sourceforge.net/p/potrace/news/2017/02/potrace-114-released/"
         },
         {
-            "type": "WEB",
-            "url": "https://sourceforge.net/p/potrace/news/2017/02/potrace-114-released/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-8685"
         },

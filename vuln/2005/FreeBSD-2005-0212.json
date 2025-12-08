@@ -70,10 +70,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-2174"
         },
         {
-            "type": "WEB",
-            "url": "http://www.bugzilla.org/security/2.18.1/"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=292544"
         },

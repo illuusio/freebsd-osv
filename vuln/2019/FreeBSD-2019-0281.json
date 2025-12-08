@@ -43,10 +43,6 @@
             "url": "https://www.cybersecurity-help.cz/vdb/SB2019121311"
         },
         {
-            "type": "WEB",
-            "url": "https://www.cybersecurity-help.cz/vdb/SB2019121311"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-12420"
         },

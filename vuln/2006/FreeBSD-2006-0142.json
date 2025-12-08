@@ -193,10 +193,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-2314"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.postgresql.org/docs/techdocs.50"
         }
     ],
     "schema_version": "1.7.0",

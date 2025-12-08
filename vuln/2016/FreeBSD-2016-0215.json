@@ -48,14 +48,6 @@
             "url": "https://www.phpmyadmin.net/security/PMASA-2016-16/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.phpmyadmin.net/security/PMASA-2016-14/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.phpmyadmin.net/security/PMASA-2016-16/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-5097"
         },

@@ -64,10 +64,6 @@
             "url": "https://about.gitlab.com/2019/09/30/security-release-gitlab-12-dot-3-dot-2-released/"
         },
         {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/2019/09/30/security-release-gitlab-12-dot-3-dot-2-released/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-19039"
         }

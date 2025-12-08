@@ -90,10 +90,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/libgd/libgd/issues/308"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugs.php.net/bug.php?id=73003"
         },
         {

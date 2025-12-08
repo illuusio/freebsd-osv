@@ -1,0 +1,150 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-spotipy"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "fixed": "2.25.2"
+                        },
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-spotipy"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "fixed": "2.25.2"
+                        },
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py312-spotipy"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "fixed": "2.25.2"
+                        },
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313-spotipy"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "fixed": "2.25.2"
+                        },
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313t-spotipy"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "fixed": "2.25.2"
+                        },
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314-spotipy"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "fixed": "2.25.2"
+                        },
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/spotipy-dev/spotipy/security/advisories/GHSA-r77h-rpp9-w2xm"
+        ],
+        "discovery": "2025-11-26T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-66040"
+            ]
+        },
+        "vid": "8acfcfdc-d27c-11f0-8512-b0416f0c4c67"
+    },
+    "details": "https://github.com/spotipy-dev/spotipy/security/advisories/GHSA-r77h-rpp9-w2xm\nreports:\n\n> Spotipy is a Python library for the Spotify Web API. Prior to version\n> 2.25.2, there is a cross-site scripting (XSS) vulnerability in the\n> OAuth callback server that allows for JavaScript injection through the\n> unsanitized error parameter. Attackers can execute arbitrary\n> JavaScript in the user\\'s browser during OAuth authentication. This\n> issue has been patched in version 2.25.2.\n",
+    "id": "FreeBSD-2025-0406",
+    "modified": "2025-12-06T00:00:00Z",
+    "published": "2025-12-06T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/spotipy-dev/spotipy/security/advisories/GHSA-r77h-rpp9-w2xm"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-66040"
+        },
+        {
+            "type": "WEB",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-66040"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "spotipy -- CWE-79: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')"
+}

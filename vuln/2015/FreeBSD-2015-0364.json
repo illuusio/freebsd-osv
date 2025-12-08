@@ -57,10 +57,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2015-11-11"
-        },
-        {
-            "type": "WEB",
             "url": "https://jenkins-ci.org/content/mitigating-unauthenticated-remote-code-execution-0-day-jenkins-cli"
         },
         {

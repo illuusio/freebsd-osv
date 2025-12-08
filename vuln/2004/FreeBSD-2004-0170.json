@@ -298,10 +298,6 @@
             "url": "http://marc.theaimsgroup.com/?l=bugtraq&m=108981780109154"
         },
         {
-            "type": "WEB",
-            "url": "http://security.e-matters.de/advisories/112004.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://www.securityfocus.com/bid/10725/info"
         }

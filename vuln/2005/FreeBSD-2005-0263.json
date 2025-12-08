@@ -56,10 +56,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-2550"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.sitic.se/eng/advisories_and_recommendations/sa05-001.html"
         }
     ],
     "schema_version": "1.7.0",

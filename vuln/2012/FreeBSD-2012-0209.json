@@ -57,10 +57,6 @@
         {
             "type": "REPORT",
             "url": "http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2012-005/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2012-005/"
         }
     ],
     "schema_version": "1.7.0",

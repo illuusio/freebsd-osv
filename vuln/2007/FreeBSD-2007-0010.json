@@ -61,10 +61,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-6834"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/23563/"
         }
     ],
     "schema_version": "1.7.0",

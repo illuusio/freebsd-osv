@@ -43,10 +43,6 @@
             "url": "https://github.com/apple/cups/releases/tag/v2.2.12"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/apple/cups/releases/tag/v2.2.12"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-8675"
         },

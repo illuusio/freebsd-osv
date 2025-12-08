@@ -37,10 +37,6 @@
             "url": "http://www.sudo.ws/bugs/show_bug.cgi?id=155"
         },
         {
-            "type": "WEB",
-            "url": "http://www.sudo.ws/bugs/show_bug.cgi?id=155"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://www.sudo.ws/pipermail/sudo-announce/2004-November/000044.html"
         }

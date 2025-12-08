@@ -122,10 +122,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.zope.org/Products/Zope/Hotfix-2007-03-20/announcement/view"
-        },
-        {
-            "type": "WEB",
             "url": "http://plone.org/products/plone/releases/2.5.3"
         }
     ],

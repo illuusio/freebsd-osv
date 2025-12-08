@@ -90,10 +90,6 @@
         {
             "type": "WEB",
             "url": "http://www.opera.com/freebsd/changelogs/754u2/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.zone-h.org/advisories/read/id=6503"
         }
     ],
     "schema_version": "1.7.0",

@@ -226,10 +226,6 @@
         {
             "type": "REPORT",
             "url": "https://wordpress.org/documentation/wordpress-version/version-6-4-4/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://wordpress.org/documentation/wordpress-version/version-6-4-4/"
         }
     ],
     "schema_version": "1.7.0",

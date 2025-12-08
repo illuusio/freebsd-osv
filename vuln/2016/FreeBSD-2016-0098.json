@@ -88,10 +88,6 @@
         {
             "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2016/02/06/4"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.horde.org/archives/announce/2016/001149.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -47,10 +47,6 @@
         {
             "type": "WEB",
             "url": "http://drupal.org/files/sa-2005-009/advisory.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/17824/"
         }
     ],
     "schema_version": "1.7.0",

@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.5.4-relnotes.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.5.4-relnotes.txt"
         }
     ],
     "schema_version": "1.7.0",

@@ -311,10 +311,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2004-1316"
         },
         {
-            "type": "WEB",
-            "url": "http://isec.pl/vulnerabilities/isec-0020-mozilla.txt"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://marc.theaimsgroup.com/?l=bugtraq&m=110436284718949"
         }

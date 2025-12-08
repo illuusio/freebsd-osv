@@ -76,22 +76,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=224729"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.otrs.com/security-advisory-2017-07-security-update-otrs-framework/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.otrs.com/security-advisory-2017-08-security-update-otrs-framework/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.otrs.com/security-advisory-2017-09-security-update-otrs-framework/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.otrs.com/security-advisory-2017-10-security-update-otrs-framework/"
         }
     ],
     "schema_version": "1.7.0",

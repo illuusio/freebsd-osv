@@ -138,10 +138,6 @@
             "url": "https://lists.x.org/archives/xorg-announce/2023-December/003435.html"
         },
         {
-            "type": "WEB",
-            "url": "https://lists.x.org/archives/xorg-announce/2023-December/003435.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-6377"
         },

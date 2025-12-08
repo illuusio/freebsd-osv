@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://roundcube.net/news/2024/05/19/security-updates-1.6.7-and-1.5.7"
-        },
-        {
-            "type": "WEB",
-            "url": "https://roundcube.net/news/2024/05/19/security-updates-1.6.7-and-1.5.7"
         }
     ],
     "schema_version": "1.7.0",

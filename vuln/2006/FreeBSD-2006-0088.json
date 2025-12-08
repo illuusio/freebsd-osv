@@ -52,10 +52,6 @@
         {
             "type": "WEB",
             "url": "http://jabberstudio.org/projects/jabberd2/releases/view.php?id=826"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/19281/"
         }
     ],
     "schema_version": "1.7.0",

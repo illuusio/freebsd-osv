@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://ikiwiki.info/security/#index32h2"
-        },
-        {
-            "type": "WEB",
-            "url": "http://ikiwiki.info/security/#index32h2"
         }
     ],
     "schema_version": "1.7.0",

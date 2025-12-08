@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://freeradius.org/security/fuzzer-2017.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://freeradius.org/security/fuzzer-2017.html"
         }
     ],
     "schema_version": "1.7.0",

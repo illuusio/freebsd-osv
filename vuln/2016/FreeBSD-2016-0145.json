@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2016/q1/572"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugs.otr.im/issues/88"
         },
         {

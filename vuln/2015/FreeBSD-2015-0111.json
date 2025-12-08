@@ -139,10 +139,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.wireshark.org/docs/relnotes/wireshark-1.12.5.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.wireshark.org/security/wnpa-sec-2015-12.html"
         },
         {

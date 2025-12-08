@@ -54,18 +54,6 @@
             "url": "https://github.com/weidai11/cryptopp/issues/277"
         },
         {
-            "type": "WEB",
-            "url": "https://eprint.iacr.org/2015/368"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/weidai11/cryptopp/issues/146"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/weidai11/cryptopp/issues/277"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-2141"
         },

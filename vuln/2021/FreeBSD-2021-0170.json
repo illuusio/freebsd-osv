@@ -57,10 +57,6 @@
         {
             "type": "REPORT",
             "url": "https://about.gitlab.com/releases/2021/07/01/security-release-gitlab-14-0-2-released/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2021/07/01/security-release-gitlab-14-0-2-released/"
         }
     ],
     "schema_version": "1.7.0",

@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/openhab/openhab-distro/releases/tag/4.2.1"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/openhab/openhab-webui/security/advisories/GHSA-v7gr-mqpj-wwh3"
         },
         {

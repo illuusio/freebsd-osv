@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-1560"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.squid-cache.org/Advisories/SQUID-2007_1.txt"
         }
     ],
     "schema_version": "1.7.0",

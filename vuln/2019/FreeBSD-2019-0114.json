@@ -76,10 +76,6 @@
             "url": "https://about.gitlab.com/2019/06/03/security-release-gitlab-11-dot-11-dot-1-released/"
         },
         {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/2019/06/03/security-release-gitlab-11-dot-11-dot-1-released/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-12430"
         },

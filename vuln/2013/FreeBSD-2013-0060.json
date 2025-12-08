@@ -52,10 +52,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2013/q1/391"
-        },
-        {
-            "type": "WEB",
             "url": "https://security-tracker.debian.org/tracker/CVE-2013-0338"
         },
         {

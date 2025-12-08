@@ -78,10 +78,6 @@
             "url": "https://www.samba.org/samba/history/samba-4.10.11.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/history/samba-4.10.11.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-14861"
         },

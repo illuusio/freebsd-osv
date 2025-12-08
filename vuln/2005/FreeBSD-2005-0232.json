@@ -92,10 +92,6 @@
         {
             "type": "REPORT",
             "url": "http://www.ethereal.com/appnotes/enpa-sa-00020.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.ethereal.com/appnotes/enpa-sa-00020.html"
         }
     ],
     "schema_version": "1.7.0",

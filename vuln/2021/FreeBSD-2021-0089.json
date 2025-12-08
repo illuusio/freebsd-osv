@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://pythoninsider.blogspot.com/2021/04/python-393-and-389-are-now-available.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugs.python.org/issue42988"
         }
     ],

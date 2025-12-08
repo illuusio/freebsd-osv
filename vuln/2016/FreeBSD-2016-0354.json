@@ -38,10 +38,6 @@
         {
             "type": "REPORT",
             "url": "http://seclists.org/fulldisclosure/2016/Aug/61"
-        },
-        {
-            "type": "WEB",
-            "url": "http://seclists.org/fulldisclosure/2016/Aug/61"
         }
     ],
     "schema_version": "1.7.0",

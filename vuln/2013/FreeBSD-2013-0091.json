@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-2065"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.ruby-lang.org/en/news/2013/05/14/taint-bypass-dl-fiddle-cve-2013-2065/"
         }
     ],
     "schema_version": "1.7.0",

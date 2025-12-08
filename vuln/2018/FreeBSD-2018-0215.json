@@ -93,10 +93,6 @@
             "url": "https://community.grafana.com/t/grafana-5-2-3-and-4-6-4-security-update/10050"
         },
         {
-            "type": "WEB",
-            "url": "https://community.grafana.com/t/grafana-5-2-3-and-4-6-4-security-update/10050"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-558213"
         }

@@ -73,10 +73,6 @@
         {
             "type": "REPORT",
             "url": "https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/UEMW64LVEH3BEXCJV43CVS6XPYURKWU3/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/UEMW64LVEH3BEXCJV43CVS6XPYURKWU3/"
         }
     ],
     "schema_version": "1.7.0",

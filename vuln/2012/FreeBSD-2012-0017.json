@@ -114,14 +114,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-2442"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.adobe.com/support/security/bulletins/apsb11-24.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.adobe.com/support/security/advisories/apsa11-04.html"
         }
     ],
     "schema_version": "1.7.0",

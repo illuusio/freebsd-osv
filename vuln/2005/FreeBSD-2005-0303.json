@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/17386/"
-        },
-        {
-            "type": "WEB",
             "url": "http://issues.apache.org/SpamAssassin/show_bug.cgi?id=4570"
         }
     ],

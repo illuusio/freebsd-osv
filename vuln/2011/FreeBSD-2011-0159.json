@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-1530"
-        },
-        {
-            "type": "WEB",
-            "url": "http://web.mit.edu/kerberos/www/advisories/MITKRB5-SA-2011-007.txt"
         }
     ],
     "schema_version": "1.7.0",

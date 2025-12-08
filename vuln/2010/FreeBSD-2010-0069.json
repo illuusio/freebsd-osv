@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://www.redmine.org/news/41"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.redmine.org/news/41"
         }
     ],
     "schema_version": "1.7.0",

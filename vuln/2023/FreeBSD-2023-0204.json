@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://groups.google.com/g/redis-db/c/JDjKS0GubsQ"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/redis/redis/security/advisories/GHSA-4cfx-h9gq-xpx3"
         }
     ],

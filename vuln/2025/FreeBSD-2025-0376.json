@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/aous72/OpenJPH/releases"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/aous72/OpenJPH/releases"
         }
     ],
     "schema_version": "1.7.0",

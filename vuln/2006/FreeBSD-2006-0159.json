@@ -65,10 +65,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/21947/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.zope.org/Products/Zope/Hotfix-2006-08-21/Hotfix-20060821/README.txt"
         }
     ],

@@ -123,10 +123,6 @@
             "url": "http://www.oracle.com/technetwork/topics/security/cpuoct2015-2367953.html#AppendixJAVA"
         },
         {
-            "type": "WEB",
-            "url": "http://www.oracle.com/technetwork/topics/security/cpuoct2015-2367953.html#AppendixJAVA"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-4835"
         },

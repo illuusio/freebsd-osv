@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-17481"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2018/12/stable-channel-update-for-desktop_12.html"
         }
     ],
     "schema_version": "1.7.0",

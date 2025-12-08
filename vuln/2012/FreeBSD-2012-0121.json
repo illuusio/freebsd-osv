@@ -62,10 +62,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://projects.puppetlabs.com/projects/puppet/wiki/Release_Notes#2.7.18"
-        },
-        {
-            "type": "WEB",
             "url": "http://puppetlabs.com/security/cve/cve-2012-3864/"
         },
         {

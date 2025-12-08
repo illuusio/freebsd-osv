@@ -61,10 +61,6 @@
             "url": "https://github.com/chocolate-doom/chocolate-doom/issues/1293"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/chocolate-doom/chocolate-doom/issues/1293"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-14983"
         }

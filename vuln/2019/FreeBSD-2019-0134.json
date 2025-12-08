@@ -43,10 +43,6 @@
             "url": "https://doc.powerdns.com/authoritative/changelog/4.1.html#change-4.1.10"
         },
         {
-            "type": "WEB",
-            "url": "https://doc.powerdns.com/authoritative/changelog/4.1.html#change-4.1.10"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-10162"
         },

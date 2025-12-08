@@ -49,10 +49,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-4054"
         },
         {
-            "type": "WEB",
-            "url": "https://pgbouncer.github.io/2015/04/pgbouncer-1-5-5/"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://www.openwall.com/lists/oss-security/2015/05/21/2"
         },

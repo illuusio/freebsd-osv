@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/go-gitea/gitea/issues/4417"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/go-gitea/gitea/pull/4784"
         }
     ],

@@ -62,10 +62,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/antirez/redis/pull/1418"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/antirez/redis/issues/3284"
         },
         {

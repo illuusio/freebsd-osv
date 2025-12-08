@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-29889"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/glpi-project/glpi/releases/tag/10.0.15"
         }
     ],
     "schema_version": "1.7.0",

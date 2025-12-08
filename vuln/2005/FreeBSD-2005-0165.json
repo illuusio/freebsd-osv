@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.debian.org/security/2005/dsa-672"
-        },
-        {
-            "type": "WEB",
             "url": "http://xforce.iss.net/xforce/xfdb/19271"
         }
     ],

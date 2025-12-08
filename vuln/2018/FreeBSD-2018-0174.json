@@ -99,10 +99,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-14362"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.mutt.org/pipermail/mutt-announce/Week-of-Mon-20180716/000004.html"
         }
     ],
     "schema_version": "1.7.0",

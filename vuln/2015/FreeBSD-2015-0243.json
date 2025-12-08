@@ -68,10 +68,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-6506"
-        },
-        {
-            "type": "WEB",
-            "url": "http://blog.bestpractical.com/2015/08/security-vulnerabilities-in-rt.html"
         }
     ],
     "schema_version": "1.7.0",

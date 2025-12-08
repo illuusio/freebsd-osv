@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/Advisories/32143/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://sourceforge.net/project/shownotes.php?release_id=644750&group_id=311"
         }
     ],
     "schema_version": "1.7.0",

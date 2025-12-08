@@ -100,10 +100,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://mail-archives.apache.org/mod_mbox/tomcat-announce/201606.mbox/%3C6223ece6-2b41-ef4f-22f9-d3481e492832%40apache.org%3E"
-        },
-        {
-            "type": "WEB",
             "url": "http://jvn.jp/en/jp/JVN89379547/index.html"
         }
     ],

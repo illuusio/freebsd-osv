@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-26120"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.bacula-web.org/releases/2021-07-11-bacula-web-8.4.2/"
         }
     ],
     "schema_version": "1.7.0",

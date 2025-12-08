@@ -65,10 +65,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-5226"
         },
         {
-            "type": "WEB",
-            "url": "http://dircproxy.securiweb.net/ticket/89"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=319301"
         }

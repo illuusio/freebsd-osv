@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-41317"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/squid-cache/squid/security/advisories/GHSA-rcg9-7fqm-83mq"
         }
     ],
     "schema_version": "1.7.0",

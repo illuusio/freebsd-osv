@@ -39,10 +39,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/39922/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.wikimedia.org/pipermail/mediawiki-announce/2010-May/000091.html"
         }
     ],
     "schema_version": "1.7.0",

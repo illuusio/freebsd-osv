@@ -101,10 +101,6 @@
             "url": "https://about.gitlab.com/2017/07/19/gitlab-9-dot-3-dot-8-released/"
         },
         {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/2017/07/19/gitlab-9-dot-3-dot-8-released/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-11438"
         }

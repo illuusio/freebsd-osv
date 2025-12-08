@@ -66,10 +66,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-37147"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/glpi-project/glpi/releases/tag/10.0.16"
         }
     ],
     "schema_version": "1.7.0",

@@ -41,10 +41,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.securityfocus.com/bid/9097/info"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/10274/"
         }
     ],
     "schema_version": "1.7.0",

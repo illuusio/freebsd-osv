@@ -48,10 +48,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-0074"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.debian.org/security/2005/dsa-676"
         }
     ],
     "schema_version": "1.7.0",

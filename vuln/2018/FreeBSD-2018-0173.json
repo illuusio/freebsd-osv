@@ -152,10 +152,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-14363"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/neomutt/neomutt/releases/tag/neomutt-20180716"
         }
     ],
     "schema_version": "1.7.0",

@@ -57,10 +57,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/34091/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.ush.it/team/ush/hack-zabbix_162/adv.txt"
         }
     ],

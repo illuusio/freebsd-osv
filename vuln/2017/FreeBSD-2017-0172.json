@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://axis.apache.org/axis2/java/core/release-notes/1.7.6.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://issues.apache.org/jira/browse/AXIS2-5853"
         },
         {

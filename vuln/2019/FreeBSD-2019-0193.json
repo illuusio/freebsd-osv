@@ -48,10 +48,6 @@
             "url": "https://github.com/h2o/h2o/issues/2090"
         },
         {
-            "type": "WEB",
-            "url": "https://www.kb.cert.org/vuls/id/605641/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-9512"
         },

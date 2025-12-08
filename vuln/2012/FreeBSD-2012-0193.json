@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-5671"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.exim.org/lurker/message/20121026.080330.74b9147b.en.html"
         }
     ],
     "schema_version": "1.7.0",

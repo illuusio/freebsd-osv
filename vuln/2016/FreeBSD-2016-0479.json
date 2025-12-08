@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-10024"
-        },
-        {
-            "type": "WEB",
-            "url": "https://xenbits.xen.org/xsa/advisory-202.html"
         }
     ],
     "schema_version": "1.7.0",

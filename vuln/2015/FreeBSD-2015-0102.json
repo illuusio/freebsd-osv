@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-2326"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.pcre.org/original/changelog.txt"
         }
     ],
     "schema_version": "1.7.0",

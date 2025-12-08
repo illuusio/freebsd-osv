@@ -61,10 +61,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://access.redhat.com/security/cve/CVE-2019-14868"
-        },
-        {
-            "type": "WEB",
             "url": "https://access.redhat.com/errata/RHSA-2020:0431"
         }
     ],

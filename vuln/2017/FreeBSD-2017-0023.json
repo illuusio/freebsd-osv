@@ -70,10 +70,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-5625"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.oracle.com/technetwork/security-advisory/cpuoct2016-2881722.html"
         }
     ],
     "schema_version": "1.7.0",

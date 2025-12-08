@@ -133,14 +133,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2015/11/30/2"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2015/11/30/3"
-        },
-        {
-            "type": "WEB",
             "url": "http://git.qemu.org/?p=qemu.git;a=commit;h=837f21aacf5a714c23ddaadbbc5212f9b661e3f7"
         },
         {

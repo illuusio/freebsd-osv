@@ -213,10 +213,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://docs.saltstack.com/en/latest/topics/releases/2017.7.2.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://docs.saltstack.com/en/2016.11/topics/releases/2016.11.8.html"
         },
         {

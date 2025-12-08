@@ -77,10 +77,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://w1.fi/security/2017-1/wpa-packet-number-reuse-with-replayed-messages.txt"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.kb.cert.org/vuls/id/228519"
         },
         {

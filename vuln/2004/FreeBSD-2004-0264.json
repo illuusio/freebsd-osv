@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-dothost"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-dothost"
         }
     ],
     "schema_version": "1.7.0",

@@ -49,10 +49,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-2003"
         },
         {
-            "type": "WEB",
-            "url": "https://gitlab.freedesktop.org/wayland/wayland/-/merge_requests/133"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=256273"
         }

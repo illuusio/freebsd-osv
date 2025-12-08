@@ -32,10 +32,6 @@
         {
             "type": "REPORT",
             "url": "https://devguide.python.org/versions/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://devguide.python.org/versions/"
         }
     ],
     "schema_version": "1.7.0",

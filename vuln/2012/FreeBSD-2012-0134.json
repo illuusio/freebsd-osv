@@ -138,10 +138,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://httpd.apache.org/security/vulnerabilities_24.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.apache.org/dist/httpd/CHANGES_2.4.2"
         }
     ],

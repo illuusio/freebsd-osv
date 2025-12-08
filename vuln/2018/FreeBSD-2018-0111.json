@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://www.drupal.org/sa-core-2018-003"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.drupal.org/sa-core-2018-003"
         }
     ],
     "schema_version": "1.7.0",

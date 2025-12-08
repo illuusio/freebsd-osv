@@ -178,10 +178,6 @@
         {
             "type": "WEB",
             "url": "http://www.mplayerhq.hu/homepage/design7/news.html#vuln11"
-        },
-        {
-            "type": "WEB",
-            "url": "http://xinehq.de/index.php/security/XSA-2004-8"
         }
     ],
     "schema_version": "1.7.0",

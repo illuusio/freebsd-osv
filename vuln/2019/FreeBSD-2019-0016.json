@@ -48,10 +48,6 @@
             "url": "http://www.apache.org/dist/httpd/CHANGES_2.4.38"
         },
         {
-            "type": "WEB",
-            "url": "http://httpd.apache.org/security/vulnerabilities_24.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-17199"
         },

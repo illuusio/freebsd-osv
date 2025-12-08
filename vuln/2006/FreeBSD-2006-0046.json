@@ -50,22 +50,6 @@
         {
             "type": "REPORT",
             "url": "http://drupal.org/node/53796"
-        },
-        {
-            "type": "WEB",
-            "url": "http://drupal.org/node/53806"
-        },
-        {
-            "type": "WEB",
-            "url": "http://drupal.org/node/53805"
-        },
-        {
-            "type": "WEB",
-            "url": "http://drupal.org/node/53803"
-        },
-        {
-            "type": "WEB",
-            "url": "http://drupal.org/node/53796"
         }
     ],
     "schema_version": "1.7.0",

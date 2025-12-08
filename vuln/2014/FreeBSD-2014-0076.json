@@ -54,14 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-4349"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security/PMASA-2014-2.php"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security/PMASA-2014-3.php"
         }
     ],
     "schema_version": "1.7.0",

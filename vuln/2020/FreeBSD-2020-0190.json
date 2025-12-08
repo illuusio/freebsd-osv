@@ -45,10 +45,6 @@
             "url": "https://www.cacti.net/release_notes.php?version=1.2.13"
         },
         {
-            "type": "WEB",
-            "url": "https://www.cacti.net/release_notes.php?version=1.2.13"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-11022"
         },

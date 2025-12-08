@@ -162,10 +162,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://venom.crowdstrike.com/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.oracle.com/technetwork/topics/security/alert-cve-2015-3456-2542656.html"
         },
         {

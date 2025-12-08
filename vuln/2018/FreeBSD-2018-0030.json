@@ -83,10 +83,6 @@
             "url": "https://www.mail-archive.com/mailman-users@python.org/msg70478.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.mail-archive.com/mailman-users@python.org/msg70478.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-5950"
         }

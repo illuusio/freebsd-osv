@@ -49,10 +49,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2004-0149"
         },
         {
-            "type": "WEB",
-            "url": "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=174924"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://www.securityfocus.com/bid/9764/info"
         }

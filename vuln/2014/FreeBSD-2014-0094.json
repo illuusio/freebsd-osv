@@ -62,10 +62,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://lists.torproject.org/pipermail/tor-announce/2014-July/000094.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://blog.torproject.org/blog/tor-security-advisory-relay-early-traffic-confirmation-attack"
         },
         {

@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-9230"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/libressl/portable/releases/tag/v4.1.1"
         }
     ],
     "schema_version": "1.7.0",

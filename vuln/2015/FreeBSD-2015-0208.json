@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://tls.mbed.org/tech-updates/releases/polarssl-1.2.14-released"
-        },
-        {
-            "type": "WEB",
-            "url": "https://tls.mbed.org/tech-updates/releases/polarssl-1.2.14-released"
         }
     ],
     "schema_version": "1.7.0",

@@ -125,10 +125,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-October/000181.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://phabricator.wikimedia.org/T91203"
         },
         {

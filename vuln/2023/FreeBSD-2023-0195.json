@@ -88,10 +88,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-31192"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.softether.org/9-about/News/904-SEVPN202301"
         }
     ],
     "schema_version": "1.7.0",

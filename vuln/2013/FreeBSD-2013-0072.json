@@ -46,10 +46,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-1915"
         },
         {
-            "type": "WEB",
-            "url": "https://secunia.com/advisories/52847/"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2013-1915"
         },

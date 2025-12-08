@@ -95,10 +95,6 @@
         {
             "type": "WEB",
             "url": "http://www.oracle.com/technetwork/topics/security/alert-cve-2013-0422-1896849.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://partners.immunityinc.com/idocs/Java%20MBeanInstantiator.findClass%200day%20Analysis.pdf"
         }
     ],
     "schema_version": "1.7.0",

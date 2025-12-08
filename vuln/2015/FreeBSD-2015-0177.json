@@ -342,10 +342,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.djangoproject.com/weblog/2015/jul/08/security-releases/"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/django/django/commit/df049ed77a4db67e45db5679bfc76a85d2a26680"
         },
         {

@@ -88,10 +88,6 @@
             "url": "https://www.oracle.com/security-alerts/cpujul2020.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.oracle.com/security-alerts/cpujul2020.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-14628"
         },

@@ -56,10 +56,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://metacpan.org/changes/release/SHAY/perl-5.26.2"
-        },
-        {
-            "type": "WEB",
             "url": "https://metacpan.org/changes/release/SHAY/perl-5.24.4"
         },
         {

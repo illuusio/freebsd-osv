@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-3533"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.freedesktop.org/archives/dbus/2014-July/016235.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -69,10 +69,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-0027"
-        },
-        {
-            "type": "WEB",
-            "url": "http://openssl.org/news/secadv_20120104.txt"
         }
     ],
     "schema_version": "1.7.0",

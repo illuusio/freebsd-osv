@@ -128,10 +128,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-21698"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.jenkins.io/security/advisory/2021-11-04/"
         }
     ],
     "schema_version": "1.7.0",

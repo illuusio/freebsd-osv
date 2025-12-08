@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.fetchmail.info/fetchmail-SA-2011-01.txt"
-        },
-        {
-            "type": "WEB",
             "url": "https://gitorious.org/fetchmail/fetchmail/commit/7dc67b8cf06f74aa57525279940e180c99701314"
         }
     ],

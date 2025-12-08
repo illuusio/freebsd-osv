@@ -245,10 +245,6 @@
         {
             "type": "WEB",
             "url": "https://groups.google.com/d/msg/rubyonrails-security/6jQVC1geukQ/8oYETcxbFQAJ"
-        },
-        {
-            "type": "WEB",
-            "url": "http://weblog.rubyonrails.org/2016/1/25/Rails-5-0-0-beta1-1-4-2-5-1-4-1-14-1-3-2-22-1-and-rails-html-sanitizer-1-0-3-have-been-released/"
         }
     ],
     "schema_version": "1.7.0",

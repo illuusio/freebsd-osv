@@ -73,14 +73,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-4598"
-        },
-        {
-            "type": "WEB",
-            "url": "http://downloads.asterisk.org/pub/security/AST-2011-013.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://downloads.asterisk.org/pub/security/AST-2011-014.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -294,10 +294,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.mozilla.org/projects/security/known-vulnerabilities.html#firefox2.0.0.5"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.mozilla.org/security/announce/2007/mfsa2007-18.html"
         },
         {

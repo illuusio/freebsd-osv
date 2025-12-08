@@ -61,10 +61,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/49780/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2012-003/"
         }
     ],
     "schema_version": "1.7.0",

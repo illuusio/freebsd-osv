@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2008-1937"
-        },
-        {
-            "type": "WEB",
-            "url": "http://hg.moinmo.in/moin/1.6/rev/f405012e67af"
         }
     ],
     "schema_version": "1.7.0",

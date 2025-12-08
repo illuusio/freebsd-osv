@@ -70,18 +70,6 @@
         {
             "type": "REPORT",
             "url": "http://developer.joomla.org/security/572-core-xss-20131103.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security/570-core-xss-20131101.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security/571-core-xss-20131102.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security/572-core-xss-20131103.html"
         }
     ],
     "schema_version": "1.7.0",

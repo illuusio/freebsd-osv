@@ -81,10 +81,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/OpenVPN/openvpn/commit/f7b318f811bb43c0d3aa7f337ec6242ed2c33881"
-        },
-        {
-            "type": "WEB",
             "url": "https://sourceforge.net/p/openvpn/openvpn/ci/f7b318f811bb43c0d3aa7f337ec6242ed2c33881/"
         },
         {

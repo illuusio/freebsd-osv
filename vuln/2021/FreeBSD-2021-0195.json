@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-37601"
-        },
-        {
-            "type": "WEB",
-            "url": "https://prosody.im/security/advisory_20210722/"
         }
     ],
     "schema_version": "1.7.0",

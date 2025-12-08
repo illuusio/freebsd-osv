@@ -100,10 +100,6 @@
         {
             "type": "WEB",
             "url": "http://www.idefense.com/application/poi/display?id=165&type=vulnerabilities"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.samba.org/samba/security/CAN-2004-1154.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -233,10 +233,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.oracle.com/technetwork/security-advisory/cpujan2018-3236628.html#AppendixMSQL"
-        },
-        {
-            "type": "WEB",
             "url": "https://mariadb.com/kb/en/library/mariadb-5559-release-notes/"
         },
         {

@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-1863"
-        },
-        {
-            "type": "WEB",
-            "url": "http://w1.fi/security/2015-1/wpa_supplicant-p2p-ssid-overflow.txt"
         }
     ],
     "schema_version": "1.7.0",

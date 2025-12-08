@@ -60,22 +60,6 @@
             "url": "http://curl.haxx.se/docs/adv_20150422D.html"
         },
         {
-            "type": "WEB",
-            "url": "http://curl.haxx.se/docs/adv_20150422A.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://curl.haxx.se/docs/adv_20150422B.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://curl.haxx.se/docs/adv_20150422C.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://curl.haxx.se/docs/adv_20150422D.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-3143"
         },

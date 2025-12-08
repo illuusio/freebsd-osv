@@ -123,10 +123,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2022-183"
-        },
-        {
-            "type": "WEB",
             "url": "https://osv.dev/vulnerability/GHSA-h8pj-cxx2-jfg2"
         }
     ],

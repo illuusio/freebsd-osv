@@ -77,10 +77,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.zerodayinitiative.com/advisories/ZDI-06-001.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/18379/"
         }
     ],

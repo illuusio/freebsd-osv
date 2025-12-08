@@ -73,10 +73,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openldap.org/its/index.cgi/Software%20Bugs?id=4587"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openldap.org/lists/openldap-announce/200608/msg00000.html"
         },
         {

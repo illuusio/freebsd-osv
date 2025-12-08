@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/17316/"
-        },
-        {
-            "type": "WEB",
             "url": "http://lostmon.blogspot.com/2005/10/flyspray-bug-killer-multiple-variable.html"
         }
     ],

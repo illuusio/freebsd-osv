@@ -69,10 +69,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://tomcat.apache.org/security.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://tomcat.apache.org/security-5.html"
         },
         {

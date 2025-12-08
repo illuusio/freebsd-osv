@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://mail.globnix.net/pipermail/sieve-connect-announce/2013/000005.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://mail.globnix.net/pipermail/sieve-connect-announce/2013/000005.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -54,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2008-1423"
-        },
-        {
-            "type": "WEB",
-            "url": "https://rhn.redhat.com/errata/RHSA-2008-0270.html"
         }
     ],
     "schema_version": "1.7.0",

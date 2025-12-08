@@ -142,10 +142,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-41819"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.ruby-lang.org/en/news/2021/11/24/cookie-prefix-spoofing-in-cgi-cookie-parse-cve-2021-41819/"
         }
     ],
     "schema_version": "1.7.0",

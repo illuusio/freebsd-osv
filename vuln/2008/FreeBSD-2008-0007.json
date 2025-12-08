@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-3756"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.geeklog.net/article.php/geeklog-1.4.0sr6"
         }
     ],
     "schema_version": "1.7.0",

@@ -64,10 +64,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.redmine.org/projects/redmine/wiki/Security_Advisories"
-        },
-        {
-            "type": "WEB",
             "url": "https://jvn.jp/en/jp/JVN93004610/index.html"
         }
     ],

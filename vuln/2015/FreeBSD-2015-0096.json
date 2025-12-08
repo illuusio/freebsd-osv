@@ -80,10 +80,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-2668"
-        },
-        {
-            "type": "WEB",
-            "url": "http://blog.clamav.net/2015/04/clamav-0987-has-been-released.html"
         }
     ],
     "schema_version": "1.7.0",

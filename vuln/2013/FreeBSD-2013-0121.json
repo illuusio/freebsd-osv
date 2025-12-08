@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-4073"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.ruby-lang.org/en/news/2013/06/27/hostname-check-bypassing-vulnerability-in-openssl-client-cve-2013-4073/"
         }
     ],
     "schema_version": "1.7.0",

@@ -87,32 +87,16 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-30634"
         },
         {
-            "type": "WEB",
-            "url": "https://go.dev/issue/52561"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-30629"
-        },
-        {
-            "type": "WEB",
-            "url": "https://go.dev/issue/52814"
         },
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-30580"
         },
         {
-            "type": "WEB",
-            "url": "https://go.dev/issue/52574"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-29804"
-        },
-        {
-            "type": "WEB",
-            "url": "https://go.dev/issue/52476"
         }
     ],
     "schema_version": "1.7.0",

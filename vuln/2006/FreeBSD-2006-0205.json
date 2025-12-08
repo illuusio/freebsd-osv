@@ -60,10 +60,6 @@
         {
             "type": "REPORT",
             "url": "http://www.frsirt.com/english/advisories/2006/4451"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.frsirt.com/english/advisories/2006/4451"
         }
     ],
     "schema_version": "1.7.0",

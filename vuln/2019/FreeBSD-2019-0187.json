@@ -42,10 +42,6 @@
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-13207"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-13207"
-        },
-        {
             "type": "WEB",
             "url": "https://github.com/NLnetLabs/nsd/issues/20"
         },

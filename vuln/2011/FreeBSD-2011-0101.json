@@ -126,10 +126,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-2425"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.adobe.com/support/security/bulletins/apsb11-21.html"
         }
     ],
     "schema_version": "1.7.0",

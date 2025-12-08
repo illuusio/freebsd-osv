@@ -94,10 +94,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-44572"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/rack/rack/blob/v3.0.4.1/CHANGELOG.md"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://github.com/advisories/GHSA-65f5-mfpf-vfhj"
         },

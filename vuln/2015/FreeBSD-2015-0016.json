@@ -322,10 +322,6 @@
             "url": "https://www.djangoproject.com/weblog/2015/jan/13/security/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.djangoproject.com/weblog/2015/jan/13/security/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-0219"
         },

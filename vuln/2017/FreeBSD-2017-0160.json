@@ -42,10 +42,6 @@
             "url": "https://github.com/collectd/collectd/issues/2174"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/collectd/collectd/issues/2174"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-7401"
         }

@@ -64,10 +64,6 @@
         {
             "type": "DISCUSSION",
             "url": "http://openwall.com/lists/oss-security/2015/07/06/10"
-        },
-        {
-            "type": "WEB",
-            "url": "https://roundcube.net/news/2015/06/05/updates-1.1.2-and-1.0.6-released/"
         }
     ],
     "schema_version": "1.7.0",

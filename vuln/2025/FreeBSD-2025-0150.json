@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-4575"
-        },
-        {
-            "type": "WEB",
-            "url": "https://openssl-library.org/news/secadv/20250522.txt"
         }
     ],
     "schema_version": "1.7.0",

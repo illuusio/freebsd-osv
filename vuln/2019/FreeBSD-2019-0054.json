@@ -86,10 +86,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://blog.rubygems.org/2019/03/05/security-advisories-2019-03.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/rubygems/rubygems/blob/master/History.txt"
         },
         {

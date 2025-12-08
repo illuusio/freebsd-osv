@@ -60,10 +60,6 @@
             "url": "https://github.com/rdesktop/rdesktop/releases/tag/v1.8.4"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/rdesktop/rdesktop/releases/tag/v1.8.4"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-20175"
         },

@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-3525"
-        },
-        {
-            "type": "WEB",
-            "url": "http://mail-archives.apache.org/mod_mbox/trafficserver-users/201407.mbox/%3CBFCEC9C8-1BE9-4DCA-AF9C-B8FE798EEC07@yahoo-inc.com%3E"
         }
     ],
     "schema_version": "1.7.0",

@@ -405,10 +405,6 @@
             "url": "https://www.djangoproject.com/weblog/2014/apr/21/security/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.djangoproject.com/weblog/2014/apr/21/security/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-0472"
         },

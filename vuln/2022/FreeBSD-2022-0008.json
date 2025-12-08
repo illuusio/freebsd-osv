@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://wordpress.org/news/2022/01/wordpress-5-8-3-security-release/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://wordpress.org/news/2022/01/wordpress-5-8-3-security-release/"
         }
     ],
     "schema_version": "1.7.0",

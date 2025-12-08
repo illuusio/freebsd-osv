@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.squid-cache.org/Advisories/SQUID-2019_11.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-18679"
         },
         {

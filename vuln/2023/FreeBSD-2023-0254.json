@@ -123,10 +123,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2020-43"
-        },
-        {
-            "type": "WEB",
             "url": "https://osv.dev/vulnerability/GHSA-xc3p-ff3m-f46v"
         }
     ],

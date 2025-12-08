@@ -102,10 +102,6 @@
             "url": "https://github.com/pyca/cryptography/commit/b94cacf2ae6e75e4007a79709bbf5360435b512d"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/pyca/cryptography/commit/b94cacf2ae6e75e4007a79709bbf5360435b512d"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-9243"
         },

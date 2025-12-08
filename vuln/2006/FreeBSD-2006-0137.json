@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-4018"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.clamav.net/security/0.88.4.html"
         }
     ],
     "schema_version": "1.7.0",

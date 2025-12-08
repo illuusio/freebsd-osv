@@ -253,10 +253,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-3695"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.djangoproject.com/weblog/2009/oct/09/security/"
         }
     ],
     "schema_version": "1.7.0",

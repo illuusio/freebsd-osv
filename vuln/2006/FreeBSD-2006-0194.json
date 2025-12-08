@@ -56,10 +56,6 @@
             "url": "http://www.security-assessment.com/files/advisories/Asterisk_remote_heap_overflow.pdf"
         },
         {
-            "type": "WEB",
-            "url": "http://www.security-assessment.com/files/advisories/Asterisk_remote_heap_overflow.pdf"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://marc.theaimsgroup.com/?l=bugtraq&m=116121567530170"
         }

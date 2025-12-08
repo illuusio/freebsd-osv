@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2006-4"
-        },
-        {
-            "type": "WEB",
             "url": "http://securitynews.ir/advisories/phpmyadmin281.txt"
         }
     ],

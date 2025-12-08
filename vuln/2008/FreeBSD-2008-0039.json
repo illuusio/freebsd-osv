@@ -54,10 +54,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/29649"
-        },
-        {
-            "type": "WEB",
             "url": "http://trac.lighttpd.net/trac/ticket/285"
         }
     ],

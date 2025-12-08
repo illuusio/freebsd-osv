@@ -45,10 +45,6 @@
             "url": "https://mantisbt.org/bugs/view.php?id=21611"
         },
         {
-            "type": "WEB",
-            "url": "https://mantisbt.org/bugs/view.php?id=21611"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-6837"
         },

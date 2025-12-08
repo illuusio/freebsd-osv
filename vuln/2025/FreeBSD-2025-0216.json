@@ -120,10 +120,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-32023"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/redis/redis/security/advisories/GHSA-rp2m-q4j6-gr43"
         }
     ],
     "schema_version": "1.7.0",

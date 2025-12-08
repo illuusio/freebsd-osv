@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://dev.gnupg.org/T4606"
-        },
-        {
-            "type": "WEB",
             "url": "https://dev.gnupg.org/T4607"
         }
     ],

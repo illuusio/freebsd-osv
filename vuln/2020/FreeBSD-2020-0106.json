@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/qutebrowser/qutebrowser/security/advisories/GHSA-4rcq-jv2f-898j"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/qutebrowser/qutebrowser/issues/5403"
         },
         {

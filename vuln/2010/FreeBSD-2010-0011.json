@@ -53,10 +53,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-0562"
         },
         {
-            "type": "WEB",
-            "url": "http://www.fetchmail.info/fetchmail-SA-2010-01.txt"
-        },
-        {
             "type": "DISCUSSION",
             "url": "https://lists.berlios.de/pipermail/fetchmail-announce/2010-February/000073.html"
         }

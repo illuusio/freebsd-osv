@@ -114,10 +114,6 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-2473-9hgq-j7xw"
-        },
-        {
-            "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-15118"
         }
     ],

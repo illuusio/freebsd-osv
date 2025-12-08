@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.elastic.co/blog/logstash-1-4-3-released"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.elastic.co/community/security"
         }
     ],

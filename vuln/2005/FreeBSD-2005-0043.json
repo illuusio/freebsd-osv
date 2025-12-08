@@ -78,10 +78,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://bugzilla.fedora.us/show_bug.cgi?id=2051#c11"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=138516"
         },
         {

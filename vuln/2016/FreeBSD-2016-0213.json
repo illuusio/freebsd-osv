@@ -75,10 +75,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=209564"
-        },
-        {
-            "type": "WEB",
-            "url": "http://w1.fi/security/2016-1/psk-parameter-config-update.txt"
         }
     ],
     "schema_version": "1.7.0",

@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2008-2950"
-        },
-        {
-            "type": "WEB",
-            "url": "http://milw0rm.com/exploits/6032"
         }
     ],
     "schema_version": "1.7.0",

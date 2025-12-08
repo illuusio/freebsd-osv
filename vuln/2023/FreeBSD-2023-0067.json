@@ -116,10 +116,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-1084"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2023/03/02/security-release-gitlab-15-9-2-released/"
         }
     ],
     "schema_version": "1.7.0",

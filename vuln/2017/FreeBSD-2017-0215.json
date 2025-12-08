@@ -42,10 +42,6 @@
             "url": "https://github.com/LibRaw/LibRaw/issues/99"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/LibRaw/LibRaw/issues/99"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-14265"
         }

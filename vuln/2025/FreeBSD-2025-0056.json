@@ -130,10 +130,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/vim/vim/security/advisories/GHSA-wfmf-8626-q3r3"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/vim/vim/security/advisories/GHSA-wfmf-8626-q3r3"
         }
     ],
     "schema_version": "1.7.0",

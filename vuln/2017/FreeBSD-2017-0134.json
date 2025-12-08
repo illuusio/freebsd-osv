@@ -290,10 +290,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.mozilla.org/en-US/security/advisories/mfsa2017-15/"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.mozilla.org/en-US/security/advisories/mfsa2017-16/"
         }
     ],

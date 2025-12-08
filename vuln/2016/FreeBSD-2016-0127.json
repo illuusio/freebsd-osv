@@ -208,10 +208,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.wireshark.org/docs/relnotes/wireshark-2.0.2.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2016/05/01/1"
         }
     ],

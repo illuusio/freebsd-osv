@@ -67,10 +67,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/20524/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://people.ksp.sk/~goober/advisory/001-shoutcast.html"
         }
     ],
     "schema_version": "1.7.0",

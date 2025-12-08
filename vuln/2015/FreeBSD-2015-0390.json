@@ -53,10 +53,6 @@
             "url": "https://marc.info/?l=openbsd-announce&t=144920914600002"
         },
         {
-            "type": "WEB",
-            "url": "https://marc.info/?l=openbsd-announce&t=144920914600002"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-3194"
         }

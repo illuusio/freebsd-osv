@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-13086"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/OpenVPN/openvpn/commit/fa6a1824b0f37bff137204156a74ca28cf5b6f83"
         }
     ],
     "schema_version": "1.7.0",

@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://www.exim.org/lurker/message/20101209.022730.dbb6732d.en.html"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=661756#c3"
         }
     ],
     "schema_version": "1.7.0",

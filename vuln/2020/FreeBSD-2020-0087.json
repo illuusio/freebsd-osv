@@ -128,10 +128,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://python-security.readthedocs.io/vuln/urllib-basic-auth-regex.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugs.python.org/issue39503"
         },
         {

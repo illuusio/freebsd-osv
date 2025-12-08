@@ -174,10 +174,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-6491"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2020/05/stable-channel-update-for-desktop_19.html"
         }
     ],
     "schema_version": "1.7.0",

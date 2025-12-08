@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://developer.joomla.org/security-centre/626-20150908-core-xss-vulnerability.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.joomla.org/announcements/release-news/5628-joomla-3-4-4-released.html"
         }
     ],

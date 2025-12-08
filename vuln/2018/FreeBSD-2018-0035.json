@@ -42,10 +42,6 @@
             "url": "https://github.com/rakshasa/libtorrent/pull/99"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/rakshasa/libtorrent/pull/99"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=224664"
         }

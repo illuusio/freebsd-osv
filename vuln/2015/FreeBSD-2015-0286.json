@@ -80,10 +80,6 @@
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=202941"
         },
         {
-            "type": "WEB",
-            "url": "https://trac.xiph.org/ticket/2136"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-9639"
         },
@@ -94,10 +90,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-9638"
-        },
-        {
-            "type": "WEB",
-            "url": "https://trac.xiph.org/ticket/2212"
         },
         {
             "type": "ADVISORY",

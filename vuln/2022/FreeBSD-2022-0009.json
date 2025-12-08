@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-0217"
-        },
-        {
-            "type": "WEB",
-            "url": "https://prosody.im/security/advisory_20220113/"
         }
     ],
     "schema_version": "1.7.0",

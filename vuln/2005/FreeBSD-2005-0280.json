@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://lists.freedesktop.org/archives/uim/2005-September/001346.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.freedesktop.org/archives/uim/2005-September/001346.html"
         }
     ],
     "schema_version": "1.7.0",

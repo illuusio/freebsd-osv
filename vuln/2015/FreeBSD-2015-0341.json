@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://developer.joomla.org/security-centre/617-20150601-core-open-redirect.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.joomla.org/announcements/release-news/5589-joomla-3-4-2-released.html"
         }
     ],

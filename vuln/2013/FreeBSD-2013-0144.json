@@ -70,10 +70,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://lists.gnupg.org/pipermail/gnupg-announce/2013q3/000329.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://lists.gnupg.org/pipermail/gnupg-announce/2013q3/000330.html"
         }
     ],

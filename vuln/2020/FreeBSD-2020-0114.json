@@ -285,10 +285,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://labs.f-secure.com/advisories/saltstack-authorization-bypass"
-        },
-        {
-            "type": "WEB",
             "url": "https://blog.f-secure.com/new-vulnerabilities-make-exposed-salt-hosts-easy-targets/"
         },
         {

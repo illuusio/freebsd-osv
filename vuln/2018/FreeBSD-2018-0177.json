@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/jcupitt/libvips/releases/tag/v8.6.5"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/jcupitt/libvips/releases/tag/v8.6.5"
         }
     ],
     "schema_version": "1.7.0",

@@ -191,10 +191,6 @@
             "url": "http://www.gotbnc.com/changes.html#2.9.3"
         },
         {
-            "type": "WEB",
-            "url": "http://www.security.nnov.ru/advisories/sockets.asp"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://marc.theaimsgroup.com/?l=bugtraq&m=110660879328901"
         }

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://webtrees.net/blog/2022/06/04/new-webtrees-release-1-7-20.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://webtrees.net/blog/2022/06/04/new-webtrees-release-1-7-20.html"
         }
     ],
     "schema_version": "1.7.0",

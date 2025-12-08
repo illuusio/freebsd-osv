@@ -69,10 +69,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-2192"
-        },
-        {
-            "type": "WEB",
-            "url": "http://curl.haxx.se/docs/adv_20110623.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -42,10 +42,6 @@
             "url": "https://www.nlnetlabs.nl/projects/unbound/security-advisories/#vulnerability-in-parsing-notify-queries"
         },
         {
-            "type": "WEB",
-            "url": "https://www.nlnetlabs.nl/projects/unbound/security-advisories/#vulnerability-in-parsing-notify-queries"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-16866"
         }

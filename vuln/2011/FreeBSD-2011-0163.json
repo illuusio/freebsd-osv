@@ -54,14 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-4782"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security/PMASA-2011-19.php"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security/PMASA-2011-20.php"
         }
     ],
     "schema_version": "1.7.0",

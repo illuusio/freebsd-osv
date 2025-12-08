@@ -61,10 +61,6 @@
             "url": "https://nghttp2.org/blog/2018/04/12/nghttp2-v1-31-1/"
         },
         {
-            "type": "WEB",
-            "url": "https://nghttp2.org/blog/2018/04/12/nghttp2-v1-31-1/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-1000168"
         }

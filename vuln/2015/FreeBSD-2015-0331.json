@@ -43,10 +43,6 @@
             "url": "https://docs.saltstack.com/en/latest/topics/releases/2015.8.1.html"
         },
         {
-            "type": "WEB",
-            "url": "https://docs.saltstack.com/en/latest/topics/releases/2015.8.1.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-6918"
         },

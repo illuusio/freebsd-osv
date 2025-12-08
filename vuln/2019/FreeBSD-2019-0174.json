@@ -39,10 +39,6 @@
         {
             "type": "DISCUSSION",
             "url": "https://marc.info/?l=openbsd-tech&m=156105665713340&w=2"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/slicer69/doas/releases/tag/6.1"
         }
     ],
     "schema_version": "1.7.0",

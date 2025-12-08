@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/vrana/adminer/commit/596f8df373cd3efe5bcb6013858bd7a6bb5ecb2c"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/vrana/adminer/commit/596f8df373cd3efe5bcb6013858bd7a6bb5ecb2c"
         }
     ],
     "schema_version": "1.7.0",

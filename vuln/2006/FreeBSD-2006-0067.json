@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-1258"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/19277"
         }
     ],
     "schema_version": "1.7.0",

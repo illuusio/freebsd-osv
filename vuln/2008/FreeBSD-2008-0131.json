@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "http://groups.google.com/group/trac-announce/browse_thread/thread/67f7a22ec818d97d"
-        },
-        {
-            "type": "WEB",
-            "url": "http://groups.google.com/group/trac-announce/browse_thread/thread/67f7a22ec818d97d"
         }
     ],
     "schema_version": "1.7.0",

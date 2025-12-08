@@ -618,10 +618,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.mozilla.org/projects/security/known-vulnerabilities.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.mozilla.org/security/announce/mfsa2005-45.html"
         },
         {

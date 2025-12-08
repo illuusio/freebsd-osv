@@ -81,10 +81,6 @@
             "url": "https://about.gitlab.com/blog/2019/10/30/security-release-gitlab-12-dot-4-dot-1-released/"
         },
         {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/blog/2019/10/30/security-release-gitlab-12-dot-4-dot-1-released/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-18446"
         },

@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-2168"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.freedesktop.org/archives/dbus/2013-June/015696.html"
         }
     ],
     "schema_version": "1.7.0",

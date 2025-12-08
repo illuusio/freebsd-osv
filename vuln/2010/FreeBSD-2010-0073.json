@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://codeigniter.com/news/codeigniter_1.7.2_security_patch/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.phpframeworks.com/news/p/16365/codeigniter-1-7-2-security-patch"
         }
     ],

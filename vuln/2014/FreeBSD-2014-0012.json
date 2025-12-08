@@ -74,10 +74,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-1474"
-        },
-        {
-            "type": "WEB",
-            "url": "http://blog.bestpractical.com/2014/01/security-vulnerability-in-rt-42.html"
         }
     ],
     "schema_version": "1.7.0",

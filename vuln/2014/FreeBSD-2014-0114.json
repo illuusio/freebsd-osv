@@ -262,10 +262,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://lists.gnu.org/archive/html/bug-bash/2014-09/msg00081.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://seclists.org/oss-sec/2014/q3/690"
         }
     ],

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://drupal.org/files/sa-2006-011/advisory.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://drupal.org/files/sa-2006-011/advisory.txt"
         }
     ],
     "schema_version": "1.7.0",

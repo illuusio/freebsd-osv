@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://pubcookie.org/news/20061106-empty-auth-secadv.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://pubcookie.org/news/20061106-empty-auth-secadv.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.fetchmail.info/fetchmail-SA-2005-03.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://article.gmane.org/gmane.mail.fetchmail.user/7573"
         },
         {

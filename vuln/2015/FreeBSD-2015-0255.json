@@ -48,16 +48,8 @@
             "url": "http://seclists.org/oss-sec/2015/q3/408"
         },
         {
-            "type": "REPORT",
-            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1254242#c0"
-        },
-        {
             "type": "WEB",
             "url": "http://seclists.org/oss-sec/2015/q3/366"
-        },
-        {
-            "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2015/q3/408"
         },
         {
             "type": "ADVISORY",

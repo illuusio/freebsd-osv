@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "http://www.mozilla.org/security/announce/mfsa2005-39.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.mozilla.org/security/announce/mfsa2005-39.html"
         }
     ],
     "schema_version": "1.7.0",

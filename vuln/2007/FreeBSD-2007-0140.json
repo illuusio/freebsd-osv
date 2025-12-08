@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2007-8"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.nth-dimension.org.uk/downloads.php?id=38"
         }
     ],

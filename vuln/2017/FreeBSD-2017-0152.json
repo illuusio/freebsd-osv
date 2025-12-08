@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://www.codeigniter.com/user_guide/changelog.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.codeigniter.com/user_guide/changelog.html"
         }
     ],
     "schema_version": "1.7.0",

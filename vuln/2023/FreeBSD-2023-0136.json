@@ -143,16 +143,8 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-25635"
         },
         {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2020-220"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-25636"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2020-221"
         }
     ],
     "schema_version": "1.7.0",

@@ -61,10 +61,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://libpng.sourceforge.net/ADVISORY-1.4.1.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/38774"
         },
         {

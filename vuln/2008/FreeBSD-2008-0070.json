@@ -67,10 +67,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://lists.freedesktop.org/archives/xorg/2008-June/036026.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/30627/"
         }
     ],

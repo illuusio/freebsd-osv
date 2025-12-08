@@ -92,10 +92,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://xmlsoft.org/news.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2015/11/18/23"
         }
     ],

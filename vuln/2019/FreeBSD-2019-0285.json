@@ -42,10 +42,6 @@
             "url": "http://e2fsprogs.sourceforge.net/e2fsprogs-release.html#1.45.4"
         },
         {
-            "type": "WEB",
-            "url": "http://e2fsprogs.sourceforge.net/e2fsprogs-release.html#1.45.4"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-5094"
         }

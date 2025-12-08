@@ -60,14 +60,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-0136"
-        },
-        {
-            "type": "WEB",
-            "url": "http://drupal.org/files/sa-2007-001/advisory.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://drupal.org/files/sa-2007-002/advisory.txt"
         }
     ],
     "schema_version": "1.7.0",

@@ -64,10 +64,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/17430/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.eeye.com/html/research/advisories/AD20051104.html"
         }
     ],

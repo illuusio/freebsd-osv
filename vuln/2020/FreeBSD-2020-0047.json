@@ -251,10 +251,6 @@
             "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-9402"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-9402"
-        },
-        {
             "type": "WEB",
             "url": "https://www.djangoproject.com/weblog/2020/mar/04/security-releases/"
         },

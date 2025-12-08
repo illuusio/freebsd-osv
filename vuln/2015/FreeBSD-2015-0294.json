@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2015/q3/550"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/uclouvain/openjpeg/issues/563"
         }
     ],

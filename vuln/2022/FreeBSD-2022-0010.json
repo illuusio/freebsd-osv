@@ -332,10 +332,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-21372"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.oracle.com/security-alerts/cpujan2022.html#AppendixMSQL"
         }
     ],
     "schema_version": "1.7.0",

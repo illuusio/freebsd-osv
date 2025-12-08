@@ -74,10 +74,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.securityfocus.com/bid/13541/info"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.gentoo.org/security/en/glsa/glsa-200505-13.xml"
         }
     ],
     "schema_version": "1.7.0",

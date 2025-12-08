@@ -56,10 +56,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=206150"
-        },
-        {
-            "type": "WEB",
-            "url": "http://blog.prosody.im/prosody-0-9-9-security-release/"
         }
     ],
     "schema_version": "1.7.0",

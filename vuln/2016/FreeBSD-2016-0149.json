@@ -95,10 +95,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://php.net/ChangeLog-5.php#5.6.19"
-        },
-        {
-            "type": "WEB",
             "url": "http://php.net/ChangeLog-5.php#5.5.33"
         }
     ],

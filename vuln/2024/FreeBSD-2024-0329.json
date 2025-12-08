@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-54137"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/open-quantum-safe/liboqs/security/advisories/GHSA-gpf4-vrrw-r8v7"
         }
     ],
     "schema_version": "1.7.0",

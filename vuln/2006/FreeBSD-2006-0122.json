@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.securityfocus.com/bid/18744/info"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.webmin.com/security.html"
         }
     ],
     "schema_version": "1.7.0",

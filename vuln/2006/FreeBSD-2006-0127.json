@@ -55,10 +55,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/20992/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://twiki.org/cgi-bin/view/Codev/SecurityAlertSecureFileUploads"
         }
     ],
     "schema_version": "1.7.0",

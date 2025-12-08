@@ -53,10 +53,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-4131"
         },
         {
-            "type": "WEB",
-            "url": "http://rhn.redhat.com/errata/RHSA-2007-0860.html"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=251921"
         }

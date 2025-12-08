@@ -41,10 +41,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-2834"
-        },
-        {
-            "type": "WEB",
-            "url": "http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=593"
         }
     ],
     "schema_version": "1.7.0",

@@ -93,10 +93,6 @@
         {
             "type": "WEB",
             "url": "http://www.adobe.com/support/techdocs/331153.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.idefense.com/application/poi/display?id=161&type=vulnerabilities"
         }
     ],
     "schema_version": "1.7.0",

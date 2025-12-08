@@ -94,10 +94,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://typo3.org/teams/security/security-bulletins/typo3-sa-2009-016/"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/37122/"
         }
     ],

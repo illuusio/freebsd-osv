@@ -57,10 +57,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://lists.typo3.org/pipermail/typo3-announce/2015/000351.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2015-010/"
         },
         {

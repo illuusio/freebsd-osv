@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://blog.bro.org/2018/02/bro-253-released-security-update.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://blog.bro.org/2018/02/bro-253-released-security-update.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -62,10 +62,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://trapkit.de/advisories/TKADV2009-004.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://sourceforge.net/project/shownotes.php?release_id=660071"
         }
     ],

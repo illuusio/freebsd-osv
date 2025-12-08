@@ -79,10 +79,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-4577"
-        },
-        {
-            "type": "WEB",
-            "url": "http://gitorious.org/webkitgtk/stable/blobs/master/WebKit/gtk/NEWS"
         }
     ],
     "schema_version": "1.7.0",

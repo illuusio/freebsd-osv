@@ -59,10 +59,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/24207/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://typo3.org/teams/security/security-bulletins/typo3-20070221-1/"
         }
     ],
     "schema_version": "1.7.0",

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/zeek/zeek/releases/tag/v6.0.1"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/zeek/zeek/releases/tag/v6.0.1"
         }
     ],
     "schema_version": "1.7.0",

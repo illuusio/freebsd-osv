@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://www.courtesan.com/sudo/alerts/bash_functions.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.courtesan.com/sudo/alerts/bash_functions.html"
         }
     ],
     "schema_version": "1.7.0",

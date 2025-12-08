@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CAN-2005-4238"
-        },
-        {
-            "type": "WEB",
-            "url": "http://pridels.blogspot.com/2005/12/mantis-bugtracking-system-xss-vuln.html"
         }
     ],
     "schema_version": "1.7.0",

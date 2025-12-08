@@ -548,10 +548,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/16869/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.mozilla.org/security/announce/mfsa2005-59.html"
         }
     ],

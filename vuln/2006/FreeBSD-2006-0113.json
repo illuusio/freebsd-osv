@@ -45,10 +45,6 @@
             "url": "http://secunia.com/advisories/20369"
         },
         {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/20369"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-2802"
         },

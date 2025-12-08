@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "http://blog.checkpoint.com/2017/05/23/hacked-in-translation/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://blog.checkpoint.com/2017/05/23/hacked-in-translation/"
         }
     ],
     "schema_version": "1.7.0",

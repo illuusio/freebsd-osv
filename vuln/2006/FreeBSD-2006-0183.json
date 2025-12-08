@@ -51,10 +51,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.stevenroddis.com.au/2006/10/06/torrentflux-user-agent-xss-vulnerability/"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/22293/"
         }
     ],

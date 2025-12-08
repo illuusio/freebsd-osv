@@ -51,10 +51,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-0295"
-        },
-        {
-            "type": "WEB",
-            "url": "http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2010_01.txt"
         }
     ],
     "schema_version": "1.7.0",

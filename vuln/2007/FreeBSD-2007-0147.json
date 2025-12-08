@@ -49,14 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-6036"
-        },
-        {
-            "type": "WEB",
-            "url": "http://aluigi.altervista.org/adv/live555x-adv.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.live555.com/liveMedia/public/changelog.txt"
         }
     ],
     "schema_version": "1.7.0",

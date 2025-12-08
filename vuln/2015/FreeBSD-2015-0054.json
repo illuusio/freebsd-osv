@@ -45,10 +45,6 @@
             "url": "http://blog.nodejs.org/2015/03/14/node-v0-10-37-stable"
         },
         {
-            "type": "WEB",
-            "url": "http://blog.nodejs.org/2015/03/14/node-v0-10-37-stable"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=198861"
         },

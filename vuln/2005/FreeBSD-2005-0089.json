@@ -510,10 +510,6 @@
             "url": "http://www.mozilla.org/security/announce/mfsa2005-28.html"
         },
         {
-            "type": "WEB",
-            "url": "http://www.mozilla.org/security/announce/mfsa2005-28.html"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=281284"
         }

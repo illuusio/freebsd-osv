@@ -64,10 +64,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-45682"
-        },
-        {
-            "type": "WEB",
-            "url": "https://securitylab.github.com/advisories/GHSL-2023-145_GHSL-2023-151_stb_image_h/"
         }
     ],
     "schema_version": "1.7.0",

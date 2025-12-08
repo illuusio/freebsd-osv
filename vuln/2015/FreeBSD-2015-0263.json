@@ -88,10 +88,6 @@
             "url": "http://www.openssh.com/txt/release-7.0"
         },
         {
-            "type": "WEB",
-            "url": "http://www.openssh.com/txt/release-7.0"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-6563"
         },

@@ -42,10 +42,6 @@
             "url": "http://mailman.nginx.org/pipermail/unit/2019-February/000112.html"
         },
         {
-            "type": "WEB",
-            "url": "http://mailman.nginx.org/pipermail/unit/2019-February/000112.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-7401"
         }

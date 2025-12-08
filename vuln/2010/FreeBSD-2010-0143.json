@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-4521"
-        },
-        {
-            "type": "WEB",
-            "url": "http://drupal.org/node/999380"
         }
     ],
     "schema_version": "1.7.0",

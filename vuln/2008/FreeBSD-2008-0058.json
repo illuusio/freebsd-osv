@@ -87,10 +87,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2008-2004"
         },
         {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/30111/"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://lists.gnu.org/archive/html/qemu-devel/2008-04/msg00675.html"
         }

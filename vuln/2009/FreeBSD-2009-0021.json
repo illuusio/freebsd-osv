@@ -149,10 +149,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/30994"
-        },
-        {
-            "type": "WEB",
             "url": "https://roundup.mplayerhq.hu/roundup/ffmpeg/issue311"
         }
     ],

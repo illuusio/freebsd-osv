@@ -74,10 +74,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.redmine.org/projects/redmine/wiki/Security_Advisories"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2015/11/25/12"
         },
         {

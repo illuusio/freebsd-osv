@@ -130,10 +130,6 @@
         {
             "type": "REPORT",
             "url": "https://www.oracle.com/security-alerts/cpujul2024.html#MySQL"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.oracle.com/security-alerts/cpujul2024.html#MySQL"
         }
     ],
     "schema_version": "1.7.0",

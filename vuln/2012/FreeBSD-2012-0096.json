@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-1004"
-        },
-        {
-            "type": "WEB",
-            "url": "http://foswiki.org/Support/SecurityAlert-CVE-2012-1004"
         }
     ],
     "schema_version": "1.7.0",

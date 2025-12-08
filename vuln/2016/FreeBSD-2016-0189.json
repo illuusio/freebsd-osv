@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2016/04/13/3"
-        },
-        {
-            "type": "WEB",
-            "url": "http://git.savannah.gnu.org/gitweb/?p=libtasn1.git;a=blob_plain;f=NEWS;hb=e9bcdc86b920d72c9cffc2570d14eea2f6365b37"
         }
     ],
     "schema_version": "1.7.0",

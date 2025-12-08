@@ -45,10 +45,6 @@
             "url": "https://sintonen.fi/advisories/gnu-wget-cookie-injection.txt"
         },
         {
-            "type": "WEB",
-            "url": "https://sintonen.fi/advisories/gnu-wget-cookie-injection.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-0494"
         },

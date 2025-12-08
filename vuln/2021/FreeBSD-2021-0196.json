@@ -76,10 +76,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-22239"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2021/08/03/security-release-gitlab-14-1-2-released/"
         }
     ],
     "schema_version": "1.7.0",

@@ -63,10 +63,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://lists.mysql.com/announce/364"
-        },
-        {
-            "type": "WEB",
             "url": "http://lists.mysql.com/announce/365"
         }
     ],

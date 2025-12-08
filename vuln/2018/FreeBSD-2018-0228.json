@@ -76,18 +76,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15882"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/743-20180801-core-hardening-the-inputfilter-for-phar-stubs.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/744-20180802-core-stored-xss-vulnerability-in-the-frontend-profile.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/745-20180803-core-acl-violation-in-custom-fields.html"
         }
     ],
     "schema_version": "1.7.0",

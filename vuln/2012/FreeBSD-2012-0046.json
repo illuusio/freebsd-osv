@@ -55,10 +55,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/48147"
-        },
-        {
-            "type": "WEB",
-            "url": "http://xforce.iss.net/xforce/xfdb/73444"
         }
     ],
     "schema_version": "1.7.0",

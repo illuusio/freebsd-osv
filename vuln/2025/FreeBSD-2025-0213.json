@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-6663"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2025-0007.html"
         }
     ],
     "schema_version": "1.7.0",

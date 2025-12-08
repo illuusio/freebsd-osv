@@ -55,10 +55,6 @@
             "url": "https://access.redhat.com/security/cve/CVE-2015-3279"
         },
         {
-            "type": "WEB",
-            "url": "http://bzr.linuxfoundation.org/loggerhead/openprinting/cups-filters/revision/7365"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://osdir.com/ml/opensource-software-security/2015-07/msg00021.html"
         }

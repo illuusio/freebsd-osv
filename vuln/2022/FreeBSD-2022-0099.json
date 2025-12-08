@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/go-gitea/gitea/pull/19487"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/go-gitea/gitea/pull/19487"
         }
     ],
     "schema_version": "1.7.0",

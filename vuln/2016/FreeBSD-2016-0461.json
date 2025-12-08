@@ -105,10 +105,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2016/q4/413"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/ImageMagick/ImageMagick/issues/296"
         },
         {

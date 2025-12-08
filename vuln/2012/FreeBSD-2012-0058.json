@@ -67,10 +67,6 @@
         {
             "type": "WEB",
             "url": "http://seclists.org/fulldisclosure/2012/Mar/281"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.vsecurity.com/resources/advisory/20120324-1/"
         }
     ],
     "schema_version": "1.7.0",

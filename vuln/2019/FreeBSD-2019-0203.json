@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-10197"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2019-10197.html"
         }
     ],
     "schema_version": "1.7.0",

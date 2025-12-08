@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://us1.samba.org/samba/security/CAN-2006-1059.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/19455/"
         }
     ],

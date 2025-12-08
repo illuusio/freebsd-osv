@@ -121,10 +121,6 @@
             "url": "https://github.com/mozilla/bleach/security/advisories/GHSA-vqhp-cxgc-6wmm"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/mozilla/bleach/security/advisories/GHSA-vqhp-cxgc-6wmm"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1623633"
         },

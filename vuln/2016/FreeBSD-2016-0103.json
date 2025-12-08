@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/vrana/adminer/commit/c990de3b3ee1816afb130bd0e1570577bf54a8e5"
-        },
-        {
-            "type": "WEB",
             "url": "https://sourceforge.net/p/adminer/bugs-and-features/436/"
         }
     ],

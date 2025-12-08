@@ -127,10 +127,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-41281"
-        },
-        {
-            "type": "WEB",
-            "url": "https://matrix.org/blog/2021/11/23/synapse-1-47-1-released"
         }
     ],
     "schema_version": "1.7.0",

@@ -177,10 +177,6 @@
             "url": "https://seclists.org/fulldisclosure/2017/Jul/83"
         },
         {
-            "type": "WEB",
-            "url": "https://seclists.org/fulldisclosure/2017/Jul/83"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-11546"
         },

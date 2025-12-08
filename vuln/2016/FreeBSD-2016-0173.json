@@ -61,14 +61,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=208463"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.squid-cache.org/Advisories/SQUID-2016_3.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.squid-cache.org/Advisories/SQUID-2016_4.txt"
         }
     ],
     "schema_version": "1.7.0",

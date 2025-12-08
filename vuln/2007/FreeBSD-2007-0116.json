@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.digitrustgroup.com/advisories/TDG-advisory071015a.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2007-6"
         }
     ],

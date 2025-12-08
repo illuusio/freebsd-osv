@@ -54,10 +54,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.sec-consult.com/300.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/27458"
         }
     ],

@@ -44,10 +44,6 @@
             "url": "https://www.openssl.org/news/secadv/20161110.txt"
         },
         {
-            "type": "WEB",
-            "url": "https://www.openssl.org/news/secadv/20161110.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-7054"
         },

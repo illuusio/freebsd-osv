@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://www.webmin.com/updates.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.webmin.com/updates.html"
         }
     ],
     "schema_version": "1.7.0",

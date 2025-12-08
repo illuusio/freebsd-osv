@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.hardened-php.net/advisory-012005.php"
-        },
-        {
-            "type": "WEB",
             "url": "http://projects.edgewall.com/trac/wiki/ChangeLog"
         }
     ],

@@ -40,14 +40,6 @@
         {
             "type": "REPORT",
             "url": "http://blog.exodusintel.com/2014/07/23/silverbullets_and_fairytails/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://blog.exodusintel.com/2014/07/23/silverbullets_and_fairytails/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://geti2p.net/en/blog/post/2014/07/26/0.9.14-Release"
         }
     ],
     "schema_version": "1.7.0",

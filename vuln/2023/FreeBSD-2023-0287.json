@@ -55,10 +55,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-4998"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2023/09/18/security-release-gitlab-16-3-4-released/"
         }
     ],
     "schema_version": "1.7.0",

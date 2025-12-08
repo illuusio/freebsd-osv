@@ -44,10 +44,6 @@
             "url": "https://blog.couchdb.org/2018/07/10/cve-2018-8007/"
         },
         {
-            "type": "WEB",
-            "url": "https://blog.couchdb.org/2018/07/10/cve-2018-8007/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-8007"
         },

@@ -71,10 +71,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=215800"
-        },
-        {
-            "type": "WEB",
-            "url": "https://irssi.org/security/irssi_sa_2017_01.txt"
         }
     ],
     "schema_version": "1.7.0",

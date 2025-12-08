@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-28091"
-        },
-        {
-            "type": "WEB",
-            "url": "https://git.entrouvert.org/lasso.git/tree/NEWS?id=v2.7.0"
         }
     ],
     "schema_version": "1.7.0",

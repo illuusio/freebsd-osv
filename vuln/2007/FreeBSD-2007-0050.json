@@ -71,10 +71,6 @@
         {
             "type": "WEB",
             "url": "http://tomcat.apache.org/connectors-doc/news/20070301.html#20070518.1"
-        },
-        {
-            "type": "WEB",
-            "url": "http://tomcat.apache.org/security-jk.html"
         }
     ],
     "schema_version": "1.7.0",

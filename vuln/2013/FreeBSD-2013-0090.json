@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-5650"
-        },
-        {
-            "type": "WEB",
-            "url": "http://mail-archives.apache.org/mod_mbox/couchdb-user/201301.mbox/%3C2FFF2FD7-8EAF-4EBF-AFDA-5AEB6EAC853F@apache.org%3E"
         }
     ],
     "schema_version": "1.7.0",

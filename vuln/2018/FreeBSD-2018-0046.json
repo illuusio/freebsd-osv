@@ -60,22 +60,6 @@
             "url": "https://www.quagga.net/security/Quagga-2018-1975.txt"
         },
         {
-            "type": "WEB",
-            "url": "https://www.quagga.net/security/Quagga-2018-0543.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.quagga.net/security/Quagga-2018-1114.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.quagga.net/security/Quagga-2018-1550.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.quagga.net/security/Quagga-2018-1975.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-5378"
         },

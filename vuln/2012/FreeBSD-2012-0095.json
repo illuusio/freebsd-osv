@@ -65,10 +65,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-3202"
         },
         {
-            "type": "WEB",
-            "url": "http://googlechromereleases.blogspot.com/2012/05/stable-channel-update.html"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2011-3102"
         }

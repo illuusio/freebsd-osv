@@ -179,10 +179,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-15:10.openssl.asc"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.openssl.org/news/secadv_20150611.txt"
         }
     ],
     "schema_version": "1.7.0",

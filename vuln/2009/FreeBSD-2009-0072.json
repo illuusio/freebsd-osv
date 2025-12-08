@@ -93,10 +93,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/34291"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.vupen.com/english/advisories/2009/1065"
         }
     ],
     "schema_version": "1.7.0",

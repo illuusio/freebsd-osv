@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2021-858"
-        },
-        {
-            "type": "WEB",
             "url": "https://osv.dev/vulnerability/GHSA-q4xr-rc97-m4xx"
         }
     ],

@@ -67,10 +67,6 @@
         {
             "type": "WEB",
             "url": "http://www.clamav.net/security/0.88.2.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/19880/"
         }
     ],
     "schema_version": "1.7.0",

@@ -292,10 +292,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-27458"
-        },
-        {
-            "type": "WEB",
-            "url": "https://mariadb.com/kb/en/security/#full-list-of-cves-fixed-in-mariadb"
         }
     ],
     "schema_version": "1.7.0",

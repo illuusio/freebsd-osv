@@ -42,10 +42,6 @@
             "url": "https://kb.isc.org/article/AA-01336"
         },
         {
-            "type": "WEB",
-            "url": "https://kb.isc.org/article/AA-01336"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-8705"
         }

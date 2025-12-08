@@ -136,14 +136,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/27450/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://us1.samba.org/samba/security/CVE-2007-4572.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://us1.samba.org/samba/security/CVE-2007-5398.html"
         }
     ],
     "schema_version": "1.7.0",

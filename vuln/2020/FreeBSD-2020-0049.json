@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://kde.org/info/security/advisory-20200312-1.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "https://kde.org/info/security/advisory-20200312-1.txt"
         }
     ],
     "schema_version": "1.7.0",

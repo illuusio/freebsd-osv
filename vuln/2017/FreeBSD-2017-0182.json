@@ -42,10 +42,6 @@
             "url": "http://seclists.org/oss-sec/2017/q3/304"
         },
         {
-            "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2017/q3/304"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-2885"
         }

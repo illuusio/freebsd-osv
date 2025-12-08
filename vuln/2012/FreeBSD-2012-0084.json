@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "http://blog.nodejs.org/2012/05/07/http-server-security-vulnerability-please-upgrade-to-0-6-17/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://blog.nodejs.org/2012/05/07/http-server-security-vulnerability-please-upgrade-to-0-6-17/"
         }
     ],
     "schema_version": "1.7.0",

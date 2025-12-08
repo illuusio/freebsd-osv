@@ -142,10 +142,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-10868"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2025/09/25/patch-release-gitlab-18-4-1-released/"
         }
     ],
     "schema_version": "1.7.0",

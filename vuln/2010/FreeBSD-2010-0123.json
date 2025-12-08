@@ -54,14 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-4071"
-        },
-        {
-            "type": "WEB",
-            "url": "http://otrs.org/advisory/OSA-2010-02-en/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://otrs.org/advisory/OSA-2010-03-en/"
         }
     ],
     "schema_version": "1.7.0",

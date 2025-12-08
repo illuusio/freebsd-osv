@@ -42,10 +42,6 @@
             "url": "https://www.ruby-lang.org/en/news/2020/03/19/json-dos-cve-2020-10663/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.ruby-lang.org/en/news/2020/03/19/json-dos-cve-2020-10663/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-10663"
         }

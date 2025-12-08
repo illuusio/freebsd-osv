@@ -188,10 +188,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-22025"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/nodejs/node/blob/main/doc/changelogs/CHANGELOG_V20.md#2024-02-14-version-20111-iron-lts-rafaelgss-prepared-by-marco-ippolito"
         }
     ],
     "schema_version": "1.7.0",

@@ -256,10 +256,6 @@
         {
             "type": "REPORT",
             "url": "https://www.phpmyadmin.net/news/2020/3/21/phpmyadmin-495-and-502-are-released/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.phpmyadmin.net/news/2020/3/21/phpmyadmin-495-and-502-are-released/"
         }
     ],
     "schema_version": "1.7.0",

@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.mandriva.com/security/advisories?name=MDKSA-2007:083"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/24839"
         }
     ],

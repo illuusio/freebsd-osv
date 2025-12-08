@@ -149,10 +149,6 @@
         {
             "type": "REPORT",
             "url": "https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://wordpress.org/news/2020/10/wordpress-5-5-2-security-and-maintenance-release/"
         }
     ],
     "schema_version": "1.7.0",

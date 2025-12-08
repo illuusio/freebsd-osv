@@ -54,10 +54,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.elastic.co/community/security"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.elastic.co/blog/elasticsearch-1-6-0-released"
         }
     ],

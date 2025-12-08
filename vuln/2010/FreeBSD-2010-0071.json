@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-2713"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.securityfocus.com/archive/1/512388"
         }
     ],
     "schema_version": "1.7.0",

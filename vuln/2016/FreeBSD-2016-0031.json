@@ -64,10 +64,6 @@
         {
             "type": "WEB",
             "url": "http://roy.marples.name/projects/dhcpcd/info/595883e2a431f65d8fabf33059aa4689cca17403"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2016/01/07/3"
         }
     ],
     "schema_version": "1.7.0",

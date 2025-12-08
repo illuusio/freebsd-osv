@@ -112,10 +112,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-41816"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.ruby-lang.org/en/news/2021/11/24/buffer-overrun-in-cgi-escape_html-cve-2021-41816/"
         }
     ],
     "schema_version": "1.7.0",

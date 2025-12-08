@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-49630"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/icing/mod_h2/releases/tag/v2.0.33"
         }
     ],
     "schema_version": "1.7.0",

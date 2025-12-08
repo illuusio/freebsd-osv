@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/rgrove/sanitize/releases"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/rgrove/sanitize/issues/176"
         },
         {

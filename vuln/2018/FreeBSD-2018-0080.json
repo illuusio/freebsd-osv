@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "http://e2fsprogs.sourceforge.net/e2fsprogs-release.html#1.44.0"
-        },
-        {
-            "type": "WEB",
-            "url": "http://e2fsprogs.sourceforge.net/e2fsprogs-release.html#1.44.0"
         }
     ],
     "schema_version": "1.7.0",

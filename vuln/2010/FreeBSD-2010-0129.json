@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://article.gmane.org/gmane.comp.horde.announce/532"
-        },
-        {
-            "type": "WEB",
             "url": "http://bugs.horde.org/ticket/9357"
         }
     ],

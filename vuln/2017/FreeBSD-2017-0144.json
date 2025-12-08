@@ -69,10 +69,6 @@
             "url": "https://blog.torproject.org/blog/tor-0314-alpha-released-security-update-clients"
         },
         {
-            "type": "WEB",
-            "url": "https://lists.torproject.org/pipermail/tor-announce/2017-June/000133.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-0377"
         }

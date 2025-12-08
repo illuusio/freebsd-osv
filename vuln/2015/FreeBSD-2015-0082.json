@@ -70,10 +70,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-5470"
         },
         {
-            "type": "WEB",
-            "url": "https://doc.powerdns.com/md/security/powerdns-advisory-2015-01/"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://www.openwall.com/lists/oss-security/2015/07/10/8"
         }

@@ -59,14 +59,6 @@
         {
             "type": "REPORT",
             "url": "http://php.net/archive/2017.php#id2017-01-19-3"
-        },
-        {
-            "type": "WEB",
-            "url": "http://php.net/archive/2017.php#id2017-01-19-2"
-        },
-        {
-            "type": "WEB",
-            "url": "http://php.net/archive/2017.php#id2017-01-19-3"
         }
     ],
     "schema_version": "1.7.0",

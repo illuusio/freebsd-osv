@@ -90,10 +90,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/31930/"
-        },
-        {
-            "type": "WEB",
             "url": "http://bugs.proftpd.org/show_bug.cgi?id=3115"
         }
     ],

@@ -42,10 +42,6 @@
             "url": "https://github.com/ganglia/ganglia-web/issues/267"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/ganglia/ganglia-web/issues/267"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-6816"
         }

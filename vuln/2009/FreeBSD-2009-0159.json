@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://www.videolan.org/security/sa0901.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.videolan.org/security/sa0901.html"
         }
     ],
     "schema_version": "1.7.0",

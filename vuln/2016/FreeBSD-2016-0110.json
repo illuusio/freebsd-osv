@@ -62,10 +62,6 @@
             "url": "http://seclists.org/oss-sec/2016/q1/233"
         },
         {
-            "type": "WEB",
-            "url": "http://www.ocert.org/advisories/ocert-2014-012.html"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1173157"
         },
@@ -74,24 +70,12 @@
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1173162"
         },
         {
-            "type": "WEB",
-            "url": "http://www.ocert.org/advisories/ocert-2015-001.html"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1179282"
         },
         {
-            "type": "WEB",
-            "url": "http://www.ocert.org/advisories/ocert-2014-009.html"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1167537"
-        },
-        {
-            "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2016/q1/233"
         },
         {
             "type": "REPORT",

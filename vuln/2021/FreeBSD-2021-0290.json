@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-41244"
-        },
-        {
-            "type": "WEB",
-            "url": "https://grafana.com/blog/2021/11/15/grafana-8.2.4-released-with-security-fixes/"
         }
     ],
     "schema_version": "1.7.0",

@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-43848"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/h2o/h2o/security/advisories/GHSA-f9xw-j925-m4m4"
         }
     ],
     "schema_version": "1.7.0",

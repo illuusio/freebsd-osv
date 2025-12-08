@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://sinatrarb.com/2018/06/09/sinatra-2.0.2-and-2.0.3.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/sinatra/sinatra/blob/master/CHANGELOG.md"
         },
         {

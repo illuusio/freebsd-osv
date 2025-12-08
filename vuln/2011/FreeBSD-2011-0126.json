@@ -69,10 +69,6 @@
             "url": "https://www.adobe.com/support/security/bulletins/apsb11-26.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.adobe.com/support/security/bulletins/apsb11-26.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-2426"
         },

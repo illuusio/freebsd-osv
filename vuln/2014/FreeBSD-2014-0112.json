@@ -77,10 +77,6 @@
             "url": "http://www.squid-cache.org/Advisories/SQUID-2014_3.txt"
         },
         {
-            "type": "WEB",
-            "url": "http://www.squid-cache.org/Advisories/SQUID-2014_3.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-6270"
         }

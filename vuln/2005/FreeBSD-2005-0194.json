@@ -50,10 +50,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.idefense.com/application/poi/display?id=250&type=vulnerabilities&flashstatus=false"
-        },
-        {
-            "type": "WEB",
             "url": "http://service.real.com/help/faq/security/050623_player/EN/"
         }
     ],

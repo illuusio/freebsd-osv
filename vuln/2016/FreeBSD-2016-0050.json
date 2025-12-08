@@ -161,10 +161,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-8158"
-        },
-        {
-            "type": "WEB",
-            "url": "http://support.ntp.org/bin/view/Main/SecurityNotice#January_2016_NTP_4_2_8p6_Securit"
         }
     ],
     "schema_version": "1.7.0",

@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-2725"
-        },
-        {
-            "type": "WEB",
-            "url": "http://seclists.org/fulldisclosure/2011/Oct/351"
         }
     ],
     "schema_version": "1.7.0",

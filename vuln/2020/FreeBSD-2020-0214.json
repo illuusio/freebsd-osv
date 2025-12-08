@@ -45,10 +45,6 @@
             "url": "https://download.samba.org/pub/rsync/NEWS#3.2.0"
         },
         {
-            "type": "WEB",
-            "url": "https://download.samba.org/pub/rsync/NEWS#3.2.0"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-9843"
         },

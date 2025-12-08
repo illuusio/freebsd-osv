@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://drupal.org/files/sa-2006-026/advisory.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://drupal.org/drupal-4.7.4"
         }
     ],

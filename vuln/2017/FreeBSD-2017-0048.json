@@ -86,19 +86,11 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.ffmpeg.org/security.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://chromereleases.googleblog.com/2017/01/stable-channel-update-for-desktop.html"
         },
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-5025"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.ffmpeg.org/security.html"
         },
         {
             "type": "WEB",

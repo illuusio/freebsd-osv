@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://weechat.org/doc/weechat/security/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://weechat.org/doc/weechat/security/"
         }
     ],
     "schema_version": "1.7.0",

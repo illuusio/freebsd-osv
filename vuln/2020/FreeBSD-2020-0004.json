@@ -47,14 +47,6 @@
             "url": "http://e2fsprogs.sourceforge.net/e2fsprogs-release.html#1.45.5"
         },
         {
-            "type": "WEB",
-            "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2019-0973"
-        },
-        {
-            "type": "WEB",
-            "url": "http://e2fsprogs.sourceforge.net/e2fsprogs-release.html#1.45.5"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-5188"
         }

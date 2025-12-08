@@ -42,10 +42,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://hackerone.com/reports/46916"
-        },
-        {
-            "type": "WEB",
             "url": "http://danlec.com/blog/bug-in-sundown-and-redcarpet"
         }
     ],

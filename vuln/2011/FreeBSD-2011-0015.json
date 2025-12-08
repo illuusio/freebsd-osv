@@ -38,10 +38,6 @@
         {
             "type": "REPORT",
             "url": "http://www.daemonology.net/blog/2011-01-18-tarsnap-critical-security-bug.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.daemonology.net/blog/2011-01-18-tarsnap-critical-security-bug.html"
         }
     ],
     "schema_version": "1.7.0",

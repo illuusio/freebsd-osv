@@ -62,10 +62,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2010/01/29/1"
-        },
-        {
-            "type": "WEB",
             "url": "http://xforce.iss.net/xforce/xfdb/56025"
         }
     ],

@@ -44,10 +44,6 @@
             "url": "https://github.com/nodejs/node/commit/805f054cc7791c447dbb960fbf3b179ea05294ac"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/nodejs/node/commit/805f054cc7791c447dbb960fbf3b179ea05294ac"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-0702"
         },

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.php.net/bug.php?id=55439"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugs.php.net/bug.php?id=55439"
         }
     ],
     "schema_version": "1.7.0",

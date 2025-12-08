@@ -142,10 +142,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-3580"
-        },
-        {
-            "type": "WEB",
-            "url": "https://grafana.com/blog/2025/05/23/grafana-security-release-medium-and-high-severity-security-fixes-for-cve-2025-4123-and-cve-2025-3580/"
         }
     ],
     "schema_version": "1.7.0",

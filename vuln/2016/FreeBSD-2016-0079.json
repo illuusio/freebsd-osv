@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://www.dest-unreach.org/socat/contrib/socat-secadv7.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.dest-unreach.org/socat/contrib/socat-secadv7.html"
         }
     ],
     "schema_version": "1.7.0",

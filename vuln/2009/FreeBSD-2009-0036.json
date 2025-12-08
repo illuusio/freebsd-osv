@@ -58,10 +58,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.squid-cache.org/Advisories/SQUID-2009_1.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/33731/"
         }
     ],

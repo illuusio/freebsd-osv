@@ -86,10 +86,6 @@
         {
             "type": "WEB",
             "url": "http://www.remotesensing.org/libtiff/v3.9.4.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.ocert.org/advisories/ocert-2009-012.html"
         }
     ],
     "schema_version": "1.7.0",

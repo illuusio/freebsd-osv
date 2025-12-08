@@ -253,10 +253,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-41164"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.djangoproject.com/weblog/2023/sep/04/security-releases/"
         }
     ],
     "schema_version": "1.7.0",

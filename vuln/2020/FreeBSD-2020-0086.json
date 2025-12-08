@@ -99,10 +99,6 @@
             "url": "https://docs.wagtail.io/en/latest/releases/2.7.2.html"
         },
         {
-            "type": "WEB",
-            "url": "https://docs.wagtail.io/en/latest/releases/2.7.2.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://github.com/advisories/GHSA-v2wc-pfq2-5cm6"
         },

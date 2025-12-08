@@ -52,10 +52,6 @@
         {
             "type": "WEB",
             "url": "https://census-labs.com/news/2016/03/30/kamailio-seas-heap-overflow/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2016/q1/338"
         }
     ],
     "schema_version": "1.7.0",

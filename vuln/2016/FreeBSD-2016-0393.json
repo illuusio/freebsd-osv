@@ -85,10 +85,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://openbsd-archive.7691.n7.nabble.com/mupdf-CVE-2016-6525-amp-CVE-2016-6265-td302904.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://bugs.ghostscript.com/show_bug.cgi?id=696941"
         },
         {

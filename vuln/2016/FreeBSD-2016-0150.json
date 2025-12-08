@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "http://php.net/ChangeLog-7.php#7.0.4"
-        },
-        {
-            "type": "WEB",
-            "url": "http://php.net/ChangeLog-7.php#7.0.4"
         }
     ],
     "schema_version": "1.7.0",

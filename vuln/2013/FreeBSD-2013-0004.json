@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://sourceforge.net/projects/freetype/files/freetype2/2.4.11/README/view"
-        },
-        {
-            "type": "WEB",
-            "url": "http://sourceforge.net/projects/freetype/files/freetype2/2.4.11/README/view"
         }
     ],
     "schema_version": "1.7.0",

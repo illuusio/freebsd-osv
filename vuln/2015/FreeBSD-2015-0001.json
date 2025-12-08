@@ -135,10 +135,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-14:28.file.asc"
-        },
-        {
-            "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2014/q4/1056"
         }
     ],
     "schema_version": "1.7.0",

@@ -54,14 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-3237"
-        },
-        {
-            "type": "WEB",
-            "url": "http://curl.haxx.se/docs/adv_20150617A.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://curl.haxx.se/docs/adv_20150617B.html"
         }
     ],
     "schema_version": "1.7.0",

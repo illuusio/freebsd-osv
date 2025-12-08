@@ -52,10 +52,6 @@
             "url": "http://lists.nongnu.org/archive/html/chicken-announce/2016-12/msg00000.html"
         },
         {
-            "type": "WEB",
-            "url": "http://lists.nongnu.org/archive/html/chicken-announce/2016-08/msg00001.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-6830"
         },

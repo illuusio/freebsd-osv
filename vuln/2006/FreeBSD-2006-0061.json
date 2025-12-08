@@ -65,10 +65,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-1550"
         },
         {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/19469/"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://mail.gnome.org/archives/dia-list/2006-March/msg00149.html"
         }

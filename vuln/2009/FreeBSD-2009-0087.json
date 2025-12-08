@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/34821/"
-        },
-        {
-            "type": "WEB",
             "url": "http://moinmo.in/SecurityFixes"
         }
     ],

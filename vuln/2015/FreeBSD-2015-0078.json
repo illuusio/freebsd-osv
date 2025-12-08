@@ -87,10 +87,6 @@
             "url": "http://php.net/archive/2015.php#id2015-04-16-2"
         },
         {
-            "type": "WEB",
-            "url": "http://php.net/archive/2015.php#id2015-04-16-2"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-9709"
         },

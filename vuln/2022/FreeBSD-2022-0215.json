@@ -88,10 +88,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-3890"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2022/11/stable-channel-update-for-desktop.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -73,14 +73,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2008-4694"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/view/901/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/view/902/"
         }
     ],
     "schema_version": "1.7.0",

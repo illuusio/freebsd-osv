@@ -51,10 +51,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.kb.cert.org/vuls/id/684664"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.mirrorservice.org/sites/download.sourceforge.net/pub/sourceforge/l/li/libpng/libpng-1.2.17-ADVISORY.txt"
         }
     ],
     "schema_version": "1.7.0",

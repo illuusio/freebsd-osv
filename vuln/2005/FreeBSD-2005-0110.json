@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-0665"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.gentoo.org/security/en/glsa/glsa-200503-09.xml"
         }
     ],
     "schema_version": "1.7.0",

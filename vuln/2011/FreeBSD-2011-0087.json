@@ -66,10 +66,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-2110"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.adobe.com/support/security/bulletins/apsb11-18.html"
         }
     ],
     "schema_version": "1.7.0",

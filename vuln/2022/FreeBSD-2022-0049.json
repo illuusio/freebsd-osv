@@ -96,10 +96,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-0489"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2022/02/25/critical-security-release-gitlab-14-8-2-released/"
         }
     ],
     "schema_version": "1.7.0",

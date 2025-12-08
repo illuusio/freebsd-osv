@@ -63,10 +63,6 @@
             "url": "http://mailman.nginx.org/pipermail/nginx/2016-January/049700.html"
         },
         {
-            "type": "WEB",
-            "url": "http://mailman.nginx.org/pipermail/nginx/2016-January/049700.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-0742"
         },

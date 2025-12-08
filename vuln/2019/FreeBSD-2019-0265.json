@@ -42,10 +42,6 @@
             "url": "https://nlnetlabs.nl/projects/unbound/security-advisories/#vulnerability-in-ipsec-module"
         },
         {
-            "type": "WEB",
-            "url": "https://nlnetlabs.nl/projects/unbound/security-advisories/#vulnerability-in-ipsec-module"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-18934"
         }

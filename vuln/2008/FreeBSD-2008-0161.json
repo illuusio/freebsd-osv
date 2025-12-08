@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security/PMASA-2008-10.php"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.milw0rm.com/exploits/7382"
         },
         {

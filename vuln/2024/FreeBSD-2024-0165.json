@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-39321"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/traefik/traefik/security/advisories/GHSA-gxrv-wf35-62w9"
         }
     ],
     "schema_version": "1.7.0",

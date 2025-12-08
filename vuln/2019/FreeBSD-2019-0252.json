@@ -111,18 +111,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-11043"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.php.net/archive/2019.php#2019-10-24-1"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.php.net/archive/2019.php#2019-10-24-2"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.php.net/archive/2019.php#2019-10-24-3"
         }
     ],
     "schema_version": "1.7.0",

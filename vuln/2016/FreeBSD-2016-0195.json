@@ -206,10 +206,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.oracle.com/technetwork/security-advisory/cpuapr2016v3-2985753.html#AppendixMSQL"
-        },
-        {
-            "type": "WEB",
             "url": "https://mariadb.com/kb/en/mariadb/mariadb-5549-release-notes/"
         },
         {

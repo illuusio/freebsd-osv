@@ -53,10 +53,6 @@
         {
             "type": "DISCUSSION",
             "url": "http://www.openwall.com/lists/oss-security/2015/06/26/4"
-        },
-        {
-            "type": "WEB",
-            "url": "http://bzr.linuxfoundation.org/loggerhead/openprinting/cups-filters/revision/7363"
         }
     ],
     "schema_version": "1.7.0",

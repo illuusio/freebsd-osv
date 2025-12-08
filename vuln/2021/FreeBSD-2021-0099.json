@@ -43,10 +43,6 @@
             "url": "http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291"
         },
         {
-            "type": "WEB",
-            "url": "http://maven.apache.org/docs/3.8.1/release-notes.html#cve-2021-26291"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-26291"
         },

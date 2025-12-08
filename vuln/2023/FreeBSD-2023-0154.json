@@ -106,10 +106,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-4376"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2023/05/02/security-release-gitlab-15-11-1-released/"
         }
     ],
     "schema_version": "1.7.0",

@@ -129,10 +129,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-0089"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.python.org/security/PSF-2005-001/"
         }
     ],
     "schema_version": "1.7.0",

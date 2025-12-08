@@ -166,10 +166,6 @@
         {
             "type": "REPORT",
             "url": "https://osv.dev/vulnerability/GHSA-9x8m-2xpf-crp3"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-9x8m-2xpf-crp3"
         }
     ],
     "schema_version": "1.7.0",

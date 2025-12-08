@@ -238,16 +238,8 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-35935"
         },
         {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-cqvq-fvhr-v6hc"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-35991"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-xf83-q765-xm6m"
         }
     ],
     "schema_version": "1.7.0",

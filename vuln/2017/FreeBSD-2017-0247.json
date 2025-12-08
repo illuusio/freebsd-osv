@@ -92,10 +92,6 @@
             "url": "https://www.ffmpeg.org/security.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.ffmpeg.org/security.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-14054"
         },

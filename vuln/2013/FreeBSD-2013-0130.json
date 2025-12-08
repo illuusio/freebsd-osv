@@ -55,10 +55,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-4131"
-        },
-        {
-            "type": "WEB",
-            "url": "http://subversion.apache.org/security/CVE-2013-4131-advisory.txt"
         }
     ],
     "schema_version": "1.7.0",

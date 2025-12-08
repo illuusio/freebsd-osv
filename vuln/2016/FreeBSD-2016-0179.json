@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2016/04/05/2"
-        },
-        {
-            "type": "WEB",
             "url": "https://golang.org/cl/21533"
         }
     ],

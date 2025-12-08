@@ -44,10 +44,6 @@
             "url": "https://gitlab.isc.org/isc-projects/kea/issues"
         },
         {
-            "type": "WEB",
-            "url": "https://gitlab.isc.org/isc-projects/kea/issues"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-6472"
         },

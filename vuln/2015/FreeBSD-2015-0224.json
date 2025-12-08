@@ -182,10 +182,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-1290"
-        },
-        {
-            "type": "WEB",
-            "url": "http://googlechromereleases.blogspot.nl/"
         }
     ],
     "schema_version": "1.7.0",

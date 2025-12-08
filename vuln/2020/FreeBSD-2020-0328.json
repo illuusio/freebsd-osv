@@ -44,10 +44,6 @@
             "url": "https://lists.freedesktop.org/archives/p11-glue/2020-December/000712.html"
         },
         {
-            "type": "WEB",
-            "url": "https://lists.freedesktop.org/archives/p11-glue/2020-December/000712.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-29361"
         },

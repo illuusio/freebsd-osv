@@ -42,10 +42,6 @@
             "url": "https://mail.gnome.org/archives/ftp-release-list/2016-August/msg00123.html"
         },
         {
-            "type": "WEB",
-            "url": "https://mail.gnome.org/archives/ftp-release-list/2016-August/msg00123.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-6855"
         }

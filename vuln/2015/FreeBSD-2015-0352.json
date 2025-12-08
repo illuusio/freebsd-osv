@@ -42,10 +42,6 @@
             "url": "http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-ech-overflow.html"
         },
         {
-            "type": "WEB",
-            "url": "http://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-ech-overflow.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-5309"
         }

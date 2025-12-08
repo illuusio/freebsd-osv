@@ -42,10 +42,6 @@
             "url": "http://www.gnutls.org/security.html#GNUTLS-SA-2015-3"
         },
         {
-            "type": "WEB",
-            "url": "http://www.gnutls.org/security.html#GNUTLS-SA-2015-3"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://seclists.org/oss-sec/2015/q3/308"
         },

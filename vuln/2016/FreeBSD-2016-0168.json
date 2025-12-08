@@ -54,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-3069"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.mercurial-scm.org/pipermail/mercurial/2016-March/049452.html"
         }
     ],
     "schema_version": "1.7.0",

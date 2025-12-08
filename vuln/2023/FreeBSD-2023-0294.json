@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.cve.org/CVERecord?id=CVE-2023-42822"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-2hjx-rm4f-r9hw"
         }
     ],

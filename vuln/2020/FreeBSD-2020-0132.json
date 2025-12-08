@@ -61,10 +61,6 @@
             "url": "https://github.com/nghttp2/nghttp2/security/advisories/GHSA-q5wr-xfw9-q7xr"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/nghttp2/nghttp2/security/advisories/GHSA-q5wr-xfw9-q7xr"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-11080"
         }

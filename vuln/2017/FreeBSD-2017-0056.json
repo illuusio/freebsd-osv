@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://git.musicpd.org/cgit/master/mpd.git/plain/NEWS?h=v0.20.5"
-        },
-        {
-            "type": "WEB",
-            "url": "http://git.musicpd.org/cgit/master/mpd.git/plain/NEWS?h=v0.20.5"
         }
     ],
     "schema_version": "1.7.0",

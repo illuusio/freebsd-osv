@@ -149,10 +149,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-0601"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.wireshark.org/security/wnpa-sec-2009-01.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -125,10 +125,6 @@
             "url": "https://pillow.readthedocs.io/en/stable/releasenotes/6.2.2.html"
         },
         {
-            "type": "WEB",
-            "url": "https://pillow.readthedocs.io/en/stable/releasenotes/6.2.2.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-19911"
         },

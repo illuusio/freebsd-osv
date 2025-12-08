@@ -50,10 +50,6 @@
             "url": "https://www.openwall.com/lists/oss-security/2013/02/22/3"
         },
         {
-            "type": "WEB",
-            "url": "https://blog.hartwork.org/posts/cve-2013-0340-billion-laughs-fixed-in-expat-2-4-0/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-0340"
         }

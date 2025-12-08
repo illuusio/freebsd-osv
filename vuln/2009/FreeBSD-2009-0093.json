@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-1755"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.nlnetlabs.nl/publications/NSD_vulnerability_announcement.html"
         }
     ],
     "schema_version": "1.7.0",

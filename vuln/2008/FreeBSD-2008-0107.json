@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/Advisories/31974/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2008-8"
         }
     ],

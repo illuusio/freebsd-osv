@@ -42,10 +42,6 @@
             "url": "https://www.sudo.ws/alerts/noexec_wordexp.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.sudo.ws/alerts/noexec_wordexp.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-7076"
         }

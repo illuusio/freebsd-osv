@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-4432"
-        },
-        {
-            "type": "WEB",
-            "url": "https://secunia.com/advisories/50654"
         }
     ],
     "schema_version": "1.7.0",

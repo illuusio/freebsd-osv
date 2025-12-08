@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2008-0165"
-        },
-        {
-            "type": "WEB",
-            "url": "http://ikiwiki.info/security/#index31h2"
         }
     ],
     "schema_version": "1.7.0",

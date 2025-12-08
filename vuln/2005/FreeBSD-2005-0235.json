@@ -232,10 +232,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.gentoo.org/security/en/glsa/glsa-200505-07.xml"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.remotesensing.org/libtiff/v3.7.3.html"
         }
     ],

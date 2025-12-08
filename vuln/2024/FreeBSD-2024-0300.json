@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-9632"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.x.org/archives/xorg-announce/2024-October/003545.html"
         }
     ],
     "schema_version": "1.7.0",

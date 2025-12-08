@@ -184,10 +184,6 @@
             "url": "https://www.oracle.com/security-alerts/cpuoct2020.html#AppendixMSQL"
         },
         {
-            "type": "WEB",
-            "url": "https://www.oracle.com/security-alerts/cpuoct2020.html#AppendixMSQL"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-14878"
         },

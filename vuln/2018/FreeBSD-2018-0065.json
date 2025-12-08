@@ -133,10 +133,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-18:02.ntp.asc"
-        },
-        {
-            "type": "WEB",
-            "url": "http://support.ntp.org/bin/view/Main/SecurityNotice#February_2018_ntp_4_2_8p11_NTP_S"
         }
     ],
     "schema_version": "1.7.0",

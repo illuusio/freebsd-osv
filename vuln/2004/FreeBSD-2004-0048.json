@@ -246,10 +246,6 @@
             "url": "http://security.e-matters.de/advisories/012004.txt"
         },
         {
-            "type": "WEB",
-            "url": "http://security.e-matters.de/advisories/012004.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2004-0005"
         },

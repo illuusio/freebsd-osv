@@ -87,10 +87,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-0868"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.postgresql.org/about/news/1377/"
         }
     ],
     "schema_version": "1.7.0",

@@ -46,10 +46,6 @@
         {
             "type": "REPORT",
             "url": "http://weblog.rubyonrails.org/2006/8/10/rails-1-1-6-backports-and-full-disclosure"
-        },
-        {
-            "type": "WEB",
-            "url": "http://weblog.rubyonrails.org/2006/8/10/rails-1-1-6-backports-and-full-disclosure"
         }
     ],
     "schema_version": "1.7.0",

@@ -63,10 +63,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.ruby-lang.org/en/news/2012/10/12/cve-2012-4464-cve-2012-4466/"
-        },
-        {
-            "type": "WEB",
             "url": "https://access.redhat.com/security/cve/CVE-2012-4464/"
         }
     ],

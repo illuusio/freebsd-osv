@@ -166,10 +166,6 @@
         {
             "type": "REPORT",
             "url": "https://osv.dev/vulnerability/GHSA-mfjm-vh54-3f96"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-mfjm-vh54-3f96"
         }
     ],
     "schema_version": "1.7.0",

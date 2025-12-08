@@ -133,10 +133,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.oracle.com/security-alerts/cpujan2021.html#AppendixMSQL"
-        },
-        {
-            "type": "WEB",
             "url": "CVE-2021-2046"
         },
         {

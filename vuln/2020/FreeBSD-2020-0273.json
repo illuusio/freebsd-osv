@@ -107,10 +107,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/matrix-org/synapse/security/advisories/GHSA-3x8c-fmpc-5rmq"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/matrix-org/synapse/releases/tag/v1.21.2"
         },
         {

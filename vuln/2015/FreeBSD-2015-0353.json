@@ -42,10 +42,6 @@
             "url": "https://doc.powerdns.com/md/security/powerdns-advisory-2015-03/"
         },
         {
-            "type": "WEB",
-            "url": "https://doc.powerdns.com/md/security/powerdns-advisory-2015-03/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-5311"
         }

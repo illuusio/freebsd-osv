@@ -39,10 +39,6 @@
         {
             "type": "DISCUSSION",
             "url": "http://www.mail-archive.com/mathopd%40mathopd.org/msg00392.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.mathopd.org/security.html"
         }
     ],
     "schema_version": "1.7.0",

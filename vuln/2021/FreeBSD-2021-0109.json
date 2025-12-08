@@ -43,10 +43,6 @@
             "url": "https://github.com/carrierwaveuploader/carrierwave/blob/master/CHANGELOG.md#132---2021-02-08"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/carrierwaveuploader/carrierwave/blob/master/CHANGELOG.md#132---2021-02-08"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-21288"
         },

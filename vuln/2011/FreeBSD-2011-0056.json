@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-0465"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.freedesktop.org/archives/xorg-announce/2011-April/001636.html"
         }
     ],
     "schema_version": "1.7.0",

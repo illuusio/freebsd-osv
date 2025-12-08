@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://archives.neohapsis.com/archives/fulldisclosure/2012-12/0108.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://nagios.svn.sourceforge.net/viewvc/nagios?view=revision&revision=2547"
         }
     ],

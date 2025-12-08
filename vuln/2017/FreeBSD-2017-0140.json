@@ -95,10 +95,6 @@
             "url": "https://community.openvpn.net/openvpn/wiki/VulnerabilitiesFixedInOpenVPN243"
         },
         {
-            "type": "WEB",
-            "url": "https://community.openvpn.net/openvpn/wiki/VulnerabilitiesFixedInOpenVPN243"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-7508"
         },

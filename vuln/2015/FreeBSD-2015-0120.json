@@ -76,18 +76,6 @@
             "url": "http://w1.fi/security/2015-4/eap-pwd-missing-payload-length-validation.txt"
         },
         {
-            "type": "WEB",
-            "url": "http://w1.fi/security/2015-2/wps-upnp-http-chunked-transfer-encoding.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://w1.fi/security/2015-3/integer-underflow-in-ap-mode-wmm-action-frame.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://w1.fi/security/2015-4/eap-pwd-missing-payload-length-validation.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-4141"
         },

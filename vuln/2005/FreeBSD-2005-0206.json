@@ -89,10 +89,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-1625"
         },
         {
-            "type": "WEB",
-            "url": "http://www.adobe.com/support/techdocs/329083.html"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://marc.theaimsgroup.com/?l=bugtraq&m=112059685332569"
         }

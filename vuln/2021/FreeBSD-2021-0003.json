@@ -104,10 +104,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-21116"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2021/01/stable-channel-update-for-desktop.html"
         }
     ],
     "schema_version": "1.7.0",

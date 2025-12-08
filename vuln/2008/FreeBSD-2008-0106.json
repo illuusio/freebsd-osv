@@ -59,14 +59,6 @@
         {
             "type": "REPORT",
             "url": "http://secunia.com/advisories/31858/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/31912/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/31858/"
         }
     ],
     "schema_version": "1.7.0",

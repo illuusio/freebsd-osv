@@ -54,14 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-51750"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/element-hq/element-web/security/advisories/GHSA-5486-384g-mcx2"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/element-hq/element-web/security/advisories/GHSA-w36j-v56h-q9pc"
         }
     ],
     "schema_version": "1.7.0",

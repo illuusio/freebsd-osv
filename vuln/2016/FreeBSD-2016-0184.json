@@ -90,18 +90,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=208482"
-        },
-        {
-            "type": "WEB",
-            "url": "http://w1.fi/security/2015-6/wpa_supplicant-unauthorized-wnm-sleep-mode-gtk-control.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://w1.fi/security/2015-7/eap-pwd-missing-last-fragment-length-validation.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://w1.fi/security/2015-8/eap-pwd-unexpected-confirm.txt"
         }
     ],
     "schema_version": "1.7.0",

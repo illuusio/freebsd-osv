@@ -122,10 +122,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-9841"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.wikimedia.org/pipermail/mediawiki-announce/2017-November/000216.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -84,10 +84,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://blog.talosintel.com/2016/02/vulnerability-spotlight-libgraphite.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.talosintel.com/reports/TALOS-2016-0061/"
         },
         {

@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-0492"
-        },
-        {
-            "type": "WEB",
-            "url": "http://helpx.adobe.com/security/products/flash-player/apsb14-02.html"
         }
     ],
     "schema_version": "1.7.0",

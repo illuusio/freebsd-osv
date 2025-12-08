@@ -45,10 +45,6 @@
             "url": "https://seclists.org/oss-sec/2018/q3/242"
         },
         {
-            "type": "WEB",
-            "url": "https://seclists.org/oss-sec/2018/q3/242"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-15705"
         },

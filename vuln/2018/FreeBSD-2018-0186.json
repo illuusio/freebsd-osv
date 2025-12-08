@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/mozilla/bleach/blob/v2.1.3/CHANGES"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/mozilla/bleach/blob/v2.1.3/CHANGES"
         }
     ],
     "schema_version": "1.7.0",

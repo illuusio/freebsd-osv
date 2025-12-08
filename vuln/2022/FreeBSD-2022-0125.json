@@ -87,10 +87,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-27776"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/PIPYDRSHXOYW5DB7X755QDNUV5EZWPWB/"
         }
     ],
     "schema_version": "1.7.0",

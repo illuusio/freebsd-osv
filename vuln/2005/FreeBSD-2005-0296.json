@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-3258"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/17271/"
         }
     ],
     "schema_version": "1.7.0",

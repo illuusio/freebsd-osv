@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://www.washington.edu/imap/documentation/RELNOTES.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.sans.org/newsletters/risk/display.php?v=7&i=45#08.45.22"
         }
     ],
     "schema_version": "1.7.0",

@@ -65,10 +65,6 @@
             "url": "https://www.otrs.com/security-advisory-2015-02-scheduler-process-id-file-access/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.otrs.com/security-advisory-2015-02-scheduler-process-id-file-access/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-6842"
         },

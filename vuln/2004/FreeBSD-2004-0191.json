@@ -62,10 +62,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE6-SNMP_core_dump"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.squid-cache.org/Advisories/SQUID-2004_3.txt"
         },
         {

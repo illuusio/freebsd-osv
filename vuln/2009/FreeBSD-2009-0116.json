@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.mozilla.org/security/announce/2009/mfsa2009-41.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.kb.cert.org/vuls/id/443060"
         }
     ],

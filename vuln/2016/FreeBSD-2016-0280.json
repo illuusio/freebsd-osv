@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/atutor/ATutor/releases/tag/atutor_2_2_2"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/atutor/ATutor/releases/tag/atutor_2_2_2"
         }
     ],
     "schema_version": "1.7.0",

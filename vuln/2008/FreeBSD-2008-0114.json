@@ -55,10 +55,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.securityfocus.com/bid/31486/info"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.henlich.de/it-security/mysql-command-line-client-html-injection-vulnerability/"
         }
     ],
     "schema_version": "1.7.0",

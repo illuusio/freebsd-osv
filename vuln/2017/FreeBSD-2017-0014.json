@@ -46,10 +46,6 @@
             "url": "https://github.com/LibVNC/libvncserver/pull/137"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/LibVNC/libvncserver/pull/137"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-9941"
         },

@@ -73,10 +73,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/21937"
-        },
-        {
-            "type": "WEB",
             "url": "http://lists.gnupg.org/pipermail/gnutls-dev/2006-September/001205.html"
         }
     ],

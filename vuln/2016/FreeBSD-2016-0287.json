@@ -44,10 +44,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://xerces.apache.org/xerces-c/secadv/CVE-2016-4463.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2016/05/09/7"
         },
         {

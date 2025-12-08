@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://xforce.iss.net/xforce/alerts/id/180"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.osvdb.org/9116"
         },
         {

@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-13098"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.bouncycastle.org/releasenotes.html"
         }
     ],
     "schema_version": "1.7.0",

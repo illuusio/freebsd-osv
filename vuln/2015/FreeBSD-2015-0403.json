@@ -97,10 +97,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-6791"
-        },
-        {
-            "type": "WEB",
-            "url": "http://googlechromereleases.blogspot.nl/2015/12/stable-channel-update_8.html"
         }
     ],
     "schema_version": "1.7.0",

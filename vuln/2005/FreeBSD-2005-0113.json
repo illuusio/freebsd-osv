@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-0402"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.mozilla.org/security/announce/mfsa2005-31.html"
         }
     ],
     "schema_version": "1.7.0",

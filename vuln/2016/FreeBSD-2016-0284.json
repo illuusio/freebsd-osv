@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-3120"
-        },
-        {
-            "type": "WEB",
-            "url": "http://web.mit.edu/kerberos/krb5-1.14/"
         }
     ],
     "schema_version": "1.7.0",

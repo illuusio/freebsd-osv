@@ -65,10 +65,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-3096"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/ansible/ansible-modules-extras/pull/1941/commits/8c6fe646ee79f5e55361b885b7efed5bec72d4a4"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1322925"
         }

@@ -128,10 +128,6 @@
         {
             "type": "WEB",
             "url": "http://bugs.python.org/issue20246"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1062370"
         }
     ],
     "schema_version": "1.7.0",

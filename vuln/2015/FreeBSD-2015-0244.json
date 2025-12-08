@@ -59,10 +59,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2015/q3/238"
-        },
-        {
-            "type": "WEB",
             "url": "https://forum.froxlor.org/index.php/topic/13054-important-bugfix-release-09332/"
         }
     ],

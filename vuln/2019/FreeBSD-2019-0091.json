@@ -62,10 +62,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.drupal.org/SA-CORE-2019-005"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.drupal.org/SA-CORE-2019-006"
         }
     ],

@@ -109,10 +109,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/19929/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.vuxml.org/freebsd/a8d8713e-dc83-11da-a22b-000c6ec775d9.html"
         }
     ],

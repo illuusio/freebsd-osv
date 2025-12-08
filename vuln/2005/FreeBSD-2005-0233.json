@@ -76,10 +76,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/15870/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.opera.com/freebsd/changelogs/802/"
         }
     ],

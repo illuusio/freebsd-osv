@@ -130,16 +130,8 @@
             "url": "https://www.samba.org/samba/security/CVE-2019-3880.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2018-16860.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-16860"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2019-3880.html"
         },
         {
             "type": "ADVISORY",

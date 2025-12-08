@@ -60,10 +60,6 @@
             "url": "http://www.securityfocus.com/bid/99546"
         },
         {
-            "type": "WEB",
-            "url": "http://www.securityfocus.com/bid/99546"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.suse.com/show_bug.cgi?id=1035283"
         },

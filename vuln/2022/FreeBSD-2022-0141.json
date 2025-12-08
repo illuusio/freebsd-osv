@@ -141,10 +141,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-2534"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2022/07/28/security-release-gitlab-15-2-1-released/"
         }
     ],
     "schema_version": "1.7.0",

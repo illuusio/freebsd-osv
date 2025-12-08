@@ -44,10 +44,6 @@
             "url": "https://code.call-cc.org/releases/4.13.0/NEWS"
         },
         {
-            "type": "WEB",
-            "url": "https://code.call-cc.org/releases/4.13.0/NEWS"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-6949"
         },

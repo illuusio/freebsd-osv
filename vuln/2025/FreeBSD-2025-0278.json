@@ -183,10 +183,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-8901"
-        },
-        {
-            "type": "WEB",
-            "url": "https://code.qt.io/cgit/qt/qtwebengine-chromium.git/log/?h=130-based"
         }
     ],
     "schema_version": "1.7.0",

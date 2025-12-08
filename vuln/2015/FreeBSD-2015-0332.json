@@ -104,10 +104,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://raw.githubusercontent.com/git/git/master/Documentation/RelNotes/2.6.1.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2015/12/11/7"
         }
     ],

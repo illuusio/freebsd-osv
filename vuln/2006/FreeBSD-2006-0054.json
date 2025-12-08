@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://service.real.com/realplayer/security/03162006_player/en/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/19358/"
         }
     ],
     "schema_version": "1.7.0",

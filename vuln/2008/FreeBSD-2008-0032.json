@@ -82,10 +82,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.securityfocus.com/bid/28373/info"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.coresecurity.com/?action=item&id=2206"
         }
     ],
     "schema_version": "1.7.0",

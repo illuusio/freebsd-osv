@@ -85,10 +85,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://nodejs.org/en/blog/vulnerability/june-2018-security-releases/"
-        },
-        {
-            "type": "WEB",
             "url": "https://nghttp2.org/blog/2018/04/12/nghttp2-v1-31-1/"
         },
         {

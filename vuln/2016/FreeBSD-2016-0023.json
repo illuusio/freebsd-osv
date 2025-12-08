@@ -46,10 +46,6 @@
             "url": "http://www.openwall.com/lists/oss-security/2015/09/07/4"
         },
         {
-            "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2015/09/07/4"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=204413"
         },

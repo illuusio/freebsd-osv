@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-5122"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2017/09/stable-channel-update-for-desktop_21.html"
         }
     ],
     "schema_version": "1.7.0",

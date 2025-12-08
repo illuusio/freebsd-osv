@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/38859/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.egroupware.org/Home?category_id=95&item=93"
         }
     ],
     "schema_version": "1.7.0",

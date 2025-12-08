@@ -175,10 +175,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-25:08.openssl.asc"
-        },
-        {
-            "type": "WEB",
-            "url": "https://openssl-library.org/news/secadv/20250930.txt"
         }
     ],
     "schema_version": "1.7.0",

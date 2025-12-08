@@ -54,18 +54,6 @@
             "url": "http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2013_03.txt"
         },
         {
-            "type": "WEB",
-            "url": "http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2013_01.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2013_02.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://download.lighttpd.net/lighttpd/security/lighttpd_sa_2013_03.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-4508"
         },

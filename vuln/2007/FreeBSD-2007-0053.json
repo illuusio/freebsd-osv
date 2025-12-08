@@ -73,10 +73,6 @@
         {
             "type": "REPORT",
             "url": "http://blogsecurity.net/news/news-310507/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://blogsecurity.net/news/news-310507/"
         }
     ],
     "schema_version": "1.7.0",

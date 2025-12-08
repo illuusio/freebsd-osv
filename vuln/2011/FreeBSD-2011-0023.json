@@ -56,10 +56,6 @@
         {
             "type": "WEB",
             "url": "http://svn.wikimedia.org/svnroot/mediawiki/tags/REL1_16_2/phase3/RELEASE-NOTES"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-February/000095.html"
         }
     ],
     "schema_version": "1.7.0",

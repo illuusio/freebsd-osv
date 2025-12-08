@@ -46,10 +46,6 @@
             "url": "http://lists.xymon.com/pipermail/xymon/2016-February/042986.html"
         },
         {
-            "type": "WEB",
-            "url": "http://lists.xymon.com/pipermail/xymon/2016-February/042986.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-2054"
         },

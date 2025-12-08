@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-0438"
-        },
-        {
-            "type": "WEB",
-            "url": "http://otrs.org/advisory/OSA-2010-01-en/"
         }
     ],
     "schema_version": "1.7.0",

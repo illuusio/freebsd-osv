@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-26463"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.strongswan.org/blog/2023/03/02/strongswan-vulnerability-(cve-2023-26463).html"
         }
     ],
     "schema_version": "1.7.0",

@@ -54,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-23916"
-        },
-        {
-            "type": "WEB",
-            "url": "https://curl.se/docs/security.html"
         }
     ],
     "schema_version": "1.7.0",

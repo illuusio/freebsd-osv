@@ -42,10 +42,6 @@
             "url": "https://lists.apache.org/thread.html/58170aeb7a681d462b7fa31cae81110cbb749d2dc83c5736a0bb8370@%3Cdev.zookeeper.apache.org%3E"
         },
         {
-            "type": "WEB",
-            "url": "https://lists.apache.org/thread.html/58170aeb7a681d462b7fa31cae81110cbb749d2dc83c5736a0bb8370@%3Cdev.zookeeper.apache.org%3E"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-5637"
         }

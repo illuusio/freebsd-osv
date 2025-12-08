@@ -46,10 +46,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://sourceforge.net/p/cacti/mailman/message/37000502/"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/Cacti/cacti/blob/release/1.2.12/CHANGELOG"
         },
         {

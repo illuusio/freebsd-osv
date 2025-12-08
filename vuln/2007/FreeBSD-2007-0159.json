@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://www.dovecot.org/list/dovecot-news/2007-December/000057.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.dovecot.org/list/dovecot-news/2007-December/000057.html"
         }
     ],
     "schema_version": "1.7.0",

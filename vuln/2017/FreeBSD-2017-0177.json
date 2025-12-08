@@ -96,10 +96,6 @@
         {
             "type": "REPORT",
             "url": "http://subversion.apache.org/security/CVE-2017-9800-advisory.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://subversion.apache.org/security/CVE-2017-9800-advisory.txt"
         }
     ],
     "schema_version": "1.7.0",

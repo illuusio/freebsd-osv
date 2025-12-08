@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.gentoo.org/security/en/glsa/glsa-200410-01.xml"
-        },
-        {
-            "type": "WEB",
             "url": "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=265904"
         }
     ],

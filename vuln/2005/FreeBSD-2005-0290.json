@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.snort.org/pub-bin/snortnews.cgi#99"
-        },
-        {
-            "type": "WEB",
             "url": "http://xforce.iss.net/xforce/alerts/id/207"
         }
     ],

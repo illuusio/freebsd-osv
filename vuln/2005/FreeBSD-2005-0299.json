@@ -48,10 +48,6 @@
         {
             "type": "DISCUSSION",
             "url": "http://www.securityfocus.com/archive/1/415293/30/0/threaded"
-        },
-        {
-            "type": "WEB",
-            "url": "http://openvpn.net/changelog.html"
         }
     ],
     "schema_version": "1.7.0",

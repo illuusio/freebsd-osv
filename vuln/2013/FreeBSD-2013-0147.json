@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-1435"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.cacti.net/release_notes_0_8_8b.php"
         }
     ],
     "schema_version": "1.7.0",

@@ -102,10 +102,6 @@
         {
             "type": "WEB",
             "url": "http://tomcat.apache.org/security-7.html#Fixed_in_Apache_Tomcat_7.0.73"
-        },
-        {
-            "type": "WEB",
-            "url": "http://tomcat.apache.org/security-8.html#Fixed_in_Apache_Tomcat_8.0.39"
         }
     ],
     "schema_version": "1.7.0",

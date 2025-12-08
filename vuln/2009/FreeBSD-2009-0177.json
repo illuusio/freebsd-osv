@@ -51,10 +51,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://freeradius.org/security.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.milw0rm.com/exploits/9642"
         }
     ],

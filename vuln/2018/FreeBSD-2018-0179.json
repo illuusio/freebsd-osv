@@ -42,10 +42,6 @@
             "url": "https://curl.haxx.se/docs/adv_2018-70a2.html"
         },
         {
-            "type": "WEB",
-            "url": "https://curl.haxx.se/docs/adv_2018-70a2.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-0500"
         }

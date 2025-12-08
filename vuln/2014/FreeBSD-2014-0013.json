@@ -71,14 +71,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-1471"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.otrs.com/security-advisory-2014-02-sql-injection-issue/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.otrs.com/security-advisory-2014-01-csrf-issue-customer-web-interface/"
         }
     ],
     "schema_version": "1.7.0",

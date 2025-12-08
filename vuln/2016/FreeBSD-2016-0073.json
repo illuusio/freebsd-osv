@@ -45,10 +45,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://owncloud.org/blog/owncloud-8-2-2-8-1-5-8-0-10-and-7-0-12-here-with-sharing-ldap-fixes/"
-        },
-        {
-            "type": "WEB",
             "url": "https://owncloud.org/security/advisory/?id=oc-sa-2016-001"
         },
         {

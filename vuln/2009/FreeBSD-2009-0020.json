@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/30765"
-        },
-        {
-            "type": "WEB",
             "url": "http://cgiwrap.sourceforge.net/changes.html"
         }
     ],

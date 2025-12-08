@@ -234,10 +234,6 @@
             "url": "http://www.oracle.com/technetwork/security-advisory/cpuoct2017-3236626.html#AppendixMSQL"
         },
         {
-            "type": "WEB",
-            "url": "http://www.oracle.com/technetwork/security-advisory/cpuoct2017-3236626.html#AppendixMSQL"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-10155"
         },

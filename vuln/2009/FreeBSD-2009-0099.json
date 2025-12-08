@@ -55,10 +55,6 @@
         {
             "type": "WEB",
             "url": "http://www.eggheads.org/news/2009/05/14/35"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/35104/"
         }
     ],
     "schema_version": "1.7.0",

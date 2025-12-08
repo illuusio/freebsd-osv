@@ -81,10 +81,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-0518"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2023/01/31/security-release-gitlab-15-8-1-released/"
         }
     ],
     "schema_version": "1.7.0",

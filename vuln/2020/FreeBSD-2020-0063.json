@@ -73,10 +73,6 @@
         {
             "type": "REPORT",
             "url": "https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-March/000247.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.wikimedia.org/pipermail/mediawiki-announce/2020-March/000247.html"
         }
     ],
     "schema_version": "1.7.0",

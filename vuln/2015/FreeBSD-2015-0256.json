@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.unrealircd.org/txt/unrealsecadvisory.20150816.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://seclists.org/oss-sec/2015/q3/367"
         }
     ],

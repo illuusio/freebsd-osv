@@ -54,10 +54,6 @@
             "url": "http://bugzilla.maptools.org/show_bug.cgi?id=2728"
         },
         {
-            "type": "WEB",
-            "url": "http://www.securityfocus.com/bid/100524"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-13726"
         },

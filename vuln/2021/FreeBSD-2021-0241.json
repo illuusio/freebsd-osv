@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-13920"
-        },
-        {
-            "type": "WEB",
-            "url": "https://help.sonatype.com/repomanager2/release-notes/2020-release-notes#id-2020ReleaseNotes-RepositoryManage"
         }
     ],
     "schema_version": "1.7.0",

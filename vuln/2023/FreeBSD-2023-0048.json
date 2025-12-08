@@ -68,10 +68,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-20052"
-        },
-        {
-            "type": "WEB",
-            "url": "https://blog.clamav.net/2023/02/clamav-01038-01052-and-101-patch.html"
         }
     ],
     "schema_version": "1.7.0",

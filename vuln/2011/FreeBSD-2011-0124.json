@@ -359,10 +359,6 @@
         {
             "type": "REPORT",
             "url": "https://www.djangoproject.com/weblog/2011/sep/09/security-releases-issued/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.djangoproject.com/weblog/2011/sep/09/security-releases-issued/"
         }
     ],
     "schema_version": "1.7.0",

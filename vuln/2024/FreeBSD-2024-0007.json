@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-51714"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.qt.io/blog/security-advisory-potential-integer-overflow-in-qts-http2-implementation"
         }
     ],
     "schema_version": "1.7.0",

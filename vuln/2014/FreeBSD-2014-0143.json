@@ -61,10 +61,6 @@
             "url": "https://www.kde.org/info/security/advisory-20141113-1.txt"
         },
         {
-            "type": "WEB",
-            "url": "https://www.kde.org/info/security/advisory-20141113-1.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-8600"
         }

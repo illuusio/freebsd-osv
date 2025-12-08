@@ -92,10 +92,6 @@
             "url": "http://googlechromereleases.blogspot.nl/2015/04/stable-channel-update_14.html"
         },
         {
-            "type": "WEB",
-            "url": "http://googlechromereleases.blogspot.nl/2015/04/stable-channel-update_14.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-1235"
         },

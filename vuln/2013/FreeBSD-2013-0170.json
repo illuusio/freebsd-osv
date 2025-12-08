@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "http://www.openssh.com/txt/gcmrekey.adv"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.openssh.com/txt/gcmrekey.adv"
         }
     ],
     "schema_version": "1.7.0",

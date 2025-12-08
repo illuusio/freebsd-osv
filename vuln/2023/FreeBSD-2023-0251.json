@@ -224,19 +224,11 @@
         },
         {
             "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2021-140"
-        },
-        {
-            "type": "WEB",
             "url": "https://osv.dev/vulnerability/GHSA-9w8r-397f-prfh"
         },
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-27291"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2021-141"
         },
         {
             "type": "WEB",

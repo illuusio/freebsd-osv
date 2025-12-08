@@ -133,10 +133,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://typo3.org/article/typo3-954-and-8723-security-releases-published/"
-        },
-        {
-            "type": "WEB",
             "url": "https://typo3.org/article/typo3-v8724-lts-released/"
         }
     ],

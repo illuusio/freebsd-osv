@@ -228,10 +228,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/29787"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.mozilla.org/security/announce/2008/mfsa2008-20.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -61,10 +61,6 @@
         {
             "type": "WEB",
             "url": "http://www.rem0te.com/public/images/clamav.pdf"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/16180/"
         }
     ],
     "schema_version": "1.7.0",

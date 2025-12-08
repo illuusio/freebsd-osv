@@ -112,10 +112,6 @@
             "url": "https://www.cvedetails.com/vulnerability-list/vendor_id-1749/Imagemagick.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.cvedetails.com/vulnerability-list/vendor_id-1749/Imagemagick.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-7175"
         },

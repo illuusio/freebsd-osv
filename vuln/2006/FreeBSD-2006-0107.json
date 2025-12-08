@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.hardened-php.net/advisory_042006.119.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://bugs.splitbrain.org/index.php?do=details&id=823"
         },
         {

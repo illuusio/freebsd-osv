@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://dovecot.org/list/dovecot-news/2008-March/000065.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/29295/"
         }
     ],

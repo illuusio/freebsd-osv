@@ -70,10 +70,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2008-0411"
-        },
-        {
-            "type": "WEB",
-            "url": "http://scary.beasts.org/security/CESA-2008-001.html"
         }
     ],
     "schema_version": "1.7.0",

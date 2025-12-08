@@ -62,10 +62,6 @@
         {
             "type": "WEB",
             "url": "http://jvn.jp/jp/JVN%2384091359/index.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/19870/"
         }
     ],
     "schema_version": "1.7.0",

@@ -203,15 +203,7 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.vasco.com/company/press_room/news_archive/2011/news_diginotar_reports_security_incident.aspx"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.mozilla.org/security/announce/2011/mfsa2011-34.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://googleonlinesecurity.blogspot.com/2011/08/update-on-attempted-man-in-middle.html"
         }
     ],
     "schema_version": "1.7.0",

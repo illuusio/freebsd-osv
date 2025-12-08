@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://mx.gw.com/pipermail/file/2014/001553.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://mx.gw.com/pipermail/file/2014/001553.html"
         }
     ],
     "schema_version": "1.7.0",

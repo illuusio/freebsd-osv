@@ -51,10 +51,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-7205"
         },
         {
-            "type": "WEB",
-            "url": "http://sourceforge.net/p/nagios/nagioscore/ci/d97e03f32741a7d851826b03ed73ff4c9612a866/"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1046113"
         }

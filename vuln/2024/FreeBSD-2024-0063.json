@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-1931"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.nlnetlabs.nl/downloads/unbound/CVE-2024-1931.txt"
         }
     ],
     "schema_version": "1.7.0",

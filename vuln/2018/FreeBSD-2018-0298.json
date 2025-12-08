@@ -121,18 +121,6 @@
         {
             "type": "REPORT",
             "url": "https://www.phpmyadmin.net/security/PMASA-2018-8/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.phpmyadmin.net/security/PMASA-2018-6/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.phpmyadmin.net/security/PMASA-2018-7/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.phpmyadmin.net/security/PMASA-2018-8/"
         }
     ],
     "schema_version": "1.7.0",

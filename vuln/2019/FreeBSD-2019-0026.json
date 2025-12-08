@@ -42,10 +42,6 @@
             "url": "https://metacpan.org/source/BPS/Email-Address-List-0.06/Changes"
         },
         {
-            "type": "WEB",
-            "url": "https://metacpan.org/source/BPS/Email-Address-List-0.06/Changes"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-18898"
         }

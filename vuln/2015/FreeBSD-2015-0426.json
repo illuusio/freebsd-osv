@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.inspircd.org/2015/04/16/v2019-released.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/inspircd/inspircd/commit/6058483d9fbc1b904d5ae7cfea47bfcde5c5b559"
         },
         {

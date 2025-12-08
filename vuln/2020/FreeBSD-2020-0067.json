@@ -43,10 +43,6 @@
             "url": "https://downloads.apache.org/httpd/CHANGES_2.4.43"
         },
         {
-            "type": "WEB",
-            "url": "https://downloads.apache.org/httpd/CHANGES_2.4.43"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-1934"
         },

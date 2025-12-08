@@ -107,10 +107,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-5175"
-        },
-        {
-            "type": "WEB",
-            "url": "https://googlechromereleases.blogspot.nl/2016/09/stable-channel-update-for-desktop_13.html"
         }
     ],
     "schema_version": "1.7.0",

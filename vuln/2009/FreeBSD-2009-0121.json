@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-3051"
-        },
-        {
-            "type": "WEB",
-            "url": "http://silcnet.org/docs/changelog/SILC%20Client%201.1.8"
         }
     ],
     "schema_version": "1.7.0",

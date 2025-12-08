@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "https://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2013-6892"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=775682"
         }
     ],
     "schema_version": "1.7.0",

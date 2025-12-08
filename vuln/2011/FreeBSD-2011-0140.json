@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://sourceforge.net/projects/freetype/files/freetype2/2.4.7/README/view"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugzilla.redhat.com/attachment.cgi?id=528829&action=diff"
         }
     ],

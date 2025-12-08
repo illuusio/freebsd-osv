@@ -89,10 +89,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-23493"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/neutrinolabs/xrdp/releases/tag/v0.9.21"
         }
     ],
     "schema_version": "1.7.0",

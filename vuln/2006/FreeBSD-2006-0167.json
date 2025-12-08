@@ -98,10 +98,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/21819/"
-        },
-        {
-            "type": "WEB",
             "url": "http://bugs.splitbrain.org/index.php?do=details&id=906"
         }
     ],

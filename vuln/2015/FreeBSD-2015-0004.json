@@ -176,10 +176,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-0206"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.openssl.org/news/secadv_20150108.txt"
         }
     ],
     "schema_version": "1.7.0",

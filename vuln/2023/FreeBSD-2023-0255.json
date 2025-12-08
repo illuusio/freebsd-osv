@@ -135,10 +135,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-23385"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-cg8c-gc2j-2wf7"
         }
     ],
     "schema_version": "1.7.0",

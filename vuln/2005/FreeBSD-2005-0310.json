@@ -39,10 +39,6 @@
         {
             "type": "WEB",
             "url": "http://www.mamboserver.com/index.php?option=com_content&task=view&id=172&Itemid=1"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/17622/"
         }
     ],
     "schema_version": "1.7.0",

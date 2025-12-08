@@ -133,10 +133,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://legalhackers.com/advisories/MySQL-Exploit-Remote-Root-Code-Execution-Privesc-CVE-2016-6662.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://dev.mysql.com/doc/relnotes/mysql/5.7/en/news-5-7-15.html"
         }
     ],

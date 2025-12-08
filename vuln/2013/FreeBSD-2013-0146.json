@@ -95,10 +95,6 @@
         {
             "type": "WEB",
             "url": "http://downloads.asterisk.org/pub/security/AST-2013-005.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.asterisk.org/security"
         }
     ],
     "schema_version": "1.7.0",

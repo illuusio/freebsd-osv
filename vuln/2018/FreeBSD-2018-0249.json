@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://blog.tox.chat/2018/10/memory-leak-bug-and-new-toxcore-release-fixing-it/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://blog.tox.chat/2018/10/memory-leak-bug-and-new-toxcore-release-fixing-it/"
         }
     ],
     "schema_version": "1.7.0",

@@ -119,10 +119,6 @@
         {
             "type": "WEB",
             "url": "http://support.ntp.org/bin/view/Main/NtpBug2956"
-        },
-        {
-            "type": "WEB",
-            "url": "http://support.ntp.org/bin/view/Main/SecurityNotice#January_2016_NTP_4_2_8p5_Securit"
         }
     ],
     "schema_version": "1.7.0",

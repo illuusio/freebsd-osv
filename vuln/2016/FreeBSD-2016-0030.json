@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "https://tls.mbed.org/tech-updates/releases/mbedtls-2.2.1-2.1.4-1.3.16-and-polarssl.1.2.19-released"
-        },
-        {
-            "type": "WEB",
-            "url": "https://tls.mbed.org/tech-updates/releases/mbedtls-2.2.1-2.1.4-1.3.16-and-polarssl.1.2.19-released"
         }
     ],
     "schema_version": "1.7.0",

@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://git.kernel.org/cgit/fs/ext2/e2fsprogs.git/commit/?id=f66e6ce4"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.ocert.org/advisories/ocert-2015-002.html"
         },
         {

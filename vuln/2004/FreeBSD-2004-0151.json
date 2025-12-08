@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2004-0559"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.webmin.com/changes-1.160.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-12106"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/OpenVPN/openvpn/commit/f1b851dae60eb1e277315dfe6265e3a58660b16a"
         }
     ],
     "schema_version": "1.7.0",

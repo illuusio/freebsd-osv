@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/gogs/gogs/issues/6919"
-        },
-        {
-            "type": "WEB",
             "url": "https://huntr.dev/bounties/34a12146-3a5d-4efc-a0f8-7a3ae04b198d/"
         }
     ],

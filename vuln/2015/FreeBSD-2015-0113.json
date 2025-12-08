@@ -175,10 +175,6 @@
             "url": "https://www.djangoproject.com/weblog/2015/may/20/security-release/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.djangoproject.com/weblog/2015/may/20/security-release/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-3982"
         }

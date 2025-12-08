@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://shibboleth.internet2.edu/secadv/secadv_20171115.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://shibboleth.internet2.edu/secadv/secadv_20171115.txt"
         }
     ],
     "schema_version": "1.7.0",

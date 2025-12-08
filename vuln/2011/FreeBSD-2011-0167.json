@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://support.zabbix.com/browse/ZBX-4015"
-        },
-        {
-            "type": "WEB",
-            "url": "https://support.zabbix.com/browse/ZBX-4015"
         }
     ],
     "schema_version": "1.7.0",

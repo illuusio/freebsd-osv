@@ -76,10 +76,6 @@
         {
             "type": "REPORT",
             "url": "http://gridengine.sunsource.net/project/gridengine/news/SGE60u7_1-announce.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://gridengine.sunsource.net/project/gridengine/news/SGE60u7_1-announce.html"
         }
     ],
     "schema_version": "1.7.0",

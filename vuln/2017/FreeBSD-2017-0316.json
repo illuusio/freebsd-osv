@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2017/q4/339"
-        },
-        {
-            "type": "WEB",
             "url": "https://cgit.freedesktop.org/xorg/lib/libXcursor/commit/?id=4794b5dd34688158fb51a2943032569d3780c4b8"
         },
         {

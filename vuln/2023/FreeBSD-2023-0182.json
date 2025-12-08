@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://shibboleth.net/community/advisories/secadv_20230612.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "https://shibboleth.net/community/advisories/secadv_20230612.txt"
         }
     ],
     "schema_version": "1.7.0",

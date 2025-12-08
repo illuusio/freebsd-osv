@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-0862"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=790940"
         }
     ],
     "schema_version": "1.7.0",

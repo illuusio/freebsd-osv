@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://labs.idefense.com/intelligence/vulnerabilities/display.php?id=658"
-        },
-        {
-            "type": "WEB",
             "url": "http://svn.clamav.net/svn/clamav-devel/trunk/ChangeLog"
         }
     ],

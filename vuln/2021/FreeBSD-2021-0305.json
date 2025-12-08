@@ -107,10 +107,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-44855"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/QEN3EK4JXAVJMJ5GF3GYOAKNJPEKFQYA/"
         }
     ],
     "schema_version": "1.7.0",

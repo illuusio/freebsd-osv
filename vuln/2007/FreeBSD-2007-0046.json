@@ -54,10 +54,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://nvd.nist.gov/nvd.cfm?cvename=CVE-2007-2754"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=240200"
         },
         {

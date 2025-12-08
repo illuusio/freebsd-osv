@@ -119,10 +119,6 @@
             "url": "https://www.postgresql.org/about/news/1878/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.postgresql.org/about/news/1878/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-10915"
         },

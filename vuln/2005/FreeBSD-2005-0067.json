@@ -56,10 +56,6 @@
             "url": "http://www.squid-cache.org/bugs/show_bug.cgi?id=1216"
         },
         {
-            "type": "WEB",
-            "url": "http://www.squid-cache.org/Versions/v2/2.5/bugs/squid-2.5.STABLE7-oversize_reply_headers.patch"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=76967"
         },

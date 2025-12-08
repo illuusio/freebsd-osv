@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-core/5237"
-        },
-        {
-            "type": "WEB",
             "url": "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=315064"
         }
     ],

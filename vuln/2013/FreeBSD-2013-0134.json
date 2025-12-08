@@ -169,10 +169,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-2205"
-        },
-        {
-            "type": "WEB",
-            "url": "https://wordpress.org/news/2013/06/wordpress-3-5-2/"
         }
     ],
     "schema_version": "1.7.0",

@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://mail.gnome.org/archives/ftp-release-list/2011-July/msg00176.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugzilla.gnome.org/show_bug.cgi?id=653258"
         }
     ],

@@ -68,10 +68,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-12382"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2024/12/stable-channel-update-for-desktop_10.html"
         }
     ],
     "schema_version": "1.7.0",

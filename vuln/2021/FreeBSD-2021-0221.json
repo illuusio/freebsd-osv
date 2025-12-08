@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://docs.python.org/3.8/whatsnew/changelog.html#changelog"
-        },
-        {
-            "type": "WEB",
-            "url": "https://docs.python.org/3.8/whatsnew/changelog.html#changelog"
         }
     ],
     "schema_version": "1.7.0",

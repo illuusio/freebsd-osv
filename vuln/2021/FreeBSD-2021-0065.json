@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://marc.info/?l=openbsd-announce&m=161582456312832&w=2"
-        },
-        {
-            "type": "WEB",
             "url": "https://ftp.openbsd.org/pub/OpenBSD/patches/6.8/common/017_libssl.patch.sig"
         }
     ],

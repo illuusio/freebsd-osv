@@ -65,10 +65,6 @@
             "url": "https://www.kb.cert.org/vuls/id/497400"
         },
         {
-            "type": "WEB",
-            "url": "http://www.phpbb.com/support/documents.php?mode=changelog"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://marc.theaimsgroup.com/?l=bugtraq&m=110029415208724"
         },

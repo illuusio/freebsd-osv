@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/minio/minio/security/advisories/GHSA-xr7r-7gpj-5pgp"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/minio/minio/security/advisories/GHSA-xr7r-7gpj-5pgp"
         }
     ],
     "schema_version": "1.7.0",

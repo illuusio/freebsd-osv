@@ -60,10 +60,6 @@
         {
             "type": "REPORT",
             "url": "https://jenkins.io/security/advisory/2018-04-11/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://jenkins.io/security/advisory/2018-04-11/"
         }
     ],
     "schema_version": "1.7.0",

@@ -93,10 +93,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/secunia_research/2005-57/advisory/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/supsearch.dml?index=818"
         }
     ],
     "schema_version": "1.7.0",

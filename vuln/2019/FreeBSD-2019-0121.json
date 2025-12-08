@@ -118,10 +118,6 @@
             "url": "https://www.phpmyadmin.net/security/PMASA-2019-4/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.phpmyadmin.net/security/PMASA-2019-4/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-12616"
         }

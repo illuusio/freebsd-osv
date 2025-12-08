@@ -80,10 +80,6 @@
             "url": "https://nodejs.org/en/blog/vulnerability/oct-2017-dos/"
         },
         {
-            "type": "WEB",
-            "url": "https://nodejs.org/en/blog/vulnerability/oct-2017-dos/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-14919"
         }

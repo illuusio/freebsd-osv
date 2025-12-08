@@ -163,10 +163,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.wireshark.org/docs/relnotes/wireshark-2.0.4.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2016/06/09/4"
         }
     ],

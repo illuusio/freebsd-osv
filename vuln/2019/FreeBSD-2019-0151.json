@@ -73,10 +73,6 @@
         {
             "type": "REPORT",
             "url": "https://lists.tartarus.org/pipermail/putty-announce/2019/000028.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.tartarus.org/pipermail/putty-announce/2019/000028.html"
         }
     ],
     "schema_version": "1.7.0",

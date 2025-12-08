@@ -39,10 +39,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/20746/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.joomla.org/content/view/1510/74/"
         }
     ],
     "schema_version": "1.7.0",

@@ -135,10 +135,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://lists.wikimedia.org/pipermail/mediawiki-announce/2015-August/000179.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://phabricator.wikimedia.org/T106893"
         },
         {

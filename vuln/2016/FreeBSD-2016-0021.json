@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-8373"
-        },
-        {
-            "type": "WEB",
-            "url": "https://kb.isc.org/article/AA-01318/0/CVE-2015-8373-ISC-Kea%3A-unexpected-termination-while-handling-a-malformed-packet.html"
         }
     ],
     "schema_version": "1.7.0",

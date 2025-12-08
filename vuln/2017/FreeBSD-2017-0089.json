@@ -160,10 +160,6 @@
             "url": "http://www.oracle.com/technetwork/security-advisory/cpuapr2017-3236618.html"
         },
         {
-            "type": "WEB",
-            "url": "http://www.oracle.com/technetwork/security-advisory/cpuapr2017-3236618.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-3308"
         },

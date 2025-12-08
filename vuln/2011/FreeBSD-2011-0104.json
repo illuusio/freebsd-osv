@@ -59,10 +59,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-0437"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.debian.org/security/2011/dsa-2179"
         }
     ],
     "schema_version": "1.7.0",

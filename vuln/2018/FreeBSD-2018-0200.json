@@ -42,10 +42,6 @@
             "url": "http://www.graphicsmagick.org/NEWS.html"
         },
         {
-            "type": "WEB",
-            "url": "http://www.graphicsmagick.org/NEWS.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-2317"
         }

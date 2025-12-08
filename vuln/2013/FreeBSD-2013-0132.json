@@ -39,10 +39,6 @@
         {
             "type": "WEB",
             "url": "http://eprint.iacr.org/2013/448"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.gnupg.org/pipermail/gnupg-announce/2013q3/000330.html"
         }
     ],
     "schema_version": "1.7.0",

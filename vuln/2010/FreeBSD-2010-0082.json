@@ -44,10 +44,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=148911"
-        },
-        {
-            "type": "WEB",
-            "url": "http://code.google.com/p/isolate/"
         }
     ],
     "schema_version": "1.7.0",

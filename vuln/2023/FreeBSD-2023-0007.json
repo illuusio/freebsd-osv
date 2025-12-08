@@ -142,10 +142,6 @@
             "url": "https://lists.x.org/archives/xorg-announce/2022-December/003302.html"
         },
         {
-            "type": "WEB",
-            "url": "https://lists.x.org/archives/xorg-announce/2022-December/003302.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-46340"
         },

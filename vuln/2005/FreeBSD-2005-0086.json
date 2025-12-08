@@ -47,14 +47,6 @@
             "url": "http://www.phpbb.com/support/documents.php?mode=changelog"
         },
         {
-            "type": "WEB",
-            "url": "http://www.phpbb.com/support/documents.php?mode=changelog"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.phpbb.com/phpBB/viewtopic.php?f=14&t=265423"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=77943"
         }

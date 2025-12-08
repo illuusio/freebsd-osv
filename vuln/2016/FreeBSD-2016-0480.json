@@ -43,14 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/639-20151206-core-session-hardening.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/640-20151207-core-sql-injection.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.joomla.org/announcements/release-news/5643-joomla-3-4-7.html"
         }
     ],

@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-4506"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.mozilla.org/security/advisories/mfsa2015-101/"
         }
     ],
     "schema_version": "1.7.0",

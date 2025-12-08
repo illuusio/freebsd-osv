@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-35701"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/Cacti/cacti/issues/4022"
         }
     ],
     "schema_version": "1.7.0",

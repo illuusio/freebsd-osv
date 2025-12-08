@@ -142,10 +142,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://bugs.launchpad.net/mailman/+bug/1952384"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.mail-archive.com/mailman-users@python.org/msg73979.html"
         }
     ],

@@ -64,10 +64,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-40438"
-        },
-        {
-            "type": "WEB",
-            "url": "http://httpd.apache.org/security/vulnerabilities_24.html"
         }
     ],
     "schema_version": "1.7.0",

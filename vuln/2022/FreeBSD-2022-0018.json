@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/AcademySoftwareFoundation/openexr/blob/v3.1.4/CHANGES.md#version-314-january-26-2022"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=41416"
         },
         {

@@ -95,10 +95,6 @@
         {
             "type": "REPORT",
             "url": "https://moodle.org/news/#p1408104"
-        },
-        {
-            "type": "WEB",
-            "url": "https://moodle.org/news/#p1408104"
         }
     ],
     "schema_version": "1.7.0",

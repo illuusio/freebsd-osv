@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2014-10-30"
-        },
-        {
-            "type": "WEB",
             "url": "https://wiki.jenkins-ci.org/display/JENKINS/Slave+To+Master+Access+Control"
         },
         {

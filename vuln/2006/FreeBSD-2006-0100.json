@@ -52,10 +52,6 @@
         {
             "type": "WEB",
             "url": "http://myimei.com/security/2006-04-14/copperminephotogallery144-plugininclusionsystemindexphp-remotefileinclusion-attack.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/19665/"
         }
     ],
     "schema_version": "1.7.0",

@@ -111,10 +111,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-4201"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2022/11/30/security-release-gitlab-15-6-1-released/"
         }
     ],
     "schema_version": "1.7.0",

@@ -61,10 +61,6 @@
             "url": "https://virtualmin.com/node/66890"
         },
         {
-            "type": "WEB",
-            "url": "https://virtualmin.com/node/66890"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-15107"
         }

@@ -62,10 +62,6 @@
             "url": "https://blog.clamav.net/2019/08/clamav-01014-security-patch-release-has.html"
         },
         {
-            "type": "WEB",
-            "url": "https://blog.clamav.net/2019/08/clamav-01014-security-patch-release-has.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-12625"
         },

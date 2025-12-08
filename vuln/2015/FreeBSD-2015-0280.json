@@ -42,10 +42,6 @@
             "url": "https://savannah.gnu.org/bugs/?45713"
         },
         {
-            "type": "WEB",
-            "url": "https://savannah.gnu.org/bugs/?45713"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-6806"
         }

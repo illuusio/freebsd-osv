@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://bugs.dokuwiki.org/index.php?do=details&task_id=2136"
-        },
-        {
-            "type": "WEB",
-            "url": "http://bugs.dokuwiki.org/index.php?do=details&task_id=2136"
         }
     ],
     "schema_version": "1.7.0",

@@ -51,10 +51,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-4249"
-        },
-        {
-            "type": "WEB",
-            "url": "http://plone.org/products/plone-hotfix/releases/20061031"
         }
     ],
     "schema_version": "1.7.0",

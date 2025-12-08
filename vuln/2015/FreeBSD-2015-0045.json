@@ -46,10 +46,6 @@
         {
             "type": "REPORT",
             "url": "http://www.mono-project.com/docs/about-mono/vulnerabilities/#tls-bugs"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.mono-project.com/docs/about-mono/vulnerabilities/#tls-bugs"
         }
     ],
     "schema_version": "1.7.0",

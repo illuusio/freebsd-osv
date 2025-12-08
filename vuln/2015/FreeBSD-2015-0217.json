@@ -50,10 +50,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://bugs.exim.org/show_bug.cgi?id=1651"
-        },
-        {
-            "type": "WEB",
             "url": "http://vcs.pcre.org/pcre?view=revision&revision=1571"
         },
         {

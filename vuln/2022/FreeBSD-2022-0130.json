@@ -129,10 +129,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-2097"
-        },
-        {
-            "type": "WEB",
-            "url": "https://nodejs.org/en/blog/vulnerability/july-2022-security-releases/"
         }
     ],
     "schema_version": "1.7.0",

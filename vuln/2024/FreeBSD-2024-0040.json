@@ -212,15 +212,7 @@
         },
         {
             "type": "WEB",
-            "url": "https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2024q1/017430.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://blog.powerdns.com/2024/02/13/powerdns-recursor-4-8-6-4-9-3-5-0-2-released"
-        },
-        {
-            "type": "WEB",
-            "url": "https://nlnetlabs.nl/news/2024/Feb/13/unbound-1.19.1-released/"
         },
         {
             "type": "ADVISORY",

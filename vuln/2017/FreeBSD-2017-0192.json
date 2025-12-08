@@ -73,10 +73,6 @@
         {
             "type": "REPORT",
             "url": "https://www.ruby-lang.org/en/news/2017/08/29/multiple-vulnerabilities-in-rubygems/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.ruby-lang.org/en/news/2017/08/29/multiple-vulnerabilities-in-rubygems/"
         }
     ],
     "schema_version": "1.7.0",

@@ -42,10 +42,6 @@
             "url": "https://webkitgtk.org/security/WSA-2020-0004.html"
         },
         {
-            "type": "WEB",
-            "url": "https://webkitgtk.org/security/WSA-2020-0004.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-11793"
         }

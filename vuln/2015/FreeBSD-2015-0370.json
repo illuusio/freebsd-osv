@@ -81,10 +81,6 @@
         {
             "type": "WEB",
             "url": "https://docs.moodle.org/dev/Moodle_2.8.9_release_notes"
-        },
-        {
-            "type": "WEB",
-            "url": "https://docs.moodle.org/dev/Moodle_2.9.3_release_notes"
         }
     ],
     "schema_version": "1.7.0",

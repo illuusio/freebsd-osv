@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-4360"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developers.google.com/speed/docs/mod_pagespeed/announce-0.10.22.6"
         }
     ],
     "schema_version": "1.7.0",

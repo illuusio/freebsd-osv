@@ -47,10 +47,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=202209"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugs.exim.org/show_bug.cgi?id=1667"
         }
     ],
     "schema_version": "1.7.0",

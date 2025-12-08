@@ -104,10 +104,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-3119"
-        },
-        {
-            "type": "WEB",
-            "url": "http://gitorious.org/webkitgtk/stable/commit/9d07fda89aab7105962d933eef32ca15dda610d8"
         }
     ],
     "schema_version": "1.7.0",

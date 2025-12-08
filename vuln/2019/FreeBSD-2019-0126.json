@@ -48,10 +48,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5439"
-        },
-        {
-            "type": "WEB",
-            "url": "https://hackerone.com/reports/484398"
         }
     ],
     "schema_version": "1.7.0",

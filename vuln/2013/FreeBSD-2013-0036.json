@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://www.ruby-lang.org/en/news/2013/02/22/rexml-dos-2013-02-22/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.ruby-lang.org/en/news/2013/02/22/rexml-dos-2013-02-22/"
         }
     ],
     "schema_version": "1.7.0",

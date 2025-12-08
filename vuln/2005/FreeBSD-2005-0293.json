@@ -104,10 +104,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-3120"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.grok.org.uk/pipermail/full-disclosure/2005-October/038019.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -51,10 +51,6 @@
         {
             "type": "REPORT",
             "url": "https://tls.mbed.org/tech-updates/releases/mbedtls-2.8.0-2.7.2-and-2.1.11-released"
-        },
-        {
-            "type": "WEB",
-            "url": "https://tls.mbed.org/tech-updates/releases/mbedtls-2.8.0-2.7.2-and-2.1.11-released"
         }
     ],
     "schema_version": "1.7.0",

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/eclipse/mosquitto/blob/d5ecd9f5aa98d42e7549eea09a71a23eef241f31/ChangeLog.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/eclipse/mosquitto/blob/d5ecd9f5aa98d42e7549eea09a71a23eef241f31/ChangeLog.txt"
         }
     ],
     "schema_version": "1.7.0",

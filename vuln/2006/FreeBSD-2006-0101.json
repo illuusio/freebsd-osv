@@ -39,10 +39,6 @@
         {
             "type": "WEB",
             "url": "http://sourceforge.net/project/shownotes.php?group_id=89658&release_id=418266"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/20211/"
         }
     ],
     "schema_version": "1.7.0",

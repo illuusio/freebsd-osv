@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-9502"
-        },
-        {
-            "type": "WEB",
-            "url": "https://curl.haxx.se/docs/adv_20170614.html"
         }
     ],
     "schema_version": "1.7.0",

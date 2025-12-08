@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "https://www.djangoproject.com/weblog/2012/dec/10/security/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.djangoproject.com/weblog/2012/dec/10/security/"
         }
     ],
     "schema_version": "1.7.0",

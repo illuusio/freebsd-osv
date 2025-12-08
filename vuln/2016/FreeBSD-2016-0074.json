@@ -42,10 +42,6 @@
             "url": "https://nghttp2.org/blog/2015/12/23/nghttp2-v1-6-0/"
         },
         {
-            "type": "WEB",
-            "url": "https://nghttp2.org/blog/2015/12/23/nghttp2-v1-6-0/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-8659"
         }

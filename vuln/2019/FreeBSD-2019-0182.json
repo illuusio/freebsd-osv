@@ -46,10 +46,6 @@
             "url": "http://www.apache.org/dist/httpd/CHANGES_2.4"
         },
         {
-            "type": "WEB",
-            "url": "http://www.apache.org/dist/httpd/CHANGES_2.4"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-10081"
         },

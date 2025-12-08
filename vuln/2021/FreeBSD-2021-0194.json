@@ -74,10 +74,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-30597"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/search/label/Stable%20updates"
         }
     ],
     "schema_version": "1.7.0",

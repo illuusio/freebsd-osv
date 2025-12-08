@@ -48,10 +48,6 @@
         {
             "type": "DISCUSSION",
             "url": "https://marc.info/?l=oss-security&m=162308719412719"
-        },
-        {
-            "type": "WEB",
-            "url": "https://dino.im/security/cve-2021-33896/"
         }
     ],
     "schema_version": "1.7.0",

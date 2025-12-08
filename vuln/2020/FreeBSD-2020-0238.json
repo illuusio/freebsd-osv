@@ -222,10 +222,6 @@
             "url": "https://docs.djangoproject.com/en/3.0/releases/3.0.10/"
         },
         {
-            "type": "WEB",
-            "url": "https://docs.djangoproject.com/en/3.1/releases/3.1.1/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-24583"
         },

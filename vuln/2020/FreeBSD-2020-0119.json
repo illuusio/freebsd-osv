@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.zabbix.com/rn/rn3.0.31"
-        },
-        {
-            "type": "WEB",
             "url": "https://support.zabbix.com/browse/ZBX-17600"
         }
     ],

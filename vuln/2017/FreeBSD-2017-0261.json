@@ -79,22 +79,6 @@
             "url": "https://www.openoffice.org/security/cves/CVE-2017-12608.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.openoffice.org/security/cves/CVE-2017-3157.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.openoffice.org/security/cves/CVE-2017-9806.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.openoffice.org/security/cves/CVE-2017-12607.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.openoffice.org/security/cves/CVE-2017-12608.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-3157"
         },

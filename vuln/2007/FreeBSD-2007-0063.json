@@ -54,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-3467"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.isecpartners.com/advisories/2007-001-vlc.txt"
         }
     ],
     "schema_version": "1.7.0",

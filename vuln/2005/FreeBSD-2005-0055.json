@@ -49,10 +49,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-0174"
         },
         {
-            "type": "WEB",
-            "url": "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-header_parsing"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://www.kb.cert.org/vuls/id/768702"
         }

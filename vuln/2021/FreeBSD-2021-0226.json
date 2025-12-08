@@ -42,10 +42,6 @@
             "url": "https://lists.sr.ht/~kennylevinsen/seatd-announce/%3CGJ2IZQ.HCKS1J0LSI803%40kl.wtf%3E"
         },
         {
-            "type": "WEB",
-            "url": "https://lists.sr.ht/~kennylevinsen/seatd-announce/%3CGJ2IZQ.HCKS1J0LSI803%40kl.wtf%3E"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-41387"
         }

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://www.bro.org/download/NEWS.bro.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.bro.org/download/NEWS.bro.html"
         }
     ],
     "schema_version": "1.7.0",

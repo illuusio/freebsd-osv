@@ -66,10 +66,6 @@
             "url": "https://about.gitlab.com/blog/2019/12/10/critical-security-release-gitlab-12-5-4-released/"
         },
         {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/blog/2019/12/10/critical-security-release-gitlab-12-5-4-released/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-19628"
         },

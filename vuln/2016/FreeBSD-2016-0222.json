@@ -83,10 +83,6 @@
             "url": "http://mailman.nginx.org/pipermail/nginx-announce/2016/000179.html"
         },
         {
-            "type": "WEB",
-            "url": "http://mailman.nginx.org/pipermail/nginx-announce/2016/000179.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-4450"
         }

@@ -78,10 +78,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-9123"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2024/09/stable-channel-update-for-desktop_24.html"
         }
     ],
     "schema_version": "1.7.0",

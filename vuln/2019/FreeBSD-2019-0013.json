@@ -60,32 +60,16 @@
             "url": "https://developer.joomla.org/security-centre/763-20190104-core-stored-xss-issue-in-the-global-configuration-help-url.html"
         },
         {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/760-00190101-core-stored-xss-in-mod-banners.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-6264"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/761-20190102-core-stored-xss-in-com-contact.html"
         },
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-6261"
         },
         {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/762-20190103-core-stored-xss-issue-in-the-global-configuration-textfilter-settings.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-6263"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/763-20190104-core-stored-xss-issue-in-the-global-configuration-help-url.html"
         },
         {
             "type": "ADVISORY",

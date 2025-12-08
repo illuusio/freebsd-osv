@@ -42,10 +42,6 @@
             "url": "https://www.sudo.ws/alerts/minus_1_uid.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.sudo.ws/alerts/minus_1_uid.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-14287"
         }

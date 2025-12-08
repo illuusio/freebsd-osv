@@ -39,10 +39,6 @@
         {
             "type": "WEB",
             "url": "http://en.securitylab.ru/lab/PT-2013-41"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.phpmyfaq.de/advisory_2013-11-26.php"
         }
     ],
     "schema_version": "1.7.0",

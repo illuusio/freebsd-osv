@@ -42,10 +42,6 @@
             "url": "http://www.openwall.com/lists/oss-security/2015/03/25/1"
         },
         {
-            "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2015/03/25/1"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-2776"
         }

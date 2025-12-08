@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "http://downloads.asterisk.org/pub/security/AST-2012-001.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://downloads.asterisk.org/pub/security/AST-2012-001.html"
         }
     ],
     "schema_version": "1.7.0",

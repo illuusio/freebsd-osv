@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://www.altsci.com/ipsec/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.altsci.com/ipsec/"
         }
     ],
     "schema_version": "1.7.0",

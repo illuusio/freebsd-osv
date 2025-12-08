@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://git.torproject.org/checkout/tor/master/ChangeLog"
-        },
-        {
-            "type": "WEB",
-            "url": "https://git.torproject.org/checkout/tor/master/ChangeLog"
         }
     ],
     "schema_version": "1.7.0",

@@ -52,10 +52,6 @@
         {
             "type": "WEB",
             "url": "http://www.debian.org/security/2006/dsa-1032"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/19633/"
         }
     ],
     "schema_version": "1.7.0",

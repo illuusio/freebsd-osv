@@ -101,10 +101,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-51741"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/redis/redis/security/advisories/GHSA-prpq-rh5h-46g9"
         }
     ],
     "schema_version": "1.7.0",

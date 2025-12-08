@@ -46,10 +46,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://openwall.com/lists/oss-security/2016/06/23/6"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/libarchive/libarchive/issues/521"
         },
         {

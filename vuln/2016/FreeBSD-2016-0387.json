@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://mkvtoolnix.download/doc/ChangeLog"
-        },
-        {
-            "type": "WEB",
-            "url": "https://mkvtoolnix.download/doc/ChangeLog"
         }
     ],
     "schema_version": "1.7.0",

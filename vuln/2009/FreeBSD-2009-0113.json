@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://sourceforge.net/forum/forum.php?forum_id=967583"
-        },
-        {
-            "type": "WEB",
-            "url": "http://sourceforge.net/forum/forum.php?forum_id=967583"
         }
     ],
     "schema_version": "1.7.0",

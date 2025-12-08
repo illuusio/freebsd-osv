@@ -115,10 +115,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://blogs.gentoo.org/ago/2017/04/29/libsndfile-global-buffer-overflow-in-flac_buffer_copy-flac-c/"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/erikd/libsndfile/issues/232"
         },
         {
@@ -131,10 +127,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://blogs.gentoo.org/ago/2017/04/29/libsndfile-invalid-memory-read-in-flac_buffer_copy-flac-c/"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/erikd/libsndfile/issues/231"
         },
         {
@@ -144,10 +136,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-8363"
-        },
-        {
-            "type": "WEB",
-            "url": "https://blogs.gentoo.org/ago/2017/04/29/libsndfile-heap-based-buffer-overflow-in-flac_buffer_copy-flac-c/"
         },
         {
             "type": "WEB",
@@ -164,10 +152,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-8365"
-        },
-        {
-            "type": "WEB",
-            "url": "https://blogs.gentoo.org/ago/2017/04/29/libsndfile-global-buffer-overflow-in-i2les_array-pcm-c/"
         },
         {
             "type": "WEB",
@@ -192,10 +176,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-14634"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/erikd/libsndfile/issues/318"
         },
         {
             "type": "WEB",

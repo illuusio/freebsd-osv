@@ -90,18 +90,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-0423"
-        },
-        {
-            "type": "WEB",
-            "url": "http://pidgin.im/news/security/?id=43"
-        },
-        {
-            "type": "WEB",
-            "url": "http://pidgin.im/news/security/?id=44"
-        },
-        {
-            "type": "WEB",
-            "url": "http://pidgin.im/news/security/?id=45"
         }
     ],
     "schema_version": "1.7.0",

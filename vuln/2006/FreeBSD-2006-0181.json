@@ -161,10 +161,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.hardened-php.net/advisory_092006.133.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/22280/"
         }
     ],

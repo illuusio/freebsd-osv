@@ -69,10 +69,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-9299"
-        },
-        {
-            "type": "WEB",
-            "url": "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2016-11-16"
         }
     ],
     "schema_version": "1.7.0",

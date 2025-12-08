@@ -172,10 +172,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-2519"
-        },
-        {
-            "type": "WEB",
-            "url": "http://support.ntp.org/bin/view/Main/SecurityNotice#April_2016_NTP_4_2_8p7_Security"
         }
     ],
     "schema_version": "1.7.0",

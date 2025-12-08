@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.ruby-lang.org/en/news/2012/10/12/poisoned-NUL-byte-vulnerability/"
-        },
-        {
-            "type": "WEB",
             "url": "https://access.redhat.com/security/cve/CVE-2012-4522/"
         }
     ],

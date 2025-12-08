@@ -72,10 +72,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.andreas-kurtz.de/advisories/AKADV2008-001-v1.0.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.igniterealtime.org/builds/openfire/docs/latest/changelog.html"
         },
         {

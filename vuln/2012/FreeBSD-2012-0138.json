@@ -63,10 +63,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://xforce.iss.net/xforce/xfdb/55903"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/38349"
         },
         {

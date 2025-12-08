@@ -43,10 +43,6 @@
             "url": "https://gitlab.com/federicomenaquintero/bzip2/blob/master/NEWS"
         },
         {
-            "type": "WEB",
-            "url": "https://gitlab.com/federicomenaquintero/bzip2/blob/master/NEWS"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1319648"
         },

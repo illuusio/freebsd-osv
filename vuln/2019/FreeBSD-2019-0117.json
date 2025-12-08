@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "https://www.drupal.org/SA-CORE-2019-007"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.drupal.org/SA-CORE-2019-007"
         }
     ],
     "schema_version": "1.7.0",

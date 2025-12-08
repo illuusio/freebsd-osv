@@ -57,10 +57,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/26618/"
-        },
-        {
-            "type": "WEB",
             "url": "http://tikiwiki.cvs.sourceforge.net/tikiwiki/tiki/changelog.txt?view=markup&pathrev=REL-1-9-8-2"
         }
     ],

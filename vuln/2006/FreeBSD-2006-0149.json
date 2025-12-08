@@ -51,10 +51,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-3125"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.debian.org/security/2006/dsa-1163"
         }
     ],
     "schema_version": "1.7.0",

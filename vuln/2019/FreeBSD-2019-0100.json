@@ -81,10 +81,6 @@
             "url": "https://www.php.net/ChangeLog-7.php"
         },
         {
-            "type": "WEB",
-            "url": "https://www.php.net/ChangeLog-7.php"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-11034"
         },

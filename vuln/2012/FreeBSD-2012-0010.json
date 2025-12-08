@@ -217,10 +217,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.ocert.org/advisories/ocert-2011-003.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.nruns.com/_downloads/advisory28122011.pdf"
         }
     ],

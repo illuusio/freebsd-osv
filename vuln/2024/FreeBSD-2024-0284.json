@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-50336"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/matrix-org/matrix-js-sdk/security/advisories/GHSA-xvg8-m4x3-w6xr"
         }
     ],
     "schema_version": "1.7.0",

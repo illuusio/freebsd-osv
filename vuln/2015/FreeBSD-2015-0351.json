@@ -83,32 +83,16 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-4551"
         },
         {
-            "type": "WEB",
-            "url": "http://www.openoffice.org/security/cves/CVE-2015-4551.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-5212"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.openoffice.org/security/cves/CVE-2015-5212.html"
         },
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-5213"
         },
         {
-            "type": "WEB",
-            "url": "http://www.openoffice.org/security/cves/CVE-2015-5213.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-5214"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.openoffice.org/security/cves/CVE-2015-5214.html"
         }
     ],
     "schema_version": "1.7.0",

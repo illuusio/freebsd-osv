@@ -101,10 +101,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-6387"
         },
         {
-            "type": "WEB",
-            "url": "https://www.openssh.com/security.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-24:04.openssh.asc"
         }

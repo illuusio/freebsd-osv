@@ -42,10 +42,6 @@
             "url": "https://weblog.rubyonrails.org/2020/10/7/Rails-6-0-3-4-has-been-released/"
         },
         {
-            "type": "WEB",
-            "url": "https://weblog.rubyonrails.org/2020/10/7/Rails-6-0-3-4-has-been-released/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-8264"
         }

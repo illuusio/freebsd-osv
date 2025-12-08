@@ -51,10 +51,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.idefense.com/intelligence/vulnerabilities/display.php?id=404"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/19358/"
         }
     ],

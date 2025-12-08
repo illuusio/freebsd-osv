@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.launchpad.net/cloud-init/+bug/1911680"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugs.launchpad.net/cloud-init/+bug/1911680"
         }
     ],
     "schema_version": "1.7.0",

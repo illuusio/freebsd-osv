@@ -46,10 +46,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-1518"
         },
         {
-            "type": "WEB",
-            "url": "http://www.wisec.it/vulns.php?page=8"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://marc.theaimsgroup.com/?l=bugtraq&m=114659633220473"
         },

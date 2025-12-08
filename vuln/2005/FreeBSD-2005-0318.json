@@ -54,10 +54,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://curl.haxx.se/docs/adv_20051207.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.hardened-php.net/advisory_242005.109.html"
         },
         {

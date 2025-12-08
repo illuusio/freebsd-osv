@@ -85,10 +85,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/15411/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.opera.com/freebsd/changelogs/801/#security"
         }
     ],

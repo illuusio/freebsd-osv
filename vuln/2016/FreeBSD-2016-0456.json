@@ -51,10 +51,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=214936"
-        },
-        {
-            "type": "WEB",
-            "url": "https://xenbits.xen.org/xsa/advisory-195.html"
         }
     ],
     "schema_version": "1.7.0",

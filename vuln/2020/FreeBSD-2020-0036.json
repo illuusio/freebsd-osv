@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-02"
-        },
-        {
-            "type": "WEB",
-            "url": "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-02"
         }
     ],
     "schema_version": "1.7.0",

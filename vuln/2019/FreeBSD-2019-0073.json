@@ -47,10 +47,6 @@
             "url": "https://blog.clamav.net/2019/03/clamav-01012-and-01003-patches-have.html"
         },
         {
-            "type": "WEB",
-            "url": "https://blog.clamav.net/2019/03/clamav-01012-and-01003-patches-have.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-1787"
         },

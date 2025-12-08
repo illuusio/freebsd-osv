@@ -75,22 +75,6 @@
         {
             "type": "REPORT",
             "url": "http://developer.joomla.org/security/581-20140304-core-unauthorised-logins.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security/578-20140301-core-sql-injection.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security/579-20140302-core-xss-vulnerability.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security/580-20140303-core-xss-vulnerability.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security/581-20140304-core-unauthorised-logins.html"
         }
     ],
     "schema_version": "1.7.0",

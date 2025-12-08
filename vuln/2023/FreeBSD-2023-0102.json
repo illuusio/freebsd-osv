@@ -70,40 +70,20 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-16224"
         },
         {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2019-236"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-16225"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2019-237"
         },
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-16226"
         },
         {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2019-238"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-16227"
         },
         {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2019-239"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-16228"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2019-240"
         }
     ],
     "schema_version": "1.7.0",

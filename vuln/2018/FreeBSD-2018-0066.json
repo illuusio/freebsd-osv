@@ -89,10 +89,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://secuniaresearch.flexerasoftware.com/secunia_research/2017-13/"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/erikd/libsndfile/commit/f833c53cb596e9e1792949f762e0b33661822748"
         }
     ],

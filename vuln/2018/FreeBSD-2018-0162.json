@@ -44,10 +44,6 @@
             "url": "https://blog.clamav.net/2018/07/clamav-01001-has-been-released.html"
         },
         {
-            "type": "WEB",
-            "url": "https://blog.clamav.net/2018/07/clamav-01001-has-been-released.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-16932"
         },

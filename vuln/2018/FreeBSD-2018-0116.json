@@ -75,10 +75,6 @@
             "url": "https://chromereleases.googleblog.com/2018/04/stable-channel-update-for-desktop.html"
         },
         {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2018/04/stable-channel-update-for-desktop.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-6085"
         },

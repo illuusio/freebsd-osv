@@ -67,10 +67,6 @@
             "url": "https://security.googleblog.com/2017/10/behind-masq-yet-more-dns-and-dhcp.html"
         },
         {
-            "type": "WEB",
-            "url": "https://security.googleblog.com/2017/10/behind-masq-yet-more-dns-and-dhcp.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-14491"
         },

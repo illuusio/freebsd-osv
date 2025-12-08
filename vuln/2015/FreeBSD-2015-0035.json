@@ -42,10 +42,6 @@
             "url": "http://git.kernel.org/cgit/fs/ext2/e2fsprogs.git/commit/?h=maint&id=49d0fe2a14f2a23da2fe299643379b8c1d37df73"
         },
         {
-            "type": "WEB",
-            "url": "http://git.kernel.org/cgit/fs/ext2/e2fsprogs.git/commit/?h=maint&id=49d0fe2a14f2a23da2fe299643379b8c1d37df73"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-1572"
         }

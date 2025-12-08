@@ -835,10 +835,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-3641"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-qhch-g8qr-p497"
         }
     ],
     "schema_version": "1.7.0",

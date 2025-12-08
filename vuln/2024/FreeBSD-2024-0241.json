@@ -73,10 +73,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-47176"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/OpenPrinting/cups-browsed/security/advisories/GHSA-rj88-6mr5-rcw8"
         }
     ],
     "schema_version": "1.7.0",

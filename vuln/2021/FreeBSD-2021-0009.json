@@ -42,10 +42,6 @@
             "url": "https://github.com/dbry/WavPack/blob/733616993d53cc1f9a7ffb88a858447ba51eb0ee/ChangeLog"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/dbry/WavPack/blob/733616993d53cc1f9a7ffb88a858447ba51eb0ee/ChangeLog"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-35738"
         }

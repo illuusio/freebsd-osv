@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.isc.org/software/dhcp/advisories/cve-2010-3611"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.kb.cert.org/vuls/id/102047"
         }
     ],

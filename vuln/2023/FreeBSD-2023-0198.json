@@ -253,10 +253,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-36053"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.djangoproject.com/weblog/2023/jul/03/security-releases/"
         }
     ],
     "schema_version": "1.7.0",

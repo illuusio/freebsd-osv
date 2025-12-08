@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://www.teeworlds.com/?page=news&id=12086"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.teeworlds.com/?page=news&id=12086"
         }
     ],
     "schema_version": "1.7.0",

@@ -95,10 +95,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/jupyter/notebook/blob/master/docs/source/changelog.rst"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-auth-prompt-spoofing.html"
         },
         {

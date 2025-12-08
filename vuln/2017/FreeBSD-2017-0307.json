@@ -206,10 +206,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.wireshark.org/security/"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.wireshark.org/security/wnpa-sec-2017-47.html"
         },
         {

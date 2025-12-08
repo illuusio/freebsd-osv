@@ -52,16 +52,8 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-29157"
         },
         {
-            "type": "WEB",
-            "url": "https://dovecot.org/pipermail/dovecot-news/2021-June/000461.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-33515"
-        },
-        {
-            "type": "WEB",
-            "url": "https://dovecot.org/pipermail/dovecot-news/2021-June/000462.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://ubuntu.com/security/CVE-2021-3541"
-        },
-        {
-            "type": "WEB",
             "url": "https://gitlab.gnome.org/GNOME/libxml2/-/commit/8598060bacada41a0eb09d95c97744ff4e428f8e"
         }
     ],

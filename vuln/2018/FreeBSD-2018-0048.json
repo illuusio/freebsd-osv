@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/hashicorp/consul/issues/3859"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/hashicorp/consul/blob/master/CHANGELOG.md#105-february-7-2018"
         },
         {

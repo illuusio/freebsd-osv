@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/ricochet-im/ricochet/releases/tag/v1.1.2"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/ricochet-im/ricochet/releases/tag/v1.1.2"
         }
     ],
     "schema_version": "1.7.0",

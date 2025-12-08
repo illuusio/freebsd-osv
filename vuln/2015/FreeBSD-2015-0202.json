@@ -73,10 +73,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.php.net/bug.php?id=69768"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugs.php.net/bug.php?id=69768"
         }
     ],
     "schema_version": "1.7.0",

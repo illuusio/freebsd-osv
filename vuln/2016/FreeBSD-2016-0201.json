@@ -171,10 +171,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.openssl.org/news/secadv/20160503.txt"
-        },
-        {
-            "type": "WEB",
             "url": "https://marc.info/?l=openbsd-tech&m=146228598730414"
         },
         {

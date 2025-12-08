@@ -60,10 +60,6 @@
         {
             "type": "REPORT",
             "url": "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2015-02-27"
-        },
-        {
-            "type": "WEB",
-            "url": "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2015-02-27"
         }
     ],
     "schema_version": "1.7.0",

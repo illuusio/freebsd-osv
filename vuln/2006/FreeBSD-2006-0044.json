@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-0024"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.macromedia.com/devnet/security/security_zone/apsb06-03.html"
         }
     ],
     "schema_version": "1.7.0",

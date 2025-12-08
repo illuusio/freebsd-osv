@@ -46,10 +46,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2004-0792"
         },
         {
-            "type": "WEB",
-            "url": "http://samba.org/rsync/#security_aug04"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://lists.samba.org/archive/rsync-announce/2004/000017.html"
         },

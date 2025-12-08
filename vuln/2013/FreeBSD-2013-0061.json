@@ -64,10 +64,6 @@
             "url": "https://community.openvpn.net/openvpn/wiki/SecurityAnnouncement-f375aa67cc"
         },
         {
-            "type": "WEB",
-            "url": "https://community.openvpn.net/openvpn/wiki/SecurityAnnouncement-f375aa67cc"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-2061"
         },

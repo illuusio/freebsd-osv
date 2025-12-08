@@ -90,10 +90,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://bugs.mysql.com/bug.php?id=32167"
-        },
-        {
-            "type": "WEB",
             "url": "http://dev.mysql.com/doc/refman/4.1/en/news-4-1-25.html"
         },
         {

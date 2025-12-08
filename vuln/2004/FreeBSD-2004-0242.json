@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://proxytunnel.sourceforge.net/news.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.gentoo.org/security/en/glsa/glsa-200411-07.xml"
         }
     ],
     "schema_version": "1.7.0",

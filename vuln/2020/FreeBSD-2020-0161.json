@@ -81,10 +81,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://lists.tartarus.org/pipermail/putty-announce/2020/000030.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-dynamic-hostkey-info-leak.html"
         },
         {

@@ -84,10 +84,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-3084"
-        },
-        {
-            "type": "WEB",
-            "url": "https://helpx.adobe.com/security/products/flash-player/apsb17-17.html"
         }
     ],
     "schema_version": "1.7.0",

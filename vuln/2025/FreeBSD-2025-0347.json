@@ -85,10 +85,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-9158"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/bestpractical/rt/releases/tag/rt-6.0.2"
         }
     ],
     "schema_version": "1.7.0",

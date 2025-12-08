@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-1558"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.fetchmail.info/fetchmail-SA-2007-01.txt"
         }
     ],
     "schema_version": "1.7.0",

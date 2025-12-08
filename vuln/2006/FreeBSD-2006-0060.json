@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.osreviews.net/reviews/security/openvpn-print"
-        },
-        {
-            "type": "WEB",
             "url": "http://openvpn.net/changelog.html"
         },
         {

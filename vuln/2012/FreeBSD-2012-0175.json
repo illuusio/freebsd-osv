@@ -51,10 +51,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://secunia.com/advisories/50535/"
-        },
-        {
-            "type": "WEB",
             "url": "http://sourceforge.net/projects/bacula/files/bacula/5.2.11/ReleaseNotes/view"
         }
     ],

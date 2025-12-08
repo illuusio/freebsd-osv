@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.apache.org/dist/httpd/CHANGES_2.2.16"
-        },
-        {
-            "type": "WEB",
             "url": "https://issues.apache.org/bugzilla/show_bug.cgi?id=49246"
         },
         {

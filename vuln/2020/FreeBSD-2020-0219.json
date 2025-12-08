@@ -63,10 +63,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://docs.python.org/release/3.7.9/whatsnew/changelog.html#changelog"
-        },
-        {
-            "type": "WEB",
             "url": "https://docs.python.org/release/3.6.12/whatsnew/changelog.html#changelog"
         },
         {

@@ -72,10 +72,6 @@
         {
             "type": "WEB",
             "url": "http://www.xfce.org/documentation/changelogs/4.4.2"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.gentoo.org/security/en/glsa/glsa-200801-06.xml"
         }
     ],
     "schema_version": "1.7.0",

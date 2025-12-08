@@ -92,10 +92,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.mozilla.org/en-US/security/advisories/mfsa2017-21/#CVE-2017-7805"
-        },
-        {
-            "type": "WEB",
             "url": "https://hg.mozilla.org/projects/nss/rev/2d7b65b72290"
         },
         {

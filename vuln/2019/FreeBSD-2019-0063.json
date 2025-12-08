@@ -53,10 +53,6 @@
             "url": "https://about.gitlab.com/2019/03/20/critical-security-release-gitlab-11-dot-8-dot-3-released/"
         },
         {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/2019/03/20/critical-security-release-gitlab-11-dot-8-dot-3-released/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-9866"
         }

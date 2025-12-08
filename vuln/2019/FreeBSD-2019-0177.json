@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/sparklemotion/nokogiri/releases"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/sparklemotion/nokogiri/issues/1915"
         },
         {

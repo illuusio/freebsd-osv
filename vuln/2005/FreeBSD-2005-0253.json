@@ -181,10 +181,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.hardened-php.net/advisory_142005.66.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.hardened-php.net/advisory_152005.67.html"
         },
         {

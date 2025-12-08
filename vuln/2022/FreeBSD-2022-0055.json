@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://weechat.org/doc/security/WSA-2022-1/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://weechat.org/doc/security/WSA-2022-1/"
         }
     ],
     "schema_version": "1.7.0",

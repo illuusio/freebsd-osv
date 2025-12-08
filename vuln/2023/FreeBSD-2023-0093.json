@@ -172,10 +172,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-28756"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.ruby-lang.org/en/news/2023/03/30/redos-in-time-cve-2023-28756/"
         }
     ],
     "schema_version": "1.7.0",

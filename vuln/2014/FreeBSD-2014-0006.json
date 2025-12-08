@@ -103,10 +103,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-14:02.ntpd.asc"
-        },
-        {
-            "type": "WEB",
-            "url": "http://support.ntp.org/bin/view/Main/SecurityNotice#DRDoS_Amplification_Attack_using"
         }
     ],
     "schema_version": "1.7.0",

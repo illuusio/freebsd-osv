@@ -44,10 +44,6 @@
             "url": "http://blog.talosintel.com/2016/10/memcached-vulnerabilities.html"
         },
         {
-            "type": "WEB",
-            "url": "http://blog.talosintel.com/2016/10/memcached-vulnerabilities.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-8704"
         },

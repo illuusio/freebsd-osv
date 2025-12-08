@@ -140,10 +140,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.php.net/releases/5_2_4.php"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/26642"
         }
     ],

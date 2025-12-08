@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-2059"
-        },
-        {
-            "type": "WEB",
-            "url": "http://git.savannah.gnu.org/cgit/libidn.git/plain/NEWS?id=libidn-1-31"
         }
     ],
     "schema_version": "1.7.0",

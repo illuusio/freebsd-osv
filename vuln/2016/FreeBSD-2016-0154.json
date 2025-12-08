@@ -56,10 +56,6 @@
         {
             "type": "WEB",
             "url": "https://github.com/git/git/commit/34fa79a6cde56d6d428ab0d3160cb094ebad3305"
-        },
-        {
-            "type": "WEB",
-            "url": "https://security-tracker.debian.org/tracker/CVE-2016-2315"
         }
     ],
     "schema_version": "1.7.0",

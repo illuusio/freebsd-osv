@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://lists.schedmd.com/pipermail/slurm-announce/2018/000008.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.schedmd.com/pipermail/slurm-announce/2018/000008.html"
         }
     ],
     "schema_version": "1.7.0",

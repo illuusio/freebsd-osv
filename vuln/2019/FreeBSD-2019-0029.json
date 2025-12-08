@@ -42,10 +42,6 @@
             "url": "https://www.mail-archive.com/dovecot@dovecot.org/msg76117.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.mail-archive.com/dovecot@dovecot.org/msg76117.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-3814"
         }

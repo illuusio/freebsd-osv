@@ -42,10 +42,6 @@
             "url": "http://spamassassin.apache.org/advisories/cve-2007-2873.txt"
         },
         {
-            "type": "WEB",
-            "url": "http://spamassassin.apache.org/advisories/cve-2007-2873.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-2873"
         }

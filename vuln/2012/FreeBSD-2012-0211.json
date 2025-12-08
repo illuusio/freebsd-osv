@@ -57,10 +57,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://weechat.org/security/"
-        },
-        {
-            "type": "WEB",
             "url": "https://savannah.nongnu.org/bugs/?37764"
         }
     ],

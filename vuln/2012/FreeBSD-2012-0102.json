@@ -91,10 +91,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.postgresql.org/about/news/1397/"
-        },
-        {
-            "type": "WEB",
             "url": "http://git.postgresql.org/gitweb/?p=postgresql.git;a=patch;h=932ded2ed51e8333852e370c7a6dad75d9f236f9"
         }
     ],

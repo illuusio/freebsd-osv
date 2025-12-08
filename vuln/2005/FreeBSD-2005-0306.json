@@ -39,10 +39,6 @@
         {
             "type": "WEB",
             "url": "http://www.hardened-php.net/advisory_222005.81.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/17441/"
         }
     ],
     "schema_version": "1.7.0",

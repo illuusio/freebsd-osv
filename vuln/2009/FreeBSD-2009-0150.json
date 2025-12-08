@@ -68,10 +68,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-3697"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security/PMASA-2009-6.php"
         }
     ],
     "schema_version": "1.7.0",

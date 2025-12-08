@@ -130,10 +130,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-16:13.bind.asc"
-        },
-        {
-            "type": "WEB",
-            "url": "https://kb.isc.org/article/AA-01352"
         }
     ],
     "schema_version": "1.7.0",

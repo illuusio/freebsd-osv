@@ -42,10 +42,6 @@
             "url": "https://packetstormsecurity.com/files/138236/Debian-Security-Advisory-3644-1.html"
         },
         {
-            "type": "WEB",
-            "url": "https://packetstormsecurity.com/files/138236/Debian-Security-Advisory-3644-1.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-5384"
         }

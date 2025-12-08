@@ -99,10 +99,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-5869"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.postgresql.org/support/security/CVE-2023-5869/"
         }
     ],
     "schema_version": "1.7.0",

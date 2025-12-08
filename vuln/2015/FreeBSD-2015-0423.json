@@ -42,10 +42,6 @@
             "url": "https://www.phpmyadmin.net/security/PMASA-2015-6/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.phpmyadmin.net/security/PMASA-2015-6/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-8669"
         }

@@ -65,10 +65,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://mail-archives.apache.org/mod_mbox/httpd-announce/201612.mbox/%3C1A097A43-7CCB-4BA1-861F-E0C7EEE83A4B%40apache.org%3E"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/icing/mod_h2/releases/tag/v1.8.3"
         },
         {

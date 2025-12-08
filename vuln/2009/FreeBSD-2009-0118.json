@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/35852/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.kb.cert.org/vuls/id/466161"
         }
     ],

@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "ftp://ftp.hylafax.org/security/CVE-2018-17141.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.x41-dsec.de/lab/advisories/x41-2018-008-hylafax/"
         },
         {

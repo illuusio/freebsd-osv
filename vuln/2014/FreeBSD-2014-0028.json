@@ -50,10 +50,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-0088"
-        },
-        {
-            "type": "WEB",
-            "url": "http://mailman.nginx.org/pipermail/nginx-announce/2014/000132.html"
         }
     ],
     "schema_version": "1.7.0",

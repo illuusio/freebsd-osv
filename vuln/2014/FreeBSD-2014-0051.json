@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-0292"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugs.freedesktop.org/show_bug.cgi?id=60916"
         }
     ],
     "schema_version": "1.7.0",

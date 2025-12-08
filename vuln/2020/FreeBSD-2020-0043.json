@@ -179,10 +179,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-17361"
         },
         {
-            "type": "WEB",
-            "url": "https://docs.saltstack.com/en/latest/topics/releases/2019.2.3.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-17361"
         }

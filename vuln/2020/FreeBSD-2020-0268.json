@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-12086"
-        },
-        {
-            "type": "WEB",
-            "url": "https://docs.payara.fish/community/docs/5.193/security/security-fix-list.html"
         }
     ],
     "schema_version": "1.7.0",

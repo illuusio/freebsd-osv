@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-0005"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.idefense.com/application/poi/display?id=184&type=vulnerabilities"
         }
     ],
     "schema_version": "1.7.0",

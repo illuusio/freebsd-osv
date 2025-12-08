@@ -42,10 +42,6 @@
             "url": "https://groups.google.com/forum/#!topic/ruby-security-ann/8B2iV2tPRSE"
         },
         {
-            "type": "WEB",
-            "url": "https://groups.google.com/forum/#!topic/ruby-security-ann/8B2iV2tPRSE"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-6316"
         }

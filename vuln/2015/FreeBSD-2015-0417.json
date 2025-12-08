@@ -54,10 +54,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2015/12/21/5"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugzilla.redhat.com/1268243"
         }
     ],

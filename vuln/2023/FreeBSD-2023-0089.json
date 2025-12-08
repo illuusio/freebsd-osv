@@ -106,10 +106,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-0466"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.openssl.org/news/secadv/20230328.txt"
         }
     ],
     "schema_version": "1.7.0",

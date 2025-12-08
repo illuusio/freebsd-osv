@@ -69,10 +69,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=505791"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2008/11/17/3"
         }
     ],

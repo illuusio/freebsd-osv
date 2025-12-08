@@ -74,10 +74,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-24577"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/libgit2/libgit2/releases/tag/v1.7.2"
         }
     ],
     "schema_version": "1.7.0",

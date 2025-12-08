@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.gentoo.org/security/en/glsa/glsa-200510-08.xml"
-        },
-        {
-            "type": "WEB",
             "url": "http://xinehq.de/index.php/security/XSA-2005-1"
         }
     ],

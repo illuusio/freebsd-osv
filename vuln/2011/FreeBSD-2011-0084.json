@@ -179,10 +179,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-11:02.bind.asc"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.isc.org/software/bind/advisories/cve-2011-1910"
         }
     ],
     "schema_version": "1.7.0",

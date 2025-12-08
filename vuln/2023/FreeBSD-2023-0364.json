@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://lists.tartarus.org/pipermail/putty-announce/2023/000037.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.openssh.com/txt/release-9.6"
         },
         {

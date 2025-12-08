@@ -55,10 +55,6 @@
         {
             "type": "WEB",
             "url": "https://github.com/rest-client/rest-client/issues/349"
-        },
-        {
-            "type": "WEB",
-            "url": "http://osvdb.org/show/osvdb/117461"
         }
     ],
     "schema_version": "1.7.0",

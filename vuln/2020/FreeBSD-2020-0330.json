@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/jasper-software/jasper/blob/master/NEWS"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/jasper-software/jasper/issues/252"
         }
     ],

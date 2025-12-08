@@ -46,10 +46,6 @@
             "url": "https://github.com/flavorjones/loofah/releases"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/flavorjones/loofah/issues/171"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-15587"
         }

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://gnutls.org/security.html#GNUTLS-SA-2017-4"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gnutls.org/security.html#GNUTLS-SA-2017-4"
         }
     ],
     "schema_version": "1.7.0",

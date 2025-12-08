@@ -97,10 +97,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-9423"
-        },
-        {
-            "type": "WEB",
-            "url": "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2015-001.txt"
         }
     ],
     "schema_version": "1.7.0",

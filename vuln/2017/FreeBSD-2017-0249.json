@@ -44,19 +44,11 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.securityfocus.com/bid/100290"
-        },
-        {
-            "type": "WEB",
             "url": "https://security.gentoo.org/glsa/201709-18"
         },
         {
             "type": "WEB",
             "url": "https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.3_.2F_4.3.1_.282017-08-10.29"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.securityfocus.com/bid/100290"
         },
         {
             "type": "WEB",

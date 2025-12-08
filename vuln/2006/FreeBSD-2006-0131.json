@@ -66,10 +66,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-3458"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.zope.org/Products/Zope/Hotfix-2006-07-05/Hotfix-2006-07-05/view"
         }
     ],
     "schema_version": "1.7.0",

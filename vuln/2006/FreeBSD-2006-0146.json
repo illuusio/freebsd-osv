@@ -77,10 +77,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/21500/"
-        },
-        {
-            "type": "WEB",
             "url": "http://lists.horde.org/archives/announce/2006/000292.html"
         }
     ],

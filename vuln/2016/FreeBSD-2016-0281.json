@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://typo3.org/teams/security/security-bulletins/typo3-core/typo3-core-sa-2016-013/"
-        },
-        {
-            "type": "WEB",
             "url": "https://wiki.typo3.org/TYPO3_CMS_7.6.8"
         },
         {

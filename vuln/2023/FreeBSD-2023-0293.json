@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.cve.org/CVERecord?id=CVE-2023-40184"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-f489-557v-47jq"
         }
     ],

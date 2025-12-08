@@ -46,10 +46,6 @@
         {
             "type": "REPORT",
             "url": "http://www.sympa.org/security_advisories#security_breaches_in_archives_management"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.sympa.org/security_advisories#security_breaches_in_archives_management"
         }
     ],
     "schema_version": "1.7.0",

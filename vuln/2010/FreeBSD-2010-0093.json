@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-2956"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.sudo.ws/sudo/alerts/runas_group.html"
         }
     ],
     "schema_version": "1.7.0",

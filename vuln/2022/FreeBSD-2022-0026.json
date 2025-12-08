@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-23613"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-8h98-h426-xf32"
         }
     ],
     "schema_version": "1.7.0",

@@ -52,10 +52,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-5882"
-        },
-        {
-            "type": "WEB",
-            "url": "http://yuilibrary.com/support/20121030-vulnerability/"
         }
     ],
     "schema_version": "1.7.0",

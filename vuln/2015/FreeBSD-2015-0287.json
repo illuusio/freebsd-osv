@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openldap.org/its/index.cgi/Software%20Bugs?id=8240"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openldap.org/devel/gitweb.cgi?p=openldap.git;a=commit;h=6fe51a9ab04fd28bbc171da3cf12f1c1040d6629"
         },
         {

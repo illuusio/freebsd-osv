@@ -87,10 +87,6 @@
             "url": "http://www.openssh.com/security.html"
         },
         {
-            "type": "WEB",
-            "url": "http://www.openssh.com/security.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-0777"
         },

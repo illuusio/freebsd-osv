@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.ansible.com/security"
-        },
-        {
-            "type": "WEB",
             "url": "https://raw.githubusercontent.com/ansible/ansible/devel/CHANGELOG.md"
         }
     ],

@@ -51,10 +51,6 @@
         {
             "type": "DISCUSSION",
             "url": "http://marc.theaimsgroup.com/?l=vulnwatch&m=110977858619314"
-        },
-        {
-            "type": "WEB",
-            "url": "http://service.real.com/help/faq/security/050224_player/EN/"
         }
     ],
     "schema_version": "1.7.0",

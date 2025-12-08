@@ -69,10 +69,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/29568"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugs.g10code.com/gnupg/issue894"
         }
     ],

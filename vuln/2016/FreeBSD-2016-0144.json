@@ -58,10 +58,6 @@
             "url": "https://www.x41-dsec.de/lab/advisories/x41-2016-001-libotr/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.x41-dsec.de/lab/advisories/x41-2016-001-libotr/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-2851"
         }

@@ -53,10 +53,6 @@
             "url": "http://lists.x.org/archives/xorg-announce/2014-December/002500.html"
         },
         {
-            "type": "WEB",
-            "url": "http://lists.x.org/archives/xorg-announce/2014-December/002500.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-8091"
         },

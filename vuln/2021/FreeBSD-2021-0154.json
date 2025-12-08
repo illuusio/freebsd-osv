@@ -46,10 +46,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-3515"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/2ndQuadrant/pglogical/releases/tag/REL2_3_4"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1954112"
         }

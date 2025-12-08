@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.securityfocus.com/archive/1/507261"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/37053/"
         }
     ],

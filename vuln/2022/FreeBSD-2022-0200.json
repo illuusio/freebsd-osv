@@ -68,10 +68,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-41742"
-        },
-        {
-            "type": "WEB",
-            "url": "https://mailman.nginx.org/archives/list/nginx@nginx.org/thread/F7TMIHDNNU3M52GYS23UWDWW2R2BLVVH/"
         }
     ],
     "schema_version": "1.7.0",

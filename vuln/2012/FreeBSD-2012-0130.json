@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-3424"
-        },
-        {
-            "type": "WEB",
-            "url": "https://groups.google.com/forum/?fromgroups#!topic/rubyonrails-security/vxJjrc15qYM"
         }
     ],
     "schema_version": "1.7.0",

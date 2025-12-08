@@ -104,10 +104,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.samba.org/samba/security/CVE-2008-4314.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/32813/"
         }
     ],

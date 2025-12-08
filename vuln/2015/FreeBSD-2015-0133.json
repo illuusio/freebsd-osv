@@ -40,14 +40,6 @@
         {
             "type": "REPORT",
             "url": "http://www.security-assessment.com/files/documents/advisory/Testdisk%20Check_OS2MB%20Stack%20Buffer%20Overflow%20-%20Release.pdf"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.cgsecurity.org/wiki/TestDisk_7.0_Release"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.security-assessment.com/files/documents/advisory/Testdisk%20Check_OS2MB%20Stack%20Buffer%20Overflow%20-%20Release.pdf"
         }
     ],
     "schema_version": "1.7.0",

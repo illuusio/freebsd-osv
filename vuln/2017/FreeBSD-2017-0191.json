@@ -43,10 +43,6 @@
             "url": "https://kanboard.net/news/version-1.0.46"
         },
         {
-            "type": "WEB",
-            "url": "https://kanboard.net/news/version-1.0.46"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-12850"
         },

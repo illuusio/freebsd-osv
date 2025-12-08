@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://developer.joomla.org/security/news/470-20120601-core-privilege-escalation.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security/news/470-20120601-core-privilege-escalation.html"
         }
     ],
     "schema_version": "1.7.0",

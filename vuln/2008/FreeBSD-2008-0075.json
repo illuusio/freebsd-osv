@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2008-2364"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.apache.org/dist/httpd/Announcement2.2.html"
         }
     ],
     "schema_version": "1.7.0",

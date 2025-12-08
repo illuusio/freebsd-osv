@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://lists.dlitz.net/pipermail/pycrypto/2012q2/000587.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugs.launchpad.net/pycrypto/+bug/985164"
         }
     ],

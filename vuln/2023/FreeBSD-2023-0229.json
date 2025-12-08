@@ -200,10 +200,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-22038"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.oracle.com/security-alerts/cpujul2023.html#AppendixMSQL"
         }
     ],
     "schema_version": "1.7.0",

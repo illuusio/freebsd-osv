@@ -120,10 +120,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-2217"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2013-32"
         }
     ],
     "schema_version": "1.7.0",

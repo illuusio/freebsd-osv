@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://devel.amessage.info/jabberd14/README.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://mail.jabber.org/pipermail/jabberd/2004-September/002004.html"
         }
     ],

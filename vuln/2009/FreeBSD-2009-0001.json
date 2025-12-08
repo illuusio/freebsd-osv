@@ -138,18 +138,6 @@
         {
             "type": "WEB",
             "url": "http://www.rdancer.org/vulnerablevim-netrw.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.rdancer.org/vulnerablevim-netrw.v2.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.rdancer.org/vulnerablevim-netrw.v5.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.rdancer.org/vulnerablevim-netrw-credentials-dis.html"
         }
     ],
     "schema_version": "1.7.0",

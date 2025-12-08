@@ -76,10 +76,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.opera.com/docs/changelogs/unix/1111/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.opera.com/support/kb/view/992/"
         }
     ],

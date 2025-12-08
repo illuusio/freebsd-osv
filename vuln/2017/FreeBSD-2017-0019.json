@@ -153,22 +153,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-9778"
-        },
-        {
-            "type": "WEB",
-            "url": "https://kb.isc.org/article/AA-01439/0"
-        },
-        {
-            "type": "WEB",
-            "url": "https://kb.isc.org/article/AA-01440/0"
-        },
-        {
-            "type": "WEB",
-            "url": "https://kb.isc.org/article/AA-01441/0"
-        },
-        {
-            "type": "WEB",
-            "url": "https://kb.isc.org/article/AA-01442/0"
         }
     ],
     "schema_version": "1.7.0",

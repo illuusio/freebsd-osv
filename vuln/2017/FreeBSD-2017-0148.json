@@ -43,10 +43,6 @@
             "url": "https://matt.ucc.asn.au/dropbear/CHANGES"
         },
         {
-            "type": "WEB",
-            "url": "https://matt.ucc.asn.au/dropbear/CHANGES"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-9078"
         },

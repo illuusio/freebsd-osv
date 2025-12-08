@@ -42,10 +42,6 @@
             "url": "https://www.opensmtpd.org/announces/release-5.7.2.txt"
         },
         {
-            "type": "WEB",
-            "url": "https://www.opensmtpd.org/announces/release-5.7.2.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-7687"
         }

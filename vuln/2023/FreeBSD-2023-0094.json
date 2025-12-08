@@ -136,10 +136,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-3375"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2023/03/30/security-release-gitlab-15-10-1-released/"
         }
     ],
     "schema_version": "1.7.0",

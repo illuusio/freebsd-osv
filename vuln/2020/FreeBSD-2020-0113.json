@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/json-c/json-c/pull/592"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/json-c/json-c/pull/599"
         },
         {

@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "https://jenkins.io/security/advisory/2018-08-15/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://jenkins.io/security/advisory/2018-08-15/"
         }
     ],
     "schema_version": "1.7.0",

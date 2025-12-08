@@ -54,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.kb.cert.org/vuls/id/550464"
-        },
-        {
-            "type": "WEB",
-            "url": "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2004-003-asn1.txt"
         }
     ],
     "schema_version": "1.7.0",

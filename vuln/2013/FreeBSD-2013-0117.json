@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-2210"
-        },
-        {
-            "type": "WEB",
-            "url": "http://santuario.apache.org/secadv.data/CVE-2013-2210.txt"
         }
     ],
     "schema_version": "1.7.0",

@@ -68,10 +68,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://cgit.freedesktop.org/xorg/lib/libXfont/commit/?id=d1e670a4a8704b8708e493ab6155589bcd570608"
-        },
-        {
-            "type": "WEB",
             "url": "https://cgit.freedesktop.org/xorg/lib/libXfont/commit/?id=672bb944311392e2415b39c0d63b1e1902905bcd"
         },
         {

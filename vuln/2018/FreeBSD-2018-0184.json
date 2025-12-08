@@ -50,10 +50,6 @@
         {
             "type": "WEB",
             "url": "https://github.com/ghantoos/lshell/issues/149"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/ghantoos/lshell/issues/151"
         }
     ],
     "schema_version": "1.7.0",

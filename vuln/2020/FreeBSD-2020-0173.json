@@ -43,10 +43,6 @@
             "url": "https://docs.python.org/3.7/whatsnew/changelog.html#changelog"
         },
         {
-            "type": "WEB",
-            "url": "https://docs.python.org/3.7/whatsnew/changelog.html#changelog"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-18348"
         },

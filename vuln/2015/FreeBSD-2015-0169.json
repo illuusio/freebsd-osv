@@ -52,10 +52,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.ansible.com/security"
-        },
-        {
-            "type": "WEB",
             "url": "https://raw.githubusercontent.com/ansible/ansible/v1.9.2-1/CHANGELOG.md"
         }
     ],

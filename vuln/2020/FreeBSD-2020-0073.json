@@ -42,10 +42,6 @@
             "url": "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-04"
         },
         {
-            "type": "WEB",
-            "url": "https://tls.mbed.org/tech-updates/security-advisories/mbedtls-security-advisory-2020-04"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-10932"
         }

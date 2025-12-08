@@ -57,10 +57,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.hornik.sk/SA/SA-20040802.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/12156"
         }
     ],

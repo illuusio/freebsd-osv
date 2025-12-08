@@ -128,10 +128,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-0141"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2023/01/stable-channel-update-for-desktop.html"
         }
     ],
     "schema_version": "1.7.0",

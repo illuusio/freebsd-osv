@@ -87,10 +87,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2004-1061"
         },
         {
-            "type": "WEB",
-            "url": "http://www.bugzilla.org/security/2.16.7-nr/"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=272620"
         }

@@ -104,10 +104,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-1398"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugs.php.net/bug.php?id=60227"
         }
     ],
     "schema_version": "1.7.0",

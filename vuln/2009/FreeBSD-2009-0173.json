@@ -120,10 +120,6 @@
         {
             "type": "WEB",
             "url": "http://www.zerodayinitiative.com/advisories/ZDI-09-093/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.adobe.com/support/security/bulletins/apsb09-19.html"
         }
     ],
     "schema_version": "1.7.0",

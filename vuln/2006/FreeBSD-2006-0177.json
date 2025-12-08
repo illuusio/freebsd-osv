@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.ubuntu.com/usn/usn-357-1"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/22237/"
         }
     ],

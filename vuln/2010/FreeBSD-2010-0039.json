@@ -57,10 +57,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://gitorious.org/fetchmail/fetchmail/commit/ec06293"
-        },
-        {
-            "type": "WEB",
             "url": "http://seclists.org/oss-sec/2010/q2/76"
         }
     ],

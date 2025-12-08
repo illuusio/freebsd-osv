@@ -53,22 +53,6 @@
         {
             "type": "REPORT",
             "url": "http://developer.joomla.org/security/news/308-20100423-core-password-reset-tokens.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security/news/308-20100423-core-password-reset-tokens.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security/news/309-20100423-core-sessation-fixation.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security/news/310-20100423-core-installer-migration-script.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security/news/311-20100423-core-negative-values-for-limit-and-offset.html"
         }
     ],
     "schema_version": "1.7.0",

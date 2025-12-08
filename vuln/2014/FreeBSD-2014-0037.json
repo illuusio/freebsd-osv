@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-0133"
-        },
-        {
-            "type": "WEB",
-            "url": "http://mailman.nginx.org/pipermail/nginx-announce/2014/000135.html"
         }
     ],
     "schema_version": "1.7.0",

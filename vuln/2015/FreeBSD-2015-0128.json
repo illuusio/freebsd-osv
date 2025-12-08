@@ -60,10 +60,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-9721"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/zeromq/libzmq/issues/1273"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://www.openwall.com/lists/oss-security/2015/05/07/8"
         },

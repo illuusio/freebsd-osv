@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-24838"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/nextcloud/security-advisories/security/advisories/GHSA-8xv5-4855-24qf"
         }
     ],
     "schema_version": "1.7.0",

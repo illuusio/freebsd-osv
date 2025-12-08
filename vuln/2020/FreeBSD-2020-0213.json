@@ -68,10 +68,6 @@
             "url": "https://github.com/warner/python-ecdsa/releases/tag/python-ecdsa-0.13.3"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/warner/python-ecdsa/releases/tag/python-ecdsa-0.13.3"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-14853"
         },

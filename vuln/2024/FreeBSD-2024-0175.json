@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/axllent/mailpit/releases/tag/v1.19.3"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/axllent/mailpit/releases/tag/v1.19.3"
         }
     ],
     "schema_version": "1.7.0",

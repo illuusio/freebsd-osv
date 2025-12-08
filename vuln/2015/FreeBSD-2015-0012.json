@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://polarssl.org/tech-updates/security-advisories/polarssl-security-advisory-2014-04"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.certifiedsecure.com/polarssl-advisory/"
         }
     ],

@@ -52,10 +52,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/33593/"
-        },
-        {
-            "type": "WEB",
             "url": "http://hg.moinmo.in/moin/1.8/file/c76d50dac855"
         },
         {

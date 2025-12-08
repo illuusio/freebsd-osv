@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-47779"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/element-hq/element-web/security/advisories/GHSA-3jm3-x98c-r34x"
         }
     ],
     "schema_version": "1.7.0",

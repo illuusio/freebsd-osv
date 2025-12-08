@@ -68,10 +68,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v2.5.5"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v2.5.4"
         },
         {

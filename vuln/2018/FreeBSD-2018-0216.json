@@ -64,10 +64,6 @@
             "url": "https://www.kb.cert.org/vuls/id/332928"
         },
         {
-            "type": "WEB",
-            "url": "https://www.kb.cert.org/vuls/id/332928"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-15908"
         },

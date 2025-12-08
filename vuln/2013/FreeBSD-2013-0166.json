@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-4466"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.gnutls.org/security.html#GNUTLS-SA-2013-3"
         }
     ],
     "schema_version": "1.7.0",

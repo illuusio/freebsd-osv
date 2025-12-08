@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-39272"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.fetchmail.info/fetchmail-SA-2021-02.txt"
         }
     ],
     "schema_version": "1.7.0",

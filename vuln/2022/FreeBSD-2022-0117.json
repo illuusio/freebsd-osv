@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://gitlab.torproject.org/tpo/core/team/-/wikis/NetworkTeam/TROVE"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gitlab.torproject.org/tpo/core/team/-/wikis/NetworkTeam/TROVE"
         }
     ],
     "schema_version": "1.7.0",

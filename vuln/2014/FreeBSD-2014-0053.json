@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-3767"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2009-3767"
         }
     ],
     "schema_version": "1.7.0",

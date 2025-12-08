@@ -51,10 +51,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.pldaniels.com/ripmime/CHANGELOG"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/12201"
         },
         {

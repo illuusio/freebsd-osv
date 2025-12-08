@@ -90,16 +90,8 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-35241"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/composer/composer/security/advisories/GHSA-47f6-5gq3-vx9c"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-35242"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/composer/composer/security/advisories/GHSA-v9qv-c7wm-wgmf"
         }
     ],
     "schema_version": "1.7.0",

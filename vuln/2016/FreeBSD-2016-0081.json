@@ -119,10 +119,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://docs.saltstack.com/en/latest/topics/releases/2015.8.4.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/saltstack/salt/pull/30613/files"
         },
         {

@@ -62,10 +62,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2017/q2/145"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/libressl-portable/portable/issues/307"
         },
         {

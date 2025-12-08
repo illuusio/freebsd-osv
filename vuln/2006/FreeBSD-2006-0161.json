@@ -52,14 +52,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/15167/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/15854/"
-        },
-        {
-            "type": "WEB",
             "url": "http://planscalendar.com/forum/viewtopic.php?t=660"
         }
     ],

@@ -71,10 +71,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.drupal.org/SA-CORE-2016-002"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2016/07/13/7"
         }
     ],

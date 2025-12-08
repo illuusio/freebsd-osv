@@ -42,10 +42,6 @@
             "url": "https://lucene.apache.org/solr/security.html"
         },
         {
-            "type": "WEB",
-            "url": "https://lucene.apache.org/solr/security.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-17558"
         }

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://www.videolan.org/security/sb-vlc309.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.videolan.org/security/sb-vlc309.html"
         }
     ],
     "schema_version": "1.7.0",

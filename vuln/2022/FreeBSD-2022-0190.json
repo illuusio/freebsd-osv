@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-41224"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.jenkins.io/security/advisory/2022-09-21/"
         }
     ],
     "schema_version": "1.7.0",

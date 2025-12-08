@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.securityfocus.com/bid/15842/info"
-        },
-        {
-            "type": "WEB",
-            "url": "http://pridels.blogspot.com/2005/12/mantis-bugtracking-system-xss-vuln.html"
         }
     ],
     "schema_version": "1.7.0",

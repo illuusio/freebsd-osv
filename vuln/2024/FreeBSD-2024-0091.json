@@ -90,10 +90,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://lists.tartarus.org/pipermail/putty-announce/2024/000038.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.chiark.greenend.org.uk/~sgtatham/putty/wishlist/vuln-p521-bias.html"
         },
         {
@@ -103,10 +99,6 @@
         {
             "type": "WEB",
             "url": "https://filezilla-project.org/versions.php"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-31497"
         }
     ],
     "schema_version": "1.7.0",

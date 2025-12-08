@@ -54,10 +54,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE10-sslConnectTimeout"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.squid-cache.org/bugs/show_bug.cgi?id=1355"
         },
         {

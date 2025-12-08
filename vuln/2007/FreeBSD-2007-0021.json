@@ -67,10 +67,6 @@
         {
             "type": "WEB",
             "url": "http://tomcat.apache.org/security-jk.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.zerodayinitiative.com/advisories/ZDI-07-008.html"
         }
     ],
     "schema_version": "1.7.0",

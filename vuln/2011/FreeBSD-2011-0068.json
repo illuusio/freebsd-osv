@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://framework.zend.com/security/advisory/ZF2011-02"
-        },
-        {
-            "type": "WEB",
             "url": "http://zend-framework-community.634137.n4.nabble.com/Zend-Framework-1-11-6-and-1-10-9-released-td3503741.html"
         }
     ],

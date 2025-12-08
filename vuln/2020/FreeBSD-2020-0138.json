@@ -57,10 +57,6 @@
         {
             "type": "REPORT",
             "url": "https://about.gitlab.com/releases/2020/06/03/critical-security-release-13-0-4-released/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2020/06/03/critical-security-release-13-0-4-released/"
         }
     ],
     "schema_version": "1.7.0",

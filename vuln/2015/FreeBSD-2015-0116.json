@@ -51,10 +51,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=200504"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/rest-client/rest-client/issues/369"
         }
     ],
     "schema_version": "1.7.0",

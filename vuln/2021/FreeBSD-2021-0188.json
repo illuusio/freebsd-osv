@@ -82,10 +82,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-32761"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/redis/redis/security/advisories/GHSA-8wxq-j7rp-g8wj"
         }
     ],
     "schema_version": "1.7.0",

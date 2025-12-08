@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-21404"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/syncthing/syncthing/security/advisories/GHSA-x462-89pf-6r5h"
         }
     ],
     "schema_version": "1.7.0",

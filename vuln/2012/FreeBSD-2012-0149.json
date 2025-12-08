@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-3461"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.cypherpunks.ca/pipermail/otr-dev/2012-July/001347.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-0934"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.thekelleys.org.uk/pipermail/dnsmasq-discuss/2022q1/016272.html"
         }
     ],
     "schema_version": "1.7.0",

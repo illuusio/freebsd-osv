@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://security.openttd.org/en/CVE-2013-6411"
-        },
-        {
-            "type": "WEB",
             "url": "http://bugs.openttd.org/task/5820"
         },
         {

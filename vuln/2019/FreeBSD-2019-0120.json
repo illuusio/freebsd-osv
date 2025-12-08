@@ -92,10 +92,6 @@
         {
             "type": "REPORT",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-12735"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2019-12735"
         }
     ],
     "schema_version": "1.7.0",

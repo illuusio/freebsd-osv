@@ -170,10 +170,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.adobe.com/support/security/bulletins/apsb10-26.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.adobe.com/support/security/advisories/apsa10-05.html"
         }
     ],

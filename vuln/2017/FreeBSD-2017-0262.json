@@ -66,10 +66,6 @@
         {
             "type": "REPORT",
             "url": "https://about.gitlab.com/2017/10/17/gitlab-10-dot-0-dot-4-security-release/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/2017/10/17/gitlab-10-dot-0-dot-4-security-release/"
         }
     ],
     "schema_version": "1.7.0",

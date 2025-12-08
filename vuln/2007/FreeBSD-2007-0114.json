@@ -46,10 +46,6 @@
             "url": "http://sourceforge.net/forum/forum.php?forum_id=740172"
         },
         {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/27124/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-5198"
         }

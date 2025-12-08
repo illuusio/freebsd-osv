@@ -130,10 +130,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-48339"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://www.debian.org/security/2023/dsa-5360"
         }
     ],
     "schema_version": "1.7.0",

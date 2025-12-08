@@ -145,10 +145,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/libarchive/libarchive/issues/502"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/libarchive/libarchive/commit/3865cf2"
         },
         {

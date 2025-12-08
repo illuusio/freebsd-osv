@@ -117,10 +117,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-8974"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2024/09/25/patch-release-gitlab-17-4-1-released/"
         }
     ],
     "schema_version": "1.7.0",

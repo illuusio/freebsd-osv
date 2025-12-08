@@ -54,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-2274"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.htbridge.com/advisory/HTB23087"
         }
     ],
     "schema_version": "1.7.0",

@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/24517/"
-        },
-        {
-            "type": "WEB",
             "url": "http://security.gentoo.org/glsa/glsa-200703-28.xml"
         },
         {

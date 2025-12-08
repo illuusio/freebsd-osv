@@ -57,10 +57,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://sourceforge.net/p/openvpn/mailman/message/35076507/"
-        },
-        {
-            "type": "WEB",
             "url": "https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn23#OpenVPN2.3.11"
         }
     ],

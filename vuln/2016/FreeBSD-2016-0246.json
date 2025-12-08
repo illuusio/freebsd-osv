@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://piwik.org/changelog/piwik-2-16-1/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://piwik.org/changelog/piwik-2-16-1/"
         }
     ],
     "schema_version": "1.7.0",

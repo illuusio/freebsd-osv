@@ -109,22 +109,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.opera.com/support/search/view/861/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/view/862/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/view/863/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/view/864/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.opera.com/docs/changelogs/freebsd/922/"
         }
     ],

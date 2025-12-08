@@ -105,10 +105,6 @@
         {
             "type": "WEB",
             "url": "https://github.com/typo3/typo3/commit/9940defb21"
-        },
-        {
-            "type": "WEB",
-            "url": "https://typo3.org/article/typo3-psa-2022-001"
         }
     ],
     "schema_version": "1.7.0",

@@ -62,10 +62,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://community.openvpn.net/openvpn/wiki/CVE-2020-15078"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/OpenVPN/openvpn/blob/release/2.5/Changes.rst#overview-of-changes-in-252"
         },
         {

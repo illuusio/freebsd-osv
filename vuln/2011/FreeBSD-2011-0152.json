@@ -145,10 +145,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-4313"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.isc.org/software/bind/advisories/cve-2011-4313"
         }
     ],
     "schema_version": "1.7.0",

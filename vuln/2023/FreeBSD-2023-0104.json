@@ -57,14 +57,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2019-123"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/PYSEC-2019-124"
-        },
-        {
-            "type": "WEB",
             "url": "https://osv.dev/vulnerability/GHSA-38fc-9xqv-7f7q"
         },
         {

@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/12857/"
-        },
-        {
-            "type": "WEB",
             "url": "http://securitytracker.com/alerts/2004/Oct/1011673.html"
         }
     ],

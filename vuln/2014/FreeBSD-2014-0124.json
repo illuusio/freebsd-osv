@@ -42,10 +42,6 @@
             "url": "http://blog.bestpractical.com/2014/10/security-vulnerability-in-rt-42x-cve-2014-7227.html"
         },
         {
-            "type": "WEB",
-            "url": "http://blog.bestpractical.com/2014/10/security-vulnerability-in-rt-42x-cve-2014-7227.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-7227"
         }

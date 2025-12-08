@@ -71,10 +71,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.videolan.org/security/sa0810.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.trapkit.de/advisories/TKADV2008-012.txt"
         }
     ],

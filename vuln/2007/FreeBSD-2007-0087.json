@@ -85,10 +85,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/26550/"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/secunia_research/2007-70/advisory/"
         }
     ],

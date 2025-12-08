@@ -264,10 +264,6 @@
             "url": "https://www.djangoproject.com/weblog/2015/mar/18/security-releases/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.djangoproject.com/weblog/2015/mar/18/security-releases/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-2316"
         },

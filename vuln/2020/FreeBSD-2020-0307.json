@@ -44,10 +44,6 @@
             "url": "https://curl.se/docs/security.html"
         },
         {
-            "type": "WEB",
-            "url": "https://curl.se/docs/security.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-8284"
         },

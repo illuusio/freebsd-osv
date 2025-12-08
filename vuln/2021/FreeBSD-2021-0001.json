@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://docs.inspircd.org/security/2020-02/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://docs.inspircd.org/security/2020-02/"
         }
     ],
     "schema_version": "1.7.0",

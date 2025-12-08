@@ -130,10 +130,6 @@
             "url": "https://openvpn.net/index.php/open-source/downloads.html"
         },
         {
-            "type": "WEB",
-            "url": "https://openvpn.net/index.php/open-source/downloads.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-7478"
         },

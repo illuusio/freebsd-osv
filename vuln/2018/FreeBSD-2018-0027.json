@@ -53,10 +53,6 @@
         {
             "type": "WEB",
             "url": "https://helpx.adobe.com/security/products/flash-player/apsa18-01.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://helpx.adobe.com/security/products/flash-player/apsb18-03.html"
         }
     ],
     "schema_version": "1.7.0",

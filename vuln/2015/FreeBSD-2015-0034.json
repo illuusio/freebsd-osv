@@ -138,10 +138,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-1349"
-        },
-        {
-            "type": "WEB",
-            "url": "https://kb.isc.org/article/AA-01235"
         }
     ],
     "schema_version": "1.7.0",

@@ -100,10 +100,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/buildbot/buildbot/wiki/OAuth-vulnerability-in-using-submitted-authorization-token-for-authentication"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/buildbot/buildbot/pull/4763"
         },
         {

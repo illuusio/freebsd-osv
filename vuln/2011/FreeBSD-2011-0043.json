@@ -184,10 +184,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-2244"
         },
         {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/43361/"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=667187"
         }

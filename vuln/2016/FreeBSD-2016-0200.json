@@ -109,10 +109,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://about.gitlab.com/2016/05/02/cve-2016-4340-patches/"
-        },
-        {
-            "type": "WEB",
             "url": "https://gitlab.com/gitlab-org/gitlab-ce/issues/15548"
         }
     ],

@@ -44,10 +44,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=110350"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.securityfocus.com/archive/1/462375"
         }
     ],
     "schema_version": "1.7.0",

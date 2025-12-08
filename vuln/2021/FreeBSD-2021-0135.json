@@ -50,10 +50,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/zeromq/libzmq/releases/tag/v4.3.3"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/zeromq/libzmq/security/advisories/GHSA-25wp-cf8g-938m"
         },
         {

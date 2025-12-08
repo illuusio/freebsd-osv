@@ -96,20 +96,12 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-14246"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/erikd/libsndfile/issues/317"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-17456"
         },
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-17457"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/erikd/libsndfile/issues/344"
         }
     ],
     "schema_version": "1.7.0",

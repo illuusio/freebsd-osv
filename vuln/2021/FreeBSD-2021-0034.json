@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-21291"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-21291"
         }
     ],
     "schema_version": "1.7.0",

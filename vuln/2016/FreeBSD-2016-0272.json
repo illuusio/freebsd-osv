@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://rubysec.com/advisories/CVE-2016-5697/"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/onelogin/ruby-saml/commit/a571f52171e6bfd87db59822d1d9e8c38fb3b995"
         }
     ],

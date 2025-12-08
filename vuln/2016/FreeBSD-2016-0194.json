@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.elastic.co/blog/logstash-2.3.1-and-2.2.4-released#Passwords_Printed_in_Log_Files_under_Some_Conditions_18"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/elastic/logstash/pull/4965"
         }
     ],

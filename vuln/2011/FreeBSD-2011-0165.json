@@ -106,10 +106,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://security.FreeBSD.org/advisories/FreeBSD-SA-11:08.telnetd.asc"
-        },
-        {
-            "type": "WEB",
             "url": "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2011-008.txt"
         }
     ],

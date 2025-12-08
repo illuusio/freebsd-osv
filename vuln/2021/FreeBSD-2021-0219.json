@@ -57,10 +57,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://docs.python.org/3.6/whatsnew/changelog.html#changelog"
-        },
-        {
-            "type": "WEB",
             "url": "https://docs.python.org/3.7/whatsnew/changelog.html#changelog"
         }
     ],

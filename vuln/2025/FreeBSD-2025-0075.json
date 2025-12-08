@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-30346"
-        },
-        {
-            "type": "WEB",
-            "url": "https://varnish-cache.org/security/VSV00015.html#vsv00015"
         }
     ],
     "schema_version": "1.7.0",

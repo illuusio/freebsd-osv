@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-24790"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/traefik/traefik/security/advisories/GHSA-7jmw-8259-q9jx"
         }
     ],
     "schema_version": "1.7.0",

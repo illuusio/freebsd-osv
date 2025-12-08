@@ -61,10 +61,6 @@
             "url": "http://www.openwall.com/lists/oss-security/2015/12/14/13"
         },
         {
-            "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2015/12/14/13"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-8560"
         }

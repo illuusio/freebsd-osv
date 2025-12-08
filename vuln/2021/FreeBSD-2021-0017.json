@@ -61,10 +61,6 @@
             "url": "https://nokogiri.org/CHANGELOG.html"
         },
         {
-            "type": "WEB",
-            "url": "https://nokogiri.org/CHANGELOG.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-26247"
         }

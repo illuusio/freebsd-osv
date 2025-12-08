@@ -88,10 +88,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-6707"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2023/12/stable-channel-update-for-desktop_12.html"
         }
     ],
     "schema_version": "1.7.0",

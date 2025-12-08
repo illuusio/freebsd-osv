@@ -51,10 +51,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-3478"
-        },
-        {
-            "type": "WEB",
-            "url": "http://sourceforge.net/mailarchive/message.php?msg_id=29235647"
         }
     ],
     "schema_version": "1.7.0",

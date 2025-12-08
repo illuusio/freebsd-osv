@@ -92,10 +92,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/Kozea/CairoSVG/security/advisories/GHSA-hq37-853p-g5cf"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/Kozea/CairoSVG/security/advisories/GHSA-hq37-853p-g5cf"
         }
     ],
     "schema_version": "1.7.0",

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-15900"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-15900"
         }
     ],
     "schema_version": "1.7.0",

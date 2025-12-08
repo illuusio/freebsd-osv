@@ -54,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-46726"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/glpi-project/glpi/releases/tag/10.0.11"
         }
     ],
     "schema_version": "1.7.0",

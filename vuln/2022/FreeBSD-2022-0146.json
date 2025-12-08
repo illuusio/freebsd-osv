@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-30698"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.nlnetlabs.nl/projects/unbound/security-advisories/"
         }
     ],
     "schema_version": "1.7.0",

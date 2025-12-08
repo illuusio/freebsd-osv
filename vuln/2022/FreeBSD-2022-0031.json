@@ -92,10 +92,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/twisted/twisted/security/advisories/GHSA-92x2-jw7w-xvvx"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/twisted/twisted/security/advisories/GHSA-92x2-jw7w-xvvx"
         }
     ],
     "schema_version": "1.7.0",

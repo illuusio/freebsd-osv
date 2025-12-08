@@ -42,10 +42,6 @@
             "url": "http://seclists.org/bugtraq/2015/Dec/114"
         },
         {
-            "type": "WEB",
-            "url": "http://seclists.org/bugtraq/2015/Dec/114"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-7555"
         }

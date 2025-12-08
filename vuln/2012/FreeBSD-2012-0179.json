@@ -95,10 +95,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-0789"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2012-0789"
-        },
-        {
             "type": "WEB",
             "url": "https://bugs.php.net/bug.php?id=53502"
         }

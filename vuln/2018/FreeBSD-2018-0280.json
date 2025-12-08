@@ -132,48 +132,24 @@
             "url": "https://www.samba.org/samba/security/CVE-2018-16857.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2018-14629.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-14629"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2018-16841.html"
         },
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-16841"
         },
         {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2018-16851.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-16851"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2018-16852.html"
         },
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-16852"
         },
         {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2018-16853.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-16853"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2018-16857.html"
         },
         {
             "type": "ADVISORY",

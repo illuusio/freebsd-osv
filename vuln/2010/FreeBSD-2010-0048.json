@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://lists.wikimedia.org/pipermail/mediawiki-announce/2010-April/000090.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugzilla.wikimedia.org/show_bug.cgi?id=23076"
         }
     ],

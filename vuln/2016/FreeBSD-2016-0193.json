@@ -82,16 +82,8 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-2167"
         },
         {
-            "type": "WEB",
-            "url": "http://subversion.apache.org/security/CVE-2016-2167-advisory.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-2168"
-        },
-        {
-            "type": "WEB",
-            "url": "http://subversion.apache.org/security/CVE-2016-2168-advisory.txt"
         }
     ],
     "schema_version": "1.7.0",

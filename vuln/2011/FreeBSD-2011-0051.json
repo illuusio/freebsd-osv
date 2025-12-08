@@ -46,10 +46,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-0727"
         },
         {
-            "type": "WEB",
-            "url": "http://mail.gnome.org/archives/distributor-list/2011-March/msg00008.html"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=688323"
         }

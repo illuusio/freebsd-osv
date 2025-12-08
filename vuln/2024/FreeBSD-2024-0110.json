@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-34020"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://bugzilla.suse.com/show_bug.cgi?id=1223534"
         }
     ],
     "schema_version": "1.7.0",

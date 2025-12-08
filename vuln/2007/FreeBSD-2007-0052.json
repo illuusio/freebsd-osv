@@ -54,10 +54,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/25580/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.webmin.com/changes-1.350.html"
         }
     ],

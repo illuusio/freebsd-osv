@@ -43,10 +43,6 @@
             "url": "http://openafs.org/pages/security/OPENAFS-SA-2015-007.txt"
         },
         {
-            "type": "WEB",
-            "url": "http://openafs.org/pages/security/OPENAFS-SA-2015-007.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-7762"
         },

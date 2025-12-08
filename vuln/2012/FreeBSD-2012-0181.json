@@ -118,10 +118,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-3438"
         },
         {
-            "type": "REPORT",
-            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=844105"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://www.securityfocus.com/bid/54716/info"
         },

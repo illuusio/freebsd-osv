@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2012-3534"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2012/08/25/4"
         },
         {

@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "https://matrix.org/blog/2021/12/13/disclosure-buffer-overflow-in-libolm-and-matrix-js-sdk"
-        },
-        {
-            "type": "WEB",
-            "url": "https://matrix.org/blog/2021/12/13/disclosure-buffer-overflow-in-libolm-and-matrix-js-sdk"
         }
     ],
     "schema_version": "1.7.0",

@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "http://blog.nodejs.org/2013/10/18/node-v0-10-21-stable/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://blog.nodejs.org/2013/10/18/node-v0-10-21-stable/"
         }
     ],
     "schema_version": "1.7.0",

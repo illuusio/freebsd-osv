@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/Advisories/31884/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2008-7"
         }
     ],
     "schema_version": "1.7.0",

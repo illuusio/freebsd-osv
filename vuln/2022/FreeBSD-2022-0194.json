@@ -86,10 +86,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://lists.samba.org/archive/samba-announce/2022/000609.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.samba.org/samba/security/CVE-2022-2031.html"
         },
         {

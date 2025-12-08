@@ -104,10 +104,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.sogo.nu/news/2021/saml-vulnerability.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://blogs.akamai.com/2021/06/sogo-and-packetfence-impacted-by-saml-implementation-vulnerabilities.html"
         }
     ],

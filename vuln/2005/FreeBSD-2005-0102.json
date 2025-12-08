@@ -84,10 +84,6 @@
         {
             "type": "DISCUSSION",
             "url": "http://marc.theaimsgroup.com/?l=bugtraq&m=110929725801154"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2005-1"
         }
     ],
     "schema_version": "1.7.0",

@@ -51,10 +51,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-3251"
-        },
-        {
-            "type": "WEB",
-            "url": "http://dipper.info/security/20051012/"
         }
     ],
     "schema_version": "1.7.0",

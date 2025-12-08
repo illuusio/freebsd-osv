@@ -42,10 +42,6 @@
             "url": "https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00063&languageid=en-fr"
         },
         {
-            "type": "WEB",
-            "url": "https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00063&languageid=en-fr"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-8106"
         }

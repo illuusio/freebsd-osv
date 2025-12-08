@@ -359,10 +359,6 @@
         {
             "type": "REPORT",
             "url": "http://www.djangoproject.com/weblog/2011/feb/08/security/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.djangoproject.com/weblog/2011/feb/08/security/"
         }
     ],
     "schema_version": "1.7.0",

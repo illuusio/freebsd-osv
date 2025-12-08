@@ -56,14 +56,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://plone.org/products/plone/security/advisories/20150910-announcement"
-        },
-        {
-            "type": "WEB",
-            "url": "https://plone.org/security/20150910/non-persistent-xss-in-plone"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/plone/Products.CMFPlone/commit/3da710a2cd68587f0bf34f2e7ea1167d6eeee087"
         }
     ],

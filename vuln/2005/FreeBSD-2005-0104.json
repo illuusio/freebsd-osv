@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://dist.schmorp.de/rxvt-unicode/Changes"
-        },
-        {
-            "type": "WEB",
-            "url": "http://dist.schmorp.de/rxvt-unicode/Changes"
         }
     ],
     "schema_version": "1.7.0",

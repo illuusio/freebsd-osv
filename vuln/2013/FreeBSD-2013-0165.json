@@ -55,10 +55,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-4396"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.x.org/archives/xorg-announce/2013-October/002332.html"
         }
     ],
     "schema_version": "1.7.0",

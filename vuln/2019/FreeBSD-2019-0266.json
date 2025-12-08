@@ -42,10 +42,6 @@
             "url": "https://blog.clamav.net/2019/11/clamav-01021-and-01015-patches-have.html"
         },
         {
-            "type": "WEB",
-            "url": "https://blog.clamav.net/2019/11/clamav-01021-and-01015-patches-have.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-15961"
         }

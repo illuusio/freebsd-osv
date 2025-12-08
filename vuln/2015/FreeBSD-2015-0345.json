@@ -67,14 +67,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://developer.joomla.org/security-centre/628-20151001-core-sql-injection.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://developer.joomla.org/security-centre/629-20151002-core-acl-violations.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.joomla.org/announcements/release-news/5634-joomla-3-4-5-released.html"
         }
     ],

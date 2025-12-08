@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-5371"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.ruby-lang.org/en/news/2012/11/09/ruby19-hashdos-cve-2012-5371/"
         }
     ],
     "schema_version": "1.7.0",

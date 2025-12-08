@@ -162,10 +162,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://mariadb.com/kb/en/cve/"
-        },
-        {
-            "type": "WEB",
             "url": "https://mariadb.com/kb/en/mdb-10334-rn/"
         },
         {

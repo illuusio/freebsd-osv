@@ -677,10 +677,6 @@
         {
             "type": "WEB",
             "url": "http://www.php.net/releases/4_4_7.php"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.php.net/releases/5_2_2.php"
         }
     ],
     "schema_version": "1.7.0",

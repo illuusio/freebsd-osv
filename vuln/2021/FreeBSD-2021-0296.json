@@ -94,10 +94,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/openhab/openhab-distro/security/advisories/GHSA-j99j-qp89-pcfq"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/ops4j/org.ops4j.pax.logging/security/advisories/GHSA-xxfh-x98p-j8fr"
         },
         {

@@ -52,16 +52,8 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-44716"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/golang/go/issues/50058"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-44717"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/golang/go/issues/50057"
         }
     ],
     "schema_version": "1.7.0",

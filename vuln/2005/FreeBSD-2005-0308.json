@@ -70,10 +70,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-3759"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.horde.org/archives/announce/2005/000232.html"
         }
     ],
     "schema_version": "1.7.0",

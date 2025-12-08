@@ -67,18 +67,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/659-20161001-core-account-creation.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/660-20161002-core-elevated-privileges.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/661-20161003-core-account-modifications.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.joomla.org/announcements/release-news/5678-joomla-3-6-4-released.html"
         }
     ],

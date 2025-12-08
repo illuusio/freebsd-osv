@@ -54,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-1405"
-        },
-        {
-            "type": "WEB",
-            "url": "https://blog.clamav.net/2021/04/clamav-01032-security-patch-release.html"
         }
     ],
     "schema_version": "1.7.0",

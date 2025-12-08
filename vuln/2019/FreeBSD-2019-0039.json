@@ -42,10 +42,6 @@
             "url": "https://marlam.de/msmtp/news/msmtp-1-8-3/"
         },
         {
-            "type": "WEB",
-            "url": "https://marlam.de/msmtp/news/msmtp-1-8-3/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-8337"
         }

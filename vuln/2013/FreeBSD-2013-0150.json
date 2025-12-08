@@ -59,10 +59,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-5324"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.adobe.com/support/security/bulletins/apsb13-21.html"
         }
     ],
     "schema_version": "1.7.0",

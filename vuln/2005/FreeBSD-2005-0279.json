@@ -70,10 +70,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.debian.org/security/2005/dsa-835"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.debian.org/security/2005/dsa-836"
         }
     ],

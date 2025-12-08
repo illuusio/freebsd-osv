@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v2.5.3"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v2.5.3"
         }
     ],
     "schema_version": "1.7.0",

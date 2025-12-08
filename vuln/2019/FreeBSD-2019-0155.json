@@ -95,10 +95,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://matrix.org/blog/2019/07/26/critical-security-update-synapse-1-2-1-released"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/matrix-org/synapse/releases/tag/v1.2.1"
         }
     ],

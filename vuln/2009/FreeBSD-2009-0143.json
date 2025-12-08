@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-4664"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.fwbuilder.org/docs/firewall_builder_release_notes.html#3.0.7"
         }
     ],
     "schema_version": "1.7.0",

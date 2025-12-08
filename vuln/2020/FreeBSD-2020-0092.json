@@ -121,10 +121,6 @@
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1807367"
         },
         {
-            "type": "REPORT",
-            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1807367"
-        },
-        {
             "type": "WEB",
             "url": "https://github.com/yaml/pyyaml/pull/386"
         },

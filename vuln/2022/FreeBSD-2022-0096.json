@@ -77,24 +77,12 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-24675"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/golang/go/issues/51853"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-28327"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/golang/go/issues/52075"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-27536"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/golang/go/issues/51759"
         }
     ],
     "schema_version": "1.7.0",

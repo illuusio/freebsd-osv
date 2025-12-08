@@ -62,10 +62,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-0546"
-        },
-        {
-            "type": "WEB",
-            "url": "http://asg.web.cmu.edu/cyrus/download/imapd/changes.html"
         }
     ],
     "schema_version": "1.7.0",

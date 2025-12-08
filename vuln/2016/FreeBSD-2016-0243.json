@@ -257,10 +257,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-4171"
-        },
-        {
-            "type": "WEB",
-            "url": "https://helpx.adobe.com/security/products/flash-player/apsb16-18.html"
         }
     ],
     "schema_version": "1.7.0",

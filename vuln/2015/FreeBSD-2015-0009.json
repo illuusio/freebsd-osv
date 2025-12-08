@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-7252"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.kde.org/info/security/advisory-20150109-1.txt"
         }
     ],
     "schema_version": "1.7.0",

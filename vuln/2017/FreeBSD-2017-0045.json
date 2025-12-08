@@ -125,10 +125,6 @@
             "url": "http://simplesystems.org/libtiff/v4.0.7.html"
         },
         {
-            "type": "WEB",
-            "url": "http://simplesystems.org/libtiff/v4.0.7.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-9533"
         },

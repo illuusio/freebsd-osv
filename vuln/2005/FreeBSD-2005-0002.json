@@ -58,10 +58,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE10-NTLM-scheme_assert"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/16992/"
         }
     ],

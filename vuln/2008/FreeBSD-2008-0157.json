@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=496403"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugs.gentoo.org/show_bug.cgi?id=235806"
         }
     ],

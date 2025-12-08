@@ -42,10 +42,6 @@
             "url": "https://www.phpmyadmin.net/security/PMASA-2016-9/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.phpmyadmin.net/security/PMASA-2016-9/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-2045"
         }

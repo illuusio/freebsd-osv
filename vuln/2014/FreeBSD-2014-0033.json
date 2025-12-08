@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/zolrath/wemux/issues/36"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/zolrath/wemux/issues/36"
         }
     ],
     "schema_version": "1.7.0",

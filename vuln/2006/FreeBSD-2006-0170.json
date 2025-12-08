@@ -54,10 +54,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/22109"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.sixapart.com/movabletype/news/2006/09/mt_333-mte_103_updates.html"
         }
     ],

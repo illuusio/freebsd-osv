@@ -191,10 +191,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-8680"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.isc.org/blogs/important-security-advisory-posted/"
         }
     ],
     "schema_version": "1.7.0",

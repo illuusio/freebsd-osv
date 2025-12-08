@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-0159"
-        },
-        {
-            "type": "WEB",
-            "url": "http://openafs.org/security/OPENAFS-SA-2014-001.txt"
         }
     ],
     "schema_version": "1.7.0",

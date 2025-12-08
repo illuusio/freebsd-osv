@@ -207,10 +207,6 @@
         {
             "type": "WEB",
             "url": "http://bugs.php.net/bug.php?id=27037"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.novell.com/linux/security/advisories/2005_06_sr.html"
         }
     ],
     "schema_version": "1.7.0",

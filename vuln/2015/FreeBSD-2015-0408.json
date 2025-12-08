@@ -78,22 +78,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-8565"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/630-20151214-core-remote-code-execution-vulnerability.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/633-20151214-core-csrf-hardening.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/634-20151214-core-directory-traversal.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/635-20151214-core-directory-traversal-2.html"
         }
     ],
     "schema_version": "1.7.0",

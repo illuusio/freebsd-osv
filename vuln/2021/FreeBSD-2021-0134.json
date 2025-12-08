@@ -50,10 +50,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/zeromq/libzmq/releases/tag/v4.3.2"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/zeromq/libzmq/issues/3558"
         },
         {

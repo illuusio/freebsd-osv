@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://duo.com/labs/psa/duo-psa-2017-002"
-        },
-        {
-            "type": "WEB",
-            "url": "https://duo.com/labs/psa/duo-psa-2017-002"
         }
     ],
     "schema_version": "1.7.0",

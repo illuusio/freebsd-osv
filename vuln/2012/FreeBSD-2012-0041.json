@@ -69,10 +69,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/47297/"
-        },
-        {
-            "type": "WEB",
             "url": "http://torcs.sourceforge.net/index.php?name=News&file=article&sid=79"
         }
     ],

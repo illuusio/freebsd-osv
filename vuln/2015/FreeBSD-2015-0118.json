@@ -95,10 +95,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=200507"
-        },
-        {
-            "type": "WEB",
-            "url": "http://advisories.mageia.org/MGASA-2015-0233.html"
         }
     ],
     "schema_version": "1.7.0",

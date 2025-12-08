@@ -165,10 +165,6 @@
         {
             "type": "WEB",
             "url": "http://www.mozilla.org/security/announce/2013/mfsa2013-29.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.mozilla.org/security/known-vulnerabilities/"
         }
     ],
     "schema_version": "1.7.0",

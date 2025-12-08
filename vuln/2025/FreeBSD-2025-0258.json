@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-48948"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/navidrome/navidrome/security/advisories/GHSA-f238-rggp-82m3"
         }
     ],
     "schema_version": "1.7.0",

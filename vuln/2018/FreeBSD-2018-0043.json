@@ -41,10 +41,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/Bitmessage/PyBitmessage/releases/tag/v0.6.3"
-        },
-        {
-            "type": "WEB",
             "url": "https://bitmessage.org/wiki/Main_Page"
         }
     ],

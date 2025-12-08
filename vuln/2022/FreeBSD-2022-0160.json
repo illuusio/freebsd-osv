@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-31175"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.drupal.org/project/drupal/releases/9.4.5"
         }
     ],
     "schema_version": "1.7.0",

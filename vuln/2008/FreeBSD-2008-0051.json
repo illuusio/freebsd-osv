@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/29803/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.mirbsd.org/mksh.htm#clog"
         }
     ],

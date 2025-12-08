@@ -76,10 +76,6 @@
             "url": "https://about.gitlab.com/releases/2020/11/02/security-release-gitlab-13-5-2-released/"
         },
         {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2020/11/02/security-release-gitlab-13-5-2-released/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-13355"
         },

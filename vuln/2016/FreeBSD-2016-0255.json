@@ -42,10 +42,6 @@
             "url": "https://github.com/arvidn/libtorrent/issues/780"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/arvidn/libtorrent/issues/780"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-5301"
         }

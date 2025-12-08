@@ -112,10 +112,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-6826"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2024/10/23/patch-release-gitlab-17-5-1-released/"
         }
     ],
     "schema_version": "1.7.0",

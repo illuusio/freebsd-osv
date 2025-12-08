@@ -47,10 +47,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-14954"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gitlab.com/muttmua/mutt/-/commit/c547433cdf2e79191b15c6932c57f1472bfb5ff4"
         }
     ],
     "schema_version": "1.7.0",

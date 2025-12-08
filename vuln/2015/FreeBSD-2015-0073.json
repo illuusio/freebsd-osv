@@ -44,10 +44,6 @@
             "url": "http://chrony.tuxfamily.org/News.html"
         },
         {
-            "type": "WEB",
-            "url": "http://chrony.tuxfamily.org/News.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-1821"
         },

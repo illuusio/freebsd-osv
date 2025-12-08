@@ -145,10 +145,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-39226"
-        },
-        {
-            "type": "WEB",
-            "url": "https://grafana.com/blog/2021/10/05/grafana-7.5.11-and-8.1.6-released-with-critical-security-fix/"
         }
     ],
     "schema_version": "1.7.0",

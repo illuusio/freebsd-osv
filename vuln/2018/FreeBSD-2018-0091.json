@@ -42,10 +42,6 @@
             "url": "http://www.openwall.com/lists/oss-security/2018/03/22/4"
         },
         {
-            "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2018/03/22/4"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-3741"
         }

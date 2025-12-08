@@ -59,14 +59,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-0289"
-        },
-        {
-            "type": "WEB",
-            "url": "http://bugs.splitbrain.org/index.php?do=details&task_id=1847"
-        },
-        {
-            "type": "WEB",
-            "url": "http://bugs.splitbrain.org/index.php?do=details&task_id=1853"
         }
     ],
     "schema_version": "1.7.0",

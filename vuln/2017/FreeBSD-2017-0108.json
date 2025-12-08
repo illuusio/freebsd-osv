@@ -67,10 +67,6 @@
         {
             "type": "DISCUSSION",
             "url": "http://www.openwall.com/lists/oss-security/2017/05/10/3"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.kde.org/info/security/advisory-20170510-1.txt"
         }
     ],
     "schema_version": "1.7.0",

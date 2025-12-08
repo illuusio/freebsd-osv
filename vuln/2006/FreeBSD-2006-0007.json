@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.fetchmail.info/fetchmail-SA-2006-01.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://bugs.debian.org/348747"
         }
     ],

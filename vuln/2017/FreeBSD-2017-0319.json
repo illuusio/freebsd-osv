@@ -42,10 +42,6 @@
             "url": "https://blog.phusion.nl/2017/10/13/passenger-security-advisory-5-1-11/"
         },
         {
-            "type": "WEB",
-            "url": "https://blog.phusion.nl/2017/10/13/passenger-security-advisory-5-1-11/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-16355"
         }

@@ -61,10 +61,6 @@
             "url": "https://cgit.freedesktop.org/xorg/lib/libXfont/commit/?id=7b377456f95d2ec3ead40f4fb74ea620191f88c8"
         },
         {
-            "type": "WEB",
-            "url": "https://cgit.freedesktop.org/xorg/lib/libXfont/commit/?id=7b377456f95d2ec3ead40f4fb74ea620191f88c8"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-16611"
         }

@@ -87,10 +87,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-39260"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lore.kernel.org/git/xmqq4jw1uku5.fsf@gitster.g/T/#u"
         }
     ],
     "schema_version": "1.7.0",

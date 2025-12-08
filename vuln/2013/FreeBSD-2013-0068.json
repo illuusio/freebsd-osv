@@ -55,10 +55,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-0131"
-        },
-        {
-            "type": "WEB",
-            "url": "http://nvidia.custhelp.com/app/answers/detail/a_id/3290"
         }
     ],
     "schema_version": "1.7.0",

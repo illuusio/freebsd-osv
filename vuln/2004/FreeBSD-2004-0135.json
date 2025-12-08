@@ -61,10 +61,6 @@
             "url": "http://xforce.iss.net/xforce/xfdb/16996"
         },
         {
-            "type": "WEB",
-            "url": "http://www.debian.org/security/2004/dsa-537"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://marc.theaimsgroup.com/?l=bugtraq&m=109267579822250&w=2"
         }

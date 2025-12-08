@@ -282,10 +282,6 @@
             "url": "https://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html#AppendixMSQL"
         },
         {
-            "type": "WEB",
-            "url": "https://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html#AppendixMSQL"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-9843"
         },

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://raw.githubusercontent.com/zeek/zeek/v3.0.6/NEWS"
-        },
-        {
-            "type": "WEB",
-            "url": "https://raw.githubusercontent.com/zeek/zeek/v3.0.6/NEWS"
         }
     ],
     "schema_version": "1.7.0",

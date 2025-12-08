@@ -66,10 +66,6 @@
             "url": "https://about.gitlab.com/2018/10/05/critical-security-release-11-3-4/"
         },
         {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/2018/10/05/critical-security-release-11-3-4/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-17939"
         },

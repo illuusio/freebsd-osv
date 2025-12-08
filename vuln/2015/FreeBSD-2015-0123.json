@@ -85,10 +85,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-4335"
-        },
-        {
-            "type": "WEB",
-            "url": "http://benmmurphy.github.io/blog/2015/06/04/redis-eval-lua-sandbox-escape/"
         }
     ],
     "schema_version": "1.7.0",

@@ -62,10 +62,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://bugs.python.org/issue30657"
-        },
-        {
-            "type": "WEB",
             "url": "https://docs.python.org/3.4/whatsnew/changelog.html"
         },
         {

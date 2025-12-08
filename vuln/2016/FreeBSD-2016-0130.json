@@ -66,10 +66,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-1531"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.exim.org/lurker/message/20160302.191005.a72d8433.en.html"
         }
     ],
     "schema_version": "1.7.0",

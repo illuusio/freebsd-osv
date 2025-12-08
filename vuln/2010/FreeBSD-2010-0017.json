@@ -71,10 +71,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openoffice.org/security/bulletin.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openoffice.org/security/cves/CVE-2006-4339.html"
         },
         {

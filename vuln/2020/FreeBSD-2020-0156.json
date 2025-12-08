@@ -44,10 +44,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/apple/cups/releases/tag/v2.3.3"
-        },
-        {
-            "type": "WEB",
             "url": "https://support.apple.com/en-us/HT211100"
         },
         {

@@ -201,10 +201,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-12387"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.mozilla.org/en-US/security/advisories/mfsa2018-24/"
         }
     ],
     "schema_version": "1.7.0",

@@ -39,10 +39,6 @@
         {
             "type": "WEB",
             "url": "https://hackerone.com/bugs?subject=torproject&report_id=1784589"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gitlab.torproject.org/tpo/core/tor/-/issues/40730"
         }
     ],
     "schema_version": "1.7.0",

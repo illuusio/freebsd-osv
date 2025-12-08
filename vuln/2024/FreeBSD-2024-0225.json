@@ -79,10 +79,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-20506"
-        },
-        {
-            "type": "WEB",
-            "url": "https://blog.clamav.net/2024/09/clamav-141-132-107-and-010312-security.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -57,10 +57,6 @@
         {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=470480"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/Advisories/32773/"
         }
     ],
     "schema_version": "1.7.0",

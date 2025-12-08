@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://freeradius.org/security.html#eap-pwd-2015"
-        },
-        {
-            "type": "WEB",
-            "url": "http://freeradius.org/security.html#eap-pwd-2015"
         }
     ],
     "schema_version": "1.7.0",

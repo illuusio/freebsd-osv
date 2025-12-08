@@ -40,10 +40,6 @@
         {
             "type": "REPORT",
             "url": "https://www.voidsecurity.in/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.voidsecurity.in/"
         }
     ],
     "schema_version": "1.7.0",

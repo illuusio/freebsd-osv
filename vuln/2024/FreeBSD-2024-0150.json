@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-28882"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/OpenVPN/openvpn/blob/v2.6.11/Changes.rst#security-fixes"
         }
     ],
     "schema_version": "1.7.0",

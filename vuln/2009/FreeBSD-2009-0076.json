@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/34984/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.igniterealtime.org/issues/browse/JM-1532"
         },
         {

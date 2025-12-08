@@ -52,16 +52,8 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-5339"
         },
         {
-            "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security/PMASA-2012-6.php"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-5368"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security/PMASA-2012-7.php"
         }
     ],
     "schema_version": "1.7.0",

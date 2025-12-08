@@ -117,14 +117,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-5733"
-        },
-        {
-            "type": "WEB",
-            "url": "https://kb.isc.org/article/AA-01565"
-        },
-        {
-            "type": "WEB",
-            "url": "https://kb.isc.org/article/AA-01567"
         }
     ],
     "schema_version": "1.7.0",

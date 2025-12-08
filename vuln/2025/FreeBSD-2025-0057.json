@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-1695"
-        },
-        {
-            "type": "WEB",
-            "url": "https://mailman.nginx.org/pipermail/unit/2025-March/QVYLJKLBIDWOJ7OLYGT27VUWH7RGBRQM.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://freeradius.org/security.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.pre-cert.de/advisories/PRE-SA-2012-06.txt"
         }
     ],

@@ -436,10 +436,6 @@
             "url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=829578"
         },
         {
-            "type": "WEB",
-            "url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=829578"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-6185"
         }

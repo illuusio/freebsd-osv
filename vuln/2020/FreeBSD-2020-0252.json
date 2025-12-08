@@ -42,10 +42,6 @@
             "url": "https://nextcloud.com/security/advisory/?id=NC-SA-2020-026"
         },
         {
-            "type": "WEB",
-            "url": "https://nextcloud.com/security/advisory/?id=NC-SA-2020-026"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-8183"
         }

@@ -56,10 +56,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-2923"
         },
         {
-            "type": "WEB",
-            "url": "https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0431"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-2924"
         }

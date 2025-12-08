@@ -92,10 +92,6 @@
         {
             "type": "REPORT",
             "url": "http://www.opera.com/support/kb/view/1036/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/kb/view/1036/"
         }
     ],
     "schema_version": "1.7.0",

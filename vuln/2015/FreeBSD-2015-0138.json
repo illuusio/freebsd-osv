@@ -90,10 +90,6 @@
         {
             "type": "DISCUSSION",
             "url": "http://sourceforge.net/p/cacti/mailman/message/33072838/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.cacti.net/release_notes_0_8_8c.php"
         }
     ],
     "schema_version": "1.7.0",

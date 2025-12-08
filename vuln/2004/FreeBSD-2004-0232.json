@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.dest-unreach.org/socat/advisory/socat-adv-1.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.nosystem.com.ar/advisories/advisory-07.txt"
         }
     ],

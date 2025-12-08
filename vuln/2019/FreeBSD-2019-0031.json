@@ -45,10 +45,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://curl.haxx.se/docs/security.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://curl.haxx.se/docs/CVE-2018-16890.html"
         },
         {

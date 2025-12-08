@@ -42,10 +42,6 @@
             "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15120"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-15120"
-        },
-        {
             "type": "WEB",
             "url": "https://www.exploit-db.com/exploits/45263/"
         },

@@ -65,10 +65,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2014/05/02/5"
-        },
-        {
-            "type": "WEB",
             "url": "https://rt.openssl.org/Ticket/Display.html?user=guest&pass=guest&id=3321"
         },
         {

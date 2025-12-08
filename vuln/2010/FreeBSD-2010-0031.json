@@ -51,10 +51,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-0400"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.debian.org/security/2010/dsa-2030"
         }
     ],
     "schema_version": "1.7.0",

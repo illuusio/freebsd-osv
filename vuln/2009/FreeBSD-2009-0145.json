@@ -56,10 +56,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/36803"
-        },
-        {
-            "type": "WEB",
-            "url": "http://blog.mybboard.net/2009/09/21/mybb-1-4-9-released-security-update/"
         }
     ],
     "schema_version": "1.7.0",

@@ -85,10 +85,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://mariadb.com/kb/en/mariadb-10-11-6-release-notes/"
-        },
-        {
-            "type": "WEB",
             "url": "https://mariadb.com/kb/en/mariadb-10-6-16-release-notes/"
         },
         {

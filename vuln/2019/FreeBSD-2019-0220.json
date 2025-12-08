@@ -100,10 +100,6 @@
             "url": "https://mantisbt.org/bugs/changelog_page.php?project=mantisbt&version=2.22.1"
         },
         {
-            "type": "WEB",
-            "url": "https://mantisbt.org/bugs/changelog_page.php?project=mantisbt&version=2.22.1"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-15715"
         },

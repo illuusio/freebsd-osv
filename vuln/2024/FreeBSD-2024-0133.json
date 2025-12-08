@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.qt.io/blog/security-advisory-qstringconverter-0"
-        },
-        {
-            "type": "WEB",
             "url": "https://codereview.qt-project.org/c/qt/qtnetworkauth/+/560317"
         }
     ],

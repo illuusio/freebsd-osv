@@ -50,10 +50,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.libssh.org/security/advisories/CVE-2021-3634.txt"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.libssh.org/2021/08/26/libssh-0-9-6-security-release/"
         }
     ],

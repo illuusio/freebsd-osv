@@ -85,10 +85,6 @@
         {
             "type": "WEB",
             "url": "https://github.com/golang/go/commit/300d9a21583e7cf0149a778a0611e76ff7c6680f"
-        },
-        {
-            "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2015/q3/237"
         }
     ],
     "schema_version": "1.7.0",

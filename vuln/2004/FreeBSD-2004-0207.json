@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.caughq.org/advisories/CAU-2004-0002.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://imwheel.sourceforge.net/files/DEVELOPMENT.txt"
         }
     ],

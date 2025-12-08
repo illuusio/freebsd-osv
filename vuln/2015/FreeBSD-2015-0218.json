@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://bugzilla.gnome.org/show_bug.cgi?id=752297"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugzilla.gnome.org/show_bug.cgi?id=752297"
         }
     ],
     "schema_version": "1.7.0",

@@ -80,10 +80,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/33133/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.wikimedia.org/pipermail/mediawiki-announce/2008-December/000080.html"
         }
     ],
     "schema_version": "1.7.0",

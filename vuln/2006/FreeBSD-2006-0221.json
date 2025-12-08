@@ -52,10 +52,6 @@
         {
             "type": "WEB",
             "url": "https://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=218055"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/23373/"
         }
     ],
     "schema_version": "1.7.0",

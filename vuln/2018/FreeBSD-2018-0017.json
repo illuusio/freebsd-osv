@@ -48,10 +48,6 @@
             "url": "http://blog.clamav.net/2018/01/clamav-0993-has-been-released.html"
         },
         {
-            "type": "WEB",
-            "url": "http://blog.clamav.net/2018/01/clamav-0993-has-been-released.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-12374"
         },

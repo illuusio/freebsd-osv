@@ -123,10 +123,6 @@
             "url": "http://subversion.apache.org/security/"
         },
         {
-            "type": "WEB",
-            "url": "http://subversion.apache.org/security/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-0202"
         },

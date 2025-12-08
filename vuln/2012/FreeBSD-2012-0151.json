@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://www.pizzashack.org/rssh/security.shtml"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.pizzashack.org/rssh/security.shtml"
         }
     ],
     "schema_version": "1.7.0",

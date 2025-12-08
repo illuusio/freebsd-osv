@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://advisories.mageia.org/MGASA-2013-0240.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugs.mageia.org/show_bug.cgi?id=10816"
         }
     ],

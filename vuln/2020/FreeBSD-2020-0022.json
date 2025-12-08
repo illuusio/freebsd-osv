@@ -42,10 +42,6 @@
             "url": "https://blog.clamav.net/2020/02/clamav-01022-security-patch-released.html"
         },
         {
-            "type": "WEB",
-            "url": "https://blog.clamav.net/2020/02/clamav-01022-security-patch-released.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-3123"
         }

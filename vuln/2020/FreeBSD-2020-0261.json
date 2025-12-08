@@ -68,10 +68,6 @@
             "url": "https://about.gitlab.com/releases/2020/10/01/security-release-13-4-2-release/"
         },
         {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2020/10/01/security-release-13-4-2-release/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-13333"
         },

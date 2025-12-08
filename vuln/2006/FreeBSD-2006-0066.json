@@ -79,10 +79,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/19534/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.us.debian.org/security/2006/dsa-1024"
         }
     ],

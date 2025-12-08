@@ -54,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-0629"
-        },
-        {
-            "type": "WEB",
-            "url": "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-003.txt"
         }
     ],
     "schema_version": "1.7.0",

@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "https://www.drupal.org/SA-CORE-2015-003"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.drupal.org/SA-CORE-2015-003"
         }
     ],
     "schema_version": "1.7.0",

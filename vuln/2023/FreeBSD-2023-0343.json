@@ -68,10 +68,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-46850"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/OpenVPN/openvpn/blob/v2.6.7/Changes.rst#overview-of-changes-in-267"
         }
     ],
     "schema_version": "1.7.0",

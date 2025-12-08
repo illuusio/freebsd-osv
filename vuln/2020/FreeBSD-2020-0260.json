@@ -50,14 +50,6 @@
             "url": "https://community.tt-rss.org/t/replace-php-gettext/2889"
         },
         {
-            "type": "WEB",
-            "url": "https://community.tt-rss.org/t/heads-up-several-vulnerabilities-fixed/3799"
-        },
-        {
-            "type": "WEB",
-            "url": "https://community.tt-rss.org/t/replace-php-gettext/2889"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-25789"
         },

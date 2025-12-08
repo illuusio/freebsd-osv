@@ -103,10 +103,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2004-1138"
         },
         {
-            "type": "WEB",
-            "url": "ftp://ftp.vim.org/pub/vim/patches/6.3/6.3.045"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://groups.yahoo.com/group/vimdev/message/38084"
         }

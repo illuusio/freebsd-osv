@@ -139,10 +139,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://typo3.org/article/typo3-1046-and-9520-security-releases-published"
-        },
-        {
-            "type": "WEB",
             "url": "https://typo3.org/security/advisory/typo3-core-sa-2020-007"
         },
         {

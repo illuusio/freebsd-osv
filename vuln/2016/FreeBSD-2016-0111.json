@@ -58,10 +58,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/cisco/libsrtp/commit/704a31774db0dd941094fd2b47c21638b8dc3de2"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/cisco/libsrtp/commit/be95365fbb4788b688cab7af61c65b7989055fb4"
         },
         {

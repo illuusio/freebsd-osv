@@ -49,10 +49,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-1911"
         },
         {
-            "type": "WEB",
-            "url": "http://leafnode.sourceforge.net/leafnode-SA-2005-02.txt"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=82056"
         },

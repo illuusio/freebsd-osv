@@ -69,10 +69,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/23347/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.quantenblog.net/security/virus-scanner-bypass"
         }
     ],

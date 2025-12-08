@@ -51,10 +51,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://security.lss.hr/en/index.php?page=details&ID=LSS-2004-11-03"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.gotbnc.com/changes.html"
         }
     ],

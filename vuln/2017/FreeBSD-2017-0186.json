@@ -128,10 +128,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://bugzilla.gnome.org/show_bug.cgi?id=784630"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/mate-desktop/atril/issues/257"
         },
         {

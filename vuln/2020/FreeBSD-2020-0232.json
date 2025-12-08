@@ -55,10 +55,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-24553"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/golang/go/issues/40928"
         }
     ],
     "schema_version": "1.7.0",

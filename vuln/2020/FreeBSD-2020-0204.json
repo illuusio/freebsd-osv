@@ -64,10 +64,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://downloads.apache.org/httpd/CHANGES_2.4.46"
-        },
-        {
-            "type": "WEB",
             "url": "https://httpd.apache.org/security/vulnerabilities_24.html"
         },
         {

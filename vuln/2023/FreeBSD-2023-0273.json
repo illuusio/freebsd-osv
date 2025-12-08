@@ -93,10 +93,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-41053"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/redis/redis/security/advisories/GHSA-q4jr-5p56-4xwc"
         }
     ],
     "schema_version": "1.7.0",

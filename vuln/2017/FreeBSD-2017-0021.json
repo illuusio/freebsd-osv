@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.computest.nl/advisories/CT-2017-0109_Ansible.txt"
-        },
-        {
-            "type": "WEB",
             "url": "https://lwn.net/Articles/711357/"
         }
     ],

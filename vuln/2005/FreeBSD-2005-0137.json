@@ -110,10 +110,6 @@
         {
             "type": "WEB",
             "url": "http://gaim.sourceforge.net/security/index.php?id=11"
-        },
-        {
-            "type": "WEB",
-            "url": "http://gaim.sourceforge.net/security/index.php?id=12"
         }
     ],
     "schema_version": "1.7.0",

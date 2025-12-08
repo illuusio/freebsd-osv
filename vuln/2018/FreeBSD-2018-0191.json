@@ -42,10 +42,6 @@
             "url": "https://lists.zx2c4.com/pipermail/cgit/2018-August/004176.html"
         },
         {
-            "type": "WEB",
-            "url": "https://lists.zx2c4.com/pipermail/cgit/2018-August/004176.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-14912"
         }

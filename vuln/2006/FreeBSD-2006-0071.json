@@ -143,10 +143,6 @@
         {
             "type": "WEB",
             "url": "http://www.xfocus.org/advisories/200603/11.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/19418/"
         }
     ],
     "schema_version": "1.7.0",

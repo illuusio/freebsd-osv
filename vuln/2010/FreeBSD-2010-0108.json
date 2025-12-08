@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.monotone.ca/NEWS"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.thomaskeller.biz/blog/2010/10/22/monotone-0-48-1-released-please-update-your-servers/"
         }
     ],

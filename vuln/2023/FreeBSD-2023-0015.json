@@ -54,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-20001"
-        },
-        {
-            "type": "WEB",
-            "url": "https://downloads.apache.org/httpd/CHANGES_2.4.55"
         }
     ],
     "schema_version": "1.7.0",

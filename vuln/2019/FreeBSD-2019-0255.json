@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://chromereleases.googleblog.com/2019/11/stable-channel-update-for-desktop.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2019/11/stable-channel-update-for-desktop.html"
         }
     ],
     "schema_version": "1.7.0",

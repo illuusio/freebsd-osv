@@ -42,10 +42,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.cacti.net/release_notes_0_8_7f.php"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.bonsai-sec.com/en/research/vulnerabilities/cacti-os-command-injection-0105.php"
         },
         {

@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.magentocommerce.com/download"
-        },
-        {
-            "type": "WEB",
             "url": "http://merch.docs.magento.com/ce/user_guide/Magento_Community_Edition_User_Guide.html#magento/release-notes-ce-1.9.2.html"
         },
         {

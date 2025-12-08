@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-39695"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/Exiv2/exiv2/security/advisories/GHSA-38rv-8x93-pvrh"
         }
     ],
     "schema_version": "1.7.0",

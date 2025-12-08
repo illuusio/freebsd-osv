@@ -51,10 +51,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-0804"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.kb.cert.org/vuls/id/MAPG-7N9GN8"
         }
     ],
     "schema_version": "1.7.0",

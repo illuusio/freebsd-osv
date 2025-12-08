@@ -103,10 +103,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-3712"
         },
         {
-            "type": "WEB",
-            "url": "https://www.openssl.org/news/secadv/20210824.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-21:16.openssl.asc"
         }

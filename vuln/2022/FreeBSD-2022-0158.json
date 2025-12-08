@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-36009"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/matrix-org/gomatrixserverlib/security/advisories/GHSA-grvv-h2f9-7v9c"
         }
     ],
     "schema_version": "1.7.0",

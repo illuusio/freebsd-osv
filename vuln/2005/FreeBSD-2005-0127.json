@@ -562,10 +562,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-0989"
         },
         {
-            "type": "WEB",
-            "url": "http://www.mozilla.org/security/announce/mfsa2005-33.html"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=288688"
         }

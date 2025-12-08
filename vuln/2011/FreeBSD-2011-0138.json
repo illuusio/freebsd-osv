@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.phpmyfaq.de/advisory_2011-10-25.php"
-        },
-        {
-            "type": "WEB",
             "url": "http://forum.phpmyfaq.de/viewtopic.php?f=3&t=13402"
         }
     ],

@@ -85,10 +85,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-0609"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.adobe.com/support/security/advisories/apsa11-01.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://www.freelists.org/post/dokuwiki/Hotfix-Release-20110525a-Rincewind"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.freelists.org/post/dokuwiki/Hotfix-Release-20110525a-Rincewind"
         }
     ],
     "schema_version": "1.7.0",

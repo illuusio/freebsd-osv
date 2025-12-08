@@ -68,10 +68,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-31951"
-        },
-        {
-            "type": "WEB",
-            "url": "https://frrouting.org/release/9.1.1/"
         }
     ],
     "schema_version": "1.7.0",

@@ -105,18 +105,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-2447"
-        },
-        {
-            "type": "WEB",
-            "url": "http://de5.samba.org/samba/security/CVE-2007-2444.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://de5.samba.org/samba/security/CVE-2007-2446.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://de5.samba.org/samba/security/CVE-2007-2447.html"
         }
     ],
     "schema_version": "1.7.0",

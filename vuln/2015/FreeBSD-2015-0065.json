@@ -116,10 +116,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-1799"
-        },
-        {
-            "type": "WEB",
-            "url": "http://archive.ntp.org/ntp4/ChangeLog-stable"
         }
     ],
     "schema_version": "1.7.0",

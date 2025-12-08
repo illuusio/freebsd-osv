@@ -43,10 +43,6 @@
         {
             "type": "WEB",
             "url": "https://issues.asterisk.org/jira/browse/ASTERISK-24301"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.asterisk.org/security"
         }
     ],
     "schema_version": "1.7.0",

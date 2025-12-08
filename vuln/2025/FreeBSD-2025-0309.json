@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.fetchmail.info/fetchmail-SA-2025-01.txt"
-        },
-        {
-            "type": "WEB",
             "url": "https://gitlab.com/fetchmail/fetchmail/-/raw/legacy_6x/fetchmail-SA-2025-01.txt?ref_type=heads"
         },
         {

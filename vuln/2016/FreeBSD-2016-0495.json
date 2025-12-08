@@ -43,10 +43,6 @@
             "url": "http://php.net/ChangeLog-7.php#7.0.14"
         },
         {
-            "type": "WEB",
-            "url": "http://php.net/ChangeLog-7.php#7.0.14"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-9935"
         },

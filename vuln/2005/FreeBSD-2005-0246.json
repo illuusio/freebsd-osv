@@ -87,14 +87,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/15450/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://news.postnuke.com/Article2691.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://news.postnuke.com/Article2699.html"
         }
     ],
     "schema_version": "1.7.0",

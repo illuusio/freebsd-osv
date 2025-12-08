@@ -46,10 +46,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://lists.wikimedia.org/pipermail/mediawiki-announce/2011-May/000098.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://svn.wikimedia.org/svnroot/mediawiki/tags/REL1_16_5/phase3/RELEASE-NOTES"
         }
     ],

@@ -42,10 +42,6 @@
             "url": "http://snmptt.sourceforge.net/changelog.shtml"
         },
         {
-            "type": "WEB",
-            "url": "http://snmptt.sourceforge.net/changelog.shtml"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=248162"
         }

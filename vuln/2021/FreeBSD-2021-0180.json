@@ -64,10 +64,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-22926"
-        },
-        {
-            "type": "WEB",
-            "url": "https://curl.se/docs/vuln-7.77.0.html"
         }
     ],
     "schema_version": "1.7.0",

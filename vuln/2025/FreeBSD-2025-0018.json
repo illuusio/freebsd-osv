@@ -117,10 +117,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-6324"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2025/01/22/patch-release-gitlab-17-8-1-released/"
         }
     ],
     "schema_version": "1.7.0",

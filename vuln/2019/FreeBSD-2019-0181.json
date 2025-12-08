@@ -63,10 +63,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/nghttp2/nghttp2/releases"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/Netflix/security-bulletins/blob/master/advisories/third-party/2019-002.md"
         },
         {

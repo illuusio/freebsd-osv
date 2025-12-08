@@ -78,10 +78,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.ocert.org/advisories/ocert-2015-008.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://freeradius.org/security.html"
         }
     ],

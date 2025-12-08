@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://lists.debian.org/debian-security-announce/2016/msg00060.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://seclists.org/fulldisclosure/2016/Feb/99"
         }
     ],

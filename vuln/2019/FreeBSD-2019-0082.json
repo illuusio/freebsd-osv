@@ -43,10 +43,6 @@
             "url": "https://www.gnutls.org/security-new.html#GNUTLS-SA-2019-03-27"
         },
         {
-            "type": "WEB",
-            "url": "https://www.gnutls.org/security-new.html#GNUTLS-SA-2019-03-27"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-3829"
         },

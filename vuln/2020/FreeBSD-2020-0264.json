@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/libexif/libexif/blob/master/NEWS"
-        },
-        {
-            "type": "WEB",
             "url": "CVE-2016-6328"
         },
         {

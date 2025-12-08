@@ -77,10 +77,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://php.net/ChangeLog-5.php#5.3.29"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.sektioneins.de/en/blog/14-07-04-phpinfo-infoleak.html"
         }
     ],

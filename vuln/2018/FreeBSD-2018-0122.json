@@ -49,10 +49,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/python/cpython/blob/2.7/Misc/NEWS.d/2.7.15rc1.rst"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/python/cpython/blob/2.7/Misc/NEWS.d/2.7.15.rst"
         },
         {

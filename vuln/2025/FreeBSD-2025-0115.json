@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://www.process-one.net/blog/ejabberd-25-04/#occupantid"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.process-one.net/blog/ejabberd-25-04/#occupantid"
         }
     ],
     "schema_version": "1.7.0",

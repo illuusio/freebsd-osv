@@ -68,10 +68,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-29478"
-        },
-        {
-            "type": "WEB",
-            "url": "https://groups.google.com/g/redis-db/c/6GSWzTW0PR8"
         }
     ],
     "schema_version": "1.7.0",

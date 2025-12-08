@@ -73,10 +73,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-0720"
-        },
-        {
-            "type": "WEB",
-            "url": "http://plone.org/products/plone/security/advisories/cve-2011-0720"
         }
     ],
     "schema_version": "1.7.0",

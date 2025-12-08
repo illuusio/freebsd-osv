@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/47435/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.spamdyke.org/documentation/Changelog.txt"
         }
     ],

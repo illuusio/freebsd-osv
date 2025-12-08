@@ -38,10 +38,6 @@
         {
             "type": "REPORT",
             "url": "https://www.netsparker.com/web-applications-advisories/ns-15-011-xss-vulnerability-identified-in-pligg-cms/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.netsparker.com/web-applications-advisories/ns-15-011-xss-vulnerability-identified-in-pligg-cms/"
         }
     ],
     "schema_version": "1.7.0",

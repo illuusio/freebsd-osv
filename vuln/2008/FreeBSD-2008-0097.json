@@ -105,10 +105,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2008-4107"
-        },
-        {
-            "type": "WEB",
-            "url": "http://wordpress.org/development/2008/09/wordpress-262/"
         }
     ],
     "schema_version": "1.7.0",

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://www.phpmyadmin.net/security/PMASA-2018-2/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.phpmyadmin.net/security/PMASA-2018-2/"
         }
     ],
     "schema_version": "1.7.0",

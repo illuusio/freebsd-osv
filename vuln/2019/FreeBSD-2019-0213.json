@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/libexpat/libexpat/blob/R_2_2_7/expat/Changes"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/libexpat/libexpat/blob/R_2_2_7/expat/Changes"
         }
     ],
     "schema_version": "1.7.0",

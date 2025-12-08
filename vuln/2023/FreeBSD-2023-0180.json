@@ -150,10 +150,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-24329"
-        },
-        {
-            "type": "WEB",
-            "url": "https://pythoninsider.blogspot.com/2023/06/python-3114-31012-3917-3817-3717-and.html"
         }
     ],
     "schema_version": "1.7.0",

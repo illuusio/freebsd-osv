@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.monitorix.org/news.html#N331"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/mikaku/Monitorix/issues/30"
         }
     ],

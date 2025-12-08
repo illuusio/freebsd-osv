@@ -73,10 +73,6 @@
         {
             "type": "REPORT",
             "url": "https://www.drupal.org/SA-CORE-2016-001"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.drupal.org/SA-CORE-2016-001"
         }
     ],
     "schema_version": "1.7.0",

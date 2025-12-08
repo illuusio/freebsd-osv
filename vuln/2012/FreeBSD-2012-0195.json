@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://drupal.org/node/1815912"
-        },
-        {
-            "type": "WEB",
-            "url": "http://drupal.org/node/1815912"
         }
     ],
     "schema_version": "1.7.0",

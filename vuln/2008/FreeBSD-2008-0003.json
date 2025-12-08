@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://maradns.blogspot.com/2007/08/maradns-update-all-versions.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/28329"
         }
     ],
     "schema_version": "1.7.0",

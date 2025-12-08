@@ -157,10 +157,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://xenbits.xen.org/xsa/advisory-140.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://git.qemu.org/?p=qemu.git;a=commit;h=2a3612ccc1fa9cea77bd193afbfe21c77e7e91ef"
         }
     ],

@@ -44,10 +44,6 @@
             "url": "https://nvd.nist.gov/vuln/search/results?form_type=Advanced&cves=on&cpe_version=cpe%3a%2fa%3apizzashack%3arssh%3a2.3.4"
         },
         {
-            "type": "WEB",
-            "url": "https://nvd.nist.gov/vuln/search/results?form_type=Advanced&cves=on&cpe_version=cpe%3a%2fa%3apizzashack%3arssh%3a2.3.4"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-1000018"
         },

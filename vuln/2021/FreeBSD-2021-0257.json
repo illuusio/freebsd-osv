@@ -68,10 +68,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-22960"
-        },
-        {
-            "type": "WEB",
-            "url": "https://nodejs.org/en/blog/vulnerability/oct-2021-security-releases/"
         }
     ],
     "schema_version": "1.7.0",

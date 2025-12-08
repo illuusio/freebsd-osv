@@ -62,10 +62,6 @@
         {
             "type": "WEB",
             "url": "https://www.kb.cert.org/vuls/id/668167"
-        },
-        {
-            "type": "WEB",
-            "url": "http://support.ntp.org/bin/view/Main/SecurityNotice#June_2015_NTP_Security_Vulnerabi"
         }
     ],
     "schema_version": "1.7.0",

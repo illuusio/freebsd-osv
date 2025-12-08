@@ -61,10 +61,6 @@
             "url": "https://dovecot.org/pipermail/dovecot-news/2019-April/000407.html"
         },
         {
-            "type": "WEB",
-            "url": "https://dovecot.org/pipermail/dovecot-news/2019-April/000407.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-10691"
         }

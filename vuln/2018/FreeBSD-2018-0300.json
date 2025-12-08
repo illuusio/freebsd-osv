@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "https://typo3.org/article/typo3-952-8721-and-7632-security-releases-published/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://typo3.org/article/typo3-952-8721-and-7632-security-releases-published/"
         }
     ],
     "schema_version": "1.7.0",

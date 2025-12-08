@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2008-6170"
-        },
-        {
-            "type": "WEB",
-            "url": "http://drupal.org/node/324824"
         }
     ],
     "schema_version": "1.7.0",

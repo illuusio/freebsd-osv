@@ -57,10 +57,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://bugs.gentoo.org/653834"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/quassel/quassel/commit/08bace4e9ecf08273f094c0c6aa8b3363d38ac3e"
         },
         {

@@ -46,10 +46,6 @@
             "url": "http://www.openwall.com/lists/oss-security/2018/07/02/2"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-14036"
-        },
-        {
             "type": "WEB",
             "url": "https://www.securityfocus.com/bid/104757"
         },

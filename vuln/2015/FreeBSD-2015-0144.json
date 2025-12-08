@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-4707"
-        },
-        {
-            "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2015/q2/779"
         }
     ],
     "schema_version": "1.7.0",

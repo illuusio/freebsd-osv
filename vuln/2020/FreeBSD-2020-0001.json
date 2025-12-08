@@ -71,10 +71,6 @@
             "url": "https://about.gitlab.com/blog/2020/01/02/security-release-gitlab-12-6-2-released/"
         },
         {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/blog/2020/01/02/security-release-gitlab-12-6-2-released/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-20144"
         },

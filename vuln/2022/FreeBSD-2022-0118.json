@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-24766"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/mitmproxy/mitmproxy/commit/b06fb6d157087d526bd02e7aadbe37c56865c71b"
         }
     ],
     "schema_version": "1.7.0",

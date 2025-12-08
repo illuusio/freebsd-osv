@@ -44,10 +44,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=158084"
-        },
-        {
-            "type": "WEB",
-            "url": "http://piwik.org/blog/2011/06/piwik-1-5-security-advisory/"
         }
     ],
     "schema_version": "1.7.0",

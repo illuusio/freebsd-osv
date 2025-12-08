@@ -43,10 +43,6 @@
             "url": "https://github.com/moinwiki/moin-1.9/blob/1.9.11/docs/CHANGES#L13"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/moinwiki/moin-1.9/blob/1.9.11/docs/CHANGES#L13"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-25074"
         },

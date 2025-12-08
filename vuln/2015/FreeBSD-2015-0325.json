@@ -42,10 +42,6 @@
             "url": "http://symfony.com/blog/security-release-twig-1-20-0"
         },
         {
-            "type": "WEB",
-            "url": "http://symfony.com/blog/security-release-twig-1-20-0"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-7809"
         }

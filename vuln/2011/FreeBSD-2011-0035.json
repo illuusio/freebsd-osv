@@ -85,10 +85,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://tomcat.apache.org/security-5.html#Fixed_in_Apache_Tomcat_5.5.32"
-        },
-        {
-            "type": "WEB",
             "url": "http://tomcat.apache.org/security-6.html#Fixed_in_Apache_Tomcat_6.0.30"
         },
         {

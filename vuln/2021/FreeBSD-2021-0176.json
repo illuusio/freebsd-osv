@@ -103,10 +103,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.ruby-lang.org/en/news/2021/07/07/ruby-3-0-2-released/"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.ruby-lang.org/en/news/2021/05/02/os-command-injection-in-rdoc/"
         },
         {

@@ -52,10 +52,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2001-0733"
         },
         {
-            "type": "WEB",
-            "url": "http://www.shmoo.com/mail/bugtraq/jun01/msg00286.shtml"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://www.securityfocus.com/bid/2912/info"
         },

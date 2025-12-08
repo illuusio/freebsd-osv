@@ -60,10 +60,6 @@
         {
             "type": "WEB",
             "url": "https://rhn.redhat.com/errata/RHSA-2008-0818.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/31470"
         }
     ],
     "schema_version": "1.7.0",

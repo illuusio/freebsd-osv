@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-21658"
-        },
-        {
-            "type": "WEB",
-            "url": "https://blog.rust-lang.org/2022/01/20/cve-2022-21658.html"
         }
     ],
     "schema_version": "1.7.0",

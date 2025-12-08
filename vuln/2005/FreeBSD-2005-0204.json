@@ -49,18 +49,6 @@
         {
             "type": "DISCUSSION",
             "url": "http://marc.theaimsgroup.com/?l=bugtraq&m=111954136315248"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.hardened-php.net/advisory-032005.php"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.hardened-php.net/advisory-042005.php"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.hardened-php.net/advisory-052005.php"
         }
     ],
     "schema_version": "1.7.0",

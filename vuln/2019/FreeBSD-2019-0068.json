@@ -100,10 +100,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://blog.jupyter.org/open-redirect-vulnerability-in-jupyter-jupyterhub-adf43583f1e4"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/jupyter/notebook/blob/master/docs/source/changelog.rst"
         },
         {

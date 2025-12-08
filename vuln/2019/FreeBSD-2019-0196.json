@@ -61,10 +61,6 @@
             "url": "https://dovecot.org/pipermail/dovecot/2019-August/116874.html"
         },
         {
-            "type": "WEB",
-            "url": "https://dovecot.org/pipermail/dovecot/2019-August/116874.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-11500"
         }

@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "https://chromereleases.googleblog.com/2024/02/stable-channel-update-for-desktop_20.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2024/02/stable-channel-update-for-desktop_20.html"
         }
     ],
     "schema_version": "1.7.0",

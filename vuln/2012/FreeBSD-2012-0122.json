@@ -42,10 +42,6 @@
             "url": "http://secunia.com/advisories/49196/"
         },
         {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/49196/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-0283"
         }

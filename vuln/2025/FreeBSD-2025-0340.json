@@ -175,10 +175,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-61789"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/Icinga/icingadb-web/security/advisories/GHSA-w57j-28jc-8429"
         }
     ],
     "schema_version": "1.7.0",

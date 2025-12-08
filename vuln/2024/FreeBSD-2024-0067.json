@@ -88,10 +88,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-25121"
-        },
-        {
-            "type": "WEB",
-            "url": "https://typo3.org/article/typo3-1301-12411-and-11535-security-releases-published"
         }
     ],
     "schema_version": "1.7.0",

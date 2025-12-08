@@ -78,10 +78,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CAN-2005-0077"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.debian.org/security/2005/dsa-658"
         }
     ],
     "schema_version": "1.7.0",

@@ -42,10 +42,6 @@
             "url": "http://www.securityfocus.com/bid/100825"
         },
         {
-            "type": "WEB",
-            "url": "http://www.securityfocus.com/bid/100825"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1489355"
         },

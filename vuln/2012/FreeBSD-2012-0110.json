@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://downloads.digium.com/pub/security/AST-2012-009.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.asterisk.org/security"
         }
     ],
     "schema_version": "1.7.0",

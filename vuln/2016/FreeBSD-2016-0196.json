@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-3105"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_3.8_.2F_3.8.1_.282016-5-1.29"
         }
     ],
     "schema_version": "1.7.0",

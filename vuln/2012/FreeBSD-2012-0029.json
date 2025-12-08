@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://www.php.net/archive/2012.php#id2012-02-02-1"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/47806/"
         }
     ],
     "schema_version": "1.7.0",

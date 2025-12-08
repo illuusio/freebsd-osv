@@ -93,10 +93,6 @@
         {
             "type": "WEB",
             "url": "http://securityreason.com/securityalert/3802"
-        },
-        {
-            "type": "WEB",
-            "url": "http://bugs.python.org/issue2586"
         }
     ],
     "schema_version": "1.7.0",

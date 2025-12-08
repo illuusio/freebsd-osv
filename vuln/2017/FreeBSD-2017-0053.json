@@ -32,10 +32,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=217099"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=217099"
         }
     ],
     "schema_version": "1.7.0",

@@ -42,10 +42,6 @@
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-2625"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-2625"
-        },
-        {
             "type": "WEB",
             "url": "https://lists.x.org/archives/xorg-announce/2019-March/002974.html"
         },

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://marc.theaimsgroup.com/?l=horde-announce&m=113433279228172&w=2"
-        },
-        {
-            "type": "WEB",
-            "url": "http://marc.theaimsgroup.com/?l=horde-announce&m=113433279228172&w=2"
         }
     ],
     "schema_version": "1.7.0",

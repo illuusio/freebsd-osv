@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-54080"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/Exiv2/exiv2/security/advisories/GHSA-496f-x7cq-cq39"
         }
     ],
     "schema_version": "1.7.0",

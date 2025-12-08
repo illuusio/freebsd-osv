@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://pear.php.net/advisory-20051104.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://pear.php.net/advisory-20051104.txt"
         }
     ],
     "schema_version": "1.7.0",

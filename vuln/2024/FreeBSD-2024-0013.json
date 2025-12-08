@@ -73,10 +73,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-0519"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2024/01/stable-channel-update-for-desktop_16.html"
         }
     ],
     "schema_version": "1.7.0",

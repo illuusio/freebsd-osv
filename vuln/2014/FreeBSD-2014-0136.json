@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-7236"
-        },
-        {
-            "type": "WEB",
-            "url": "http://twiki.org/cgi-bin/view/Codev/SecurityAlert-CVE-2014-7236"
         }
     ],
     "schema_version": "1.7.0",

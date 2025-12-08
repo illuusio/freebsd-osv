@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.cacti.net/release_notes_0_8_8h.php"
-        },
-        {
-            "type": "WEB",
             "url": "http://bugs.cacti.net/view.php?id=2673"
         },
         {

@@ -66,10 +66,6 @@
             "url": "https://about.gitlab.com/releases/2021/01/07/security-release-gitlab-13-7-2-released/"
         },
         {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2021/01/07/security-release-gitlab-13-7-2-released/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-22166"
         },

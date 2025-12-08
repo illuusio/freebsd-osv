@@ -101,10 +101,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/32882/"
-        },
-        {
-            "type": "WEB",
             "url": "http://wordpress.org/development/2008/11/wordpress-265/"
         }
     ],

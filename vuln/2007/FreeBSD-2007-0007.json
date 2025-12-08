@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/23528/"
-        },
-        {
-            "type": "WEB",
             "url": "http://forums.cacti.net/about18846-0-asc-0.html"
         }
     ],

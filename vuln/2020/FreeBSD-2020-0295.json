@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-28896"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gitlab.com/muttmua/mutt/-/commit/04b06aaa3e0cc0022b9b01dbca2863756ebbf59a"
         }
     ],
     "schema_version": "1.7.0",

@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-7845"
-        },
-        {
-            "type": "WEB",
-            "url": "https://helpx.adobe.com/security/products/flash-player/apsb19-30.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -69,10 +69,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://security.e-matters.de/advisories/062004.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/11785"
         }
     ],

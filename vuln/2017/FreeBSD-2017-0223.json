@@ -92,10 +92,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://community.openvpn.net/openvpn/wiki/CVE-2017-12166"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.mail-archive.com/openvpn-devel@lists.sourceforge.net/msg15492.html"
         },
         {

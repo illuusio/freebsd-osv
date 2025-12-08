@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/32114/"
-        },
-        {
-            "type": "WEB",
             "url": "http://blog.openx.org/10/openx-security-update/"
         }
     ],

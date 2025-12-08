@@ -163,10 +163,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-5110"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2017/07/stable-channel-update-for-desktop.html"
         }
     ],
     "schema_version": "1.7.0",

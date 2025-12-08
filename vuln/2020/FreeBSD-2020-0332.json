@@ -54,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-24698"
-        },
-        {
-            "type": "WEB",
-            "url": "https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2020-06.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -79,10 +79,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-21703"
-        },
-        {
-            "type": "WEB",
-            "url": "https://grafana.com/blog/2022/02/08/grafana-7.5.15-and-8.3.5-released-with-moderate-severity-security-fixes/"
         }
     ],
     "schema_version": "1.7.0",

@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "https://github.com/blog/1938-git-client-vulnerability-announced"
-        },
-        {
-            "type": "WEB",
-            "url": "http://article.gmane.org/gmane.linux.kernel/1853266"
         }
     ],
     "schema_version": "1.7.0",

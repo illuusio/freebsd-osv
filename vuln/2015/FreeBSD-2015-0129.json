@@ -73,10 +73,6 @@
             "url": "https://helpx.adobe.com/security/products/flash-player/apsb15-11.html"
         },
         {
-            "type": "WEB",
-            "url": "https://helpx.adobe.com/security/products/flash-player/apsb15-11.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-3096"
         },

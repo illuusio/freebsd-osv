@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "https://secunia.com/advisories/47548/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.spamdyke.org/documentation/Changelog.txt"
         }
     ],
     "schema_version": "1.7.0",

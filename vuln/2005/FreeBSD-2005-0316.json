@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.phpmyadmin.net/home_page/security.php?issue=PMASA-2005-8"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/17895/"
         }
     ],

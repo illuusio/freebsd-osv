@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://varnish-cache.org/security/VSV00004.html#vsv00004"
-        },
-        {
-            "type": "WEB",
-            "url": "https://varnish-cache.org/security/VSV00004.html#vsv00004"
         }
     ],
     "schema_version": "1.7.0",

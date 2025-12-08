@@ -58,18 +58,6 @@
             "url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=508133#15"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-8372"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-8373"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-8374"
-        },
-        {
             "type": "WEB",
             "url": "https://blogs.gentoo.org/ago/2017/04/30/libmad-assertion-failure-in-layer3-c/"
         },

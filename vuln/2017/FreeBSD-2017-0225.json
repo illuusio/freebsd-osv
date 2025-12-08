@@ -47,10 +47,6 @@
             "url": "https://github.com/pts/sam2p/issues/14"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/pts/sam2p/issues/14"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-14628"
         },

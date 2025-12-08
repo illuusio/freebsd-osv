@@ -47,10 +47,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-4717"
-        },
-        {
-            "type": "WEB",
-            "url": "http://drupal.org/node/83064"
         }
     ],
     "schema_version": "1.7.0",

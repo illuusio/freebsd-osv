@@ -97,10 +97,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-41801"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/2IFS5CM2YV4VMSODPX3J2LFHKSEWVFV5/"
         }
     ],
     "schema_version": "1.7.0",

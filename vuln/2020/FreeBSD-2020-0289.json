@@ -61,10 +61,6 @@
             "url": "https://www.openoffice.org/security/cves/CVE-2020-13958.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.openoffice.org/security/cves/CVE-2020-13958.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-13958"
         }

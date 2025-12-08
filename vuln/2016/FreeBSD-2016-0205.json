@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-1541"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/libarchive/libarchive/commit/d0331e8e5b05b475f20b1f3101fe1ad772d7e7e7"
         }
     ],
     "schema_version": "1.7.0",

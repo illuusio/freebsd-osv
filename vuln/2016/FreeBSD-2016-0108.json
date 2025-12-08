@@ -88,10 +88,6 @@
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=207272"
         },
         {
-            "type": "REPORT",
-            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2015-7547"
-        },
-        {
             "type": "WEB",
             "url": "https://blog.des.no/2016/02/freebsd-and-cve-2015-7547/"
         },

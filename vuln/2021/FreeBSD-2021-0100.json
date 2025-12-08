@@ -62,10 +62,6 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30245"
-        },
-        {
-            "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-30245"
         }
     ],

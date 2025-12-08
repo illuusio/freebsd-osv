@@ -63,10 +63,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.kde.org/info/security/advisory-20111003-1.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.nth-dimension.org.uk/pub/NDSA20111003.txt.asc"
         },
         {

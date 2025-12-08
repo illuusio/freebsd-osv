@@ -42,10 +42,6 @@
             "url": "http://www.securityfocus.com/bid/101056"
         },
         {
-            "type": "WEB",
-            "url": "http://www.securityfocus.com/bid/101056"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-14849"
         }

@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-0011"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.kde.org/info/security/advisory-20050215-1.txt"
         }
     ],
     "schema_version": "1.7.0",

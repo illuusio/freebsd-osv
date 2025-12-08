@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/libgit2/libgit2/releases/tag/v0.28.3"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/libgit2/libgit2/releases/tag/v0.28.3"
         }
     ],
     "schema_version": "1.7.0",

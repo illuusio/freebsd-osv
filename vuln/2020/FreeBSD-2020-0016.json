@@ -80,10 +80,6 @@
             "url": "https://about.gitlab.com/releases/2020/01/30/security-release-gitlab-12-7-4-released/"
         },
         {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2020/01/30/security-release-gitlab-12-7-4-released/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-7966"
         },

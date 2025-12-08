@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-44487"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/traefik/traefik/security/advisories/GHSA-7v4p-328v-8v5g"
         }
     ],
     "schema_version": "1.7.0",

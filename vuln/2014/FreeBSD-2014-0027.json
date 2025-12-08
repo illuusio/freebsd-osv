@@ -133,14 +133,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-1959"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.gnutls.org/security.html#GNUTLS-SA-2014-1"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.gnutls.org/security.html#GNUTLS-SA-2014-2"
         }
     ],
     "schema_version": "1.7.0",

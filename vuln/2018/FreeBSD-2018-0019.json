@@ -63,10 +63,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-15132"
         },
         {
-            "type": "REPORT",
-            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1532768"
-        },
-        {
             "type": "WEB",
             "url": "https://github.com/dovecot/core/commit/1a29ed2f96da1be22fa5a4d96c7583aa81b8b060.patch"
         }

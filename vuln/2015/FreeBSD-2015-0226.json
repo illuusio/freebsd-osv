@@ -86,10 +86,6 @@
             "url": "https://access.redhat.com/security/cve/CVE-2015-5600"
         },
         {
-            "type": "WEB",
-            "url": "https://access.redhat.com/security/cve/CVE-2015-5600"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-5600"
         },

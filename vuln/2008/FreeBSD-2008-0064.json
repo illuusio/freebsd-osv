@@ -81,10 +81,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-5803"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/30283"
         }
     ],
     "schema_version": "1.7.0",

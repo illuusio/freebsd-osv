@@ -60,10 +60,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-1960"
-        },
-        {
-            "type": "WEB",
-            "url": "http://bugs.splitbrain.org/index.php?do=details&task_id=1700"
         }
     ],
     "schema_version": "1.7.0",

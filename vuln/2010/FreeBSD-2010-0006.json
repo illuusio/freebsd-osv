@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-3387"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.bugzilla.org/security/3.0.10/"
         }
     ],
     "schema_version": "1.7.0",

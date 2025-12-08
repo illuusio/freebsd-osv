@@ -42,10 +42,6 @@
             "url": "https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=51682"
         },
         {
-            "type": "WEB",
-            "url": "https://gnats.netbsd.org/cgi-bin/query-pr-single.pl?number=51682"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-10396"
         }

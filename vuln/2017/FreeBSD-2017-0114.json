@@ -50,10 +50,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-8917"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/692-20170501-core-sql-injection.html"
         }
     ],
     "schema_version": "1.7.0",

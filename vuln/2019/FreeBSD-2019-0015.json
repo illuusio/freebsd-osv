@@ -52,10 +52,6 @@
         {
             "type": "REPORT",
             "url": "http://subversion.apache.org/security/CVE-2018-11803-advisory.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://subversion.apache.org/security/CVE-2018-11803-advisory.txt"
         }
     ],
     "schema_version": "1.7.0",

@@ -53,10 +53,6 @@
         {
             "type": "DISCUSSION",
             "url": "http://lists.horde.org/archives/announce/2008/000429.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/31842/"
         }
     ],
     "schema_version": "1.7.0",

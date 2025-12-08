@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-7511"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.gnupg.org/pipermail/gnupg-announce/2016q1/000384.html"
         }
     ],
     "schema_version": "1.7.0",

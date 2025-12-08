@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://openafs.org/pages/security/OPENAFS-SA-2013-003.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://openafs.org/pages/security/how-to-rekey.txt"
         },
         {

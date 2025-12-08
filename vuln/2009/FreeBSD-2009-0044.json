@@ -76,10 +76,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/33880/"
-        },
-        {
-            "type": "WEB",
             "url": "http://archives.seul.org/or/announce/Feb-2009/msg00000.html"
         }
     ],

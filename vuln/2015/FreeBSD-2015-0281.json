@@ -126,10 +126,6 @@
             "url": "https://www.wireshark.org/docs/relnotes/wireshark-1.12.7.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.wireshark.org/docs/relnotes/wireshark-1.12.7.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-6241"
         },

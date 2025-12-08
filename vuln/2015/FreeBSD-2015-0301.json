@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.libssh2.org/adv_20150311.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://trac.libssh2.org/ticket/294"
         },
         {

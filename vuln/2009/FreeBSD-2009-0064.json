@@ -60,10 +60,6 @@
         {
             "type": "WEB",
             "url": "http://www.debian.org/security/2009/dsa-1706"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/33505"
         }
     ],
     "schema_version": "1.7.0",

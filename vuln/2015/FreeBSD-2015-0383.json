@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/PHPMailer/PHPMailer/blob/v5.2.14/changelog.md"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/PHPMailer/PHPMailer/blob/v5.2.14/changelog.md"
         }
     ],
     "schema_version": "1.7.0",

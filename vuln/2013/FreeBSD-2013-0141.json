@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-4623"
-        },
-        {
-            "type": "WEB",
-            "url": "https://polarssl.org/tech-updates/security-advisories/polarssl-security-advisory-2013-03"
         }
     ],
     "schema_version": "1.7.0",

@@ -111,10 +111,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.php.net/bug.php?id=77153"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugs.php.net/bug.php?id=77153"
         }
     ],
     "schema_version": "1.7.0",

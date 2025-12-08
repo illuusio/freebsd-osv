@@ -130,10 +130,6 @@
         {
             "type": "REPORT",
             "url": "http://www.djangoproject.com/weblog/2007/oct/26/security-fix/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.djangoproject.com/weblog/2007/oct/26/security-fix/"
         }
     ],
     "schema_version": "1.7.0",

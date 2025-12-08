@@ -73,10 +73,6 @@
         {
             "type": "REPORT",
             "url": "https://www.postgresql.org/support/security/CVE-2021-32029/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.postgresql.org/support/security/CVE-2021-32029/"
         }
     ],
     "schema_version": "1.7.0",

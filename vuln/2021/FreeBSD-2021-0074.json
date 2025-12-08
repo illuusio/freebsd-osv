@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "https://lists.lysator.liu.se/pipermail/nettle-bugs/2021/009458.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.lysator.liu.se/pipermail/nettle-bugs/2021/009458.html"
         }
     ],
     "schema_version": "1.7.0",

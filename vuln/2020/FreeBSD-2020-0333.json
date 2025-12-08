@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/roehling/postsrsd/commit/4733fb11f6bec6524bb8518c5e1a699288c26bac"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/roehling/postsrsd/releases/tag/1.10"
         }
     ],

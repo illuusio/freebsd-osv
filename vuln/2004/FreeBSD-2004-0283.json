@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE7-empty_acls"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.squid-cache.org/bugs/show_bug.cgi?id=1166"
         }
     ],
     "schema_version": "1.7.0",

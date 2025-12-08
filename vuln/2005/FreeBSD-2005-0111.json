@@ -115,10 +115,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-0667"
-        },
-        {
-            "type": "WEB",
-            "url": "http://sylpheed.good-day.net/index.cgi.en#changes"
         }
     ],
     "schema_version": "1.7.0",

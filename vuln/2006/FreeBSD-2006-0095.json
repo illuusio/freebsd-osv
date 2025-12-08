@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://jvn.jp/jp/JVN%2335274905/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://jvn.jp/jp/JVN%2335274905/"
         }
     ],
     "schema_version": "1.7.0",

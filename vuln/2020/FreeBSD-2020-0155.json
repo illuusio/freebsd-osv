@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://weblog.rubyonrails.org/2020/6/17/Rails-6-0-3-2-has-been-released/"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/rails/rails/blob/6-0-stable/actionpack/CHANGELOG.md"
         },
         {

@@ -43,10 +43,6 @@
             "url": "http://www.securityfocus.com/bid/99241/discuss"
         },
         {
-            "type": "WEB",
-            "url": "http://www.securityfocus.com/bid/99241/discuss"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-9865"
         },

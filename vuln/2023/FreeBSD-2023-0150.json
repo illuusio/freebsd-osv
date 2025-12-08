@@ -137,10 +137,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-24538"
-        },
-        {
-            "type": "WEB",
-            "url": "https://grafana.com/blog/2023/04/26/precautionary-patches-for-grafana-released-following-critical-go-vulnerability-cve-2023-24538/"
         }
     ],
     "schema_version": "1.7.0",

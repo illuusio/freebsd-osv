@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://article.gmane.org/gmane.comp.encryption.gpg.gnutls.devel/2947"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/31505/"
         }
     ],
     "schema_version": "1.7.0",

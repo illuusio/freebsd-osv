@@ -69,10 +69,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://bugs.mysql.com/bug.php?id=35658"
-        },
-        {
-            "type": "WEB",
             "url": "http://dev.mysql.com/doc/refman/5.0/en/releasenotes-es-5-0-66.html"
         },
         {

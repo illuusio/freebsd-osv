@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.exim.org/show_bug.cgi?id=2199"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugs.exim.org/show_bug.cgi?id=2199"
         }
     ],
     "schema_version": "1.7.0",

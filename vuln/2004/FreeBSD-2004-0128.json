@@ -50,10 +50,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.kde.org/info/security/advisory-20040823-1.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.osvdb.org/9117"
         },
         {

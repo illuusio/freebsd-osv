@@ -49,10 +49,6 @@
             "url": "https://irssi.org/security/irssi_sa_2018_02.txt"
         },
         {
-            "type": "WEB",
-            "url": "https://irssi.org/security/irssi_sa_2018_02.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-7054"
         },

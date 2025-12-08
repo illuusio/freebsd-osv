@@ -101,10 +101,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-7943"
-        },
-        {
-            "type": "WEB",
-            "url": "https://puppet.com/security/cve/CVE-2020-7943/"
         }
     ],
     "schema_version": "1.7.0",

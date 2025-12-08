@@ -80,10 +80,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.debian.org/security/2005/dsa-713"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.gentoo.org/security/en/glsa/glsa-200504-11.xml"
         }
     ],

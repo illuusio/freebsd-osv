@@ -72,10 +72,6 @@
             "url": "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2014-10-01"
         },
         {
-            "type": "WEB",
-            "url": "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2014-10-01"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-3661"
         },

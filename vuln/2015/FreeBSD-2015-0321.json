@@ -54,10 +54,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://rt.cpan.org/Public/Bug/Display.html?id=107364"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugs.debian.org/496448"
         },
         {

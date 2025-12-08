@@ -52,10 +52,6 @@
         {
             "type": "REPORT",
             "url": "https://subversion.apache.org/security/CVE-2020-17525-advisory.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "https://subversion.apache.org/security/CVE-2020-17525-advisory.txt"
         }
     ],
     "schema_version": "1.7.0",

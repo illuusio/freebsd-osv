@@ -82,10 +82,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-0189"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.squid-cache.org/Advisories/SQUID-2012_1.txt"
         }
     ],
     "schema_version": "1.7.0",

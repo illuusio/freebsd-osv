@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/smarty-php/smarty/blob/v3.1.30/change_log.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/smarty-php/smarty/blob/v3.1.30/change_log.txt"
         }
     ],
     "schema_version": "1.7.0",

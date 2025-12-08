@@ -48,10 +48,6 @@
         {
             "type": "DISCUSSION",
             "url": "http://marc.theaimsgroup.com/?l=full-disclosure&m=112377934108902"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.idefense.com/application/poi/display?id=290&type=vulnerabilities"
         }
     ],
     "schema_version": "1.7.0",

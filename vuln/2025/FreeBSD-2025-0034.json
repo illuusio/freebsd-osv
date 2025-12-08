@@ -79,10 +79,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-30499"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/cacalabs/libcaca/releases/tag/v0.99.beta20"
         }
     ],
     "schema_version": "1.7.0",

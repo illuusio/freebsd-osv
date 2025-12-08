@@ -54,10 +54,6 @@
         {
             "type": "REPORT",
             "url": "http://nginx.net/CHANGES"
-        },
-        {
-            "type": "WEB",
-            "url": "http://nginx.net/CHANGES"
         }
     ],
     "schema_version": "1.7.0",

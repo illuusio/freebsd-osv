@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://talosintelligence.com/vulnerability_reports/TALOS-2018-0684"
-        },
-        {
-            "type": "WEB",
             "url": "http://lists.live555.com/pipermail/live-devel/2018-October/021071.html"
         }
     ],

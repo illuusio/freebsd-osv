@@ -57,10 +57,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/35278/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.joomla.org/announcements/release-news/5235-joomla-1511-security-release-now-available.html"
         }
     ],

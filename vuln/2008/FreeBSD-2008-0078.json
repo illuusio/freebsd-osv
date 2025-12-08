@@ -79,10 +79,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/30600"
-        },
-        {
-            "type": "WEB",
             "url": "http://sourceforge.net/project/shownotes.php?release_id=605780"
         }
     ],

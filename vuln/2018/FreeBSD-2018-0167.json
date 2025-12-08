@@ -122,10 +122,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-1000613"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.bouncycastle.org/latest_releases.html"
         }
     ],
     "schema_version": "1.7.0",

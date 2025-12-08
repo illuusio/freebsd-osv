@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-45046"
-        },
-        {
-            "type": "WEB",
-            "url": "https://opensearch.org/blog/releases/2021/12/update-1-2-2/"
         }
     ],
     "schema_version": "1.7.0",

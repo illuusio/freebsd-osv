@@ -99,10 +99,6 @@
             "url": "http://www.ocert.org/advisories/ocert-2015-011.html"
         },
         {
-            "type": "WEB",
-            "url": "http://www.ocert.org/advisories/ocert-2015-011.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-8549"
         }

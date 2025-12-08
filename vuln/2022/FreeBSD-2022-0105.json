@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/golang/go/issues/52313"
-        },
-        {
-            "type": "WEB",
             "url": "https://groups.google.com/g/golang-dev/c/CPU3TB6d4oY"
         }
     ],

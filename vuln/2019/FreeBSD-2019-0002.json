@@ -215,10 +215,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-3498"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.djangoproject.com/weblog/2019/jan/04/security-releases/"
         }
     ],
     "schema_version": "1.7.0",

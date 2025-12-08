@@ -154,10 +154,6 @@
             "url": "http://www.oracle.com/technetwork/security-advisory/cpujan2017-2881727.html#AppendixMSQL"
         },
         {
-            "type": "WEB",
-            "url": "http://www.oracle.com/technetwork/security-advisory/cpujan2017-2881727.html#AppendixMSQL"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-8318"
         },

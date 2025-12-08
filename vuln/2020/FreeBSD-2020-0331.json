@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-35177"
-        },
-        {
-            "type": "WEB",
-            "url": "https://discuss.hashicorp.com/t/hcsec-2020-25-vault-s-ldap-auth-method-allows-user-enumeration/18984"
         }
     ],
     "schema_version": "1.7.0",

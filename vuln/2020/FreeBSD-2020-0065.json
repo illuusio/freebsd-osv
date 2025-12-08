@@ -42,10 +42,6 @@
             "url": "https://gnutls.org/security-new.html#GNUTLS-SA-2020-03-31"
         },
         {
-            "type": "WEB",
-            "url": "https://gnutls.org/security-new.html#GNUTLS-SA-2020-03-31"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-11501"
         }

@@ -92,10 +92,6 @@
         {
             "type": "REPORT",
             "url": "https://docs.python.org/release/3.9.15/whatsnew/changelog.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://docs.python.org/release/3.9.15/whatsnew/changelog.html"
         }
     ],
     "schema_version": "1.7.0",

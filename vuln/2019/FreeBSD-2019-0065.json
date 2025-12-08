@@ -100,10 +100,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://docs.python.org/3.7/whatsnew/changelog.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://bugs.python.org/issue35746"
         },
         {

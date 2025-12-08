@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://exim.org/static/doc/security/CVE-2018-6789.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "https://exim.org/static/doc/security/CVE-2018-6789.txt"
         }
     ],
     "schema_version": "1.7.0",

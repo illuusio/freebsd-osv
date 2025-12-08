@@ -46,10 +46,6 @@
         {
             "type": "REPORT",
             "url": "https://bugzilla.wikimedia.org/show_bug.cgi?id=26561"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugzilla.wikimedia.org/show_bug.cgi?id=26561"
         }
     ],
     "schema_version": "1.7.0",

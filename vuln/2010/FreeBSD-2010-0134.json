@@ -68,10 +68,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2010-007.txt"
-        },
-        {
-            "type": "WEB",
             "url": "http://osvdb.org/69610"
         }
     ],

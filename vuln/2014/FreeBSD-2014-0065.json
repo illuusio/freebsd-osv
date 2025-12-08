@@ -94,14 +94,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-6887"
-        },
-        {
-            "type": "WEB",
-            "url": "http://openjpeg.googlecode.com/svn/tags/version.1.5.1/NEWS"
-        },
-        {
-            "type": "WEB",
-            "url": "http://openjpeg.googlecode.com/svn/tags/version.1.5.2/NEWS"
         }
     ],
     "schema_version": "1.7.0",

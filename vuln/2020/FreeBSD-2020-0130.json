@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/kaminari/kaminari/security/advisories/GHSA-r5jw-62xg-j433"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/kaminari/kaminari/blob/master/CHANGELOG.md#121"
         },
         {

@@ -42,10 +42,6 @@
             "url": "https://bugs.exim.org/show_bug.cgi?id=2199"
         },
         {
-            "type": "WEB",
-            "url": "https://bugs.exim.org/show_bug.cgi?id=2199"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-16944"
         }

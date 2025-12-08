@@ -41,10 +41,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://bugs.chromium.org/p/project-zero/issues/detail?id=1447"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/transmission/transmission/pull/468"
         }
     ],

@@ -54,10 +54,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/43077/"
-        },
-        {
-            "type": "WEB",
             "url": "http://groups.google.com/group/mail-ruby/browse_thread/thread/e93bbd05706478dd?pli=1"
         }
     ],

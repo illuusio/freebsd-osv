@@ -80,10 +80,6 @@
             "url": "https://www.mozilla.org/en-US/security/advisories/mfsa2019-19/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.mozilla.org/en-US/security/advisories/mfsa2019-19/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-11708"
         }

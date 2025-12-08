@@ -69,10 +69,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-12961"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.cvedetails.com/vulnerability-list/vendor_id-72/product_id-38732/year-2017/GNU-Pspp.html"
         }
     ],
     "schema_version": "1.7.0",

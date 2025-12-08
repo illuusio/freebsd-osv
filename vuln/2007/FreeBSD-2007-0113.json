@@ -50,14 +50,6 @@
             "url": "http://secunia.com/advisories/27130/"
         },
         {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/27093/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/27130/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-5267"
         },

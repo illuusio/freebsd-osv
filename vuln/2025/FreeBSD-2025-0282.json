@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/Jelmerro/Vieb/security/advisories/GHSA-h2fq-667q-7gpm"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/Jelmerro/Vieb/security/advisories/GHSA-h2fq-667q-7gpm"
         }
     ],
     "schema_version": "1.7.0",

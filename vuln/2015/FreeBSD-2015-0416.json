@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2015/12/21/5"
-        },
-        {
-            "type": "WEB",
             "url": "https://git.gnome.org/browse/librsvg/commit/rsvg-shapes.c?id=40af93e6eb1c94b90c3b9a0b87e0840e126bb8df"
         }
     ],

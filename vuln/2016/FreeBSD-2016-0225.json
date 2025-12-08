@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-8312"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.openafs.org/dl/1.6.16/RELNOTES-1.6.16"
         }
     ],
     "schema_version": "1.7.0",

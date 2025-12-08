@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.squid-cache.org/Versions/v2/2.5/bugs/#squid-2.5.STABLE9-cachemgr_conf"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.squid-cache.org/bugs/show_bug.cgi?id=1094"
         }
     ],

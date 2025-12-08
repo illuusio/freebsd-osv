@@ -47,10 +47,6 @@
             "url": "https://lists.matroska.org/pipermail/matroska-users/2015-October/006985.html"
         },
         {
-            "type": "WEB",
-            "url": "https://lists.matroska.org/pipermail/matroska-users/2015-October/006985.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-8789"
         },

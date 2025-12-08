@@ -42,10 +42,6 @@
             "url": "http://www.lighttpd.net/2016/7/31/1.4.41/"
         },
         {
-            "type": "WEB",
-            "url": "http://www.lighttpd.net/2016/7/31/1.4.41/"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=211495"
         }

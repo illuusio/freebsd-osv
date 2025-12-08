@@ -70,14 +70,6 @@
             "url": "http://www.squid-cache.org/Advisories/SQUID-2018_2.txt"
         },
         {
-            "type": "WEB",
-            "url": "http://www.squid-cache.org/Advisories/SQUID-2018_1.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.squid-cache.org/Advisories/SQUID-2018_2.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-1000024"
         },

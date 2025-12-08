@@ -42,10 +42,6 @@
             "url": "https://www.postgresql.org/about/news/1939/"
         },
         {
-            "type": "WEB",
-            "url": "https://www.postgresql.org/about/news/1939/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-10129"
         }

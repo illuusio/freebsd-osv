@@ -181,10 +181,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.oracle.com/security-alerts/cpuapr2021.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://mariadb.com/kb/en/mariadb-10510-release-notes/"
         },
         {

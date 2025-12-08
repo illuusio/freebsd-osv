@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://curl.haxx.se/docs/adv_20100209.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.debian.org/security/2010/dsa-2023"
         },
         {

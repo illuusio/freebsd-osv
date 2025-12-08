@@ -75,10 +75,6 @@
             "url": "http://mail-archives.apache.org/mod_mbox/cassandra-dev/201504.mbox/raw/%3CCALamADJu4yo=cO8HgA6NpgFc1wQN_VNqpkMn-3SZwhPq9foLBw@mail.gmail.com%3E/"
         },
         {
-            "type": "WEB",
-            "url": "http://mail-archives.apache.org/mod_mbox/cassandra-dev/201504.mbox/raw/%3CCALamADJu4yo=cO8HgA6NpgFc1wQN_VNqpkMn-3SZwhPq9foLBw@mail.gmail.com%3E/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-0225"
         }

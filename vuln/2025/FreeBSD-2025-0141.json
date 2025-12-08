@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/microsoft/vscode/security/advisories/GHSA-742r-ggwg-vqxm"
-        },
-        {
-            "type": "WEB",
             "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-21264"
         }
     ],

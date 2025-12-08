@@ -62,10 +62,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/Advisories/32768/"
-        },
-        {
-            "type": "WEB",
             "url": "http://dovecot.org/list/dovecot/2008-November/035259.html"
         }
     ],

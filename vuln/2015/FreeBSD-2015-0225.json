@@ -55,10 +55,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-5378"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.elastic.co/community/security"
         }
     ],
     "schema_version": "1.7.0",

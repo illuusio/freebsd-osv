@@ -43,10 +43,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/19969/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.osreviews.net/reviews/comm/awstats"
         }
     ],
     "schema_version": "1.7.0",

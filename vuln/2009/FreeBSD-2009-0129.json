@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://article.gmane.org/gmane.network.gnutls.general/1733"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/36266"
         }
     ],

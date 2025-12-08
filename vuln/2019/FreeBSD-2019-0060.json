@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://blog.gitea.io/2019/03/gitea-1.7.4-is-released/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://blog.gitea.io/2019/03/gitea-1.7.4-is-released/"
         }
     ],
     "schema_version": "1.7.0",

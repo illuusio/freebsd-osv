@@ -135,22 +135,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://doc.powerdns.com/md/security/powerdns-advisory-2016-02/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://doc.powerdns.com/md/security/powerdns-advisory-2016-03/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://doc.powerdns.com/md/security/powerdns-advisory-2016-04/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://doc.powerdns.com/md/security/powerdns-advisory-2016-05/"
-        },
-        {
-            "type": "WEB",
             "url": "https://blog.powerdns.com/2017/01/13/powerdns-authoritative-server-4-0-2-released/"
         },
         {

@@ -42,10 +42,6 @@
             "url": "https://github.com/Ettercap/ettercap/issues/782"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/Ettercap/ettercap/issues/782"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-6430"
         },

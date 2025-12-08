@@ -59,10 +59,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-6395"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.gnupg.org/pipermail/gnutls-help/2025-July/004883.html"
         }
     ],
     "schema_version": "1.7.0",

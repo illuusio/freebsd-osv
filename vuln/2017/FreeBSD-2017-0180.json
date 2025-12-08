@@ -46,10 +46,6 @@
             "url": "http://supervisord.org/changes.html"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/Supervisor/supervisor/issues/964#issuecomment-317551606"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-11610"
         }

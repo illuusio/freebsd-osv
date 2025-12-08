@@ -69,10 +69,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.privoxy.org/3.0.22/user-manual/whatsnew.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openwall.com/lists/oss-security/2015/01/11/1"
         }
     ],

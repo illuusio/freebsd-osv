@@ -59,10 +59,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/22419/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.rapid7.com/advisories/R7-0025.jsp"
         }
     ],
     "schema_version": "1.7.0",

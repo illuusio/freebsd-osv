@@ -46,10 +46,6 @@
         {
             "type": "REPORT",
             "url": "http://www.redmine.org/projects/redmine/wiki/Security_Advisories"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.redmine.org/projects/redmine/wiki/Security_Advisories"
         }
     ],
     "schema_version": "1.7.0",

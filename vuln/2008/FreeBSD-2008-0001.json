@@ -98,10 +98,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.adobe.com/support/security/bulletins/apsb07-20.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/28161/"
         }
     ],

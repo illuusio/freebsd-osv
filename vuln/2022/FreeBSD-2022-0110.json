@@ -101,10 +101,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-1783"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2022/06/01/critical-security-release-gitlab-15-0-1-released/"
         }
     ],
     "schema_version": "1.7.0",

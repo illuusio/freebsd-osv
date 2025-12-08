@@ -85,10 +85,6 @@
         },
         {
             "type": "REPORT",
-            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2068113"
-        },
-        {
-            "type": "REPORT",
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2069726"
         },
         {

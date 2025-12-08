@@ -143,10 +143,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://typo3.org/article/typo3-1042-and-9517-security-releases-published"
-        },
-        {
-            "type": "WEB",
             "url": "https://get.typo3.org/release-notes/9.5.17"
         },
         {

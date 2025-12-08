@@ -43,10 +43,6 @@
             "url": "https://baraktawily.blogspot.com/2017/09/gem-in-box-xss-vulenrability-cve-2017.html"
         },
         {
-            "type": "WEB",
-            "url": "https://baraktawily.blogspot.com/2017/09/gem-in-box-xss-vulenrability-cve-2017.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-14506"
         },

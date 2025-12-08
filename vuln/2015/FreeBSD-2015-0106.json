@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://docs.saltstack.com/en/latest/topics/releases/2015.5.0.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://docs.saltstack.com/en/latest/topics/releases/2015.5.0.html"
         }
     ],
     "schema_version": "1.7.0",

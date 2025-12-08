@@ -154,10 +154,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-21886"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.x.org/archives/xorg/2024-January/061525.html"
         }
     ],
     "schema_version": "1.7.0",

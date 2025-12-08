@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://blog.gitea.io/2019/08/gitea-1.9.1-is-released/"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/go-gitea/gitea/releases/tag/v1.9.1"
         }
     ],

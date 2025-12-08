@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2011-1922"
-        },
-        {
-            "type": "WEB",
-            "url": "http://unbound.nlnetlabs.nl/downloads/CVE-2011-1922.txt"
         }
     ],
     "schema_version": "1.7.0",

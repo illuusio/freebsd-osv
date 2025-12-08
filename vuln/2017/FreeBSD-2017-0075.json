@@ -143,10 +143,6 @@
             "url": "http://www.openwall.com/lists/oss-security/2017/02/11/11"
         },
         {
-            "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2017/02/11/11"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-3302"
         }

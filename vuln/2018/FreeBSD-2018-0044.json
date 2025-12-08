@@ -43,10 +43,6 @@
             "url": "https://www.securityfocus.com/archive/1/541583"
         },
         {
-            "type": "WEB",
-            "url": "https://www.securityfocus.com/archive/1/541583"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-16909"
         },

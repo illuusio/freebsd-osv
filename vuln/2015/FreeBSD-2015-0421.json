@@ -54,10 +54,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://mantisbt.org/bugs/view.php?id=19873"
-        },
-        {
-            "type": "WEB",
             "url": "http://openwall.com/lists/oss-security/2015/06/25/3"
         }
     ],

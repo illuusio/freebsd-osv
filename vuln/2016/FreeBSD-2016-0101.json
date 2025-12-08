@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2016/02/08/1"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/jmacd/xdelta-devel/commit/ef93ff74203e030073b898c05e8b4860b5d09ef2"
         }
     ],

@@ -42,10 +42,6 @@
             "url": "https://seclists.org/fulldisclosure/2018/May/49"
         },
         {
-            "type": "WEB",
-            "url": "https://seclists.org/fulldisclosure/2018/May/49"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-11439"
         }

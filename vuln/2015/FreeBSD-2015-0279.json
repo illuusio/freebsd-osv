@@ -37,10 +37,6 @@
             "url": "https://bugzilla.redhat.com/show_bug.cgi?id=706087"
         },
         {
-            "type": "REPORT",
-            "url": "https://bugzilla.redhat.com/show_bug.cgi?id=706087"
-        },
-        {
             "type": "WEB",
             "url": "https://github.com/LibVNC/libvncserver/commit/804335f9d296440bb708ca844f5d89b58b50b0c6"
         }

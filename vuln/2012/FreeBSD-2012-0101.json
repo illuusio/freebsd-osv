@@ -51,10 +51,6 @@
         {
             "type": "WEB",
             "url": "http://www.mail-archive.com/debian-bugs-dist@lists.debian.org/msg1027934.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://trac.networkupstools.org/projects/nut/changeset/3633"
         }
     ],
     "schema_version": "1.7.0",

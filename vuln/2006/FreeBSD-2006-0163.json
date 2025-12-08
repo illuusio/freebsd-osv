@@ -111,10 +111,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/21171/"
-        },
-        {
-            "type": "WEB",
             "url": "http://aluigi.altervista.org/adv/freecivx-adv.txt"
         }
     ],

@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-4032"
-        },
-        {
-            "type": "WEB",
-            "url": "http://docs.cacti.net/#cross-site_scripting_fixes"
         }
     ],
     "schema_version": "1.7.0",

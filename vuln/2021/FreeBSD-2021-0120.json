@@ -42,10 +42,6 @@
             "url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17069"
         },
         {
-            "type": "WEB",
-            "url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=17069"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-0499"
         }

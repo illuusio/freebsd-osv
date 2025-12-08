@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "https://github.com/Graylog2/graylog2-server/commit/d3e441f1126f0dc292e986879039a87c59375b2a"
-        },
-        {
-            "type": "WEB",
-            "url": "https://logging.apache.org/log4j/2.x/security.html"
         }
     ],
     "schema_version": "1.7.0",

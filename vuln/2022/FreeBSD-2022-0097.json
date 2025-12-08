@@ -142,10 +142,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://blog.sonarsource.com/rainloop-emails-at-risk-due-to-code-flaw"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/RainLoop/rainloop-webmail/issues/2142"
         }
     ],

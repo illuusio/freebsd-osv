@@ -48,10 +48,6 @@
         {
             "type": "WEB",
             "url": "http://packetstorm.linuxsecurity.com/0810-exploits/habaricms-xss.txt"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/32311/"
         }
     ],
     "schema_version": "1.7.0",

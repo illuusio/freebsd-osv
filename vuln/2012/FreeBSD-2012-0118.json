@@ -63,10 +63,6 @@
         {
             "type": "WEB",
             "url": "https://www.phplist.com/?lid=567"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.zeroscience.mk/en/vulnerabilities/ZSL-2012-5081.php"
         }
     ],
     "schema_version": "1.7.0",

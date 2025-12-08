@@ -51,10 +51,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=176813"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.privoxy.org/3.0.21/user-manual/whatsnew.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -126,10 +126,6 @@
             "url": "https://github.com/php/php-src/commit/ef8fc4b53d92fbfcd8ef1abbd6f2f5fe2c4a11e5"
         },
         {
-            "type": "WEB",
-            "url": "http://hg.nih.at/libzip/rev/9f11d54f692e"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-2331"
         }

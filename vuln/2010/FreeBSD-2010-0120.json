@@ -69,10 +69,6 @@
         {
             "type": "DISCUSSION",
             "url": "http://www.openwall.com/lists/oss-security/2010/09/21/4"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/41452"
         }
     ],
     "schema_version": "1.7.0",

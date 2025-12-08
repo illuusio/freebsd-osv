@@ -51,10 +51,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=201834"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.elastic.co/community/security"
         }
     ],
     "schema_version": "1.7.0",

@@ -304,10 +304,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.mozilla.org/projects/security/known-vulnerabilities.html#seamonkey1.0.3"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.mozilla.org/security/announce/2006/mfsa2006-44.html"
         },
         {

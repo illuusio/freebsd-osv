@@ -46,10 +46,6 @@
             "url": "https://puppet.com/security/cve/jackson-july-2020-security-fixes/"
         },
         {
-            "type": "WEB",
-            "url": "https://puppet.com/security/cve/jackson-july-2020-security-fixes/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-9548"
         },

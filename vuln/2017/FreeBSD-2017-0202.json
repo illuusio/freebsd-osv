@@ -74,10 +74,6 @@
             "url": "https://about.gitlab.com/2017/09/07/gitlab-9-dot-5-dot-4-security-release/"
         },
         {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/2017/09/07/gitlab-9-dot-5-dot-4-security-release/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-5029"
         },

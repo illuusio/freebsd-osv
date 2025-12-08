@@ -525,10 +525,6 @@
         {
             "type": "WEB",
             "url": "http://www.mikx.de/firescrolling/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.mozilla.org/security/announce/mfsa2005-27.html"
         }
     ],
     "schema_version": "1.7.0",

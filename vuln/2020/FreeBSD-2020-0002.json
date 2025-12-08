@@ -46,10 +46,6 @@
             "url": "https://github.com/Cacti/cacti/releases/tag/release%2F1.2.8"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/Cacti/cacti/releases/tag/release%2F1.2.8"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-17357"
         },

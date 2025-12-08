@@ -44,10 +44,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://curl.haxx.se/docs/security.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://curl.haxx.se/docs/CVE-2020-8169.html"
         },
         {

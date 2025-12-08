@@ -377,10 +377,6 @@
             "url": "https://github.com/git/git/security/advisories/GHSA-hjc9-x69f-jqj7"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/git/git/security/advisories/GHSA-hjc9-x69f-jqj7"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-11008"
         }

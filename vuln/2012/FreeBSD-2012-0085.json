@@ -49,10 +49,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-2140"
-        },
-        {
-            "type": "WEB",
-            "url": "http://seclists.org/oss-sec/2012/q2/190"
         }
     ],
     "schema_version": "1.7.0",

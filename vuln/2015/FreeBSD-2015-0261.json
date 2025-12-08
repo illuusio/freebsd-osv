@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://mail.tarsnap.com/tarsnap-announce/msg00032.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.daemonology.net/blog/2015-08-21-tarsnap-1000-exploit-bounty.html"
         }
     ],

@@ -59,10 +59,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-5002"
-        },
-        {
-            "type": "WEB",
-            "url": "https://helpx.adobe.com/security/products/flash-player/apsb18-19.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://botan.randombit.net/security.html#id1"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/randombit/botan/pull/1604"
         },
         {

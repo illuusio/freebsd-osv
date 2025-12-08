@@ -139,10 +139,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2007-2953"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/25941/"
         }
     ],
     "schema_version": "1.7.0",

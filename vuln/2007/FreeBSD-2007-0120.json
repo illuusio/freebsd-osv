@@ -95,14 +95,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.opera.com/support/search/view/866/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/view/867/"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/27277/"
         }
     ],

@@ -82,10 +82,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/27407"
-        },
-        {
-            "type": "WEB",
             "url": "http://wordpress.org/development/2007/10/wordpress-231/"
         }
     ],

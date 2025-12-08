@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/advisories/GHSA-32gq-x56h-299c"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-32gq-x56h-299c"
         }
     ],
     "schema_version": "1.7.0",

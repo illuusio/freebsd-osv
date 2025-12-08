@@ -199,10 +199,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-6179"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2018/07/stable-channel-update-for-desktop.html"
         }
     ],
     "schema_version": "1.7.0",

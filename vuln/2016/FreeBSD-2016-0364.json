@@ -47,14 +47,6 @@
             "url": "https://launchpad.net/mailman/2.1/2.1.15"
         },
         {
-            "type": "WEB",
-            "url": "https://bugs.launchpad.net/mailman/+bug/775294"
-        },
-        {
-            "type": "WEB",
-            "url": "https://launchpad.net/mailman/2.1/2.1.15"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-7123"
         }

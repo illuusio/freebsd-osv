@@ -120,10 +120,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-48367"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/redis/redis/security/advisories/GHSA-4q32-c38c-pwgq"
         }
     ],
     "schema_version": "1.7.0",

@@ -206,10 +206,6 @@
         {
             "type": "REPORT",
             "url": "https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.oracle.com/technetwork/security-advisory/cpuapr2019-5072813.html"
         }
     ],
     "schema_version": "1.7.0",

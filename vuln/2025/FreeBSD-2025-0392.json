@@ -68,10 +68,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-13224"
-        },
-        {
-            "type": "WEB",
-            "url": "https://chromereleases.googleblog.com/2025/11/stable-channel-update-for-desktop_17.html"
         }
     ],
     "schema_version": "1.7.0",

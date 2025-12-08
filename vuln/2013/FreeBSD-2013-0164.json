@@ -120,10 +120,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-1445"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.dlitz.net/pipermail/pycrypto/2013q4/000702.html"
         }
     ],
     "schema_version": "1.7.0",

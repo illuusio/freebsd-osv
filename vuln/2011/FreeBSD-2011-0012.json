@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.sudo.ws/sudo/alerts/runas_group_pw.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=609641"
         }
     ],

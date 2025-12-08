@@ -66,10 +66,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.samba.org/samba/security/CVE-2011-0719.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2011-0719"
         }
     ],

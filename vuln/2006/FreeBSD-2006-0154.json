@@ -474,10 +474,6 @@
         {
             "type": "WEB",
             "url": "http://www.php.net/release_4_4_4.php"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.php.net/release_5_1_5.php"
         }
     ],
     "schema_version": "1.7.0",

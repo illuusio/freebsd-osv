@@ -42,10 +42,6 @@
             "url": "https://github.com/PHPMailer/PHPMailer/releases/tag/v5.2.24"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/PHPMailer/PHPMailer/releases/tag/v5.2.24"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-11503"
         }

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/yarrick/iodine/commit/b715be5cf3978fbe589b03b09c9398d0d791f850"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/yarrick/iodine/commit/b715be5cf3978fbe589b03b09c9398d0d791f850"
         }
     ],
     "schema_version": "1.7.0",

@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-26623"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/Exiv2/exiv2/security/advisories/GHSA-38h4-fx85-qcx7"
         }
     ],
     "schema_version": "1.7.0",

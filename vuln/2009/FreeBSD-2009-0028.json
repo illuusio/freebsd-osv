@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.glpi-project.org/spip.php?page=annonce&id_breve=161&lang=en"
-        },
-        {
-            "type": "WEB",
             "url": "https://mail.gna.org/public/glpi-news/2009-01/msg00002.html"
         },
         {

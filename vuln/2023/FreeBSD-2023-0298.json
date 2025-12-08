@@ -221,10 +221,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-43655"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/composer/composer/security/advisories/GHSA-jm6m-4632-36hf"
         }
     ],
     "schema_version": "1.7.0",

@@ -82,10 +82,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-24821"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/composer/composer/security/advisories/GHSA-7c6p-848j-wh5h"
         }
     ],
     "schema_version": "1.7.0",

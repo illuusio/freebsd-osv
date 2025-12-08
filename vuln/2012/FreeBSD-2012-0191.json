@@ -144,10 +144,6 @@
         {
             "type": "WEB",
             "url": "http://www.wireshark.org/security/wnpa-sec-2012-29.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.wireshark.org/docs/relnotes/wireshark-1.8.3.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -233,10 +233,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.mozilla.org/security/known-vulnerabilities/"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.mozilla.org/security/announce/2012/mfsa2012-34.html"
         },
         {

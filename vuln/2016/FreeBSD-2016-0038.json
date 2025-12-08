@@ -111,10 +111,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=205963"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.elastic.co/blog/kibana-4-3-1-and-4-2-2-and-4-1-4"
         }
     ],
     "schema_version": "1.7.0",

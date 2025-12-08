@@ -139,10 +139,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2023-36811"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/borgbackup/borg/blob/1.2.5-cvedocs/docs/changes.rst#pre-125-archives-spoofing-vulnerability-cve-2023-36811"
         }
     ],
     "schema_version": "1.7.0",

@@ -61,10 +61,6 @@
             "url": "https://www.debian.org/security/2016/dsa-3675"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://www.debian.org/security/2016/dsa-3675"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=213032"
         }

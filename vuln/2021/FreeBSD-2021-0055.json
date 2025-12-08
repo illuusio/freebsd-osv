@@ -44,10 +44,6 @@
             "url": "https://github.com/jasper-software/jasper/releases"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/jasper-software/jasper/releases"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-26926"
         },

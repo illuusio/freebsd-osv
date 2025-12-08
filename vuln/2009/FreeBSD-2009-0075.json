@@ -68,10 +68,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2009-1576"
-        },
-        {
-            "type": "WEB",
-            "url": "http://drupal.org/node/449078"
         }
     ],
     "schema_version": "1.7.0",

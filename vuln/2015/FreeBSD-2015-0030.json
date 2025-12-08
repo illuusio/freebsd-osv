@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-0255"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.freedesktop.org/archives/xorg/2015-February/057158.html"
         }
     ],
     "schema_version": "1.7.0",

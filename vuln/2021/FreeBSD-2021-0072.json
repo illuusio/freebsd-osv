@@ -46,10 +46,6 @@
             "url": "https://spamassassin.apache.org/news.html"
         },
         {
-            "type": "WEB",
-            "url": "https://mail-archives.apache.org/mod_mbox/spamassassin-announce/202103.mbox/%3C5b7cfd35-27b7-584b-1b39-b7ff0a55f586%40apache.org%3E"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=2020-1946"
         },

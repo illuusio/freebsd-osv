@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2012-4600"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.otrs.com/open-source/community-news/security-advisories/security-advisory-2012-02/"
         }
     ],
     "schema_version": "1.7.0",

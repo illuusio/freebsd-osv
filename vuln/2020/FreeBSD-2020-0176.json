@@ -42,10 +42,6 @@
             "url": "https://kramdown.gettalong.org/news.html"
         },
         {
-            "type": "WEB",
-            "url": "https://kramdown.gettalong.org/news.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-14001"
         }

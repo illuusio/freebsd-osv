@@ -98,26 +98,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2008-4200"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/view/893/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/view/894/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/view/895/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/view/896/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/view/897/"
         }
     ],
     "schema_version": "1.7.0",

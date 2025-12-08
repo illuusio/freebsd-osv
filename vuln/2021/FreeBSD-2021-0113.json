@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2021-31799"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.ruby-lang.org/en/news/2021/05/02/os-command-injection-in-rdoc/"
         }
     ],
     "schema_version": "1.7.0",

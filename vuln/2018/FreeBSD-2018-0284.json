@@ -94,10 +94,6 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-7489"
-        },
-        {
-            "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2018-7489"
         }
     ],

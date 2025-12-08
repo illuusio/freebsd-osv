@@ -234,10 +234,6 @@
             "url": "http://www.oracle.com/technetwork/security-advisory/cpujul2017-3236622.html#AppendixMSQL"
         },
         {
-            "type": "WEB",
-            "url": "http://www.oracle.com/technetwork/security-advisory/cpujul2017-3236622.html#AppendixMSQL"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-3529"
         },

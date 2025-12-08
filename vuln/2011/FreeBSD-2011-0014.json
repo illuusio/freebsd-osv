@@ -56,14 +56,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-0828"
-        },
-        {
-            "type": "WEB",
-            "url": "http://hg.moinmo.in/moin/1.9/raw-file/1.9.3/docs/CHANGES"
-        },
-        {
-            "type": "WEB",
-            "url": "http://moinmo.in/MoinMoinBugs/1.9.2UnescapedInputForThemeAddMsg"
         }
     ],
     "schema_version": "1.7.0",

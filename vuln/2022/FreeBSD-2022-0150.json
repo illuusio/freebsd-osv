@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-29154"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.openwall.com/lists/oss-security/2022/08/02/1"
         }
     ],
     "schema_version": "1.7.0",

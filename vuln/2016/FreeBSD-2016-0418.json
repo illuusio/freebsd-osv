@@ -100,10 +100,6 @@
             "url": "https://mariadb.com/kb/en/mariadb/mariadb-5553-release-notes/"
         },
         {
-            "type": "WEB",
-            "url": "https://mariadb.com/kb/en/mariadb/mariadb-5553-release-notes/"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-7440"
         },

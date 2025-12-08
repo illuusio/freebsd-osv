@@ -79,10 +79,6 @@
             "url": "https://github.com/vadz/libtiff/commit/391e77fcd217e78b2c51342ac3ddb7100ecacdd2"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/vadz/libtiff/commit/391e77fcd217e78b2c51342ac3ddb7100ecacdd2"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-5314"
         },

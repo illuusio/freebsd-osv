@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-4576"
-        },
-        {
-            "type": "WEB",
-            "url": "http://lists.gnupg.org/pipermail/gnupg-announce/2013q4/000337.html"
         }
     ],
     "schema_version": "1.7.0",

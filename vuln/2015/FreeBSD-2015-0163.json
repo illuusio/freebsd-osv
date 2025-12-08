@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://bitcoin-development.narkive.com/tO8M0R0j/upcoming-dos-vulnerability-announcements-for-bitcoin-core"
-        },
-        {
-            "type": "WEB",
             "url": "https://en.bitcoin.it/wiki/Common_Vulnerabilities_and_Exposures"
         }
     ],

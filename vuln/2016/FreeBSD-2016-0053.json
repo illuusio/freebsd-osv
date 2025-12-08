@@ -45,10 +45,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://git.enlightenment.org/legacy/imlib2.git/tree/ChangeLog"
-        },
-        {
-            "type": "WEB",
             "url": "http://seclists.org/oss-sec/2016/q1/162"
         },
         {

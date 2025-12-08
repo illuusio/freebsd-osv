@@ -87,10 +87,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2010-0187"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.adobe.com/support/security/bulletins/apsb10-06.html"
         }
     ],
     "schema_version": "1.7.0",

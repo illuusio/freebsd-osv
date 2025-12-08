@@ -75,10 +75,6 @@
             "url": "http://unbound.net/downloads/CVE-2014-8602.txt"
         },
         {
-            "type": "WEB",
-            "url": "http://unbound.net/downloads/CVE-2014-8602.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-14:30.unbound.asc"
         },

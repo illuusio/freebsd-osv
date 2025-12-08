@@ -52,10 +52,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/25579/"
-        },
-        {
-            "type": "WEB",
             "url": "http://cool.haxx.se/cvs.cgi/curl/ares/CHANGES?rev=HEAD&content-type=text/vnd.viewcvs-markup"
         }
     ],

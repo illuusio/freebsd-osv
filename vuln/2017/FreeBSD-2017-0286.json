@@ -46,10 +46,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-16844"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://www.debian.org/security/2017/dsa-4041"
-        },
-        {
             "type": "WEB",
             "url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=876511"
         }

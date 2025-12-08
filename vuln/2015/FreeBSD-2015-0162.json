@@ -125,10 +125,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://blog.nodejs.org/2015/07/03/node-v0-12-6-stable/"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/joyent/node/commit/78b0e30954111cfaba0edbeee85450d8cbc6fdf6"
         },
         {

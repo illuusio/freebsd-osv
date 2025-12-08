@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://bugs.librdf.org/mantis/view.php?id=650"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugs.librdf.org/mantis/view.php?id=650"
         }
     ],
     "schema_version": "1.7.0",

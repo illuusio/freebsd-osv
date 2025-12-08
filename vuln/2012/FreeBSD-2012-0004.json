@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://torcs.sourceforge.net/index.php?name=News&file=article&sid=77"
-        },
-        {
-            "type": "WEB",
             "url": "http://sourceforge.net/tracker/index.php?func=detail&aid=3089384&group_id=3777&atid=103777"
         }
     ],

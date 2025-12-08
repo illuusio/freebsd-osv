@@ -61,10 +61,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://james.apache.org/download.cgi#Apache_James_Server"
-        },
-        {
-            "type": "WEB",
             "url": "https://blogs.apache.org/james/entry/apache_james_server_2_3"
         }
     ],

@@ -164,10 +164,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.wireshark.org/security/wnpa-sec-2009-02.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/34542"
         }
     ],

@@ -163,10 +163,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-59682"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.djangoproject.com/weblog/2025/oct/01/security-releases/"
         }
     ],
     "schema_version": "1.7.0",

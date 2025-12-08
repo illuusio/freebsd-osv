@@ -76,10 +76,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://jupyter-notebook.readthedocs.io/en/stable/changelog.html#release-6-1-5"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/jupyter/notebook/blob/6.1.5/docs/source/changelog.rst"
         }
     ],

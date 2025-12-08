@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2025-61729"
-        },
-        {
-            "type": "WEB",
-            "url": "https://pkg.go.dev/vuln/GO-2025-4155"
         }
     ],
     "schema_version": "1.7.0",

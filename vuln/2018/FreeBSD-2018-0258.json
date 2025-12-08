@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://acme.com/updates/archive/211.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://acme.com/updates/archive/211.html"
         }
     ],
     "schema_version": "1.7.0",

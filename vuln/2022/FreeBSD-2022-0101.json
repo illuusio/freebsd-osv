@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2022-24903"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/rsyslog/rsyslog/security/advisories/GHSA-ggw7-xr6h-mmr8"
         }
     ],
     "schema_version": "1.7.0",

@@ -46,10 +46,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.securityfocus.com/bid/100828"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.talosintelligence.com/vulnerability_reports/TALOS-2017-0317"
         },
         {

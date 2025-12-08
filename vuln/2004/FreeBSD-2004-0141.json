@@ -74,10 +74,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.kb.cert.org/vuls/id/350792"
-        },
-        {
-            "type": "WEB",
-            "url": "http://web.mit.edu/kerberos/advisories/MITKRB5-SA-2004-002-dblfree.txt"
         }
     ],
     "schema_version": "1.7.0",

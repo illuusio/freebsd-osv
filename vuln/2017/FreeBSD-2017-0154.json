@@ -73,10 +73,6 @@
         {
             "type": "REPORT",
             "url": "https://nodejs.org/en/blog/vulnerability/july-2017-security-releases/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://nodejs.org/en/blog/vulnerability/july-2017-security-releases/"
         }
     ],
     "schema_version": "1.7.0",

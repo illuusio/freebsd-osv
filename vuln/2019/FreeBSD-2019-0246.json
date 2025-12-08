@@ -95,24 +95,12 @@
             "url": "https://www.samba.org/samba/security/CVE-2019-14847.html"
         },
         {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2019-10218.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-10218"
         },
         {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2019-14833.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-14833"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2019-14847.html"
         },
         {
             "type": "ADVISORY",

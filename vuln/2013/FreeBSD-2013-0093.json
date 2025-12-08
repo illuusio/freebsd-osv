@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/znc/znc/commit/2bd410ee5570cea127233f1133ea22f25174eb28"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/znc/znc/commit/2bd410ee5570cea127233f1133ea22f25174eb28"
         }
     ],
     "schema_version": "1.7.0",

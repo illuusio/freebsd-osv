@@ -180,10 +180,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.duosecurity.com/blog/backronym-mysql-vulnerability"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.ocert.org/advisories/ocert-2015-003.html"
         },
         {

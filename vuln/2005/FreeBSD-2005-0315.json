@@ -58,10 +58,6 @@
         {
             "type": "WEB",
             "url": "http://article.gmane.org/gmane.comp.video.ffmpeg.devel/26558"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/17892/"
         }
     ],
     "schema_version": "1.7.0",

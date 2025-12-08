@@ -134,10 +134,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.apache.org/dist/httpd/Announcement2.2.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/apache/httpd/commit/29779fd08c18b18efc5e640d74cbe297c7ec007e"
         },
         {

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://blog.s9y.org/archives/280-Serendipity-2.1.4-and-2.2.1-alpha1-released.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://blog.s9y.org/archives/280-Serendipity-2.1.4-and-2.2.1-alpha1-released.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2014-0159"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=510205"
         }
     ],
     "schema_version": "1.7.0",

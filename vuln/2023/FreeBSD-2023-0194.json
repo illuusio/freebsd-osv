@@ -48,19 +48,7 @@
         },
         {
             "type": "WEB",
-            "url": "https://bugs.chromium.org/p/oss-fuzz/issues/detail?id=59382"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.1.9"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/AcademySoftwareFoundation/openexr/commit/e431f7e189d0785bb84a5bfb83391e9e58590c49"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/AcademySoftwareFoundation/openexr/pull/1439"
         }
     ],
     "schema_version": "1.7.0",

@@ -95,10 +95,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/warner/foolscap/blob/a17218e18e01c05a9655863cd507b80561692c14/NEWS"
-        },
-        {
-            "type": "WEB",
             "url": "http://foolscap.lothar.com/trac/ticket/226"
         }
     ],

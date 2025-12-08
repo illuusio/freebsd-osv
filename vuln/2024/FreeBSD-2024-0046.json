@@ -101,10 +101,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2024-0410"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2024/02/21/security-release-gitlab-16-9-1-released/"
         }
     ],
     "schema_version": "1.7.0",

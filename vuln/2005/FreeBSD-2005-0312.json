@@ -91,14 +91,6 @@
         {
             "type": "WEB",
             "url": "http://secunia.com/advisories/17571/"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/supsearch.dml?index=817"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.opera.com/support/search/supsearch.dml?index=819"
         }
     ],
     "schema_version": "1.7.0",

@@ -138,10 +138,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://mariadb.com/kb/en/mariadb-1056-release-notes/"
-        },
-        {
-            "type": "WEB",
             "url": "https://mariadb.com/kb/en/mariadb-10415-release-notes/"
         },
         {

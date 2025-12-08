@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/storaged-project/udisks/blob/udisks-2.9.4/NEWS"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/storaged-project/udisks/blob/udisks-2.9.4/NEWS"
         }
     ],
     "schema_version": "1.7.0",

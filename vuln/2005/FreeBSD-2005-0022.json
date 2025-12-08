@@ -164,10 +164,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://xinehq.de/index.php/security/XSA-2004-3"
-        },
-        {
-            "type": "WEB",
             "url": "http://xforce.iss.net/xforce/xfdb/16019"
         },
         {

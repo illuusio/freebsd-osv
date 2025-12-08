@@ -49,10 +49,6 @@
             "url": "https://irssi.org/security/irssi_sa_2017_10.txt"
         },
         {
-            "type": "WEB",
-            "url": "https://irssi.org/security/irssi_sa_2017_10.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-15721"
         },

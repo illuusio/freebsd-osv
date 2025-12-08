@@ -48,18 +48,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/652-20160801-core-core-acl-violations.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/653-20160802-core-xss-vulnerability.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://developer.joomla.org/security-centre/654-20160803-core-csrf.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.joomla.org/announcements/release-news/5665-joomla-3-6-1-released.html"
         }
     ],

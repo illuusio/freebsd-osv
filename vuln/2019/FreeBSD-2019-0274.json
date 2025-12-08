@@ -76,10 +76,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/matrix-org/synapse/releases/tag/v1.6.1"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/matrix-org/synapse/pull/6426"
         }
     ],

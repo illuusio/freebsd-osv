@@ -105,10 +105,6 @@
         {
             "type": "WEB",
             "url": "http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=210742"
-        },
-        {
-            "type": "WEB",
-            "url": "http://rhn.redhat.com/errata/RHSA-2006-0720.html"
         }
     ],
     "schema_version": "1.7.0",

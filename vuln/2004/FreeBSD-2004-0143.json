@@ -70,10 +70,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.rapid7.com/advisories/R7-0018.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.openbsd.org/errata34.html"
         }
     ],

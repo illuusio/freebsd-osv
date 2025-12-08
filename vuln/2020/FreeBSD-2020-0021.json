@@ -251,10 +251,6 @@
             "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7471"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-7471"
-        },
-        {
             "type": "WEB",
             "url": "https://docs.djangoproject.com/en/1.11/releases/1.11.28/"
         },

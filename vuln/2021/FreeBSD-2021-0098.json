@@ -43,10 +43,6 @@
             "url": "https://github.com/hashicorp/consul/releases/tag/v1.9.5"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/hashicorp/consul/releases/tag/v1.9.5"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2020-25864"
         },

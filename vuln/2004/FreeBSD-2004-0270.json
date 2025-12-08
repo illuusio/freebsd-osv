@@ -72,10 +72,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://rhn.redhat.com/errata/RHSA-2004-611.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://xforce.iss.net/xforce/xfdb/17666"
         }
     ],

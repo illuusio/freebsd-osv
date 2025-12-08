@@ -42,10 +42,6 @@
             "url": "http://activemq.apache.org/security-advisories.data/CVE-2016-0782-announcement.txt"
         },
         {
-            "type": "WEB",
-            "url": "http://activemq.apache.org/security-advisories.data/CVE-2016-0782-announcement.txt"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-0782"
         }

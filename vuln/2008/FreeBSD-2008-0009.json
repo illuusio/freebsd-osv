@@ -47,10 +47,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/27761"
-        },
-        {
-            "type": "WEB",
             "url": "http://ircservices.za.net/Changes.txt"
         }
     ],

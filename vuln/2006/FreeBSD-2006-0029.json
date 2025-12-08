@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-0414"
-        },
-        {
-            "type": "WEB",
-            "url": "http://archives.seul.org/or/announce/Jan-2006/msg00001.html"
         }
     ],
     "schema_version": "1.7.0",

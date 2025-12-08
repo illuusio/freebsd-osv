@@ -54,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2006-5872"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.us.debian.org/security/2006/dsa-1239"
         }
     ],
     "schema_version": "1.7.0",

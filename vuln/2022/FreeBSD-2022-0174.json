@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://github.com/matrix-org/dendrite/security/advisories/GHSA-pfw4-xjgm-267c"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/matrix-org/dendrite/security/advisories/GHSA-pfw4-xjgm-267c"
         }
     ],
     "schema_version": "1.7.0",

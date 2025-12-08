@@ -43,10 +43,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://gitlab.freedesktop.org/dbus/dbus/-/issues/294"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.openwall.com/lists/oss-security/2020/06/04/3"
         },
         {

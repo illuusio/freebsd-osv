@@ -78,10 +78,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2017-1000355"
-        },
-        {
-            "type": "WEB",
-            "url": "https://jenkins.io/security/advisory/2017-04-26/"
         }
     ],
     "schema_version": "1.7.0",

@@ -82,10 +82,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2014/05/06/4"
-        },
-        {
-            "type": "WEB",
             "url": "https://git.gnome.org/browse/libxml2/tag/?id=CVE-2014-0191"
         },
         {

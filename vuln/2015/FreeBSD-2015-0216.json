@@ -53,10 +53,6 @@
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=201702"
         },
         {
-            "type": "WEB",
-            "url": "http://www.cacti.net/release_notes_0_8_8e.php"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://seclists.org/oss-sec/2015/q3/150"
         }

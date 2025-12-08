@@ -275,10 +275,6 @@
             "url": "https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html#AppendixMSQL"
         },
         {
-            "type": "WEB",
-            "url": "https://www.oracle.com/technetwork/security-advisory/cpujan2019-5072801.html#AppendixMSQL"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-2534"
         },

@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2019-13038"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/latchset/mod_auth_mellon/releases/tag/v0.18.0"
         }
     ],
     "schema_version": "1.7.0",

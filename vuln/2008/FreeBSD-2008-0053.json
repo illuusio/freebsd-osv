@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://www.extmail.org/forum/thread-7260-1-1.html"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.extmail.org/forum/thread-7260-1-1.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://matomo.org/changelog/matomo-3-6-1/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://matomo.org/changelog/matomo-3-6-1/"
         }
     ],
     "schema_version": "1.7.0",

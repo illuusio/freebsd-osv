@@ -95,10 +95,6 @@
         {
             "type": "REPORT",
             "url": "https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-May/000188.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://lists.wikimedia.org/pipermail/mediawiki-announce/2016-May/000188.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -62,10 +62,6 @@
             "url": "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2014-02-14"
         },
         {
-            "type": "WEB",
-            "url": "https://wiki.jenkins-ci.org/display/SECURITY/Jenkins+Security+Advisory+2014-02-14"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2013-5573"
         },

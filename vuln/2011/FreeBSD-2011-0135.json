@@ -38,10 +38,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/46461/"
-        },
-        {
-            "type": "WEB",
             "url": "http://piwik.org/blog/2011/10/piwik-1-6/"
         }
     ],

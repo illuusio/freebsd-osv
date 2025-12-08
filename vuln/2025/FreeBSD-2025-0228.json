@@ -105,10 +105,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://www.openwall.com/lists/oss-security/2025/06/16/6"
-        },
-        {
-            "type": "WEB",
             "url": "https://gitlab.gnome.org/Teams/Releng/security/-/wikis/2025#libxml2-and-libxslt"
         },
         {

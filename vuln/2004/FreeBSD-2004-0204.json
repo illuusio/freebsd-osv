@@ -99,10 +99,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openpkg.org/security/OpenPKG-SA-2004.032-apache.html"
-        },
-        {
-            "type": "WEB",
             "url": "http://packetstormsecurity.org/0407-advisories/modsslFormat.txt"
         },
         {

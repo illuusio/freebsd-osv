@@ -50,10 +50,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.isc.org/software/dhcp/advisories/cve-2011-0413"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.kb.cert.org/vuls/id/686084"
         }
     ],

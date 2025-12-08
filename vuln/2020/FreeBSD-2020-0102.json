@@ -144,10 +144,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://docs.wagtail.io/en/latest/releases/2.8.2.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/wagtail/wagtail/security/advisories/GHSA-jjjr-3jcw-f8v6"
         },
         {

@@ -91,10 +91,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2005-4745"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.freeradius.org/security.html"
         }
     ],
     "schema_version": "1.7.0",

@@ -63,10 +63,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-2694"
-        },
-        {
-            "type": "WEB",
-            "url": "http://krbdev.mit.edu/rt/Ticket/Display.html?id=8160"
         }
     ],
     "schema_version": "1.7.0",

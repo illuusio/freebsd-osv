@@ -116,10 +116,6 @@
         {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2004-1142"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.ethereal.com/appnotes/enpa-sa-00016.html"
         }
     ],
     "schema_version": "1.7.0",

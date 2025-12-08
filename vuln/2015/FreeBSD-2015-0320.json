@@ -64,15 +64,7 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2015/09/02/3"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/ipython/ipython/commit/3ab41641cf6fce3860c73d5cf4645aa12e1e5892"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2015/09/16/3"
         },
         {
             "type": "WEB",

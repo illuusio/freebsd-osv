@@ -45,10 +45,6 @@
             "url": "http://lists.freedesktop.org/archives/polkit-devel/2015-June/000425.html"
         },
         {
-            "type": "WEB",
-            "url": "http://lists.freedesktop.org/archives/polkit-devel/2015-June/000425.html"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://api.osv.dev/v1/vulns/CVE-2015-4625"
         },

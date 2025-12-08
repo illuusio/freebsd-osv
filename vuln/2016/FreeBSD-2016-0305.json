@@ -225,10 +225,6 @@
             "url": "https://api.osv.dev/v1/vulns/CVE-2016-6173"
         },
         {
-            "type": "WEB",
-            "url": "https://kb.isc.org/article/AA-01390"
-        },
-        {
             "type": "DISCUSSION",
             "url": "http://www.openwall.com/lists/oss-security/2016/07/06/4"
         }
