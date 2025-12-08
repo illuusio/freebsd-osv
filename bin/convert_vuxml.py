@@ -256,6 +256,9 @@ def main():
             elif ref.tag == namespace + "mlist":
                 reference = {"type": "DISCUSSION", "url": ref.text}
             elif ref.tag == namespace + "url":
+                if "cite" in database_specific and ref.text in database_specific["cite"]:
+                    continue
+
                 reference = {"type": "WEB", "url": ref.text}
                 for prefix in url_advisories:
                     if str(ref.text).startswith(prefix):
