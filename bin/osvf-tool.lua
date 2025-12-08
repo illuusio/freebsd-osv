@@ -278,6 +278,119 @@ local function osvf_tool_merge_osvf_files(schema_location, osv_location)
 	return true, table.concat(output_table)
 end
 
+-------------------------------------------------------------------------------
+-- Convert JSON file to commonmark (Markdown)
+-- @param json_location JSON location to convert
+-- @return Commonmark prepresentation of JSON
+-------------------------------------------------------------------------------
+local function osvf_tool_convert_to_commonmark(json_location)
+	local parser = ucl.parser()
+	local is_error, err = parser:parse_file(json_location)
+
+	if is_error == false then
+		logger:error("osvf_tool_validate: Can't parse OSVf JSON file: " .. err)
+		return false
+	end
+
+	local obj = parser:get_object()
+	local rtn_str = "# " .. obj["summary"] .. "\n"
+	rtn_str = rtn_str .. obj["details"] .. "\n\n"
+
+	rtn_str = rtn_str .. "## Affected packages\n"
+	for find_table_pos, aff_table in ipairs(obj["affected"]) do
+		rtn_str = rtn_str
+			.. " - "
+			.. "**"
+			.. aff_table["package"]["name"]
+			.. "**\n"
+		if aff_table["ranges"] ~= nil then
+			for find_table_pos, range_table in ipairs(aff_table["ranges"]) do
+				for find_table_pos, event_table in ipairs(range_table["events"]) do
+					if event_table["fixed"] ~= nil then
+						rtn_str = rtn_str .. "    - **Fixed:** " .. event_table["fixed"] .. "\n"
+					elseif event_table["introduced"] ~= nil and event_table["introduced"] ~= "0" then
+						rtn_str = rtn_str .. "    - **Introduced:** " .. event_table["introduced"] .. "\n"
+					end
+				end
+			end
+		end
+	end
+	rtn_str = rtn_str .. "\n"
+
+	rtn_str = rtn_str .. "## Details\n"
+	rtn_str = rtn_str .. " - **published**: " .. obj["published"] .. "\n"
+	rtn_str = rtn_str .. " - **modified**: " .. obj["modified"] .. "\n"
+	if obj["database_specific"] ~= nil then
+		if obj["database_specific"]["discovery"] ~= nil then
+			rtn_str = rtn_str .. " - **discovery**: " .. obj["database_specific"]["discovery"] .. "\n"
+		end
+		if obj["database_specific"]["vid"] ~= nil then
+			rtn_str = rtn_str
+				.. " - **vid**: ["
+				.. obj["database_specific"]["vid"]
+				.. "](https://vuxml.freebsd.org/freebsd/"
+				.. obj["database_specific"]["vid"]
+				.. ".html)\n"
+		end
+	end
+	rtn_str = rtn_str .. "\n"
+
+	rtn_str = rtn_str .. "## References\n"
+
+	for find_table_pos, ref_table in ipairs(obj["references"]) do
+		rtn_str = rtn_str
+			.. " - "
+			.. ref_table["type"]
+			.. ": ["
+			.. ref_table["url"]
+			.. "]("
+			.. ref_table["url"]
+			.. ")\n"
+	end
+	return rtn_str
+end
+
+-------------------------------------------------------------------------------
+-- Convert all JSON file to Commonmark
+-- @param osv_location Directory location of OSVf JSON files
+-- @param output_dir Dir to output commonmark .md files
+-- @return True if succesfully merged files and false if not
+-------------------------------------------------------------------------------
+local function osvf_tool_generate_commonmark(osv_location, output_dir)
+	local find_table = oscf_tool_find_file(osv_location)
+
+	if find_table == nil then
+		logger:error("Something went wrong with find in '" .. osv_location .. "'. Exiting")
+		return false
+	end
+
+	for find_table_pos, output_str in ipairs(find_table) do
+		local mdoc_str = osvf_tool_convert_to_commonmark(output_str)
+		local cut_dir = output_dir .. output_str:match(osv_location .. "(.*/).*%.json")
+		local cut_file = output_str:match(osv_location .. ".*/(.*)%.json")
+		mdoc_file = cut_dir .. cut_file .. ".md"
+		-- print(cut_dir .. " | " .. mdoc_file .. " | " .. cut_file)
+
+		output_handle = io.open(mdoc_file, "w")
+
+		local output, rc = osvf_tool_run_cmd("mkdir -p " .. cut_dir)
+
+		if rc == false then
+			logger:error("Something went wrong with mkdir -p with '" .. cut_dir .. "'. Exiting")
+			return false
+		end
+
+		if output_handle == nil then
+			print("Can't open file: '" .. mdoc_file .. "' for output")
+		else
+			output_handle:write(mdoc_str)
+			output_handle:close()
+		end
+	end
+
+	return true
+end
+
 if #arg == 0 then
 	print("Usage:\tosvf-tool.lua validate|newentry|merge|commonmark|html\n")
 	print("\tvalidate\tValidate lastes entry or if last option is JSON file use that one\n")
@@ -286,13 +399,22 @@ if #arg == 0 then
 	print("\t\t\tExample: osvf-tool.lua validate vuln/2025/FreeBSD-2025-0001.json")
 	print("\t\t\tWill validate only file: 'vuln/2025/FreeBSD-2025-0001.json'\n")
 
-	print(
-		"\tnewentry\tCreate new entry and set ID for it. Create it from template tmpl/FreeBSD-tmpl.json and fill with defaults\n"
-	)
+	print("\tnewentry\tCreate new entry and set ID for it.\n")
 	print("\t\t\tExample: osvf-tool.lua newentry")
 	print("\t\t\tCreate new entry with next ID which is available\n")
 	print("\t\t\tExample: osvf-tool.lua newentry ID")
 	print("\t\t\tCreate new entry with ID\n")
+
+	print("\tmerge\tMerge all files to one JSON array and print to stdout\n")
+	print("\t\t\tExample: osvf-tool.lua merge")
+	print("\t\t\tWill print merged JSON array to stdout\n")
+	print("\t\t\tExample: osvf-tool.lua merge > db/freebsd-osv.db")
+	print("\t\t\tWill direct merged OSV JSON array to db/freebsd-osv.db\n")
+
+	print("\tcommonmark\tExport JSON files from vuln-dir to Commonmark files in md-dir\n")
+	print("\t\t\tExample: osvf-tool.lua commonmark")
+	print("\t\t\tWill export all files as Commonmark files\n")
+
 	os.exit(1)
 end
 
@@ -321,6 +443,13 @@ elseif which_command == 3 then
 
 	if is_error == true then
 		print(output)
+	end
+elseif which_command == 4 then
+	is_valid = osvf_tool_validate_osvf_files("schema/osvf_schema-1.7.4.json", "vuln")
+	if is_valid == true then
+		is_valid = osvf_tool_generate_commonmark("vuln", "md")
+	else
+		print("Validation of OSVf JSON files didn't succeeded please see error(s)")
 	end
 end
 

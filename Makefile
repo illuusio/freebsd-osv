@@ -19,10 +19,11 @@ TOP := $(shell pwd)
 ifeq ($(LUA_CMD),)
 LUA_CMD := "/usr/libexec/flua"
 endif
+LUA_PATH := "$(TOP)/bin/?.lua;;"
+LUA_TOOL := "bin/osvf-tool.lua"
 ifeq ($(PYTHON_CMD),)
 PYTHON_CMD := $(shell which python3)
 endif
-LUA_PATH := "$(TOP)/bin/?.lua;;"
 VUXML_URL := "https://vuxml.freebsd.org/freebsd/vuln.xml.xz"
 
 .PHONY: download-vuxml unpack-vuxml convert-vuxml check-lua check-python merge
@@ -46,5 +47,8 @@ unpack-vuxml: download-vuxml
 convert-vuxml: check-python unpack-vuxml
 	@$(PYTHON_CMD) bin/convert_vuxml.py -o vuln vuln.xml
 
-merge:
-	@LUA_PATH=$(LUA_PATH) $(LUA_CMD) bin/osvf-tool.lua merge > db/freebsd-osv.json
+merge: check-lua
+	@LUA_PATH=$(LUA_PATH) $(LUA_CMD) $(LUA_TOOL) merge > db/freebsd-osv.json
+
+commonmark: check-lua
+	@LUA_PATH=$(LUA_PATH) $(LUA_CMD) $(LUA_TOOL) commonmark
