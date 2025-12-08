@@ -52,3 +52,6 @@ merge: check-lua
 
 commonmark: check-lua
 	@LUA_PATH=$(LUA_PATH) $(LUA_CMD) $(LUA_TOOL) commonmark
+
+newentry: check-lua
+	@LUA_PATH=$(LUA_PATH) $(LUA_CMD) $(LUA_TOOL) newentry

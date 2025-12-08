@@ -131,6 +131,17 @@ local function oscf_tool_find_file(osv_location)
 	return ports_make_split_string(output, "\n")
 end
 
+local function oscf_tool_ls_last(osv_location)
+	local output, rc = osvf_tool_run_cmd("ls -1 " .. osv_location .. " | sort -r")
+
+	if rc == false then
+		logger:error("Something went wrong with ls in '" .. osv_location .. "'. Exiting")
+		return nil
+	end
+
+	return ports_make_split_string(output, "\n")
+end
+
 -------------------------------------------------------------------------------
 -- Download schema from git or use existing one if provided
 -- @param schema_location Schema location or nil wanted to download it
@@ -288,7 +299,7 @@ local function osvf_tool_convert_to_commonmark(json_location)
 	local is_error, err = parser:parse_file(json_location)
 
 	if is_error == false then
-		logger:error("osvf_tool_validate: Can't parse OSVf JSON file: " .. err)
+		logger:error("osvf_tool_convert_to_commonmark: Can't parse OSVf JSON file: " .. err)
 		return false
 	end
 
@@ -298,11 +309,7 @@ local function osvf_tool_convert_to_commonmark(json_location)
 
 	rtn_str = rtn_str .. "## Affected packages\n"
 	for find_table_pos, aff_table in ipairs(obj["affected"]) do
-		rtn_str = rtn_str
-			.. " - "
-			.. "**"
-			.. aff_table["package"]["name"]
-			.. "**\n"
+		rtn_str = rtn_str .. " - " .. "**" .. aff_table["package"]["name"] .. "**\n"
 		if aff_table["ranges"] ~= nil then
 			for find_table_pos, range_table in ipairs(aff_table["ranges"]) do
 				for find_table_pos, event_table in ipairs(range_table["events"]) do
@@ -365,13 +372,10 @@ local function osvf_tool_generate_commonmark(osv_location, output_dir)
 	end
 
 	for find_table_pos, output_str in ipairs(find_table) do
-		local mdoc_str = osvf_tool_convert_to_commonmark(output_str)
+		local commonmark_str = osvf_tool_convert_to_commonmark(output_str)
 		local cut_dir = output_dir .. output_str:match(osv_location .. "(.*/).*%.json")
 		local cut_file = output_str:match(osv_location .. ".*/(.*)%.json")
-		mdoc_file = cut_dir .. cut_file .. ".md"
-		-- print(cut_dir .. " | " .. mdoc_file .. " | " .. cut_file)
-
-		output_handle = io.open(mdoc_file, "w")
+		commonmark_file = cut_dir .. cut_file .. ".md"
 
 		local output, rc = osvf_tool_run_cmd("mkdir -p " .. cut_dir)
 
@@ -380,15 +384,83 @@ local function osvf_tool_generate_commonmark(osv_location, output_dir)
 			return false
 		end
 
+		output_handle = io.open(commonmark_file, "w")
+
 		if output_handle == nil then
-			print("Can't open file: '" .. mdoc_file .. "' for output")
+			logger:error("Can't open file: '" .. commonmark_file .. "' for output")
 		else
-			output_handle:write(mdoc_str)
+			output_handle:write(commonmark_str)
 			output_handle:close()
 		end
 	end
 
 	return true
+end
+
+-------------------------------------------------------------------------------
+-- Add new entry to database
+-- @param osv_location Directory location of OSVf JSON files
+-- @return True if succesfully added ID and false if not
+-- @return output name or nil if something goes wrong
+-------------------------------------------------------------------------------
+local function osvf_tool_new_entry(osv_location)
+	local cur_year = os.date("%Y")
+	local output_dir = osv_location .. "/" .. cur_year
+
+	ls_table = oscf_tool_ls_last(output_dir)
+	cur_num = 1
+	cur_output_file = "FreeBSD-" .. cur_year .. "-" .. cur_num .. ".json"
+
+	if ls_table[1] ~= nil then
+		cur_num_str = ls_table[1]:match("FreeBSD%-" .. cur_year .. "%-(%d+)%.json")
+		cur_num = tonumber(cur_num_str) + 1
+		cur_output_file = "FreeBSD-" .. cur_year .. "-" .. string.format("%04d", cur_num)
+	else
+		local output, rc = osvf_tool_run_cmd("mkdir -p " .. output_dir)
+
+		if rc == false then
+			logger:error("Something went wrong with mkdir -p with '" .. output_dir .. "'. Exiting")
+			return false, nil
+		end
+	end
+
+	local parser = ucl.parser()
+	local is_error, err = parser:parse_file("tmpl/FreeBSD-tmpl.json")
+
+	if is_error == false then
+		logger:error("osvf_tool_new_entry: Can't parse OSVf JSON file: " .. err)
+		return false, nil
+	end
+
+	local obj = parser:get_object()
+
+	local date_full = os.date("%Y-%m-%dT%XZ")
+
+	obj["published"] = date_full
+	obj["published"] = date_full
+	obj["database_specific"]["discovery"] = date_full
+	obj["id"] = cur_output_file
+
+	local output, rc = osvf_tool_run_cmd("mkdir -p " .. output_dir)
+
+	if rc == false then
+		logger:error("Something went wrong with mkdir -p with '" .. output_dir .. "'. Exiting")
+		return false, nil
+	end
+
+	json_output = ucl.to_format(obj, "json")
+	output_filename = output_dir .. "/" .. cur_output_file .. ".json"
+	output_handle = io.open(output_filename, "w")
+
+	if output_handle == nil then
+		logger:error("Can't open file: '" .. output_filename .. "' for output")
+		return false, nil
+	else
+		output_handle:write(json_output)
+		output_handle:close()
+	end
+
+	return true, output_filename
 end
 
 if #arg == 0 then
@@ -402,8 +474,6 @@ if #arg == 0 then
 	print("\tnewentry\tCreate new entry and set ID for it.\n")
 	print("\t\t\tExample: osvf-tool.lua newentry")
 	print("\t\t\tCreate new entry with next ID which is available\n")
-	print("\t\t\tExample: osvf-tool.lua newentry ID")
-	print("\t\t\tCreate new entry with ID\n")
 
 	print("\tmerge\tMerge all files to one JSON array and print to stdout\n")
 	print("\t\t\tExample: osvf-tool.lua merge")
@@ -437,7 +507,11 @@ if which_command == 1 then
 		print("Validation of OSVf JSON files didn't succeeded please see error(s)")
 	end
 elseif which_command == 2 then
-	print("New entry needs to be implemented")
+	is_error, output_name = osvf_tool_new_entry("vuln")
+
+	if is_error == true then
+		print("New entry file: " .. output_name)
+	end
 elseif which_command == 3 then
 	is_error, output = osvf_tool_merge_osvf_files("schema/osvf_schema-1.7.4.json", "vuln")
 
