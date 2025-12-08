@@ -1,6 +1,31 @@
 > [!WARNING]
 > 💥 Attention please! You've entered our testing ground! ☠ The contents of this repo are purely for testing purposes. Please don't use the files or information here for any other reason. Thank you for your cooperation! 🌟
 
+# Python Prerequisites
+Minimum supported Python version is **3.11**. The following Python modules are required for VuXML to OSV conversion:
+- **lxml** — Used to parse VuXML files
+- **pypandoc** — Used to convert XHTML to commonmark
+
+Python code is formatted using the latest `black` formatter.
+
+# Lua Prerequisites
+Lua requires libraries located in the `bin` directory. It also needs the **libucl** Lua module to parse JSON files. Lua scripts use **Curl** to download the schema file if it is not available.
+
+Lua code is formatted using `stylua`.
+
+# Makefile Targets
+- **convert-vuxml**
+  Downloads VuXML from FreeBSD vuxml: https://vuxml.freebsd.org/freebsd/vuln.xml.xz, unpacks it with `xz`, and converts VuXML to OSV format. New files are saved in the `vuln` directory.
+
+- **merge**
+  Merges all OSV files in the `vuln` directory into `db/FREEBSD-osv.json`. Validates all OSV files against the JSON schema.
+
+- **commonmark**
+  Exports OSV JSON files as commonmark format into `md` files. The directory structure remains unchanged.
+
+- **newentry**
+  Adds a new entry with the next available ID to the `vuln` directory.
+
 # Vulnerability Naming Convention
 
 ## Context
@@ -26,7 +51,7 @@ vuln/
           FREEBSD-2025-0004.json
           ...
 ```
-A tool may be created to generate a flattened JSON file from all vulnerabilities, stored as `db/FREEBSD-osvf.json`. This file should reside within the Git repository and be constructed whenever a new 
+A tool may be created to generate a flattened JSON file from all vulnerabilities, stored as `db/FREEBSD-osv.json`. This file should reside within the Git repository and be constructed whenever a new 
 vulnerability is added. It would be served by `pkg(8)`.
 
 Tools for constructing this flattened JSON will be located in the `bin` directory of the repository and can be written in Lua or Python, with Lua preferred for Core package tooling. If using Lua, UCL 
@@ -122,7 +147,7 @@ Once `pkgbase` is the default installation system for FreeBSD core, vulnerabilit
 `usr.bin.<binary_name>`, or if it's a larger construct, just **core**. The ecosystem naming and other details remain similar to ports with these differences:
 
 * Ecosystem name is `FreeBSD:core`.
-* Can include `:<RELEASE>` for version-specific vulnerabilities (e.g., `FreeBSD:core:14.3`).
+* Can include `:<RELEASE>` for version-specific vulnerabilities (e.g., `FreeBSD:core:15.0`).
 * Affected versions are FreeBSD release or package names in the `pkg(8)` system.
 
 ### Core JSON example
@@ -138,7 +163,7 @@ Once `pkgbase` is the default installation system for FreeBSD core, vulnerabilit
                 {
                     "events": [
                         {
-                            "introduced": "14.3"
+                            "introduced": "15.0"
                         },
                         {
                             "fixed": "14.4"
@@ -173,7 +198,7 @@ Kernel vulnerabilities follow the same structure as core packages with these adj
 
 * `name` should reference the module where the vulnerability appears.
 * Ecosystem name is `FreeBSD:kernel`.
-* Can include `:<RELEASE>` for version-specific vulnerabilities (e.g., `FreeBSD:kernel:14.3`).
+* Can include `:<RELEASE>` for version-specific vulnerabilities (e.g., `FreeBSD:kernel:15.0`).
 * Affected versions are FreeBSD release or package names in the `pkg(8)` system.
 
 
@@ -181,23 +206,3 @@ Kernel vulnerabilities follow the same structure as core packages with these adj
 - Easy local database copy with `git clone`
 - Simple yearly vulnerability lookup by package name and year
 
-## Conversion Instructions
-Use Python 3.11+ (requires the `lxml`, `markdownify` (for convert HTML to CommonMark), `tomli_w` (for TOML writing) and `ruamel.yaml` (for YAML) module):
-
-> [!TIP]
-> If you like to have YAML output add `-Y` in parameters. For TOML output add `-T`.
-
-```bash
-# Download VuXML data
-wget https://vuxml.freebsd.org/freebsd/vuln.xml
-
-# Convert to Non-flat Database:
-python3 bin/convert_vuxml.py -o vuln vuln.xml
-
-# Convert to Flat Database:
-python3 bin/convert_vuxml.py -F -o vuln vuln.xml
-
-# Convert to Flat Running ID Database:
-python3 bin/convert_vuxml.py -F -r -o vuln vuln.xml
-
-```
