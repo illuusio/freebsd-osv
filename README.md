@@ -1,68 +1,46 @@
 > [!WARNING]
 > 💥 Attention please! You've entered our testing ground! ☠ The contents of this repo are purely for testing purposes. Please don't use the files or information here for any other reason. Thank you for your cooperation! 🌟
 
-# Python Prerequisites
-Minimum supported Python version is **3.11**. The following Python modules are required for VuXML to OSV conversion:
-- **lxml** — Used to parse VuXML files
-- **pypandoc** — Used to convert XHTML to commonmark
+# 
 
-Python code is formatted using the latest `black` formatter.
+# The OSV Database
+OSV (Open Source Vulnerabilities) is a relatively new initiative aimed at creating a common format for describing vulnerabilities. According to the [OSV FAQ](https://google.github.io/osv.dev/faq/#why-a-new-format-to-describe-vulnerability), it consists of three parts:
 
-# Lua Prerequisites
-Lua requires libraries located in the `bin` directory. It also needs the **libucl** Lua module to parse JSON files. Lua scripts use **Curl** to download the schema file if it is not available.
+1. [The OSV Schema](https://github.com/ossf/osv-schema/blob/main/validation/schema.json)
 
-Lua code is formatted using `stylua`.
+2. [The reference infrastructure](https://osv.dev/)
 
-# Makefile Targets
-- **convert-vuxml**
-  Downloads VuXML from FreeBSD vuxml: https://vuxml.freebsd.org/freebsd/vuln.xml.xz, unpacks it with `xz`, and converts VuXML to OSV format. New files are saved in the `vuln` directory.
+3. OSV-Scanner, the officially supported frontend for OSV.dev
 
-- **merge**
-  Merges all OSV files in the `vuln` directory into `db/FREEBSD-osv.json`. Validates all OSV files against the JSON schema.
+The primary purpose of OSV is to create a common, machine-readable format for open-source vulnerabilities that includes validation schema and tooling support for multiple programming languages. OSV shares similar goals with FreeBSD VuXML format, aiming to inform users about security vulnerabilities in FreeBSD ports or base system and FreeBSD kernel.
 
-- **commonmark**
-  Exports OSV JSON files as commonmark format into `md` files. The directory structure remains unchanged.
+Integration into FreeBSD's main infrastructure is still in progress, with the current implementation available at [an unofficial repository outside of FreeBSD](https://github.com/illuusio/freebsd-osv). The OSV repository has a slightly different structure than VuXML entries:
 
-- **newentry**
-  Adds a new entry with the next available ID to the `vuln` directory.
+Files are organized by year in subdirectories under the `vuln` directory. The prefix resets to `0001` on January 1st of each year, with directories changing to reflect the current year. Template for OSV ID is `FreeBSD-YYYY-NNNN` where 'Y' stands for year and 'N' stands for running number:
 
-# Vulnerability Naming Convention
-
-## Context
-The FreeBSD ecosystem includes the core system, kernel, and ports.
-
-## How the vulnerability ID is used
-A JSON Open Source Vulnerability format (OSVF) file is created for each vulnerability record. Each vulnerability has a unique ID that is used as both the filename and referenced within the JSON file.
-
-## File organization in database
-Files are organized by year in subdirectories under the `vuln` directory. The prefix resets to `0001` on January 1st of each year, with directories changing to reflect the current year:
 ```
 vuln/
      2024/
-          FREEBSD-2024-0001.json
-          FREEBSD-2024-0002.json
-          FREEBSD-2024-0003.json
-          FREEBSD-2024-0004.json
+          FreeBSD-2024-0001.json
+          FreeBSD-2024-0002.json
+          FreeBSD-2024-0003.json
+          FreeBSD-2024-0004.json
           ...
     2025/
-          FREEBSD-2025-0001.json
-          FREEBSD-2025-0002.json
-          FREEBSD-2025-0003.json
-          FREEBSD-2025-0004.json
+          FreeBSD-2025-0001.json
+          FreeBSD-2025-0002.json
+          FreeBSD-2025-0003.json
+          FreeBSD-2025-0004.json
           ...
 ```
-A tool may be created to generate a flattened JSON file from all vulnerabilities, stored as `db/FREEBSD-osv.json`. This file should reside within the Git repository and be constructed whenever a new 
-vulnerability is added. It would be served by `pkg(8)`.
 
-Tools for constructing this flattened JSON will be located in the `bin` directory of the repository and can be written in Lua or Python, with Lua preferred for Core package tooling. If using Lua, UCL 
-should be used for JSON processing.
+A flattened JSON file containing all vulnerabilities is stored as `db/freebsd-osv.json`, which is consumed by the pkg(8) tool in future. Integration with pkg(8) is currently under [review at the Pull Request level](https://github.com/freebsd/pkg/pull/2558).
 
-## Vulnerability ID construction
-The ID starts with the prefix `FREEBSD`, followed by the current year (to ensure uniqueness) and a running number that resets to `0001` every January 1st.
+# A Short Introduction to OSV Format
 
-## Example Ports OSVF file:
-OSVF schema is available at [https://ossf.github.io/osv-schema/](https://ossf.github.io/osv-schema/). The following example is taken from VuXML and includes the `database_specific.vid` field, which may 
-not be present in all cases. Note that the OSVF schema version should be updated as needed.
+OSV Schema documentation can be found [here](https://ossf.github.io/osv-schema/). If something in this documentation contradicts the official schema documentation, then the official documentation should be considered correct. Corrections to this documentation are welcome.
+
+This is an example of a VuXML converted to OSV _JSON_ format, which has been chosen as the serialization language for OSV files:
 
 ```
 {
@@ -70,16 +48,168 @@ not be present in all cases. Note that the OSVF schema version should be updated
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "FreeBSD"
+                "name": "foo"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "1.0"
+                            "introduced": "1.6"
                         },
                         {
-                            "fixed": "1.0_5"
+                            "fixed": "1.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.*"
+                        },
+                        {
+                            "fixed": "2.4_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "3.0b1"
+                        },
+                        {
+                            "last_affected": "3.0b1"
+                        },
+                        {
+                            "fixed": "3.0b1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ],
+            "versions": [
+                "3.0b1"
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "foo-devel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "1.6"
+                        },
+                        {
+                            "fixed": "1.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.*"
+                        },
+                        {
+                            "fixed": "2.4_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "3.0b1"
+                        },
+                        {
+                            "last_affected": "3.0b1"
+                        },
+                        {
+                            "fixed": "3.0b1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ],
+            "versions": [
+                "3.0b1"
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ja-foo"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "1.6"
+                        },
+                        {
+                            "fixed": "1.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.*"
+                        },
+                        {
+                            "fixed": "2.4_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "3.0b1"
+                        },
+                        {
+                            "last_affected": "3.0b1"
+                        },
+                        {
+                            "fixed": "3.0b1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ],
+            "versions": [
+                "3.0b1"
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openfoo"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "fixed": "1.10_7"
+                        },
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "1.2,1"
+                        },
+                        {
+                            "fixed": "1.3_1,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -88,121 +218,133 @@ not be present in all cases. Note that the OSVF schema version should be updated
         }
     ],
     "database_specific": {
-        "discovery": "2025-09-10T00:00:00Z",
-        "vid": "1111111-2222-3333-4444-55555555"
+        "cite": [
+            "http://j.r.hacker.com/advisories/1"
+        ],
+        "discovery": "2010-05-25T00:00:00Z",
+        "references": {
+            "certvu": [
+                "740169"
+            ],
+            "cvename": [
+                "CVE-2023-48795"
+            ],
+            "freebsdpr": [
+                "ports/987654"
+            ],
+            "freebsdsa": [
+                "SA-10:75.foo"
+            ]
+        },
+        "vid": "f4bc80f4-da62-11d8-90ea-0004ac98a7b9"
     },
-    "details": "Problem Description:\n====================\n\nA malicious value",
-    "id": "FBSD-2024-0101",
-    "modified": "2025-09-10T00:00:00Z",
-    "published": "2025-09-10T00:00:00Z",
+    "details": "J. Random Hacker reports:\n\n> Several issues in the Foo software may be exploited via carefully\n> crafted QUUX requests. These requests will permit the injection of Bar\n> code, mumble theft, and the readability of the Foo administrator\n> account.\n",
+    "id": "FreeBSD-2010-0001",
+    "modified": "2010-09-17T00:00:00Z",
+    "published": "2010-07-13T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://www.freebsd.org/"
-        }
-    ],
-    "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Integer overflow"
-}
-```
-
-### Example with Linux binaries
-
-This is just a hypothetical example.
-
-```
-{
-    "affected": [
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "FreeBSD"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "1.0"
-                        },
-                        {
-                            "fixed": "1.0_1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-            ],
-            "ecosystem_specific": {
-                "linux_binary": true,
-                "original_linux_distro": "Ubuntu",
-                "original_distro_release": "24.04",
-                "original_distro_package": "test_package_1.0.deb"
-            }
-        }
-    ],
-...
-```
-
-## Core package(s)
-Once `pkgbase` is the default installation system for FreeBSD core, vulnerability names follow the same format as ports. If a vulnerability affects a specific binary, the name should be like 
-`usr.bin.<binary_name>`, or if it's a larger construct, just **core**. The ecosystem naming and other details remain similar to ports with these differences:
-
-* Ecosystem name is `FreeBSD:core`.
-* Can include `:<RELEASE>` for version-specific vulnerabilities (e.g., `FreeBSD:core:15.0`).
-* Affected versions are FreeBSD release or package names in the `pkg(8)` system.
-
-### Core JSON example
-```
-{
-    "affected": [
-        {
-            "package": {
-                "ecosystem": "FreeBSD:core",
-                "name": "usr.bin.ls"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "15.0"
-                        },
-                        {
-                            "fixed": "14.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-            ],
-        }
-    ],
-    "details": "Problem Description:\n====================\n\nls has some problem",
-    "id": "FBSD-2025-0999",
-    "modified": "2025-09-10T00:00:00Z",
-    "published": "2025-09-10T00:00:00Z",
-    "references": [
-        {
-            "type": "ADVISORY",
-            "url": "https://www.freebsd.org/"
+            "type": "REPORT",
+            "url": "http://j.r.hacker.com/advisories/1"
         },
         {
-            "type": "WEB",
-            "url": "https://www.freebsd.org/"
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-10:75.foo.asc"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=987654"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2023-48795"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.kb.cert.org/vuls/id/740169"
+        },
+        {
+            "type": "DISCUSSION",
+            "url": "http://marc.theaimsgroup.com/?l=bugtraq&m=203886607825605"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- ls has a problem"
+    "summary": "Several vulnerabilities found in Foo"
 }
 ```
 
-## Kernel vulnerability JSON
-Kernel vulnerabilities follow the same structure as core packages with these adjustments:
+Detailed documentation on tags and structure can be found in the Official OSV Schema documentation, but here are notes for this example:
 
-* `name` should reference the module where the vulnerability appears.
-* Ecosystem name is `FreeBSD:kernel`.
-* Can include `:<RELEASE>` for version-specific vulnerabilities (e.g., `FreeBSD:kernel:15.0`).
-* Affected versions are FreeBSD release or package names in the `pkg(8)` system.
+1. *ID Field*: The `.id` field is mandatory at the top level of an OSV entry and specifies a unique ID for the entry. For VuXML entries converted to OSV format, it uses UUIDs (found under `.database_specific.vid`). The ID format should be `FREEBSD-YYYY-NNNN`, where YYYY is a four-digit year (e.g., 2026), and NNNN is the running number starting at 0001 every year. For example, the third vulnerability of 2026 would be `FREEBSD-2026-0004`. It should be stored in `vuln/2026/FREEBSD-2026-0004.json`.
 
+2. *Summary Field*: The `.summary` field is a one-line description of the issue.
 
-## Why Use Git?
-- Easy local database copy with `git clone`
-- Simple yearly vulnerability lookup by package name and year
+3. *Affected Packages*: The `.affected` field lists all affected packages as an array. Each package object contains:
+    - `name`: The port or base package name.
+    - `ecosystem`: Typically, this will be `FreeBSD:ports` which is for FreeBSD Ports packages. It also can be `FreeBSD:base` which is for FreeBSD base package(s) or `FreeBSD:kernel` which is for kernel modules and kernel itself.
 
+4. *Versioning*: Version information is provided under `.affected[].ranges` array. Each range object contains:
+    - An array of events `introduced`, `last_affected`, and `fixed`, similar to VuXML's `<lt>`, `<le>`, `<eq>`, `<ge>`, and `<gt>` elements.
+    - `introduced`-field is used like `<ge>` attribute
+    - `fixed`-field is used like `<le>`attribute
+    - `last_affected`-field is used like `<lte>`attribute
+    - VuXML version '*', which means all version are vunerable, is supported with `introduced: "0"`
+    - The `type`-field should always be `ECOSYSTEM`.
+
+5. *Details Field*: The `.details` field contains a multi-line detailed description of the issue, formatted in [CommonMark](https://commonmark.org/help/).
+
+6. *References Field*: The `.references` array includes relevant documents with types such as `ADVISORY`, `DISCUSSION`, and `REPORT`. See the [official OSV documentation for all available types](https://ossf.github.io/osv-schema/#references-field).
+
+7. *Modified Field*: The `.modified` field contains the ISO 8601 date when the issue was last modified (`YYYY-MM-DDTHH:MM:SSZ`).
+
+8. *Published Field*: `.published` field contains The ISO 8601 date when the entry was added (`YYYY-MM-DDTHH:MM:SSZ`).
+
+8. *Database-Specific Information*:
+    - `.database_specific.discovery`: The ISO 8601 date when the issue was discovered.
+    - `.database_specific.vid`: Original VuXML UUID
+    - `.database_specific.references`: Object which contains original references as they are preprensented as URL in `.references`
+    - `.database_specific.references.bid[]`: Array of SecurityFocus computer security news portal (current offline)  numbers as strings
+    - `.database_specific.references.certsa[]`: Array of CERT Advisories reference numbers as strings
+    - `.database_specific.references.certvu[]`: Array of CERT/CC Vulnerability Notes Database reference numbers as strings
+    - `.database_specific.references.cvename[]`: Array of CVE Vulnerabilities connecting for this OSV entry as strings.
+    - `.database_specific.references.freebsdpr[]`: Array of FreeBSD bugzilla bug references.
+    - `.database_specific.references.freebsdsa[]`: Array of FreeBSD Security Advisories references.
+
+9. *Schema Version*: The `schema_version` field indicates the version of the schema in use (FreeBSD uses 1.7.4).
+
+Additional fields like severity, aliases, and withdrawn are mentioned but not currently used.
+
+# Using OSV Repository Makefile Targets
+
+In the [Unofficial outside FreeBSD repository](https://github.com/illuusio/freebsd-osv/blob/main/Makefile), there is a Makefile that makes it easier to maintain OSV Vulnerabilities. While there aren't many targets, they should be sufficient to:
+
+1. Maintain OSV database and convert entries from VuXML XML to OSV (with `convert-vuxml`)
+
+2. Merge OSV files into one JSON array to use in pkg(8)
+
+3. Export OSV files to Commonmark `.md`-files which can be converted to HTML with Pandoc or a similar tool
+
+4. In the future, maintain only the OSV repository and have [OSV Pull Request 3901](https://github.com/google/osv.dev/issues/3901) fulfilled to make FreeBSD Vulnerabilities appear through the [osv.dev API](https://osv.dev/#use-the-api)
+
+Targets in detail are:
+
+- `convert-vuxml`:
+  Downloads VuXML from FreeBSD vuxml: https://vuxml.freebsd.org/freebsd/vuln.xml.xz, unpacks it with `xz`, and converts VuXML to OSV format. New files are saved under the `vuln` directory. If `vuxml.xml` is present then conversion is not done.
+
+- `commonmark`:
+  Exports OSV JSON files as CommonMark format into `.md` files. The directory structure remains unchanged.
+
+- `merge`:
+  Merges all OSV files in the `vuln` directory into `db/freebsd-osv.json`. Validates all OSV files against the JSON schema.
+
+- `newentry`:
+  Adds a new entry with the next available ID to the `vuln` directory.
+
+# JSON tools to work with OSV files
+These are tools that have been proven to be useful when working with JSON files. They are listed in alphabetical order:
+
+- [fx](https://fx.wtf/) — Go language written Terminal JSON viewer & processor. Easy to see multiline strings, for example.
+
+- [jq](https://jqlang.org/) — C language written Command-line JSON processor. Useful for examining JSON if `fx` is too much.
+
+- [yj](https://github.com/bruceadams/yj) — Go language written command line tool that converts YAML to JSON/TOML (and back to YAML/TOML). Can be useful when editing multiline JSON details. Convert JSON to YAML, edit and convert back to JSON.
