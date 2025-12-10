@@ -1,0 +1,229 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "foo"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "1.6"
+                        },
+                        {
+                            "fixed": "1.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.*"
+                        },
+                        {
+                            "fixed": "2.4_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "3.0b1"
+                        },
+                        {
+                            "last_affected": "3.0b1"
+                        },
+                        {
+                            "fixed": "3.0b1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ],
+            "versions": [
+                "3.0b1"
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "foo-devel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "1.6"
+                        },
+                        {
+                            "fixed": "1.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.*"
+                        },
+                        {
+                            "fixed": "2.4_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "3.0b1"
+                        },
+                        {
+                            "last_affected": "3.0b1"
+                        },
+                        {
+                            "fixed": "3.0b1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ],
+            "versions": [
+                "3.0b1"
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ja-foo"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "1.6"
+                        },
+                        {
+                            "fixed": "1.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.*"
+                        },
+                        {
+                            "fixed": "2.4_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "3.0b1"
+                        },
+                        {
+                            "last_affected": "3.0b1"
+                        },
+                        {
+                            "fixed": "3.0b1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ],
+            "versions": [
+                "3.0b1"
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openfoo"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "fixed": "1.10_7"
+                        },
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "1.2,1"
+                        },
+                        {
+                            "fixed": "1.3_1,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "http://j.r.hacker.com/advisories/1"
+        ],
+        "discovery": "2010-05-25T00:00:00Z",
+        "references": {
+            "certvu": [
+                "740169"
+            ],
+            "cvename": [
+                "CVE-2023-48795"
+            ],
+            "freebsdpr": [
+                "ports/987654"
+            ],
+            "freebsdsa": [
+                "SA-10:75.foo"
+            ]
+        },
+        "vid": "f4bc80f4-da62-11d8-90ea-0004ac98a7b9"
+    },
+    "details": "J. Random Hacker reports:\n\n> Several issues in the Foo software may be exploited via carefully\n> crafted QUUX requests. These requests will permit the injection of Bar\n> code, mumble theft, and the readability of the Foo administrator\n> account.\n",
+    "id": "FreeBSD-2010-0001",
+    "modified": "2010-09-17T00:00:00Z",
+    "published": "2010-07-13T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "http://j.r.hacker.com/advisories/1"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-10:75.foo.asc"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=987654"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2023-48795"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.kb.cert.org/vuls/id/740169"
+        },
+        {
+            "type": "DISCUSSION",
+            "url": "http://marc.theaimsgroup.com/?l=bugtraq&m=203886607825605"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Several vulnerabilities found in Foo"
+}
+
