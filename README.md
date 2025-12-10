@@ -1,9 +1,31 @@
 > [!WARNING]
 > 💥 Attention please! You've entered our testing ground! ☠ The contents of this repo are purely for testing purposes. Please don't use the files or information here for any other reason. Thank you for your cooperation! 🌟
 
-# 
+# FreeBSD OSV Database Documentation
 
-# The OSV Database
+## Introduction
+
+This chapter clarifies some design decisions for using and contributing to the FreeBSD OSV (Open Source Vulnerability) database.
+
+### Language Selection
+
+Lua was chosen as the implementation language because it's available in the FreeBSD base system as FLua, which stands for FreeBSD Lua. Additionally, the JSON module libUCL is available on a fresh install. The VuXML converter was made with Python because XML handling in Lua is more challenging than in Python using the `lxml` library. Another reason was that there is `pypandoc`, which converts XHTML to Commonmark. If the OSV database only contains FreeBSD vulnerabilities and supersedes VuXML, the Python script could be retired.
+
+### Serialization Format
+
+The FreeBSD OSV database uses JSON as its serialization format. Other formats like YAML and TOML were evaluated. However, Lua's YAML module, `lyaml`, does not support validation with JSON schema or any other schema type, raising concerns about YAML's flexibility and the quality of vulnerability reports. While TOML addresses many issues in YAML and is stricter about formatting serialized documents, FreeBSD does not provide a Lua module for reading TOML within its base system.
+
+### Structure Design
+
+When designing the structure of the FreeBSD OSV database, various other [OSV Vulnerability databases](https://google.github.io/osv.dev/data/) were examined. As, every OSV database have own ID and they have their strong point and weakness schema for FreeBSD was chosen mainly with KISS method after studying multiple diffrent methdos to produce OSV ID. Current chosen schema template looks like: `FreeBSD-YYYY-NNNN` where 'Y' stands for year and 'N' stands for running four letter number padded with zeroes. The FreeBSD IDs changing part reset to **0001** start of every year and increments with one each new vulnerability. YYYY is four digits year when vulnerability was reported. With this kind of approach it's easy for humans to understand and maintains unique ID requirements easily for the foreseeable future. 
+
+### File Organization
+
+Each vulnerability file is stored under `vuln/YYYY` directory where 'YYYY' is the same as in vulnerability year. Filenames are FreeBSD vulnerability ID with `.json` prefix. Whole directory file structure look like `vuln/YYYY/FreeBSD-YYYY-NNNN.json`. This method ensuring HTTP servers serve them with the correct MIME type. Additionally, keeping each year's files in their own yearly subdirectory avoids overlapping any filesystem directory limits and makes it easy to find the correct file within the directory.
+
+Next chapter goes more deeper how OSV database organize files and structures.
+
+# The OSV Database structure
 OSV (Open Source Vulnerabilities) is a relatively new initiative aimed at creating a common format for describing vulnerabilities. According to the [OSV FAQ](https://google.github.io/osv.dev/faq/#why-a-new-format-to-describe-vulnerability), it consists of three parts:
 
 1. [The OSV Schema](https://github.com/ossf/osv-schema/blob/main/validation/schema.json)
@@ -16,7 +38,7 @@ The primary purpose of OSV is to create a common, machine-readable format for op
 
 Integration into FreeBSD's main infrastructure is still in progress, with the current implementation available at [an unofficial repository outside of FreeBSD](https://github.com/illuusio/freebsd-osv). The OSV repository has a slightly different structure than VuXML entries:
 
-Files are organized by year in subdirectories under the `vuln` directory. The prefix resets to `0001` on January 1st of each year, with directories changing to reflect the current year. Template for OSV ID is `FreeBSD-YYYY-NNNN` where 'Y' stands for year and 'N' stands for running number:
+Files are organized by year in subdirectories under the `vuln` directory. The prefix resets to `0001` on January 1st of each year, with directories changing to reflect the current year:
 
 ```
 vuln/
