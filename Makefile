@@ -19,7 +19,7 @@ TOP := $(shell pwd)
 ifeq ($(LUA_CMD),)
 LUA_CMD := "/usr/libexec/flua"
 endif
-LUA_PATH := "$(TOP)/bin/?.lua;;"
+LUA_PATH := "$(TOP)/lua/?.lua;;"
 LUA_TOOL := "bin/osvf-tool.lua"
 ifeq ($(PYTHON_CMD),)
 PYTHON_CMD := $(shell which python3)
