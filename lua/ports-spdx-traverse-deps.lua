@@ -7,18 +7,16 @@
 -- This software was developed by Tuukka Pasanen <tuukka.pasanen@ilmi.fi>
 -- under sponsorship from the FreeBSD Foundation.
 --
--- Traverse package dependencies for SBOM
---
--- !! Heavy WIP warning !!
+-- Traverse package dependencies for SDPX Lite 3.0.1 SBOM
 --
 
 local Logging = require("logging")
-local Make = require("ports-make")
-local Make = require("spdx-lite")
-
 local ucl = require("ucl")
 
-local logger = Logging.new(nil, "INFO")
+logger = Logging.new(nil, "INFO")
+
+require("ports-make")
+require("ports-spdx")
 
 -------------------------------------------------------------------------------
 -- Run 'describe-json' with make and parse output.
@@ -112,10 +110,10 @@ local function spdx_traverse_add_depends_on(deps_table, package, software_sbom, 
 	local depends_on_table = nil
 	for _, output_str in ipairs(deps_table) do
 		package_dep_table = spdx_traverse_split_output(output_str)
-		to_spdx_id = spdx_lite_get_spdxId("software_Package", package_dep_table["name"])
+		to_spdx_id = ports_spdx_get_spdxId("software_Package", package_dep_table["name"])
 
 		if depends_on_table == nil then
-			depends_on_table = spdx_lite_add_relationship(
+			depends_on_table = ports_spdx_add_relationship(
 				root_graph,
 				package.name,
 				package.spdxId,
@@ -134,13 +132,13 @@ end
 
 root_graph = {}
 -- Create Graph root objects
-local agent, creation_info, spdx_document = spdx_lite_create_root(root_graph)
+local agent, creation_info, spdx_document = ports_spdx_create_root(root_graph)
 
 local output_table = ports_make_target_as_table("package-depends-list")
 local package_data = spdx_traverse_describe_json()
 
 -- Create SBOM object for package we are currently SBOMing
-local software_sbom, package = spdx_lite_create_sbom(
+local software_sbom, package = ports_spdx_create_sbom(
 	root_graph,
 	package_data["name"],
 	package_data["version"],
@@ -158,7 +156,7 @@ spdx_traverse_add_depends_on(output_table, package, software_sbom, spdx_document
 for _, output_str in ipairs(output_table) do
 	local package_dep_table = spdx_traverse_split_output(output_str)
 	local package_data = spdx_traverse_describe_json(package_dep_table["full_location"])
-	local dep_software_sbom, dep_package = spdx_lite_create_sbom(
+	local dep_software_sbom, dep_package = ports_spdx_create_sbom(
 		root_graph,
 		package_data["name"],
 		package_data["version"],
@@ -175,7 +173,7 @@ for _, output_str in ipairs(output_table) do
 end
 
 -- Add licenses to Graph
-spdx_lite_add_liceses(root_graph, spdx_document, creation_info)
+ports_spdx_add_liceses(root_graph, spdx_document, creation_info)
 
-json_ld = spdx_lite_json_ld(root_graph)
+json_ld = ports_spdx_json_ld(root_graph)
 print(ucl.to_format(json_ld, "json"))

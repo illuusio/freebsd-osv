@@ -1,26 +1,54 @@
 -------------------------------------------------------------------------------
+-- SPDX-License-Identifier: MIT
 -- SPDX-License-Identifier: BSD-2-Clause
 --
--- includes a new tostring function that handles tables recursively
+-- This is based on LunarModules logger and it's ported for be used with
+-- FreeBSD FLua version 5.4
 --
 -- @author Danilo Tuler (tuler@ideais.com.br)
 -- @author Andre Carregal (info@keplerproject.org)
 -- @author Thiago Costa Ponte (thiago@ideais.com.br)
 --
 -- @copyright 2004-2010 Kepler Project, 2011-2013 Neopallium, 2020-2023 Thijs Schreijer
---
---
 -- @copyright (c) 2025 The FreeBSD Foundation
 --
---​ Portions of this software were developed by
--- Tuukka Pasanen <tuukka.pasanen@ilmi.fi> under sponsorship from the FreeBSD Foundation
+-- Portions of this software were developed by Tuukka Pasanen <tuukka.pasanen@ilmi.fi>
+-- under sponsorship from the FreeBSD Foundation
+--
+-- Basic usage:
+-- local Logging = require "logging"
+-- local logger = Logging.new(nil, "INFO", true)
+-- logger:log(logger.INFO, "This is INFO level and should be printed")
+--
+-- logger:setLevel(logger.WARN)
+-- logger:info("This is INFO level and should not be printed")
+-- logger:warn("This is WARN level and should be printed")
+-- logger:error("This is ERROR level and should be printed")
+--
+-- local table = { a = 1, b = 2 }
+-- logger:debug(table)
+-- logger:info("val1='%s', val2=%d", "string value", 1234)
+--
+-- Beyond basic usage:
+-- local Logging = require "logging"
+-- local logger = Logging.new(nil, "DEBUG", true)
+--
+-- local function log_callback(val1, val2)
+--   return string.format("val1='%s', val2=%d", val1, val2)
+-- end
+--
+-- logger:debug(log_callback, "string value", 1234)
+--
+-- logger:setLevel (logger.INFO)
+-- local debug_print = logger:getPrint(logger.INFO)
+-- debug_print("hello\nthere!")
 -------------------------------------------------------------------------------
 
 local _tostring = tostring
 
 local select = select
 local error = error
--- local format = string.format
+local format = string.format
 local floor = math.floor
 local pairs = pairs
 local ipairs = ipairs
@@ -28,8 +56,8 @@ local ipairs = ipairs
 local logging = {
 	-- Meta information
 	_COPYRIGHT = "Copyright (C) 2004-2010 Kepler Project, 2011-2013 Neopallium, 2020-2023 Thijs Schreijer, 2025 The FreeBSD Foundation",
-	_DESCRIPTION = "A simple API for FreeBSD port to use logging features in Lua",
-	_VERSION = "Ports logger 1.0.0",
+	_DESCRIPTION = "A simple Lua logging API for FreeBSD ports",
+	_VERSION = "FreeBSD Ports Logger 1.0.0",
 }
 
 local LEVELS = { "DEBUG", "INFO", "WARN", "ERROR", "FATAL", "OFF" }
@@ -107,6 +135,14 @@ end
 
 -------------------------------------------------------------------------------
 -- Default appender if custom one is not provided
+-- Color table:
+--  OFF Console color
+--  TRACE Blue
+--  DEBUG Bold White
+--  INFO green
+--  WARN Yellow
+--  ERROR Underline Red
+--  FATAL Bold Purple
 -- @param self Logger object
 -- @param level Level of log
 -- @param message Debug message
@@ -161,6 +197,11 @@ function logging.new(append, startLevel, colorOutput)
 	local logger = {}
 	logger.append = append
 
+	-------------------------------------------------------------------------------
+	-- set log level
+	-- @param self Current logger object
+	-- @param level log level string (TRACE,DEBUG,INFO,WARN,ERROR or FATAL)
+	-------------------------------------------------------------------------------
 	logger.setLevel = function(self, level)
 		local order = LEVELS[level]
 		assert(order, "undefined level '%s'", _tostring(level))
@@ -182,11 +223,21 @@ function logging.new(append, startLevel, colorOutput)
 		end
 	end
 
+	-------------------------------------------------------------------------------
+	-- Whether to use color output
+	-- @param self Current logger object
+	-- @param useColor true use ANSI color output false don't
+	-------------------------------------------------------------------------------
 	logger.setUseColor = function(self, useColor)
 		self.usecolor = useColor
 	end
 
-	-- generic log function.
+	-------------------------------------------------------------------------------
+	-- Log function logger:log(logger.DEBUG, "this is debug string")
+	-- @param self Current object
+	-- @param level level log level (TRACE,DEBUG,INFO,WARN,ERROR or FATAL)
+	-- @param ... Other parameters
+	-------------------------------------------------------------------------------
 	logger.log = function(self, level, ...)
 		local order = LEVELS[level]
 		assert(order, "undefined level `%s'", _tostring(level))
@@ -197,6 +248,11 @@ function logging.new(append, startLevel, colorOutput)
 		return LOG_MSG(self, level, ...)
 	end
 
+	-------------------------------------------------------------------------------
+	-- set log level
+	-- @param self Current object
+	-- @param level log level string (TRACE,DEBUG,INFO,WARN,ERROR,FATAL)
+	-------------------------------------------------------------------------------
 	-- a print function generator
 	logger.getPrint = function(self, level)
 		local order = LEVELS[level]
@@ -236,13 +292,13 @@ function logging.new(append, startLevel, colorOutput)
 	return logger
 end
 
--------------------------------------------------------------------------------
--- Prepares the log message
--------------------------------------------------------------------------------
 local sourceDebugLevel = 1 -- this will be set dynamically below
 local getDebugInfoLine = debug and "local info = debug.getinfo(%d)"
 	or "local info = { short_src = '?', currentline = -1 }"
 
+-------------------------------------------------------------------------------
+-- Prepares the log message
+-------------------------------------------------------------------------------
 function logging.compilePattern(pattern)
 	pattern = string.format("%q", pattern)
 
@@ -485,23 +541,6 @@ function logging.buildLogPatterns(patterns, default)
 end
 
 defaultLogPatterns = logging.buildLogPatterns({}, defaultLogPattern)
-
--------------------------------------------------------------------------------
--- Backward compatible parameter handling
--------------------------------------------------------------------------------
-function logging.getDeprecatedParams(lst, ...) -- TODO: remove in next major version
-	local args = { n = select("#", ...), ... }
-	if type(args[1]) == "table" then
-		-- this is the new format of a single params-table
-		return args[1]
-	end
-
-	local params = {}
-	for i, param_name in ipairs(lst) do
-		params[param_name] = args[i]
-	end
-	return params
-end
 
 -------------------------------------------------------------------------------
 -- dynamically detect proper source debug level, since this can vary by Lua versions

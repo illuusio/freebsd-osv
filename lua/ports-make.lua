@@ -5,14 +5,28 @@
 -- This software was developed by Tuukka Pasanen <tuukka.pasanen@ilmi.fi>
 -- under sponsorship from the FreeBSD Foundation.
 --
--- Functions handling ports make command output
+-- Functions handling ports make command output. One can have them as
+-- raw with ports_make_target or as array (separate line by line)
+-- ports_make_target_as_table. Target should be some FreeBSD ports make
+-- targets.
 --
--- !! Heavy WIP warning !!
+-- example:
+-- local Logging = require("logging")
+-- logger = Logging.new(nil, "DEBUG", true)
+-- require("ports-make")
 --
-
-local Logging = require("logging")
-
-local logger = Logging.new(nil, "INFO")
+-- output = ports_make_target("describe")
+--
+-- print(output)
+--
+-- output_table = ports_make_target_as_table("describe-json")
+--
+-- for _, cur_string in ipairs(output_table) do
+--        print("Output line: [" .. cur_string .. "]")
+-- end
+--
+-- This can be excuted under FreeBSD 14.3 and later with:
+-- LUA_PATH="/usr/ports/Mk/LuaScripts/?.lua;;" /usr/libexec/flua /usr/ports/Mk/LuaScripts/example.lua
 
 -------------------------------------------------------------------------------
 -- Splits string with separator
