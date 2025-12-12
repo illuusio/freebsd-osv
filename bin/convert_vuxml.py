@@ -110,7 +110,6 @@ def main():
         return usage(e)
     ecosystem = "FreeBSD:ports"
     output = None
-    output_running = True
     only_new = False
     is_kernel = False
 
@@ -403,6 +402,9 @@ def main():
                     year_str = dates["published"].strftime("%Y")
                     date_obj = dates["modified"]
 
+                if date_str is None:
+                    raise Exception(f"There is no date available")
+
                 file_base_name = "FreeBSD"
 
                 # File name can be with date of release:
@@ -411,26 +413,15 @@ def main():
                 # FreeBSD-2025-0001.json
                 # When using running id then there won't be yearly
                 # subdirs
-                if output_running is False:
-                    if date_str not in output_id:
-                        output_id[date_str] = 0
-                    output_id[date_str] += 1
-                    output_file = (
-                        f"{file_base_name}-{date_str}-{output_id[date_str]:02}"
-                    )
-                else:
-                    if year_str not in output_id:
-                        output_id[year_str] = 0
-                    output_id[year_str] += 1
-                    output_file = (
-                        f"{file_base_name}-{year_str}-{output_id[year_str]:04}"
-                    )
+                if year_str not in output_id:
+                    output_id[year_str] = 0
+                output_id[year_str] += 1
+                output_file = (
+                    f"{file_base_name}-{year_str}-{output_id[year_str]:04}"
+                )
 
                 # Make sure that is same as filename
                 entry["id"] = output_file
-
-                if date_str is None:
-                    raise Exception(f"There is no date in {entry["affected"]}")
 
                 output_year_path = output + "/" + year_str
 
