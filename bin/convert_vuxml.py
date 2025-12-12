@@ -105,13 +105,13 @@ def warn(string):
 # main
 def main():
     try:
-        opts, args = getopt.getopt(sys.argv[1:], "e:o:FrYT")
+        opts, args = getopt.getopt(sys.argv[1:], "e:o:n")
     except getopt.GetoptError as e:
         return usage(e)
     ecosystem = "FreeBSD:ports"
     output = None
     output_running = True
-    output_json = True
+    only_new = False
     is_kernel = False
 
     output_id = {}
@@ -121,6 +121,8 @@ def main():
             ecosystem = optarg
         elif name == "-o":
             output = optarg
+        elif name == "-n":
+            only_new = True
         else:
             return usage("%s: Unsupported option" % name)
 
@@ -453,6 +455,8 @@ def main():
                 output_full_path = output_path_with_name + "/" + output_with_suffix
 
                 if os.path.isfile(output_full_path) is True:
+                    if only_new:
+                        continue
                     print("OSVf file already created: " + output_full_path)
 
                 # This one have to open file with binary to write
@@ -471,11 +475,10 @@ def main():
             entries.append(entry)
 
     if output is None:
-        if output_json:
-            if len(entries) == 1:
-                print(json.dumps(entries[0], indent=4))
-            else:
-                print(json.dumps(entries, indent=4))
+        if len(entries) == 1:
+            print(json.dumps(entries[0], indent=4))
+        else:
+            print(json.dumps(entries, indent=4))
 
     return ret
 
