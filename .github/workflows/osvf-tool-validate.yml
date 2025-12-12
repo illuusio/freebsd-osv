@@ -30,7 +30,7 @@ jobs:
       - name: Run 'apt update'
         run: apt update -qq
       - name: Install package 'lua5.4' 'jq'
-        run: apt install -y lua5.4 liblua5.4-dev jq git autoconf automake libtool make wget
+        run: apt install -y autoconf automake curl git jq liblua5.4-dev libtool lua5.4 make python3-lxml python3-pypandoc wget xz-utils
       - name: Build libUCL (Universal configuration library parser)
         run: |
              wget https://github.com/vstakhov/libucl/archive/refs/tags/0.9.2.tar.gz
@@ -41,6 +41,21 @@ jobs:
              make install
       - name: Run validation
         run: |
-             LUA_PATH="${GITHUB_WORKSPACE}/bin/?.lua;;" lua5.4 bin/osvf-tool.lua merge > test.json
+             LUA_PATH="${GITHUB_WORKSPACE}/lua/?.lua;;" lua5.4 bin/osvf-tool.lua merge > test.json
       - name: Validate output with jq
         run: cat test.json | jq -c > /dev/null
+      - name: Validate all files with Makefile
+        run: LUA_CMD=/usr/bin/lua5.4 make validate
+      - name: Check that there is not new entries on VuXML
+        run: |
+             MDFILE=$(find vuln -type f | sed -e "s#\.json\$#\.md#" -e "s#vuln/#md/#" | sort -u -r)
+             MISSING=0
+             for file in ${MDFILE}; do
+                 if [ ! -f "${file}" ]; then
+                     echo "Missing Markdown file: '${file}'"
+                     MISSING=1
+                 fi
+             done
+             if [ "${MISSING}" == "1" ]; then
+                 exit 1
+             fi
