@@ -357,6 +357,8 @@ Targets in detail are:
   Merges all OSV files in the `vuln` directory into `db/freebsd-osv.json`. Validates all OSV files against the JSON schema.
 - `newentry`:
   Adds a new entry with the next available ID to the `vuln` directory.
+- `validate`:
+  Validate all JSON files against current OSV JSON schema under `vuln` directory.
 
 # JSON tools to work with OSV files
 These are tools that have been proven to be useful when working with JSON files. They are listed in alphabetical order:

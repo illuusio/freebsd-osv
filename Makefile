@@ -55,3 +55,6 @@ commonmark: check-lua
 
 newentry: check-lua
 	@LUA_PATH=$(LUA_PATH) $(LUA_CMD) $(LUA_TOOL) newentry
+
+validate: check-lua
+	@LUA_PATH=$(LUA_PATH) $(LUA_CMD) $(LUA_TOOL) validate
