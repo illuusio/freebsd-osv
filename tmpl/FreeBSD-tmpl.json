@@ -34,9 +34,6 @@
                             "introduced": "3.0b1"
                         },
                         {
-                            "last_affected": "3.0b1"
-                        },
-                        {
                             "fixed": "3.0b1"
                         }
                     ],
@@ -79,9 +76,6 @@
                     "events": [
                         {
                             "introduced": "3.0b1"
-                        },
-                        {
-                            "last_affected": "3.0b1"
                         },
                         {
                             "fixed": "3.0b1"
@@ -128,9 +122,6 @@
                             "introduced": "3.0b1"
                         },
                         {
-                            "last_affected": "3.0b1"
-                        },
-                        {
                             "fixed": "3.0b1"
                         }
                     ],
@@ -150,11 +141,11 @@
                 {
                     "events": [
                         {
-                            "fixed": "1.10_7"
-                        },
-                        {
                             "introduced": "0"
                         }
+                        {
+                            "fixed": "1.10_7"
+                        },
                     ],
                     "type": "ECOSYSTEM"
                 },
@@ -226,4 +217,3 @@
     "schema_version": "1.7.0",
     "summary": "Several vulnerabilities found in Foo"
 }
-

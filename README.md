@@ -120,9 +120,6 @@ This is an example of a VuXML converted to OSV _JSON_ format, which has been cho
                             "introduced": "3.0b1"
                         },
                         {
-                            "last_affected": "3.0b1"
-                        },
-                        {
                             "fixed": "3.0b1"
                         }
                     ],
@@ -165,9 +162,6 @@ This is an example of a VuXML converted to OSV _JSON_ format, which has been cho
                     "events": [
                         {
                             "introduced": "3.0b1"
-                        },
-                        {
-                            "last_affected": "3.0b1"
                         },
                         {
                             "fixed": "3.0b1"
@@ -214,9 +208,6 @@ This is an example of a VuXML converted to OSV _JSON_ format, which has been cho
                             "introduced": "3.0b1"
                         },
                         {
-                            "last_affected": "3.0b1"
-                        },
-                        {
                             "fixed": "3.0b1"
                         }
                     ],
@@ -236,11 +227,11 @@ This is an example of a VuXML converted to OSV _JSON_ format, which has been cho
                 {
                     "events": [
                         {
-                            "fixed": "1.10_7"
-                        },
-                        {
                             "introduced": "0"
                         }
+                        {
+                            "fixed": "1.10_7"
+                        },
                     ],
                     "type": "ECOSYSTEM"
                 },
@@ -322,10 +313,9 @@ Detailed documentation on tags and structure can be found in the Official OSV Sc
     - `name`: The port or base package name.
     - `ecosystem`: Typically, this will be `FreeBSD:ports` which is for FreeBSD Ports packages. It also can be `FreeBSD:base` which is for FreeBSD base package(s) or `FreeBSD:kernel` which is for kernel modules and kernel itself.
 4. *Versioning*: Version information is provided under `.affected[].ranges` array. Each range object contains:
-    - An array of events `introduced`, `last_affected`, and `fixed`, similar to VuXML's `<lt>`, `<le>`, `<eq>`, `<ge>`, and `<gt>` elements.
-    - `introduced`-field is used like `<ge>` attribute
-    - `fixed`-field is used like `<le>`attribute
-    - `last_affected`-field is used like `<lte>`attribute
+    - every range objects `events` array holds event objects. Those object keys can be: `introduced` or `fixed`. [Official documentation strongly marks](https://ossf.github.io/osv-schema/#affectedrangesevents-fields) that `last_affected` nor `limit` keys should not be used without a caution and current implementation just ignores them if they appear in events.
+    - `introduced`-key is used like `<ge>` attribute. `introduced` should be used event though it's marked "0". Key should the at the top of events.
+    - `fixed`-key is used like `<le>`attribute. `fixed` should be at the last of events.
     - VuXML version '*', which means all version are vunerable, is supported with `introduced: "0"`
     - The `type`-field should always be `ECOSYSTEM`.
 
