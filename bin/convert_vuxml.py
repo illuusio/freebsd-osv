@@ -256,7 +256,10 @@ def main():
             elif ref.tag == namespace + "mlist":
                 reference = {"type": "DISCUSSION", "url": ref.text}
             elif ref.tag == namespace + "url":
-                if "cite" in database_specific and ref.text in database_specific["cite"]:
+                if (
+                    "cite" in database_specific
+                    and ref.text in database_specific["cite"]
+                ):
                     continue
 
                 reference = {"type": "WEB", "url": ref.text}
@@ -302,6 +305,7 @@ def main():
                 p = {"ecosystem": cur_ecosystem, "name": name.text}
                 a["package"] = p
 
+                key_order = ["introduced", "fixed", "last_affected", "limit"]
                 # affected: ranges
                 try:
                     ranges = []
@@ -327,15 +331,11 @@ def main():
                                 event["introduced"] = "0"
                         le = e.find(namespace + "le")
                         if le is not None and len(le.text) > 0:
-                            event["last_affected"] = le.text
+                            event["fixed"] = le.text
                             if le.text != "*":
-                                # Please see documentation about
-                                # last_affected and fixed for reasoning
-                                # behind this
-                                event["last_affected"] = le.text
                                 event["fixed"] = le.text
                             else:
-                                event["last_affected"] = "0"
+                                event["fixed"] = "0"
                         lt = e.find(namespace + "lt")
                         if lt is not None and len(lt.text) > 0:
                             if lt.text != "*":
@@ -345,16 +345,17 @@ def main():
                         if "fixed" in event or "introduced" in event:
                             if "introduced" not in event:
                                 event["introduced"] = "0"
-                        for k, v in event.items():
-                            events.append({k: v})
 
-                        # affected: versions
+                        # Always introduced and fixed after that
+                        # just for the sanity
+                        for order_key in key_order:
+                            if order_key in event:
+                                events.append({order_key: event[order_key]})
+
                         eq = e.find(namespace + "eq")
                         if eq is not None and len(eq.text) > 0 and eq.text != "*":
                             events.append({"introduced": eq.text})
-                            events.append({"last_affected": eq.text})
                             events.append({"fixed": eq.text})
-                            versions.append(eq.text)
 
                         if len(events) > 0:
                             semver["events"] = events
