@@ -18,7 +18,7 @@ It also makes it easier for FreeBSD to import vulnerability data for its 3rd-par
 **Complete**
  - [x] Research common vulnerability data formats and choose one.
  - [x] Add OSV parsing capagility to `pkg`.
- - [ ] Add unit tests to CI to validate OSV content that has been generated. (**In the works**)
+ - [x] Add unit tests to CI to validate OSV content that has been generated.
  - [x] Add FreeBSD to the upstream OSV schema.
  - [x] Create Lua tool to merge and validate OSV files into a single JSON array.
  - [x] Create a script to convert VuXML format to OSV format.
