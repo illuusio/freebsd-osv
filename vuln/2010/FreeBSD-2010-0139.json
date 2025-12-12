@@ -58,10 +58,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "3.6.13,1"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "3.6.13,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -77,10 +77,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "3.5.16"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "3.5.16"
                         }
                     ],
                     "type": "ECOSYSTEM"

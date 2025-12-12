@@ -1,0 +1,159 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ce"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "18.6.0"
+                        },
+                        {
+                            "fixed": "18.6.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.5.0"
+                        },
+                        {
+                            "fixed": "18.5.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "6.3.0"
+                        },
+                        {
+                            "fixed": "18.4.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "18.6.0"
+                        },
+                        {
+                            "fixed": "18.6.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.5.0"
+                        },
+                        {
+                            "fixed": "18.5.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "6.3.0"
+                        },
+                        {
+                            "fixed": "18.4.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://about.gitlab.com/releases/2025/12/10/patch-release-gitlab-18-6-2-released/"
+        ],
+        "discovery": "2025-12-10T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-12716",
+                "CVE-2025-8405",
+                "CVE-2025-12029",
+                "CVE-2025-12562",
+                "CVE-2025-11984",
+                "CVE-2025-4097",
+                "CVE-2025-14157",
+                "CVE-2025-11247",
+                "CVE-2025-13978",
+                "CVE-2025-12734"
+            ]
+        },
+        "vid": "c6c9306e-d645-11f0-8ce2-2cf05da270f3"
+    },
+    "details": "Gitlab reports:\n\n> Cross-site scripting issue in Wiki impacts GitLab CE/EE\n>\n> Improper encoding in vulnerability reports impacts GitLab CE/EE\n>\n> Cross-site scripting issue in Swagger UI impacts GitLab CE/EE\n>\n> Denial of service issue in GraphQL endpoints impacts GitLab CE/EE\n>\n> Authentication bypass issue for WebAuthn users impacts GitLab CE/EE\n>\n> Denial of service issue in ExifTool processing impacts GitLab CE/EE\n>\n> Denial of service issue in Commit API impacts GitLab CE/EE\n>\n> Information disclosure issue in compliance frameworks impacts GitLab\n> EE\n>\n> Information disclosure through error messages impacts GitLab CE/EE\n>\n> HTML injection issue in merge request titles impacts GitLab CE/EE\n",
+    "id": "FreeBSD-2025-0409",
+    "modified": "2025-12-11T00:00:00Z",
+    "published": "2025-12-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://about.gitlab.com/releases/2025/12/10/patch-release-gitlab-18-6-2-released/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-12716"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-8405"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-12029"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-12562"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-11984"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-4097"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-14157"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-11247"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-13978"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-12734"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Gitlab -- vulnerabilities"
+}

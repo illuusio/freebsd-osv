@@ -50,10 +50,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "16.16.0"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "16.16.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -69,10 +69,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "14.20.0"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "14.20.0"
                         }
                     ],
                     "type": "ECOSYSTEM"

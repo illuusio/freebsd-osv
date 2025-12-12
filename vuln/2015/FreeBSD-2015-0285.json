@@ -12,17 +12,11 @@
                             "introduced": "1.6.0"
                         },
                         {
-                            "last_affected": "1.6.0"
-                        },
-                        {
                             "fixed": "1.6.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
                 }
-            ],
-            "versions": [
-                "1.6.0"
             ]
         }
     ],

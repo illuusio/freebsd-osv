@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "141.0,2"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "141.0,2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -27,11 +27,11 @@
             "ranges": [
                 {
                     "events": [
+                        {
+                            "introduced": "0"
+                        },
                         {
                             "fixed": "140.1"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -47,10 +47,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "128.13"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "128.13"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -66,10 +66,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "141.0"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "141.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -85,10 +85,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "140.1"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "140.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -104,10 +104,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "128.13"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "128.13"
                         }
                     ],
                     "type": "ECOSYSTEM"

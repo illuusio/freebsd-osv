@@ -20,10 +20,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "3.19.2.3"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "3.19.2.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,10 +50,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "3.19.2.3"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "3.19.2.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -69,10 +69,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "45.0,1"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "45.0,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -88,10 +88,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "38.7.0"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "38.7.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -107,10 +107,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.42"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.42"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -237,13 +237,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "20150531,1"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "20150531,1"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -259,13 +256,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "20150531,1"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "20150531,1"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -281,13 +275,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "20150531,1"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "20150531,1"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -303,13 +294,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "20150531,1"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "20150531,1"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"

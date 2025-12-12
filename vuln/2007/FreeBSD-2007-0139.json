@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "3.0.26a"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "3.0.26a"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -39,10 +39,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "3.0.26a"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "3.0.26a"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -69,10 +69,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "3.0.26a"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "3.0.26a"
                         }
                     ],
                     "type": "ECOSYSTEM"

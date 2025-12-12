@@ -64,10 +64,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "4.11_22"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "4.11_22"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -83,10 +83,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "1.3.12"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "1.3.12"
                         }
                     ],
                     "type": "ECOSYSTEM"

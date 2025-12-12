@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2024.05.27.19.17.46"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2024.05.27.19.17.46"
                         }
                     ],
                     "type": "ECOSYSTEM"

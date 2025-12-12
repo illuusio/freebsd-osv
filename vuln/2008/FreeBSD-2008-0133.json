@@ -12,9 +12,6 @@
                             "introduced": "22"
                         },
                         {
-                            "last_affected": "22.2_1"
-                        },
-                        {
                             "fixed": "22.2_1"
                         }
                     ],

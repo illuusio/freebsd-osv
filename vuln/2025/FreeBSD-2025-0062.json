@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "5.2.0"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "5.2.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -28,13 +28,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "4.2.0"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "4.2.0"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"

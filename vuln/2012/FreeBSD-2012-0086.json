@@ -42,10 +42,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "71.86.15_2"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "71.86.15_2"
                         }
                     ],
                     "type": "ECOSYSTEM"

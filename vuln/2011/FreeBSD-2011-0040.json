@@ -12,9 +12,6 @@
                             "introduced": "1.6"
                         },
                         {
-                            "last_affected": "1.6.15"
-                        },
-                        {
                             "fixed": "1.6.15"
                         }
                     ],
@@ -24,9 +21,6 @@
                     "events": [
                         {
                             "introduced": "1.5"
-                        },
-                        {
-                            "last_affected": "1.6.9"
                         },
                         {
                             "fixed": "1.6.9"
@@ -48,9 +42,6 @@
                             "introduced": "1.6"
                         },
                         {
-                            "last_affected": "1.6.15"
-                        },
-                        {
                             "fixed": "1.6.15"
                         }
                     ],
@@ -60,9 +51,6 @@
                     "events": [
                         {
                             "introduced": "1.5"
-                        },
-                        {
-                            "last_affected": "1.6.9"
                         },
                         {
                             "fixed": "1.6.9"

@@ -1,0 +1,159 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python39"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python310"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python311"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python312"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python313"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "3.13.0"
+                        },
+                        {
+                            "fixed": "3.13.11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python314"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "3.14.0"
+                        },
+                        {
+                            "fixed": "3.14.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://pythoninsider.blogspot.com/2025/12/python-3142-and-31311-are-now-available.html"
+        ],
+        "discovery": "2024-05-23T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-12084",
+                "CVE-2025-13836"
+            ]
+        },
+        "vid": "613d0f9e-d477-11f0-9e85-03ddfea11990"
+    },
+    "details": "Hugo van Kemenade reports:\n\n> Python 3.14.2 and 3.13.11 are now available \\[\\... and\\] come with\n> some bonus security fixes.\n>\n> - gh-142145: Remove quadratic behavior in node ID cache clearing\n>   (CVE-2025-12084)\n> - gh-119451: Fix a potential denial of service in http.client \\[only\n>   in 3.13; CVE-2025-13836\\]\n> - gh-119452: Fix a potential virtual memory allocation denial of\n>   service in http.server \\[affects platforms without fork()\\]\n",
+    "id": "FreeBSD-2025-0408",
+    "modified": "2025-12-08T00:00:00Z",
+    "published": "2025-12-08T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://pythoninsider.blogspot.com/2025/12/python-3142-and-31311-are-now-available.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-12084"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-13836"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/python/cpython/issues/142145"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/python/cpython/issues/119451"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/python/cpython/issues/119452"
+        },
+        {
+            "type": "WEB",
+            "url": "https://docs.python.org/release/3.14.2/whatsnew/changelog.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://docs.python.org/release/3.13.11/whatsnew/changelog.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "python -- several vulnerabilities"
+}

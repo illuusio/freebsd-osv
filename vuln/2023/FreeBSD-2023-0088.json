@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "8.5.22"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "8.5.22"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -61,10 +61,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "8.5.22"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "8.5.22"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -80,10 +80,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "9.2.15"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "9.2.15"
                         }
                     ],
                     "type": "ECOSYSTEM"

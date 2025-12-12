@@ -12,17 +12,11 @@
                             "introduced": "9.3.0"
                         },
                         {
-                            "last_affected": "9.3.0"
-                        },
-                        {
                             "fixed": "9.3.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
                 }
-            ],
-            "versions": [
-                "9.3.0"
             ]
         },
         {

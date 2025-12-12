@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "29.3_3,3"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "29.3_3,3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -28,10 +28,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "29.3_3,3"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "29.3_3,3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -47,10 +47,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "29.3_3,3"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "29.3_3,3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -66,10 +66,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "29.3_3,3"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "29.3_3,3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -85,10 +85,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "30.0.50.20240615_1,3"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "30.0.50.20240615_1,3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -104,10 +104,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "30.0.50.20240615_1,3"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "30.0.50.20240615_1,3"
                         }
                     ],
                     "type": "ECOSYSTEM"

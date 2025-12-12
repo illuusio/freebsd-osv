@@ -58,10 +58,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "7.0,1"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "7.0,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -77,10 +77,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.4"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -96,10 +96,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "7.0"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "7.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -115,10 +115,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.4"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -145,10 +145,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "3.1.15"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "3.1.15"
                         }
                     ],
                     "type": "ECOSYSTEM"

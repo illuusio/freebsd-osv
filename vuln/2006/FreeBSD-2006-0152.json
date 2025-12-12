@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "7.0r68"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "7.0r68"
                         }
                     ],
                     "type": "ECOSYSTEM"

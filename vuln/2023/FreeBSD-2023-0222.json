@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "22.3.20"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "22.3.20"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -28,10 +28,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "23.3.12"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "23.3.12"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -47,10 +47,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "24.7.0"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "24.7.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -66,10 +66,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "25.4.0"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "25.4.0"
                         }
                     ],
                     "type": "ECOSYSTEM"

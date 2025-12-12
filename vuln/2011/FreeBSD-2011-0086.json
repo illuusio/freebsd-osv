@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "3.20110608"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "3.20110608"
                         }
                     ],
                     "type": "ECOSYSTEM"

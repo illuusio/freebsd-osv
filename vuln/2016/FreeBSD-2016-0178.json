@@ -12,9 +12,6 @@
                             "introduced": "3.6.0"
                         },
                         {
-                            "last_affected": "3.6.25_3"
-                        },
-                        {
                             "fixed": "3.6.25_3"
                         }
                     ],
@@ -34,9 +31,6 @@
                             "introduced": "4.0.0"
                         },
                         {
-                            "last_affected": "4.0.26"
-                        },
-                        {
                             "fixed": "4.0.26"
                         }
                     ],
@@ -54,9 +48,6 @@
                     "events": [
                         {
                             "introduced": "4.1.0"
-                        },
-                        {
-                            "last_affected": "4.1.23"
                         },
                         {
                             "fixed": "4.1.23"

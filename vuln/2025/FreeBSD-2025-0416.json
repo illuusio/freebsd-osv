@@ -1,0 +1,93 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0.0,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox-esr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "140.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=1996761"
+        ],
+        "discovery": "2025-12-09T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-14328"
+            ]
+        },
+        "vid": "ae40f296-d6a8-11f0-8e1b-b42e991fc52e"
+    },
+    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=1996761 reports:\n\n> Privilege escalation in the Netmonitor component.\n",
+    "id": "FreeBSD-2025-0416",
+    "modified": "2025-12-11T00:00:00Z",
+    "published": "2025-12-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1996761"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-14328"
+        },
+        {
+            "type": "WEB",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14328"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Mozilla -- Privilege escalation"
+}

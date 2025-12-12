@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "340.65"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "340.65"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -28,10 +28,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "304.125"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "304.125"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -47,13 +47,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "173.14.35_3"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "173.14.35_3"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -69,13 +66,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "96.43.23_2"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "96.43.23_2"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -91,13 +85,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "71.86.15_4"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "71.86.15_4"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"

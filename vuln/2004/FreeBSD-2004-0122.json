@@ -31,10 +31,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.2.10"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.2.10"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,10 +50,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.2.10.j1.0"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.2.10.j1.0"
                         }
                     ],
                     "type": "ECOSYSTEM"

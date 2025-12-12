@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "17.3"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "17.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -28,10 +28,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "16.7"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "16.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -47,10 +47,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "15.11"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "15.11"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -66,10 +66,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "14.16"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "14.16"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -85,10 +85,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "13.19"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "13.19"
                         }
                     ],
                     "type": "ECOSYSTEM"

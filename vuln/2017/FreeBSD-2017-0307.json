@@ -12,9 +12,6 @@
                             "introduced": "2.2.0"
                         },
                         {
-                            "last_affected": "2.2.10"
-                        },
-                        {
                             "fixed": "2.2.10"
                         }
                     ],
@@ -24,9 +21,6 @@
                     "events": [
                         {
                             "introduced": "2.4.0"
-                        },
-                        {
-                            "last_affected": "2.4.2"
                         },
                         {
                             "fixed": "2.4.2"
@@ -48,9 +42,6 @@
                             "introduced": "2.2.0"
                         },
                         {
-                            "last_affected": "2.2.10"
-                        },
-                        {
                             "fixed": "2.2.10"
                         }
                     ],
@@ -60,9 +51,6 @@
                     "events": [
                         {
                             "introduced": "2.4.0"
-                        },
-                        {
-                            "last_affected": "2.4.2"
                         },
                         {
                             "fixed": "2.4.2"
@@ -84,9 +72,6 @@
                             "introduced": "2.2.0"
                         },
                         {
-                            "last_affected": "2.2.10"
-                        },
-                        {
                             "fixed": "2.2.10"
                         }
                     ],
@@ -96,9 +81,6 @@
                     "events": [
                         {
                             "introduced": "2.4.0"
-                        },
-                        {
-                            "last_affected": "2.4.2"
                         },
                         {
                             "fixed": "2.4.2"
@@ -120,9 +102,6 @@
                             "introduced": "2.2.0"
                         },
                         {
-                            "last_affected": "2.2.10"
-                        },
-                        {
                             "fixed": "2.2.10"
                         }
                     ],
@@ -132,9 +111,6 @@
                     "events": [
                         {
                             "introduced": "2.4.0"
-                        },
-                        {
-                            "last_affected": "2.4.2"
                         },
                         {
                             "fixed": "2.4.2"
@@ -156,9 +132,6 @@
                             "introduced": "2.2.0"
                         },
                         {
-                            "last_affected": "2.2.10"
-                        },
-                        {
                             "fixed": "2.2.10"
                         }
                     ],
@@ -168,9 +141,6 @@
                     "events": [
                         {
                             "introduced": "2.4.0"
-                        },
-                        {
-                            "last_affected": "2.4.2"
                         },
                         {
                             "fixed": "2.4.2"

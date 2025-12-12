@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "81.0.4044.92"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "81.0.4044.92"
                         }
                     ],
                     "type": "ECOSYSTEM"

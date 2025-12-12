@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mongodb70"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "7.0.26"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://jira.mongodb.org/browse/SERVER-106075"
+        ],
+        "discovery": "2025-12-09T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-14345"
+            ]
+        },
+        "vid": "c11e0878-d6a8-11f0-8e1b-b42e991fc52e"
+    },
+    "details": "https://jira.mongodb.org/browse/SERVER-106075 reports:\n\n> A post-authenticationflaw in the network two-phase commit protocol\n> used for cross-shard transactions in MongoDB Server may lead to\n> logical data inconsistencies under specific conditions which are not\n> predictable and exist for a very short period of time. This error can\n> cause the transaction coordination logic to misinterpret the\n> transaction as committed, resulting in inconsistent state on those\n> shards. This may lead to low integrity and availability impact.\n",
+    "id": "FreeBSD-2025-0422",
+    "modified": "2025-12-11T00:00:00Z",
+    "published": "2025-12-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://jira.mongodb.org/browse/SERVER-106075"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-14345"
+        },
+        {
+            "type": "WEB",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14345"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "MongoDB Server -- Improper Locking"
+}

@@ -39,10 +39,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "4.2.8p14"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "4.2.8p14"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -58,13 +58,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "4.3.99_6"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "4.3.99_6"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"

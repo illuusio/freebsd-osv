@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "1.23.14"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "1.23.14"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -28,13 +28,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "1.24.6"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "1.24.6"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,10 +47,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "1.25.6"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "1.25.6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -69,10 +66,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "1.26.3"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "1.26.3"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -12,9 +12,6 @@
                             "introduced": "2.9.0"
                         },
                         {
-                            "last_affected": "2.9.9"
-                        },
-                        {
                             "fixed": "2.9.9"
                         }
                     ],
@@ -32,9 +29,6 @@
                     "events": [
                         {
                             "introduced": "2.9.0"
-                        },
-                        {
-                            "last_affected": "2.9.9"
                         },
                         {
                             "fixed": "2.9.9"
@@ -56,9 +50,6 @@
                             "introduced": "2.9.0"
                         },
                         {
-                            "last_affected": "2.9.9"
-                        },
-                        {
                             "fixed": "2.9.9"
                         }
                     ],
@@ -76,9 +67,6 @@
                     "events": [
                         {
                             "introduced": "2.9.0"
-                        },
-                        {
-                            "last_affected": "2.9.9"
                         },
                         {
                             "fixed": "2.9.9"
@@ -100,9 +88,6 @@
                             "introduced": "2.9.0"
                         },
                         {
-                            "last_affected": "2.9.9"
-                        },
-                        {
                             "fixed": "2.9.9"
                         }
                     ],
@@ -120,9 +105,6 @@
                     "events": [
                         {
                             "introduced": "2.7.0"
-                        },
-                        {
-                            "last_affected": "2.7.18"
                         },
                         {
                             "fixed": "2.7.18"
@@ -144,9 +126,6 @@
                             "introduced": "2.7.0"
                         },
                         {
-                            "last_affected": "2.7.18"
-                        },
-                        {
                             "fixed": "2.7.18"
                         }
                     ],
@@ -164,9 +143,6 @@
                     "events": [
                         {
                             "introduced": "2.7.0"
-                        },
-                        {
-                            "last_affected": "2.7.18"
                         },
                         {
                             "fixed": "2.7.18"
@@ -188,9 +164,6 @@
                             "introduced": "2.8.0"
                         },
                         {
-                            "last_affected": "2.8.12"
-                        },
-                        {
                             "fixed": "2.8.12"
                         }
                     ],
@@ -208,9 +181,6 @@
                     "events": [
                         {
                             "introduced": "2.8.0"
-                        },
-                        {
-                            "last_affected": "2.8.12"
                         },
                         {
                             "fixed": "2.8.12"
@@ -232,9 +202,6 @@
                             "introduced": "2.8.0"
                         },
                         {
-                            "last_affected": "2.8.12"
-                        },
-                        {
                             "fixed": "2.8.12"
                         }
                     ],
@@ -252,9 +219,6 @@
                     "events": [
                         {
                             "introduced": "2.8.0"
-                        },
-                        {
-                            "last_affected": "2.8.12"
                         },
                         {
                             "fixed": "2.8.12"

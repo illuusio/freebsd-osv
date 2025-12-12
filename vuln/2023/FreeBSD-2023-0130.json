@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.7.2"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.7.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,10 +50,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.7.2"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.7.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -91,10 +91,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.7.2"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.7.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -132,10 +132,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.7.2"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.7.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -173,10 +173,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.7.2"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.7.2"
                         }
                     ],
                     "type": "ECOSYSTEM"

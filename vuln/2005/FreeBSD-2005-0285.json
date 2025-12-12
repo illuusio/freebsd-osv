@@ -23,9 +23,6 @@
                             "introduced": "2.8.0"
                         },
                         {
-                            "last_affected": "2.8.1_2"
-                        },
-                        {
                             "fixed": "2.8.1_2"
                         }
                     ],

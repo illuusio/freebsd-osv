@@ -23,9 +23,6 @@
                             "introduced": "23.*,1"
                         },
                         {
-                            "last_affected": "23.4_2"
-                        },
-                        {
                             "fixed": "23.4_2"
                         }
                     ],

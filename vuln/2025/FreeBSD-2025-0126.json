@@ -12,17 +12,11 @@
                             "introduced": "5.2.0"
                         },
                         {
-                            "last_affected": "5.2.0"
-                        },
-                        {
                             "fixed": "5.2.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
                 }
-            ],
-            "versions": [
-                "5.2.0"
             ]
         }
     ],

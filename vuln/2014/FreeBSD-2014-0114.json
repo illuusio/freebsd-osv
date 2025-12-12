@@ -12,9 +12,6 @@
                             "introduced": "3.0,1"
                         },
                         {
-                            "last_affected": "3.0.17"
-                        },
-                        {
                             "fixed": "3.0.17"
                         }
                     ],
@@ -24,9 +21,6 @@
                     "events": [
                         {
                             "introduced": "3.1,1"
-                        },
-                        {
-                            "last_affected": "3.1.18"
                         },
                         {
                             "fixed": "3.1.18"
@@ -40,9 +34,6 @@
                             "introduced": "3.2,1"
                         },
                         {
-                            "last_affected": "3.2.52"
-                        },
-                        {
                             "fixed": "3.2.52"
                         }
                     ],
@@ -52,9 +43,6 @@
                     "events": [
                         {
                             "introduced": "4.0,1"
-                        },
-                        {
-                            "last_affected": "4.0.39"
                         },
                         {
                             "fixed": "4.0.39"
@@ -68,9 +56,6 @@
                             "introduced": "4.1,1"
                         },
                         {
-                            "last_affected": "4.1.12"
-                        },
-                        {
                             "fixed": "4.1.12"
                         }
                     ],
@@ -80,9 +65,6 @@
                     "events": [
                         {
                             "introduced": "4.2,1"
-                        },
-                        {
-                            "last_affected": "4.2.48"
                         },
                         {
                             "fixed": "4.2.48"
@@ -115,9 +97,6 @@
                             "introduced": "3.0,1"
                         },
                         {
-                            "last_affected": "3.0.17"
-                        },
-                        {
                             "fixed": "3.0.17"
                         }
                     ],
@@ -127,9 +106,6 @@
                     "events": [
                         {
                             "introduced": "3.1,1"
-                        },
-                        {
-                            "last_affected": "3.1.18"
                         },
                         {
                             "fixed": "3.1.18"
@@ -143,9 +119,6 @@
                             "introduced": "3.2,1"
                         },
                         {
-                            "last_affected": "3.2.52"
-                        },
-                        {
                             "fixed": "3.2.52"
                         }
                     ],
@@ -155,9 +128,6 @@
                     "events": [
                         {
                             "introduced": "4.0,1"
-                        },
-                        {
-                            "last_affected": "4.0.39"
                         },
                         {
                             "fixed": "4.0.39"
@@ -171,9 +141,6 @@
                             "introduced": "4.1,1"
                         },
                         {
-                            "last_affected": "4.1.12"
-                        },
-                        {
                             "fixed": "4.1.12"
                         }
                     ],
@@ -183,9 +150,6 @@
                     "events": [
                         {
                             "introduced": "4.2,1"
-                        },
-                        {
-                            "last_affected": "4.2.48"
                         },
                         {
                             "fixed": "4.2.48"
@@ -215,10 +179,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "6.5_1"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "6.5_1"
                         }
                     ],
                     "type": "ECOSYSTEM"

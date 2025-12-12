@@ -12,9 +12,6 @@
                             "introduced": "2.2.0"
                         },
                         {
-                            "last_affected": "2.2.9"
-                        },
-                        {
                             "fixed": "2.2.9"
                         }
                     ],
@@ -24,9 +21,6 @@
                     "events": [
                         {
                             "introduced": "2.4.0"
-                        },
-                        {
-                            "last_affected": "2.4.1"
                         },
                         {
                             "fixed": "2.4.1"

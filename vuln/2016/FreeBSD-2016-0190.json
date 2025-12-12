@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.8.27"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.8.27"
                         }
                     ],
                     "type": "ECOSYSTEM"

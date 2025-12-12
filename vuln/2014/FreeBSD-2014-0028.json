@@ -12,17 +12,11 @@
                             "introduced": "1.5.10"
                         },
                         {
-                            "last_affected": "1.5.10"
-                        },
-                        {
                             "fixed": "1.5.10"
                         }
                     ],
                     "type": "ECOSYSTEM"
                 }
-            ],
-            "versions": [
-                "1.5.10"
             ]
         }
     ],

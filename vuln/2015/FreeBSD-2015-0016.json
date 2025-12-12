@@ -23,9 +23,6 @@
                             "introduced": "1.5"
                         },
                         {
-                            "last_affected": "1.5.12"
-                        },
-                        {
                             "fixed": "1.5.12"
                         }
                     ],
@@ -76,9 +73,6 @@
                     "events": [
                         {
                             "introduced": "1.5"
-                        },
-                        {
-                            "last_affected": "1.5.12"
                         },
                         {
                             "fixed": "1.5.12"
@@ -133,9 +127,6 @@
                             "introduced": "1.5"
                         },
                         {
-                            "last_affected": "1.5.12"
-                        },
-                        {
                             "fixed": "1.5.12"
                         }
                     ],
@@ -188,9 +179,6 @@
                             "introduced": "1.5"
                         },
                         {
-                            "last_affected": "1.5.12"
-                        },
-                        {
                             "fixed": "1.5.12"
                         }
                     ],
@@ -229,10 +217,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "20150124,1"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "20150124,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -248,10 +236,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "20150124,1"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "20150124,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -267,10 +255,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "20150124,1"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "20150124,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -286,10 +274,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "20150124,1"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "20150124,1"
                         }
                     ],
                     "type": "ECOSYSTEM"

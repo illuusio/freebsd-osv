@@ -12,17 +12,11 @@
                             "introduced": "4.1.2.173"
                         },
                         {
-                            "last_affected": "4.1.2.173"
-                        },
-                        {
                             "fixed": "4.1.2.173"
                         }
                     ],
                     "type": "ECOSYSTEM"
                 }
-            ],
-            "versions": [
-                "4.1.2.173"
             ]
         }
     ],

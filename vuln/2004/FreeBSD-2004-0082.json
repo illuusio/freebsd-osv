@@ -12,9 +12,6 @@
                             "introduced": "1.9.3"
                         },
                         {
-                            "last_affected": "1.9.41"
-                        },
-                        {
                             "fixed": "1.9.41"
                         }
                     ],

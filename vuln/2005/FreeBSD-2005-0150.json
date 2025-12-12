@@ -42,10 +42,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "4.10_14"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "4.10_14"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -20,10 +20,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "1.6.8.2004.07.28_1"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "1.6.8.2004.07.28_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,10 +50,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "1.6.8.2004.07.28_1"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "1.6.8.2004.07.28_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -70,9 +70,6 @@
                     "events": [
                         {
                             "introduced": "a2001.05.12"
-                        },
-                        {
-                            "last_affected": "a2001.05.26"
                         },
                         {
                             "fixed": "a2001.05.26"

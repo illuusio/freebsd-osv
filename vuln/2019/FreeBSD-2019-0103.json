@@ -9,13 +9,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "4.6.16"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "4.6.16"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,13 +28,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "4.7.12"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "4.7.12"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -53,10 +47,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "4.8.12"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "4.8.12"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -72,10 +66,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "4.9.8"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "4.9.8"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -91,10 +85,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "4.10.3"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "4.10.3"
                         }
                     ],
                     "type": "ECOSYSTEM"

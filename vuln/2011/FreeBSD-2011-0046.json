@@ -113,10 +113,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.9.20100120,4"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.9.20100120,4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -132,10 +132,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.9.20100120,4"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.9.20100120,4"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -12,9 +12,6 @@
                             "introduced": "8.10.0"
                         },
                         {
-                            "last_affected": "8.10.12"
-                        },
-                        {
                             "fixed": "8.10.12"
                         }
                     ],
@@ -24,9 +21,6 @@
                     "events": [
                         {
                             "introduced": "8.11.0"
-                        },
-                        {
-                            "last_affected": "8.11.9"
                         },
                         {
                             "fixed": "8.11.9"
@@ -40,9 +34,6 @@
                             "introduced": "8.12.0"
                         },
                         {
-                            "last_affected": "8.12.7"
-                        },
-                        {
                             "fixed": "8.12.7"
                         }
                     ],
@@ -52,9 +43,6 @@
                     "events": [
                         {
                             "introduced": "8.13.0"
-                        },
-                        {
-                            "last_affected": "8.13.2"
                         },
                         {
                             "fixed": "8.13.2"

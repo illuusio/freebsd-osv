@@ -9,13 +9,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "2.2.6"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "2.2.6"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,10 +28,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "2.3.0.d.20230427"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "2.3.0.d.20230427"
                         }
                     ],
                     "type": "ECOSYSTEM"

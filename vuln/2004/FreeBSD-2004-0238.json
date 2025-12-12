@@ -12,9 +12,6 @@
                             "introduced": "4.*"
                         },
                         {
-                            "last_affected": "4.0_2"
-                        },
-                        {
                             "fixed": "4.0_2"
                         }
                     ],
@@ -23,13 +20,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "3.113.1_9"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "3.113.1_9"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"

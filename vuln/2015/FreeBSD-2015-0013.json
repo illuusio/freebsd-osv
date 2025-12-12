@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "40.0.2214.91"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "40.0.2214.91"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -28,10 +28,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "40.0.2214.91"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "40.0.2214.91"
                         }
                     ],
                     "type": "ECOSYSTEM"

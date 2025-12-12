@@ -9,43 +9,43 @@
                 {
                     "events": [
                         {
-                            "fixed": "15.3"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "15.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
                 },
                 {
                     "events": [
+                        {
+                            "introduced": "0"
+                        },
                         {
                             "fixed": "14.8"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
                 },
                 {
                     "events": [
+                        {
+                            "introduced": "0"
+                        },
                         {
                             "fixed": "13.11"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
                 },
                 {
                     "events": [
+                        {
+                            "introduced": "0"
+                        },
                         {
                             "fixed": "12.15"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -53,10 +53,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "11.20"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "11.20"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -12,9 +12,6 @@
                             "introduced": "4.5.3"
                         },
                         {
-                            "last_affected": "4.5.3"
-                        },
-                        {
                             "fixed": "4.5.3"
                         }
                     ],
@@ -24,9 +21,6 @@
                     "events": [
                         {
                             "introduced": "4.6.3"
-                        },
-                        {
-                            "last_affected": "4.6.3"
                         },
                         {
                             "fixed": "4.6.3"
@@ -45,10 +39,6 @@
                     ],
                     "type": "ECOSYSTEM"
                 }
-            ],
-            "versions": [
-                "4.5.3",
-                "4.6.3"
             ]
         }
     ],

@@ -66,10 +66,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "3.2.4_1"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "3.2.4_1"
                         }
                     ],
                     "type": "ECOSYSTEM"

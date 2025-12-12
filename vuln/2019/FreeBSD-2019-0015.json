@@ -23,17 +23,11 @@
                             "introduced": "1.11.0"
                         },
                         {
-                            "last_affected": "1.11.0"
-                        },
-                        {
                             "fixed": "1.11.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
                 }
-            ],
-            "versions": [
-                "1.11.0"
             ]
         }
     ],

@@ -12,17 +12,11 @@
                             "introduced": "7.0.p1,1"
                         },
                         {
-                            "last_affected": "7.0.p1,1"
-                        },
-                        {
                             "fixed": "7.0.p1,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
                 }
-            ],
-            "versions": [
-                "7.0.p1,1"
             ]
         }
     ],

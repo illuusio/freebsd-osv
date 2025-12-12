@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "RELEASE.2025-10-15T17-29-55Z"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "RELEASE.2025-10-15T17-29-55Z"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -12,9 +12,6 @@
                             "introduced": "4.0"
                         },
                         {
-                            "last_affected": "4.0.5"
-                        },
-                        {
                             "fixed": "4.0.5"
                         }
                     ],

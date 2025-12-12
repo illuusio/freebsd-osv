@@ -53,10 +53,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "4.7_26"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "4.7_26"
                         }
                     ],
                     "type": "ECOSYSTEM"

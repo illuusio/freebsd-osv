@@ -12,9 +12,6 @@
                             "introduced": "7.9.0"
                         },
                         {
-                            "last_affected": "8.17.8"
-                        },
-                        {
                             "fixed": "8.17.8"
                         }
                     ],
@@ -24,9 +21,6 @@
                     "events": [
                         {
                             "introduced": "9.0.0"
-                        },
-                        {
-                            "last_affected": "9.0.12"
                         },
                         {
                             "fixed": "9.0.12"
@@ -40,9 +34,6 @@
                             "introduced": "9.1.0"
                         },
                         {
-                            "last_affected": "9.1.9"
-                        },
-                        {
                             "fixed": "9.1.9"
                         }
                     ],
@@ -52,9 +43,6 @@
                     "events": [
                         {
                             "introduced": "9.2.0"
-                        },
-                        {
-                            "last_affected": "9.2.9"
                         },
                         {
                             "fixed": "9.2.9"
@@ -68,9 +56,6 @@
                             "introduced": "9.3.0"
                         },
                         {
-                            "last_affected": "9.3.9"
-                        },
-                        {
                             "fixed": "9.3.9"
                         }
                     ],
@@ -80,9 +65,6 @@
                     "events": [
                         {
                             "introduced": "9.4.0"
-                        },
-                        {
-                            "last_affected": "9.4.3"
                         },
                         {
                             "fixed": "9.4.3"

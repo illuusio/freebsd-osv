@@ -23,17 +23,11 @@
                             "introduced": "2.27.0"
                         },
                         {
-                            "last_affected": "2.27.0"
-                        },
-                        {
                             "fixed": "2.27.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
                 }
-            ],
-            "versions": [
-                "2.27.0"
             ]
         }
     ],

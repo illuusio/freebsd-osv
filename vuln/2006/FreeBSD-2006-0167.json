@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "20060309c"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "20060309c"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -28,10 +28,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "20060909"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "20060909"
                         }
                     ],
                     "type": "ECOSYSTEM"

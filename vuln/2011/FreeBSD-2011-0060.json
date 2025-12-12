@@ -34,17 +34,11 @@
                             "introduced": "1.9"
                         },
                         {
-                            "last_affected": "1.9"
-                        },
-                        {
                             "fixed": "1.9"
                         }
                     ],
                     "type": "ECOSYSTEM"
                 }
-            ],
-            "versions": [
-                "1.9"
             ]
         }
     ],

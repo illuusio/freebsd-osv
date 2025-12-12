@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "4.1.13"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "4.1.13"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -28,10 +28,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "4.2.1678061694,4"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "4.2.1678061694,4"
                         }
                     ],
                     "type": "ECOSYSTEM"

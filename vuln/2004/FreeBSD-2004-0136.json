@@ -23,9 +23,6 @@
                             "introduced": "5"
                         },
                         {
-                            "last_affected": "5.0.0_2"
-                        },
-                        {
                             "fixed": "5.0.0_2"
                         }
                     ],

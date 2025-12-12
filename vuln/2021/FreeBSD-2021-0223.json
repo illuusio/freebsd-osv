@@ -9,21 +9,21 @@
                 {
                     "events": [
                         {
-                            "fixed": "1.10.2"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "1.10.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
                 },
                 {
                     "events": [
+                        {
+                            "introduced": "0"
+                        },
                         {
                             "fixed": "1.9.9"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,10 +31,10 @@
                 {
                     "events": [
                         {
-                            "fixed": "1.8.15"
+                            "introduced": "0"
                         },
                         {
-                            "introduced": "0"
+                            "fixed": "1.8.15"
                         }
                     ],
                     "type": "ECOSYSTEM"

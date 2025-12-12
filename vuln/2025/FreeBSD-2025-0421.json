@@ -1,0 +1,93 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0.0,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox-esr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "140.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1966501%2C1997639"
+        ],
+        "discovery": "2025-12-09T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-14333"
+            ]
+        },
+        "vid": "bb326db4-d6a8-11f0-8e1b-b42e991fc52e"
+    },
+    "details": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1966501%2C1997639\nreports:\n\n> Memory safety bugs. Some of these bugs showed evidence of memory\n> corruption and we presume that with enough effort some of these could\n> have been exploited to run arbitrary code.\n",
+    "id": "FreeBSD-2025-0421",
+    "modified": "2025-12-11T00:00:00Z",
+    "published": "2025-12-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1966501%2C1997639"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-14333"
+        },
+        {
+            "type": "WEB",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14333"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Mozilla -- Memory safety bugs"
+}

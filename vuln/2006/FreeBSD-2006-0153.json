@@ -9,13 +9,10 @@
                 {
                     "events": [
                         {
-                            "last_affected": "4.6.0_20060210"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "4.6.0_20060210"
-                        },
-                        {
-                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
