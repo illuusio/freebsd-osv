@@ -24,7 +24,7 @@ It also makes it easier for FreeBSD to import vulnerability data for its 3rd-par
  - [x] Create a script to convert VuXML format to OSV format.
  - [x] Convert a test set of VuXML data into OSV.
  - [x] Create an OSV database for FreeBSD.
- - [x] Remove VuXML handling from `pkg audit` and add replacement OSV-handling code. (**Pull Request needs review**)
+ - [x] Remove VuXML handling from `pkg audit` and add replacement OSV-handling code. (**[Pull Request](https://github.com/freebsd/pkg/pull/2558) needs reviewing and testing**)
 
 **Not done (out of scope, but logical next steps)**
 - Convert all VuXML data to OSV format.
@@ -344,22 +344,56 @@ In the [Unofficial outside FreeBSD repository](https://github.com/illuusio/freeb
 1. Maintain OSV database and convert entries from VuXML XML to OSV (with `convert-vuxml`)
 2. Merge OSV files into one JSON array to use in pkg(8)
 3. Export OSV files to Commonmark `.md`-files which can be converted to HTML with Pandoc or a similar tool
-
 4. In the future, maintain only the OSV repository and have [OSV Pull Request 3901](https://github.com/google/osv.dev/issues/3901) fulfilled to make FreeBSD Vulnerabilities appear through the [osv.dev API](https://osv.dev/#use-the-api)
 
-Targets in detail are:
 
+
+Targets in detail are:
+`commonmark`, `merge`, `newentry` and `validate` requires Lua version 5.4. If Flua (FreeBSD Lua) is not available in `/usr/libexec/flua` then Lua command can be passed with `LUA_CMD` environment variable. For example `LUA_CMD=/usr/bin/lua5.4 make commonmark`. Please note that Lua needs libUCL lua module for JSON parsing and validation.
 - `convert-vuxml`:
   Downloads VuXML from FreeBSD vuxml: https://vuxml.freebsd.org/freebsd/vuln.xml.xz, unpacks it with `xz`, and converts VuXML to OSV format. New files are saved under the `vuln` directory. If `vuxml.xml` is present then conversion is not done.
+  Please not that one needs Python modules `lxml` and `pypandoc` installed before using `convert-vuxml`
+  **Example (Please note that `make convert-vuxml` can take from couple of minutes to 10 minutes)**
+  ```
+  rm vuxml.xml # Remove old vuxml.xml otherwise the will be error message
+  make convert-vuxml # Converts VuXML to OSV JSON. New files are under vuln directory
+  git status # Check if there is new entries under vuln directory
+  git add vuln/2025/FreeBSD-2025-0001.json # Add new files to git (Please note that this just example and you need to add correct files)
+  make merge # Merge new files to db/freebsd-osv.json for using with pkg(8) command
+  git commit -a # Commit all changes
+  git push # Publish new changes to world
+  ```
 - `commonmark`:
   Exports OSV JSON files as CommonMark format into `.md` files. The directory structure remains unchanged.
+  **Example (Please note that `make commonmark` can take from couple of minutes to 10 minutes)**
+  ```
+  make commonmark # Convert all OSV entries to .md files under md directory
+  git status # Check if there is new entries under md directory
+  git add md/2025/FreeBSD-2025-0001.md # Add new files to git (Please note that this just example and you need to add correct files)
+  git commit -a # Commit all changes or choose files you want to commit
+  git push # Publish new changes to world
+  ```
 - `merge`:
   Merges all OSV files in the `vuln` directory into `db/freebsd-osv.json`. Validates all OSV files against the JSON schema.
+  For example please see `convert-vuxml` example section
 - `newentry`:
-  Adds a new entry with the next available ID to the `vuln` directory.
+  Adds a new entry with the next available ID to the `vuln` directory. **Do not use this if VuXML converting with `convert-vuxml` is still in use**
+  **Example**
+  ```
+  make newentry # Create new entry under correct directory
+  vi vuln/2026/FreeBSD-2026-0001.json # Edit entry
+  git add vuln/2026/FreeBSD-2026-0001.json
+  git commit vuln/2026/FreeBSD-2026-0001.json
+  git push
+  ```
 - `validate`:
   Validate all JSON files against current OSV JSON schema under `vuln` directory.
-
+  **Example**
+  ```
+  make validate # Validate all OSV JSON file against schema
+  ```
+  
+  
 # JSON tools to work with OSV files
 These are tools that have been proven to be useful when working with JSON files. They are listed in alphabetical order:
 
