@@ -1,0 +1,90 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jenkins"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.541"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jenkins-lts"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.528.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.jenkins.io/security/advisory/2025-12-10/"
+        ],
+        "discovery": "2025-12-10T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-67635",
+                "CVE-2025-67636",
+                "CVE-2025-67637",
+                "CVE-2025-67638",
+                "CVE-2025-67639"
+            ]
+        },
+        "vid": "2956aba3-1fcb-4c39-9cea-d88a46a3bf93"
+    },
+    "details": "Jenkins Security Advisory:\n\n> # Description\n>\n> ##### (High) SECURITY-3630 / CVE-2025-67635\n>\n> Denial of service vulnerability in HTTP-based CLI\n>\n> ##### (Medium) SECURITY-1809 / CVE-2025-67636\n>\n> Missing permission check on password fields\n>\n> ##### (Medium) SECURITY-783 / CVE-2025-67637 (storage), CVE-2025-67638 (masking)\n>\n> Build authorization token stored and displayed in plain text\n>\n> ##### (Low) SECURITY-1166 / CVE-2025-67639\n>\n> CSRF vulnerability on the login form\n",
+    "id": "FreeBSD-2025-0425",
+    "modified": "2025-12-12T00:00:00Z",
+    "published": "2025-12-12T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.jenkins.io/security/advisory/2025-12-10/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-67635"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-67636"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-67637"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-67638"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-67639"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "jenkins -- multiple vulnerabilities"
+}

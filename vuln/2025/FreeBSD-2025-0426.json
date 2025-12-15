@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "varnish-libvmod-digest"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.0.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://vinyl-cache.org/security/VSV00012.html"
+        ],
+        "discovery": "2023-08-17T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2023-41104"
+            ]
+        },
+        "vid": "64bec4c7-d785-11f0-a1c0-0050569f0b83"
+    },
+    "details": "varnish developers report:\n\n> Common usage of vmod-digest is for basic HTTP authentication, in which\n> case it may be possible for an attacker to circumvent the\n> authentication check. If the decoded result string is somehow being\n> made visible to the attacker (for example the result of the decoding\n> is added to a response header), then there is the potential for\n> information disclosure from reading out of band workspace data.\n",
+    "id": "FreeBSD-2025-0426",
+    "modified": "2025-12-12T00:00:00Z",
+    "published": "2025-12-12T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://vinyl-cache.org/security/VSV00012.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2023-41104"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "www/varnish-libvmod-digest -- base64 decoding vulnerability"
+}

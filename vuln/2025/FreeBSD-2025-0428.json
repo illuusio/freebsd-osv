@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.6.12,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://roundcube.net/news/2025/12/13/security-updates-1.6.12-and-1.5.12"
+        ],
+        "discovery": "2025-12-14T00:00:00Z",
+        "vid": "3a59024c-d8cf-11f0-af8c-8447094a420f"
+    },
+    "details": "The Roundcube project reports:\n\n> Cross-Site-Scripting vulnerability via SVG's animate tag\n>\n> Information Disclosure vulnerability in the HTML style sanitizer\n",
+    "id": "FreeBSD-2025-0428",
+    "modified": "2025-12-14T00:00:00Z",
+    "published": "2025-12-14T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://roundcube.net/news/2025/12/13/security-updates-1.6.12-and-1.5.12"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Roundcube -- Multiple vulnerabilities"
+}

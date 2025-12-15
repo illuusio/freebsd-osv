@@ -1,0 +1,56 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "github-release-monitor"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.4.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://nextjs.org/blog/security-update-2025-12-11"
+        ],
+        "discovery": "2025-12-11T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-55183",
+                "CVE-2025-55184"
+            ]
+        },
+        "vid": "7a1bd1ca-cf40-41e2-9c5f-143a0d4b17af"
+    },
+    "details": "https://nextjs.org/blog/security-update-2025-12-11 reports:\n\n> # Description\n>\n> ##### (Medium) Source Code Exposure: CVE-2025-55183\n>\n> A specifically crafted HTTP request can cause a Server Function to\n> return the compiled source code of other Server Functions in your\n> application. This could reveal business logic. Secrets could also be\n> exposed if they are defined directly in your code (rather than\n> accessed via environment variables at runtime) and referenced within a\n> Server Function. Depending on your bundler configuration, these values\n> may be inlined into the compiled function output.\n>\n> ##### (High) Denial of Service: CVE-2025-55184\n>\n> A specifically crafted HTTP request can be sent to any App Router\n> endpoint that, when deserialized, can cause an infinite loop that\n> hangs the server process and prevents future HTTP requests from being\n> served.\n",
+    "id": "FreeBSD-2025-0427",
+    "modified": "2025-12-13T00:00:00Z",
+    "published": "2025-12-13T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://nextjs.org/blog/security-update-2025-12-11"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-55183"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-55184"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "github-release-monitor -- multiple vulnerabilities"
+}
