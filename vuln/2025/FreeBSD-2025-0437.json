@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "traefik"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.6.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/traefik/traefik/security/advisories/GHSA-7vww-mvcr-x6vj"
+        ],
+        "discovery": "2025-12-08T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-66491"
+            ]
+        },
+        "vid": "dc7e30db-de67-11f0-b893-5404a68ad561"
+    },
+    "details": "The traefik project reports:\n\n> There is a potential vulnerability in Traefik NGINX provider managing\n> the nginx.ingress.kubernetes.io/proxy-ssl-verify annotation. The\n> provider inverts the semantics of the\n> nginx.ingress.kubernetes.io/proxy-ssl-verify annotation. Setting the\n> annotation to \\\"on\\\" (intending to enable backend TLS certificate\n> verification) actually disables verification, allowing\n> man-in-the-middle attacks against HTTPS backends when operators\n> believe they are protected.\n",
+    "id": "FreeBSD-2025-0437",
+    "modified": "2025-12-21T00:00:00Z",
+    "published": "2025-12-21T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/traefik/traefik/security/advisories/GHSA-7vww-mvcr-x6vj"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-66491"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-66491"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "traefik -- Inverted TLS Verification Logic in Kubernetes NGINX Provider"
+}

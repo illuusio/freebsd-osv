@@ -1,0 +1,60 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "smb4k"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.0.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://vuldb.com/?id.336198"
+        ],
+        "discovery": "2025-12-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-66002",
+                "CVE-2025-66003"
+            ]
+        },
+        "vid": "c32cb4b7-ddcb-11f0-902c-b42e991fc52e"
+    },
+    "details": "vulndb reports:\n\n> A vulnerability, which was classified as critical, was found in smb4k\n> up to 4.0.4. Affected is some unknown functionality of the component\n> Mount Helper. The manipulation with an unknown input leads to a access\n> control vulnerability. CWE is classifying the issue as CWE-284. The\n> product does not restrict or incorrectly restricts access to a\n> resource from an unauthorized actor. This is going to have an impact\n> on integrity, and availability. The advisory is available at\n> seclists.org. The exploitability is told to be easy. Local access is\n> required to approach this attack. The technical details are unknown\n> and an exploit is not available.\n",
+    "id": "FreeBSD-2025-0435",
+    "modified": "2025-12-20T00:00:00Z",
+    "published": "2025-12-20T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://vuldb.com/?id.336198"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-66002"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-66003"
+        },
+        {
+            "type": "WEB",
+            "url": "https://vuldb.com/?id.336199"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "smb4k -- Critical vulnerabilities in Mount Helper"
+}

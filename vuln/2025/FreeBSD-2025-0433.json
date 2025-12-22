@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0.1,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1996570%2C1999700"
+        ],
+        "discovery": "2025-12-18T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-14861"
+            ]
+        },
+        "vid": "23437e07-ddc0-11f0-902c-b42e991fc52e"
+    },
+    "details": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1996570%2C1999700\nreports:\n\n> Memory safety bugs present in Firefox 146. Some of these bugs showed\n> evidence of memory corruption and we presume that with enough effort\n> some of these could have been exploited to run arbitrary code.\n",
+    "id": "FreeBSD-2025-0433",
+    "modified": "2025-12-20T00:00:00Z",
+    "published": "2025-12-20T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=1996570%2C1999700"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-14861"
+        },
+        {
+            "type": "WEB",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14861"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Firefox -- Memory safety bugs"
+}

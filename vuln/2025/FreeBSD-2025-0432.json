@@ -1,0 +1,75 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "143.0.7499.146"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "143.0.7499.146"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2025/12/stable-channel-update-for-desktop_16.html"
+        ],
+        "discovery": "2025-12-16T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-14765",
+                "CVE-2025-14766"
+            ]
+        },
+        "vid": "f99e70c2-dcb8-11f0-a15a-a8a1599412c6"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 2 security fixes:\n>\n> - \\[448294721\\] High CVE-2025-14765: Use after free in WebGPU.\n>   Reported by Anonymous on 2025-09-30\n> - \\[466786677\\] High CVE-2025-14766: Out of bounds read and write in\n>   V8. Reported by Shaheen Fazim on 2025-12-08\n",
+    "id": "FreeBSD-2025-0432",
+    "modified": "2025-12-19T00:00:00Z",
+    "published": "2025-12-19T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2025/12/stable-channel-update-for-desktop_16.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-14765"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-14766"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- multiple security fixes"
+}

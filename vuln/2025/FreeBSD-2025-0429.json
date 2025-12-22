@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "13.5"
+                        },
+                        {
+                            "fixed": "13.5_8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2025-12-16T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-14769"
+            ],
+            "freebsdsa": [
+                "SA-25:11.ipfw"
+            ]
+        },
+        "vid": "0b22e22a-dae9-11f0-80b8-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nIn some cases, the \\`tcp-setmss\\` handler may free the packet data and\nthrow an error without halting the rule processing engine. A subsequent\nrule can then allow the traffic after the packet data is gone, resulting\nin a NULL pointer dereference.\n\n# Impact:\n\nMaliciously crafted packets sent from a remote host may result in a\nDenial of Service (DoS) if the \\`tcp-setmss\\` directive is used and a\nsubsequent rule would allow the traffic to pass.\n",
+    "id": "FreeBSD-2025-0429",
+    "modified": "2025-12-17T00:00:00Z",
+    "published": "2025-12-17T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-14769"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-25:11.ipfw.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- ipfw denial of service"
+}

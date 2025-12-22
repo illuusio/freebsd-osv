@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0.1,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=2000597"
+        ],
+        "discovery": "2025-12-18T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-14860"
+            ]
+        },
+        "vid": "2a33d28e-ddc0-11f0-902c-b42e991fc52e"
+    },
+    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2000597 reports:\n\n> Use-after-free in the Disability Access APIs component.\n",
+    "id": "FreeBSD-2025-0434",
+    "modified": "2025-12-20T00:00:00Z",
+    "published": "2025-12-20T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2000597"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-14860"
+        },
+        {
+            "type": "WEB",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14860"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Firefox -- Use-after-free"
+}

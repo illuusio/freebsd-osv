@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "13.5"
+                        },
+                        {
+                            "fixed": "13.5_8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2025-12-16T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-14558"
+            ],
+            "freebsdsa": [
+                "SA-25:12.rtsold"
+            ]
+        },
+        "vid": "6c9318c7-dae9-11f0-80b8-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nThe rtsol(8) and rtsold(8) programs do not validate the domain search\nlist options provided in router advertisement messages; the option body\nis passed to resolvconf(8) unmodified.\n\nresolvconf(8) is a shell script which does not validate its input. A\nlack of quoting meant that shell commands pass as input to resolvconf(8)\nmay be executed.\n\n# Impact:\n\nSystems running rtsol(8) or rtsold(8) are vulnerable to remote code\nexecution from systems on the same network segment. In particular,\nrouter advertisement messages are not routable and should be dropped by\nrouters, so the attack does not cross network boundaries.\n",
+    "id": "FreeBSD-2025-0430",
+    "modified": "2025-12-17T00:00:00Z",
+    "published": "2025-12-17T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://api.osv.dev/v1/vulns/CVE-2025-14558"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-25:12.rtsold.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Remote code execution via ND6 Router Advertisements"
+}
