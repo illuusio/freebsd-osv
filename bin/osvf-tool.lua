@@ -17,15 +17,14 @@
 local Logging = require("logging")
 local ucl = require("ucl")
 
-require("ports-make")
+local ports_make = require("ports-make")
 
 -- FreeBSD Officially supported Schema
 local osvf_schema_url =
 	"https://raw.githubusercontent.com/ossf/osv-schema/094e5ca4fdf4b115bbdaaaf519b4c20809661ee2/validation/schema.json"
 local logger = Logging.new(nil, "INFO")
-local schema_file_location = ""
-local schema_remoce = false
-local osvf_files_location = "../vuln"
+-- local schema_file_location = ""
+-- local osvf_files_location = "../vuln"
 
 -------------------------------------------------------------------------------
 -- Validate OSVf JSON against OSVf schema. This is done using libUCL
@@ -39,15 +38,19 @@ local function osvf_tool_validate(schema_location, json_location)
 	local is_error, err = parser:parse_file(json_location)
 
 	if is_error == false then
-		logger:error("osvf_tool_validate: Can't parse OSVf JSON file: " .. err)
+		if logger ~= nil then
+			logger:error("osvf_tool_validate: Can't parse OSVf JSON file: " .. err)
+		end
 		return false
 	end
 
 	is_error, err = parser:validate(schema_location)
 
 	if is_error == false then
-		logger:error("osvf_tool_validate: Can't validate OSVf JSON file with '" .. schema_location .. "': " .. err)
-		logger:error("osvf_tool_validate: Please see schema at: " .. osvf_schema_url)
+		if logger ~= nil then
+			logger:error("osvf_tool_validate: Can't validate OSVf JSON file with '" .. schema_location .. "': " .. err)
+			logger:error("osvf_tool_validate: Please see schema at: " .. osvf_schema_url)
+		end
 		return false
 	end
 
@@ -62,14 +65,14 @@ end
 local function osvf_tool_file_exist(filename)
 	local is_present = true
 	-- Opens a file
-	hanle = io.open(filename)
+	local handle = io.open(filename)
 
 	-- if file is not present, f will be nil
 	if not handle then
-		isPresent = false
+		is_present = false
 	else
 		-- close the file
-		hanle:close()
+		handle:close()
 	end
 
 	-- return status
@@ -83,10 +86,17 @@ end
 -- @return True if success and false if not
 -------------------------------------------------------------------------------
 local function osvf_tool_run_cmd(command)
-	logger:debug("Run make command: '" .. command .. "'")
+	if logger ~= nil then
+		logger:debug("Run make command: '" .. command .. "'")
+	end
 	local handle = io.popen(command)
-	local output = handle:read("*a")
-	rtn_value = handle:close()
+	local output = ""
+	local rtn_value = false
+	if handle ~= nil then
+		output = handle:read("*a")
+		handle:close()
+		rtn_value = true
+	end
 	return output, rtn_value
 end
 
@@ -96,14 +106,14 @@ end
 -- @return Location of downloaded schema or nil if it couldn't
 -------------------------------------------------------------------------------
 local function osvf_tool_get_schema()
-	tmp_file_location = os.tmpname()
-	logger:debug("Output file to: " .. tmp_file_location)
-	local output = ""
+	local tmp_file_location = os.tmpname()
+	if logger ~= nil then
+		logger:debug("Output file to: " .. tmp_file_location)
+	end
 	local rc = false
 
 	if osvf_tool_file_exist("/usr/bin/curl") then
-		output, rc =
-			osvf_tool_run_cmd("/usr/bin/curl -o " .. tmp_file_location .. " " .. osvf_schema_url .. " 2> /dev/null")
+		_, rc = osvf_tool_run_cmd("/usr/bin/curl -o " .. tmp_file_location .. " " .. osvf_schema_url .. " 2> /dev/null")
 	elseif osvf_tool_file_exist("/usr/bin/fetch") then
 		logging:error("Fetch is not working yet!")
 		return false, nil
@@ -113,7 +123,9 @@ local function osvf_tool_get_schema()
 	end
 
 	if rc == false then
-		logger:error("Can't download: " .. osvf_schema_url)
+		if logger ~= nil then
+			logger:error("Can't download: " .. osvf_schema_url)
+		end
 		return false, nil
 	end
 
@@ -124,22 +136,26 @@ local function oscf_tool_find_file(osv_location)
 	local output, rc = osvf_tool_run_cmd("find " .. osv_location .. " -type f -name '*.json' | sort -r")
 
 	if rc == false then
-		logger:error("Something went wrong with find in '" .. osv_location .. "'. Exiting")
+		if logger ~= nil then
+			logger:error("Something went wrong with find in '" .. osv_location .. "'. Exiting")
+		end
 		return nil
 	end
 
-	return ports_make_split_string(output, "\n")
+	return ports_make.split_string(output, "\n")
 end
 
 local function oscf_tool_ls_last(osv_location)
 	local output, rc = osvf_tool_run_cmd("ls -1 " .. osv_location .. " | sort -r")
 
 	if rc == false then
-		logger:error("Something went wrong with ls in '" .. osv_location .. "'. Exiting")
+		if logger ~= nil then
+			logger:error("Something went wrong with ls in '" .. osv_location .. "'. Exiting")
+		end
 		return nil
 	end
 
-	return ports_make_split_string(output, "\n")
+	return ports_make.split_string(output, "\n")
 end
 
 -------------------------------------------------------------------------------
@@ -150,18 +166,23 @@ end
 local function osvf_tool_download_schema(schema_location)
 	local schema_remove = false
 	local file_location = schema_location
+	local is_success = false
 
 	if schema_location == nil then
 		is_success, file_location = osvf_tool_get_schema()
 		schema_remove = true
 
 		if is_success == false then
-			logger:error("Can't donwload schema file: '" .. osvf_schema_url .. "'. Exiting")
+			if logger ~= nil then
+				logger:error("Can't donwload schema file: '" .. osvf_schema_url .. "'. Exiting")
+			end
 			return false
 		end
 	else
 		if osvf_tool_file_exist(schema_location) == false then
-			logger:error("Can't find schema file: '" .. schema_location .. "'. Exiting")
+			if logger ~= nil then
+				logger:error("Can't find schema file: '" .. file_location .. "'. Exiting")
+			end
 			return false
 		end
 
@@ -192,7 +213,9 @@ local function osvf_tool_remove_schema(schema_location, schema_remove)
 		local success, err = os.remove(schema_location)
 
 		if success == false then
-			logger:error("Can't delete tmp schema file: '" .. file_location .. "' (" .. err .. ")")
+			if logger ~= nil then
+				logger:error("Can't delete tmp schema file: '" .. schema_location .. "' (" .. err .. ")")
+			end
 			return false
 		end
 	end
@@ -210,18 +233,22 @@ local function osvf_tool_validate_osvf_files(schema_location, osv_location)
 	local find_table = oscf_tool_find_file(osv_location)
 
 	if find_table == nil then
-		logger:error("Something went wrong with find in '" .. osv_location .. "'. Exiting")
+		if logger ~= nil then
+			logger:error("Something went wrong with find in '" .. osv_location .. "'. Exiting")
+		end
 		return false
 	end
 
 	local schema_remove, file_location = osvf_tool_download_schema(schema_location)
 	local is_valid = false
 
-	for find_table_pos, json_file in ipairs(find_table) do
+	for _, json_file in ipairs(find_table) do
 		is_valid = osvf_tool_validate(file_location, json_file)
 
 		if is_valid == false then
-			logger:error("Can't validate file: '" .. json_file .. "'. Exiting")
+			if logger ~= nil then
+				logger:error("Can't validate file: '" .. json_file .. "'. Exiting")
+			end
 			break
 		end
 	end
@@ -245,7 +272,9 @@ local function osvf_tool_merge_osvf_files(schema_location, osv_location)
 	local find_table = oscf_tool_find_file(osv_location)
 
 	if find_table == nil then
-		logger:error("Something went wrong with find in '" .. osv_location .. "'. Exiting")
+		if logger ~= nil then
+			logger:error("Something went wrong with find in '" .. osv_location .. "'. Exiting")
+		end
 		return false, nil
 	end
 
@@ -256,18 +285,19 @@ local function osvf_tool_merge_osvf_files(schema_location, osv_location)
 
 	-- Go thru every file that find have finded
 	for find_table_pos, output_str in ipairs(find_table) do
-		local pos = 1
 		-- Validate file and make sure it can be loaded as JSON and
 		-- it's valid OSVf 1.7.0 file. If not then don't go further
 		if osvf_tool_validate(file_location, output_str) == false then
-			logger:error("Can't validate: " .. output_str)
+			if logger ~= nil then
+				logger:error("Can't validate: " .. output_str)
+			end
 			return false, nil
 		end
-		local file_hanle = assert(io.open(output_str, "rb"))
-		local content = file_hanle:read("*all")
-		file_hanle:close()
+		local file_handle = assert(io.open(output_str, "rb"))
+		local content = file_handle:read("*all")
+		file_handle:close()
 
-		local content_table = ports_make_split_string(content, "\n")
+		local content_table = ports_make.split_string(content, "\n")
 
 		-- Add files content to be part of merged JSON array variable
 		-- which is returned
@@ -299,7 +329,9 @@ local function osvf_tool_convert_to_commonmark(json_location)
 	local is_error, err = parser:parse_file(json_location)
 
 	if is_error == false then
-		logger:error("osvf_tool_convert_to_commonmark: Can't parse OSVf JSON file: " .. err)
+		if logger ~= nil then
+			logger:error("osvf_tool_convert_to_commonmark: Can't parse OSVf JSON file: " .. err)
+		end
 		return false
 	end
 
@@ -308,11 +340,11 @@ local function osvf_tool_convert_to_commonmark(json_location)
 	rtn_str = rtn_str .. obj["details"] .. "\n\n"
 
 	rtn_str = rtn_str .. "## Affected packages\n"
-	for find_table_pos, aff_table in ipairs(obj["affected"]) do
+	for _, aff_table in ipairs(obj["affected"]) do
 		rtn_str = rtn_str .. " - " .. "**" .. aff_table["package"]["name"] .. "**\n"
 		if aff_table["ranges"] ~= nil then
-			for find_table_pos, range_table in ipairs(aff_table["ranges"]) do
-				for find_table_pos, event_table in ipairs(range_table["events"]) do
+			for _, range_table in ipairs(aff_table["ranges"]) do
+				for _, event_table in ipairs(range_table["events"]) do
 					if event_table["fixed"] ~= nil then
 						rtn_str = rtn_str .. "    - **Fixed:** " .. event_table["fixed"] .. "\n"
 					elseif event_table["introduced"] ~= nil and event_table["introduced"] ~= "0" then
@@ -344,7 +376,7 @@ local function osvf_tool_convert_to_commonmark(json_location)
 
 	rtn_str = rtn_str .. "## References\n"
 
-	for find_table_pos, ref_table in ipairs(obj["references"]) do
+	for _, ref_table in ipairs(obj["references"]) do
 		rtn_str = rtn_str
 			.. " - "
 			.. ref_table["type"]
@@ -367,29 +399,37 @@ local function osvf_tool_generate_commonmark(osv_location, output_dir)
 	local find_table = oscf_tool_find_file(osv_location)
 
 	if find_table == nil then
-		logger:error("Something went wrong with find in '" .. osv_location .. "'. Exiting")
+		if logger ~= nil then
+			logger:error("Something went wrong with find in '" .. osv_location .. "'. Exiting")
+		end
 		return false
 	end
 
-	for find_table_pos, output_str in ipairs(find_table) do
+	for _, output_str in ipairs(find_table) do
 		local commonmark_str = osvf_tool_convert_to_commonmark(output_str)
 		local cut_dir = output_dir .. output_str:match(osv_location .. "(.*/).*%.json")
 		local cut_file = output_str:match(osv_location .. ".*/(.*)%.json")
-		commonmark_file = cut_dir .. cut_file .. ".md"
+		local commonmark_file = cut_dir .. cut_file .. ".md"
 
-		local output, rc = osvf_tool_run_cmd("mkdir -p " .. cut_dir)
+		local _, rc = osvf_tool_run_cmd("mkdir -p " .. cut_dir)
 
 		if rc == false then
-			logger:error("Something went wrong with mkdir -p with '" .. cut_dir .. "'. Exiting")
+			if logger ~= nil then
+				logger:error("Something went wrong with mkdir -p with '" .. cut_dir .. "'. Exiting")
+			end
 			return false
 		end
 
-		output_handle = io.open(commonmark_file, "w")
+		local output_handle = io.open(commonmark_file, "w")
 
 		if output_handle == nil then
-			logger:error("Can't open file: '" .. commonmark_file .. "' for output")
+			if logger ~= nil then
+				logger:error("Can't open file: '" .. commonmark_file .. "' for output")
+			end
 		else
-			output_handle:write(commonmark_str)
+			if type(commonmark_str) == "string" then
+				output_handle:write(commonmark_str)
+			end
 			output_handle:close()
 		end
 	end
@@ -407,19 +447,21 @@ local function osvf_tool_new_entry(osv_location)
 	local cur_year = os.date("%Y")
 	local output_dir = osv_location .. "/" .. cur_year
 
-	ls_table = oscf_tool_ls_last(output_dir)
-	cur_num = 1
-	cur_output_file = "FreeBSD-" .. cur_year .. "-" .. cur_num .. ".json"
+	local ls_table = oscf_tool_ls_last(output_dir)
+	local cur_num = 1
+	local cur_output_file = "FreeBSD-" .. cur_year .. "-" .. cur_num .. ".json"
 
-	if ls_table[1] ~= nil then
-		cur_num_str = ls_table[1]:match("FreeBSD%-" .. cur_year .. "%-(%d+)%.json")
+	if ls_table ~= nil and ls_table[1] ~= nil and type(ls_table[1]) == "string" then
+		local cur_num_str = ls_table[1]:match("FreeBSD%-" .. cur_year .. "%-(%d+)%.json")
 		cur_num = tonumber(cur_num_str) + 1
 		cur_output_file = "FreeBSD-" .. cur_year .. "-" .. string.format("%04d", cur_num)
 	else
-		local output, rc = osvf_tool_run_cmd("mkdir -p " .. output_dir)
+		local _, rc = osvf_tool_run_cmd("mkdir -p " .. output_dir)
 
 		if rc == false then
-			logger:error("Something went wrong with mkdir -p with '" .. output_dir .. "'. Exiting")
+			if logger ~= nil then
+				logger:error("Something went wrong with mkdir -p with '" .. output_dir .. "'. Exiting")
+			end
 			return false, nil
 		end
 	end
@@ -428,7 +470,9 @@ local function osvf_tool_new_entry(osv_location)
 	local is_error, err = parser:parse_file("tmpl/FreeBSD-tmpl.json")
 
 	if is_error == false then
-		logger:error("osvf_tool_new_entry: Can't parse OSVf JSON file: " .. err)
+		if logger ~= nil then
+			logger:error("osvf_tool_new_entry: Can't parse OSVf JSON file: " .. err)
+		end
 		return false, nil
 	end
 
@@ -441,19 +485,23 @@ local function osvf_tool_new_entry(osv_location)
 	obj["database_specific"]["discovery"] = date_full
 	obj["id"] = cur_output_file
 
-	local output, rc = osvf_tool_run_cmd("mkdir -p " .. output_dir)
+	local _, rc = osvf_tool_run_cmd("mkdir -p " .. output_dir)
 
 	if rc == false then
-		logger:error("Something went wrong with mkdir -p with '" .. output_dir .. "'. Exiting")
+		if logger ~= nil then
+			logger:error("Something went wrong with mkdir -p with '" .. output_dir .. "'. Exiting")
+		end
 		return false, nil
 	end
 
-	json_output = ucl.to_format(obj, "json")
-	output_filename = output_dir .. "/" .. cur_output_file .. ".json"
-	output_handle = io.open(output_filename, "w")
+	local json_output = ucl.to_format(obj, "json")
+	local output_filename = output_dir .. "/" .. cur_output_file .. ".json"
+	local output_handle = io.open(output_filename, "w")
 
 	if output_handle == nil then
-		logger:error("Can't open file: '" .. output_filename .. "' for output")
+		if logger ~= nil then
+			logger:error("Can't open file: '" .. output_filename .. "' for output")
+		end
 		return false, nil
 	else
 		output_handle:write(json_output)
@@ -499,7 +547,7 @@ local commands = {
 local which_command = commands[arg[1]]
 
 if which_command == 1 then
-	is_valid = osvf_tool_validate_osvf_files("schema/osvf_schema-1.7.4.json", "vuln")
+	local is_valid = osvf_tool_validate_osvf_files("schema/osvf_schema-1.7.4.json", "vuln")
 
 	if is_valid == true then
 		print("All OSVf JSON files are valid inside vuln-directory")
@@ -507,19 +555,19 @@ if which_command == 1 then
 		print("Validation of OSVf JSON files didn't succeeded please see error(s)")
 	end
 elseif which_command == 2 then
-	is_error, output_name = osvf_tool_new_entry("vuln")
+	local is_error, output_name = osvf_tool_new_entry("vuln")
 
 	if is_error == true then
 		print("New entry file: " .. output_name)
 	end
 elseif which_command == 3 then
-	is_error, output = osvf_tool_merge_osvf_files("schema/osvf_schema-1.7.4.json", "vuln")
+	local is_error, output = osvf_tool_merge_osvf_files("schema/osvf_schema-1.7.4.json", "vuln")
 
 	if is_error == true then
 		print(output)
 	end
 elseif which_command == 4 then
-	is_valid = osvf_tool_validate_osvf_files("schema/osvf_schema-1.7.4.json", "vuln")
+	local is_valid = osvf_tool_validate_osvf_files("schema/osvf_schema-1.7.4.json", "vuln")
 	if is_valid == true then
 		is_valid = osvf_tool_generate_commonmark("vuln", "md")
 	else

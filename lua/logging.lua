@@ -184,7 +184,7 @@ function logging.new(append, startLevel, colorOutput)
 
 	startLevel = startLevel or defaultLevel
 
-	isColor = true
+	local isColor = true
 
 	if type(colorOutput) == "boolean" and colorOutput == false then
 		isColor = false
@@ -549,7 +549,9 @@ if debug then
 	local detection_logger, test_msg
 
 	local function detect_func()
-		detection_logger:debug("message")
+		if detection_logger ~= nil then
+			detection_logger:debug("message")
+		end
 	end -- This function MUST be on a single line!!
 	local detect_func_info = debug.getinfo(detect_func)
 	local detect_func_match = detect_func_info.short_src .. ":" .. tostring(detect_func_info.linedefined or -999)

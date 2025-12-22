@@ -10,10 +10,6 @@
 -- !! Heavy WIP warning !!
 --
 
-local Logging = require("logging")
-
-local logger = Logging.new(nil, "INFO")
-
 FREEBSD_LICENSES = {}
 FREEBSD_LICENSES["AGPLv3+"] =
 	{ name = "GNU Affero General Public License version 3 (or later)", spdx_id = "AGPL-3.0-or-later" }
@@ -159,13 +155,13 @@ FREEBSD_LICENSES["WTFPL"] = { name = "Do What the Fuck You Want To Public Licens
 FREEBSD_LICENSES["ZLIB"] = { name = "zlib License", spdx_id = "Zlib" }
 FREEBSD_LICENSES["ZPL21"] = { name = "Zope Public License version 2.1", spdx_id = "ZPL-2.1" }
 
-function ports_spdx_license_print_table()
+local function ports_spdx_license_print_table()
 	print("FreeBSD\t\t\tSPDX\t\t\t\tName")
 	print("-------------------------------------------------------------------------------------------------")
 	for key, table in pairs(FREEBSD_LICENSES) do
-		output_string = table["spdx_id"]
-		tab1_string = "\t\t"
-		tab2_string = "\t\t\t"
+		local output_string = table["spdx_id"]
+		local tab1_string = "\t\t"
+		local tab2_string = "\t\t\t"
 
 		if string.len(key) < 8 then
 			tab1_string = "\t\t\t"

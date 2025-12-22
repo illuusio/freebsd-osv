@@ -315,7 +315,7 @@ local function prompt_affected()
 		current_array.package.purl = "pkg:bsd/freebsd/" .. current_array.package.name
 
 		current_array.ranges = {}
-		ranges_array = {}
+		local ranges_array = {}
 		ranges_more = true
 
 		while ranges_more do

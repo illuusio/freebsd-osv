@@ -13,19 +13,19 @@
 --
 
 local Logging = require("logging")
-local ucl = require("ucl")
 
 local logger = Logging.new(nil, "INFO")
 local spdx_version = "3.0.1"
 local use_uri = "https://cgit.freebsd.org/ports"
-local agent_id = ""
 -- license_table contains all licenses in SPDX license format
 -- license_spxd_id_table contains them in spdxId format
 -- These are only have once every license nor many occurances
 local license_table = {}
 local license_spxd_id_table = {}
-local freebsd_document_license = "FreeBSD-DOC"
-local freebsd_document_license_url = "https://spdx.org/licenses/FreeBSD-DOC.html"
+-- local freebsd_document_license = "FreeBSD-DOC"
+-- local freebsd_document_license_url = "https://spdx.org/licenses/FreeBSD-DOC.html"
+
+local spdx_lite = {}
 
 -------------------------------------------------------------------------------
 -- get spdxId URI with part and id
@@ -34,8 +34,8 @@ local freebsd_document_license_url = "https://spdx.org/licenses/FreeBSD-DOC.html
 -- @param id Id is something unique id for this part like package name
 -- @return URI: start/part/id or https://start/part/id
 -------------------------------------------------------------------------------
-function spdx_lite_get_spdxId(part, id)
-	rtn_string = use_uri .. "/" .. part .. "/" .. id
+function spdx_lite.spdxId(part, id)
+	local rtn_string = use_uri .. "/" .. part .. "/" .. id
 	return rtn_string
 end
 
@@ -48,7 +48,7 @@ end
 -- @return table which holds object
 -------------------------------------------------------------------------------
 local function spdx_lite_create_table(spdx_id, obj_type, creation_info_id)
-	rtn_table = {
+	local rtn_table = {
 		creationInfo = creation_info_id,
 		spdxId = spdx_id,
 	}
@@ -65,8 +65,8 @@ end
 -- @param creation_info_id Which creation info we are using
 -- @return table which holds object
 -------------------------------------------------------------------------------
-function spdx_lite_core_spdx_document(spdx_id, creation_info_id)
-	rtn_table = spdx_lite_create_table(spdx_id, "SpdxDocument", creation_info_id)
+function spdx_lite.core_spdx_document(spdx_id, creation_info_id)
+	local rtn_table = spdx_lite_create_table(spdx_id, "SpdxDocument", creation_info_id)
 
 	rtn_table["rootElement"] = {}
 	rtn_table["element"] = {}
@@ -81,8 +81,8 @@ end
 -- @param sbom_type_str mainly 'build' but see documenation for extra info
 -- @return table which holds object
 -------------------------------------------------------------------------------
-function spdx_lite_software_sbom(spdx_id, creation_info_id, sbom_type_str)
-	rtn_table = spdx_lite_create_table(spdx_id, "software_Sbom", creation_info_id)
+function spdx_lite.software_sbom(spdx_id, creation_info_id, sbom_type_str)
+	local rtn_table = spdx_lite_create_table(spdx_id, "software_Sbom", creation_info_id)
 
 	rtn_table["rootElement"] = {}
 	rtn_table["element"] = {}
@@ -97,10 +97,10 @@ end
 -- @param license SPDX license expression
 -- @return table which holds object
 -------------------------------------------------------------------------------
-function spdx_lite_simplelicensing_license_expression(creation_info_id, license)
-	spdx_id = spdx_lite_get_spdxId("simplelicensing_LicenseExpression", string.lower(license))
+function spdx_lite.simplelicensing_license_expression(creation_info_id, license)
+	local spdx_id = spdx_lite.spdxId("simplelicensing_LicenseExpression", string.lower(license))
 
-	rtn_table = spdx_lite_create_table(spdx_id, "simplelicensing_LicenseExpression", creation_info_id)
+	local rtn_table = spdx_lite_create_table(spdx_id, "simplelicensing_LicenseExpression", creation_info_id)
 
 	rtn_table["license_expression"] = license
 
@@ -116,10 +116,10 @@ end
 -- @param package_version Package version number
 -- @return table which holds object
 -------------------------------------------------------------------------------
-function spdx_lite_software_package(creation_info_id, agent_id, package_name, package_version)
-	spdx_id = spdx_lite_get_spdxId("software_Package", package_name)
+function spdx_lite.software_package(creation_info_id, agent_id, package_name, package_version)
+	local spdx_id = spdx_lite.spdxId("software_Package", package_name)
 
-	rtn_table = spdx_lite_create_table(spdx_id, "software_Package", creation_info_id)
+	local rtn_table = spdx_lite_create_table(spdx_id, "software_Package", creation_info_id)
 
 	rtn_table["originatedBy"] = { agent_id }
 	rtn_table["name"] = package_name
@@ -138,8 +138,8 @@ end
 -- @param relationship_type which kind of relation ship. See documentation.
 -- @return table which holds object
 -------------------------------------------------------------------------------
-function spdx_lite_core_relationship(spdx_id, creation_info_id, from_id, to_id, relationship_type)
-	rtn_table = spdx_lite_create_table(spdx_id, "Relationship", creation_info_id)
+function spdx_lite.core_relationship(spdx_id, creation_info_id, from_id, to_id, relationship_type)
+	local rtn_table = spdx_lite_create_table(spdx_id, "Relationship", creation_info_id)
 
 	rtn_table["from"] = from_id
 	rtn_table["to"] = { to_id }
@@ -156,11 +156,11 @@ end
 -- @param name Name of actor
 -- @return table which holds object
 -------------------------------------------------------------------------------
-function spdx_lite_core_agent(creation_info_id, name)
+function spdx_lite.core_agent(creation_info_id, name)
 	-- assert(type(name) ~= "string", "Name must be string, got: %s.", type(name))
-	spdxId = spdx_lite_get_spdxId("Agent", string.lower(name):gsub(" ", "_"))
+	local spdx_id = spdx_lite.spdxId("Agent", string.lower(name):gsub(" ", "_"))
 
-	rtn_table = spdx_lite_create_table(spdx_id, "Agent", creation_info_id)
+	local rtn_table = spdx_lite_create_table(spdx_id, "Agent", creation_info_id)
 
 	rtn_table["name"] = name
 
@@ -173,11 +173,11 @@ end
 -- @param agent_id Which agent have made this document
 -- @return table which holds object
 -------------------------------------------------------------------------------
-function spdx_lite_core_creation_info(creation_id, agent_id)
+function spdx_lite.core_creation_info(creation_id, agent_id)
 	local now = os.time()
 	local formatted_date = os.date("%FT%TZ", now)
 
-	rtn_table = {
+	local rtn_table = {
 		created = formatted_date,
 		created_by = { agent_id },
 		created_using = "FreeBSD Port SPDX tool 1.0.0",
@@ -195,8 +195,8 @@ end
 -- @param graph Holds table for @graph
 -- @return JSON-LD table
 -------------------------------------------------------------------------------
-function spdx_lite_json_ld(graph)
-	rtn_table = {}
+function spdx_lite.json_ld(graph)
+	local rtn_table = {}
 
 	rtn_table["@context"] = "https://spdx.org/rdf/3.0.1/spdx-context.jsonld"
 
@@ -223,10 +223,10 @@ local function spdx_lite_add_to_graph(root_graph, object_table)
 	table.insert(root_graph, object_table)
 end
 
-function spdx_lite_add_liceses(root_graph, spdx_document, creation_info)
-	for key, license_str in pairs(license_spxd_id_table) do
+function spdx_lite.add_liceses(root_graph, spdx_document, creation_info)
+	for _, license_str in pairs(license_spxd_id_table) do
 		if license_str ~= "" then
-			license_table = spdx_lite_simplelicensing_license_expression(creation_info["@id"], license_str)
+			license_table = spdx_lite.simplelicensing_license_expression(creation_info["@id"], license_str)
 			spdx_lite_add_to_element(spdx_document, license_table.spdxId, false)
 			spdx_lite_add_to_graph(root_graph, license_table)
 		end
@@ -247,7 +247,7 @@ end
 -- @param creation_info Current creation info
 -- @return Relationship table
 -------------------------------------------------------------------------------
-function spdx_lite_add_relationship(
+function spdx_lite.add_relationship(
 	root_graph,
 	package_name,
 	from,
@@ -258,10 +258,11 @@ function spdx_lite_add_relationship(
 	spdx_document,
 	creation_info
 )
-	relation_spdx_id_str = package_name .. "/" .. relationship_type .. "/" .. string.lower(to_string)
-	relation_spdx_id = spdx_lite_get_spdxId("Relationship", relation_spdx_id_str)
+	local relation_spdx_id_str = package_name .. "/" .. relationship_type .. "/" .. string.lower(to_string)
+	local relation_spdx_id = spdx_lite.spdxId("Relationship", relation_spdx_id_str)
 
-	relation_table = spdx_lite_core_relationship(relation_spdx_id, creation_info["@id"], from, to, relationship_type)
+	local relation_table =
+		spdx_lite.core_relationship(relation_spdx_id, creation_info["@id"], from, to, relationship_type)
 
 	spdx_lite_add_to_element(spdx_document, relation_table.spdxId, false)
 	spdx_lite_add_to_element(software_sbom, relation_table.spdxId, false)
@@ -283,7 +284,7 @@ end
 -- @param type Type of SBOM
 -- @return SBOM table and package table
 -------------------------------------------------------------------------------
-function spdx_lite_create_sbom(
+function spdx_lite.create_sbom(
 	root_graph,
 	package_name,
 	package_version,
@@ -293,12 +294,13 @@ function spdx_lite_create_sbom(
 	agent,
 	type
 )
-	logger:debug("Create SBOM with package name: '" .. package_name .. "' and version: '" .. package_version)
+	if logger ~= nil and package_name ~= nil and package_version ~= nil then
+		logger:debug("Create SBOM with package name: '" .. package_name .. "' and version: '" .. package_version)
+	end
+	local software_sbom =
+		spdx_lite.software_sbom(spdx_lite.spdxId("software_Sbom", package_name), creation_info["@id"], type)
 
-	software_sbom =
-		spdx_lite_software_sbom(spdx_lite_get_spdxId("software_Sbom", package_name), creation_info["@id"], type)
-
-	package = spdx_lite_software_package(creation_info["@id"], default_agent.spdxId, package_name, package_version)
+	package = spdx_lite.software_package(creation_info["@id"], agent.spdxId, package_name, package_version)
 
 	spdx_lite_add_to_element(spdx_document, software_sbom.spdxId, false)
 	spdx_lite_add_to_element(spdx_document, package.spdxId, false)
@@ -309,18 +311,18 @@ function spdx_lite_create_sbom(
 	spdx_lite_add_to_graph(root_graph, package)
 
 	for _, license_str in ipairs(package_license) do
-		license_spdx_id = spdx_lite_get_spdxId("simplelicensing_LicenseExpression", string.lower(license_str))
+		local license_spdx_id = spdx_lite.spdxId("simplelicensing_LicenseExpression", string.lower(license_str))
 
 		-- If we don't have this kind of license then just create one
 		-- otherwise bail out
-		if license_spxd_id_table[license_str] == nil then
+		if logger ~= nil and license_str ~= nil and license_spxd_id_table[license_str] == nil then
 			logger:debug("SBOM package license: " .. license_str)
 			license_spxd_id_table[license_str] = license_str
 		end
 
-		license = spdx_lite_simplelicensing_license_expression(creation_info["@id"], license_str)
+		-- local license = spdx_lite.simplelicensing_license_expression(creation_info["@id"], license_str)
 
-		spdx_lite_add_relationship(
+		spdx_lite.add_relationship(
 			root_graph,
 			package_name,
 			package.spdxId,
@@ -331,7 +333,7 @@ function spdx_lite_create_sbom(
 			spdx_document,
 			creation_info
 		)
-		spdx_lite_add_relationship(
+		spdx_lite.add_relationship(
 			root_graph,
 			package_name,
 			package.spdxId,
@@ -353,10 +355,10 @@ end
 -- @param root_graph Graph object
 -- @return Agent table, creationInfo Table, spdxDocument table
 -------------------------------------------------------------------------------
-function spdx_lite_create_root(root_graph)
-	default_agent = spdx_lite_core_agent("_:creationinfo_1", "Default agent")
-	creation_info = spdx_lite_core_creation_info("_:creationinfo_1", default_agent.spdxId)
-	spdx_document = spdx_lite_core_spdx_document(spdx_lite_get_spdxId("SpdxDocument", "core"), creation_info["@id"])
+function spdx_lite.create_root(root_graph)
+	local default_agent = spdx_lite.core_agent("_:creationinfo_1", "Default agent")
+	local creation_info = spdx_lite.core_creation_info("_:creationinfo_1", default_agent.spdxId)
+	local spdx_document = spdx_lite.core_spdx_document(spdx_lite.spdxId("SpdxDocument", "core"), creation_info["@id"])
 
 	spdx_lite_add_to_element(spdx_document, default_agent.spdxId, false)
 	spdx_lite_add_to_graph(root_graph, spdx_document)
@@ -365,3 +367,5 @@ function spdx_lite_create_root(root_graph)
 
 	return default_agent, creation_info, spdx_document
 end
+
+return spdx_lite
