@@ -39,7 +39,7 @@ url_advisories = [
 url_bid = "https://www.securityfocus.com/bid/%s/info"
 url_certsa = "https://www.cert.org/advisories/%s.html"
 url_certvu = "https://www.kb.cert.org/vuls/id/%s"
-url_cve = "https://api.osv.dev/v1/vulns/%s"
+url_cve = "https://cveawg.mitre.org/api/cve/%s"
 url_freebsd_bugzilla = "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=%s"
 url_freebsd_sa = "https://www.freebsd.org/security/advisories/FreeBSD-%s.asc"
 url_reports = [
@@ -263,6 +263,20 @@ def main():
                 ):
                     continue
 
+                # As there can be also URL for this then do not add
+                # double entries
+                if (
+                    "references" in database_specific
+                    and "cvename" in database_specific["references"]
+                ):
+                    is_cvename = False
+                    for cvename in database_specific["references"]["cvename"]:
+                        if cvename in ref.text and "mitre.org" in ref.text:
+                            is_cvename = True
+                            break
+                    if is_cvename:
+                        continue
+
                 reference = {"type": "WEB", "url": ref.text}
                 for prefix in url_advisories:
                     if str(ref.text).startswith(prefix):
@@ -416,9 +430,7 @@ def main():
                 if year_str not in output_id:
                     output_id[year_str] = 0
                 output_id[year_str] += 1
-                output_file = (
-                    f"{file_base_name}-{year_str}-{output_id[year_str]:04}"
-                )
+                output_file = f"{file_base_name}-{year_str}-{output_id[year_str]:04}"
 
                 # Make sure that is same as filename
                 entry["id"] = output_file
