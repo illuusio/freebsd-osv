@@ -11,8 +11,6 @@
 -- merging JSON files in one big array of OSVf files (and validate
 -- them all)
 --
--- !! Heavy WIP warning !!
---
 
 local Logging = require("logging")
 local ucl = require("ucl")
