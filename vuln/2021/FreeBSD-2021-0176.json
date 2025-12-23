@@ -83,15 +83,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-31799"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-31799"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-31810"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-31810"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-32066"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-32066"
         },
         {
             "type": "WEB",

@@ -64,15 +64,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-12814"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-12814"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-12837"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-12837"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-12883"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-12883"
         }
     ],
     "schema_version": "1.7.0",

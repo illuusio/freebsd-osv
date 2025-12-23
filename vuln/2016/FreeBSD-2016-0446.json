@@ -127,23 +127,23 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9372"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9372"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9373"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9373"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9374"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9374"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9375"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9375"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9376"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9376"
         }
     ],
     "schema_version": "1.7.0",

@@ -235,11 +235,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-15751"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-15751"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-15750"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-15750"
         },
         {
             "type": "WEB",

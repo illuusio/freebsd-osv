@@ -101,11 +101,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-15715"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-15715"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-8331"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-8331"
         }
     ],
     "schema_version": "1.7.0",

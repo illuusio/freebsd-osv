@@ -124,51 +124,27 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-27613"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-27613"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-27613"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-27614"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-27614"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-46835"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-27614"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-48384"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-46835"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-48385"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-46835"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-48384"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-48384"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-48385"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-48385"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-48386"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-48386"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-48386"
         }
     ],
     "schema_version": "1.7.0",

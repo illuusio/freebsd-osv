@@ -63,11 +63,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-4016"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-4016"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-0300"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-0300"
         },
         {
             "type": "WEB",

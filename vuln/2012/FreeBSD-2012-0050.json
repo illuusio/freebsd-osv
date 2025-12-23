@@ -189,47 +189,47 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0451"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0451"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0455"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0455"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0456"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0456"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0457"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0457"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0458"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0458"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0459"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0459"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0460"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0460"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0461"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0461"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0462"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0462"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0463"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0463"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0464"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0464"
         },
         {
             "type": "WEB",

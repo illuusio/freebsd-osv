@@ -94,7 +94,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2143"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2143"
         }
     ],
     "schema_version": "1.7.0",

@@ -90,15 +90,15 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-9497"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-9497"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-9498"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-9498"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-9499"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-9499"
         },
         {
             "type": "ADVISORY",

@@ -74,15 +74,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-2879"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-2879"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-2880"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-2880"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-41715"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-41715"
         },
         {
             "type": "WEB",

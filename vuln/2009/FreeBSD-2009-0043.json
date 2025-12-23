@@ -190,31 +190,31 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0352"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0352"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0353"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0353"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0354"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0354"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0355"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0355"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0356"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0356"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0357"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0357"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0358"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0358"
         },
         {
             "type": "WEB",

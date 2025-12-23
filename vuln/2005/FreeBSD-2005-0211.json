@@ -52,15 +52,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2001-0910"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2001-0910"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2002-0113"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2002-0113"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2002-0114"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2002-0114"
         },
         {
             "type": "WEB",

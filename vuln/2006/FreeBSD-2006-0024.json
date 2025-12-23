@@ -77,11 +77,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CAN-2005-1409"
+            "url": "https://cveawg.mitre.org/api/cve/CAN-2005-1409"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CAN-2005-1410"
+            "url": "https://cveawg.mitre.org/api/cve/CAN-2005-1410"
         }
     ],
     "schema_version": "1.7.0",

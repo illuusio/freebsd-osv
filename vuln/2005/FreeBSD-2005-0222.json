@@ -570,51 +570,51 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-1937"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-1937"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-2260"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-2260"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-2261"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-2261"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-2262"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-2262"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-2263"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-2263"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-2264"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-2264"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-2265"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-2265"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-2266"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-2266"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-2267"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-2267"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-2268"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-2268"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-2269"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-2269"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-2270"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-2270"
         },
         {
             "type": "WEB",

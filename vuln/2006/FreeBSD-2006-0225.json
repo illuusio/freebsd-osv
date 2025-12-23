@@ -117,23 +117,23 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-4334"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-4334"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-4335"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-4335"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-4336"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-4336"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-4337"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-4337"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-4338"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-4338"
         },
         {
             "type": "ADVISORY",

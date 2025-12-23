@@ -72,19 +72,19 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-2483"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-2483"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-2202"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-2202"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-1938"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-1938"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-1148"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-1148"
         }
     ],
     "schema_version": "1.7.0",

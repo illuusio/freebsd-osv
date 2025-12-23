@@ -63,15 +63,15 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-0701"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-0701"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-3737"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-3737"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-3738"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-3738"
         },
         {
             "type": "ADVISORY",

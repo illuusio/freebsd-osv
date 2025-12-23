@@ -64,47 +64,47 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-3069"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-3069"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-3070"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-3070"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-3071"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-3071"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-3072"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-3072"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-3073"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-3073"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-3074"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-3074"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-3075"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-3075"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-3076"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-3076"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-3077"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-3077"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-3078"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-3078"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-3079"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-3079"
         },
         {
             "type": "WEB",

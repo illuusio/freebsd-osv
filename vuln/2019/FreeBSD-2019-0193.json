@@ -49,15 +49,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-9512"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-9512"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-9514"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-9514"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-9515"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-9515"
         }
     ],
     "schema_version": "1.7.0",

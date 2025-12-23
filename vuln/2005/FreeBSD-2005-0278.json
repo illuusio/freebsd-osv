@@ -70,11 +70,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-2919"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-2919"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-2920"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-2920"
         }
     ],
     "schema_version": "1.7.0",

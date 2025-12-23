@@ -49,11 +49,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-23984"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-23984"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-24968"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-24968"
         },
         {
             "type": "WEB",

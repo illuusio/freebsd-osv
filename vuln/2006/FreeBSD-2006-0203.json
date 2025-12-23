@@ -64,15 +64,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-5453"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-5453"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-5454"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-5454"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-5455"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-5455"
         }
     ],
     "schema_version": "1.7.0",

@@ -55,15 +55,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-28362"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-28362"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-28367"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-28367"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-28366"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-28366"
         }
     ],
     "schema_version": "1.7.0",

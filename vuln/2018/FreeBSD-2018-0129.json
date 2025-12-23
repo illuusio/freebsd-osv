@@ -45,15 +45,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-6120"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-6120"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-6121"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-6121"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-6122"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-6122"
         }
     ],
     "schema_version": "1.7.0",

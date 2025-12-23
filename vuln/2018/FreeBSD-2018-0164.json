@@ -45,7 +45,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-8007"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-8007"
         },
         {
             "type": "WEB",
@@ -53,11 +53,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-12636"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-12636"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-12635"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-12635"
         },
         {
             "type": "WEB",

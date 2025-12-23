@@ -49,7 +49,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-1759"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-1759"
         },
         {
             "type": "WEB",
@@ -57,7 +57,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-1760"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-1760"
         },
         {
             "type": "WEB",

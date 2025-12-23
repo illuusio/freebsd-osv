@@ -110,23 +110,23 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-1495"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-1495"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-1736"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-1736"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-1963"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-1963"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-4201"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-4201"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-5469"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-5469"
         }
     ],
     "schema_version": "1.7.0",

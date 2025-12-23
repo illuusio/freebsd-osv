@@ -63,11 +63,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-10200"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-10200"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-10201"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-10201"
         }
     ],
     "schema_version": "1.7.0",

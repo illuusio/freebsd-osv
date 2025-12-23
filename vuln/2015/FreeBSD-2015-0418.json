@@ -63,11 +63,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-8508"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-8508"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-8509"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-8509"
         },
         {
             "type": "REPORT",

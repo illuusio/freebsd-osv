@@ -146,15 +146,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-3655"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-3655"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-3656"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-3656"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-3905"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-3905"
         }
     ],
     "schema_version": "1.7.0",

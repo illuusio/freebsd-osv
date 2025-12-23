@@ -55,15 +55,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-3414"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-3414"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-3415"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-3415"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-3416"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-3416"
         },
         {
             "type": "WEB",

@@ -39,19 +39,19 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-16378"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-16378"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-20790"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-20790"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-12272"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-12272"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-12460"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-12460"
         },
         {
             "type": "WEB",

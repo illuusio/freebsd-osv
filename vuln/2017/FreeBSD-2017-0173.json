@@ -45,15 +45,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-1000099"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-1000099"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-1000100"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-1000100"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-1000101"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-1000101"
         }
     ],
     "schema_version": "1.7.0",

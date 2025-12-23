@@ -82,11 +82,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-11034"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-11034"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-11035"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-11035"
         }
     ],
     "schema_version": "1.7.0",

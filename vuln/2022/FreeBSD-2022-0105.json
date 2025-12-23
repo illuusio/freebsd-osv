@@ -62,7 +62,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-29526"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-29526"
         },
         {
             "type": "WEB",

@@ -83,39 +83,39 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-6212"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-6212"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-6215"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-6215"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-6216"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-6216"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-6217"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-6217"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-6226"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-6226"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-6227"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-6227"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-6229"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-6229"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-6233"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-6233"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-6234"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-6234"
         }
     ],
     "schema_version": "1.7.0",

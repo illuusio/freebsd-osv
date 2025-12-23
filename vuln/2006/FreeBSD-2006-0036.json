@@ -38,15 +38,15 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-0377"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-0377"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-0195"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-0195"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-0188"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-0188"
         }
     ],
     "schema_version": "1.7.0",

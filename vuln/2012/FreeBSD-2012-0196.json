@@ -67,27 +67,27 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-4730"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-4730"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-4731"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-4731"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-4732"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-4732"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-4734"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-4734"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-4735"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-4735"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-4884"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-4884"
         }
     ],
     "schema_version": "1.7.0",

@@ -44,7 +44,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-5025"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-5025"
         },
         {
             "type": "ADVISORY",
@@ -52,7 +52,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-4947"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-4947"
         },
         {
             "type": "ADVISORY",

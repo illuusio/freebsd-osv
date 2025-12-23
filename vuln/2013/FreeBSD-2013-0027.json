@@ -186,35 +186,35 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-0765"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-0765"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-0772"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-0772"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-0773"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-0773"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-0774"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-0774"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-0775"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-0775"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-0776"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-0776"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-0783"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-0783"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-0784"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-0784"
         },
         {
             "type": "WEB",

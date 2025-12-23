@@ -293,107 +293,107 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-0749"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-0749"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1045"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1045"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1529"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1529"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1530"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1530"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1531"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1531"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1723"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1723"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1724"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1724"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1725"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1725"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1726"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1726"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1727"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1727"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1728"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1728"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1729"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1729"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1730"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1730"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1731"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1731"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1732"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1732"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1733"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1733"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1734"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1734"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1735"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1735"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1736"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1736"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1737"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1737"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1738"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1738"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1739"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1739"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1740"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1740"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1741"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1741"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1742"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1742"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-1790"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-1790"
         },
         {
             "type": "WEB",

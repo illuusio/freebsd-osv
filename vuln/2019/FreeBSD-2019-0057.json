@@ -82,11 +82,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-5418"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-5418"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-5419"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-5419"
         }
     ],
     "schema_version": "1.7.0",

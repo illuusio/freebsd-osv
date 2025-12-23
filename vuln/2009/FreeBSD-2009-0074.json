@@ -201,47 +201,47 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1303"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1303"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1306"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1306"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1307"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1307"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1308"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1308"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1309"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1309"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1312"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1312"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1311"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1311"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1302"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1302"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1304"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1304"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1305"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1305"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1310"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1310"
         },
         {
             "type": "WEB",

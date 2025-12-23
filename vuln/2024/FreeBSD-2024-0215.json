@@ -50,7 +50,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-8381"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-8381"
         },
         {
             "type": "ADVISORY",
@@ -58,7 +58,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-8382"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-8382"
         },
         {
             "type": "ADVISORY",
@@ -66,7 +66,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-8383"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-8383"
         },
         {
             "type": "ADVISORY",
@@ -74,7 +74,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-8384"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-8384"
         },
         {
             "type": "ADVISORY",
@@ -82,7 +82,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-8385"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-8385"
         },
         {
             "type": "ADVISORY",
@@ -90,7 +90,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-8386"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-8386"
         },
         {
             "type": "ADVISORY",
@@ -98,7 +98,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-8387"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-8387"
         },
         {
             "type": "ADVISORY",
@@ -106,7 +106,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-8389"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-8389"
         },
         {
             "type": "ADVISORY",

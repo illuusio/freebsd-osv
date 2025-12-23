@@ -139,18 +139,10 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-12818"
-        },
-        {
-            "type": "WEB",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2025-12818"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-12817"
-        },
-        {
-            "type": "WEB",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2025-12817"
         }
     ],

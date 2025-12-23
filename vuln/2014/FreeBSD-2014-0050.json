@@ -64,15 +64,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-4256"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-4256"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-4257"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-4257"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-4258"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-4258"
         }
     ],
     "schema_version": "1.7.0",

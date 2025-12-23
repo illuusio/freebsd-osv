@@ -161,55 +161,55 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5500"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5500"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5501"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5501"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5502"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5502"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5503"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5503"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5504"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5504"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5505"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5505"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5506"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5506"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5507"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5507"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5508"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5508"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5510"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5510"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5511"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5511"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5512"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5512"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5513"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5513"
         },
         {
             "type": "WEB",

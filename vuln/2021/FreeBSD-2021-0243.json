@@ -85,87 +85,87 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39885"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39885"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39877"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39877"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39887"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39887"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39867"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39867"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39869"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39869"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39872"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39872"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39878"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39878"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39866"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39866"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39882"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39882"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39875"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39875"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39870"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39870"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39884"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39884"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39883"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39883"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-22259"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-22259"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39868"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39868"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39871"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39871"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39874"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39874"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39873"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39873"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39881"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39881"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39886"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39886"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39879"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39879"
         }
     ],
     "schema_version": "1.7.0",

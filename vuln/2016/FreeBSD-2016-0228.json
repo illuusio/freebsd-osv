@@ -186,47 +186,47 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2815"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2815"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2818"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2818"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2819"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2819"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2821"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2821"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2822"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2822"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2825"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2825"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2828"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2828"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2829"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2829"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2831"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2831"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2832"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2832"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2833"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2833"
         },
         {
             "type": "WEB",

@@ -83,7 +83,7 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-0230"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-0230"
         },
         {
             "type": "ADVISORY",

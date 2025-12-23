@@ -449,27 +449,27 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-4481"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-4481"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-4482"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-4482"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-4483"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-4483"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-4484"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-4484"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-4485"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-4485"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-4486"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-4486"
         },
         {
             "type": "WEB",

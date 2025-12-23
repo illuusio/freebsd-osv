@@ -93,15 +93,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2014-8501"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2014-8501"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2014-8502"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2014-8502"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2014-8503"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2014-8503"
         }
     ],
     "schema_version": "1.7.0",

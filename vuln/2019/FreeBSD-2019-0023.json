@@ -201,31 +201,31 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18500"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18500"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18501"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18501"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18502"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18502"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18503"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18503"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18504"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18504"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18505"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18505"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18506"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18506"
         },
         {
             "type": "WEB",

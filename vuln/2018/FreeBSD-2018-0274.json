@@ -64,15 +64,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-10851"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-10851"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-14626"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-14626"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-14644"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-14644"
         }
     ],
     "schema_version": "1.7.0",

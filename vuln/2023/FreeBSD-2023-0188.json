@@ -50,7 +50,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-3079"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3079"
         },
         {
             "type": "ADVISORY",
@@ -58,7 +58,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-2933"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2933"
         },
         {
             "type": "ADVISORY",
@@ -66,7 +66,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-2932"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2932"
         },
         {
             "type": "ADVISORY",
@@ -74,7 +74,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-2931"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2931"
         },
         {
             "type": "ADVISORY",
@@ -82,7 +82,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-2936"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2936"
         },
         {
             "type": "ADVISORY",
@@ -90,7 +90,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-2935"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2935"
         },
         {
             "type": "ADVISORY",
@@ -98,7 +98,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-2934"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2934"
         },
         {
             "type": "ADVISORY",
@@ -106,7 +106,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-2930"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2930"
         },
         {
             "type": "ADVISORY",

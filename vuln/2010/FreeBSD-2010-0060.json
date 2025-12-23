@@ -122,51 +122,51 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5913"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5913"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-0183"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-0183"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-1121"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-1121"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-1125"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-1125"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-1197"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-1197"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-1199"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-1199"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-1196"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-1196"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-1198"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-1198"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-1200"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-1200"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-1201"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-1201"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-1202"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-1202"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-1203"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-1203"
         },
         {
             "type": "WEB",

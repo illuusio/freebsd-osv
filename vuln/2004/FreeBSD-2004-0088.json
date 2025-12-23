@@ -38,15 +38,15 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-0226"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-0226"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-0231"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-0231"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-0232"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-0232"
         }
     ],
     "schema_version": "1.7.0",

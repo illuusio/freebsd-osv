@@ -226,131 +226,131 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5089"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5089"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5090"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5090"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5091"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5091"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5092"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5092"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5093"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5093"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5094"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5094"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5095"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5095"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5097"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5097"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5098"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5098"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5099"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5099"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5100"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5100"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5101"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5101"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5102"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5102"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5103"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5103"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5104"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5104"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5105"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5105"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5106"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5106"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5107"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5107"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5108"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5108"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5109"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5109"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5110"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5110"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5111"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5111"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5112"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5112"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5113"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5113"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5114"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5114"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5115"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5115"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5116"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5116"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5117"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5117"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5118"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5118"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5119"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5119"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5121"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5121"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-5122"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-5122"
         },
         {
             "type": "WEB",

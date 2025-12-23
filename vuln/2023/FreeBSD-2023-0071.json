@@ -68,11 +68,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-37400"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-37400"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-37401"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-37401"
         },
         {
             "type": "WEB",

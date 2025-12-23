@@ -49,15 +49,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-4056"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-4056"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-4058"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-4058"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-4059"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-4059"
         }
     ],
     "schema_version": "1.7.0",

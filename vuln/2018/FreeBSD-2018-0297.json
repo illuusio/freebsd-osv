@@ -205,47 +205,47 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-12405"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-12405"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-12406"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-12406"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-12407"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-12407"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-17466"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-17466"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18492"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18492"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18493"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18493"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18494"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18494"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18495"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18495"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18496"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18496"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18497"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18497"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-18498"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-18498"
         },
         {
             "type": "WEB",

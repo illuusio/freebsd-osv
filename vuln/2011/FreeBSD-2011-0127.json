@@ -190,51 +190,51 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-2372"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-2372"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-2995"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-2995"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-2996"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-2996"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-2997"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-2997"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-2999"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-2999"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3000"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3000"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3001"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3001"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3002"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3002"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3003"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3003"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3004"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3004"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3005"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3005"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3232"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3232"
         },
         {
             "type": "WEB",

@@ -89,11 +89,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-7803"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-7803"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-7804"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-7804"
         },
         {
             "type": "WEB",

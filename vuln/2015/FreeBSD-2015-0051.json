@@ -162,35 +162,35 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-0204"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-0204"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-0286"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-0286"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-0287"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-0287"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-0289"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-0289"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-0292"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-0292"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-0293"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-0293"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-0209"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-0209"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-0288"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-0288"
         }
     ],
     "schema_version": "1.7.0",

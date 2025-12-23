@@ -39,7 +39,7 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2003-1023"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2003-1023"
         },
         {
             "type": "DISCUSSION",

@@ -120,11 +120,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2014-0230"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2014-0230"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2014-7810"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2014-7810"
         }
     ],
     "schema_version": "1.7.0",

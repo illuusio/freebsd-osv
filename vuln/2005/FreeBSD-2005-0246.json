@@ -54,31 +54,31 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-1621"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-1621"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-1695"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-1695"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-1696"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-1696"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-1698"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-1698"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-1777"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-1777"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-1778"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-1778"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-1921"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-1921"
         },
         {
             "type": "DISCUSSION",

@@ -63,11 +63,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-5475"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-5475"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-6506"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-6506"
         }
     ],
     "schema_version": "1.7.0",

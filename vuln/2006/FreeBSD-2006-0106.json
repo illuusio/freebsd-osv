@@ -49,11 +49,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-2742"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-2742"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-2743"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-2743"
         }
     ],
     "schema_version": "1.7.0",

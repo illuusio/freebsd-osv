@@ -83,15 +83,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-5217"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5217"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-5186"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5186"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-5187"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5187"
         }
     ],
     "schema_version": "1.7.0",

@@ -52,7 +52,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-5493"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-5493"
         },
         {
             "type": "ADVISORY",
@@ -60,7 +60,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-5831"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-5831"
         },
         {
             "type": "ADVISORY",
@@ -68,7 +68,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-5832"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-5832"
         },
         {
             "type": "ADVISORY",
@@ -76,7 +76,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-6100"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-6100"
         },
         {
             "type": "ADVISORY",
@@ -84,7 +84,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-6101"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-6101"
         },
         {
             "type": "ADVISORY",
@@ -92,7 +92,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-6103"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-6103"
         },
         {
             "type": "ADVISORY",
@@ -100,7 +100,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-6291"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-6291"
         },
         {
             "type": "ADVISORY",
@@ -108,7 +108,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-6293"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-6293"
         },
         {
             "type": "ADVISORY",
@@ -116,7 +116,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-6290"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-6290"
         },
         {
             "type": "ADVISORY",
@@ -124,7 +124,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-6292"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-6292"
         },
         {
             "type": "ADVISORY",

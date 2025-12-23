@@ -75,47 +75,47 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39946"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39946"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-0154"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-0154"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-0152"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-0152"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-0151"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-0151"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-0172"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-0172"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-0090"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-0090"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-0125"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-0125"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-0124"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-0124"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39942"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39942"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-0093"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-0093"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-39927"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-39927"
         }
     ],
     "schema_version": "1.7.0",

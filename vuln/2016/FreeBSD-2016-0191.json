@@ -230,47 +230,47 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2804"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2804"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2805"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2805"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2806"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2806"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2807"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2807"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2808"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2808"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2811"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2811"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2812"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2812"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2814"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2814"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2816"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2816"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2817"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2817"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2820"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2820"
         },
         {
             "type": "WEB",

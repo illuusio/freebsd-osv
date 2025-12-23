@@ -54,7 +54,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-0131"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-0131"
         }
     ],
     "schema_version": "1.7.0",

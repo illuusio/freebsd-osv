@@ -124,15 +124,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-31449"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-31449"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-31227"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-31227"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-31228"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-31228"
         }
     ],
     "schema_version": "1.7.0",

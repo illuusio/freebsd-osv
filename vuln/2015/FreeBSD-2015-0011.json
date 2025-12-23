@@ -45,15 +45,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2014-8139"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2014-8139"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2014-8140"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2014-8140"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2014-8141"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2014-8141"
         },
         {
             "type": "WEB",

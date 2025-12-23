@@ -56,11 +56,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-2808"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-2808"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-2807"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-2807"
         }
     ],
     "schema_version": "1.7.0",

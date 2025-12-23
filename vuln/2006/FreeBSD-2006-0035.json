@@ -36,7 +36,7 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CAN-2005-1686"
+            "url": "https://cveawg.mitre.org/api/cve/CAN-2005-1686"
         },
         {
             "type": "DISCUSSION",

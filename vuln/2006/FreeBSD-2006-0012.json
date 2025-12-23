@@ -85,15 +85,15 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-1111"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-1111"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-1229"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-1229"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2005-4268"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2005-4268"
         },
         {
             "type": "ADVISORY",

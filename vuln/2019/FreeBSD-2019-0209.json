@@ -49,7 +49,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-13224"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-13224"
         },
         {
             "type": "WEB",
@@ -57,7 +57,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-13225"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-13225"
         },
         {
             "type": "WEB",

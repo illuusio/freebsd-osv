@@ -49,19 +49,19 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-5081"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-5081"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-3410"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-3410"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-2263"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-2263"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-2264"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-2264"
         },
         {
             "type": "WEB",

@@ -45,15 +45,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-16932"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-16932"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-0360"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-0360"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-0361"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-0361"
         }
     ],
     "schema_version": "1.7.0",

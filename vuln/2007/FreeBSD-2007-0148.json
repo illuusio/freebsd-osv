@@ -72,15 +72,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-5613"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-5613"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-5614"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-5614"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-5615"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-5615"
         },
         {
             "type": "WEB",

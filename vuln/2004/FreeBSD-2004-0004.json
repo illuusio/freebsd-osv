@@ -57,15 +57,15 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2003-0989"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2003-0989"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2003-1029"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2003-1029"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-0057"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-0057"
         },
         {
             "type": "DISCUSSION",

@@ -93,11 +93,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2014-3522"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2014-3522"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2014-3528"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2014-3528"
         },
         {
             "type": "WEB",

@@ -111,15 +111,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-11996"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-11996"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-13934"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-13934"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-13935"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-13935"
         }
     ],
     "schema_version": "1.7.0",

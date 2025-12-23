@@ -63,11 +63,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1575"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1575"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1576"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1576"
         }
     ],
     "schema_version": "1.7.0",

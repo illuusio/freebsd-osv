@@ -44,11 +44,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-2240"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-2240"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-2241"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-2241"
         },
         {
             "type": "WEB",

@@ -102,15 +102,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-0503"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-0503"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-0505"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-0505"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-0504"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-0504"
         }
     ],
     "schema_version": "1.7.0",

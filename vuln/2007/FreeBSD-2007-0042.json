@@ -96,15 +96,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-2444"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-2444"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-2446"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-2446"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-2447"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-2447"
         }
     ],
     "schema_version": "1.7.0",

@@ -72,47 +72,47 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-0579"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-0579"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-0618"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-0618"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-0619"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-0619"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-0620"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-0620"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-0621"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-0621"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-0622"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-0622"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-0623"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-0623"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-0624"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-0624"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-0625"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-0625"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-0626"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-0626"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-0627"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-0627"
         }
     ],
     "schema_version": "1.7.0",

@@ -62,11 +62,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-11356"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-11356"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-11356"
         }
     ],
     "schema_version": "1.7.0",

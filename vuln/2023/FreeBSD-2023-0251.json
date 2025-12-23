@@ -220,7 +220,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-20270"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-20270"
         },
         {
             "type": "WEB",
@@ -228,7 +228,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-27291"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-27291"
         },
         {
             "type": "WEB",

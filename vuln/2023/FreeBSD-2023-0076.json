@@ -44,11 +44,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-25690"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-25690"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-27522"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-27522"
         }
     ],
     "schema_version": "1.7.0",

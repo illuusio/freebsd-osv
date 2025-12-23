@@ -49,11 +49,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-5097"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-5097"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-5099"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-5099"
         }
     ],
     "schema_version": "1.7.0",

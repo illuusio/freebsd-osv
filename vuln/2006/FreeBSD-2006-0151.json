@@ -91,19 +91,19 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-2191"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-2191"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-2941"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-2941"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-3636"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-3636"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-4624"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-4624"
         },
         {
             "type": "WEB",

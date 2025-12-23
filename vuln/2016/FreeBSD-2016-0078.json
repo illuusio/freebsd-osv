@@ -188,55 +188,55 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-7208"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-7208"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1930"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1930"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1931"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1931"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1933"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1933"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1935"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1935"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1937"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1937"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1939"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1939"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1942"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1942"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1943"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1943"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1944"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1944"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1945"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1945"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1946"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1946"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1947"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1947"
         },
         {
             "type": "WEB",

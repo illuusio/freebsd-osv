@@ -55,55 +55,55 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-2728"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-2728"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-3324"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-3324"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-3325"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-3325"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-3326"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-3326"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-3327"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-3327"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-3328"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-3328"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-3329"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-3329"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-3330"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-3330"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-3331"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-3331"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-3332"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-3332"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-3333"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-3333"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-3334"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-3334"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-3335"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-3335"
         }
     ],
     "schema_version": "1.7.0",

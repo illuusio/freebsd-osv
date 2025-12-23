@@ -47,7 +47,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-9935"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-9935"
         },
         {
             "type": "WEB",
@@ -55,7 +55,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-18013"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-18013"
         },
         {
             "type": "WEB",

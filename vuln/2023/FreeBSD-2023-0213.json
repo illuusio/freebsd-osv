@@ -72,47 +72,47 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-3727"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3727"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-3728"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3728"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-3730"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3730"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-3732"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3732"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-3733"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3733"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-3734"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3734"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-3735"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3735"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-3736"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3736"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-3737"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3737"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-3738"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3738"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-3740"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3740"
         }
     ],
     "schema_version": "1.7.0",

@@ -44,11 +44,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-1495"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-1495"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-1496"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-1496"
         },
         {
             "type": "WEB",

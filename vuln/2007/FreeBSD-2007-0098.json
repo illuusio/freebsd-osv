@@ -64,15 +64,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-3820"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-3820"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-4224"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-4224"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-4225"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-4225"
         }
     ],
     "schema_version": "1.7.0",

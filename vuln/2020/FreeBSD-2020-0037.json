@@ -44,7 +44,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-8793"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-8793"
         },
         {
             "type": "WEB",
@@ -52,7 +52,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-8794"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-8794"
         },
         {
             "type": "WEB",

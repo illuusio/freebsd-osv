@@ -49,15 +49,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-24330"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-24330"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-24331"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-24331"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-24332"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-24332"
         }
     ],
     "schema_version": "1.7.0",

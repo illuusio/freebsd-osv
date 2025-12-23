@@ -60,15 +60,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-8813"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-8813"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-7106"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-7106"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2020-7237"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-7237"
         },
         {
             "type": "REPORT",

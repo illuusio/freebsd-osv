@@ -64,23 +64,23 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0163"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0163"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0164"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0164"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0146"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0146"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0147"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0147"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0166"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0166"
         },
         {
             "type": "WEB",

@@ -64,15 +64,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-22931"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-22931"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-22940"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-22940"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-22939"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-22939"
         }
     ],
     "schema_version": "1.7.0",

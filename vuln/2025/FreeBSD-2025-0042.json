@@ -113,35 +113,35 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-0376"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-0376"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-12379"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-12379"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-3303"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-3303"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-1042"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-1042"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-1212"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-1212"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-9870"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-9870"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-0516"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-0516"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-1198"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-1198"
         }
     ],
     "schema_version": "1.7.0",

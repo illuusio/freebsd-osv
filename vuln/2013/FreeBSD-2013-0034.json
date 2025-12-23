@@ -91,19 +91,19 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-1664"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-1664"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-1665"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-1665"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-0305"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-0305"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-0306"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-0306"
         },
         {
             "type": "ADVISORY",

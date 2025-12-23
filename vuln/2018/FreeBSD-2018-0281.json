@@ -89,87 +89,87 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19494"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19494"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19493"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19493"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19495"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19495"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19496"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19496"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19577"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19577"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19573"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19573"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19570"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19570"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19572"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19572"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19576"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19576"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19575"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19575"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19569"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19569"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19585"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19585"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19574"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19574"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19571"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19571"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19580"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19580"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19583"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19583"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19582"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19582"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19581"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19581"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19584"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19584"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19579"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19579"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-19578"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-19578"
         }
     ],
     "schema_version": "1.7.0",

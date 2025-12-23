@@ -66,11 +66,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-22185"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-22185"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-22186"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-22186"
         }
     ],
     "schema_version": "1.7.0",

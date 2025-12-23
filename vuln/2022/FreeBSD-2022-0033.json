@@ -55,15 +55,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-23806"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-23806"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-23772"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-23772"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-23773"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-23773"
         }
     ],
     "schema_version": "1.7.0",

@@ -174,63 +174,63 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2762"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2762"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2763"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2763"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2764"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2764"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2765"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2765"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2766"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2766"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2767"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2767"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2768"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2768"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2769"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2769"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2770"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2770"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2760"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2760"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-3131"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-3131"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-3166"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-3166"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-3167"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-3167"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-3168"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-3168"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-3169"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-3169"
         },
         {
             "type": "WEB",

@@ -52,15 +52,15 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-1212"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-1212"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2018-1213"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-1213"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-1109"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-1109"
         },
         {
             "type": "ADVISORY",

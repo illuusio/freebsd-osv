@@ -139,11 +139,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-23214"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-23214"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-23222"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-23222"
         }
     ],
     "schema_version": "1.7.0",

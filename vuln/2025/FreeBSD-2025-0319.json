@@ -82,7 +82,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-10527"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-10527"
         },
         {
             "type": "ADVISORY",
@@ -90,7 +90,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-10528"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-10528"
         },
         {
             "type": "ADVISORY",

@@ -70,74 +70,38 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-13020"
-        },
-        {
-            "type": "WEB",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13020"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-13019"
-        },
-        {
-            "type": "WEB",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13019"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-13018"
-        },
-        {
-            "type": "WEB",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13018"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-13017"
-        },
-        {
-            "type": "WEB",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13017"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-13016"
-        },
-        {
-            "type": "WEB",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13016"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-13015"
-        },
-        {
-            "type": "WEB",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13015"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-13014"
-        },
-        {
-            "type": "WEB",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13014"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-13013"
-        },
-        {
-            "type": "WEB",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13013"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-13012"
-        },
-        {
-            "type": "WEB",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13012"
         }
     ],

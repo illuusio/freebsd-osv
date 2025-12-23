@@ -64,15 +64,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0825"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0825"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0826"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0826"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0827"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0827"
         }
     ],
     "schema_version": "1.7.0",

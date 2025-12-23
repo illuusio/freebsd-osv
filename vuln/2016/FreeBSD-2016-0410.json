@@ -43,7 +43,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9015"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9015"
         }
     ],
     "schema_version": "1.7.0",

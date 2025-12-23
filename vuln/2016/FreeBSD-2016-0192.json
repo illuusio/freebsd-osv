@@ -131,47 +131,47 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-7704"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-7704"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-8138"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-8138"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1547"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1547"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1548"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1548"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1549"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1549"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1550"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1550"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1551"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1551"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2516"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2516"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2517"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2517"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2518"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2518"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-2519"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2519"
         }
     ],
     "schema_version": "1.7.0",

@@ -121,15 +121,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-8713"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-8713"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-8714"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-8714"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-8715"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-8715"
         }
     ],
     "schema_version": "1.7.0",

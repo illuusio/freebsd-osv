@@ -139,11 +139,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-43331"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-43331"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-43332"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-43332"
         },
         {
             "type": "WEB",

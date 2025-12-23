@@ -44,11 +44,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0385"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0385"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1274"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1274"
         },
         {
             "type": "WEB",

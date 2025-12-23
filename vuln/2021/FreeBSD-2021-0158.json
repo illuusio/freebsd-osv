@@ -43,7 +43,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-33564"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-33564"
         },
         {
             "type": "WEB",
@@ -52,10 +52,6 @@
         {
             "type": "WEB",
             "url": "https://zxsecurity.co.nz/research/argunment-injection-ruby-dragonfly/"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-33564"
         }
     ],
     "schema_version": "1.7.0",

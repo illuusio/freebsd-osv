@@ -49,11 +49,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-4259"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-4259"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-4260"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-4260"
         },
         {
             "type": "WEB",

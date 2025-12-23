@@ -39,19 +39,19 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-4188"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-4188"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-4189"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-4189"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-4190"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-4190"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-5577"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-5577"
         },
         {
             "type": "WEB",

@@ -174,7 +174,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-31176"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-31176"
         },
         {
             "type": "WEB",

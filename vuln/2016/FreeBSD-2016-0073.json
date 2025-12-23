@@ -57,15 +57,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1498"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1498"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1499"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1499"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1500"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1500"
         }
     ],
     "schema_version": "1.7.0",

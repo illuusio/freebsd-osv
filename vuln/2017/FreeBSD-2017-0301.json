@@ -73,11 +73,11 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-1307"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-1307"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-1308"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-1308"
         },
         {
             "type": "ADVISORY",

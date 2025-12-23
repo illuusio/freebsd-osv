@@ -69,35 +69,35 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-0941"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0941"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-0927"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0927"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-0928"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0928"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-0929"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0929"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-0930"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0930"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-0931"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0931"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-0932"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0932"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-0933"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0933"
         }
     ],
     "schema_version": "1.7.0",

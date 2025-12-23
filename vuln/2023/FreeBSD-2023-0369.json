@@ -63,7 +63,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-6508"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6508"
         },
         {
             "type": "ADVISORY",
@@ -71,7 +71,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-7024"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-7024"
         },
         {
             "type": "ADVISORY",

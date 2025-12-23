@@ -46,19 +46,19 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-16641"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-16641"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-16660"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-16660"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-16661"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-16661"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2017-16785"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-16785"
         },
         {
             "type": "WEB",

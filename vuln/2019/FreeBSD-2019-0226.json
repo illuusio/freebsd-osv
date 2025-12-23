@@ -96,19 +96,19 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-15845"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-15845"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-16201"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-16201"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-16254"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-16254"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2019-16255"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2019-16255"
         }
     ],
     "schema_version": "1.7.0",

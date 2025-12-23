@@ -48,27 +48,27 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-49933"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-49933"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-49934"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-49934"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-49935"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-49935"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-49936"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-49936"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-49937"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-49937"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-49938"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-49938"
         }
     ],
     "schema_version": "1.7.0",

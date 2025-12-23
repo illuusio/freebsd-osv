@@ -323,55 +323,55 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2006-6077"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2006-6077"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0008"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0008"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0009"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0009"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0775"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0775"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0776"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0776"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0777"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0777"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0778"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0778"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0779"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0779"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0780"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0780"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0800"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0800"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0981"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0981"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0995"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0995"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-1092"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-1092"
         },
         {
             "type": "WEB",

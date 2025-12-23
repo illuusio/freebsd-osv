@@ -120,47 +120,47 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-7973"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-7973"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-7974"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-7974"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-7975"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-7975"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-7976"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-7976"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-7977"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-7977"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-7978"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-7978"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-7979"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-7979"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-8138"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-8138"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-8139"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-8139"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-8140"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-8140"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-8158"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-8158"
         }
     ],
     "schema_version": "1.7.0",

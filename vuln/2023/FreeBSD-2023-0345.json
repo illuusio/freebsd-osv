@@ -101,11 +101,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-5997"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5997"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2023-6112"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6112"
         }
     ],
     "schema_version": "1.7.0",

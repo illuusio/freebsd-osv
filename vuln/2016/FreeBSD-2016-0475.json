@@ -188,55 +188,55 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9894"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9894"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9899"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9899"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9895"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9895"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9896"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9896"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9897"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9897"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9898"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9898"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9900"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9900"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9904"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9904"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9901"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9901"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9902"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9902"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9903"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9903"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9080"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9080"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9893"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9893"
         },
         {
             "type": "WEB",

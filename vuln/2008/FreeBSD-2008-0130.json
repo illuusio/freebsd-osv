@@ -63,11 +63,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5032"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5032"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-5036"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5036"
         },
         {
             "type": "WEB",

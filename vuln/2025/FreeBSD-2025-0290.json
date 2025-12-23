@@ -49,11 +49,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-58060"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-58060"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-58364"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-58364"
         }
     ],
     "schema_version": "1.7.0",

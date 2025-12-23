@@ -63,11 +63,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-32462"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-32462"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-32463"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-32463"
         },
         {
             "type": "WEB",

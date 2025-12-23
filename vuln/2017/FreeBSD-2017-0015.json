@@ -48,15 +48,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-7148"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-7148"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-7146"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-7146"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-9119"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-9119"
         },
         {
             "type": "REPORT",

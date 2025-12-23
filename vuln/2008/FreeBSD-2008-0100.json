@@ -81,19 +81,19 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-2315"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-2315"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-2316"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-2316"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-3142"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-3142"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2008-3144"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-3144"
         },
         {
             "type": "WEB",

@@ -210,131 +210,131 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-1956"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-1956"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-1970"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-1970"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-1971"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-1971"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-1972"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-1972"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-1973"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-1973"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-1974"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-1974"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-1975"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-1975"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-1976"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-1976"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3956"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3956"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3957"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3957"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3958"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3958"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3959"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3959"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3960"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3960"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3961"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3961"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3962"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3962"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3963"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3963"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3964"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3964"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3965"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3965"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3966"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3966"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3967"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3967"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3968"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3968"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3969"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3969"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3970"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3970"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3971"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3971"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3972"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3972"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3973"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3973"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3974"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3974"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3975"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3975"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3976"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3976"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3978"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3978"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3979"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3979"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-3980"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-3980"
         },
         {
             "type": "WEB",

@@ -671,31 +671,31 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0905"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0905"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0906"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0906"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0907"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0907"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0908"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0908"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0909"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0909"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0910"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0910"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-0988"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-0988"
         },
         {
             "type": "WEB",

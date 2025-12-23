@@ -123,7 +123,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-5343"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-5343"
         },
         {
             "type": "WEB",
@@ -131,7 +131,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-5259"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-5259"
         },
         {
             "type": "WEB",

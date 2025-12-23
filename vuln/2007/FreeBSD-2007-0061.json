@@ -42,31 +42,31 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-3472"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-3472"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-3473"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-3473"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-3474"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-3474"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-3475"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-3475"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-3476"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-3476"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-3477"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-3477"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2007-3478"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2007-3478"
         },
         {
             "type": "WEB",

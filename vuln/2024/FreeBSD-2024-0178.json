@@ -64,15 +64,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-6990"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-6990"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-7255"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-7255"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-7256"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-7256"
         }
     ],
     "schema_version": "1.7.0",

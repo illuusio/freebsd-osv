@@ -81,15 +81,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-0176"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-0176"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-0365"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-0365"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-0367"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-0367"
         },
         {
             "type": "ADVISORY",

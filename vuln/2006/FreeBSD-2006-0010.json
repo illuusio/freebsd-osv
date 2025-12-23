@@ -90,7 +90,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CAN-2005-3011"
+            "url": "https://cveawg.mitre.org/api/cve/CAN-2005-3011"
         },
         {
             "type": "ADVISORY",

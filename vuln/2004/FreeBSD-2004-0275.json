@@ -272,11 +272,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-1019"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-1019"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-1065"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-1065"
         },
         {
             "type": "WEB",

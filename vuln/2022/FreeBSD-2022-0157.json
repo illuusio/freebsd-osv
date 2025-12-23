@@ -152,11 +152,7 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-34305"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-34305"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-34305"
         }
     ],
     "schema_version": "1.7.0",

@@ -46,19 +46,19 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-1030"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-1030"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-1031"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-1031"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-1032"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-1032"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2004-1033"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2004-1033"
         }
     ],
     "schema_version": "1.7.0",

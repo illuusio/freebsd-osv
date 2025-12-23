@@ -91,19 +91,19 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1373"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1373"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1374"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1374"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1375"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1375"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1376"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1376"
         },
         {
             "type": "WEB",

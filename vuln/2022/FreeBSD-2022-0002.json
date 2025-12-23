@@ -45,15 +45,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-43172"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-43172"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-43173"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-43173"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2021-43174"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-43174"
         }
     ],
     "schema_version": "1.7.0",

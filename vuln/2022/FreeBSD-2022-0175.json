@@ -49,31 +49,31 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-3195"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-3195"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-3196"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-3196"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-3197"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-3197"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-3198"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-3198"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-3199"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-3199"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-3200"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-3200"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2022-3201"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-3201"
         }
     ],
     "schema_version": "1.7.0",

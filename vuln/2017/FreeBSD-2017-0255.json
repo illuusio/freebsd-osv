@@ -38,15 +38,15 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-0556"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-0556"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-0557"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-0557"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-2782"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-2782"
         }
     ],
     "schema_version": "1.7.0",

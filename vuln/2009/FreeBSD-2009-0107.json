@@ -45,15 +45,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1938"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1938"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1939"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1939"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-1940"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-1940"
         },
         {
             "type": "WEB",

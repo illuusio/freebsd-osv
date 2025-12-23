@@ -84,171 +84,171 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3892"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3892"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3893"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3893"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3895"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3895"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3929"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3929"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3936"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3936"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3937"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3937"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3940"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3940"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3945"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3945"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3947"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3947"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3951"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3951"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-3952"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-3952"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-4031"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-4031"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-4351"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-4351"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-4352"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-4352"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-4353"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-4353"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-4364"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-4364"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2011-4579"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-4579"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0848"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0848"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0850"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0850"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0851"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0851"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0852"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0852"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0853"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0853"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0858"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0858"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-0947"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0947"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2772"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2772"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2775"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2775"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2777"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2777"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2779"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2779"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2783"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2783"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2784"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2784"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2786"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2786"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2787"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2787"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2788"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2788"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2790"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2790"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2791"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2791"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2793"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2793"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2794"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2794"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2798"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2798"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2800"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2800"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2801"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2801"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-2803"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-2803"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2012-5144"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-5144"
         }
     ],
     "schema_version": "1.7.0",

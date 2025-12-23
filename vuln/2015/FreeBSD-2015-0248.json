@@ -91,47 +91,47 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-6727"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-6727"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2013-7444"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-7444"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-6728"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-6728"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-6729"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-6729"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-6730"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-6730"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-6731"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-6731"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-6733"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-6733"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-6734"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-6734"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-6735"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-6735"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-6736"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-6736"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2015-6737"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-6737"
         },
         {
             "type": "WEB",

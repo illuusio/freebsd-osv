@@ -45,15 +45,15 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-4207"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-4207"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-4208"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-4208"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-4209"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-4209"
         },
         {
             "type": "WEB",

@@ -63,11 +63,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0914"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0914"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2009-0915"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2009-0915"
         },
         {
             "type": "WEB",

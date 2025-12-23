@@ -83,7 +83,7 @@
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2014-8517"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2014-8517"
         },
         {
             "type": "ADVISORY",

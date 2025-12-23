@@ -75,55 +75,55 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1762"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1762"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1833"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1833"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1834"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1834"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1835"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1835"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1836"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1836"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1837"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1837"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1838"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1838"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1839"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1839"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1840"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1840"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-3627"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-3627"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-3705"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-3705"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-4449"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-4449"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-4483"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-4483"
         }
     ],
     "schema_version": "1.7.0",

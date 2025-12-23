@@ -86,27 +86,27 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-0209"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-0209"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2188"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2188"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2213"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2213"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2214"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2214"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2215"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2215"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2010-2216"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2216"
         }
     ],
     "schema_version": "1.7.0",

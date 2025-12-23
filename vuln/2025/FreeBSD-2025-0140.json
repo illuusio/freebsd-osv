@@ -49,11 +49,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2024-55549"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-55549"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2025-24855"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-24855"
         },
         {
             "type": "ADVISORY",

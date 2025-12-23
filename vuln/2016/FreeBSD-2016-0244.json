@@ -48,11 +48,11 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1683"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1683"
         },
         {
             "type": "ADVISORY",
-            "url": "https://api.osv.dev/v1/vulns/CVE-2016-1684"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1684"
         }
     ],
     "schema_version": "1.7.0",
