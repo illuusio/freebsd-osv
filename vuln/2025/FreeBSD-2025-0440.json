@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "forgejo"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "13.0.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/13.0.2.md"
+        ],
+        "discovery": "2025-12-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-68937"
+            ]
+        },
+        "vid": "963f4e9d-e4d5-11f0-984f-b42e991fc52e"
+    },
+    "details": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/13.0.2.md\nreports:\n\n> Forgejo before 13.0.2 allows attackers to write to unintended files,\n> and possibly obtain server shell access, because of mishandling of\n> out-of-repository symlink destinations for template repositories. This\n> is also fixed for 11 LTS in 11.0.7 and later.\n",
+    "id": "FreeBSD-2025-0440",
+    "modified": "2025-12-29T00:00:00Z",
+    "published": "2025-12-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://codeberg.org/forgejo/forgejo/src/branch/forgejo/release-notes-published/13.0.2.md"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-68937"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Forgejo -- Symbolic Link (Symlink) Following"
+}

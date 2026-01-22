@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mailpit"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/axllent/mailpit/security/advisories/GHSA-8v65-47jx-7mfr"
+        ],
+        "discovery": "2026-01-06T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-21859"
+            ]
+        },
+        "vid": "df33c83b-eb4f-11f0-a46f-0897988a1c07"
+    },
+    "details": "Mailpit author reports:\n\n> A Server-Side Request Forgery (SSRF) vulnerability exists in\n> Mailpit\\'s /proxy endpoint that allows attackers to make requests to\n> internal network resources.\n>\n> The /proxy endpoint allows requests to internal network resources.\n> While it validates http:// and https:// schemes, it does not block\n> internal IP addresses, allowing attackers to access internal services\n> and APIs.\n",
+    "id": "FreeBSD-2026-0003",
+    "modified": "2026-01-06T00:00:00Z",
+    "published": "2026-01-06T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-8v65-47jx-7mfr"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-21859"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "mail/mailpit -- Server-Side Request Forgery"
+}

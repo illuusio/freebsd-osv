@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libtasn1"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.21.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.openwall.com/lists/oss-security/2026/01/08/5"
+        ],
+        "discovery": "2026-01-07T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-13151"
+            ]
+        },
+        "vid": "7e63d0dd-eeff-11f0-b135-c01803b56cc4"
+    },
+    "details": "oss-security@ list reports:\n\n> Stack-based buffer overflow in libtasn1 version: v4.20.0. The function\n> fails to validate the size of input data resulting in a buffer\n> overflow in asn1_expend_octet_string.\n",
+    "id": "FreeBSD-2026-0009",
+    "modified": "2026-01-11T00:00:00Z",
+    "published": "2026-01-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.openwall.com/lists/oss-security/2026/01/08/5"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13151"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-13151"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "libtasn1 -- Stack-based buffer overflow"
+}

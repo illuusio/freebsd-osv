@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "8.2.3"
+                            "fixed": "8.0.17"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -53,7 +53,7 @@
     },
     "details": "https://jira.mongodb.org/browse/SERVER-115508 reports:\n\n> Mismatched length fields in Zlib compressed protocol headers may allow\n> a read of uninitialized heap memory by an unauthenticated client.\n",
     "id": "FreeBSD-2025-0438",
-    "modified": "2025-12-22T00:00:00Z",
+    "modified": "2025-12-28T00:00:00Z",
     "published": "2025-12-22T00:00:00Z",
     "references": [
         {

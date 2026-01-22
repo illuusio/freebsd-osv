@@ -1,0 +1,102 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "147.0.0,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox-esr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "140.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "147.0.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-01-13T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-0886",
+                "CVE-2026-0882",
+                "CVE-2026-0880",
+                "CVE-2026-0879",
+                "CVE-2026-0877"
+            ]
+        },
+        "vid": "06061c59-f212-11f0-9ca3-b42e991fc52e"
+    },
+    "details": "Incorrect boundary conditions in the Graphics component.\n\nUse-after-free in the IPC component.\n\nSandbox escape due to integer overflow in the Graphics component.\n\nSandbox escape due to incorrect boundary conditions in the Graphics\ncomponent.\n\nMitigation bypass in the DOM: Security component.\n",
+    "id": "FreeBSD-2026-0012",
+    "modified": "2026-01-15T00:00:00Z",
+    "published": "2026-01-15T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0886"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0882"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0880"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0879"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0877"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Mozilla -- multiple vulnerabilities"
+}

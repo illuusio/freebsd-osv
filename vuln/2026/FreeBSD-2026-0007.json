@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mailpit"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/axllent/mailpit/security/advisories/GHSA-524m-q5m7-79mm"
+        ],
+        "discovery": "2026-01-10T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-22689"
+            ]
+        },
+        "vid": "d822839e-ee4f-11f0-b53e-0897988a1c07"
+    },
+    "details": "Mailpit author reports:\n\n> The Mailpit WebSocket server is configured to accept connections from\n> any origin. This lack of Origin header validation introduces a\n> Cross-Site WebSocket Hijacking (CSWSH) vulnerability.\n>\n> An attacker can host a malicious website that, when visited by a\n> developer running Mailpit locally, establishes a WebSocket connection\n> to the victim\\'s Mailpit instance (default ws://localhost:8025). This\n> allows the attacker to intercept sensitive data such as email\n> contents, headers, and server statistics in real-time.\n",
+    "id": "FreeBSD-2026-0007",
+    "modified": "2026-01-10T00:00:00Z",
+    "published": "2026-01-10T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-524m-q5m7-79mm"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22689"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "mail/mailpit -- Cross-Site WebSocket Hijacking"
+}

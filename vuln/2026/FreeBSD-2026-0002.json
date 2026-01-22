@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "net-snmp"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.9.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/net-snmp/net-snmp/security/advisories/GHSA-4389-rwqf-q9gq"
+        ],
+        "discovery": "2025-12-23T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-68615"
+            ]
+        },
+        "vid": "e2cd20fd-eb10-11f0-a1c0-0050569f0b83"
+    },
+    "details": "net-snmp development team reports:\n\n> A specially crafted packet to an net-snmp snmptrapd daemon can cause a\n> buffer overflow and the daemon to crash.\n",
+    "id": "FreeBSD-2026-0002",
+    "modified": "2026-01-06T00:00:00Z",
+    "published": "2026-01-06T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/net-snmp/net-snmp/security/advisories/GHSA-4389-rwqf-q9gq"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-68615"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "net-mgmt/net-snmp -- Remote Code Execution (snmptrapd)"
+}

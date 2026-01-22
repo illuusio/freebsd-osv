@@ -1,0 +1,115 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "144.0.7559.59"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "144.0.7559.59"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop_13.html"
+        ],
+        "discovery": "2026-01-13T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-0899",
+                "CVE-2026-0900",
+                "CVE-2026-0901",
+                "CVE-2026-0902",
+                "CVE-2026-0903",
+                "CVE-2026-0904",
+                "CVE-2026-0905",
+                "CVE-2026-0906",
+                "CVE-2026-0907",
+                "CVE-2026-0908"
+            ]
+        },
+        "vid": "6f76a1db-f124-11f0-85c5-a8a1599412c6"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 10 security fixes:\n>\n> - \\[458914193\\] High CVE-2026-0899: Out of bounds memory access in V8.\n>   Reported by \\@p1nky4745 on 2025-11-08\n> - \\[465730465\\] High CVE-2026-0900: Inappropriate implementation in\n>   V8. Reported by Google on 2025-12-03\n> - \\[40057499\\] High CVE-2026-0901: Inappropriate implementation in\n>   Blink. Reported by Irvan Kurniawan (sourc7) on 2021-10-04\n> - \\[469143679\\] Medium CVE-2026-0902: Inappropriate implementation in\n>   V8. Reported by 303f06e3 on 2025-12-16\n> - \\[444803530\\] Medium CVE-2026-0903: Insufficient validation of\n>   untrusted input in Downloads. Reported by Azur on 2025-09-13\n> - \\[452209495\\] Medium CVE-2026-0904: Incorrect security UI in Digital\n>   Credentials. Reported by Hafiizh on 2025-10-15\n> - \\[465466773\\] Medium CVE-2026-0905: Insufficient policy enforcement\n>   in Network. Reported by Google on 2025-12-02\n> - \\[467448811\\] Low CVE-2026-0906: Incorrect security UI. Reported by\n>   Khalil Zhani on 2025-12-10\n> - \\[444653104\\] Low CVE-2026-0907: Incorrect security UI in Split\n>   View. Reported by Hafiizh on 2025-09-12\n> - \\[452209503\\] Low CVE-2026-0908: Use after free in ANGLE. Reported\n>   by Glitchers BoB 14th. on 2025-10-15\n",
+    "id": "FreeBSD-2026-0011",
+    "modified": "2026-01-15T00:00:00Z",
+    "published": "2026-01-15T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop_13.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0899"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0900"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0901"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0902"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0903"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0904"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0905"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0906"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0907"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0908"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- multiple security fixes"
+}

@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "20251107"
+                            "fixed": "20251230"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "20251107"
+                            "fixed": "20251230"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "20251107"
+                            "fixed": "20251230"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "20251107"
+                            "fixed": "20251230"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "20251107"
+                            "fixed": "20251230"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -107,7 +107,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "20251107"
+                            "fixed": "20251230"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -129,7 +129,7 @@
     },
     "details": "Pieter Marsman reports:\n\n> pdfminer.six will execute arbitrary code from a malicious pickle file\n> if provided with a malicious PDF file. The CMapDB.\\_load_data()\n> function in pdfminer.six uses pickle.loads() to deserialize pickle\n> files. These pickle files are supposed to be part of the pdfminer.six\n> distribution stored in the cmap/ directory, but a malicious PDF can\n> specify an alternative directory and filename as long as the filename\n> ends in .pickle.gz. A malicious, zipped pickle file can then contain\n> code which will automatically execute when the PDF is processed.\n",
     "id": "FreeBSD-2025-0388",
-    "modified": "2025-11-17T00:00:00Z",
+    "modified": "2025-12-30T00:00:00Z",
     "published": "2025-11-17T00:00:00Z",
     "references": [
         {

@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "fluidsynth"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.5.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/FluidSynth/fluidsynth/security/advisories/GHSA-ffw2-xvvp-39ch"
+        ],
+        "discovery": "2025-12-23T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-68617"
+            ]
+        },
+        "vid": "bf854a37-e180-11f0-ac0c-5404a68ad561"
+    },
+    "details": "The fluidsynth authors report:\n\n> A race condition during unloading of a DLS file can trigger a\n> heap-based use-after-free. A concurrently running thread may be\n> pending to unload a DLS file, leading to use of freed memory, if the\n> synthesizer is being concurrently destroyed, or samples of the\n> (unloaded) DLS file are concurrently used to synthesize audio.\n> Realistically, both scenarios will result in a denial of service. In\n> worst cases, it may result in arbitrary code execution in the context\n> of an application using FluidSynth.\n",
+    "id": "FreeBSD-2025-0439",
+    "modified": "2025-12-25T00:00:00Z",
+    "published": "2025-12-25T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/FluidSynth/fluidsynth/security/advisories/GHSA-ffw2-xvvp-39ch"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-68617"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2025-68617"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "fluidsynth -- Use after free when using DLS files"
+}

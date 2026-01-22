@@ -1,0 +1,134 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ce"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "18.8.0"
+                        },
+                        {
+                            "fixed": "18.8.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.7.0"
+                        },
+                        {
+                            "fixed": "18.7.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "11.9.0"
+                        },
+                        {
+                            "fixed": "18.6.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "18.8.0"
+                        },
+                        {
+                            "fixed": "18.8.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.7.0"
+                        },
+                        {
+                            "fixed": "18.7.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "11.9.0"
+                        },
+                        {
+                            "fixed": "18.6.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://about.gitlab.com/releases/2026/01/21/patch-release-gitlab-18-8-2-released/"
+        ],
+        "discovery": "2026-01-21T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-13927",
+                "CVE-2025-13928",
+                "CVE-2026-0723",
+                "CVE-2025-13335",
+                "CVE-2026-1102"
+            ]
+        },
+        "vid": "61dc7f67-f6e5-11f0-b051-2cf05da270f3"
+    },
+    "details": "Gitlab reports:\n\n> Denial of Service issue in Jira Connect integration impacts GitLab\n> CE/EE\n>\n> Incorrect Authorization issue in Releases API impacts GitLab CE/EE\n>\n> Unchecked Return Value issue in authentication services impacts GitLab\n> CE/EE\n>\n> Infinite Loop issue in Wiki redirects impacts GitLab CE/EE\n>\n> Denial of Service issue in API endpoint impacts GitLab CE/EE\n",
+    "id": "FreeBSD-2026-0017",
+    "modified": "2026-01-21T00:00:00Z",
+    "published": "2026-01-21T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://about.gitlab.com/releases/2026/01/21/patch-release-gitlab-18-8-2-released/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13927"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13928"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0723"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13335"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1102"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Gitlab -- vulnerabilities"
+}

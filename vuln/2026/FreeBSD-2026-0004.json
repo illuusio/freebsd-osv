@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libsodium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.0.21"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://00f.net/2025/12/30/libsodium-vulnerability/"
+        ],
+        "discovery": "2025-12-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-69277"
+            ]
+        },
+        "vid": "583b63f5-ebae-11f0-939f-47e3830276dd"
+    },
+    "details": "Libsodium maintainer reports:\n\n> The function crypto_core_ed25519_is_valid_point(), a low-level\n> function used to check if a given elliptic curve point is valid, was\n> supposed to reject points that aren\\'t in the main cryptographic\n> group, but some points were slipping through.\n",
+    "id": "FreeBSD-2026-0004",
+    "modified": "2026-01-07T00:00:00Z",
+    "published": "2026-01-07T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://00f.net/2025/12/30/libsodium-vulnerability/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-69277"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "security/libsodium -- crypto_core_ed25519_is_valid_point mishandles checks for whether an elliptic curve point is valid"
+}

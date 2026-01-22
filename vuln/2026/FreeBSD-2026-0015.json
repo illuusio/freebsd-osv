@@ -1,0 +1,59 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "oauth2-proxy"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "7.14.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-01-16T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-61729",
+                "CVE-2025-61727",
+                "CVE-2025-47914",
+                "CVE-2025-58181"
+            ]
+        },
+        "vid": "fb561db9-0fc1-4d92-81a2-ee01839c9119"
+    },
+    "details": "Within HostnameError.Error(), when constructing an error string, there\nis no limit to the number of hosts that will be printed out.\nFurthermore, the error string is constructed by repeated string\nconcatenation, leading to quadratic runtime. Therefore, a certificate\nprovided by a malicious actor can result in excessive resource\nconsumption.\n\nA flaw was found in the crypto/x509 package in the Go standard library.\nThis vulnerability allows a certificate validation bypass via an\nexcluded subdomain constraint in a certificated chain as it does not\nrestrict the usage of wildcard SANs in the leaf certificate.\n\nSSH Agent servers do not validate the size of messages when processing\nnew identity requests, which may cause the program to panic if the\nmessage is malformed due to an out of bounds read.\n\nSSH servers parsing GSSAPI authentication requests do not validate the\nnumber of mechanisms specified in the request, allowing an attacker to\ncause unbounded memory consumption.\n",
+    "id": "FreeBSD-2026-0015",
+    "modified": "2026-01-18T00:00:00Z",
+    "published": "2026-01-18T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-61729"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-61727"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-47914"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-58181"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "oauth2-proxy -- multiple vulnerabilities"
+}

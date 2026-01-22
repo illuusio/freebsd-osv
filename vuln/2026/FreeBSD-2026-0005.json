@@ -1,0 +1,70 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "143.0.7499.192"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "143.0.7499.192"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop.html"
+        ],
+        "discovery": "2026-01-06T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-0628"
+            ]
+        },
+        "vid": "8826fb1c-ebd8-11f0-a15a-a8a1599412c6"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 1 security fix:\n>\n> - \\[463155954\\] High CVE-2026-0628: Insufficient policy enforcement in\n>   WebView tag. Reported by Gal Weizman on 2025-11-23\n",
+    "id": "FreeBSD-2026-0005",
+    "modified": "2026-01-07T00:00:00Z",
+    "published": "2026-01-07T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0628"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- multiple security fixes"
+}
