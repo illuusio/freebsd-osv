@@ -1,0 +1,166 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "postgresql14-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "14.21"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "postgresql15-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "15.16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "postgresql16-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "16.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "postgresql17-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "17.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "postgresql18-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "postgresql14-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "14.21"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.postgresql.org/about/news/postgresql-182-178-1612-1516-and-1421-released-3235/"
+        ],
+        "discovery": "2026-02-12T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-2003",
+                "CVE-2026-2004",
+                "CVE-2026-2005",
+                "CVE-2026-2006",
+                "CVE-2026-2007"
+            ]
+        },
+        "vid": "e3afc190-0821-11f1-a857-6cc21735f730"
+    },
+    "details": "The PostgreSQL project reports:\n\n> Improper validation of type oidvector in PostgreSQL allows a database\n> user to disclose a few bytes of server memory. We have not ruled out\n> viability of attacks that arrange for presence of confidential\n> information in disclosed bytes, but they seem unlikely.\n>\n> Missing validation of type of input in PostgreSQL intarray extension\n> selectivity estimator function allows an object creator to execute\n> arbitrary code as the operating system user running the database.\n>\n> Heap buffer overflow in PostgreSQL pgcrypto allows a ciphertext\n> provider to execute arbitrary code as the operating system user\n> running the database.\n>\n> Missing validation of multibyte character length in PostgreSQL text\n> manipulation allows a database user to issue crafted queries that\n> achieve a buffer overrun. That suffices to execute arbitrary code as\n> the operating system user running the database.\n>\n> Heap buffer overflow in PostgreSQL pg_trgm allows a database user to\n> achieve unknown impacts via a crafted input string. The attacker has\n> limited control over the byte patterns to be written, but we have not\n> ruled out the viability of attacks that lead to privilege escalation.\n",
+    "id": "FreeBSD-2026-0038",
+    "modified": "2026-02-12T00:00:00Z",
+    "published": "2026-02-12T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.postgresql.org/about/news/postgresql-182-178-1612-1516-and-1421-released-3235/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2003"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2004"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2005"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2006"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2007"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "PostgreSQL -- Multiple vulnerabilities"
+}

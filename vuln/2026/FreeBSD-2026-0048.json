@@ -1,0 +1,57 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openexr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.3.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "3.4.0"
+                        },
+                        {
+                            "fixed": "3.4.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.5"
+        ],
+        "discovery": "2026-02-16T00:00:00Z",
+        "vid": "716d25a6-0fdc-11f1-bfdf-ff9355aecb00"
+    },
+    "details": "Cary Phillips reports:\n\n> \\[openexr\\] v3.4.5 \\[\\...\\] fixes an incorrect size check in\n> istream_nonparallel_read that could lead to a buffer overflow on\n> invalid input data.\n",
+    "id": "FreeBSD-2026-0048",
+    "modified": "2026-02-22T00:00:00Z",
+    "published": "2026-02-22T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.5"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/commit/6bb2ddf1068573d073edf81270a015b38cc05cef"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "openexr -- buffer overflow in istream_nonparallel_read on invalid input data"
+}

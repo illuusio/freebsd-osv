@@ -1,0 +1,56 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "147.0.2,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=2007302"
+        ],
+        "discovery": "2026-01-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-24868",
+                "CVE-2026-24869"
+            ]
+        },
+        "vid": "9dac4f05-fc65-11f0-96db-b42e991fc52e"
+    },
+    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2007302 reports:\n\n> Mitigation bypass in the Privacy: Anti-Tracking component.\n>\n> Use-after-free in the Layout: Scrolling and Overflow component.\n",
+    "id": "FreeBSD-2026-0023",
+    "modified": "2026-01-28T00:00:00Z",
+    "published": "2026-01-28T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2007302"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-24868"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-24869"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Firefox -- Multiple vulnerabilities"
+}

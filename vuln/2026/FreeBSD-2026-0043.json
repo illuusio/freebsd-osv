@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "png"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.6.55"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/pnggroup/libpng/security/advisories/GHSA-g8hp-mq4h-rqm3"
+        ],
+        "discovery": "2026-02-10T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-25646"
+            ]
+        },
+        "vid": "f9cb72e4-0b52-11f1-8e75-b42e991fc52e"
+    },
+    "details": "https://github.com/pnggroup/libpng/security/advisories/GHSA-g8hp-mq4h-rqm3\nreports:\n\n> LIBPNG is a reference library for use in applications that read,\n> create, and manipulate PNG (Portable Network Graphics) raster image\n> files. Prior to 1.6.55, an out-of-bounds read vulnerability exists in\n> the png_set_quantize() API function. When the function is called with\n> no histogram and the number of colors in the palette is more than\n> twice the maximum supported by the user\\'s display, certain palettes\n> will cause the function to enter into an infinite loop that reads past\n> the end of an internal heap-allocated buffer. The images that trigger\n> this vulnerability are valid per the PNG specification. This\n> vulnerability is fixed in 1.6.55.\n",
+    "id": "FreeBSD-2026-0043",
+    "modified": "2026-02-16T00:00:00Z",
+    "published": "2026-02-16T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/pnggroup/libpng/security/advisories/GHSA-g8hp-mq4h-rqm3"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-25646"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "png -- CWE-122: Heap-based Buffer Overflow"
+}

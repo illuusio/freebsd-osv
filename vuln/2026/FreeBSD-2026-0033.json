@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-02-10T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-2261"
+            ],
+            "freebsdsa": [
+                "SA-26:03.blocklistd"
+            ]
+        },
+        "vid": "8d8012e5-0705-11f1-8148-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nDue to a programming error, blocklistd leaks a socket descriptor for\neach adverse event report it receives.\n\nOnce a certain number of leaked sockets is reached, blocklistd becomes\nunable to run the helper script: a child process is forked, but this\nchild dereferences a null pointer and crashes before it is able to exec\nthe helper. At this point, blocklistd still records adverse events but\nis unable to block new addresses or unblock addresses whose database\nentries have expired.\n\nOnce a second, much higher number of leaked sockets is reached,\nblocklistd becomes unable to receive new adverse event reports.\n\n# Impact:\n\nAn attacker may take advantage of this by triggering a large number of\nadverse events from sacrificial IP addresses to effectively disable\nblocklistd before launching an attack.\n\nEven in the absence of attacks or probes by would-be attackers, adverse\nevents will occur regularly in the course of normal operations, and\nblocklistd will gradually run out file descriptors and become\nineffective.\n\nThe accumulation of open sockets may have knock-on effects on other\nparts of the system, resulting in a general slowdown until blocklistd is\nrestarted.\n",
+    "id": "FreeBSD-2026-0033",
+    "modified": "2026-02-11T00:00:00Z",
+    "published": "2026-02-11T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2261"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:03.blocklistd.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- blocklistd(8) socket leak"
+}

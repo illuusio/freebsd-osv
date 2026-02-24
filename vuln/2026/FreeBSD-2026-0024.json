@@ -1,0 +1,70 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "144.0.7559.109"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "144.0.7559.109"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop_27.html"
+        ],
+        "discovery": "2026-01-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-1504"
+            ]
+        },
+        "vid": "409d70ab-fc23-11f0-85c5-a8a1599412c6"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 1 security fix:\n>\n> - \\[474435504\\] High CVE-2026-1504: Inappropriate implementation in\n>   Background Fetch API. Reported by Luan Herrera (@lbherrera\\_) on\n>   2026-01-09\n",
+    "id": "FreeBSD-2026-0024",
+    "modified": "2026-01-28T00:00:00Z",
+    "published": "2026-01-28T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop_27.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1504"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- security fix"
+}

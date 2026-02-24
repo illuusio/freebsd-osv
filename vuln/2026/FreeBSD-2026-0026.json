@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "xrdp"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.10.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-rwvg-gp87-gh6f"
+        ],
+        "discovery": "2025-12-06T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-68670"
+            ]
+        },
+        "vid": "232e16cc-fd83-11f0-981a-98b78501ef2a"
+    },
+    "details": "Denis Skvortsov, Security Researcher at Kaspersky reports:\n\n> xrdp before v0.10.5 contains an unauthenticated stack-based buffer\n> overflow vulnerability. The issue stems from improper bounds checking\n> when processing user domain information during the connection\n> sequence. If exploited, the vulnerability could allow remote attackers\n> to execute arbitrary code on the target system.\n",
+    "id": "FreeBSD-2026-0026",
+    "modified": "2026-01-27T00:00:00Z",
+    "published": "2026-01-27T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/neutrinolabs/xrdp/security/advisories/GHSA-rwvg-gp87-gh6f"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-68670"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2025-68670"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "xrdp -- remote code execution"
+}

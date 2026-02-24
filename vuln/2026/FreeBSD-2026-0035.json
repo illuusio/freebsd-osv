@@ -1,0 +1,71 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mongodb80"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.0.18"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://jira.mongodb.org/browse/SERVER-114126",
+            "https://jira.mongodb.org/browse/SERVER-102364",
+            "https://jira.mongodb.org/browse/SERVER-113532"
+        ],
+        "discovery": "2026-02-10T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-1850",
+                "CVE-2026-1849",
+                "CVE-2026-1847"
+            ]
+        },
+        "vid": "77e32b14-0800-11f1-8a6f-b42e991fc52e"
+    },
+    "details": "https://jira.mongodb.org/browse/SERVER-114126 reports:\n\n> Complex queries can cause excessive memory usage in MongoDB Query\n> Planner resulting in an Out-Of-Memory Crash.\n\nhttps://jira.mongodb.org/browse/SERVER-102364 reports:\n\n> MongoDB Server may experience an out-of-memory failure while\n> evaluating expressions that produce deeply nested documents. The issue\n> arises in recursive functions because the server does not periodically\n> check the depth of the expression.\n\nhttps://jira.mongodb.org/browse/SERVER-113532 reports:\n\n> Inserting certain large documents into a replica set could lead to\n> replica set secondaries not being able to fetch the oplog from the\n> primary. This could stall replication inside the replica set leading\n> to server crash.\n",
+    "id": "FreeBSD-2026-0035",
+    "modified": "2026-02-12T00:00:00Z",
+    "published": "2026-02-12T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://jira.mongodb.org/browse/SERVER-114126"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://jira.mongodb.org/browse/SERVER-102364"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://jira.mongodb.org/browse/SERVER-113532"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1850"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1849"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1847"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "MongoDB Server -- Multiple vulnerabilities"
+}

@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mongodb80"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.0.13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://jira.mongodb.org/browse/SERVER-99119"
+        ],
+        "discovery": "2026-02-10T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-25610"
+            ]
+        },
+        "vid": "7b5671f9-0800-11f1-8a6f-b42e991fc52e"
+    },
+    "details": "https://jira.mongodb.org/browse/SERVER-99119 reports:\n\n> An authorized user may trigger a server crash by running a \\$geoNear\n> pipeline with certain invalid index hints.\n",
+    "id": "FreeBSD-2026-0036",
+    "modified": "2026-02-12T00:00:00Z",
+    "published": "2026-02-12T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://jira.mongodb.org/browse/SERVER-99119"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-25610"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "MongoDB Server -- CWE-617 Reachable Assertion"
+}

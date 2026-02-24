@@ -1,0 +1,62 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "13.5"
+                        },
+                        {
+                            "fixed": "13.5_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-01-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-15547"
+            ],
+            "freebsdsa": [
+                "SA-26:02.jail"
+            ]
+        },
+        "vid": "90071333-fbe5-11f0-a13f-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nBy default, jailed processes cannot mount filesystems, including\nnullfs(4). However, the allow.mount.nullfs option enables mounting\nnullfs filesystems, subject to privilege checks.\n\nIf a privileged user within a jail is able to nullfs-mount directories,\na limitation of the kernel\\'s path lookup logic allows that user to\nescape the jail\\'s chroot, yielding access to the full filesystem of the\nhost or parent jail.\n\n# Impact:\n\nIn a jail configured to allow nullfs(4) mounts from within the jail, the\njailed root user can escape the jail\\'s filesystem root.\n",
+    "id": "FreeBSD-2026-0022",
+    "modified": "2026-01-28T00:00:00Z",
+    "published": "2026-01-28T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-15547"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:02.jail.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Jail escape by a privileged user via nullfs"
+}

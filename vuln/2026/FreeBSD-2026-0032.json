@@ -1,0 +1,75 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "144.0.7559.132"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "144.0.7559.132"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop.html"
+        ],
+        "discovery": "2026-02-03T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-1861",
+                "CVE-2026-1862"
+            ]
+        },
+        "vid": "9bc5a730-0585-11f1-85c5-a8a1599412c6"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 2 security fixes:\n>\n> - \\[478942410\\] High CVE-2026-1861: Heap buffer overflow in libvpx.\n>   Reported by Google on 2026-01-26\n> - \\[479726070\\] High CVE-2026-1862: Type Confusion in V8. Reported by\n>   Chaoyuan Peng (@ret2happy) on 2026-01-29\n",
+    "id": "FreeBSD-2026-0032",
+    "modified": "2026-02-09T00:00:00Z",
+    "published": "2026-02-09T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1861"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1862"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- multiple security fixes"
+}
