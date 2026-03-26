@@ -30,7 +30,7 @@ jobs:
       - name: Run 'apt update'
         run: apt update -qq
       - name: Install package 'lua5.4' 'jq'
-        run: apt install -y autoconf automake curl git jq liblua5.4-dev libtool lua5.4 make python3-lxml python3-pypandoc wget xz-utils
+        run: apt install -y autoconf automake curl git jq liblua5.4-dev libtool lua5.4 make python3-lxml python3-pypandoc wget xz-utils ca-certificates
       - name: Build libUCL (Universal configuration library parser)
         run: |
              wget https://github.com/vstakhov/libucl/archive/refs/tags/0.9.2.tar.gz
