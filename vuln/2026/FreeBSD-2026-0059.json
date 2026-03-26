@@ -1,0 +1,76 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "curl"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.18.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://curl.se/docs/vuln-8.17.0.html"
+        ],
+        "discovery": "2026-01-06T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-15224",
+                "CVE-2025-15079",
+                "CVE-2025-14819",
+                "CVE-2025-14524",
+                "CVE-2025-14017",
+                "CVE-2025-13034"
+            ]
+        },
+        "vid": "086d53fa-1d47-11f1-81da-8447094a420f"
+    },
+    "details": "The curl project reports:\n\n> Multiple vulnerabilities\n",
+    "id": "FreeBSD-2026-0059",
+    "modified": "2026-03-11T00:00:00Z",
+    "published": "2026-03-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://curl.se/docs/vuln-8.17.0.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-15224"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-15079"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14819"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14524"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14017"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13034"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "curl -- Multiple vulnerabilities"
+}

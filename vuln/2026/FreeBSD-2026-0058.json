@@ -1,0 +1,66 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "curl"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.19.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://curl.se/docs/vuln-8.18.0.html"
+        ],
+        "discovery": "2026-03-11T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-3805",
+                "CVE-2026-3784",
+                "CVE-2026-3783",
+                "CVE-2026-1965"
+            ]
+        },
+        "vid": "1933737d-1d46-11f1-81da-8447094a420f"
+    },
+    "details": "The curl project reports:\n\n> - use after free in SMB connection reuse\n> - wrong proxy connection reuse with credentials\n> - token leak with redirect and netrc\n> - bad reuse of HTTP Negotiate connection\n",
+    "id": "FreeBSD-2026-0058",
+    "modified": "2026-03-11T00:00:00Z",
+    "published": "2026-03-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://curl.se/docs/vuln-8.18.0.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3805"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3784"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3783"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1965"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "curl -- Multiple vulnerabilties"
+}

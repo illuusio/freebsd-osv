@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-03-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-4748"
+            ],
+            "freebsdsa": [
+                "SA-26:09.pf"
+            ]
+        },
+        "vid": "c6d41ac8-28d2-11f1-b35e-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nA regression in the way hashes were calculated caused rules containing\nthe address range syntax (x.x.x.x - y.y.y.y) that only differ in the\naddress range(s) involved to be silently dropped as duplicates. Only the\nfirst of such rules is actually loaded into pf. Ranges expressed using\nthe address\\[/mask-bits\\] syntax were not affected.\n\nSome keywords representing actions taken on a packet-matching rule, such\nas \\'log\\', \\'return tll\\', or \\'dnpipe\\', may suffer from the same\nissue. It is unlikely that users have such configurations, as these\nrules would always be redundant. The verification described in \\\"IV.\nWorkaround\\\" below will find these as well.\n\n# Impact:\n\nAffected rules are silently ignored, which can lead to unexpected\nbehaviour including over- and underblocking.\n",
+    "id": "FreeBSD-2026-0077",
+    "modified": "2026-03-26T00:00:00Z",
+    "published": "2026-03-26T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4748"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:09.pf.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- pf silently ignores certain rules"
+}

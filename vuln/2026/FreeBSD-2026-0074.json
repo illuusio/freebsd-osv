@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-03-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-4247"
+            ],
+            "freebsdsa": [
+                "SA-26:06.tcp"
+            ]
+        },
+        "vid": "7aa913e9-28d1-11f1-b35e-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nWhen a challenge ACK is to be sent tcp_respond() constructs and sends\nthe challenge ACK and consumes the mbuf that is passed in. When no\nchallenge ACK should be sent the function returns and leaks the mbuf.\n\n# Impact:\n\nIf an attacker is either on path with an established TCP connection, or\ncan themselves establish a TCP connection, to an affected FreeBSD\nmachine, they can easily craft and send packets which meet the challenge\nACK criteria and cause the FreeBSD host to leak an mbuf for each crafted\npacket in excess of the configured rate limit settings i.e. with default\nsettings, crafted packets in excess of the first 5 sent within a 1s\nperiod will leak an mbuf.\n\nTechnically, off-path attackers can also exploit this problem by\nguessing the IP addresses, TCP port numbers and in some cases the\nsequence numbers of established connections and spoofing packets towards\na FreeBSD machine, but this is harder to do effectively.\n",
+    "id": "FreeBSD-2026-0074",
+    "modified": "2026-03-26T00:00:00Z",
+    "published": "2026-03-26T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4247"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:06.tcp.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- TCP: remotely exploitable DoS vector (mbuf leak)"
+}

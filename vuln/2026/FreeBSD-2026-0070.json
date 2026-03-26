@@ -1,0 +1,75 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "unifi10"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.1.89"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "unifi9"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.0.114"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://community.ui.com/releases/Security-Advisory-Bulletin-062-062/c29719c0-405e-4d4a-8f26-e343e99f931b"
+        ],
+        "discovery": "2026-03-19T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-22558",
+                "CVE-2026-22557"
+            ]
+        },
+        "vid": "71b4ce56-23c5-11f1-b865-b42e991fc52e"
+    },
+    "details": "https://community.ui.com/releases/Security-Advisory-Bulletin-062-062/c29719c0-405e-4d4a-8f26-e343e99f931b\nreports:\n\n> An Authenticated NoSQL Injection vulnerability found in UniFi Network\n> Application could allow a malicious actor with authenticated access to\n> the network to escalate privileges.\n>\n> A malicious actor with access to the network could exploit a Path\n> Traversal vulnerability found in the UniFi Network Application to\n> access files on the underlying system that could be manipulated to\n> access an underlying account.\n",
+    "id": "FreeBSD-2026-0070",
+    "modified": "2026-03-19T00:00:00Z",
+    "published": "2026-03-19T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://community.ui.com/releases/Security-Advisory-Bulletin-062-062/c29719c0-405e-4d4a-8f26-e343e99f931b"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22558"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22557"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "UniFi Network Application - Multiple vulnerabilities"
+}

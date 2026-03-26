@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "148.0.2,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2017513%2C2017622%2C2019341"
+        ],
+        "discovery": "2026-03-10T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-3847"
+            ]
+        },
+        "vid": "df82f42c-1de2-11f1-8aff-b42e991fc52e"
+    },
+    "details": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2017513%2C2017622%2C2019341\nreports:\n\n> Memory safety bugs present in Firefox 148.0.2. Some of these bugs\n> showed evidence of memory corruption and we presume that with enough\n> effort some of these could have been exploited to run arbitrary code.\n",
+    "id": "FreeBSD-2026-0061",
+    "modified": "2026-03-12T00:00:00Z",
+    "published": "2026-03-12T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2017513%2C2017622%2C2019341"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3847"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "firefox -- Memory safety bugs"
+}

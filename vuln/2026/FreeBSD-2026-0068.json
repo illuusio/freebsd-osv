@@ -1,0 +1,54 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "homebox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.24.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-03-01T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-27981",
+                "CVE-2026-27600",
+                "CVE-2026-26272"
+            ]
+        },
+        "vid": "db3bdcc6-377f-47d9-9ce8-4bdede4fdafe"
+    },
+    "details": "Homebox reports:\n\n- \\[HIGH\\] CVE-2026-27981: Auth Rate Limit Bypass via IP Spoofing\n- \\[MODERATE\\] CVE-2026-27600: Blind SSRF\n- \\[MODERATE\\] CVE-2026-26272: Stored XSS via HTML/SVG Attachment Upload\n",
+    "id": "FreeBSD-2026-0068",
+    "modified": "2026-03-17T00:00:00Z",
+    "published": "2026-03-17T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27981"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27600"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-26272"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "homebox -- multiple vulnerabilities"
+}

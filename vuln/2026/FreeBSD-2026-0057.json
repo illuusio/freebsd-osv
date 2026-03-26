@@ -1,0 +1,225 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-good"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-bad"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-ugly"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://gstreamer.freedesktop.org/security/"
+        ],
+        "discovery": "2026-02-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-1940",
+                "CVE-2026-3082",
+                "CVE-2026-2921",
+                "CVE-2026-2922",
+                "CVE-2026-2920",
+                "CVE-2026-2923",
+                "CVE-2026-3083",
+                "CVE-2026-3085",
+                "CVE-2026-3086",
+                "CVE-2026-3081",
+                "CVE-2026-3084"
+            ]
+        },
+        "vid": "791d4b29-19fb-11f1-87cc-e73692421fef"
+    },
+    "details": "The GStreamer project reports multiple security vulnerabilities fixed in\nthe 1.28.1 release:\n\n> Twelve security vulnerabilities were addressed, including:\n>\n> - Out-of-bounds reads and writes in the H.266 video parser, WAV\n>   parser, MP4 and ASF demuxers, and DVB subtitle decoder.\n> - Integer overflows in the RIFF parser and Huffman table handling in\n>   the JPEG parser.\n> - Stack buffer overflows in the RTP QDM2 depayloader and H.266 parser.\n>\n> These could lead to application crashes or potentially arbitrary code\n> execution.\n",
+    "id": "FreeBSD-2026-0057",
+    "modified": "2026-03-07T00:00:00Z",
+    "published": "2026-03-07T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://gstreamer.freedesktop.org/security/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1940"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3082"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2921"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2922"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2920"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2923"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3083"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3085"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3086"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3081"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3084"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0001.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0002.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0003.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0004.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0005.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0006.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0007.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0008.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0009.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0010.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0011.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0012.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "gstreamer1 -- multiple vulnerabilities"
+}

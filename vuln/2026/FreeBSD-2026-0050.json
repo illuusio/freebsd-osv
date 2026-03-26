@@ -1,0 +1,62 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "13.5"
+                        },
+                        {
+                            "fixed": "13.5_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-02-24T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-15576"
+            ],
+            "freebsdsa": [
+                "SA-26:04.jail"
+            ]
+        },
+        "vid": "a88f5b2d-11e9-11f1-8148-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nIf two sibling jails are restricted to separate filesystem trees, which\nis to say that neither of the two jail root directories is an ancestor\nof the other, jailed processes may nonetheless be able to access a\nshared directory via a nullfs mount, if the administrator has configured\none.\n\nIn this case, cooperating processes in the two jails may establish a\nconnection using a unix domain socket and exchange directory descriptors\nwith each other.\n\nWhen performing a filesystem name lookup, at each step of the lookup,\nthe kernel checks whether the lookup would descend below the jail root\nof the current process. If the jail root directory is not encountered,\nthe lookup continues.\n\n# Impact:\n\nIn a configuration where processes in two different jails are able to\nexchange file descriptors using a unix domain socket, it is possible for\na jailed process to receive a directory for a descriptor that is below\nthat process\\' jail root. This enables full filesystem access for a\njailed process, breaking the chroot.\n\nNote that the system administrator is still responsible for ensuring\nthat an unprivileged user on the jail host is not able to pass directory\ndescriptors to a jailed process, even in a patched kernel.\n",
+    "id": "FreeBSD-2026-0050",
+    "modified": "2026-02-25T00:00:00Z",
+    "published": "2026-02-25T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-15576"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:04.jail.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Jail chroot escape via fd exchange with a different jail"
+}

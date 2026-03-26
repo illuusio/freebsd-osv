@@ -1,0 +1,89 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "148.0.0,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox-esr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "140.8.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "148.0.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=2014593"
+        ],
+        "discovery": "2026-02-24T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-2771"
+            ]
+        },
+        "vid": "b45d25ab-1de3-11f1-8aff-b42e991fc52e"
+    },
+    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2014593 reports:\n\n> Undefined behavior in the DOM: Core & HTML component.\n",
+    "id": "FreeBSD-2026-0063",
+    "modified": "2026-03-12T00:00:00Z",
+    "published": "2026-03-12T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2014593"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2771"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Mozilla -- Undefined behavior in the DOM: Core & HTML component"
+}

@@ -1,0 +1,99 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php82"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.6.14,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php83"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.6.14,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php84"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.6.14,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.6.14,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/roundcube/roundcubemail/releases/tag/1.6.14"
+        ],
+        "discovery": "2026-03-18T00:00:00Z",
+        "vid": "c5b93cb5-2363-11f1-81da-8447094a420f"
+    },
+    "details": "The Roundcube project reports:\n\n> pre-auth arbitrary file write via unsafe deserialization in\n> redis/memcache session handler\n>\n> password could get changed without providing the old password\n>\n> IMAP Injection + CSRF bypass in mail search\n>\n> remote image blocking bypass via various SVG animate attributes\n>\n> remote image blocking bypass via a crafted body background attribute\n>\n> fixed position mitigation bypass via use of !important\n>\n> XSS issue in a HTML attachment preview\n>\n> SSRF + Information Disclosure via stylesheet links to a local network\n> hosts\n",
+    "id": "FreeBSD-2026-0069",
+    "modified": "2026-03-19T00:00:00Z",
+    "published": "2026-03-19T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/roundcube/roundcubemail/releases/tag/1.6.14"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Roundcube -- Multiple vulnerabilities"
+}

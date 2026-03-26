@@ -10,6 +10,9 @@
                     "events": [
                         {
                             "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.10.19_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -127,7 +130,7 @@
     },
     "details": "The Python project announces a new release with several security fixes:\n\n> - CVE-2026-1299: gh-144125: BytesGenerator will now refuse to\n>   serialize (write) headers that are unsafely folded or delimited; see\n>   verify_generated_headers. (Contributed by Bas Bloemsaat and Petr\n>   Viktorin in gh-121650).\n> - gh-143935: Fixed a bug in the folding of comments when flattening an\n>   email message using a modern email policy. Comments consisting of a\n>   very long sequence of non-foldable characters could trigger a forced\n>   line wrap that omitted the required leading space on the\n>   continuation line, causing the remainder of the comment to be\n>   interpreted as a new header field. This enabled header injection\n>   with carefully crafted inputs.\n> - gh-143925: Reject control characters in data: URL media types.\n> - gh-143919: Reject control characters in http.cookies.Morsel fields\n>   and values.\n> - CVE-2026-0865: gh-143916: Reject C0 control characters within\n>   wsgiref.headers.Headers fields, values, and parameters.\n",
     "id": "FreeBSD-2026-0027",
-    "modified": "2026-02-13T00:00:00Z",
+    "modified": "2026-03-03T00:00:00Z",
     "published": "2026-02-04T00:00:00Z",
     "references": [
         {

@@ -1,0 +1,118 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "148.0.0,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "148.0.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-02-24T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-2807",
+                "CVE-2026-2806",
+                "CVE-2026-2805",
+                "CVE-2026-2804",
+                "CVE-2026-2803",
+                "CVE-2026-2802",
+                "CVE-2026-2801",
+                "CVE-2026-2799",
+                "CVE-2026-2798",
+                "CVE-2026-2797",
+                "CVE-2026-2796",
+                "CVE-2026-2795"
+            ]
+        },
+        "vid": "1124a7b0-1338-11f1-a55d-b42e991fc52e"
+    },
+    "details": "CVE-2026-2807: Memory safety bugs present in Firefox 147 and Thunderbird\n147\n\nCVE-2026-2806: Uninitialized memory in the Graphics: Text component.\n\nCVE-2026-2805: Invalid pointer in the DOM: Core & HTML component.\n\nCVE-2026-2804: Use-after-free in the JavaScript: WebAssembly component.\n\nCVE-2026-2803: Information disclosure, mitigation bypass in the Settings\nUI component.\n\nCVE-2026-2802: Race condition in the JavaScript: GC component.\n\nCVE-2026-2801: Incorrect boundary conditions in the JavaScript:\nWebAssembly component.\n\nCVE-2026-2799: Use-after-free in the DOM: Core & HTML component.\n\nCVE-2026-2798: Use-after-free in the DOM: Core & HTML component.\n\nCVE-2026-2797: Use-after-free in the JavaScript: GC component.\n\nCVE-2026-2796: JIT miscompilation in the JavaScript: WebAssembly\ncomponent\n\nCVE-2026-2795: Use-after-free in the JavaScript: GC component.\n",
+    "id": "FreeBSD-2026-0054",
+    "modified": "2026-02-26T00:00:00Z",
+    "published": "2026-02-26T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2807"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2806"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2805"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2804"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2803"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2802"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2801"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2799"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2798"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2797"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2796"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2795"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Firefox -- Multiple vulnerabilities"
+}

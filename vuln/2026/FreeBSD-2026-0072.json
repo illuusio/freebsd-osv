@@ -1,0 +1,195 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0.7680.153"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0.7680.153"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_18.html"
+        ],
+        "discovery": "2026-03-18T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-4439",
+                "CVE-2026-4440",
+                "CVE-2026-4441",
+                "CVE-2026-4442",
+                "CVE-2026-4443",
+                "CVE-2026-4444",
+                "CVE-2026-4445",
+                "CVE-2026-4446",
+                "CVE-2026-4447",
+                "CVE-2026-4448",
+                "CVE-2026-4449",
+                "CVE-2026-4450",
+                "CVE-2026-4451",
+                "CVE-2026-4452",
+                "CVE-2026-4453",
+                "CVE-2026-4454",
+                "CVE-2026-4455",
+                "CVE-2026-4456",
+                "CVE-2026-4457",
+                "CVE-2026-4458",
+                "CVE-2026-4459",
+                "CVE-2026-4460",
+                "CVE-2026-4461",
+                "CVE-2026-4462",
+                "CVE-2026-4463",
+                "CVE-2026-4464"
+            ]
+        },
+        "vid": "3c370171-b6b6-463a-8746-ee49bea08c87"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 26 security fixes:\n>\n> - \\[475877320\\] Critical CVE-2026-4439: Out of bounds memory access in\n>   WebGL. Reported by Goodluck on 2026-01-15\n> - \\[485935305\\] Critical CVE-2026-4440: Out of bounds read and write\n>   in WebGL. Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-02-20\n> - \\[489381399\\] Critical CVE-2026-4441: Use after free in Base.\n>   Reported by Google on 2026-03-03\n> - \\[484751092\\] High CVE-2026-4442: Heap buffer overflow in CSS.\n>   Reported by Syn4pse on 2026-02-16\n> - \\[485292589\\] High CVE-2026-4443: Heap buffer overflow in WebAudio.\n>   Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-02-18\n> - \\[486349161\\] High CVE-2026-4444: Stack buffer overflow in WebRTC.\n>   Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-02-21\n> - \\[486421953\\] High CVE-2026-4445: Use after free in WebRTC. Reported\n>   by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-02-22\n> - \\[486421954\\] High CVE-2026-4446: Use after free in WebRTC. Reported\n>   by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-02-22\n> - \\[486657483\\] High CVE-2026-4447: Inappropriate implementation in\n>   V8. Reported by Erge on 2026-02-23\n> - \\[486972661\\] High CVE-2026-4448: Heap buffer overflow in ANGLE.\n>   Reported by M. Fauzan Wijaya (Gh05t666nero) on 2026-02-23\n> - \\[487117772\\] High CVE-2026-4449: Use after free in Blink. Reported\n>   by Syn4pse on 2026-02-24\n> - \\[487746373\\] High CVE-2026-4450: Out of bounds write in V8.\n>   Reported by qymag1c on 2026-02-26\n> - \\[487768779\\] High CVE-2026-4451: Insufficient validation of\n>   untrusted input in Navigation. Reported by\n>   c6eed09fc8b174b0f3eebedcceb1e792 on 2026-02-26\n> - \\[487977696\\] High CVE-2026-4452: Integer overflow in ANGLE.\n>   Reported by cinzinga on 2026-02-26\n> - \\[488400770\\] High CVE-2026-4453: Integer overflow in Dawn. Reported\n>   by sweetchip on 2026-02-27\n> - \\[488585488\\] High CVE-2026-4454: Use after free in Network.\n>   Reported by heapracer (@heapracer) on 2026-03-01\n> - \\[488585504\\] High CVE-2026-4455: Heap buffer overflow in PDFium.\n>   Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-01\n> - \\[488617440\\] High CVE-2026-4456: Use after free in Digital\n>   Credentials API. Reported by sean wong on 2026-02-28\n> - \\[488803413\\] High CVE-2026-4457: Type Confusion in V8. Reported by\n>   Zhenpeng (Leo) Lin at depthfirst on 2026-03-01\n> - \\[489619753\\] High CVE-2026-4458: Use after free in Extensions.\n>   Reported by Shaheen Fazim on 2026-03-04\n> - \\[490246422\\] High CVE-2026-4459: Out of bounds read and write in\n>   WebAudio. Reported by Jihyeon Jeong (Compsec Lab, Seoul National\n>   University / Research Intern) on 2026-03-06\n> - \\[490254124\\] High CVE-2026-4460: Out of bounds read in Skia.\n>   Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-06\n> - \\[490558172\\] High CVE-2026-4461: Inappropriate implementation in\n>   V8. Reported by Google on 2026-03-07\n> - \\[491080830\\] High CVE-2026-4462: Out of bounds read in Blink.\n>   Reported by heapracer (@heapracer) on 2026-03-09\n> - \\[491358681\\] High CVE-2026-4463: Heap buffer overflow in WebRTC.\n>   Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-10\n> - \\[487208468\\] Medium CVE-2026-4464: Integer overflow in ANGLE.\n>   Reported by heesun on 2026-02-24\n",
+    "id": "FreeBSD-2026-0072",
+    "modified": "2026-03-24T00:00:00Z",
+    "published": "2026-03-24T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_18.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4439"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4440"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4441"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4442"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4443"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4444"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4445"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4446"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4447"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4448"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4449"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4450"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4451"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4452"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4453"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4454"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4455"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4456"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4457"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4458"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4459"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4460"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4461"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4462"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4463"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4464"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- security fixes"
+}

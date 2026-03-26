@@ -1,0 +1,61 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "traefik"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.6.11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/traefik/traefik/releases/tag/v3.6.11"
+        ],
+        "discovery": "2026-03-19T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-32595",
+                "CVE-2026-32305",
+                "CVE-2026-32695"
+            ]
+        },
+        "vid": "832a823b-25b5-11f1-b6f8-5404a68ad561"
+    },
+    "details": "The traefik project releases a new version addressing multiple CVEs:\n\n> - CVE-2026-32595 (BasicAuth Middleware Timing Attack)\n> - CVE-2026-32305 (Potential mTLS Bypass via Fragmented TLS\n>   ClientHello)\n> - CVE-2026-32695 (Details not yet available)\n",
+    "id": "FreeBSD-2026-0071",
+    "modified": "2026-03-22T00:00:00Z",
+    "published": "2026-03-22T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/traefik/traefik/releases/tag/v3.6.11"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-32595"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-32305"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-32695"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "traefik -- Multiple vulnerabilities"
+}

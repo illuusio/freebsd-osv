@@ -1,0 +1,105 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0.7680.164"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0.7680.164"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_23.html"
+        ],
+        "discovery": "2026-03-23T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-4673",
+                "CVE-2026-4674",
+                "CVE-2026-4675",
+                "CVE-2026-4676",
+                "CVE-2026-4677",
+                "CVE-2026-4678",
+                "CVE-2026-4679",
+                "CVE-2026-4680"
+            ]
+        },
+        "vid": "07d6b170-fed8-4ee2-ba96-b6d61b6d6a26"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 8 security fixes:\n>\n> - \\[485397284\\] High CVE-2026-4673: Heap buffer overflow in WebAudio.\n>   Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-02-18\n> - \\[488188166\\] High CVE-2026-4674: Out of bounds read in CSS.\n>   Reported by Syn4pse on 2026-02-27\n> - \\[488270257\\] High CVE-2026-4675: Heap buffer overflow in WebGL.\n>   Reported by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-02-27\n> - \\[488613135\\] High CVE-2026-4676: Use after free in Dawn. Reported\n>   by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-01\n> - \\[490533968\\] High CVE-2026-4677: Out of bounds read in WebAudio.\n>   Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-07\n> - \\[491164019\\] High CVE-2026-4678: Use after free in WebGPU. Reported\n>   by Google on 2026-03-10\n> - \\[491516670\\] High CVE-2026-4679: Integer overflow in Fonts.\n>   Reported by GF, Un3xploitable Of DeadSec on 2026-03-11\n> - \\[491869946\\] High CVE-2026-4680: Use after free in FedCM. Reported\n>   by Shaheen Fazim on 2026-03-12\n",
+    "id": "FreeBSD-2026-0073",
+    "modified": "2026-03-24T00:00:00Z",
+    "published": "2026-03-24T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_23.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4673"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4674"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4675"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4676"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4677"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4678"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4679"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4680"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- security fixes"
+}

@@ -1,0 +1,75 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0.7680.75"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0.7680.75"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_12.html"
+        ],
+        "discovery": "2026-03-12T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-3909",
+                "CVE-2026-3910"
+            ]
+        },
+        "vid": "26776062-fd24-4c2f-bf6c-7f231948ab19"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 2 security fixes:\n>\n> - \\[491421267\\] High CVE-2026-3909: Out of bounds write in Skia.\n>   Reported by Google on 2026-03-10\n> - \\[491410818\\] High CVE-2026-3910: Inappropriate implementation in\n>   V8. Reported by Google on 2026-03-10\n",
+    "id": "FreeBSD-2026-0066",
+    "modified": "2026-03-15T00:00:00Z",
+    "published": "2026-03-15T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_12.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3909"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3910"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- security fixes"
+}

@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "13.5"
+                        },
+                        {
+                            "fixed": "13.5_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-02-24T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-3038"
+            ],
+            "freebsdsa": [
+                "SA-26:05.route"
+            ]
+        },
+        "vid": "fbc47390-11e9-11f1-8148-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nThe rtsock_msg_buffer() function serializes routing information into a\nbuffer. As a part of this, it copies sockaddr structures into a\nsockaddr_storage structure on the stack. It assumes that the source\nsockaddr length field had already been validated, but this is not\nnecessarily the case, and it\\'s possible for a malicious userspace\nprogram to craft a request which triggers a 127-byte overflow.\n\nIn practice, this overflow immediately overwrites the canary for the\nrtsock_msg_buffer() stack frame, resulting in a panic once the function\nreturns.\n\n# Impact:\n\nThe bug allows an unprivileged user to crash the kernel by triggering a\nstack buffer overflow in rtsock_msg_buffer(). In particular, the\noverflow will corrupt a stack canary value that is verified when the\nfunction returns; this mitigates the impact of the stack overflow by\ntriggering a kernel panic.\n\nOther kernel bugs may exist which allow userspace to find the canary\nvalue and thus defeat the mitigation, at which point local privilege\nescalation may be possible.\n",
+    "id": "FreeBSD-2026-0051",
+    "modified": "2026-02-25T00:00:00Z",
+    "published": "2026-02-25T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3038"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:05.route.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Local DoS and possible privilege escalation via routing sockets"
+}
