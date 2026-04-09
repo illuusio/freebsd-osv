@@ -1,0 +1,75 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jenkins"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.555"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jenkins-lts"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.541.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.jenkins.io/security/advisory/2026-03-18/"
+        ],
+        "discovery": "2026-03-18T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-33001",
+                "CVE-2026-33002"
+            ]
+        },
+        "vid": "970fd0ec-26f5-11f1-a9b1-0cc47ada5f32"
+    },
+    "details": "Jenkins Security Advisory 2026-03-18:\n\n> - SECURITY-3657 / CVE-2026-33001: Arbitrary file write vulnerability\n>   through specially crafted archives in Jenkins (High)\n> - SECURITY-3674 / CVE-2026-33002: DNS rebinding vulnerability in\n>   WebSocket CLI origin validation in Jenkins (High)\n",
+    "id": "FreeBSD-2026-0080",
+    "modified": "2026-03-27T00:00:00Z",
+    "published": "2026-03-27T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.jenkins.io/security/advisory/2026-03-18/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33001"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33002"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "jenkins -- multiple vulnerabilities"
+}

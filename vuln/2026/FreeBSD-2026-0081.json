@@ -1,0 +1,169 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ce"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "18.10.0"
+                        },
+                        {
+                            "fixed": "18.10.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.9.0"
+                        },
+                        {
+                            "fixed": "18.9.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "7.11.0"
+                        },
+                        {
+                            "fixed": "18.8.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "18.10.0"
+                        },
+                        {
+                            "fixed": "18.10.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.9.0"
+                        },
+                        {
+                            "fixed": "18.9.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "7.11.0"
+                        },
+                        {
+                            "fixed": "18.8.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://about.gitlab.com/releases/2026/03/25/patch-release-gitlab-18-10-1-released/"
+        ],
+        "discovery": "2026-03-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-2370",
+                "CVE-2026-3857",
+                "CVE-2026-2995",
+                "CVE-2026-3988",
+                "CVE-2026-2745",
+                "CVE-2026-1724",
+                "CVE-2025-13436",
+                "CVE-2025-13078",
+                "CVE-2026-2973",
+                "CVE-2026-2726",
+                "CVE-2025-14595",
+                "CVE-2026-4363"
+            ]
+        },
+        "vid": "b933083e-2b2e-11f1-b60a-2cf05da270f3"
+    },
+    "details": "Gitlab reports:\n\n> Improper Handling of Parameters issue in Jira Connect installations\n> impacts GitLab CE/EE\n>\n> Cross-Site Request Forgery issue in GLQL API impacts GitLab CE/EE\n>\n> HTML Injection in vulnerability report impacts GitLab EE\n>\n> Denial of Service issue in GraphQL API impacts GitLab CE/EE\n>\n> Improper Access Control issue in WebAuthn 2FA impacts GitLab CE/EE\n>\n> Improper Access Control issue in GraphQL query impacts GitLab EE\n>\n> Denial of Service issue in CI configuration processing impacts GitLab\n> CE/EE\n>\n> Denial of Service issue in webhook configuration impacts GitLab CE/EE\n>\n> Cross-site Scripting issue in Mermaid diagram renderer impacts GitLab\n> CE/EE\n>\n> Improper Access Control issue in Merge Requests impacts GitLab CE/EE\n>\n> Access Control issue in GraphQL API impacts GitLab EE\n>\n> Incorrect Authorization issue in authorization caching impacts GitLab\n> EE\n",
+    "id": "FreeBSD-2026-0081",
+    "modified": "2026-03-29T00:00:00Z",
+    "published": "2026-03-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://about.gitlab.com/releases/2026/03/25/patch-release-gitlab-18-10-1-released/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2370"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3857"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2995"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3988"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2745"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1724"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13436"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-13078"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2973"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2726"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14595"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4363"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Gitlab -- vulnerabilities"
+}

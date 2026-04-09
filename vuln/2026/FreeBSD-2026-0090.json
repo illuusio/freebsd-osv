@@ -1,0 +1,70 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libnghttp2"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.68.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nghttp2"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.68.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/nghttp2/nghttp2/security/advisories/GHSA-6933-cjhr-5qg6"
+        ],
+        "discovery": "2026-03-18T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-27135"
+            ]
+        },
+        "vid": "c08273b5-30e5-11f1-b9f2-b42e991fc52e"
+    },
+    "details": "https://github.com/nghttp2/nghttp2/security/advisories/GHSA-6933-cjhr-5qg6\nreports:\n\n> nghttp2 is an implementation of the Hypertext Transfer Protocol\n> version 2 in C. Prior to version 1.68.1, the nghttp2 library stops\n> reading the incoming data when user facing public API\n> \\`nghttp2_session_terminate_session\\` or\n> \\`nghttp2_session_terminate_session2\\` is called by the application.\n> They might be called internally by the library when it detects the\n> situation that is subject to connection error. Due to the missing\n> internal state validation, the library keeps reading the rest of the\n> data after one of those APIs is called. Then receiving a malformed\n> frame that causes FRAME_SIZE_ERROR causes assertion failure. nghttp2\n> v1.68.1 adds missing state validation to avoid assertion failure. No\n> known workarounds are available.\n",
+    "id": "FreeBSD-2026-0090",
+    "modified": "2026-04-05T00:00:00Z",
+    "published": "2026-04-05T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/nghttp2/nghttp2/security/advisories/GHSA-6933-cjhr-5qg6"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27135"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "nghttp2 -- CWE-617: Reachable Assertion"
+}

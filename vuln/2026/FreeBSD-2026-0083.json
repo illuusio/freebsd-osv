@@ -1,0 +1,56 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "traefik"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.6.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/traefik/traefik/releases/tag/v3.6.12"
+        ],
+        "discovery": "2026-03-26T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-33433",
+                "CVE-2026-33186"
+            ]
+        },
+        "vid": "09e36f7e-2b5b-11f1-852e-5404a68ad561"
+    },
+    "details": "The traefik project releases a new version addressing multiple CVEs:\n\n> - CVE-2026-33433 (BasicAuth/DigestAuth Identity Spoofing via\n>   Non-Canonical headerField)\n> - CVE-2026-33186 (authorization bypass via missing leading slash in\n>   :path)\n",
+    "id": "FreeBSD-2026-0083",
+    "modified": "2026-03-29T00:00:00Z",
+    "published": "2026-03-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/traefik/traefik/releases/tag/v3.6.12"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33433"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33186"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "traefik -- Multiple vulnerabilities"
+}

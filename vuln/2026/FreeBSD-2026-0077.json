@@ -2,39 +2,36 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:kernel",
-                "name": "FreeBSD-kernel"
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "15.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "15.0_5"
+                            "fixed": "149.0.0,2"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "14.4"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "14.4_1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.3"
-                        },
-                        {
-                            "fixed": "14.3_10"
+                            "fixed": "149.0.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -43,31 +40,119 @@
         }
     ],
     "database_specific": {
-        "discovery": "2026-03-25T00:00:00Z",
+        "discovery": "2026-03-24T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-4748"
-            ],
-            "freebsdsa": [
-                "SA-26:09.pf"
+                "CVE-2026-4688",
+                "CVE-2026-4695",
+                "CVE-2026-4697",
+                "CVE-2026-4700",
+                "CVE-2026-4701",
+                "CVE-2026-4702",
+                "CVE-2026-4704",
+                "CVE-2026-4705",
+                "CVE-2026-4708",
+                "CVE-2026-4710",
+                "CVE-2026-4711",
+                "CVE-2026-4712",
+                "CVE-2026-4713",
+                "CVE-2026-4714",
+                "CVE-2026-4715",
+                "CVE-2026-4716",
+                "CVE-2026-4717",
+                "CVE-2026-4718",
+                "CVE-2026-4719",
+                "CVE-2026-4720"
             ]
         },
-        "vid": "c6d41ac8-28d2-11f1-b35e-bc241121aa0a"
+        "vid": "6d445322-2945-11f1-8461-b42e991fc52e"
     },
-    "details": "# Problem Description:\n\nA regression in the way hashes were calculated caused rules containing\nthe address range syntax (x.x.x.x - y.y.y.y) that only differ in the\naddress range(s) involved to be silently dropped as duplicates. Only the\nfirst of such rules is actually loaded into pf. Ranges expressed using\nthe address\\[/mask-bits\\] syntax were not affected.\n\nSome keywords representing actions taken on a packet-matching rule, such\nas \\'log\\', \\'return tll\\', or \\'dnpipe\\', may suffer from the same\nissue. It is unlikely that users have such configurations, as these\nrules would always be redundant. The verification described in \\\"IV.\nWorkaround\\\" below will find these as well.\n\n# Impact:\n\nAffected rules are silently ignored, which can lead to unexpected\nbehaviour including over- and underblocking.\n",
+    "details": "CVE-2026-4688: Sandbox escape due to use-after-free in Disability Access\nAPIs.\n\nCVE-2026-4695: Incorrect boundary conditions in the Audio/Video: Web\nCodecs component.\n\nCVE-2026-4697: Incorrect boundary conditions in the Audio/Video: Web\nCodecs component.\n\nCVE-2026-4700: Mitigation bypass in the Networking: HTTP component.\n\nCVE-2026-4701: Use-after-free in the JavaScript Engine component.\n\nCVE-2026-4702: JIT miscompilation in the JavaScript Engine component.\n\nCVE-2026-4704: Denial-of-service in the WebRTC: Signaling component.\n\nCVE-2026-4705: Undefined behavior in the WebRTC: Signaling component.\n\nCVE-2026-4708: Incorrect boundary conditions in the Graphics component.\n\nCVE-2026-4710: Incorrect boundary conditions in the Audio/Video\ncomponent.\n\nCVE-2026-4711: Use-after-free in the Widget: Cocoa component.\n\nCVE-2026-4712: Information disclosure in the Widget: Cocoa component.\n\nCVE-2026-4713: Incorrect boundary conditions in the Graphics component.\n\nCVE-2026-4714: Incorrect boundary conditions in the Audio/Video\ncomponent.\n\nCVE-2026-4715: Uninitialized memory in the Graphics: Canvas2D component.\n\nCVE-2026-4716: Incorrect boundary conditions and uninitialized memory in\nthe JavaScript Engine.\n\nCVE-2026-4717: Privilege escalation in the Netmonitor component.\n\nCVE-2026-4718: Undefined behavior in the WebRTC: Signaling component.\n\nCVE-2026-4719: Incorrect boundary conditions in the Graphics: Text\ncomponent.\n\nCVE-2026-4720: Memory safety bugs\n",
     "id": "FreeBSD-2026-0077",
     "modified": "2026-03-26T00:00:00Z",
     "published": "2026-03-26T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4748"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4688"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:09.pf.asc"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4695"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4697"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4700"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4701"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4702"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4704"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4705"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4708"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4710"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4711"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4712"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4713"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4714"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4715"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4716"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4717"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4718"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4719"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4720"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- pf silently ignores certain rules"
+    "summary": "Mozilla -- Multiple vulnerabilities"
 }

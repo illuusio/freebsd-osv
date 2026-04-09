@@ -1,0 +1,70 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mongodb80"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.0.18"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mongodb70"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "7.0.31"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://jira.mongodb.org/browse/SERVER-101758"
+        ],
+        "discovery": "2026-03-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-5170"
+            ]
+        },
+        "vid": "a117f43b-2f7b-11f1-89f4-b42e991fc52e"
+    },
+    "details": "https://jira.mongodb.org/browse/SERVER-101758 reports:\n\n> A user with access to the cluster with a limited set of privilege\n> actions can trigger a crash of amongod process during the limited and\n> unpredictable window when the cluster is being promoted from a replica\n> set to a sharded cluster. This may cause a denial of service by taking\n> down the primary of the replica set.\n",
+    "id": "FreeBSD-2026-0089",
+    "modified": "2026-04-03T00:00:00Z",
+    "published": "2026-04-03T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://jira.mongodb.org/browse/SERVER-101758"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5170"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "MongoDB Server -- CWE-617: Reachable Assertion"
+}

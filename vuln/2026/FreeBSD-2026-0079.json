@@ -1,0 +1,98 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "149.0.0,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "149.0.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-03-24T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-4729",
+                "CVE-2026-4728",
+                "CVE-2026-4727",
+                "CVE-2026-4726",
+                "CVE-2026-4725",
+                "CVE-2026-4724",
+                "CVE-2026-4723",
+                "CVE-2026-4722"
+            ]
+        },
+        "vid": "26c24872-2943-11f1-8461-b42e991fc52e"
+    },
+    "details": "CVE-2026-4729: Memory safety bugs\n\nCVE-2026-4728: Spoofing issue in the Privacy: Anti-Tracking component.\n\nCVE-2026-4727: Denial-of-service in the Libraries component in NSS.\n\nCVE-2026-4726: Denial-of-service in the XML component.\n\nCVE-2026-4725: Sandbox escape due to use-after-free in the Graphics:\nCanvas2D component.\n\nCVE-2026-4724: Undefined behavior in the Audio/Video component.\n\nCVE-2026-4723: Use-after-free in the JavaScript Engine component.\n\nCVE-2026-4722: Privilege escalation in the IPC component.\n",
+    "id": "FreeBSD-2026-0079",
+    "modified": "2026-03-26T00:00:00Z",
+    "published": "2026-03-26T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4729"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4728"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4727"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4726"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4725"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4724"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4723"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4722"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Mozilla -- Multiple vulnerabilities"
+}

@@ -1,0 +1,170 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0.7680.177"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "146.0.7680.177"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_31.html"
+        ],
+        "discovery": "2026-03-31T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-5273",
+                "CVE-2026-5272",
+                "CVE-2026-5274",
+                "CVE-2026-5275",
+                "CVE-2026-5276",
+                "CVE-2026-5277",
+                "CVE-2026-5278",
+                "CVE-2026-5279",
+                "CVE-2026-5280",
+                "CVE-2026-5281",
+                "CVE-2026-5282",
+                "CVE-2026-5283",
+                "CVE-2026-5284",
+                "CVE-2026-5285",
+                "CVE-2026-5286",
+                "CVE-2026-5287",
+                "CVE-2026-5288",
+                "CVE-2026-5289",
+                "CVE-2026-5290",
+                "CVE-2026-5291",
+                "CVE-2026-5292"
+            ]
+        },
+        "vid": "1dc2aae1-0793-4dbd-8548-e63ae0e1bdaf"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 21 security fixes:\n>\n> - \\[493952652\\] High CVE-2026-5273: Use after free in CSS. Reported by\n>   Anonymous on 2026-03-18\n> - \\[491732188\\] High CVE-2026-5272: Heap buffer overflow in GPU.\n>   Reported by inspector-ambitious on 2026-03-11\n> - \\[488596746\\] High CVE-2026-5274: Integer overflow in Codecs.\n>   Reported by heapracer (@heapracer) on 2026-03-01\n> - \\[489494022\\] High CVE-2026-5275: Heap buffer overflow in ANGLE.\n>   Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-04\n> - \\[489711638\\] High CVE-2026-5276: Insufficient policy enforcement in\n>   WebUSB. Reported by Ariel Simon on 2026-03-04\n> - \\[489791424\\] High CVE-2026-5277: Integer overflow in ANGLE.\n>   Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-05\n> - \\[490254128\\] High CVE-2026-5278: Use after free in Web MIDI.\n>   Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-06\n> - \\[490642836\\] High CVE-2026-5279: Object corruption in V8. Reported\n>   by Hyeonjun Ahn (@\\_deayzl) on 2026-03-08\n> - \\[491515787\\] High CVE-2026-5280: Use after free in WebCodecs.\n>   Reported by heapracer (@heapracer) on 2026-03-11\n> - \\[491518608\\] High CVE-2026-5281: Use after free in Dawn. Reported\n>   by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-10\n> - \\[491655161\\] High CVE-2026-5282: Out of bounds read in WebCodecs.\n>   Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-11\n> - \\[492131521\\] High CVE-2026-5283: Inappropriate implementation in\n>   ANGLE. Reported by sweetchip on 2026-03-12\n> - \\[492139412\\] High CVE-2026-5284: Use after free in Dawn. Reported\n>   by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-12\n> - \\[492228019\\] High CVE-2026-5285: Use after free in WebGL. Reported\n>   by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-13\n> - \\[493900619\\] High CVE-2026-5286: Use after free in Dawn. Reported\n>   by sweetchip on 2026-03-18\n> - \\[494644471\\] High CVE-2026-5287: Use after free in PDF. Reported by\n>   Syn4pse on 2026-03-21\n> - \\[495507390\\] High CVE-2026-5288: Use after free in WebView.\n>   Reported by Google on 2026-03-23\n> - \\[495931147\\] High CVE-2026-5289: Use after free in Navigation.\n>   Reported by Google on 2026-03-25\n> - \\[496205576\\] High CVE-2026-5290: Use after free in Compositing.\n>   Reported by Google on 2026-03-25\n> - \\[490118036\\] Medium CVE-2026-5291: Inappropriate implementation in\n>   WebGL. Reported by heapracer (@heapracer) on 2026-03-06\n> - \\[492213293\\] Medium CVE-2026-5292: Out of bounds read in WebCodecs.\n>   Reported by Google on 2026-03-12\n",
+    "id": "FreeBSD-2026-0084",
+    "modified": "2026-04-01T00:00:00Z",
+    "published": "2026-04-01T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_31.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5273"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5272"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5274"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5275"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5276"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5277"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5278"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5279"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5280"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5281"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5282"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5283"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5284"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5285"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5286"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5287"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5288"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5289"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5290"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5291"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5292"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- security fixes"
+}

@@ -1,0 +1,75 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openexr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.4.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/AcademySoftwareFoundation/openexr/blob/v3.4.9-rc/CHANGES.md#version-349-april--3-2026"
+        ],
+        "discovery": "2026-03-26T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-34589",
+                "CVE-2026-34588",
+                "CVE-2026-34380",
+                "CVE-2026-34379",
+                "CVE-2026-34378"
+            ]
+        },
+        "vid": "adb096d4-2e72-11f1-acc1-339a1a6999b0"
+    },
+    "details": "Cary Phillips reports:\n\n> \\[OpenEXR 3.4.9\\] addresses the following CVEs:\n>\n> - CVE-2026-34589 DWA Lossy Decoder Heap Out-of-Bounds Write\n> - CVE-2026-34588 Signed 32-bit Overflow in PIZ Decoder Leads to OOB\n>   Read/Write\n> - CVE-2026-34380 Signed integer overflow (undefined behavior) in\n>   undo_pxr24_impl may allow bounds-check bypass in PXR24 decompression\n> - CVE-2026-34379 Misaligned write in LossyDctDecoder_execute leading\n>   to undefined behavior (DWA/DWAB decompression)\n> - CVE-2026-34378 Signed integer overflow in generic_unpack() when\n>   parsing EXR files with crafted negative dataWindow.min.x\n",
+    "id": "FreeBSD-2026-0088",
+    "modified": "2026-04-02T00:00:00Z",
+    "published": "2026-04-02T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/blob/v3.4.9-rc/CHANGES.md#version-349-april--3-2026"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34589"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34588"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34380"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34379"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34378"
+        },
+        {
+            "type": "WEB",
+            "url": "https://lists.aswf.io/g/openexr-dev/message/5436"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "openexr -- multiple vulnerabilities"
+}

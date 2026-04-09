@@ -1,0 +1,162 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "149.0.0,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox-esr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "140.9.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "149.0.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-03-24T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-4721",
+                "CVE-2026-4709",
+                "CVE-2026-4707",
+                "CVE-2026-4706",
+                "CVE-2026-4699",
+                "CVE-2026-4698",
+                "CVE-2026-4696",
+                "CVE-2026-4694",
+                "CVE-2026-4693",
+                "CVE-2026-4692",
+                "CVE-2026-4691",
+                "CVE-2026-4690",
+                "CVE-2026-4689",
+                "CVE-2026-4687",
+                "CVE-2026-4686",
+                "CVE-2026-4685",
+                "CVE-2026-4684"
+            ]
+        },
+        "vid": "32819a60-2943-11f1-8461-b42e991fc52e"
+    },
+    "details": "CVE-2026-4721: Memory safety bugs. Potential arbitrary code execution.\n\nCVE-2026-4709: Incorrect boundary conditions in the Audio/Video: GMP\ncomponent.\n\nCVE-2026-4707: Incorrect boundary conditions in the Graphics: Canvas2D\ncomponent.\n\nCVE-2026-4706: Incorrect boundary conditions in the Graphics: Canvas2D\ncomponent.\n\nCVE-2026-4699: Incorrect boundary conditions in the Layout: Text and\nFonts component.\n\nCVE-2026-4698: JIT miscompilation in the JavaScript Engine: JIT\ncomponent.\n\nCVE-2026-4696: Use-after-free in the Layout: Text and Fonts component.\n\nCVE-2026-4694: Incorrect boundary conditions, integer overflow in the\nGraphics component.\n\nCVE-2026-4693: Incorrect boundary conditions in the Audio/Video:\nPlayback component.\n\nCVE-2026-4692: Sandbox escape in the Responsive Design Mode component.\n\nCVE-2026-4691: Use-after-free in the CSS Parsing and Computation\ncomponent.\n\nCVE-2026-4690: Sandbox escape due to integer overflow in the XPCOM\ncomponent.\n\nCVE-2026-4689: Sandbox escape due to integer overflow in the XPCOM\ncomponent.\n\nCVE-2026-4687: Sandbox escape in the Telemetry component.\n\nCVE-2026-4686: Incorrect boundary conditions in the Graphics: Canvas2D\ncomponent.\n\nCVE-2026-4685: Incorrect boundary conditions in the Graphics: Canvas2D\ncomponent.\n\nCVE-2026-4684: Race condition, use-after-free in the Graphics: WebRender\ncomponent.\n",
+    "id": "FreeBSD-2026-0078",
+    "modified": "2026-03-26T00:00:00Z",
+    "published": "2026-03-26T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4721"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4709"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4707"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4706"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4699"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4698"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4696"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4694"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4693"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4692"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4691"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4690"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4689"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4687"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4686"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4685"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4684"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Mozilla -- Multiple vulnerabilities"
+}
