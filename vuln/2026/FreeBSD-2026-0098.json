@@ -1,0 +1,120 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mbedtls3"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.6.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mbedtls4"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://mbed-tls.readthedocs.io/en/latest/security-advisories/"
+        ],
+        "discovery": "2026-03-31T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-34873",
+                "CVE-2026-34871",
+                "CVE-2026-25835",
+                "CVE-2025-66442",
+                "CVE-2026-34874",
+                "CVE-2026-34875",
+                "CVE-2026-34872",
+                "CVE-2026-25834",
+                "CVE-2026-34876",
+                "CVE-2026-34877",
+                "CVE-2026-25833"
+            ]
+        },
+        "vid": "d77bd2f5-34f0-11f1-bc6d-3c7c3fba4204"
+    },
+    "details": "https://mbed-tls.readthedocs.io/en/latest/security-advisories/ reports:\n\n> - Client impersonation while resuming a TLS 1.3 session\n>   (CVE-2026-34873)\n> - Entropy on Linux can fall back to /dev/urandom (CVE-2026-34871)\n> - PSA random generator cloning (CVE-2026-25835)\n> - Compiler-induced constant-time violations (CVE-2025-66442)\n> - Null pointer dereference when setting a distinguished name\n>   (CVE-2026-34874)\n> - Buffer overflow in FFDH public key export (CVE-2026-34875)\n> - FFDH: lack of contributory behaviour due to improper input\n>   validation (CVE-2026-34872)\n> - Signature Algorithm Injection (CVE-2026-25834)\n> - CCM multipart finish tag-length validation bypass (CVE-2026-34876)\n> - Risk of insufficient protection of serialized session or context\n>   data leading to potential memory safety issues (CVE-2026-34877)\n> - Buffer underflow in x509_inet_pton_ipv6() (CVE-2026-25833)\n",
+    "id": "FreeBSD-2026-0098",
+    "modified": "2026-04-10T00:00:00Z",
+    "published": "2026-04-10T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://mbed-tls.readthedocs.io/en/latest/security-advisories/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34873"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34871"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-25835"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-66442"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34874"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34875"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34872"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-25834"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34876"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34877"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-25833"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Mbed TLS -- vulnerabilities"
+}

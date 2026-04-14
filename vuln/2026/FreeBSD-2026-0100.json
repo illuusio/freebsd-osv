@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "tiff"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.7.1_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.cve.org/CVERecord?id=CVE-2026-4775"
+        ],
+        "discovery": "2026-03-24T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-4775"
+            ]
+        },
+        "vid": "766bb9b5-357f-11f1-98f0-00a098b42aeb"
+    },
+    "details": "PrymEvol and Quang Luong reports:\n\n> A flaw was found in the libtiff library. A remote attacker could\n> exploit a signed integer overflow vulnerability in the\n> putcontig8bitYCbCr44tile function by providing a specially crafted\n> TIFF file. This flaw can lead to an out-of-bounds heap write due to\n> incorrect memory pointer calculations, potentially causing a denial of\n> service (application crash) or arbitrary code execution.\n",
+    "id": "FreeBSD-2026-0100",
+    "modified": "2026-04-11T00:00:00Z",
+    "published": "2026-04-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2026-4775"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4775"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "(lib)tiff -- Integer Overflow or Wraparound"
+}

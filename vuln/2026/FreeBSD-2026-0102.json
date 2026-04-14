@@ -1,0 +1,106 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python310"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python311"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python312"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python313"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python314"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.14.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/python/cpython/issues/146333"
+        ],
+        "discovery": "2026-03-23T00:00:00Z",
+        "vid": "5ec4dcf6-3588-11f1-b51c-6dd25bec137b"
+    },
+    "details": "Stan Ulbrych reports:\n\n> configparser.RawConfigParser.{OPTCRE,OPTCRE_NV} regexes \\[are\\]\n> vulnerable to quadratic backtracking.\n",
+    "id": "FreeBSD-2026-0102",
+    "modified": "2026-04-12T00:00:00Z",
+    "published": "2026-04-12T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/python/cpython/issues/146333"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Python -- configparser vulnerable to excessive CPU use"
+}

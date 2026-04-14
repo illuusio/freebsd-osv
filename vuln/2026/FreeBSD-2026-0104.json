@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "vaultwarden"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.35.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/dani-garcia/vaultwarden/releases/tag/1.35.5"
+        ],
+        "discovery": "2026-04-12T00:00:00Z",
+        "vid": "57f31f61-36a1-11f1-9839-8447094a420f"
+    },
+    "details": "The Vaultwarden project reports:\n\n> GHSA-937x-3j8m-7w7p Unconfirmed Owner Can Purge Entire Organization\n> Vault.\n>\n> GHSA-569v-845w-g82p Cross-Org Group Binding Enables Unauthorized Read\n> And Write Access Into Another Organization\n>\n> GHSA-6j4w-g4jh-xjfx Refresh tokens not invalidated on security stamp\n> rotation\n",
+    "id": "FreeBSD-2026-0104",
+    "modified": "2026-04-12T00:00:00Z",
+    "published": "2026-04-12T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.35.5"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Vaultwarden -- Multiple vulnerabilities"
+}

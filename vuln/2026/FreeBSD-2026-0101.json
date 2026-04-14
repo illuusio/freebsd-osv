@@ -1,0 +1,159 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-ormar"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.23.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-ormar"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.23.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py312-ormar"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.23.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313-ormar"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.23.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313t-ormar"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.23.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314-ormar"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.23.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/collerek/ormar/security/advisories"
+        ],
+        "discovery": "2026-02-22T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-26198",
+                "CVE-2026-27953"
+            ]
+        },
+        "vid": "8d549898-3598-11f1-a8bc-3c7c3fba4204"
+    },
+    "details": "https://github.com/ormar-orm/ormar/security/advisories reports:\n\n> - SQL Injection in aggregate functions min() and max()\n> - Pydantic Validation Bypass via \\_\\_pk_only\\_\\_ and \\_\\_excluded\\_\\_\n>   Kwargs Injection in Model Constructor\n",
+    "id": "FreeBSD-2026-0101",
+    "modified": "2026-04-11T00:00:00Z",
+    "published": "2026-04-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/collerek/ormar/security/advisories"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-26198"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/ormar-orm/ormar/security/advisories/GHSA-xxh2-68g9-8jqr"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27953"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/ormar-orm/ormar/security/advisories/GHSA-f964-whrq-44h8"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "py-ormar -- vulnerabilities"
+}
