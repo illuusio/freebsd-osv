@@ -1,0 +1,278 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-strawberry-graphql"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.312.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-strawberry-graphql"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.312.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py312-strawberry-graphql"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.312.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313-strawberry-graphql"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.312.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313t-strawberry-graphql"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.312.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314-strawberry-graphql"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.312.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-dj52-strawberry-graphql"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.312.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-dj52-strawberry-graphql"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.312.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py312-dj52-strawberry-graphql"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.312.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313-dj52-strawberry-graphql"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.312.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313t-dj52-strawberry-graphql"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.312.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314-dj52-strawberry-graphql"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.312.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/strawberry-graphql/strawberry/security/advisories/GHSA-vpwc-v33q-mq89",
+            "https://github.com/strawberry-graphql/strawberry/security/advisories/GHSA-hv3w-m4g2-5x77"
+        ],
+        "discovery": "2026-04-04T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-35523",
+                "CVE-2026-35526"
+            ]
+        },
+        "vid": "6a0aa20d-399f-11f1-8626-901b0edee044"
+    },
+    "details": "The Strawberry GraphQL project reports:\n\n> Strawberry up until version 0.312.3 is vulnerable to an authentication\n> bypass on WebSocket subscription endpoints. The legacy graphql-ws\n> subprotocol handler does not verify that a \\'connection_init\\'\n> handshake has been completed before processing start (subscription)\n> messages. This allows a remote attacker to skip the \\'on_ws_connect\\'\n> authentication hook entirely by connecting with the graphql-ws\n> subprotocol and sending a start message directly, without ever sending\n> \\'connection_init\\'. The graphql-transport-ws subprotocol handler is\n> not affected, as it correctly gates subscription operations on a\n> connection_acknowledged flag. However, both subprotocols are enabled\n> by default in all framework integrations that support websockets, and\n> the subprotocol is selected by the client via the\n> Sec-WebSocket-Protocol header. Any application relying on\n> \\'on_ws_connect\\' for authentication or authorization is affected.\n\n> Strawberry GraphQL\\'s WebSocket subscription handlers for both the\n> \\'graphql-transport-ws\\' and legacy \\'graphql-ws\\' protocols allocate\n> an asyncio.Task and associated Operation object for every incoming\n> subscribe message without enforcing any limit on the number of active\n> subscriptions per connection. An unauthenticated attacker can open a\n> single WebSocket connection, send connection_init, and then flood\n> subscribe messages with unique IDs. Each message unconditionally\n> spawns a new \\'asyncio.Task\\' and async generator, causing linear\n> memory growth and event loop saturation. This leads to server\n> degradation or an OOM crash.\n",
+    "id": "FreeBSD-2026-0113",
+    "modified": "2026-04-17T00:00:00Z",
+    "published": "2026-04-17T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/strawberry-graphql/strawberry/security/advisories/GHSA-vpwc-v33q-mq89"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://github.com/strawberry-graphql/strawberry/security/advisories/GHSA-hv3w-m4g2-5x77"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35523"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2026-35523"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35526"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2026-35526"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "py-strawberry-graphql -- Multiple vulnerabilities"
+}

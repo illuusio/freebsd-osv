@@ -1,0 +1,71 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "xorg-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "21.1.22"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://lists.x.org/archives/xorg-announce/2026-April/003677.html"
+        ],
+        "discovery": "2026-04-14T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-33999",
+                "CVE-2026-34000",
+                "CVE-2026-34001",
+                "CVE-2026-34002",
+                "CVE-2026-34003"
+            ]
+        },
+        "vid": "7b6463c6-3813-11f1-a284-589cfc10a551"
+    },
+    "details": "X.Org project reports:\n\n> Multiple issues have been found in the X server and Xwayland\n> implementations published by X.Org for which we are releasing security\n> fixes for in xorg-server-21.1.22 and xwayland-24.1.10.\n",
+    "id": "FreeBSD-2026-0107",
+    "modified": "2026-04-14T00:00:00Z",
+    "published": "2026-04-14T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://lists.x.org/archives/xorg-announce/2026-April/003677.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33999"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34000"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34001"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34002"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34003"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "xorg-server -- Multiple vulnerabilities"
+}

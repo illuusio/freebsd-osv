@@ -1,0 +1,220 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "147.0.7727.101"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "147.0.7727.101"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/04/stable-channel-update-for-desktop_15.html"
+        ],
+        "discovery": "2026-04-15T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-6296",
+                "CVE-2026-6297",
+                "CVE-2026-6298",
+                "CVE-2026-6299",
+                "CVE-2026-6358",
+                "CVE-2026-6359",
+                "CVE-2026-6300",
+                "CVE-2026-6301",
+                "CVE-2026-6302",
+                "CVE-2026-6303",
+                "CVE-2026-6304",
+                "CVE-2026-6305",
+                "CVE-2026-6306",
+                "CVE-2026-6307",
+                "CVE-2026-6308",
+                "CVE-2026-6309",
+                "CVE-2026-6360",
+                "CVE-2026-6310",
+                "CVE-2026-6311",
+                "CVE-2026-6312",
+                "CVE-2026-6313",
+                "CVE-2026-6314",
+                "CVE-2026-6315",
+                "CVE-2026-6316",
+                "CVE-2026-6361",
+                "CVE-2026-6362",
+                "CVE-2026-6317",
+                "CVE-2026-6363",
+                "CVE-2026-6318",
+                "CVE-2026-6319",
+                "CVE-2026-6364"
+            ]
+        },
+        "vid": "d93c247b-4dba-43ce-b5c0-ac5bd03bea8d"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 31 security fixes:\n>\n> - \\[490170083\\] Critical CVE-2026-6296: Heap buffer overflow in ANGLE.\n>   Reported by cinzinga on 2026-03-05\n> - \\[493628982\\] Critical CVE-2026-6297: Use after free in Proxy.\n>   Reported by heapracer on 2026-03-17\n> - \\[495700484\\] Critical CVE-2026-6298: Heap buffer overflow in Skia.\n>   Reported by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-24\n> - \\[497053588\\] Critical CVE-2026-6299: Use after free in Prerender.\n>   Reported by Google on 2026-03-28\n> - \\[497724498\\] Critical CVE-2026-6358: Use after free in XR. Reported\n>   by Jihyeon Jeong (Compsec Lab, Seoul National University / Research\n>   Intern) on 2026-03-30\n> - \\[490251701\\] High CVE-2026-6359: Use after free in Video. Reported\n>   by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-06\n> - \\[491994185\\] High CVE-2026-6300: Use after free in CSS. Reported by\n>   c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-12\n> - \\[495273999\\] High CVE-2026-6301: Type Confusion in Turbofan.\n>   Reported by qymag1c on 2026-03-23\n> - \\[495477995\\] High CVE-2026-6302: Use after free in Video. Reported\n>   by Syn4pse on 2026-03-24\n> - \\[496282147\\] High CVE-2026-6303: Use after free in Codecs. Reported\n>   by Google on 2026-03-25\n> - \\[496393742\\] High CVE-2026-6304: Use after free in Graphite.\n>   Reported by Google on 2026-03-26\n> - \\[496618639\\] High CVE-2026-6305: Heap buffer overflow in PDFium.\n>   Reported by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-26\n> - \\[496907110\\] High CVE-2026-6306: Heap buffer overflow in PDFium.\n>   Reported by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-27\n> - \\[497404188\\] High CVE-2026-6307: Type Confusion in Turbofan.\n>   Reported by Project WhatForLunch (@pjwhatforlunch) on 2026-03-29\n> - \\[497412658\\] High CVE-2026-6308: Out of bounds read in Media.\n>   Reported by Google on 2026-03-29\n> - \\[497846428\\] High CVE-2026-6309: Use after free in Viz. Reported by\n>   Google on 2026-03-30\n> - \\[497880137\\] High CVE-2026-6360: Use after free in FileSystem.\n>   Reported by asjidkalam on 2026-03-31\n> - \\[497969820\\] High CVE-2026-6310: Use after free in Dawn. Reported\n>   by Google on 2026-03-31\n> - \\[498201025\\] High CVE-2026-6311: Uninitialized Use in\n>   Accessibility. Reported by Google on 2026-03-31\n> - \\[498269651\\] High CVE-2026-6312: Insufficient policy enforcement in\n>   Passwords. Reported by Google on 2026-03-31\n> - \\[498765210\\] High CVE-2026-6313: Insufficient policy enforcement in\n>   CORS. Reported by Google on 2026-04-02\n> - \\[498782145\\] High CVE-2026-6314: Out of bounds write in GPU.\n>   Reported by Google on 2026-04-02\n> - \\[499247910\\] High CVE-2026-6315: Use after free in Permissions.\n>   Reported by Google on 2026-04-03\n> - \\[499384399\\] High CVE-2026-6316: Use after free in Forms. Reported\n>   by Google on 2026-04-03\n> - \\[500036290\\] High CVE-2026-6361: Heap buffer overflow in PDFium.\n>   Reported by Google on 2026-04-06\n> - \\[500066234\\] High CVE-2026-6362: Use after free in Codecs. Reported\n>   by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-04-07\n> - \\[500091052\\] High CVE-2026-6317: Use after free in Cast. Reported\n>   by Google on 2026-04-06\n> - \\[495751197\\] Medium CVE-2026-6363: Type Confusion in V8. Reported\n>   by Google on 2026-03-24\n> - \\[495996858\\] Medium CVE-2026-6318: Use after free in Codecs.\n>   Reported by Syn4pse on 2026-03-25\n> - \\[499018889\\] Medium CVE-2026-6319: Use after free in Payments.\n>   Reported by pwn2addr on 2026-04-02\n> - \\[502103414\\] Medium CVE-2026-6364: Out of bounds read in Skia.\n>   Reported by Google Threat Intelligence on 2026-04-13\n",
+    "id": "FreeBSD-2026-0110",
+    "modified": "2026-04-16T00:00:00Z",
+    "published": "2026-04-16T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/04/stable-channel-update-for-desktop_15.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6296"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6297"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6298"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6299"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6358"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6359"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6300"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6301"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6302"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6303"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6304"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6305"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6306"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6307"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6308"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6309"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6360"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6310"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6311"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6312"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6313"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6314"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6315"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6316"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6361"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6362"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6317"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6363"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6318"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6319"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6364"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- security fixes"
+}

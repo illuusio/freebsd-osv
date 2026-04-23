@@ -1,0 +1,86 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "xrdp"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.10.6,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/neutrinolabs/xrdp/releases/tag/v0.10.6"
+        ],
+        "discovery": "2026-03-03T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-32105",
+                "CVE-2026-32107",
+                "CVE-2026-32623",
+                "CVE-2026-32624",
+                "CVE-2026-33145",
+                "CVE-2026-32516",
+                "CVE-2026-32689",
+                "CVE-2026-35512"
+            ]
+        },
+        "vid": "6f1c19bf-3b29-11f1-930b-98b78501ef2a"
+    },
+    "details": "xrdp project reports:\n\n> This release includes 8 security fixes:\n>\n> - CVE-2026-32105\n> - CVE-2026-32107\n> - CVE-2026-32623\n> - CVE-2026-32624\n> - CVE-2026-33145\n> - CVE-2026-32516\n> - CVE-2026-32689\n> - CVE-2026-35512\n",
+    "id": "FreeBSD-2026-0114",
+    "modified": "2026-04-18T00:00:00Z",
+    "published": "2026-04-18T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/neutrinolabs/xrdp/releases/tag/v0.10.6"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-32105"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-32107"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-32623"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-32624"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33145"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-32516"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-32689"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35512"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "xrdp -- Multiple vulnerabilities"
+}

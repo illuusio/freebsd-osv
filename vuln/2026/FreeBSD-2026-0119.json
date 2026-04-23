@@ -1,0 +1,84 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "13.5"
+                        },
+                        {
+                            "fixed": "13.5_12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-04-21T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-5398"
+            ],
+            "freebsdsa": [
+                "SA-26:10.tty"
+            ]
+        },
+        "vid": "971b5528-3def-11f1-bb07-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nThe implementation of TIOCNOTTY failed to clear a back-pointer from the\nstructure representing the controlling terminal to the calling process\\'\nsession. If the invoking process then exits, the terminal structure may\nend up containing a pointer to freed memory.\n\n# Impact:\n\nA malicious process can abuse the dangling pointer to grant itself root\nprivileges.\n",
+    "id": "FreeBSD-2026-0119",
+    "modified": "2026-04-22T00:00:00Z",
+    "published": "2026-04-22T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5398"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:10.tty.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Kernel use-after-free bug in the TIOCNOTTY handler"
+}

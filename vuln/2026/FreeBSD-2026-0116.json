@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "zeek"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.0.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/zeek/zeek/releases/tag/v8.0.7"
+        ],
+        "discovery": "2026-04-20T00:00:00Z",
+        "vid": "0d8b1126-0864-4934-b63f-c713526ead32"
+    },
+    "details": "Tim Wojtulewicz of Corelight reports:\n\n> A series of DNS messages containing long DNS compression chains can\n> cause Zeek to spend a long time processing packets and potentially\n> crash. Due to the fact that these packets can be received from remote\n> hosts, this is a DoS risk.\n>\n> A specially-crafted LDAP search request can cause Zeek to spend a long\n> time processing the packet, resulting in Zeek silently dropping the\n> LDAP analyzer for the connection. Due to the fact that these packets\n> can be received from remote hosts, this is an evasion risk.\n>\n> A specially-crafted series of ASN.1 messages in LDAP packets can cause\n> Zeek to spend a long time processing the packets, resulting in Zeek\n> silently dropping the LDAP analyzer for the connection. Due to the\n> fact that these packets can be received from remote hosts, this is an\n> evasion risk.\n",
+    "id": "FreeBSD-2026-0116",
+    "modified": "2026-04-20T00:00:00Z",
+    "published": "2026-04-20T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/zeek/zeek/releases/tag/v8.0.7"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "zeek -- potential DoS vulnerabilities"
+}

@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ejabberd"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.04"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.process-one.net/blog/ejabberd-26-04/"
+        ],
+        "discovery": "2026-04-20T00:00:00Z",
+        "vid": "82064ab5-3d76-11f1-89ab-901b0e9408dc"
+    },
+    "details": "ejabberd team reports:\n\n> This release adds new options that limit max memory used by XML parser\n> used to process XMPP payloads, to prevent potential Denial of Service\n> attack. The default values for pre-auth provide sufficient protection\n> for ejabberd against non-authenticated users on c2s and s2s, so there\n> is no need to change your configuration.\n",
+    "id": "FreeBSD-2026-0117",
+    "modified": "2026-04-21T00:00:00Z",
+    "published": "2026-04-21T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.process-one.net/blog/ejabberd-26-04/"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "ejabberd -- Potential DDoS in XML Parser"
+}

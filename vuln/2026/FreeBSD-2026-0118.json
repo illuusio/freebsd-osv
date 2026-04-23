@@ -1,0 +1,89 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "148.0.0,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox-esr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "140.8.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "148.0.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=2009552"
+        ],
+        "discovery": "2026-02-24T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-2781"
+            ]
+        },
+        "vid": "c4972d4f-3d93-11f1-9073-b42e991fc52e"
+    },
+    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2009552 reports:\n\n> Integer overflow in the Libraries component in NSS.\n",
+    "id": "FreeBSD-2026-0118",
+    "modified": "2026-04-21T00:00:00Z",
+    "published": "2026-04-21T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2009552"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2781"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Mozilla -- Integer overflow"
+}

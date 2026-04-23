@@ -1,0 +1,65 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openexr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.4.10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.3.10"
+        ],
+        "discovery": "2026-04-17T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-39886",
+                "CVE-2026-40244",
+                "CVE-2026-40250"
+            ]
+        },
+        "vid": "7b83af27-3a86-11f1-90cd-41d47652b1c2"
+    },
+    "details": "Cary Phillips reports:\n\n> OpenEXR 3.4.10 is a patch release that addresses the following\n> security vulnerabilities:\n>\n> - CVE-2026-39886 HTJ2K Signed Integer Overflow in ht_undo_impl()\n> - CVE-2026-40244 Integer overflow in DWA setupChannelData planarUncRle\n>   pointer arithmetic (missed variant of CVE-2026-34589)\n> - CVE-2026-40250 Integer overflow in DWA decoder outBufferEnd pointer\n>   arithmetic (missed variant of CVE-2026-34589)\n",
+    "id": "FreeBSD-2026-0115",
+    "modified": "2026-04-19T00:00:00Z",
+    "published": "2026-04-19T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.3.10"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39886"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40244"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40250"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.10"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "OpenEXR -- several integer overflow vulnerabilities"
+}

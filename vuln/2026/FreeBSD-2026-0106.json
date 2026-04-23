@@ -3,7 +3,71 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "xwayland"
+                "name": "python310"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python311"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python312"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python313"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python314"
             },
             "ranges": [
                 {
@@ -12,7 +76,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "24.1.10"
+                            "fixed": "3.14.4_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,50 +86,42 @@
     ],
     "database_specific": {
         "cite": [
-            "https://lists.x.org/archives/xorg-announce/2026-April/003677.html"
+            "https://mail.python.org/archives/list/security-announce@python.org/thread/JQDUNJVB4AQNTJECSUKOBDU3XCJIPSE5/"
         ],
-        "discovery": "2026-04-14T00:00:00Z",
+        "discovery": "2026-04-06T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-33999",
-                "CVE-2026-34000",
-                "CVE-2026-34001",
-                "CVE-2026-34002",
-                "CVE-2026-34003"
+                "CVE-2026-4786"
             ]
         },
-        "vid": "099423d1-3815-11f1-a284-589cfc10a551"
+        "vid": "cf75f572-378a-11f1-a119-e36228bfe7d4"
     },
-    "details": "X.Org project reports:\n\n> Multiple issues have been found in the X server and Xwayland\n> implementations published by X.Org for which we are releasing security\n> fixes for in xorg-server-21.1.22 and xwayland-24.1.10.\n",
+    "details": "Seth Larson reports:\n\n> \\[CVE-2026-4786\\] Incomplete mitigation of CVE-2026-4519, %action\n> expansion for command injection to webbrowser.open()\n>\n> There is a HIGH severity vulnerability affecting CPython.\n>\n> Mitgation of CVE-2026-4519 was incomplete. If the URL contained\n> \\\"%action\\\" the mitigation could be bypassed for certain browser types\n> the \\\"webbrowser.open()\\\" API could have commands injected into the\n> underlying shell. See CVE-2026-4519 for details.\n",
     "id": "FreeBSD-2026-0106",
-    "modified": "2026-04-14T00:00:00Z",
-    "published": "2026-04-14T00:00:00Z",
+    "modified": "2026-04-13T00:00:00Z",
+    "published": "2026-04-13T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://lists.x.org/archives/xorg-announce/2026-April/003677.html"
+            "url": "https://mail.python.org/archives/list/security-announce@python.org/thread/JQDUNJVB4AQNTJECSUKOBDU3XCJIPSE5/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33999"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4786"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34000"
+            "type": "WEB",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2026-4786"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34001"
+            "type": "WEB",
+            "url": "https://github.com/python/cpython/issues/148169"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34002"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34003"
+            "type": "WEB",
+            "url": "https://github.com/python/cpython/pull/148170"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "xwayland -- Multiple vulnerabilities"
+    "summary": "python -- more webbrowser.open() command injection vulnerabilities"
 }
