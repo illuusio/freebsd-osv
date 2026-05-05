@@ -1,0 +1,84 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "13.5"
+                        },
+                        {
+                            "fixed": "13.5_13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-04-29T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-42512"
+            ],
+            "freebsdsa": [
+                "SA-26:15.dhclient"
+            ]
+        },
+        "vid": "58acf4c5-4435-11f1-bb07-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nAs dhclient is building an environment to pass to dhclient-script, it\nmay need to resize the array of string pointers. The code which expands\nthe array incorrectly calculates its new size when requesting memory,\nresulting in a heap buffer overrun.\n\n# Impact:\n\nA specially crafted packet can cause dhclient to overrun its buffer of\nenvironment entries. This can result in a crash, but it may be possible\nto leverage this bug to achieve remote code execution.\n",
+    "id": "FreeBSD-2026-0174",
+    "modified": "2026-04-30T00:00:00Z",
+    "published": "2026-04-30T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42512"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:15.dhclient.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Remotely triggerable out-of-bounds heap write in dhclient"
+}

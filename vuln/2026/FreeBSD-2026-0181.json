@@ -1,0 +1,101 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "apache24"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.4.67"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://dlcdn.apache.org/httpd/CHANGES_2.4.67"
+        ],
+        "discovery": "2026-05-04T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-34059",
+                "CVE-2026-34032",
+                "CVE-2026-33857",
+                "CVE-2026-33523",
+                "CVE-2026-33007",
+                "CVE-2026-33006",
+                "CVE-2026-29169",
+                "CVE-2026-29168",
+                "CVE-2026-28780",
+                "CVE-2026-24072",
+                "CVE-2026-23918"
+            ]
+        },
+        "vid": "1ccc383b-486a-11f1-8b62-8447094a420f"
+    },
+    "details": "The Apache httpd project reports:\n\n> mod_proxy_ajp: CVE-2026-34059, CVE-2026-34032, CVE-2026-33857,\n> CVE-2026-28780\n>\n> multiple modules: CVE-2026-33523\n>\n> mod_authn_socache: CVE-2026-33007\n>\n> mod_auth_digest: CVE-2026-33006\n>\n> mod_dav_lock: mod_dav_lock\n>\n> mod_md: CVE-2026-29168\n>\n> mod_rewrite: CVE-2026-24072\n>\n> mod_http2: CVE-2026-23918\n",
+    "id": "FreeBSD-2026-0181",
+    "modified": "2026-05-05T00:00:00Z",
+    "published": "2026-05-05T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://dlcdn.apache.org/httpd/CHANGES_2.4.67"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34059"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34032"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33857"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33523"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33007"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33006"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-29169"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-29168"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-28780"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-24072"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-23918"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "www/apache24 -- Multiple vulnerabilities"
+}

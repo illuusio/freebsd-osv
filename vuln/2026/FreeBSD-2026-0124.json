@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "expat"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.8.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/libexpat/libexpat/pull/1183"
+        ],
+        "discovery": "2026-04-16T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-41080"
+            ]
+        },
+        "vid": "88440f1d-4168-11f1-95f7-00a098b42aeb"
+    },
+    "details": "https://github.com/libexpat/libexpat/pull/1183 reports:\n\n> libexpat before 2.8.0 uses insufficient entropy, and thus hash\n> flooding can occur via a crafted XML document.\n",
+    "id": "FreeBSD-2026-0124",
+    "modified": "2026-04-26T00:00:00Z",
+    "published": "2026-04-26T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/libexpat/libexpat/pull/1183"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-41080"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "(lib)expat -- Insufficient entropy"
+}

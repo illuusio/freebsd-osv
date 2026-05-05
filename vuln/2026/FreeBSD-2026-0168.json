@@ -1,0 +1,70 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "150.0.1,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox-esr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "140.10.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2021904%2C2022731%2C2027158%2C2027733%2C2027973%2C2027976%2C2028231%2C2028731%2C2028886%2C2029067%2C2029700%2C2029724%2C2029806%2C2029814%2C2030108%2C2030111%2C2031524%2C2031921%2C2032040"
+        ],
+        "discovery": "2026-04-28T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-7322"
+            ]
+        },
+        "vid": "5a44e168-4394-11f1-a190-b42e991fc52e"
+    },
+    "details": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2021904%2C2022731%2C2027158%2C2027733%2C2027973%2C2027976%2C2028231%2C2028731%2C2028886%2C2029067%2C2029700%2C2029724%2C2029806%2C2029814%2C2030108%2C2030111%2C2031524%2C2031921%2C2032040\nreports:\n\n> Memory safety bugs. Some of these bugs showed evidence of memory\n> corruption and we presume that with enough effort some of these could\n> have been exploited to run arbitrary code.\n",
+    "id": "FreeBSD-2026-0168",
+    "modified": "2026-04-29T00:00:00Z",
+    "published": "2026-04-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2021904%2C2022731%2C2027158%2C2027733%2C2027973%2C2027976%2C2028231%2C2028731%2C2028886%2C2029067%2C2029700%2C2029724%2C2029806%2C2029814%2C2030108%2C2030111%2C2031524%2C2031921%2C2032040"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7322"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "firefox -- Memory safety bugs"
+}

@@ -1,0 +1,84 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "13.5"
+                        },
+                        {
+                            "fixed": "13.5_13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-04-29T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-7270"
+            ],
+            "freebsdsa": [
+                "SA-26:13.exec"
+            ]
+        },
+        "vid": "f528ea29-4434-11f1-bb07-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nAn operator precedence bug in the kernel results in a scenario where a\nbuffer overflow causes attacker-controlled data to overwrite adjacent\nexecve(2) argument buffers.\n\n# Impact:\n\nThe bug may be exploitable by an unprivileged user to obtain superuser\nprivileges.\n",
+    "id": "FreeBSD-2026-0172",
+    "modified": "2026-04-30T00:00:00Z",
+    "published": "2026-04-30T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7270"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:13.exec.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Local privilege escalation via execve()"
+}

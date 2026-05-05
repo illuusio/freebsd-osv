@@ -1,0 +1,53 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "modsecurity3"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.0.15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-04-28T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-42268",
+                "CVE-2026-30923"
+            ]
+        },
+        "vid": "3c02dcfd-47d7-11f1-99fb-3497f65b111b"
+    },
+    "details": "ModSecurity is an open source web application firewall engine.\n\nAccording to the upstream changelog, multiple vulnerabilities have been\nfixed.\n\n- CVE-2026-42268: unsigned integer underflow in verify operators\n- CVE-2026-30923: buffer overflow in hex_decode\n",
+    "id": "FreeBSD-2026-0180",
+    "modified": "2026-05-04T00:00:00Z",
+    "published": "2026-05-04T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42268"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-30923"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/owasp-modsecurity/ModSecurity/blob/v3.0.15/CHANGES"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "modsecurity3 -- multiple vulnerabilities"
+}

@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "p5-Text-CSV_XS"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.62"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/cpan-authors/Text-CSV_XS/commit/c17f31a5f2bf36674748eb4b6e25672f0571a224.patch"
+        ],
+        "discovery": "2026-04-29T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-7111"
+            ]
+        },
+        "vid": "7ebfb0bf-44b4-11f1-8b82-3c7c3fba4204"
+    },
+    "details": "H.Merijn Brand - Tux \\<linux@tux.freedom.nl\\> reports:\n\n> Text::CSV_XS versions before 1.62 for Perl have a use-after-free when\n> registered callbacks extend the Perl argument stack, which may enable\n> type confusion or memory corruption. The Parse, print, getline, and\n> getline_all methods invoke registered callbacks (for example\n> after_parse, before_print, or on_error) and cache the Perl argument\n> stack pointer across the call. If a callback extends the argument\n> stack enough to trigger a reallocation, the return value is written\n> through the stale pointer into the freed buffer, and the caller reads\n> the original \\$self argument as the return value instead. Calling code\n> that expects parsed data from getline_all receives the Text::CSV_XS\n> object in its place, leading to logic errors or crashes. Text::CSV_XS\n> objects used without any registered callbacks are not affected.\n",
+    "id": "FreeBSD-2026-0177",
+    "modified": "2026-04-30T00:00:00Z",
+    "published": "2026-04-30T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/cpan-authors/Text-CSV_XS/commit/c17f31a5f2bf36674748eb4b6e25672f0571a224.patch"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7111"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Text::CSV_XS -- CWE-825 Expired Pointer Dereference"
+}

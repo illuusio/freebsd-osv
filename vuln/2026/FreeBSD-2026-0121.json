@@ -1,0 +1,56 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvpn"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.7.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/OpenVPN/openvpn/blob/v2.7.2/Changes.rst"
+        ],
+        "discovery": "2026-04-19T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-35058",
+                "CVE-2026-40215"
+            ]
+        },
+        "vid": "549313db-3e93-11f1-8d38-7fbbe0285610"
+    },
+    "details": "Gert Doering reports:\n\n> \\[Security fixes in 2.7.2\\]\n>\n> - fix race condition in TLS handshake that could lead to leaking of\n>   packet data from a previous handshake under specific circumstances\n>   (CVE-2026-40215)\n> - fix server \\[termination\\] on receiving a suitably malformed packet\n>   with a valid tls-crypt-v2 key (CVE-2026-35058)\n",
+    "id": "FreeBSD-2026-0121",
+    "modified": "2026-04-22T00:00:00Z",
+    "published": "2026-04-22T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/OpenVPN/openvpn/blob/v2.7.2/Changes.rst"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35058"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40215"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "OpenVPN -- server DOS and data leak in TLS handshake vulnerabilities"
+}

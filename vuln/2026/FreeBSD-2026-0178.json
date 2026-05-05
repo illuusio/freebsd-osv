@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "prosody"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "13.0.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://prosody.im/security/advisory_735dd9d3/"
+        ],
+        "discovery": "2026-04-29T00:00:00Z",
+        "vid": "a420f545-442c-11f1-b9b5-589cfc0dc9a2"
+    },
+    "details": "The Prosody team reports:\n\n> Traffic patterns were discovered which can cause Prosody to consume\n> excessive amounts of memory with much smaller amounts of incoming\n> traffic. This traffic can be sent by unauthenticated connections. It\n> was discovered that mod_proxy65's access control was broken and\n> incomplete due to two bugs.\n>\n> The issue with unpausing connections was discovered and disclosed by\n> [Max Hearnden](https://github.com/MaxHearnden).\n",
+    "id": "FreeBSD-2026-0178",
+    "modified": "2026-04-30T00:00:00Z",
+    "published": "2026-04-30T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://prosody.im/security/advisory_735dd9d3/"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Prosody XMPP server advisory 2026-04-29"
+}

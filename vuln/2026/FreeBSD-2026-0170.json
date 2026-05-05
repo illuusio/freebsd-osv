@@ -1,0 +1,61 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openexr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.4.11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.11"
+        ],
+        "discovery": "2026-04-29T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-42217",
+                "CVE-2026-42216",
+                "CVE-2026-41142"
+            ]
+        },
+        "vid": "787cde46-4424-11f1-943f-05b19d100dca"
+    },
+    "details": "Cary Phillips reports:\n\n> \\[OpenEXR v3.4.11 is a p\\]atch release that addresses the following\n> security vulnerabilities:\n>\n> - CVE-2026-42217 Shift exponent overflow in\n>   readVariableLengthInteger() (ImfIDManifest.cpp)\n> - CVE-2026-42216 Out-of-bounds read in IDManifest::init() during\n>   prefix expansion\n> - CVE-2026-41142 Integer overflow in ImageChannel::resize leads to\n>   heap OOB write via OpenEXRUtil public API\n> - OSS-fuzz 504280155 Heap-buffer-overflow in DwaCompressor_uncompress\n> - OSS-fuzz 505062709 Null-dereference READ in\n>   Imf_3_3::prefixFromLayerName\n",
+    "id": "FreeBSD-2026-0170",
+    "modified": "2026-04-29T00:00:00Z",
+    "published": "2026-04-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.11"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42217"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42216"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-41142"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "openexr -- multiple vulnerabilities"
+}

@@ -1,0 +1,84 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "13.5"
+                        },
+                        {
+                            "fixed": "13.5_13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-04-29T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-7164"
+            ],
+            "freebsdsa": [
+                "SA-26:14.pf"
+            ]
+        },
+        "vid": "225ba563-4435-11f1-bb07-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nIncorrect packet validation allowed unbounded recursion parsing SCTP\nchunk parameters. This can eventually result in a stack overflow and\npanic.\n\n# Impact:\n\nRemote attackers can craft packets which cause affected systems to\npanic. This affects any system where pf is configured to process\ntraffic, independent of the configured ruleset.\n",
+    "id": "FreeBSD-2026-0173",
+    "modified": "2026-04-30T00:00:00Z",
+    "published": "2026-04-30T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7164"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:14.pf.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- pf can overflow the stack parsing crafted SCTP packets"
+}

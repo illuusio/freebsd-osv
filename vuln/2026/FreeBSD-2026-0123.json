@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "lcms2"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.19"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/mm2/Little-CMS/commit/da6110b1d14abc394633a388209abd5ebedd7ab0"
+        ],
+        "discovery": "2026-04-18T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-41254"
+            ]
+        },
+        "vid": "ca62e49c-4150-11f1-95f7-00a098b42aeb"
+    },
+    "details": "https://github.com/mm2/Little-CMS/commit/da6110b1d14abc394633a388209abd5ebedd7ab0\nreports:\n\n> Little CMS (lcms2) through 2.18 has an integer overflow in CubeSize in\n> cmslut.c because the overflow check is performed after the\n> multiplication.\n",
+    "id": "FreeBSD-2026-0123",
+    "modified": "2026-04-26T00:00:00Z",
+    "published": "2026-04-26T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/mm2/Little-CMS/commit/da6110b1d14abc394633a388209abd5ebedd7ab0"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-41254"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "lcms2 -- Integer overflow"
+}
