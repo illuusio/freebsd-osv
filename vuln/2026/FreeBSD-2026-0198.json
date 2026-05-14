@@ -1,0 +1,76 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.30.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://nginx.org/en/CHANGES-1.30"
+        ],
+        "discovery": "2026-05-14T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-42926",
+                "CVE-2026-42945",
+                "CVE-2026-42946",
+                "CVE-2026-42934",
+                "CVE-2026-40460",
+                "CVE-2026-40701"
+            ]
+        },
+        "vid": "3414ac89-4f9f-11f1-a1c0-0050569f0b83"
+    },
+    "details": "nginx development team reports:\n\n> When using the \\\"proxy_set_body\\\" directive, an attacker might inject\n> data in the proxied request to an HTTP/2 backend\n>\n> A heap memory buffer overflow might occur in a worker process while\n> handling a specially crafted request by ngx_http_rewrite_module,\n> potentially resulting in arbitrary code execution\n>\n> A heap memory buffer overread might occur in a worker process while\n> handling a specially crafted response by ngx_http_scgi_module or\n> ngx_http_uwsgi_module, allowing an attacker to cause a disclosure of\n> worker process memory or segmentation fault in a worker process\n>\n> A heap memory buffer overread might occur in a worker process while\n> handling a specially sent response with decoding from UTF-8 via the\n> \\\"charset_map\\\" directive, allowing an attacker to cause a limited\n> disclosure of worker proccess memory or segmentation fault in a worker\n> process\n>\n> When using HTTP/3, processing of connection migration might cause new\n> QUIC streams to receive a new client address before validation,\n> allowing an attacker to cause address spoofing\n>\n> use-after-free might occur during DNS server response processing if\n> the \\\"ssl_ocsp\\\" directive was used, allowing an attacker to cause\n> worker process memory corruption or segmentation fault in a worker\n> process\n",
+    "id": "FreeBSD-2026-0198",
+    "modified": "2026-05-14T00:00:00Z",
+    "published": "2026-05-14T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://nginx.org/en/CHANGES-1.30"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42926"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42945"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42946"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42934"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40460"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40701"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "www/nginx -- Remote Code Execution/DoS"
+}

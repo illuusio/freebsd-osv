@@ -9,10 +9,21 @@
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "2.7.0"
                         },
                         {
                             "fixed": "2.7.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.6.20"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -35,7 +46,7 @@
     },
     "details": "Gert Doering reports:\n\n> \\[Security fixes in 2.7.2\\]\n>\n> - fix race condition in TLS handshake that could lead to leaking of\n>   packet data from a previous handshake under specific circumstances\n>   (CVE-2026-40215)\n> - fix server \\[termination\\] on receiving a suitably malformed packet\n>   with a valid tls-crypt-v2 key (CVE-2026-35058)\n",
     "id": "FreeBSD-2026-0121",
-    "modified": "2026-04-22T00:00:00Z",
+    "modified": "2026-05-02T00:00:00Z",
     "published": "2026-04-22T00:00:00Z",
     "references": [
         {

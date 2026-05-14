@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ocaml-opam"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.5.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/ocaml/opam/releases/tag/2.5.1"
+        ],
+        "discovery": "2026-04-16T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-41082"
+            ]
+        },
+        "vid": "9b5d6fbb-4893-11f1-82bf-3c7c3fba4204"
+    },
+    "details": "<https://github.com/ocaml/opam/releases/tag/2.5.1> reports:\n\n> In OCaml opam before 2.5.1, a .install field containing a destination\n> filepath can use ../ to reach a parent directory.\n>\n> Reported by [Andrew Nesbitt](https://github.com/andrew)\n> \\<andrewnez@gmail.com\\>.\n",
+    "id": "FreeBSD-2026-0182",
+    "modified": "2026-05-05T00:00:00Z",
+    "published": "2026-05-05T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/ocaml/opam/releases/tag/2.5.1"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-41082"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "devel/ocaml-opam -- CWE-24 Path Traversal: '../filedir'"
+}

@@ -83,51 +83,51 @@
             "url": "https://cveawg.mitre.org/api/cve/CVE-2011-0046"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=621591"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=619594"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=591165"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=621572"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=619588"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=628034"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=621090"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=621105"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=621107"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=621108"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=621109"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=621110"
         }
     ],

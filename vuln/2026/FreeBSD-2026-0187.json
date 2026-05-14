@@ -1,0 +1,70 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "150.0.2,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox-esr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "140.10.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/"
+        ],
+        "discovery": "2026-05-07T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-8092"
+            ]
+        },
+        "vid": "7a9f1c15-4aae-11f1-88d3-b42e991fc52e"
+    },
+    "details": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/ reports:\n\n> Memory safety bugs. Some of these bugs showed evidence of memory\n> corruption and we presume that with enough effort some of these could\n> have been exploited to run arbitrary code.\n",
+    "id": "FreeBSD-2026-0187",
+    "modified": "2026-05-08T00:00:00Z",
+    "published": "2026-05-08T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-8092"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "firefox -- Memory safety bugs present in Firefox ESR 115"
+}

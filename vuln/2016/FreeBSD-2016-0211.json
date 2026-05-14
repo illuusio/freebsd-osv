@@ -65,7 +65,7 @@
             "url": "https://cveawg.mitre.org/api/cve/CVE-2016-2803"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1253263"
         }
     ],

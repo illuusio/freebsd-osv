@@ -56,19 +56,19 @@
             "url": "https://cveawg.mitre.org/api/cve/CVE-2014-1571"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1074812"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1075578"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1064140"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=1054702"
         }
     ],

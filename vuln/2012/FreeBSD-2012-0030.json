@@ -62,11 +62,11 @@
             "url": "https://cveawg.mitre.org/api/cve/CVE-2012-0440"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=714472"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=718319"
         }
     ],

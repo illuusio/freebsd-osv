@@ -192,7 +192,7 @@
             "url": "https://cveawg.mitre.org/api/cve/CVE-2013-0785"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=842038"
         },
         {
@@ -200,7 +200,7 @@
             "url": "https://cveawg.mitre.org/api/cve/CVE-2013-0786"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=824399"
         }
     ],

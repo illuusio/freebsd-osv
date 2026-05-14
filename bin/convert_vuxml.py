@@ -48,7 +48,7 @@ re_date = re.compile(r"^(19|20)[0-9]{2}-[0-9]{2}-[0-9]{2}$")
 re_invalid_package_name = re.compile("[@!#$%^&*()<>?/\\|}{~:]")
 
 # warn if description has more than X characters
-DESCRIPTION_LENGTH = 5000
+DESCRIPTION_LENGTH = 12000
 
 namespace = "{http://www.vuxml.org/apps/vuxml-1}"
 
@@ -67,7 +67,7 @@ url_freebsd_sa = "https://www.freebsd.org/security/advisories/FreeBSD-%s.asc"
 url_reports = [
     "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=",
     "http://bugzilla.mozilla.org/show_bug.cgi?id=",
-    "https://bugzilla.mozilla.org/show_bug.cgi?id=",
+    "https://bugzilla.mozillbin/convert_vuxml.pya.org/show_bug.cgi?id=",
     "https://bugzilla.redhat.com/show_bug.cgi?id=",
     "https://bugzilla.suse.com/show_bug.cgi?id=",
 ]

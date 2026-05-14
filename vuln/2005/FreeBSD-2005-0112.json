@@ -589,7 +589,7 @@
             "url": "http://xforce.iss.net/xforce/alerts/id/191"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=285595"
         }
     ],

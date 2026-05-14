@@ -1,0 +1,93 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "expat"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.8.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "linux-c7-expat"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.8.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "linux-rl9-expat"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.8.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://blog.hartwork.org/posts/expat-2-8-1-released/"
+        ],
+        "discovery": "2025-10-01T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-45186"
+            ]
+        },
+        "vid": "bacc1417-4d82-11f1-87f3-18dbf25a98c6"
+    },
+    "details": "> Expat 2.8.1 was released yesterday. The key motivation for cutting a\n> release and doing so now was:\n>\n> Fixing vulnerability CVE-2026-45186 that allows easy denial of\n> service.\n>\n> See also https://github.com/libexpat/libexpat/pull/1216\n",
+    "id": "FreeBSD-2026-0191",
+    "modified": "2026-05-11T00:00:00Z",
+    "published": "2026-05-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://blog.hartwork.org/posts/expat-2-8-1-released/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45186"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45186"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Vulnerability found in Expat"
+}

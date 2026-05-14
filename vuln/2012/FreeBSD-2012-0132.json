@@ -73,11 +73,11 @@
             "url": "https://cveawg.mitre.org/api/cve/CVE-2012-1969"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=777398"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=777586"
         }
     ],

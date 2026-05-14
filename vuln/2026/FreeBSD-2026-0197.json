@@ -1,0 +1,82 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mailpit"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.30.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/axllent/mailpit/releases/tag/v1.30.0"
+        ],
+        "discovery": "2026-05-14T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-45713",
+                "CVE-2026-45709",
+                "CVE-2026-45711",
+                "CVE-2026-45712"
+            ]
+        },
+        "vid": "6e701ad2-4f61-11f1-af6d-10ffe07f9334"
+    },
+    "details": "Mailpit author reports:\n\n> Set a default 50MB per message limit to prevent DoS via unlimited SMTP\n> DATA and /api/v1/send body sizes (GHSA-fpxj-m5q8-fphw)\n>\n> Include CGNAT (Carrier-Grade NAT) in internal IP checks\n> (GHSA-j3fj-qppj-fmmc)\n>\n> Block internal IP access by default in HTML check\n> (GHSA-j3fj-qppj-fmmc)\n>\n> Fix for path traversal & arbitrary file write in mailpit dump \\--http\n> \\<instance\\> via attacker-controlled message IDs (GHSA-qx5x-85p8-vg4j)\n>\n> Fix concurrent map read & write in proxy CSS rewriter\n> (GHSA-w4vj-r5pg-3722)\n",
+    "id": "FreeBSD-2026-0197",
+    "modified": "2026-05-14T00:00:00Z",
+    "published": "2026-05-14T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/axllent/mailpit/releases/tag/v1.30.0"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45713"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-fpxj-m5q8-fphw"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45709"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-j3fj-qppj-fmmc"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45711"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-qx5x-85p8-vg4j"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45712"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-w4vj-r5pg-3722"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "mail/mailpit -- multiple vulnerabilities"
+}

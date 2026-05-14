@@ -74,7 +74,7 @@
             "url": "https://cveawg.mitre.org/api/cve/CVE-2012-4199"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=731178"
         },
         {
@@ -82,7 +82,7 @@
             "url": "https://cveawg.mitre.org/api/cve/CVE-2012-4198"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=781850"
         },
         {
@@ -90,7 +90,7 @@
             "url": "https://cveawg.mitre.org/api/cve/CVE-2012-4197"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=802204"
         },
         {
@@ -98,7 +98,7 @@
             "url": "https://cveawg.mitre.org/api/cve/CVE-2012-4189"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=790296"
         },
         {
@@ -114,7 +114,7 @@
             "url": "https://cveawg.mitre.org/api/cve/CVE-2012-5883"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=808845"
         },
         {

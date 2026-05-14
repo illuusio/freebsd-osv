@@ -564,7 +564,7 @@
             "url": "http://www.mozilla.org/security/idn.html"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=307259"
         },
         {

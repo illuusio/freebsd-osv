@@ -65,11 +65,11 @@
             "url": "https://cveawg.mitre.org/api/cve/CVE-2005-0752"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=288556"
         },
         {
-            "type": "REPORT",
+            "type": "WEB",
             "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=289171"
         }
     ],
