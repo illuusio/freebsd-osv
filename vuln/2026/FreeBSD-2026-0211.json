@@ -1,0 +1,76 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "rsync"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.4.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://download.samba.org/pub/rsync/NEWS#3.4.3"
+        ],
+        "discovery": "2026-05-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-29518",
+                "CVE-2026-43617",
+                "CVE-2026-43618",
+                "CVE-2026-43619",
+                "CVE-2026-43620",
+                "CVE-2026-45232"
+            ]
+        },
+        "vid": "ecca89eb-54e6-11f1-bc4a-40b034429ecf"
+    },
+    "details": "The rsync project reports:\n\n> Six CVEs are fixed in this release. All six are assigned by VulnCheck\n> as CNA. Affected versions are 3.4.2 and earlier in every case.\n>\n> In addition to the six CVE fixes, this release adds defence-in-depth\n> hardening on several adjacent paths: bounded wire-supplied counts and\n> lengths in flist/io/acls/xattrs, a guard against length underflow in\n> cumulative snprintf() callers, a parent block-index bounds check on\n> the receiver, a NULL check in read_delay_line(), a lower ceiling on\n> MAX_WIRE_DEL_STAT to avoid signed-int overflow in the read_del_stats()\n> accumulator, rejection of hyphen-prefixed remote-shell hostnames\n> (defence-in-depth against argv-injection in tooling that forwards\n> untrusted input into the hostspec position; reported by Aisle Research\n> via Michal Ruprich), and a NULL-check on localtime_r() in timestring()\n> to keep a malicious server from crashing the client by advertising a\n> file with an out-of-range modtime.\n",
+    "id": "FreeBSD-2026-0211",
+    "modified": "2026-05-21T00:00:00Z",
+    "published": "2026-05-21T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://download.samba.org/pub/rsync/NEWS#3.4.3"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-29518"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-43617"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-43618"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-43619"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-43620"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45232"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "ner/rsync -- multiple vulnerabilities"
+}

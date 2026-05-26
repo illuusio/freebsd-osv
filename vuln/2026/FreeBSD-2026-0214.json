@@ -1,0 +1,161 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-base"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-good"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-bad"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-ugly"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://gstreamer.freedesktop.org/security/"
+        ],
+        "discovery": "2026-05-11T00:00:00Z",
+        "vid": "ea4c5b9d-55f7-11f1-915c-8974b59277b5"
+    },
+    "details": "The GStreamer project reports multiple security vulnerabilities fixed in\nthe 1.28.3 release:\n\n> Six security vulnerabilities were addressed, including:\n>\n> - Bounds check errors in MXF VANC packet handling.\n> - Use-after-free in GStreamer core buffer value deserialization.\n> - Out-of-bounds read in MXF demuxer temporal offset check.\n> - Out-of-bounds write in H.266/VVC parser when parsing PPS tile\n>   slices.\n> - Insufficient validation in MOV/MP4 demuxer uncompressed video\n>   handling.\n> - Out-of-bounds reads in MPEG PS PES header parsing.\n>\n> These could lead to application crashes, memory corruption, or\n> potentially arbitrary code execution.\n",
+    "id": "FreeBSD-2026-0214",
+    "modified": "2026-05-22T00:00:00Z",
+    "published": "2026-05-22T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://gstreamer.freedesktop.org/security/"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0024.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0025.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0026.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0027.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0028.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0029.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "gstreamer1 -- multiple vulnerabilities"
+}

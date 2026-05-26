@@ -48,7 +48,7 @@ re_date = re.compile(r"^(19|20)[0-9]{2}-[0-9]{2}-[0-9]{2}$")
 re_invalid_package_name = re.compile("[@!#$%^&*()<>?/\\|}{~:]")
 
 # warn if description has more than X characters
-DESCRIPTION_LENGTH = 12000
+DESCRIPTION_LENGTH = 28000
 
 namespace = "{http://www.vuxml.org/apps/vuxml-1}"
 

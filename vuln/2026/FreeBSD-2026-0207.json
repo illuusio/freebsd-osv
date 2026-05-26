@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-05-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-45253"
+            ],
+            "freebsdsa": [
+                "SA-26:21.ptrace"
+            ]
+        },
+        "vid": "6c96da5e-54b6-11f1-8d7a-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nptrace(PT_SC_REMOTE) failed to properly validate parameters for the\nsyscall(2) and \\_\\_syscall(2) meta-system calls. As a result, a user\nwith the ability to debug a process may trigger arbitrary code execution\nin the kernel, even if the target process has no special privileges.\n\n# Impact:\n\nThe missing validation allows an unprivileged local user to escalate\nprivileges, potentially gaining full control of the affected system.\n",
+    "id": "FreeBSD-2026-0207",
+    "modified": "2026-05-21T00:00:00Z",
+    "published": "2026-05-21T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45253"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:21.ptrace.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Missing validation in ptrace(PT_SC_REMOTE)"
+}

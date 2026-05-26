@@ -1,0 +1,61 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "vinyl09"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.0.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "varnish7"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "7.7.3_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://vinyl-cache.org/security/VSV00019.html"
+        ],
+        "discovery": "2026-05-18T00:00:00Z",
+        "vid": "f0f4bb64-52c6-11f1-a1c0-0050569f0b83"
+    },
+    "details": "Vinyl Development Team reports:\n\n> A deficiency in HTTP/2 request parsing can be exploited to launch a\n> backend request desync attack (request smuggling), which in turn can\n> be used for cache poisoning, authentication bypass or possibly even\n> information disclosure and manipulation.\n",
+    "id": "FreeBSD-2026-0200",
+    "modified": "2026-05-18T00:00:00Z",
+    "published": "2026-05-18T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://vinyl-cache.org/security/VSV00019.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Vinyl/Varnish -- HTTP/2 parsing deficiency"
+}

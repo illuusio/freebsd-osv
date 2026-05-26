@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "traefik"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.7.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/traefik/traefik/releases/tag/v3.7.1"
+        ],
+        "discovery": "2026-05-15T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-44774"
+            ]
+        },
+        "vid": "4e221ca1-573a-11f1-9f6d-5404a68ad561"
+    },
+    "details": "The traefik project releases a new version addressing a CVE:\n\n> - CVE-2026-44774 (Gateway API TraefikService backend accepts\n>   rest@internal, allowing unauthorized exposure of the REST provider)\n",
+    "id": "FreeBSD-2026-0217",
+    "modified": "2026-05-24T00:00:00Z",
+    "published": "2026-05-24T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/traefik/traefik/releases/tag/v3.7.1"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44774"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "traefik -- Unauthorized exposure of the REST provider"
+}

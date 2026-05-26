@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-05-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-45252"
+            ],
+            "freebsdsa": [
+                "SA-26:20.fusefs"
+            ]
+        },
+        "vid": "3cc34467-54b6-11f1-8d7a-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nWhen a fusefs file system implements extended attributes, the kernel may\nsend a FUSE_LISTXATTR message to the userspace daemon to retrieve the\nlist of extended attributes for a given file. The FUSE protocol requires\nthe daemon to return a packed list of NUL-terminated strings. The fusefs\nkernel module calls strlen() on this daemon-supplied buffer without\nfirst verifying that the entire list is NUL-terminated.\n\n# Impact:\n\nIf a malicious daemon sends a non-NUL-terminated list, the fusefs kernel\nmodule may read beyond the end of one heap-allocated buffer and\npotentially write beyond the end of a second buffer. A malicious daemon\ncould disclose up to 253 bytes of kernel heap memory, or it could inject\nup to 250 attacker-controlled bytes into unallocated kernel heap space.\n",
+    "id": "FreeBSD-2026-0206",
+    "modified": "2026-05-21T00:00:00Z",
+    "published": "2026-05-21T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45252"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:20.fusefs.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Heap overflow in FUSE_LISTXATTR"
+}

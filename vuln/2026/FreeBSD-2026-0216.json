@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.30.2,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://nginx.org/en/CHANGES"
+        ],
+        "discovery": "2026-05-22T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-9256"
+            ]
+        },
+        "vid": "36a3131d-5600-11f1-b339-3497f65b111b"
+    },
+    "details": "The nginx developers report:\n\n> A heap memory buffer overflow might occur in a worker process when\n> using a configuration with overlapping captures in\n> ngx_http_rewrite_module, potentially resulting in arbitrary code\n> execution (CVE-2026-9256).\n",
+    "id": "FreeBSD-2026-0216",
+    "modified": "2026-05-22T00:00:00Z",
+    "published": "2026-05-22T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://nginx.org/en/CHANGES"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-9256"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "nginx -- heap buffer overflow in ngx_http_rewrite_module"
+}

@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-05-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-45255"
+            ],
+            "freebsdsa": [
+                "SA-26:23.bsdinstall"
+            ]
+        },
+        "vid": "039c0ab0-54b7-11f1-8d7a-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nWhen bsdinstall or bsdconfig are prompted to scan for nearby Wi-Fi\nnetworks, they build up a list of network names and use bsddialog(1) to\nprompt the user to select a network. This is implemented using a shell\nscript, and the code which handled network names was not careful to\nprevent expansion by the shell. As a result, a suitably crafted network\nname can be used to execute commands via a subshell.\n\n# Impact:\n\nThe problem can be exploited to execute code as root on the system\nrunning bsdinstall or bsdconfig. The attacker would need to create an\naccess point with a specially crafted name and be within range of a\nWi-Fi scan. Note that bsdinstall and bsdconfig are vulnerable as soon as\nthe user prompts them to scan for nearby networks; they do not need to\nactually select the malicious network.\n",
+    "id": "FreeBSD-2026-0209",
+    "modified": "2026-05-21T00:00:00Z",
+    "published": "2026-05-21T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45255"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:23.bsdinstall.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Remote code execution via installer Wi-Fi access point scans"
+}

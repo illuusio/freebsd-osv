@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-05-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-45254"
+            ],
+            "freebsdsa": [
+                "SA-26:24.cap_net"
+            ]
+        },
+        "vid": "37ab0cbc-54b7-11f1-8d7a-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nIn the case of the cap_net service, when a key present in the old limit\nwas omitted from the new limit, the missing key was treated as \\\"allow\nany\\\" instead of being rejected.\n\n# Impact:\n\nIn certain scenarios, an application that had previously restricted a\nsubset of network operations could ask for a new limit that extended the\npermissions of the process.\n",
+    "id": "FreeBSD-2026-0210",
+    "modified": "2026-05-21T00:00:00Z",
+    "published": "2026-05-21T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45254"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:24.cap_net.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Incorrect libcap_net limitation list manipulation"
+}

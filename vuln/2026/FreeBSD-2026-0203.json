@@ -1,0 +1,80 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx-devel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.31.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://nginx.org/en/CHANGES"
+        ],
+        "discovery": "2026-05-13T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-42926",
+                "CVE-2026-42945",
+                "CVE-2026-42946",
+                "CVE-2026-42934",
+                "CVE-2026-40460",
+                "CVE-2026-40701"
+            ]
+        },
+        "vid": "1ed77d8e-53bb-11f1-b339-3497f65b111b"
+    },
+    "details": "The nginx project reports:\n\n> nginx 1.31.0 fixes multiple security issues affecting HTTP/2 proxying,\n> rewrite handling, SCGI/uWSGI response handling, charset conversion,\n> HTTP/3 connection migration, and OCSP resolver response processing.\n",
+    "id": "FreeBSD-2026-0203",
+    "modified": "2026-05-19T00:00:00Z",
+    "published": "2026-05-19T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://nginx.org/en/CHANGES"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42926"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42945"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42946"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42934"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40460"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40701"
+        },
+        {
+            "type": "WEB",
+            "url": "https://nginx.org/en/security_advisories.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "nginx-devel -- multiple vulnerabilities"
+}

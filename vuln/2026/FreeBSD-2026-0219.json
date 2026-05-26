@@ -1,0 +1,54 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jellyfin"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.11.10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/jellyfin/jellyfin/releases/tag/v10.11.10"
+        ],
+        "discovery": "2026-05-24T00:00:00Z",
+        "vid": "87ff1d7e-6b24-4a5b-9825-90dcda5ee119"
+    },
+    "details": "The Jellyfin project reports:\n\n> Jellyfin Server 10.11.10 fixes three security vulnerabilities:\n>\n> - GHSA-f47c-m7gr-q92j: (details pending disclosure)\n> - GHSA-jg92-mrxq-vv75: (details pending disclosure)\n> - GHSA-wwwm-px48-fpvq: (details pending disclosure)\n",
+    "id": "FreeBSD-2026-0219",
+    "modified": "2026-05-25T00:00:00Z",
+    "published": "2026-05-25T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/jellyfin/jellyfin/releases/tag/v10.11.10"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/jellyfin/jellyfin/security/advisories/GHSA-f47c-m7gr-q92j"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/jellyfin/jellyfin/security/advisories/GHSA-jg92-mrxq-vv75"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/jellyfin/jellyfin/security/advisories/GHSA-wwwm-px48-fpvq"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "jellyfin -- multiple vulnerabilities"
+}

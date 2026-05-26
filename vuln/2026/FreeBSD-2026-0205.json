@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-05-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-45251"
+            ],
+            "freebsdsa": [
+                "SA-26:19.file"
+            ]
+        },
+        "vid": "ee21f41f-54b5-11f1-8d7a-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nA file descriptor can be closed while a thread is blocked in a poll(2)\nor select(2) call waiting for that descriptor. Because the blocked\nthread does not hold a reference to the underlying object, this closure\nmay result in the object being freed while the thread remains blocked.\nIn this situation, the kernel must remove the blocked thread from the\nper-object wait queue prior to freeing the object.\n\nIn the case of some file descriptor types, the kernel failed to unlink\nblocked threads from the object before freeing it. When the blocked\nthread is subsequently woken, it accesses memory that has already been\nfreed resulting in a use-after-free vulnerability.\n\n# Impact:\n\nThe use-after-free vulnerability may be triggered by an unprivileged\nlocal user and can be exploited to obtain superuser privileges.\n",
+    "id": "FreeBSD-2026-0205",
+    "modified": "2026-05-21T00:00:00Z",
+    "published": "2026-05-21T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45251"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:19.file.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Kernel use-after-free via file descriptor syscalls"
+}

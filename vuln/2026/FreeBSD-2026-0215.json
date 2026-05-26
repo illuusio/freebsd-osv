@@ -1,0 +1,65 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "putty"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.84"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "putty-nogtk"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.84"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html"
+        ],
+        "discovery": "2026-05-22T00:00:00Z",
+        "vid": "5f7c686c-558e-11f1-b38d-9be2e6022e28"
+    },
+    "details": "Simon Tatham reports:\n\n> These features are new in PuTTY 0.84:\n>\n> - Security issue: fixed a remotely triggerable double-free in RSA key\n>   exchange. (We don\\'t know of any way it is exploitable to execute\n>   code.)\n> - Minor security issue: fixed a remotely triggerable crash in NIST\n>   ECDSA signature verification. (An assertion failure -- definitely\n>   not exploitable to execute code.)\n> - Minor security issue: fixed marking of Telnet and Rlogin session\n>   data with a trust sigil after you authenticated to a proxy (possibly\n>   allowing a server to spoof a repeat proxy password prompt).\n",
+    "id": "FreeBSD-2026-0215",
+    "modified": "2026-05-22T00:00:00Z",
+    "published": "2026-05-22T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://lists.tartarus.org/pipermail/putty-announce/2026/000042.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "putty -- multiple security vulnerabilities"
+}
