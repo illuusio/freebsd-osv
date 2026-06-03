@@ -1,0 +1,108 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.3,3"
+                        },
+                        {
+                            "fixed": "26.2.5.21,4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime27"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "27.3.4.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime28"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "28.5.0.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime29"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "29.0.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/erlang/otp/security/advisories/GHSA-22cw-4ph4-6447"
+        ],
+        "discovery": "2026-05-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-42790"
+            ]
+        },
+        "vid": "93576148-5a54-11f1-b886-4c526214c986"
+    },
+    "details": "https://github.com/erlang/otp/security/advisories/GHSA-22cw-4ph4-6447\nreports:\n\n> Erlang/OTP\\'s TLS hostname verification implements a legacy RFC 6125\n> fallback that checks the Subject CommonName when the Subject\n> Alternative Name (SAN) extension is absent, rather than following RFC\n> 9525 which requires validation to fail without SAN. Combined with weak\n> handling of X.509 Name Constraints, this enables man-in-the-middle\n> attacks when an attacker controls a DNS-constrained sub-CA and can\n> intercept network traffic, allowing forgery of certificates for\n> unauthorized domains.\n",
+    "id": "FreeBSD-2026-0230",
+    "modified": "2026-05-28T00:00:00Z",
+    "published": "2026-05-28T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-22cw-4ph4-6447"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42790"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Erlang/OTP -- TLS hostname verification bypass via Subject CommonName fallback and name constraints"
+}

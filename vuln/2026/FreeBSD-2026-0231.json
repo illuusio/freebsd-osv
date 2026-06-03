@@ -1,0 +1,56 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openexr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.4.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.12"
+        ],
+        "discovery": "2026-05-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-45696",
+                "CVE-2026-44663"
+            ]
+        },
+        "vid": "ca91c020-5820-11f1-b38d-9be2e6022e28"
+    },
+    "details": "Cary Phillips reports:\n\n> \\[The OpenEXR 3.4.12\\] release addresses the following security\n> vulnerabilities:\n>\n> - CVE-2026-45696 OpenEXR ht_undo_impl heap-buffer-overflow READ via\n>   codestream/channel width mismatch in HTJ2K decode\n> - CVE-2026-44663 Integer overflow in HTJ2K decoder ( ht_undo_impl )\n>   leading to heap-buffer-overflow\n> - OSS-Fuzz 512895184 Null-dereference WRITE in\n>   Imf_4_0::TileProcess::run_decode\n> - OSS-fuzz 512314697 Direct-leak in internal_exr_add_part\n> - OSS-fuzz 508362159 Heap-buffer-overflow in DwaCompressor_uncompress\n> - OSS-fuzz 507413960 Heap-buffer-overflow in generic_unpack\n",
+    "id": "FreeBSD-2026-0231",
+    "modified": "2026-05-25T00:00:00Z",
+    "published": "2026-05-25T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.12"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45696"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44663"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "OpenEXR -- 3.4.12 fixes multiple vulnerabilities"
+}

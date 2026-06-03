@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "140.10.2"
+                            "fixed": "140.10.2,2"
                         }
                     ],
                     "type": "ECOSYSTEM"

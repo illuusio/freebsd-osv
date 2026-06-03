@@ -1,0 +1,108 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "17.0,3"
+                        },
+                        {
+                            "fixed": "26.2.5.21,4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime27"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "27.3.4.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime28"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "28.5.0.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime29"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "29.0.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/erlang/otp/security/advisories/GHSA-c99q-jmpx-v8qq"
+        ],
+        "discovery": "2026-05-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-42789"
+            ]
+        },
+        "vid": "9357a450-5a54-11f1-b886-4c526214c986"
+    },
+    "details": "https://github.com/erlang/otp/security/advisories/GHSA-c99q-jmpx-v8qq\nreports:\n\n> Erlang/OTP\\'s public_key application contains a path-validation flaw\n> where non-CA certificates lacking keyUsage extensions can be accepted\n> as intermediate issuers. An attacker with an end-entity certificate\n> issued by a trusted CA can exploit this to forge arbitrary leaf\n> certificates, allowing public_key:pkix_path_validation/3 to validate\n> fraudulent certificate chains and potentially compromise systems\n> relying on SSL/TLS validation.\n",
+    "id": "FreeBSD-2026-0229",
+    "modified": "2026-05-28T00:00:00Z",
+    "published": "2026-05-28T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-c99q-jmpx-v8qq"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42789"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Erlang/OTP -- public_key accepts non-CA certificate as intermediate issuer"
+}

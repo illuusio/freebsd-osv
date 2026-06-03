@@ -1,0 +1,95 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "grafana"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "11.6.0"
+                        },
+                        {
+                            "fixed": "11.6.14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.1.0"
+                        },
+                        {
+                            "fixed": "12.1.10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.2.0"
+                        },
+                        {
+                            "fixed": "12.2.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.3.0"
+                        },
+                        {
+                            "fixed": "12.3.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.4.0"
+                        },
+                        {
+                            "fixed": "12.4.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://grafana.com/security/security-advisories/cve-2026-33375"
+        ],
+        "discovery": "2026-03-26T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-33375"
+            ]
+        },
+        "vid": "9bcc3279-5901-11f1-b525-3c7c3fba4204"
+    },
+    "details": "https://grafana.com/security/security-advisories/cve-2026-33375 reports:\n\n> The Grafana MSSQL data source plugin contains a logic flaw that allows\n> a low-privileged user (Viewer) to bypass API restrictions and trigger\n> a catastrophic Out-Of-Memory (OOM) memory exhaustion, crashing the\n> host container.\n",
+    "id": "FreeBSD-2026-0227",
+    "modified": "2026-05-26T00:00:00Z",
+    "published": "2026-05-26T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://grafana.com/security/security-advisories/cve-2026-33375"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33375"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Grafana -- Grafana MSSQL Data Source Plugin: Restriction Bypass Leading to OOM DoS"
+}

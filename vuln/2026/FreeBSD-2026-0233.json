@@ -1,0 +1,130 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb118-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "11.8.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb114-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "11.4.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb1011-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.11.18"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb106-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.6.27"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://mariadb.com/docs/release-notes/community-server/11.8/11.8.8"
+        ],
+        "discovery": "2026-05-28T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-48165",
+                "CVE-2026-48163",
+                "CVE-2026-49261"
+            ]
+        },
+        "vid": "2eb8a9ab-5b5d-11f1-8607-8447094a420f"
+    },
+    "details": "The MariaDB project reports:\n\n> Multiple vulnerabilities in MariaDB Cluster (Galera)\n",
+    "id": "FreeBSD-2026-0233",
+    "modified": "2026-06-30T00:00:00Z",
+    "published": "2026-05-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://mariadb.com/docs/release-notes/community-server/11.8/11.8.8"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-48165"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-48163"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49261"
+        },
+        {
+            "type": "WEB",
+            "url": "https://mariadb.com/docs/release-notes/community-server/11.4/11.4.12"
+        },
+        {
+            "type": "WEB",
+            "url": "https://mariadb.com/docs/release-notes/community-server/10.11/10.11.8"
+        },
+        {
+            "type": "WEB",
+            "url": "https://mariadb.com/docs/release-notes/community-server/10.6/10.6.27"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "MariaDB -- Multiple vulnerabilities"
+}

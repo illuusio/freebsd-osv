@@ -72,5 +72,5 @@
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "ner/rsync -- multiple vulnerabilities"
+    "summary": "net/rsync -- multiple vulnerabilities"
 }

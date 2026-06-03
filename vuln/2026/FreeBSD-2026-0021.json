@@ -135,25 +135,6 @@
                     "type": "ECOSYSTEM"
                 }
             ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "openssl"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.0.19"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
         }
     ],
     "database_specific": {

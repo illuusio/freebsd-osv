@@ -1,0 +1,95 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "grafana"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "11.6.0"
+                        },
+                        {
+                            "fixed": "11.6.14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.0.0"
+                        },
+                        {
+                            "fixed": "12.1.10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.2.0"
+                        },
+                        {
+                            "fixed": "12.2.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.3.0"
+                        },
+                        {
+                            "fixed": "12.3.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.4.0"
+                        },
+                        {
+                            "fixed": "12.4.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://grafana.com/security/security-advisories/cve-2026-27876"
+        ],
+        "discovery": "2026-03-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-27876"
+            ]
+        },
+        "vid": "f45ad940-58ff-11f1-b525-3c7c3fba4204"
+    },
+    "details": "https://grafana.com/security/security-advisories/cve-2026-27876 reports:\n\n> A chained attack via SQL Expressions and a Grafana Enterprise plugin\n> can lead to a remote arbitrary code execution impact (RCE). This is\n> enabled by a feature in Grafana (OSS), so all users are always\n> recommended to update to avoid future attack vectors going this path.\n> Only instances with the sqlExpressions feature toggle enabled are\n> vulnerable.\n",
+    "id": "FreeBSD-2026-0222",
+    "modified": "2026-05-26T00:00:00Z",
+    "published": "2026-05-26T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://grafana.com/security/security-advisories/cve-2026-27876"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27876"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Grafana -- RCE on Grafana via sqlExpressions"
+}

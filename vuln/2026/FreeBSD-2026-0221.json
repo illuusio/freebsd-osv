@@ -1,0 +1,84 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "grafana"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "9.3.0"
+                        },
+                        {
+                            "fixed": "11.6.10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.0.0"
+                        },
+                        {
+                            "fixed": "12.1.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.2.0"
+                        },
+                        {
+                            "fixed": "12.2.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.3.0"
+                        },
+                        {
+                            "fixed": "12.3.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://grafana.com/security/security-advisories/cve-2026-21722"
+        ],
+        "discovery": "2026-02-12T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-21722"
+            ]
+        },
+        "vid": "83cd53f7-58ff-11f1-b525-3c7c3fba4204"
+    },
+    "details": "https://grafana.com/security/security-advisories/cve-2026-21722 reports:\n\n> Public dashboards with annotations enabled did not limit their\n> annotation timerange to the locked timerange of the public dashboard.\n> This means one could read the entire history of annotations visible on\n> the specific dashboard, even those outside the locked timerange. This\n> did not leak any annotations that would not otherwise be visible on\n> the public dashboard.\n",
+    "id": "FreeBSD-2026-0221",
+    "modified": "2026-05-26T00:00:00Z",
+    "published": "2026-05-26T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://grafana.com/security/security-advisories/cve-2026-21722"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-21722"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Grafana -- Public Dashboards time range restriction on annotations can be bypassed"
+}

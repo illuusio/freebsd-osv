@@ -1,0 +1,56 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gohugo"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.162.0,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://go.dev/issue/78913"
+        ],
+        "discovery": "2026-05-07T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-39823",
+                "CVE-2026-39826"
+            ]
+        },
+        "vid": "20d59b47-5ba3-11f1-bf1b-b42e991fc52e"
+    },
+    "details": "https://go.dev/issue/78913 reports:\n\n> CVE-2026-27142 fixed a vulnerability in which URLs were not correctly\n> escaped inside of a \\<meta\\> tag\\'s \\<content\\> attribute. If the URL\n> content were to insert ASCII whitespaces around the \\'=\\' rune inside\n> of the \\<content\\> attribute, the escaper would fail to similarly\n> escape it, leading to XSS.\n>\n> If a trusted template author were to write a \\<script\\> tag containing\n> an empty \\'type\\' attribute or a \\'type\\' attribute with an ASCII\n> whitespace, the execution of the template would incorrectly escape any\n> data passed into the \\<script\\> block.\n",
+    "id": "FreeBSD-2026-0234",
+    "modified": "2026-05-29T00:00:00Z",
+    "published": "2026-05-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://go.dev/issue/78913"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39823"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39826"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "www/gohugo -- CWE-79: XSS vulnerabilities"
+}

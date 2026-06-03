@@ -1,0 +1,86 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "xwayland"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "24.1.12,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://lists.x.org/archives/xorg-announce/2026-June/003702.html"
+        ],
+        "discovery": "2026-06-01T00:00:00Z",
+        "references": {
+            "cvename": [
+                "ZDI-CAN-30136",
+                "ZDI-CAN-30159",
+                "ZDI-CAN-30160",
+                "ZDI-CAN-30161",
+                "ZDI-CAN-30163",
+                "ZDI-CAN-30164",
+                "ZDI-CAN-30165",
+                "ZDI-CAN-30168"
+            ]
+        },
+        "vid": "36cb0ced-5e23-11f1-86a2-589cfc10a551"
+    },
+    "details": "X.Org project reports:\n\n> Multiple issues have been found in the X server and Xwayland\n> implementations published by X.Org for which we are releasing security\n> fixes for in xorg-server-21.1.23 and xwayland-24.1.12.\n",
+    "id": "FreeBSD-2026-0237",
+    "modified": "2026-06-01T00:00:00Z",
+    "published": "2026-06-01T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://lists.x.org/archives/xorg-announce/2026-June/003702.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30136"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30159"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30160"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30161"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30163"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30164"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30165"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30168"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "xwayland -- Multiple vulnerabilities"
+}
