@@ -1,0 +1,89 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime27"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "27.3.4.13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime28"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "28.5.0.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime29"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "29.0.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/erlang/otp/security/advisories/GHSA-pv7g-pjrq-x2fh"
+        ],
+        "discovery": "2026-06-10T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-48855"
+            ]
+        },
+        "vid": "d87e41a4-64d4-11f1-ab11-4c526214c986"
+    },
+    "details": "https://github.com/erlang/otp/security/advisories/GHSA-pv7g-pjrq-x2fh\nreports:\n\n> The SSH SFTP daemon\\'s handling of SSH_FXP_READLINK returned symbolic\n> link targets containing the server\\'s absolute filesystem path,\n> disclosing the backend root prefix to clients. The handler now strips\n> the backend root prefix from symlink targets before returning them.\n",
+    "id": "FreeBSD-2026-0266",
+    "modified": "2026-06-10T00:00:00Z",
+    "published": "2026-06-10T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-pv7g-pjrq-x2fh"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-48855"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Erlang/OTP -- SFTP READLINK discloses server filesystem paths"
+}

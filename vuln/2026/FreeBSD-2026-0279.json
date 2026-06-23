@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mailpit"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.30.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/axllent/mailpit/security/advisories/GHSA-w4mc-hhc6-xp28"
+        ],
+        "discovery": "2026-06-17T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-55187"
+            ]
+        },
+        "vid": "44afeb08-6a18-11f1-9647-10ffe07f9334"
+    },
+    "details": "Mailpit authorreports:\n\n> The tools.IsInternalIP deny-list relies on Go\\'s stdlib classification\n> helpers (IsLoopback, IsPrivate, IsLinkLocalUnicast,\n> IsLinkLocalMulticast, IsUnspecified, IsMulticast) plus an inline CGNAT\n> range, but those helpers do not match two classes of IPv6 address that\n> should be blocked for SSRF purposes\n",
+    "id": "FreeBSD-2026-0279",
+    "modified": "2026-06-17T00:00:00Z",
+    "published": "2026-06-17T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-w4mc-hhc6-xp28"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55187"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "mail/mailpit -- Incomplete SSRF protection in Link Check API via uncovered IPv6 forms"
+}

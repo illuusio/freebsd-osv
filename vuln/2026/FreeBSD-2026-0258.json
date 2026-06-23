@@ -1,0 +1,143 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-09T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-7383",
+                "CVE-2026-9076",
+                "CVE-2026-34180",
+                "CVE-2026-34181",
+                "CVE-2026-34182",
+                "CVE-2026-34183",
+                "CVE-2026-42764",
+                "CVE-2026-42766",
+                "CVE-2026-42767",
+                "CVE-2026-42768",
+                "CVE-2026-42769",
+                "CVE-2026-42770",
+                "CVE-2026-45445",
+                "CVE-2026-45446",
+                "CVE-2026-45447"
+            ],
+            "freebsdsa": [
+                "SA-26:35.openssl"
+            ]
+        },
+        "vid": "a57fe2c1-6476-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nMultiple issues have been reported as part of this advisory with\ndifferent issues affecting different OpenSSL versions and therefore\ndifferent FreeBSD versions. Instead of exhaustively listing detailed\nwriteups for each issue, please see the referenced advisory from\nOpenSSL.\n\nIssues affecting FreeBSD 15.x (OpenSSL 3.5):\n\n- CVE-2026-7383: Possible heap buffer overflow in ASN.1 string\n  conversion\n- CVE-2026-9076: Out-of-bounds read in CMS password-based decryption\n- CVE-2026-34180: Heap buffer over-read in ASN.1 content parsing\n- CVE-2026-34181: PKCS#12 files with PBMAC1 accepted with short HMAC\n  keys\n- CVE-2026-34182: CMS AuthEnvelopedData may accept forged messages\n- CVE-2026-34183: Unbounded memory growth in the QUIC PATH_CHALLENGE\n  handler\n- CVE-2026-42764: NULL dereference in QUIC server initial packet\n  handling\n- CVE-2026-42766: Possible NULL dereference in password-based CMS\n  decryption\n- CVE-2026-42767: NULL dereference in CRMF EncryptedValue decryption\n- CVE-2026-42768: Bleichenbacher oracle in CMS_decrypt() and\n  PKCS7_decrypt()\n- CVE-2026-42769: Trust-anchor substitution in CMP rootCaKeyUpdate\n  handling\n- CVE-2026-42770: FFC-DH peer validation uses attacker-supplied q\n- CVE-2026-45445: AES-OCB IV ignored on the EVP_Cipher() one-shot path\n- CVE-2026-45446: Empty-message tag bypass in AES-GCM-SIV and AES-SIV\n  modes\n- CVE-2026-45447: Heap use-after-free in PKCS7_verify()\n\nIssues affecting FreeBSD 14.x (OpenSSL 3.0):\n\n- CVE-2026-7383: Possible heap buffer overflow in ASN.1 string\n  conversion\n- CVE-2026-9076: Out-of-bounds read in CMS password-based decryption\n- CVE-2026-34180: Heap buffer over-read in ASN.1 content parsing\n- CVE-2026-34182: CMS AuthEnvelopedData may accept forged messages\n- CVE-2026-42766: Possible NULL dereference in password-based CMS\n  decryption\n- CVE-2026-42770: FFC-DH peer validation uses attacker-supplied q\n- CVE-2026-45445: AES-OCB IV ignored on the EVP_Cipher() one-shot path\n- CVE-2026-45446: Empty-message tag bypass in AES-GCM-SIV and AES-SIV\n  modes\n- CVE-2026-45447: Heap use-after-free in PKCS7_verify()\n\n# Impact:\n\nThe issues include heap buffer overflows and over-reads, NULL pointer\ndereferences, a use-after-free, unbounded memory allocation, and several\ncryptographic flaws permitting message forgery, integrity bypass, or\nrecovery of a private key.\n\nSecurity impact ranges from a Denial of Service to a potential remote\ncode execution. See the OpenSSL advisory for specific details.\n",
+    "id": "FreeBSD-2026-0258",
+    "modified": "2026-06-10T00:00:00Z",
+    "published": "2026-06-10T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7383"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-9076"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34180"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34181"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34182"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34183"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42764"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42766"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42767"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42768"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42769"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42770"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45445"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45446"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45447"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:35.openssl.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Multiple vulnerabilities in OpenSSL"
+}

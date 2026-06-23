@@ -52,7 +52,7 @@
         },
         "vid": "fd792048-ad91-11ed-a879-080027f5fec9"
     },
-    "details": "Simon Scannell reports:\n\n> \n>\n> CVE-2023-20032\n> :   Fixed a possible remote code execution vulnerability in the HFS+\n>     file parser.\n>\n> CVE-2023-20052\n> :   Fixed a possible remote information leak vulnerability in the DMG\n>     file parser.\n",
+    "details": "Simon Scannell reports:\n\n> \n>\n> CVE-2023-20032\n> : Fixed a possible remote code execution vulnerability in the HFS+\n>   file parser.\n>\n> CVE-2023-20052\n> : Fixed a possible remote information leak vulnerability in the DMG\n>   file parser.\n",
     "id": "FreeBSD-2023-0048",
     "modified": "2023-02-16T00:00:00Z",
     "published": "2023-02-16T00:00:00Z",

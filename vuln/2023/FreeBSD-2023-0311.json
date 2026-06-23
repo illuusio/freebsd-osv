@@ -33,7 +33,7 @@
         },
         "vid": "199cdb4d-690d-11ee-9ed0-001fc69cd6dc"
     },
-    "details": "The X.Org project reports:\n\n> \n>\n> CVE-2023-43788: Out of bounds read in XpmCreateXpmImageFromBuffer\n> :   An out-of-bounds read is located in ParseComment() when reading\n>     from a memory buffer instead of a file, as it continued to look\n>     for the closing comment marker past the end of the buffer.\n>\n> CVE-2023-43789: Out of bounds read on XPM with corrupted colormap\n> :   A corrupted colormap section may cause libXpm to read out of\n>     bounds.\n",
+    "details": "The X.Org project reports:\n\n> \n>\n> CVE-2023-43788: Out of bounds read in XpmCreateXpmImageFromBuffer\n> : An out-of-bounds read is located in ParseComment() when reading from\n>   a memory buffer instead of a file, as it continued to look for the\n>   closing comment marker past the end of the buffer.\n>\n> CVE-2023-43789: Out of bounds read on XPM with corrupted colormap\n> : A corrupted colormap section may cause libXpm to read out of bounds.\n",
     "id": "FreeBSD-2023-0311",
     "modified": "2023-10-12T00:00:00Z",
     "published": "2023-10-12T00:00:00Z",

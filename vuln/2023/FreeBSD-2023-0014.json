@@ -90,7 +90,7 @@
         },
         "vid": "5fa68bd9-95d9-11ed-811a-080027f5fec9"
     },
-    "details": "The Redis core team reports:\n\n> \n>\n> CVE-2022-35977\n> :   Integer overflow in the Redis SETRANGE and SORT/SORT_RO commands\n>     can drive Redis to OOM panic.\n>\n> CVE-2023-22458\n> :   Integer overflow in the Redis HRANDFIELD and ZRANDMEMBER commands\n>     can lead to denial-of-service.\n",
+    "details": "The Redis core team reports:\n\n> \n>\n> CVE-2022-35977\n> : Integer overflow in the Redis SETRANGE and SORT/SORT_RO commands can\n>   drive Redis to OOM panic.\n>\n> CVE-2023-22458\n> : Integer overflow in the Redis HRANDFIELD and ZRANDMEMBER commands\n>   can lead to denial-of-service.\n",
     "id": "FreeBSD-2023-0014",
     "modified": "2023-01-16T00:00:00Z",
     "published": "2023-01-16T00:00:00Z",

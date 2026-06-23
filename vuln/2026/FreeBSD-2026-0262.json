@@ -1,0 +1,59 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "tree-sitter-cli"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.26.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-q49f-xg75-m9xw"
+        ],
+        "discovery": "2026-04-09T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-34946"
+            ]
+        },
+        "vid": "36ec75da-633d-11f1-9dbc-28d2443e6cfa"
+    },
+    "details": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-q49f-xg75-m9xw\nreports:\n\n> Wasmtime is a runtime for WebAssembly. From 25.0.0 to before 36.0.7,\n> 42.0.2, and 43.0.1, Wasmtime\\'s Winch compiler contains a\n> vulnerability where the compilation of the table.fill instruction can\n> result in a host panic. This means that a valid guest can be compiled\n> with Winch, on any architecture, and cause the host to panic. This\n> represents a denial-of-service vulnerability in Wasmtime due to guests\n> being able to trigger a panic. The specific issue is that a historical\n> refactoring changed how compiled code referenced tables within the\n> table.\\* instructions. This refactoring forgot to update the Winch\n> code paths associated as well, meaning that Winch was using the wrong\n> indexing scheme. Due to the feature support of Winch the only problem\n> that can result is tables being mixed up or nonexistent tables being\n> used, meaning that the guest is limited to panicking the host (using a\n> nonexistent table), or executing spec-incorrect behavior and modifying\n> the wrong table. This vulnerability is fixed in crate versions:\n> 36.0.7, 42.0.2, and 43.0.1.\n",
+    "id": "FreeBSD-2026-0262",
+    "modified": "2026-06-08T00:00:00Z",
+    "published": "2026-06-08T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-q49f-xg75-m9xw"
+        },
+        {
+            "type": "WEB",
+            "url": "https://rustsec.org/advisories/RUSTSEC-2026-0089"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34946"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-q49f-xg75-m9xw"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "tree-sitter-cli -- Always-Incorrect Control Flow Implementation in wasmtime crate"
+}

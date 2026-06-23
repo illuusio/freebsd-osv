@@ -35,7 +35,7 @@
         },
         "vid": "e25566d5-6d3f-11d8-83a4-000a95bc6fae"
     },
-    "details": "Steve Kemp reports (in a Debian bug submission):\n\n> Due to improper bounds checking it is possible for a malicious user to\n> gain a shell with membership group \\'games\\'. (The binary is installed\n> setgid games).\n>\n> Environmental variables are used without being bounds-checked in any\n> way, from the source code:\n>\n>\n>     highscore.c:\n>        /* Use the environment variable if it exists */\n>        if ((str = getenv(\"XBOING_SCORE_FILE\")) != NULL)\n>         strcpy(filename, str);\n>        else\n>         strcpy(filename, HIGH_SCORE_FILE);\n>\n>     misc.c:\n>         if ((ptr = getenv(\"HOME\")) != NULL)\n>         (void) strcpy(dest, ptr);\n>\n> Neither of these checks are boundschecked, and will allow arbitary\n> shell code to be run.\n",
+    "details": "Steve Kemp reports (in a Debian bug submission):\n\n> Due to improper bounds checking it is possible for a malicious user to\n> gain a shell with membership group \\'games\\'. (The binary is installed\n> setgid games).\n>\n> Environmental variables are used without being bounds-checked in any\n> way, from the source code:\n>\n>     highscore.c:\n>        /* Use the environment variable if it exists */\n>        if ((str = getenv(\"XBOING_SCORE_FILE\")) != NULL)\n>         strcpy(filename, str);\n>        else\n>         strcpy(filename, HIGH_SCORE_FILE);\n>\n>     misc.c:\n>         if ((ptr = getenv(\"HOME\")) != NULL)\n>         (void) strcpy(dest, ptr);\n>\n> Neither of these checks are boundschecked, and will allow arbitary\n> shell code to be run.\n",
     "id": "FreeBSD-2004-0038",
     "modified": "2004-03-29T00:00:00Z",
     "published": "2004-03-05T00:00:00Z",

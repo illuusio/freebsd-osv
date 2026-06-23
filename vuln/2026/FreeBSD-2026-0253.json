@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-09T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-49413"
+            ],
+            "freebsdsa": [
+                "SA-26:30.linux"
+            ]
+        },
+        "vid": "fa5289e4-6473-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nThe Linuxulator determined whether a binary was set-user-ID or\nset-group-ID by checking the P_SUGID process flag. During execve(2),\nthis flag is not yet set at the point where the auxiliary vector is\nconstructed, so AT_SECURE was incorrectly set to zero for set-user-ID\nand set-group-ID executables.\n\n# Impact:\n\nAn unprivileged local user can inject a shared library via LD_PRELOAD\ninto a set-user-ID or set-group-ID Linux binary, gaining the privileges\nof that binary.\n",
+    "id": "FreeBSD-2026-0253",
+    "modified": "2026-06-10T00:00:00Z",
+    "published": "2026-06-10T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49413"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:30.linux.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Flaw in Linuxulator execution of setugid binaries"
+}

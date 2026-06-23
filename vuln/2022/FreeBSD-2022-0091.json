@@ -71,7 +71,7 @@
         },
         "vid": "cc42db1c-c65f-11ec-ad96-0800270512f4"
     },
-    "details": "Aviv Yahav reports:\n\n> \n>\n> CVE-2022-24735\n> :   By exploiting weaknesses in the Lua script execution environment,\n>     an attacker with access to Redis can inject Lua code that will\n>     execute with the (potentially higher) privileges of another Redis\n>     user.\n>\n> CVE-2022-24736\n> :   An attacker attempting to load a specially crafted Lua script can\n>     cause NULL pointer dereference which will result with a crash of\n>     the redis-server process.\n",
+    "details": "Aviv Yahav reports:\n\n> \n>\n> CVE-2022-24735\n> : By exploiting weaknesses in the Lua script execution environment, an\n>   attacker with access to Redis can inject Lua code that will execute\n>   with the (potentially higher) privileges of another Redis user.\n>\n> CVE-2022-24736\n> : An attacker attempting to load a specially crafted Lua script can\n>   cause NULL pointer dereference which will result with a crash of the\n>   redis-server process.\n",
     "id": "FreeBSD-2022-0091",
     "modified": "2022-04-27T00:00:00Z",
     "published": "2022-04-27T00:00:00Z",

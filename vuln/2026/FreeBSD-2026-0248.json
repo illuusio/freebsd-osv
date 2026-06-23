@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-09T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-45256"
+            ],
+            "freebsdsa": [
+                "SA-26:25.thr"
+            ]
+        },
+        "vid": "91163897-6472-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nWhen used to deliver a signal to a specific thread, thr_kill2(2) called\np_cansignal() to determine whether the operation was permitted but did\nnot check the result before delivering the signal. The signal was sent\neven when the permission check failed. The system call returned the\nresulting error to the caller, but by then the signal had already been\ndelivered.\n\n# Impact:\n\nThe missing check allows an unprivileged local user who knows or can\nguess a target\\'s process and thread IDs to send any signal to a process\nthey would not normally be permitted to signal, including processes\nowned by other users or by root. The same check enforces jail\nboundaries, so a jailed process can signal processes on the host or in\nother jails. Thread IDs are allocated globally and sequentially, and so\ncan be discovered by brute force with no visibility into the target.\n\nAn attacker can stop or terminate arbitrary processes, including\ncritical system daemons, resulting in a Denial of Service (DoS).\n",
+    "id": "FreeBSD-2026-0248",
+    "modified": "2026-06-10T00:00:00Z",
+    "published": "2026-06-10T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45256"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:25.thr.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Missing permission check in thr_kill2(2)"
+}

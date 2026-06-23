@@ -44,7 +44,7 @@
         },
         "vid": "9bad6f79-58cf-11f0-b4ad-b42e991fc52e"
     },
-    "details": "security@mozilla.org reports:\n\n> Firefox could have incorrectly parsed a URL and rewritten it to the\n> youtube.com domain when parsing the URL specified in an \\`embed\\` tag.\n> This could have bypassed website security checks that restricted which\n> domains users were allowed to embed.\n>\n> When a file download is specified via the \\`Content-Disposition\\`\n> header, that directive would be ignored if the file was included via a\n> \\`&lt;embed&gt;\\` or \\`&lt;object&gt;\\` tag, potentially making a\n> website vulnerable to a cross-site scripting attack.\n",
+    "details": "security@mozilla.org reports:\n\n> Firefox could have incorrectly parsed a URL and rewritten it to the\n> youtube.com domain when parsing the URL specified in an \\`embed\\` tag.\n> This could have bypassed website security checks that restricted which\n> domains users were allowed to embed.\n>\n> When a file download is specified via the \\`Content-Disposition\\`\n> header, that directive would be ignored if the file was included via a\n> \\`\\&lt;embed\\&gt;\\` or \\`\\&lt;object\\&gt;\\` tag, potentially making a\n> website vulnerable to a cross-site scripting attack.\n",
     "id": "FreeBSD-2025-0211",
     "modified": "2025-07-04T00:00:00Z",
     "published": "2025-07-04T00:00:00Z",

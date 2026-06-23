@@ -1,0 +1,105 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "unbound"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.25.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.nlnetlabs.nl/news/2026/May/20/unbound-1.25.1-released/"
+        ],
+        "discovery": "2026-05-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-32792",
+                "CVE-2026-33278",
+                "CVE-2026-40622",
+                "CVE-2026-41292",
+                "CVE-2026-42534",
+                "CVE-2026-42923",
+                "CVE-2026-42944",
+                "CVE-2026-42959",
+                "CVE-2026-42960",
+                "CVE-2026-44390",
+                "CVE-2026-44608"
+            ]
+        },
+        "vid": "72e5b334-6365-11f1-8c57-000af7b98cf6"
+    },
+    "details": "NLnet Labs reports:\n\n> This release consolidates security fixes for issues reported over a\n> period of time. There are fixes for:\n>\n> - CVE-2026-33278: Possible remote code execution during DNSSEC\n>   validation.\n> - CVE-2026-42944: Heap overflow and crash with multiple nsid, cookie,\n>   padding EDNS options.\n> - CVE-2026-42959: Crash during DNSSEC validation of malicious content.\n> - CVE-2026-32792: Packet of death with DNSCrypt.\n> - CVE-2026-40622: \\\"Ghost domain name\\\" variant.\n> - CVE-2026-41292: Parsing a long list of incoming EDNS options\n>   degrades performance.\n> - CVE-2026-42534: Jostle logic bypass degrades resolution performance.\n> - CVE-2026-42923: Degradation of service with unbounded NSEC3 hash\n>   calculations.\n> - CVE-2026-42960: Possible cache poisoning attack while following\n>   delegation.\n> - CVE-2026-44390: Unbounded name compression in certain cases causes\n>   degradation of service.\n> - CVE-2026-44608: Use after free and crash in RPZ code.\n",
+    "id": "FreeBSD-2026-0244",
+    "modified": "2026-06-08T00:00:00Z",
+    "published": "2026-06-08T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.nlnetlabs.nl/news/2026/May/20/unbound-1.25.1-released/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-32792"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33278"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40622"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-41292"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42534"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42923"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42944"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42959"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42960"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44390"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44608"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/projects/unbound/security-advisories/"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Unbound -- Multiple vulnerabilities"
+}

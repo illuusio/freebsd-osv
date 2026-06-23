@@ -42,6 +42,9 @@
                     "events": [
                         {
                             "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.12.13_3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -58,6 +61,28 @@
                     "events": [
                         {
                             "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.13.14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python313t"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.13.14"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,7 +123,7 @@
     },
     "details": "Seth Larson reports:\n\n> HTTP proxy via \\\"CONNECT\\\" tunneling doesn\\'t sanitize CR/LF\n> (CVE-2026-1502).\n",
     "id": "FreeBSD-2026-0103",
-    "modified": "2026-04-12T00:00:00Z",
+    "modified": "2026-06-19T00:00:00Z",
     "published": "2026-04-12T00:00:00Z",
     "references": [
         {

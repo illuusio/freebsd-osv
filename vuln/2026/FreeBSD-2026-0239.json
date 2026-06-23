@@ -1,0 +1,75 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "powerdns"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.0.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://blog.powerdns.com/2026/05/20/powerdns-security-advisory-2026-06-for-powerdns-authoritative-server"
+        ],
+        "discovery": "2026-05-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-41999",
+                "CVE-2026-42000",
+                "CVE-2026-42001",
+                "CVE-2026-42002",
+                "CVE-2026-42396"
+            ]
+        },
+        "vid": "0823ac26-6040-11f1-ba4a-50ebf6bdf8e9"
+    },
+    "details": "PowerDNS Team reports:\n\n> 2025-07: Internal logic flaw in cache management can lead to a denial\n> of service in Recursor\n>\n> When using views, queries sent using TCP Proxy Protocol will select\n> the view according to the address of the proxy, rather than the\n> address of the initial query. This can lead to wrong data being\n> returned.\n>\n> Missing escaping of special characters (such as \\$ or @) in DNS names\n> received during an AXFR operation can lead to an incorrect\n> (non-parseable) Bind backend configuration to be written, causing this\n> backend to fail until manual operation is performed to fix the\n> configuration.\n>\n> Missing sanity checks of the answer to the initial SOA query, when\n> running in auto-secondary mode and receiving a notification for an\n> not-yet-known domain may cause the server to crash.\n>\n> Multiple concurrency and locking defects in the GSS-TSIG code can lead\n> to memory corruption due to accidental data structure sharing, which\n> can in turn lead to a program crash.\n>\n> Missing proper escaping of double-quote characters when computing\n> labels will cause AXFR of a catalog zone with a member whose producer\n> group option contains such a character to fail.\n",
+    "id": "FreeBSD-2026-0239",
+    "modified": "2026-06-04T00:00:00Z",
+    "published": "2026-06-04T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://blog.powerdns.com/2026/05/20/powerdns-security-advisory-2026-06-for-powerdns-authoritative-server"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-41999"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42000"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42001"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42002"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42396"
+        },
+        {
+            "type": "WEB",
+            "url": "https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2026-06.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "PowerDNS -- Multiple vulnerabilities"
+}

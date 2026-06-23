@@ -1,0 +1,53 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.30.3,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-17T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-42055",
+                "CVE-2026-48142"
+            ]
+        },
+        "vid": "46b654f8-6b28-11f1-b8e5-3497f65b111b"
+    },
+    "details": "The nginx developers report:\n\nA heap memory buffer overflow vulnerability when using the\n\\\"ignore_invalid_headers off;\\\" and \\\"large_client_header_buffers\\\"\ndirectives with large configured values while proxying a specially\ncrafted request to an HTTP/2 or gRPC backend may allow memory corruption\nor a segmentation fault in a worker process (CVE-2026-42055).\n\nA heap memory buffer overread vulnerability while handling a specially\ncrafted response with decoding from UTF-8 via the \\\"charset_map\\\"\ndirective may allow limited disclosure of worker process memory or a\nsegmentation fault in a worker process (CVE-2026-48142).\n",
+    "id": "FreeBSD-2026-0287",
+    "modified": "2026-06-17T00:00:00Z",
+    "published": "2026-06-17T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42055"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-48142"
+        },
+        {
+            "type": "WEB",
+            "url": "https://nginx.org/en/CHANGES"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "nginx -- multiple vulnerabilities"
+}

@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "routinator"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.15.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-49232.txt"
+        ],
+        "discovery": "2026-06-08T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-49232"
+            ]
+        },
+        "vid": "b1c6c691-6a57-11f1-bf61-3c7c3fba4204"
+    },
+    "details": "<https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-49232.txt>\nreports:\n\n> Routinator exits on any error when accepting incoming HTTP or RTR\n> connections, including ones it can recover from such as running out of\n> file descriptors. This condition can be triggered maliciously by an\n> attacker by opening a large number of connections to the HTTP or RTR\n> server. This only affects users that make their HTTP or RTR server\n> available to untrusted networks.\n>\n> Thanks to [X41 D-Sec GmbH](https://www.x41-dsec.de/) for reporting the\n> vulnerability.\n",
+    "id": "FreeBSD-2026-0281",
+    "modified": "2026-06-17T00:00:00Z",
+    "published": "2026-06-17T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-49232.txt"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49232"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Routinator -- CWE-755 Improper Handling of Exceptional Conditions"
+}

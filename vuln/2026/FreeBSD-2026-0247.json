@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "elixir"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "1.5.0"
+                        },
+                        {
+                            "fixed": "1.19.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/elixir-lang/elixir/security/advisories/GHSA-w2h8-8x3g-278p"
+        ],
+        "discovery": "2026-06-09T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-49762"
+            ]
+        },
+        "vid": "45accfb8-56e4-41b7-8463-572ce643fde0"
+    },
+    "details": "PJUllrich reports:\n\n> The Version module parses numeric version components without length\n> limits. Untrusted input can trigger creation of arbitrary-precision\n> integers, causing CPU and memory exhaustion.\n",
+    "id": "FreeBSD-2026-0247",
+    "modified": "2026-06-09T00:00:00Z",
+    "published": "2026-06-09T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/elixir-lang/elixir/security/advisories/GHSA-w2h8-8x3g-278p"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49762"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Elixir -- Denial of service via unbounded integer parsing in Version"
+}

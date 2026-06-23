@@ -1,0 +1,123 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-09T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-32792",
+                "CVE-2026-33278",
+                "CVE-2026-40622",
+                "CVE-2026-41292",
+                "CVE-2026-42534",
+                "CVE-2026-42923",
+                "CVE-2026-42944",
+                "CVE-2026-42959",
+                "CVE-2026-42960",
+                "CVE-2026-44390",
+                "CVE-2026-44608"
+            ],
+            "freebsdsa": [
+                "SA-26:33.unbound"
+            ]
+        },
+        "vid": "b604d3e1-6474-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nMultiple vulnerabilities have been reported in Unbound. Instead of\nlisting detailed writeups for each issue, please see the upstream\nadvisories referenced below.\n\n- CVE-2026-32792: Packet of death with DNSCrypt\n- CVE-2026-33278: Possible remote code execution during DNSSEC\n  validation\n- CVE-2026-40622: \\\"Ghost domain name\\\" variant\n- CVE-2026-41292: Parsing a long list of incoming EDNS options degrades\n  performance\n- CVE-2026-42534: Jostle logic bypass degrades resolution performance\n- CVE-2026-42923: Degradation of service with unbounded NSEC3 hash\n  calculations\n- CVE-2026-42944: Heap overflow and crash with multiple nsid, cookie,\n  padding EDNS options\n- CVE-2026-42959: Crash during DNSSEC validation of malicious content\n- CVE-2026-42960: Possible cache poisoning while following delegation\n- CVE-2026-44390: Unbounded name compression causes degradation of\n  service\n- CVE-2026-44608: Use-after-free and crash in RPZ code\n\n# Impact:\n\nThe issues range from Denial of Service (DoS) through resource\nexhaustion or crashes to possible remote code execution during DNSSEC\nvalidation. See the upstream Unbound advisories for specific details.\n",
+    "id": "FreeBSD-2026-0256",
+    "modified": "2026-06-10T00:00:00Z",
+    "published": "2026-06-10T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-32792"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33278"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40622"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-41292"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42534"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42923"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42944"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42959"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42960"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44390"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44608"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:33.unbound.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Multiple vulnerabilities in unbound"
+}

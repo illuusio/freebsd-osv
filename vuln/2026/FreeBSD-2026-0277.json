@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libsmi"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0.4.8"
+                        },
+                        {
+                            "fixed": "0.4.8_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "http://lists.opensuse.org/opensuse-security-announce/2011-01/msg00003.html"
+        ],
+        "discovery": "2010-10-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2010-2891"
+            ]
+        },
+        "vid": "76b09b16-638b-11f1-8e16-901b0e13f1a0"
+    },
+    "details": "http://lists.opensuse.org/opensuse-security-announce/2011-01/msg00003.html\nreports:\n\n> Buffer overflow in the smiGetNode function in lib/smi.c in libsmi\n> 0.4.8 allows context-dependent attackers to execute arbitrary code via\n> an Object Identifier (aka OID) represented as a numerical string\n> containing many components separated by . (dot) characters.\n",
+    "id": "FreeBSD-2026-0277",
+    "modified": "2026-06-14T00:00:00Z",
+    "published": "2026-06-14T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "http://lists.opensuse.org/opensuse-security-announce/2011-01/msg00003.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2891"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "libsmi -- Buffer overflow in the smiGetNode function in lib/smi"
+}

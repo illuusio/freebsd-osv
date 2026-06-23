@@ -1,0 +1,78 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-09T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-45258",
+                "CVE-2026-49417"
+            ],
+            "freebsdsa": [
+                "SA-26:27.sound"
+            ]
+        },
+        "vid": "253188dd-6473-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nThe sound(4) driver contained two memory-safety errors in its mmap(2)\nsupport.\n\nFirst, dsp_mmap_single() validated the requested mapping by checking the\nsum of the user-supplied offset and length against the buffer size. This\naddition could overflow, so that a large offset and length wrapped\naround and passed the check. The offset was then narrowed from 64 to 32\nbits when converted to a buffer address, yielding a mapping that\nextended past the audio buffer into unrelated kernel memory.\n(CVE-2026-45258)\n\nSecond, the audio buffer backing a mapping could be freed when the\ndevice was closed even though the mapping remained valid. The freed\nmemory could then be reused elsewhere while still accessible through the\nstale mapping. (CVE-2026-49417)\n\n# Impact:\n\nThe /dev/dsp device nodes are world-accessible by default. On a system\nwith an audio device, either issue allows an unprivileged local user to\nread and write kernel memory, which can be used to escalate privileges,\npotentially gaining full control of the affected system. At a minimum,\nan attacker can crash the kernel, resulting in a Denial of Service\n(DoS).\n",
+    "id": "FreeBSD-2026-0250",
+    "modified": "2026-06-10T00:00:00Z",
+    "published": "2026-06-10T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45258"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49417"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:27.sound.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Multiple vulnerabilities in the sound(4) mmap path"
+}

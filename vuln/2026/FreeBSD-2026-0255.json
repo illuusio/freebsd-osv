@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-09T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-49414"
+            ],
+            "freebsdsa": [
+                "SA-26:32.elf"
+            ]
+        },
+        "vid": "7e61007e-6474-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nThe ELF image activator cleared per-process ASLR preference flags for\nsetuid binaries after the code that computes the PIE base address,\nrather than before. As a result, a user-requested ASLR disable was still\nin effect at the point where the base address was chosen.\n\n# Impact:\n\nAn unprivileged local user can disable ASLR for a setuid PIE binary by\ncalling procctl(2) before execve(2). This makes exploitation of any\nseparate memory corruption vulnerability in that binary significantly\neasier.\n",
+    "id": "FreeBSD-2026-0255",
+    "modified": "2026-06-10T00:00:00Z",
+    "published": "2026-06-10T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49414"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:32.elf.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD-kernel -- ASLR bypass for setuid executables via procctl(2)"
+}

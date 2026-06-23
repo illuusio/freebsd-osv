@@ -27,14 +27,15 @@
         "discovery": "2026-06-01T00:00:00Z",
         "references": {
             "cvename": [
-                "ZDI-CAN-30136",
-                "ZDI-CAN-30159",
-                "ZDI-CAN-30160",
-                "ZDI-CAN-30161",
-                "ZDI-CAN-30163",
-                "ZDI-CAN-30164",
-                "ZDI-CAN-30165",
-                "ZDI-CAN-30168"
+                "CVE-2026-50256",
+                "CVE-2026-50257",
+                "CVE-2026-50258",
+                "CVE-2026-50259",
+                "CVE-2026-50260",
+                "CVE-2026-50261",
+                "CVE-2026-50262",
+                "CVE-2026-50263",
+                "CVE-2026-50264"
             ]
         },
         "vid": "36cb0ced-5e23-11f1-86a2-589cfc10a551"
@@ -50,35 +51,43 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30136"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50256"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30159"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50257"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30160"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50258"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30161"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50259"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30163"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50260"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30164"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50261"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30165"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50262"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/ZDI-CAN-30168"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50263"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50264"
+        },
+        {
+            "type": "WEB",
+            "url": "https://lists.x.org/archives/xorg-announce/2026-June/003705.html"
         }
     ],
     "schema_version": "1.7.0",

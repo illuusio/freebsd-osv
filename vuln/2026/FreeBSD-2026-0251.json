@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-09T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-45259"
+            ],
+            "freebsdsa": [
+                "SA-26:28.capsicum"
+            ]
+        },
+        "vid": "94f20492-6473-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nsigqueue(2) was marked as permitted in capability mode with the\nintroduction of Capsicum in 2011, but the implementation of\nkern_sigqueue did not include a capability mode check restricting signal\ndelivery to the calling process\\'s own PID.\n\n# Impact:\n\nA process in capability mode can use sigqueue(2) to send signals to any\nprocess it could signal following standard Unix permissions, bypassing\nthe Capsicum sandbox restriction. A compromised sandboxed process could\ninterfere with other processes, for example by sending SIGKILL or\nSIGSTOP. This could be any process running as the same user, or any\nprocess, for a superuser sandboxed process.\n",
+    "id": "FreeBSD-2026-0251",
+    "modified": "2026-06-10T00:00:00Z",
+    "published": "2026-06-10T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45259"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:28.capsicum.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- sigqueue(2) missing capability mode restriction"
+}

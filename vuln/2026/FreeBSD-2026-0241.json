@@ -1,0 +1,66 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "weechat"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.9.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://weechat.org/download/weechat/4.9.2/"
+        ],
+        "discovery": "2026-06-07T00:00:00Z",
+        "vid": "d31259c0-624d-11f1-8607-8447094a420f"
+    },
+    "details": "The Weechat project reports:\n\n> See links for detail.\n",
+    "id": "FreeBSD-2026-0241",
+    "modified": "2026-06-07T00:00:00Z",
+    "published": "2026-06-07T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://weechat.org/download/weechat/4.9.2/"
+        },
+        {
+            "type": "WEB",
+            "url": "https://weechat.org/doc/weechat/security/#WSA-2026-3"
+        },
+        {
+            "type": "WEB",
+            "url": "https://weechat.org/doc/weechat/security/#WSA-2026-4"
+        },
+        {
+            "type": "WEB",
+            "url": "https://weechat.org/doc/weechat/security/#WSA-2026-5"
+        },
+        {
+            "type": "WEB",
+            "url": "https://weechat.org/doc/weechat/security/#WSA-2026-6"
+        },
+        {
+            "type": "WEB",
+            "url": "https://weechat.org/doc/weechat/security/#WSA-2026-7"
+        },
+        {
+            "type": "WEB",
+            "url": "https://weechat.org/doc/weechat/security/#WSA-2026-8"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Weechat -- Multiple vulnerabilities"
+}

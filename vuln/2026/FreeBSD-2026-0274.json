@@ -1,0 +1,169 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ce"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.0.0"
+                        },
+                        {
+                            "fixed": "19.0.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.11.0"
+                        },
+                        {
+                            "fixed": "18.11.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.0.0"
+                        },
+                        {
+                            "fixed": "18.10.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.0.0"
+                        },
+                        {
+                            "fixed": "19.0.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.11.0"
+                        },
+                        {
+                            "fixed": "18.11.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.0.0"
+                        },
+                        {
+                            "fixed": "18.10.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-0-2-released/"
+        ],
+        "discovery": "2026-06-11T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-6552",
+                "CVE-2026-10087",
+                "CVE-2026-7250",
+                "CVE-2026-8589",
+                "CVE-2026-1500",
+                "CVE-2026-6269",
+                "CVE-2026-9204",
+                "CVE-2026-10733",
+                "CVE-2026-6277",
+                "CVE-2026-6976",
+                "CVE-2026-3553",
+                "CVE-2026-9694"
+            ]
+        },
+        "vid": "ac9bab80-6618-11f1-8e04-2cf05da270f3"
+    },
+    "details": "Gitlab reports:\n\n> Improper Access Control issue in Group SAML Identity API impacts\n> GitLab EE\n>\n> Cross-site Scripting issue in Analytics Dashboard impacts GitLab EE\n>\n> Denial of Service issue in Grape API JSON parsing middleware impacts\n> GitLab CE/EE\n>\n> HTML injection issue in certain group setting fields impacts GitLab EE\n>\n> Denial of Service issue in Group Placeholder Reassignments API impacts\n> GitLab CE/EE\n>\n> Improper Access Control issue in Merge Requests API impacts GitLab\n> CE/EE\n>\n> Server-Side Request Forgery issue in Gitaly repository import impacts\n> GitLab CE/EE\n>\n> HTML injection issue in CI/CD Catalog impacts GitLab CE/EE\n>\n> Improper Access Control issue in Security Inventory impacts GitLab EE\n>\n> Authorization Bypass issue in Merge Request diff impacts GitLab CE/EE\n>\n> Improper Access Control issue in Todos API impacts GitLab CE/EE\n>\n> Improper Neutralization issue in Service Desk email template impacts\n> GitLab CE/EE\n",
+    "id": "FreeBSD-2026-0274",
+    "modified": "2026-06-12T00:00:00Z",
+    "published": "2026-06-12T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-0-2-released/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6552"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-10087"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7250"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-8589"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1500"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6269"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-9204"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-10733"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6277"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6976"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3553"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-9694"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Gitlab -- vulnerabilities"
+}

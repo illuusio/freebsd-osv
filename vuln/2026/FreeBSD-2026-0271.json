@@ -1,0 +1,46 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "h2o"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "20260609"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/h2o/h2o/security/advisories/GHSA-qcrr-wrhc-pgq9"
+        ],
+        "discovery": "2026-06-04T00:00:00Z",
+        "vid": "35c57495-2231-4733-a66e-044f3dad8b21"
+    },
+    "details": "h2o project reports:\n\n> An HTTP/2 attack can combine HPACK decompression state amplification\n> with stalled streams. Depending on server configuration, decoded\n> header state can be retained by stalled streams, causing excessive\n> memory use and denial of service.\n",
+    "id": "FreeBSD-2026-0271",
+    "modified": "2026-06-11T00:00:00Z",
+    "published": "2026-06-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/h2o/h2o/security/advisories/GHSA-qcrr-wrhc-pgq9"
+        },
+        {
+            "type": "WEB",
+            "url": "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "h2o -- HTTP/2 state amplification denial of service"
+}

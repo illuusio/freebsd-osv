@@ -90,7 +90,7 @@
         },
         "vid": "b17bce48-b7c6-11ed-b304-080027f5fec9"
     },
-    "details": "The Redis core team reports:\n\n> \n>\n> CVE-2023-25155\n> :   Specially crafted SRANDMEMBER, ZRANDMEMBER, and HRANDFIELD\n>     commands can trigger an integer overflow, resulting in a runtime\n>     assertion and termination of the Redis server process.\n>\n> CVE-2022-36021\n> :   String matching commands (like SCAN or KEYS) with a specially\n>     crafted pattern to trigger a denial-of-service attack on Redis,\n>     causing it to hang and consume 100% CPU time.\n",
+    "details": "The Redis core team reports:\n\n> \n>\n> CVE-2023-25155\n> : Specially crafted SRANDMEMBER, ZRANDMEMBER, and HRANDFIELD commands\n>   can trigger an integer overflow, resulting in a runtime assertion\n>   and termination of the Redis server process.\n>\n> CVE-2022-36021\n> : String matching commands (like SCAN or KEYS) with a specially\n>   crafted pattern to trigger a denial-of-service attack on Redis,\n>   causing it to hang and consume 100% CPU time.\n",
     "id": "FreeBSD-2023-0063",
     "modified": "2023-03-01T00:00:00Z",
     "published": "2023-03-01T00:00:00Z",

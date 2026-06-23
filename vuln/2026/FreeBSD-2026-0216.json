@@ -9,7 +9,18 @@
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "0.1.17,3"
+                        },
+                        {
+                            "fixed": "1.30.2_2,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "1.31.0,3"
                         },
                         {
                             "fixed": "1.31.1,3"

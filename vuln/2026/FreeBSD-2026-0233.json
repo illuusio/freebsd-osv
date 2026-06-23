@@ -93,7 +93,7 @@
     },
     "details": "The MariaDB project reports:\n\n> Multiple vulnerabilities in MariaDB Cluster (Galera)\n",
     "id": "FreeBSD-2026-0233",
-    "modified": "2026-06-30T00:00:00Z",
+    "modified": "2026-05-30T00:00:00Z",
     "published": "2026-05-29T00:00:00Z",
     "references": [
         {

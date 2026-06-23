@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "routinator"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.15.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-49234.txt"
+        ],
+        "discovery": "2026-06-08T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-49234"
+            ]
+        },
+        "vid": "40edfb37-6a59-11f1-bf61-3c7c3fba4204"
+    },
+    "details": "<https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-49234.txt>\nreports:\n\n> When sending a specifically crafted non-UTF-8 string as select-asn\n> query parameter to the /api/v1/origins endpoint, Routinator crashes.\n> This only affects users who allow API access from untrusted networks.\n>\n> Thanks to [X41 D-Sec GmbH](https://www.x41-dsec.de/) for reporting the\n> vulnerability.\n",
+    "id": "FreeBSD-2026-0283",
+    "modified": "2026-06-17T00:00:00Z",
+    "published": "2026-06-17T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-49234.txt"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49234"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Routinator -- CWE-20 Improper Input Validation"
+}
