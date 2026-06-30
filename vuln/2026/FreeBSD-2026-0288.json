@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "podman"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.8.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/podman-container-tools/buildah/security/advisories/GHSA-49p4-px3h-rq49"
+        ],
+        "discovery": "2026-06-22T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-44517"
+            ]
+        },
+        "vid": "fe2e8bdc-ff48-4166-b285-59822c7cf473"
+    },
+    "details": "The Podman developers report:\n\n> Building a Dockerfile using an ADD or COPY instruction accessing a\n> malicious Git repository or tar archive could cause files outside the\n> build context directory to be included in the build context or copied\n> into the build.\n",
+    "id": "FreeBSD-2026-0288",
+    "modified": "2026-06-22T00:00:00Z",
+    "published": "2026-06-22T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/podman-container-tools/buildah/security/advisories/GHSA-49p4-px3h-rq49"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44517"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/podman-container-tools/podman/releases/tag/v5.8.3"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "podman -- files outside build context may be included via malicious Git repo or tar archive"
+}

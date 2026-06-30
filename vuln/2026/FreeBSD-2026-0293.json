@@ -1,0 +1,122 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitea"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.26.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-05-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-27783",
+                "CVE-2026-25714",
+                "CVE-2026-20706",
+                "CVE-2026-27771",
+                "CVE-2026-28744",
+                "CVE-2026-28699",
+                "CVE-2026-26231",
+                "CVE-2026-20896",
+                "CVE-2026-22874",
+                "CVE-2026-27775",
+                "CVE-2026-27761",
+                "CVE-2026-25038",
+                "CVE-2026-24451",
+                "CVE-2026-20779",
+                "CVE-2026-28740"
+            ]
+        },
+        "vid": "f00e2de8-7d30-48d2-a43d-68206347dea6"
+    },
+    "details": "The Gitea team reports:\n\n- CVE-2026-27783: incorrect read permission check\n- CVE-2026-25714: public-only token filtering bypass\n- CVE-2026-20706: missing token scope checking\n- CVE-2026-27771: unauthenticated access to private container images\n- CVE-2026-28744: git smart HTTP request scope bug\n- CVE-2026-28699: basic auth bug\n- CVE-2026-26231: maintainer edit permission escalation\n- CVE-2026-20896: reverse proxy trusted proxies misconfiguration\n  allowing user impersonation\n- CVE-2026-22874: incomplete SSRF protection in webhooks and migrations\n- CVE-2026-27775: branch write permission cache escalation\n- CVE-2026-27761: RSS/Atom feed token scope not enforced\n- CVE-2026-25038: private organization labels leaked to non-members\n- CVE-2026-24451: fork sync allowed after base repo access revoked\n- CVE-2026-20779: TOTP passcode reuse across login surfaces (TOCTOU\n  race)\n- CVE-2026-28740: cross-repository LFS object reuse without Code-unit\n  access\n- OAuth2 callback could auto-reactivate disabled users\n",
+    "id": "FreeBSD-2026-0293",
+    "modified": "2026-06-28T00:00:00Z",
+    "published": "2026-06-28T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27783"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-25714"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-20706"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27771"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-28744"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-28699"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-26231"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-20896"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22874"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27775"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27761"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-25038"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-24451"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-20779"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-28740"
+        },
+        {
+            "type": "WEB",
+            "url": "https://blog.gitea.com/release-of-1.26.2/"
+        },
+        {
+            "type": "WEB",
+            "url": "https://blog.gitea.com/release-of-1.26.3-and-1.26.4/"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "gitea -- multiple vulnerabilities"
+}

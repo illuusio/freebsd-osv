@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "go-git"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.11.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/go-git/go-git/security/advisories/GHSA-mw99-9chc-xw7r"
+        ],
+        "discovery": "2023-12-24T00:00:00Z",
+        "vid": "6a472f75-6fdc-11f1-bc26-8447094a420f"
+    },
+    "details": "The go-git project reports:\n\n> See link for details.\n",
+    "id": "FreeBSD-2026-0290",
+    "modified": "2026-06-24T00:00:00Z",
+    "published": "2026-06-24T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/go-git/go-git/security/advisories/GHSA-mw99-9chc-xw7r"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "go-git -- DoS vulnerability"
+}

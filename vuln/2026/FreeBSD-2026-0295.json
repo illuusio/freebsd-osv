@@ -1,0 +1,250 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-libav"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-bad"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-good"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-ugly"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://gstreamer.freedesktop.org/security/"
+        ],
+        "discovery": "2026-06-12T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-12891",
+                "CVE-2026-12892",
+                "CVE-2026-12893",
+                "CVE-2026-52717",
+                "CVE-2026-52718",
+                "CVE-2026-52719",
+                "CVE-2026-52720",
+                "CVE-2026-52721",
+                "CVE-2026-52722",
+                "CVE-2026-53703",
+                "CVE-2026-53704",
+                "CVE-2026-53705"
+            ]
+        },
+        "vid": "4e82a0e6-6801-42c6-8fb6-91b6b275a9e1"
+    },
+    "details": "The GStreamer project reports:\n\n> Multiple security issues were identified and fixed in the GStreamer\n> framework.\n>\n> - GStreamer-SA-2026-0030: Missing bounds checks in RTCP SDES packet\n>   parsing\n> - GStreamer-SA-2026-0031: Integer overflow and truncation in MXF\n>   demuxer\n> - GStreamer-SA-2026-0032: Out-of-bounds read and write in XMP tag\n>   parser\n> - GStreamer-SA-2026-0033: Out-of-bounds read and modification of const\n>   data in ID3v2 parser\n> - GStreamer-SA-2026-0034: Division by zero in mDVDsub subtitle parser\n> - GStreamer-SA-2026-0035: Integer overflow in WavPack decoder\n> - GStreamer-SA-2026-0036: Out-of-bounds read in SBC audio parser\n>   header parsing\n> - GStreamer-SA-2026-0037: Heap corruption in gst-libav AV protocol\n>   pipe\n> - GStreamer-SA-2026-0038: Memory leak and NULL pointer dereference in\n>   gst-libav demuxer\n> - GStreamer-SA-2026-0039: Assertion in AV1 parser tile data parsing\n> - GStreamer-SA-2026-0040: Out-of-bounds read in VA JPEG decoder\n>   segment parsing\n> - GStreamer-SA-2026-0042: Out-of-bounds reads and integer overflows in\n>   RealMedia demuxer\n> - GStreamer-SA-2026-0043: Out-of-bounds read and write in RFB source\n> - GStreamer-SA-2026-0045: Out-of-bounds reads in PCAP parser due to\n>   missing bounds checks\n> - GStreamer-SA-2026-0046: Integer overflow in VMNC decoder cursor\n>   payload size calculation\n> - GStreamer-SA-2026-0047: One-byte out-of-bounds read in H.264 NAL\n>   unit parser\n> - GStreamer-SA-2026-0048: Out-of-bounds read in H.266 parser VUI\n>   aspect ratio parsing\n",
+    "id": "FreeBSD-2026-0295",
+    "modified": "2026-06-29T00:00:00Z",
+    "published": "2026-06-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://gstreamer.freedesktop.org/security/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12891"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12892"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12893"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52717"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52718"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52719"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52720"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52721"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52722"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53703"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53704"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53705"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0030.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0031.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0032.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0033.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0034.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0035.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0036.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0037.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0038.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0039.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0040.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0042.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0043.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0045.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0046.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0047.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0048.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "gstreamer1 -- multiple vulnerabilities"
+}

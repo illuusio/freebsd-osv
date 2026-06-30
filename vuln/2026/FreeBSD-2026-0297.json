@@ -1,0 +1,86 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "powerdns-recursor"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.4.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2026-08.html"
+        ],
+        "discovery": "2026-04-04T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-3361",
+                "CVE-2026-40012",
+                "CVE-2026-42005",
+                "CVE-2026-42387",
+                "CVE-2026-42388",
+                "CVE-2026-42389",
+                "CVE-2026-42390",
+                "CVE-2026-52690"
+            ]
+        },
+        "vid": "62c4ed54-73aa-11f1-910d-3c7c3fba4204"
+    },
+    "details": "PowerDNS Team reports:\n\n> - CVE-2026-3361: ZoneToCache can poison the cache\n> - CVE-2026-40012: Information about ECS zero scoped answers might leak\n>   to clients that use a specific ECS\n> - CVE-2026-42005: Unbounded resource consumption in internal webserver\n> - CVE-2026-42387: Insufficient input validation in ZoneToCache\n> - CVE-2026-42388: Missing input validation for catalog zones\n> - CVE-2026-42389: Reject more queries with invalid header values\n> - CVE-2026-42390: ZONEMD validation can be bypassed\n> - CVE-2026-52690: Spoofed answers can mark an authoritative non-EDNS\n>   capable\n>\n> Thanks to people below for reporting these vulnerabilities.\n>\n> - Danial Mahadzir\n> - ilya rozentsvaig\n> - Vitaly Simonovich\n> - ylwango613\n> - nurmukhammyed\n> - Mehtab Zafar\n",
+    "id": "FreeBSD-2026-0297",
+    "modified": "2026-06-29T00:00:00Z",
+    "published": "2026-06-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2026-08.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3361"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40012"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42005"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42387"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42388"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42389"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42390"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52690"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "powerdns-recursor -- vulnerabilities"
+}

@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "rclone"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "1.46.0"
+                        },
+                        {
+                            "fixed": "1.74.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/rclone/rclone/security/advisories/GHSA-qw24-gh76-8rvv"
+        ],
+        "discovery": "2026-06-24T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-49980"
+            ]
+        },
+        "vid": "0f3342e3-73ba-11f1-910d-3c7c3fba4204"
+    },
+    "details": "<https://github.com/rclone/rclone/security/advisories/GHSA-qw24-gh76-8rvv>\nreports:\n\n> Rclone is a command-line program to sync files and directories to and\n> from different cloud storage providers.\\\n> From 1.46.0 until 1.74.3, rclone rcd \\--rc-serve accepts\n> unauthenticated GET and HEAD requests to paths of the form:\n> /\\[remote:path\\]/object.\\\n> The remote value is parsed from the URL and passed to normal backend\n> initialization. Inline remote configuration can set backend options\n> that execute local commands during initialization.\\\n> As a result, a single unauthenticated GET or HEAD request can execute\n> a command as the rclone process user.\n>\n> Thanks to [Nick Craig-Wood](https://github.com/ncw) for reporting this\n> vulnerability.\n",
+    "id": "FreeBSD-2026-0299",
+    "modified": "2026-06-29T00:00:00Z",
+    "published": "2026-06-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/rclone/rclone/security/advisories/GHSA-qw24-gh76-8rvv"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49980"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "rclone -- Unauthenticated command execution in `rclone rcd --rc-serve` via inline remote instantiation"
+}

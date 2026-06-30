@@ -1,0 +1,86 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "powerdns"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.1.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2026-05.html",
+            "https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2026-07.html"
+        ],
+        "discovery": "2026-02-16T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-33257",
+                "CVE-2026-33260",
+                "CVE-2026-33608",
+                "CVE-2026-33609",
+                "CVE-2026-33610",
+                "CVE-2026-33611",
+                "CVE-2026-42005"
+            ]
+        },
+        "vid": "a8614190-73b4-11f1-910d-3c7c3fba4204"
+    },
+    "details": "PowerDNS Team reports:\n\n> - CVE-2026-33257: Insufficient input validation of internal webserver\n> - CVE-2026-33260: Insufficient input validation of internal webserver\n> - CVE-2026-33608: Incomplete domain name sanitization during Bind\n>   autosecondary zone transfer\n> - CVE-2026-33609: LDAP DN injection\n> - CVE-2026-33610: Possible file descriptor exhaustion in\n>   forward-dnsupdate\n> - CVE-2026-33611: Insufficient validation of HTTPS and SVCB records\n>\n> Thanks to people below for reporting these vulnerabilities:\n>\n> - Vitaly Simonovich\n> - Cavid\n> - Tibs\n> - ylwango613\n\n> - CVE-2026-42005: Insufficient input validation of internal web server\n>\n> Thanks to ilya rozentsvaig for reporting this vulnerability.\n",
+    "id": "FreeBSD-2026-0298",
+    "modified": "2026-06-29T00:00:00Z",
+    "published": "2026-06-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2026-05.html"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2026-07.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33257"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33260"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33608"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33609"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33610"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33611"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42005"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "PowerDNS -- vulnerabilities"
+}
