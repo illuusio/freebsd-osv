@@ -1,0 +1,80 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.30.4,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx-devel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.31.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://nginx.org/en/security_advisories.html"
+        ],
+        "discovery": "2026-07-15T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-42533",
+                "CVE-2026-56434",
+                "CVE-2026-60005"
+            ]
+        },
+        "vid": "56feeac6-8263-11f1-92ba-bc24110523fe"
+    },
+    "details": "The nginx development team reports:\n\n> Buffer overflow when using map and regex (CVE-2026-42533). Severity:\n> major.\n>\n> Memory disclosure when using ngx_http_slice_module (CVE-2026-60005).\n> Severity: medium.\n>\n> Use-after-free when using ngx_http_ssi_module (CVE-2026-56434).\n> Severity: medium.\n",
+    "id": "FreeBSD-2026-0337",
+    "modified": "2026-07-18T00:00:00Z",
+    "published": "2026-07-18T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://nginx.org/en/security_advisories.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42533"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-56434"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60005"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "nginx -- multiple vulnerabilities"
+}

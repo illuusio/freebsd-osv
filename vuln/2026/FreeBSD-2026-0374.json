@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "weechat"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.9.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://weechat.org/doc/weechat/security/"
+        ],
+        "discovery": "2026-07-26T00:00:00Z",
+        "vid": "0d5b4884-8c2b-11f1-8144-8447094a420f"
+    },
+    "details": "The Weechat project reports:\n\n> Use-after-free and double free when a remote relay sends an event with\n> an array as body.\n>\n> Use-after-free in the irc plugin when a batched message disconnects\n> the server.\n>\n> Stack buffer overflow when building a JOIN command with channel keys.\n",
+    "id": "FreeBSD-2026-0374",
+    "modified": "2026-07-30T00:00:00Z",
+    "published": "2026-07-30T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://weechat.org/doc/weechat/security/"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Weechat -- Multiple vulnerabilities"
+}

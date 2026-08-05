@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "liboqs"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.16.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/open-quantum-safe/liboqs/releases/tag/0.16.0"
+        ],
+        "discovery": "2026-07-09T00:00:00Z",
+        "vid": "e26b9011-80ef-11f1-b72c-8447094a420f"
+    },
+    "details": "The OpenQuantumSafe project reports:\n\n> - uninitialized encaps_derand pointer dereference\n> - out-of-bounds read in XMSS/XMSS\\^MT signature verification\n> - Integer underflow in CROSS crypto_sign_open()\n> - incorrect array size when calling secure_clean\n> - Implemented optimization barrier OQS_MEM_BLACK_BOX and applied to\n>   ct_select in FrodoKEM\n",
+    "id": "FreeBSD-2026-0336",
+    "modified": "2026-07-16T00:00:00Z",
+    "published": "2026-07-16T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/open-quantum-safe/liboqs/releases/tag/0.16.0"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "liboqs -- Multiple vulnerabilities"
+}

@@ -1,0 +1,84 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-49420"
+            ],
+            "freebsdsa": [
+                "SA-26:41.libalias"
+            ]
+        },
+        "vid": "f5dd96dd-74e1-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nThe RTSP handler in libalias rewrote outgoing packets into a\nfixed-length stack buffer without checking whether the rewritten data\nfit in the buffer, or whether the result fit back in the original\npacket.\n\n# Impact:\n\nA host sending crafted RTSP traffic from inside a NAT gateway using\nlibalias can overflow a stack buffer, potentially achieving remote code\nexecution in the kernel (when using ipfw(4) NAT) or in the natd(8)\nprocess (which generally runs as the root user).\n",
+    "id": "FreeBSD-2026-0308",
+    "modified": "2026-07-01T00:00:00Z",
+    "published": "2026-07-01T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49420"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:41.libalias.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Buffer overflow in libalias RTSP handler"
+}

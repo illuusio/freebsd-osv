@@ -1,0 +1,127 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "poppler"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.04.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "poppler-glib"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.04.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "poppler-qt5"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.04.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "poppler-qt6"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.04.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "poppler-utils"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.04.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://access.redhat.com/errata/RHSA-2026:24984"
+        ],
+        "discovery": "2026-06-01T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-10118"
+            ]
+        },
+        "vid": "74d0291e-7f81-11f1-83e9-901b0e13f1a0"
+    },
+    "details": "https://access.redhat.com/errata/RHSA-2026:24984 reports:\n\n> A flaw was found in Poppler\\'s Splash backend. A remote attacker could\n> exploit this vulnerability by crafting a malicious PDF file that, when\n> rendered, triggers an integer overflow in the \\`tilingPatternFill\\`\n> function. This overflow leads to an undersized heap memory allocation,\n> allowing a subsequent out-of-bounds write. Successful exploitation\n> could result in arbitrary code execution, information disclosure, or\n> denial of service within the context of the application processing the\n> PDF.\n",
+    "id": "FreeBSD-2026-0335",
+    "modified": "2026-07-14T00:00:00Z",
+    "published": "2026-07-14T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://access.redhat.com/errata/RHSA-2026:24984"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-10118"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Poppler: integer overflow in tilingPatternFill"
+}

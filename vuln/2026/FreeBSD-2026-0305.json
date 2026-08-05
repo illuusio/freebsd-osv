@@ -1,0 +1,62 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-49419"
+            ],
+            "freebsdsa": [
+                "SA-26:38.jail"
+            ]
+        },
+        "vid": "a65c31d1-74e0-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nWhen the JAIL_AT_DESC flag is specified, kern_jail_set() and\nkern_jail_get() released the reference to the caller\\'s current prison\nbefore looking up the jail descriptor. If the descriptor lookup failed,\nerror-handling paths released the same reference a second time.\n\n# Impact:\n\nAn unprivileged local user can trigger a prison reference count\nunderflow, which may cause the prison structure to be freed while still\nin use. When this is done on the jail host, the bug will generally\nresult in an immediate panic. However, if the user is running in a jail,\nthen it may be possible to exploit the bug to elevate privileges.\n",
+    "id": "FreeBSD-2026-0305",
+    "modified": "2026-07-01T00:00:00Z",
+    "published": "2026-07-01T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49419"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:38.jail.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Jail reference count underflow"
+}

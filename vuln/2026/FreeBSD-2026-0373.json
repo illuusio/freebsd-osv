@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "netbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0.5.0,1"
+                        },
+                        {
+                            "fixed": "0.76.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/netbirdio/netbird/security/advisories/GHSA-qcpp-8vwj-hhwr"
+        ],
+        "discovery": "2026-07-29T00:00:00Z",
+        "vid": "ef71114e-8c1c-11f1-a221-3c7c3fba4204"
+    },
+    "details": "The NetBird Team reports:\n\n> The NetBird client daemon exposes its gRPC control interface to any\n> local process with no authentication, in all versions from 0.5.0\n> (March 2022) to 0.75.1. On Linux, macOS and FreeBSD the interface is a\n> Unix domain socket (/var/run/netbird.sock) with\n> world-readable/writable permissions (0666). On Windows it is a\n> loopback TCP listener (127.0.0.1:41731), where the transport carries\n> no caller identity at all. Any unprivileged local user can connect and\n> invoke all daemon RPCs without credentials.\n",
+    "id": "FreeBSD-2026-0373",
+    "modified": "2026-07-30T00:00:00Z",
+    "published": "2026-07-30T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/netbirdio/netbird/security/advisories/GHSA-qcpp-8vwj-hhwr"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "NetBird -- Local Privilege Escalation via Unauthenticated IPC Socket"
+}

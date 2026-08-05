@@ -1,0 +1,89 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-49427",
+                "CVE-2026-49428"
+            ],
+            "freebsdsa": [
+                "SA-26:44.posixshm"
+            ]
+        },
+        "vid": "91017b3b-74e2-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nPages belonging to largepage shared memory objects were not explicitly\nwired. When sendfile(2) transmitted such an object with the SF_NOCACHE\nflag, it freed the underlying pages after transmission even though\nexisting mappings still referred to them. \\[CVE-2026-49427\\]\n\nSeparately, certain system calls, such open(2) with the O_TRUNC flag\nset, and fspacectl(2), could incorrectly free memory in largepage\nobjects. These operations are not permitted on largepage objects, but\nthe implementation did not verify this. \\[CVE-2026-49428\\]\n\n# Impact:\n\nAn unprivileged local user can abuse the bug to access freed kernel\nmemory. This can be exploited to escalate privileges.\n",
+    "id": "FreeBSD-2026-0311",
+    "modified": "2026-07-01T00:00:00Z",
+    "published": "2026-07-01T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49427"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49428"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:44.posixshm.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Multiple vulnerabilities in POSIX largepage objects"
+}

@@ -1,0 +1,99 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvpn"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.7.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvpn-devel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "g20260701,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://community.openvpn.net/Downloads#openvpn-275-released-1-july-2026"
+        ],
+        "discovery": "2026-07-01T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-11771",
+                "CVE-2026-12932",
+                "CVE-2026-12996",
+                "CVE-2026-13117",
+                "CVE-2026-13122",
+                "CVE-2026-13698"
+            ]
+        },
+        "vid": "ffa897a0-756f-11f1-b291-a74de6bb0320"
+    },
+    "details": "The OpenVPN community project team reports:\n\n> \\[\\...\\] OpenVPN 2.7.5 \\[\\...\\] is a bugfix release fixing several\n> security issues:\n>\n> - Fix use-after-free bug in ack_write_buf(), triggerable by a\n>   well-timed sequence of control channel + authentication packets\n>   (CVE-2026-12996)\n> - Fix use-after-free bug in tls_wrap_reneg(), triggerable by suitable\n>   sequence of dynamic tls-crypt control-channel packets\n>   (CVE-2026-13117)\n> - Fix server crash on reception of suitably malformed auth-token, if\n>   \\--auth-gen-token external-auth is active (CVE-2026-13122)\n> - Fix memory-leak in tls-crypt-v2 client key handling that could lead\n>   to out-of-memory situations and subsequent server crashes\n>   (CVE-2026-12932)\n> - Fix possible 1-byte buffer overrun on NTLMv2 proxy responses.\n>   (CVE-2026-11771)\n> - Fix another memory leak on reception of suitable tls-crypt-v2\n>   packets that could lead to an out of memory situation and server\n>   crash (CVE-2026-13698)\n",
+    "id": "FreeBSD-2026-0317",
+    "modified": "2026-07-01T00:00:00Z",
+    "published": "2026-07-01T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://community.openvpn.net/Downloads#openvpn-275-released-1-july-2026"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/OpenVPN/openvpn/blob/v2.7.5/Changes.rst#overview-of-changes-in-275"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-11771"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12932"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12996"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13117"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13122"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13698"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "openvpn -- multiple vulnerabilities"
+}

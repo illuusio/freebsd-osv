@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "weechat"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.9.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/weechat/weechat/security/advisories/GHSA-wmpc-m6g9-fwj8"
+        ],
+        "discovery": "2026-07-05T00:00:00Z",
+        "vid": "d7939352-788b-11f1-b72c-8447094a420f"
+    },
+    "details": "The Weechat project reports:\n\n> Pre-auth memory leak in relay-api POST /api/handshake (unfreed JSON\n> body) \u2192 unauthenticated remote memory-exhaustion DoS.\n",
+    "id": "FreeBSD-2026-0322",
+    "modified": "2026-07-05T00:00:00Z",
+    "published": "2026-07-05T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/weechat/weechat/security/advisories/GHSA-wmpc-m6g9-fwj8"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Weechat -- Memory leak in relay-API"
+}

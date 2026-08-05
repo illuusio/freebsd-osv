@@ -1,0 +1,70 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "153.0.0,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "153.0.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.mozilla.org/en-US/security/advisories/mfsa2026-68/#CVE-2026-16411"
+        ],
+        "discovery": "2026-07-21T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-16411"
+            ]
+        },
+        "vid": "aca6684f-8aa2-11f1-a744-b42e991fc52e"
+    },
+    "details": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-68/#CVE-2026-16411\nreports\n\n> Memory safety bugs present in Firefox 152. Some of these bugs showed\n> evidence of memory corruption and we presume that with enough effort\n> some of these could have been exploited to run arbitrary code.\n",
+    "id": "FreeBSD-2026-0357",
+    "modified": "2026-07-28T00:00:00Z",
+    "published": "2026-07-28T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-68/#CVE-2026-16411"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16411"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Mozilla -- Memory safety bugs"
+}

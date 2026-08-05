@@ -1,0 +1,46 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "zeek"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.0.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "INSERT URL HERE"
+        ],
+        "discovery": "2026-07-06T00:00:00Z",
+        "vid": "d47e608f-2e2a-4366-ad17-ce2480bf912d"
+    },
+    "details": "Tim Wojtulewicz of Corelight reports:\n\n> The NVT, Rlogin, and RSH analyzers have received fixes to avoid\n> unbounded state growth. Due to the fact that these packets can be\n> received from remote hosts, these are considered DoS risks.\n>\n> A specially crafted WebSocket payload can cause the Spicy WebSocket\n> analyzer to use excessive memory when processing close, ping, and pong\n> frames. Due to the fact that these packets can be received from remote\n> hosts, these are considered a DoS risk.\n>\n> A specially crafted series of Finger packets can cause the Spicy\n> Finger analyzer to use excessive amounts of memory and potentially\n> crash Zeek. Due to the fact that these packets can be received from\n> remote hosts, this is considered a DoS risk.\n>\n> A specially crafted Kerberos packet can cause the Kerberos analyzer to\n> enter an invalid state and potentially crash Zeek. Due to the fact\n> that these packets can be received from remote hosts, this is\n> considered a DoS risk.\n>\n> A specially crafted series of RDP packets can cause the RDP analyzer\n> to use excessive amounts of memory and potentially crash Zeek. Due to\n> the fact that these packets can be received from remote hosts, this is\n> considered a DoS risk.\n>\n> A specially crafted IP packet can cause the IP analyzer to read past\n> the end of the contents of the packet when emitting the\n> packet_contents event and possibly crash. Due to the fact that these\n> packets can be received from remote hosts, this is considered a DoS\n> risk.\n>\n> A specially crafted IP packet can cause the packet discarding code to\n> read off the end of the packet when looking for follow-on header data.\n> This may potentially lead to a crash of Zeek. Due to the fact that\n> these packets can be received from remote hosts, this is considered a\n> DoS risk.\n>\n> A specially crafted series of Gnutella packets may cause Zeek to\n> continue accumulating memory and eventually crash. Due to the fact\n> that these packets can be received from remote hosts, this is\n> considered a DoS risk.\n>\n> A specially crafted ICMPv6 packet can cause the ICMP analyzer to skip\n> part of the packet and not report corresponding events and logs. Due\n> to the fact that these packets can be received from remote hosts, this\n> is considered an evasion risk.\n>\n> A specially crafted SSH packet can cause the SSH analyzer to throw\n> BinPAC exceptions for extremely large packets and skip logging them\n> otherwise. Due to the fact that these packets can be received from\n> remote hosts, this is considered an evasion risk.\n>\n> A number of issues with the HTTP analyzer were found involving unusual\n> Content-Length, Transfer-Encoding and Expect header usage. Due to the\n> fact that these packets can be received from remote hosts, this is\n> considered an evasion risk.\n>\n> A series of fixes were applied to the serialization code in Zeek to\n> avoid buffer overreads with both Broker and ZeroMQ traffic. On debug\n> builds, these hit various abort() conditions and cause Zeek to exit.\n> Due to the fact that all of these states require direct access to the\n> Broker/ZeroMQ ports (meaning access to the local network to some\n> degree), this isn't considered a DoS risk.\n",
+    "id": "FreeBSD-2026-0324",
+    "modified": "2026-07-06T00:00:00Z",
+    "published": "2026-07-06T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "INSERT URL HERE"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/zeek/zeek/releases/tag/v8.0.9"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "zeek -- potential DoS vulnerabilities"
+}

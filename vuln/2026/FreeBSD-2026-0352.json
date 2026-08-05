@@ -1,0 +1,108 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "28.5.0.4,4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime27"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "27.3.4.15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime28"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "28.5.0.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime29"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "29.0.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/erlang/otp/security/advisories/GHSA-7xgh-gmgf-q2g7"
+        ],
+        "discovery": "2026-07-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-59250"
+            ]
+        },
+        "vid": "445da2cc-89e1-11f1-b35c-4c526214c986"
+    },
+    "details": "https://github.com/erlang/otp/security/advisories/GHSA-7xgh-gmgf-q2g7\nreports:\n\n> A remote unauthenticated attacker can crash Erlang nodes running the\n> megaco text codec with the flex scanner option by sending an\n> H.248/Megaco message with a property parm name exceeding 452 bytes.\n> The overflow occurs in a C linked-in driver, causing the entire BEAM\n> VM process to terminate. It is reachable pre-authentication, as the\n> flex scanner processes raw TCP payloads before protocol validation.\n",
+    "id": "FreeBSD-2026-0352",
+    "modified": "2026-07-27T00:00:00Z",
+    "published": "2026-07-27T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-7xgh-gmgf-q2g7"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-59250"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Erlang/OTP -- megaco flex scanner buffer overflow"
+}

@@ -1,0 +1,125 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "150.0.7871.181"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "150.0.7871.181"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0256605430.html"
+        ],
+        "discovery": "2026-07-21T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-16420",
+                "CVE-2026-16421",
+                "CVE-2026-16413",
+                "CVE-2026-16414",
+                "CVE-2026-16415",
+                "CVE-2026-16416",
+                "CVE-2026-16417",
+                "CVE-2026-16418",
+                "CVE-2026-16419",
+                "CVE-2026-16422",
+                "CVE-2026-16423",
+                "CVE-2026-16424"
+            ]
+        },
+        "vid": "82122f4b-6fad-4b83-bd1a-5b036b135080"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 12 security fixes:\n>\n> - \\[527930356\\] High CVE-2026-16420: Type Confusion in WebAudio.\n> - \\[528276487\\] High CVE-2026-16421: Inappropriate implementation in\n>   WebAudio.\n> - \\[517359779\\] High CVE-2026-16413: Out of bounds write in ANGLE.\n> - \\[517651910\\] High CVE-2026-16414: Insufficient validation of\n>   untrusted input in Chromecast.\n> - \\[519244446\\] High CVE-2026-16415: Insufficient validation of\n>   untrusted input in Extensions.\n> - \\[520172356\\] High CVE-2026-16416: Integer overflow in Chromecast.\n> - \\[521491024\\] High CVE-2026-16417: Uninitialized Use in Skia.\n> - \\[522125255\\] High CVE-2026-16418: Stack buffer overflow in V8.\n> - \\[523435970\\] High CVE-2026-16419: Out of bounds read and write in\n>   ANGLE.\n> - \\[533515002\\] High CVE-2026-16422: Insufficient validation of\n>   untrusted input in Certificate.\n> - \\[534582496\\] High CVE-2026-16423: Use after free in UI.\n> - \\[534858939\\] High CVE-2026-16424: Use after free in GPU.\n",
+    "id": "FreeBSD-2026-0363",
+    "modified": "2026-07-29T00:00:00Z",
+    "published": "2026-07-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0256605430.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16420"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16421"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16413"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16414"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16415"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16416"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16417"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16418"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16419"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16422"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16423"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16424"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- security fixes"
+}

@@ -1,0 +1,89 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-58081",
+                "CVE-2026-58082"
+            ],
+            "freebsdsa": [
+                "SA-26:49.iconv"
+            ]
+        },
+        "vid": "78910e7e-74e3-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nSeveral encoding modules, including HZ, UTF-7, VIQR, and ZW, did not\nproperly check the size of the caller-supplied output buffer before\nwriting converted characters. \\[CVE-2026-58081\\]\n\nThe ISO-2022 encoding module used a stack buffer sized to MB_LEN_MAX (6\nbytes) for intermediate character output. Some ISO-2022 variants can\nrequire up to 10 bytes per character, in which case conversions can\ntrigger a stack buffer overflow of up to four bytes. \\[CVE-2026-58082\\]\n\n# Impact:\n\nAn application that uses iconv(3) to convert untrusted input to or from\none of the affected encodings may be vulnerable to buffer overflows if\nit uses one of the affected encoding modules.\n",
+    "id": "FreeBSD-2026-0316",
+    "modified": "2026-07-01T00:00:00Z",
+    "published": "2026-07-01T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58081"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58082"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:49.iconv.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Multiple vulnerabilities in iconv(3)"
+}

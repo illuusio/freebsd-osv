@@ -1,0 +1,84 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-49421"
+            ],
+            "freebsdsa": [
+                "SA-26:42.unlinkat"
+            ]
+        },
+        "vid": "33fd66d1-74e2-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nThe kernel function that implements unlinkat(2) and funlinkat(2)\nvalidated the AT_RESOLVE_BENEATH flag but failed to pass it through to\nthe underlying path lookup. The flag was silently dropped, so path\nresolution was not actually restricted.\n\n# Impact:\n\nA process that uses AT_RESOLVE_BENEATH with unlinkat(2) or funlinkat(2)\nto confine path resolution can in fact resolve paths above the starting\ndirectory. A caller relying on this flag for path containment may delete\nfiles outside the intended directory tree.\n",
+    "id": "FreeBSD-2026-0309",
+    "modified": "2026-07-01T00:00:00Z",
+    "published": "2026-07-01T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49421"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:42.unlinkat.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- unlinkat(2) ignores AT_RESOLVE_BENEATH flag"
+}

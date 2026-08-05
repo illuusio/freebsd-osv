@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "weechat"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.9.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/weechat/weechat/releases/tag/v4.9.4"
+        ],
+        "discovery": "2026-07-19T00:00:00Z",
+        "vid": "f4c57c5a-845a-11f1-b72c-8447094a420f"
+    },
+    "details": "The Weechat project reports:\n\n> Write of logger file outside of configured path.\n>\n> Authentication bypass in Relay plugin, protocols \\\"api\\\" and\n> \\\"weechat\\\".\n",
+    "id": "FreeBSD-2026-0342",
+    "modified": "2026-07-20T00:00:00Z",
+    "published": "2026-07-20T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/weechat/weechat/releases/tag/v4.9.4"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Weechat -- Multiple vulnerabilities"
+}

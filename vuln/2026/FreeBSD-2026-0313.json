@@ -1,0 +1,84 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-49423"
+            ],
+            "freebsdsa": [
+                "SA-26:46.ktls"
+            ]
+        },
+        "vid": "fb1bf2ae-74e2-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nWhen building the iovec array for a received TLS 1.2 CBC record,\nktls_ocf_tls_cbc_decrypt() incremented the iovec index for every mbuf in\nthe chain, including mbufs that were skipped because they contained only\nTLS header bytes. This left uninitialized entries in the iovec array.\nThe iovec array was allocated without zeroing.\n\n# Impact:\n\nA remote TLS peer can cause the kernel to read from uninitialized iovec\nentries during HMAC computation, resulting in a kernel panic. The peer\nmust be able to control TCP segmentation such that the first mbuf of a\nCBC record contains only the 5-byte TLS record header.\n",
+    "id": "FreeBSD-2026-0313",
+    "modified": "2026-07-01T00:00:00Z",
+    "published": "2026-07-01T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49423"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:46.ktls.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Remote DOS via uninitialized memory access in KTLS receive"
+}

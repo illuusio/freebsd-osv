@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "giflib"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "6.1.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/zakkanijia/POC/blob/main/giflib/giftool/giflib_giftool_gce_len_heap_oobwrite_disclosure.md"
+        ],
+        "discovery": "2026-03-18T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-26740"
+            ]
+        },
+        "vid": "dd6096e6-8555-11f1-b4c7-00a0980083d7"
+    },
+    "details": "https://github.com/zakkanijia/POC/blob/main/giflib/giftool/giflib_giftool_gce_len_heap_oobwrite_disclosure.md\nreports:\n\n> Buffer Overflow vulnerability in giflib v.5.2.2 allows a remote\n> attacker to cause a denial of service via the EGifGCBToExtension\n> overwriting an existing Graphic Control Extension block without\n> validating its allocated size.\n",
+    "id": "FreeBSD-2026-0344",
+    "modified": "2026-07-21T00:00:00Z",
+    "published": "2026-07-21T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/zakkanijia/POC/blob/main/giflib/giftool/giflib_giftool_gce_len_heap_oobwrite_disclosure.md"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-26740"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "giflib -- Buffer Overflow vulnerability"
+}

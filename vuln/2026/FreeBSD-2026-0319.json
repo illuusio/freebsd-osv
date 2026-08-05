@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "p5-CGI-Session"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.49"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://metacpan.org/dist/CGI-Session/changes"
+        ],
+        "discovery": "2026-06-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-56016"
+            ]
+        },
+        "vid": "dfa2ef44-7785-11f1-99fc-40b034429ecf"
+    },
+    "details": "CGI-Session project reports:\n\n> SECURITY: Strengthen cryptographic randomness of MD5 driver.\n",
+    "id": "FreeBSD-2026-0319",
+    "modified": "2026-07-04T00:00:00Z",
+    "published": "2026-07-04T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://metacpan.org/dist/CGI-Session/changes"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-56016"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56016"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "p5-CGI-Session -- secuity fixes"
+}

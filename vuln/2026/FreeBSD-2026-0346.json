@@ -1,0 +1,170 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "unbound"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.25.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/NLnetLabs/unbound/releases/tag/release-1.25.2"
+        ],
+        "discovery": "2026-07-22T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-14586",
+                "CVE-2026-32665",
+                "CVE-2026-40691",
+                "CVE-2026-41637",
+                "CVE-2026-42955",
+                "CVE-2026-44621",
+                "CVE-2026-44687",
+                "CVE-2026-44690",
+                "CVE-2026-46582",
+                "CVE-2026-50045",
+                "CVE-2026-50046",
+                "CVE-2026-50243",
+                "CVE-2026-50248",
+                "CVE-2026-50251",
+                "CVE-2026-50252",
+                "CVE-2026-52863",
+                "CVE-2026-54478",
+                "CVE-2026-55708",
+                "CVE-2026-55717",
+                "CVE-2026-55973",
+                "CVE-2026-55990",
+                "CVE-2026-55991",
+                "CVE-2026-56416",
+                "CVE-2026-56444"
+            ]
+        },
+        "vid": "f63b4b88-6901-4c12-b13d-5a821e25e9bf"
+    },
+    "details": "NLnet Labs reports:\n\n> This release consolidates security fixes for issues reported over a\n> period of time. There are fixes for:\n>\n> - CVE-2026-14586: Assertion in libngtcp2 when under pressure in high\n>   concurrency DNS-over-QUIC environments.\n> - CVE-2026-32665: Remote DNS-over-QUIC denial of service due to\n>   quic-size budget bypass.\n> - CVE-2026-40691: Packet of death for DNSCrypt over TCP.\n> - CVE-2026-41637: Degradation of resolution service from improperly\n>   accounted client-terminated DNS-over-QUIC queries.\n> - CVE-2026-42955: Extra fix for CVE-2026-40622 to also clamp the TTL\n>   of A/AAAA records disallowing a one-time \\'ghost domain\\' delegation\n>   renewal via glue records.\n> - CVE-2026-44621: Libunbound applications configured with\n>   \\'unwanted-reply-threshold\\' could eventually be abruptly\n>   terminated.\n> - CVE-2026-44687: Off-by-one error in \\'harden-below-nxdomain\\' logic\n>   can shadow a stub/forward zone by a legitimate parent\\'s NXDOMAIN.\n> - CVE-2026-44690: Cross-zone wildcard cache poisoning via RRSIG.labels\n>   manipulation.\n> - CVE-2026-46582: A wildcard replay, as another piece of data,\n>   triggers poisoning in the serve expired reply path.\n> - CVE-2026-50045: \\'max-global-quota\\' reset by DNSSEC validation\n>   restarts.\n> - CVE-2026-50046: Possible heap use-after-free in an error path when a\n>   DoT forwarded query is jostled out.\n> - CVE-2026-50243: \\'response-ip\\'/\\'rpz\\' can rewrite BOGUS answers\n>   instead of returning SERVFAIL.\n> - CVE-2026-50248: BOGUS configured primary hostname accepted for XFR\n>   in auth/rpz zones.\n> - CVE-2026-50251: Attacker supplied 0.0.0.0/:: glue triggers defensive\n>   full-cache flush.\n> - CVE-2026-50252: Possible cache poisoning attack by mapping source\n>   port population per thread.\n> - CVE-2026-52863: Memory corruption could lead to crash and denial of\n>   service.\n> - CVE-2026-54478: DNS Cookie bypass when combined with proxy-protocol\n>   use.\n> - CVE-2026-55708: Privacy/configuration issue when adding local data\n>   in views through \\'unbound-control\\'.\n> - CVE-2026-55717: \\'serve-expired-client-timeout\\' and \\'response-ip\\'\n>   CNAME redirect could lead to a crash.\n> - CVE-2026-55973: \\'dns-error-reporting: yes\\' leads to stack buffer\n>   overflow.\n> - CVE-2026-55990: Packet of death for a DNSCrypt misconfigured\n>   Unbound.\n> - CVE-2026-55991: Remote DNS-over-QUIC (DoQ) flow-control assertion\n>   failure in libngtcp2.\n> - CVE-2026-56416: Possible heap buffer overflow when validator\n>   canonicalizes RDATA that contains domain name.\n> - CVE-2026-56444: Degradation of resolution service when\n>   \\'discard-timeout\\' and \\'serve-expired-client-timeout\\' are\n>   combined in unusual configuration.\n",
+    "id": "FreeBSD-2026-0346",
+    "modified": "2026-07-25T00:00:00Z",
+    "published": "2026-07-25T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/NLnetLabs/unbound/releases/tag/release-1.25.2"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14586"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-32665"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40691"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-41637"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42955"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44621"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44687"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44690"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-46582"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50045"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50046"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50243"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50248"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50251"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50252"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52863"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54478"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55708"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55717"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55973"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55990"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55991"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-56416"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-56444"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/projects/unbound/security-advisories/"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "unbound -- multiple vulnerabilities"
+}

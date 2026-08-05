@@ -1,0 +1,85 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "150.0.7871.186"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "150.0.7871.186"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_01320465736.html"
+        ],
+        "discovery": "2026-07-23T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-16807",
+                "CVE-2026-16806",
+                "CVE-2026-16805",
+                "CVE-2026-16804"
+            ]
+        },
+        "vid": "c4005254-b922-430f-b94a-dac9f59a527b"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 4 security fixes:\n>\n> - \\[518237034\\] High CVE-2026-16807: Out of bounds write in Codecs.\n> - \\[522064153\\] High CVE-2026-16806: Use after free in WebMCP.\n> - \\[523292588\\] High CVE-2026-16805: Use after free in Blink.\n> - \\[524721670\\] High CVE-2026-16804: Use after free in Input.\n",
+    "id": "FreeBSD-2026-0364",
+    "modified": "2026-07-29T00:00:00Z",
+    "published": "2026-07-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_01320465736.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16807"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16806"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16805"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16804"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- security fixes"
+}

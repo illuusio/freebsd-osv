@@ -1,0 +1,84 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-06-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-49415"
+            ],
+            "freebsdsa": [
+                "SA-26:39.execve"
+            ]
+        },
+        "vid": "4b0d0a49-74e1-11f1-958d-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nDuring execve(2) of a SUID binary, the new virtual address space is\ninstalled before the process credentials are updated. During this\nwindow, a process running as the same user can access the target\nprocess\\'s memory via procfs or linprocfs, because the kernel\\'s\ndebugging permission check still saw the original credentials.\n\n# Impact:\n\nAn unprivileged local user can exploit this race to modify the address\nspace of a SUID binary before its credentials are elevated, potentially\ngaining full control of the affected system.\n",
+    "id": "FreeBSD-2026-0306",
+    "modified": "2026-07-01T00:00:00Z",
+    "published": "2026-07-01T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49415"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:39.execve.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Local privilege escalation via execve(2) TOCTOU race"
+}

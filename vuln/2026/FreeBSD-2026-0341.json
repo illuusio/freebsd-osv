@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mailpit"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.30.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/axllent/mailpit/security/advisories/GHSA-r553-m4fv-5v97"
+        ],
+        "discovery": "2026-07-20T00:00:00Z",
+        "vid": "562ff91e-8407-11f1-bfde-10ffe07f9334"
+    },
+    "details": "Mailpit author reports:\n\n> Mailpit\\'s SMTP DATA reader enforces the configured MaxMessageSize\n> only after bufio.Reader.ReadBytes(\\'\\\\n\\') has already buffered a\n> complete DATA line. A remote unauthenticated SMTP client can send one\n> line larger than the configured message-size cap and force memory\n> allocation before Mailpit returns the expected 552 5.3.4 rejection,\n> leaving patched versions still exposed to a single-line incomplete-fix\n> variant of the earlier SMTP DATA body-size issue.\n",
+    "id": "FreeBSD-2026-0341",
+    "modified": "2026-07-20T00:00:00Z",
+    "published": "2026-07-20T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-r553-m4fv-5v97"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Mailpit -- SMTP DATA line reader buffers over-limit input before size enforcement"
+}

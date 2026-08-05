@@ -1,0 +1,62 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-07-29T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-58086"
+            ],
+            "freebsdsa": [
+                "SA-26:53.ktrace"
+            ]
+        },
+        "vid": "73482c83-8bb8-11f1-a6ab-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nAs an inadvertent side effect of an unrelated code change, PRIV_KTRACE\nwas always denied to a jailed root user. Tracing configured by a jailed\nroot user was therefore not flagged as privileged.\n\n# Impact:\n\nAn unprivileged user in a jail that has permission to debug the target\nprocess can modify the jailed root user\\'s ktrace(2) flags, or disable\ntracing outright. A jailed root user therefore cannot reliably trace\nunprivileged processes.\n",
+    "id": "FreeBSD-2026-0368",
+    "modified": "2026-07-30T00:00:00Z",
+    "published": "2026-07-30T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58086"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:53.ktrace.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- ktrace(2) privilege incorrectly validated in jails"
+}

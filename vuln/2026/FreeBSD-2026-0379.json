@@ -1,0 +1,64 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "powerdns-recursor"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.4.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2026-10.html"
+        ],
+        "discovery": "2026-07-22T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-52868",
+                "CVE-2026-52686"
+            ]
+        },
+        "vid": "575ddefc-9085-11f1-b295-98b78501ef2a"
+    },
+    "details": "PowerDNS Team reports:\n\n> - CVE-2026-52688: RRSIGs with too few labels can lead to bypass of\n>   DNSSEC wildcard validation\n> - CVE-2026-52686: Wildcard CNAME proof validation bypass\u00b6\n",
+    "id": "FreeBSD-2026-0379",
+    "modified": "2026-08-05T00:00:00Z",
+    "published": "2026-08-05T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2026-10.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52868"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-52688"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52686"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-52686"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "PowerDNS Recursor -- multiple vulnerabilities"
+}

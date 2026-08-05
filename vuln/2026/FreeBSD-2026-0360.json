@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jetbrains-goland"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2026.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        ],
+        "discovery": "2026-07-23T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-64802"
+            ]
+        },
+        "vid": "35a830f6-8aab-11f1-a744-b42e991fc52e"
+    },
+    "details": "https://www.jetbrains.com/privacy-security/issues-fixed/ reports:\n\n> - In JetBrains GoLand before 2026.2 arbitrary code execution was\n>   possible before granting project trust in the Go Modules integration\n> - In JetBrains GoLand before 2026.2 sensitive configuration values\n>   written to log files by default\n",
+    "id": "FreeBSD-2026-0360",
+    "modified": "2026-07-28T00:00:00Z",
+    "published": "2026-07-28T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.jetbrains.com/privacy-security/issues-fixed/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-64802"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "GoLand -- Multiple vulnerabilities"
+}

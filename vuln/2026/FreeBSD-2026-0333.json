@@ -1,0 +1,94 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "apache-commons-httpclient"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "3.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jakarta-commons-httpclient"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "3.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "httpclient"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.5.13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "5.0.0"
+                        },
+                        {
+                            "fixed": "5.0.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-13956"
+        ],
+        "discovery": "2020-02-12T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2020-13956"
+            ]
+        },
+        "vid": "fa0c03dd-7c3a-11f1-8dc2-dca632daf43b"
+    },
+    "details": "Apache Software Foundation reports:\n\n> Apache HttpClient versions prior to version 4.5.13 and 5.0.3 can\n> misinterpret malformed authority component in request URIs passed to\n> the library as java.net.URI object and pick the wrong target host for\n> request execution.\n",
+    "id": "FreeBSD-2026-0333",
+    "modified": "2026-07-10T00:00:00Z",
+    "published": "2026-07-10T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-13956"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-13956"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Apache HttpClient -- misinterpret malformed authority component"
+}

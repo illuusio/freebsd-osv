@@ -1,0 +1,56 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "xwayland"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "24.1.13,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://lists.x.org/archives/xorg-announce/2026-July/003716.html"
+        ],
+        "discovery": "2026-07-07T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-55999",
+                "CVE-2026-56000"
+            ]
+        },
+        "vid": "7ac0f35a-7aeb-11f1-a315-589cfc10a551"
+    },
+    "details": "X.Org project reports:\n\n> Multiple issues have been found in the X server and Xwayland\n> implementations published by X.Org for which we are releasing security\n> fixes for in xorg-server-21.1.24 and xwayland-24.1.13.\n",
+    "id": "FreeBSD-2026-0328",
+    "modified": "2026-07-08T00:00:00Z",
+    "published": "2026-07-08T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://lists.x.org/archives/xorg-announce/2026-July/003716.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55999"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-56000"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "xwayland -- Multiple vulnerabilities"
+}
