@@ -1,0 +1,56 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libXfont2"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.0.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://lists.x.org/archives/xorg-announce/2026-August/003734.html"
+        ],
+        "discovery": "2026-08-05T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-44950",
+                "CVE-2026-59679"
+            ]
+        },
+        "vid": "1fae5869-9275-11f1-83e9-901b0e13f1a0"
+    },
+    "details": "Zhixi \\\"Jace\\\" Sun, independent security researcher reports:\n\n> - CVE-2026-44950: Font Server Client Cumulative Glyph Data Heap Buffer\n>   Overflow\n> - CVE-2026-59679: Font Server Client encoding Out-Of-Bounds Read/Write\n",
+    "id": "FreeBSD-2026-0387",
+    "modified": "2026-08-07T00:00:00Z",
+    "published": "2026-08-07T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://lists.x.org/archives/xorg-announce/2026-August/003734.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44950"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-59679"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "libXfont2 -- multiple vulnerabilities"
+}

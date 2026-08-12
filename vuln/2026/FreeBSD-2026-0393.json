@@ -1,0 +1,64 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitea"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.27.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://blog.gitea.com/release-of-1.27.1/"
+        ],
+        "discovery": "2026-08-11T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-59774",
+                "CVE-2026-60004"
+            ]
+        },
+        "vid": "f4af92f7-95ae-11f1-a6f7-b42e991fc52e"
+    },
+    "details": "Gitea reports\n\n> This release addresses the following security vulnerabilities. Please\n> upgrade as soon as possible.\n>\n> Unauthenticated arbitrary file read via the Org-mode #INCLUDE\n> directive.\n>\n> Remote code execution via the diffpatch API through Git hook\n> installation.\n",
+    "id": "FreeBSD-2026-0393",
+    "modified": "2026-08-11T00:00:00Z",
+    "published": "2026-08-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://blog.gitea.com/release-of-1.27.1/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-59774"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/go-gitea/gitea/security/advisories/GHSA-6v53-hr58-556r"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60004"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/go-gitea/gitea/security/advisories/GHSA-rcr6-4jqh-j84m"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "gitea -- Multiple vulnerabilities"
+}

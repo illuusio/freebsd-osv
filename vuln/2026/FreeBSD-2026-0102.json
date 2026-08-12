@@ -42,6 +42,9 @@
                     "events": [
                         {
                             "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.12.13_4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -115,7 +118,7 @@
     },
     "details": "Stan Ulbrych reports:\n\n> configparser.RawConfigParser.{OPTCRE,OPTCRE_NV} regexes \\[are\\]\n> vulnerable to quadratic backtracking.\n",
     "id": "FreeBSD-2026-0102",
-    "modified": "2026-06-19T00:00:00Z",
+    "modified": "2026-08-09T00:00:00Z",
     "published": "2026-04-12T00:00:00Z",
     "references": [
         {

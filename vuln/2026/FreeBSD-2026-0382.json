@@ -1,0 +1,90 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jenkins"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.576"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jenkins-lts"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.568.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.jenkins.io/security/advisory/2026-08-05/"
+        ],
+        "discovery": "2026-08-05T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-70426",
+                "CVE-2026-70427",
+                "CVE-2026-70428",
+                "CVE-2026-70429",
+                "CVE-2026-70430"
+            ]
+        },
+        "vid": "9096f6e4-3a2f-4d16-89fb-f909aa0a7760"
+    },
+    "details": "Jenkins Security Advisory 2026-08-05:\n\n> - SECURITY-3911 / CVE-2026-70426: Agent-to-controller deserialization\n>   filter bypass (Critical)\n> - SECURITY-3930 / CVE-2026-70427: Link following vulnerability allows\n>   arbitrary file creation (High)\n> - SECURITY-3927 / CVE-2026-70428: Path traversal vulnerability in file\n>   parameters (High)\n> - SECURITY-3924 / CVE-2026-70429: Improper handling of case\n>   sensitivity allows privilege escalation (High)\n> - SECURITY-3916 / CVE-2026-70430: Users with Overall/Manage permission\n>   can instantiate any types related to configuration (Low)\n",
+    "id": "FreeBSD-2026-0382",
+    "modified": "2026-08-06T00:00:00Z",
+    "published": "2026-08-06T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.jenkins.io/security/advisory/2026-08-05/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70426"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70427"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70428"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70429"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70430"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "jenkins -- multiple vulnerabilities"
+}

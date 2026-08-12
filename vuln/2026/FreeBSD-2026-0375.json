@@ -3,6 +3,25 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
+                "name": "py310-mkdocs-material"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.7.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
                 "name": "py311-mkdocs-material"
             },
             "ranges": [
@@ -143,7 +162,7 @@
     },
     "details": "Martin Donath reports:\n\n> Material for MkDocs 7.2.0 through 9.7.6 contains a DOM-based\n> cross-site scripting vulnerability in the optional search.suggest\n> feature. A crafted q URL parameter could execute JavaScript in the\n> documentation site\\'s origin after user interaction.\n",
     "id": "FreeBSD-2026-0375",
-    "modified": "2026-07-31T00:00:00Z",
+    "modified": "2026-08-07T00:00:00Z",
     "published": "2026-07-31T00:00:00Z",
     "references": [
         {

@@ -1,0 +1,118 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php82"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.7.3,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php83"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.7.3,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php84"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.7.3,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.7.3,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.7.3,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://roundcube.net/news/2026/08/09/security-updates-1.6.18-and-1.7.3"
+        ],
+        "discovery": "2026-08-09T00:00:00Z",
+        "vid": "54d19b85-93d4-11f1-8144-8447094a420f"
+    },
+    "details": "The Roundcube project reports:\n\n> - \\>Missing basic validation for content proxied by the css proxy\n> - SSRF bypass via specific local address URLs using 100.64.0.0/10 and\n>   fe80::/10 nets\n> - SSRF filter bypass via various forms of nip.io/sslip.io hostnames\n>   evading is_local_url() check\n> - remote content blocking bypass via unclosed url() in a FuncIRI\n>   attribute\n> - LDAP filter injection via unescaped %u/%fu/%d substitution into the\n>   search_filter\n> - arbitrary Sieve script injection via a filter rule name bypassing\n>   managesieve_disabled_actions\n> - RCE via cmd_learn driver of markasjunk plugin\n> - Fix IMAP command injection via mail search and LITERAL+ byte-count\n>   desynchronization\n> - password's modoboa driver leak of an authentication token to a\n>   user-controlled host\n> - stored XSS in \"Add to address book\" action\n> - HTML/CSS sanitization bypass via SVG animate by attribute\n",
+    "id": "FreeBSD-2026-0389",
+    "modified": "2026-08-09T00:00:00Z",
+    "published": "2026-08-09T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://roundcube.net/news/2026/08/09/security-updates-1.6.18-and-1.7.3"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Roundcube -- Multiple vulnerabilities"
+}

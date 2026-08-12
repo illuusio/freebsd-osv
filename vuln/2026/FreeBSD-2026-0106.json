@@ -48,6 +48,9 @@
                     "events": [
                         {
                             "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.12.13_4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -126,7 +129,7 @@
     },
     "details": "Seth Larson reports:\n\n> \\[CVE-2026-4786\\] Incomplete mitigation of CVE-2026-4519, %action\n> expansion for command injection to webbrowser.open()\n>\n> There is a HIGH severity vulnerability affecting CPython.\n>\n> Mitgation of CVE-2026-4519 was incomplete. If the URL contained\n> \\\"%action\\\" the mitigation could be bypassed for certain browser types\n> the \\\"webbrowser.open()\\\" API could have commands injected into the\n> underlying shell. See CVE-2026-4519 for details.\n",
     "id": "FreeBSD-2026-0106",
-    "modified": "2026-06-19T00:00:00Z",
+    "modified": "2026-08-09T00:00:00Z",
     "published": "2026-04-13T00:00:00Z",
     "references": [
         {

@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssh-portable"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.5.p1,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.openssh.org/txt/release-10.5"
+        ],
+        "discovery": "2026-08-11T00:00:00Z",
+        "vid": "20655058-9565-11f1-8144-8447094a420f"
+    },
+    "details": "The OpenSSH project reports:\n\n> - ssh-agent(1): fix an interaction between agent locking and the\n>   session-bind@openssh.com extension that is used to identify\n>   forwarded agents.\n> - ssh(1): avoid potential realloc use-after-free in the client if a\n>   remote forwarding is added via the local session multiplexing socket\n>   while a remote forwarding open request is pending with the server.\n> - sshd(8): make the authorized_keys \\\"restrict\\\" keyword apply\n>   correctly to tunnel forwarding too (which is administratively\n>   disabled by default).\n",
+    "id": "FreeBSD-2026-0391",
+    "modified": "2026-08-11T00:00:00Z",
+    "published": "2026-08-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.openssh.org/txt/release-10.5"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "OpenSSH -- Multiple vulnerbilities"
+}
