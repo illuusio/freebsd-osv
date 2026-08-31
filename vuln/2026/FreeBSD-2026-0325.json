@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "xrdp"
+                "name": "cacti"
             },
             "ranges": [
                 {
@@ -12,26 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.10.6.1.r.1,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "xrdp-devel"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "0.10.80.b20260706,1"
+                            "fixed": "1.2.31"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,75 +22,190 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/neutrinolabs/xrdp/releases/tag/v0.10.6.1"
+            "https://github.com/Cacti/cacti/releases/tag/release%2F1.2.31"
         ],
-        "discovery": "2026-07-06T00:00:00Z",
+        "discovery": "2026-06-16T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-41252",
-                "CVE-2026-41521",
-                "CVE-2026-44178",
-                "CVE-2026-42218",
-                "CVE-2026-44978",
-                "CVE-2026-54538",
-                "CVE-2026-55238",
-                "CVE-2026-55626",
-                "CVE-2026-55639",
-                "CVE-2026-55645"
+                "CVE-2026-39894",
+                "CVE-2026-40082",
+                "CVE-2026-40941",
+                "CVE-2026-39897",
+                "CVE-2026-39900",
+                "CVE-2026-46531",
+                "CVE-2026-44481",
+                "CVE-2026-39952",
+                "CVE-2026-39893",
+                "CVE-2026-22802",
+                "CVE-2026-40080",
+                "CVE-2026-40078",
+                "CVE-2026-39949",
+                "CVE-2026-40081",
+                "CVE-2026-39948",
+                "CVE-2026-39902",
+                "CVE-2026-39898",
+                "CVE-2026-41884",
+                "CVE-2026-39955",
+                "CVE-2026-39896",
+                "CVE-2026-39950",
+                "CVE-2026-40083",
+                "CVE-2026-40084",
+                "CVE-2026-39951",
+                "CVE-2026-39899",
+                "CVE-2026-39938",
+                "CVE-2026-39939",
+                "CVE-2026-39947",
+                "CVE-2026-39895",
+                "CVE-2026-40079",
+                "CVE-2026-40194",
+                "CVE-2026-32935",
+                "CVE-2026-1513"
             ]
         },
-        "vid": "a3a34818-79a0-11f1-b295-98b78501ef2a"
+        "vid": "9647af6d-7a05-11f1-99fc-40b034429ecf"
     },
-    "details": "xrdp projects reports:\n\n> xrdp v0.10.6.1 fixes 10 vulnerabilities and 1 regression introduced by\n> a vulnerability fix in the previous release.\n",
+    "details": "Cacti project reports:\n\n> This release includes fixes for a number of vulnerabilities that were\n> responsibly disclosed by external researchers\n>\n> - CVE-2026-39894 RRDtool metric shift via LC_NUMERIC locale comma\n>   decimal formatting\n> - CVE-2026-40082 Session Fixation via missing session_regenerate_id()\n>   after login\n> - CVE-2026-40941 Package Import Signature Validation Bypass allows\n>   self-signed packages\n> - CVE-2026-39897 Reflected XSS in html_auth_footer error message\n>   output\n> - CVE-2026-39900 Reflected XSS via tab parameter in auth_profile.php\n>   JavaScript context\n> - CVE-2026-46531 SQL Injection in automation_tree_rules.php\n> - CVE-2026-44481 Pre-auth Open Redirect via link.php Referer header\n> - CVE-2026-39952 Stored XSS in Report Tree expansion titles\n> - CVE-2026-39893 Pre-authentication SQL injection via rfilter RLIKE\n>   clause in graph_view.php\n> - CVE-2026-22802 Authentication Bypass leads to information disclosure\n> - CVE-2026-40080 Open Redirect via HTTP_REFERER substring check in\n>   auth_login_redirect\n> - CVE-2026-40078 Backend ORDER BY SQL Injection\n> - CVE-2026-39949 Authenticated Remote Code Execution via Host Variable\n>   Injection\n> - CVE-2026-40081 Reports IDOR allows any authenticated user to modify\n>   other users\\' reports (CWE-639)\n> - CVE-2026-39948 SQL Injection via rfilter parameter in RLIKE clauses\n> - CVE-2026-39902 Authenticated RCE on Data Input\n> - CVE-2026-39898 Reflected XSS via rfilter parameter in\n>   aggregate_graphs.php input value\n> - CVE-2026-41884 Arbitrary File Read via Reports format_file path\n>   traversal\n> - CVE-2026-39955 Pre-Authentication SQL Injection via unanchored\n>   FILTER_VALIDATE_REGEXP in graph_view.php\n> - CVE-2026-39896 TOCTOU race in auth_process_lockout allows\n>   brute-force lockout bypass\n> - CVE-2026-39950 Arbitrary PHP file write via Plugin Archive\n>   extraction leading to RCE\n> - CVE-2026-40083 SQL Injection in managers.php via uncast array values\n>   in IN clauses\n> - CVE-2026-40084 Arbitrary File Read via path traversal in Report\n>   format_file parameter\n> - CVE-2026-39951 Stored SQL Injection via graph_name_regexp in Reports\n>   feature\n> - CVE-2026-39899 Path traversal via filename parameter in\n>   package_import.php\n> - CVE-2026-39938 Unauthenticated LFI via graph_theme and rrdtool IPC\n>   serialization hardening\n> - CVE-2026-39939 Path traversal in Package Import file write allows\n>   arbitrary file creation in webroot\n> - CVE-2026-39947 RRDtool IPC pipe poisoning via is_numeric newline\n>   bypass in rrdtool_function_update\n> - CVE-2026-39895 Second-order RCE via unescaped log path in\n>   exec_background shell redirection\n> - CVE-2026-40079 Command Injection via escape_command() no-op in\n>   RRDtool execution\n> - CVE-2026-40194, CVE-2026-32935 in phpseclib - This is breaking\n>   change for RRDProxy\n> - CVE-2026-1513 billboard.js before 3.18.0 Improper Input Sanitization\n>   Allows Remote JavaScript Execution\n",
     "id": "FreeBSD-2026-0325",
-    "modified": "2026-07-06T00:00:00Z",
-    "published": "2026-07-06T00:00:00Z",
+    "modified": "2026-07-07T00:00:00Z",
+    "published": "2026-07-07T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/neutrinolabs/xrdp/releases/tag/v0.10.6.1"
+            "url": "https://github.com/Cacti/cacti/releases/tag/release%2F1.2.31"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-41252"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39894"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-41521"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40082"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44178"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40941"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42218"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39897"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44978"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39900"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54538"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-46531"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55238"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44481"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55626"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39952"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55639"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39893"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55645"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22802"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40080"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40078"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39949"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40081"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39948"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39902"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39898"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-41884"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39955"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39896"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39950"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40083"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40084"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39951"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39899"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39938"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39939"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39947"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39895"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40079"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40194"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-32935"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1513"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "xrdp -- multiple vulnerabilities"
+    "summary": "cacti -- multiple vulnerabilities"
 }

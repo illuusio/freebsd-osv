@@ -1,0 +1,343 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "rsync"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.5.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://download.samba.org/pub/rsync/NEWS#3.5.0"
+        ],
+        "discovery": "2026-08-13T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-53802",
+                "CVE-2026-53803",
+                "CVE-2026-53785",
+                "CVE-2026-53784",
+                "CVE-2026-53793",
+                "CVE-2026-53795",
+                "CVE-2026-53796",
+                "CVE-2026-53797",
+                "CVE-2026-53799",
+                "CVE-2026-53800",
+                "CVE-2026-53801",
+                "CVE-2026-53783",
+                "CVE-2026-53786",
+                "CVE-2026-53798",
+                "CVE-2026-53788",
+                "CVE-2026-53789",
+                "CVE-2026-53791",
+                "CVE-2026-53790",
+                "CVE-2026-53792",
+                "CVE-2026-53794",
+                "CVE-2026-70461",
+                "CVE-2026-70458",
+                "CVE-2026-70456",
+                "CVE-2026-70457",
+                "CVE-2026-70459",
+                "CVE-2026-70464",
+                "CVE-2026-70455",
+                "CVE-2026-70453",
+                "CVE-2026-70452",
+                "CVE-2026-70463",
+                "CVE-2026-70460",
+                "CVE-2026-70462",
+                "CVE-2026-70454"
+            ]
+        },
+        "vid": "fee67ad5-a05e-11f1-ad2b-40b034429ecf"
+    },
+    "details": "rsync project reports:\n\nThis release fixes 33 security issues found during a focused audit of\nrsync\\'s path handling and daemon protocol, a companion daemon-protocol\nfuzzing pass, and reports from external researchers \\-- plus several\nrobustness hardenings. CVE IDs were assigned by VulnCheck (CNA); the\nprecise \\\"introduced in\\\" version ranges accompany each advisory, and\nmany are much narrower than \\\"everything before 3.5.0\\\". Every fix ships\nwith a regression test in the test suite that fails on the unfixed tree.\n\n> - CVE-2026-53802 (HIGH): Arbitrary file read / transfer-shaping via\n>   symlinked operator-supplied input files.\n> - CVE-2026-53803 (HIGH): Arbitrary file write / privilege escalation\n>   via symlinked operator-supplied output paths.\n> - CVE-2026-53785 (HIGH): Under \\--relative, the receiver\\'s\n>   implied-parent creation (make_path()) built the parent chain with a\n>   plain mkdir() on the full path.\n> - CVE-2026-53784 (HIGH): Daemon module-root chdir escape under use\n>   chroot = no.\n> - CVE-2026-53793 (HIGH): Chroot /./ inner-module escape a symlinked\n>   parent component.\n> - CVE-2026-53795 (HIGH): An absolute \\--temp-dir or \\--link-dest\n>   disabled the receiver\\'s rename/link confinement.\n> - CVE-2026-53796 (MEDIUM): A non-daemon receiver\\'s one-time chdir()\n>   into the operator-named destination was not fully confined.\n> - CVE-2026-53797 (MEDIUM): A non-daemon sender opened each transferred\n>   file\\'s content by path (leaf O_NOFOLLOW only).\n> - CVE-2026-53799 (MEDIUM): Receiver ACL/xattr metadata application\n>   followed a symlink race.\n> - CVE-2026-53800 (MEDIUM): Sender \\--remove-source-files unlink\n>   followed a parent-component symlink race.\n> - CVE-2026-53801 (MEDIUM): Sender/daemon directory-scan enumeration\n>   escaped the transfer root / module.\n>\n> support/rrsync (the restricted SSH wrapper):\n>\n> - CVE-2026-53783 (HIGH): rrsync restricted-directory escape.\n>\n> Daemon protocol / identity:\n>\n> - CVE-2026-53786 (MEDIUM): A client-supplied \\--filter merge file\n>   bypassed the module filter list.\n> - CVE-2026-53798 (MEDIUM): The daemon name converter mapped an unknown\n>   name to uid/gid 0.\n> - CVE-2026-53788 (MEDIUM): A peer-controlled name containing a\n>   newline/CR was written verbatim into the name-converter line\n>   protocol.\n> - CVE-2026-53789 (MEDIUM): A malicious daemon-sender could widen\n>   \\--delete scope by omitting the \\\"no content dir\\\" flag on an\n>   implied parent.\n> - CVE-2026-53791 (CRITICAL): With proxy protocol = true, a client\n>   connecting directly (not via the trusted proxy) could send a PROXY\n>   header to spoof its source address.\n>\n> Injection and memory safety:\n>\n> - CVE-2026-53790 (HIGH): Command / argument injection via unquoted\n>   peer- or host-controlled values the RSYNC_CONNECT_PROG %H host\n>   substitution.\n> - CVE-2026-53792 (MEDIUM): A malicious receiver sending a checksum\n>   header with a block count \\> 0 but block length == 0 drove the\n>   sender\\'s rolling-match arithmetic negative.\n> - CVE-2026-53794 (MEDIUM): \\--max-alloc=0 disabled the per-allocation\n>   size cap.\n>\n> Peer-triggerable memory corruption in the daemon protocol:\n>\n> - CVE-2026-70461 (HIGH): a one-byte heap out-of-bounds write in\n>   add_implied_include().\n> - CVE-2026-70458 (HIGH): an out-of-bounds write from a file entry\n>   marked FLAG_HLINKED that the receiver accepted even though -H was\n>   not in effect.\n> - CVE-2026-70456 (HIGH): an out-of-bounds heap write in read_args()\n>   when the peer\\'s argument count lands exactly on maxargs.\n> - CVE-2026-70457 (MEDIUM): an attacker-chosen-offset write in\n>   parse_size_arg()\\'s error formatting.\n> - CVE-2026-70459 (MEDIUM): a wild-pointer read crashing the\n>   per-connection daemon child.\n>\n> Daemon availability and access control:\n>\n> - CVE-2026-70464 (HIGH): an unauthenticated peer could complete the\n>   \\@RSYNCD greeting and then stall forever.\n> - CVE-2026-70455 (HIGH): a daemon client could request an arbitrary\n>   Zstandard worker count via \\--compress-threads.\n> - CVE-2026-70453 (HIGH): quadratic CPU exhaustion in hash_search()\n>   from a crafted chain of equal weak checksums.\n> - CVE-2026-70452 (HIGH): hosts deny failed OPEN when a configured\n>   hostname could not be resolved.\n> - CVE-2026-70463 (HIGH): auth users ignored its documented comma-only\n>   parsing.\n> - CVE-2026-70460 (HIGH): a peer-supplied \\--partial-dir or\n>   \\--backup-dir was resolved by pathname.\n>\n> Client-side:\n>\n> - CVE-2026-70462 (MEDIUM): a peer-supplied MSG_IO_TIMEOUT defeated the\n>   client\\'s own I/O timeout.\n> - CVE-2026-70454 (MEDIUM): rsync-ssl established an unauthenticated\n>   TLS connection.\n",
+    "id": "FreeBSD-2026-0421",
+    "modified": "2026-08-25T00:00:00Z",
+    "published": "2026-08-25T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://download.samba.org/pub/rsync/NEWS#3.5.0"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53802"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53802"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53803"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53803"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53785"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53785"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53784"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53784"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53793"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53793"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53795"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53795"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53796"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53796"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53797"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53797"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53799"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53799"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53800"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53800"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53801"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53801"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53783"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53783"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53786"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53786"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53798"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53798"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53788"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53788"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53789"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53789"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53791"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53791"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53790"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53790"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53792"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53792"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53794"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-53794"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70461"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70461"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70458"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70458"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70456"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70456"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70457"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70457"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70459"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70459"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70464"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70464"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70455"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70455"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70453"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70453"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70452"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70452"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70463"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70463"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70460"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70460"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70462"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70462"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70454"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-70454"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "net/rsync -- multiple vulnerabilities"
+}

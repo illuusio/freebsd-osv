@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "tailscale"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.102.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://tailscale.com/security-bulletins#ts-2026-011"
+        ],
+        "discovery": "2026-08-18T00:00:00Z",
+        "vid": "4bf4495e-9d4e-11f1-a129-901b0e9408dc"
+    },
+    "details": "Tailscale team reports:\n\n> Insufficient validation of 4via6 subnet router destinations permitted\n> access to host-scoped addresses, including cloud metadata and loopback\n> services. TS-2026-11\n",
+    "id": "FreeBSD-2026-0405",
+    "modified": "2026-08-21T00:00:00Z",
+    "published": "2026-08-21T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://tailscale.com/security-bulletins#ts-2026-011"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "tailscale -- Insufficient validation of 4via6 subnet router destinations"
+}

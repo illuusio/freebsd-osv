@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "chromium"
+                "name": "mailpit"
             },
             "ranges": [
                 {
@@ -12,26 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "149.0.7827.114"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ungoogled-chromium"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "149.0.7827.114"
+                            "fixed": "1.30.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,165 +22,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01962725236.html"
+            "https://github.com/axllent/mailpit/security/advisories/GHSA-w4mc-hhc6-xp28"
         ],
-        "discovery": "2026-06-11T00:00:00Z",
+        "discovery": "2026-06-17T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-12007",
-                "CVE-2026-12008",
-                "CVE-2026-12009",
-                "CVE-2026-12010",
-                "CVE-2026-12011",
-                "CVE-2026-12012",
-                "CVE-2026-12013",
-                "CVE-2026-12014",
-                "CVE-2026-12015",
-                "CVE-2026-12016",
-                "CVE-2026-12017",
-                "CVE-2026-12018",
-                "CVE-2026-12019",
-                "CVE-2026-12020",
-                "CVE-2026-12022",
-                "CVE-2026-12023",
-                "CVE-2026-12024",
-                "CVE-2026-12025",
-                "CVE-2026-12026",
-                "CVE-2026-12027",
-                "CVE-2026-12028",
-                "CVE-2026-12029",
-                "CVE-2026-12030",
-                "CVE-2026-12031",
-                "CVE-2026-12032",
-                "CVE-2026-12033",
-                "CVE-2026-12034",
-                "CVE-2026-12035"
+                "CVE-2026-55187"
             ]
         },
-        "vid": "1466c84c-68b1-11f1-8de5-a8a1599412c6"
+        "vid": "44afeb08-6a18-11f1-9647-10ffe07f9334"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 28 security fixes:\n>\n> - \\[516731749\\] Critical CVE-2026-12007: Use after free Core. Reported\n>   by Google on 2026-05-26\n> - \\[516942828\\] Critical CVE-2026-12008: Use after free\n>   DigitalCredentials. Reported by Google on 2026-05-27\n> - \\[517332006\\] Critical CVE-2026-12009: Insufficient validation of\n>   untrusted input ccessibility. Reported by Google on 2026-05-28\n> - \\[517531647\\] Critical CVE-2026-12010: Heap buffer overflow GPU.\n>   Reported by Google on 2026-05-28\n> - \\[518108291\\] Critical CVE-2026-12011: Use after free WebMIDI.\n>   Reported by Google on 2026-05-30\n> - \\[499182801\\] High CVE-2026-12012: Use after free etwork. Reported\n>   by Google on 2026-04-03\n> - \\[514229805\\] High CVE-2026-12013: Use after free Media. Reported by\n>   Henock Habte, Independent Security Researcher on 2026-05-18\n> - \\[514742747\\] High CVE-2026-12014: Use after free Cast. Reported by\n>   Google on 2026-05-19\n> - \\[515463295\\] High CVE-2026-12015: Use after free utofill. Reported\n>   by Google on 2026-05-21\n> - \\[516482138\\] High CVE-2026-12016: Insufficient validation of\n>   untrusted input DevTools. Reported by Google on 2026-05-25\n> - \\[516797143\\] High CVE-2026-12017: Insufficient validation of\n>   untrusted input Extensions. Reported by Google on 2026-05-26\n> - \\[516808201\\] High CVE-2026-12018: Inappropriate implementation\n>   Mojo. Reported by Google on 2026-05-26\n> - \\[516872067\\] High CVE-2026-12019: Out of bounds write Codecs.\n>   Reported by Google on 2026-05-26\n> - \\[516907083\\] High CVE-2026-12020: Use after free utofill. Reported\n>   by Google on 2026-05-27\n> - \\[516929496\\] High CVE-2026-12022: Race Safe Browsing. Reported by\n>   Google on 2026-05-27\n> - \\[517018374\\] High CVE-2026-12023: Use after free GPU. Reported by\n>   Google on 2026-05-27\n> - \\[517086161\\] High CVE-2026-12024: Insufficient policy enforcement\n>   DevTools. Reported by Google on 2026-05-27\n> - \\[517153191\\] High CVE-2026-12025: Insufficient validation of\n>   untrusted input etwork. Reported by Google on 2026-05-27\n> - \\[517347084\\] High CVE-2026-12026: Out of bounds read Video.\n>   Reported by Google on 2026-05-28\n> - \\[517517155\\] High CVE-2026-12027: Insufficient policy enforcement\n>   Headless. Reported by Google on 2026-05-28\n> - \\[517555461\\] High CVE-2026-12028: Use after free GPU. Reported by\n>   Google on 2026-05-28\n> - \\[518002958\\] High CVE-2026-12029: Use after free Video. Reported by\n>   Google on 2026-05-29\n> - \\[518007423\\] High CVE-2026-12030: Heap buffer overflow GPU.\n>   Reported by Google on 2026-05-29\n> - \\[518045638\\] High CVE-2026-12031: Inappropriate implementation\n>   Views. Reported by Google on 2026-05-30\n> - \\[518128953\\] High CVE-2026-12032: Inappropriate implementation\n>   Passwords. Reported by Google on 2026-05-30\n> - \\[519248779\\] High CVE-2026-12033: Out of bounds read VideoCapture.\n>   Reported by Google on 2026-06-02\n> - \\[519258799\\] High CVE-2026-12034: Insufficient validation of\n>   untrusted input Linux Toolkit Theming. Reported by Google on\n>   2026-06-02\n> - \\[520210566\\] High CVE-2026-12035: Use after free Views. Reported by\n>   Google on 2026-06-05\n",
+    "details": "Mailpit authorreports:\n\n> The tools.IsInternalIP deny-list relies on Go\\'s stdlib classification\n> helpers (IsLoopback, IsPrivate, IsLinkLocalUnicast,\n> IsLinkLocalMulticast, IsUnspecified, IsMulticast) plus an inline CGNAT\n> range, but those helpers do not match two classes of IPv6 address that\n> should be blocked for SSRF purposes\n",
     "id": "FreeBSD-2026-0278",
-    "modified": "2026-06-15T00:00:00Z",
-    "published": "2026-06-15T00:00:00Z",
+    "modified": "2026-06-17T00:00:00Z",
+    "published": "2026-06-17T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01962725236.html"
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-w4mc-hhc6-xp28"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12007"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12008"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12009"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12010"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12011"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12012"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12013"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12014"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12015"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12016"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12017"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12018"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12019"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12020"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12022"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12023"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12024"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12025"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12026"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12027"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12028"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12029"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12030"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12031"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12032"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12033"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12034"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12035"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55187"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "chromium -- security fixes"
+    "summary": "mail/mailpit -- Incomplete SSRF protection in Link Check API via uncovered IPv6 forms"
 }

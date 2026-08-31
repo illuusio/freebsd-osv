@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "keycloak"
+                "name": "py310-djangorestframework"
             },
             "ranges": [
                 {
@@ -12,7 +12,254 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "26.7.1"
+                            "fixed": "3.17.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.17.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py312-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.17.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.17.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313t-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.17.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.17.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314t-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.17.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py315-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.17.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py312-dj60-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.17.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313-dj60-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.17.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313t-dj60-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.17.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314-dj60-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.17.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314t-dj60-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.17.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py315-dj60-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.17.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,50 +269,29 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.keycloak.org/2026/08/keycloak-2671-released"
+            "https://github.com/encode/django-rest-framework/releases/tag/3.17.2"
         ],
         "discovery": "2026-08-05T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-9793",
-                "CVE-2026-4629",
-                "CVE-2026-14209",
-                "CVE-2026-14614",
-                "CVE-2026-14615"
-            ]
-        },
-        "vid": "e1208b90-91c3-11f1-a0bc-3c7c3fba4204"
+        "vid": "5ce58e67-919a-11f1-b333-901b0edee044"
     },
-    "details": "The Keycloak Team reports:\n\n> - CVE-2026-9793: JWE request object bypasses requestObjectSignatureAlg\n>   enforcement\n> - CVE-2026-4629: Privilege escalation via hardcoded role mapper\n>   injection in manage-clients\n> - CVE-2026-14209: Keycloak Admin UI Extension \\`brute-force-user\\`\n>   User Disclosure via \\`search=id:\\` under FGAP v2\n> - CVE-2026-14614: Keycloak 26.6.3 Fine-Grained Admin Permissions\n>   Bypass in Client Scope Assignment\n> - CVE-2026-14615: FGAP v2 parent group children endpoint bypasses\n>   per-child view permission filter\n",
+    "details": "Bruno Alla reports:\n\n> - Potential bypass of Django \\`DATA_UPLOAD_MAX_MEMORY_SIZE\\` when\n>   parsing oversized JSON and urlencoded request bodies via DRF\n>   \\`request.data\\`\n> - AdminRenderer may disclose GET-protected data when rendering invalid\n>   write requests\n",
     "id": "FreeBSD-2026-0384",
-    "modified": "2026-08-06T00:00:00Z",
-    "published": "2026-08-06T00:00:00Z",
+    "modified": "2026-08-07T00:00:00Z",
+    "published": "2026-08-07T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.keycloak.org/2026/08/keycloak-2671-released"
+            "url": "https://github.com/encode/django-rest-framework/releases/tag/3.17.2"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-9793"
+            "type": "WEB",
+            "url": "https://github.com/encode/django-rest-framework/security/advisories/GHSA-2m8g-3cmr-wg3w"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4629"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14209"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14614"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14615"
+            "type": "WEB",
+            "url": "https://github.com/encode/django-rest-framework/security/advisories/GHSA-g47c-3xmw-q6m2"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Keycloak -- multiple vulnerabilities"
+    "summary": "py-djangorestframework -- two vulnerabilities"
 }

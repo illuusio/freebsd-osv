@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "153.0.0,2"
+                            "fixed": "152.0.0,2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "140.13,2"
+                            "fixed": "140.12,2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "153.0.0"
+                            "fixed": "140.13"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,28 +60,28 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.mozilla.org/en-US/security/advisories/mfsa2026-68/#CVE-2026-16412"
+            "https://www.mozilla.org/en-US/security/advisories/mfsa2026-68/#CVE-2026-16360"
         ],
         "discovery": "2026-07-21T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-16412"
+                "CVE-2026-16360"
             ]
         },
-        "vid": "b36c7feb-8aa2-11f1-a744-b42e991fc52e"
+        "vid": "b579bbde-8aa2-11f1-a744-b42e991fc52e"
     },
-    "details": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-68/#CVE-2026-16412\nreports:\n\n> Memory safety bugs present in Firefox ESR 140.12 and Firefox 152. Some\n> of these bugs showed evidence of memory corruption and we presume that\n> with enough effort some of these could have been exploited to run\n> arbitrary code.\n",
+    "details": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-68/#CVE-2026-16360\nreports:\n\n> Memory safety bugs present in Firefox ESR 115.37, Firefox ESR 140.12\n> and Firefox 152. Some of these bugs showed evidence of memory\n> corruption and we presume that with enough effort some of these could\n> have been exploited to run arbitrary code.\n",
     "id": "FreeBSD-2026-0358",
     "modified": "2026-07-28T00:00:00Z",
     "published": "2026-07-28T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-68/#CVE-2026-16412"
+            "url": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-68/#CVE-2026-16360"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16412"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16360"
         }
     ],
     "schema_version": "1.7.0",

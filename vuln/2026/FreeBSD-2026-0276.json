@@ -3,16 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "traefik"
+                "name": "libsmi"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "0.4.8"
                         },
                         {
-                            "fixed": "3.7.3"
+                            "fixed": "0.4.8_3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,35 +22,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/traefik/traefik/releases/tag/v3.7.3"
+            "http://lists.opensuse.org/opensuse-security-announce/2011-01/msg00003.html"
         ],
-        "discovery": "2026-06-04T00:00:00Z",
+        "discovery": "2010-10-27T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-48020",
-                "CVE-2026-48491"
+                "CVE-2010-2891"
             ]
         },
-        "vid": "57e69b2c-67b2-11f1-b3b6-5404a68ad561"
+        "vid": "76b09b16-638b-11f1-8e16-901b0e13f1a0"
     },
-    "details": "The traefik project releases a new version addressing multiple CVEs:\n\n> - CVE-2026-48020 (StripPrefix Route-Level Auth Bypass)\n> - CVE-2026-48491 (SNICheck ignores wildcard TLSOptions mappings,\n>   allowing domain-fronted mTLS bypass)\n> - HTTP/3 mTLS bypass via exact SNI TLSOptions lookup for wildcard and\n>   mixed-case hosts\n",
+    "details": "http://lists.opensuse.org/opensuse-security-announce/2011-01/msg00003.html\nreports:\n\n> Buffer overflow in the smiGetNode function in lib/smi.c in libsmi\n> 0.4.8 allows context-dependent attackers to execute arbitrary code via\n> an Object Identifier (aka OID) represented as a numerical string\n> containing many components separated by . (dot) characters.\n",
     "id": "FreeBSD-2026-0276",
     "modified": "2026-06-14T00:00:00Z",
     "published": "2026-06-14T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/traefik/traefik/releases/tag/v3.7.3"
+            "url": "http://lists.opensuse.org/opensuse-security-announce/2011-01/msg00003.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-48020"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-48491"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2010-2891"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "traefik -- Multiple vulnerabilities"
+    "summary": "libsmi -- Buffer overflow in the smiGetNode function in lib/smi"
 }

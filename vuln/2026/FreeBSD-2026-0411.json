@@ -1,0 +1,168 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb106-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.6.28"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb1011-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.11.19"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb114-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "11.4.13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb118-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "11.8.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb123-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "12.3.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://mariadb.com/docs/release-notes/community-server/12.3/12.3.3"
+        ],
+        "discovery": "2026-08-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-61081",
+                "CVE-2026-60585",
+                "CVE-2026-60331",
+                "CVE-2026-60747",
+                "CVE-2026-47023",
+                "CVE-2026-60184"
+            ]
+        },
+        "vid": "f68670ea-a05d-11f1-8144-8447094a420f"
+    },
+    "details": "The MariaDB project reports:\n\n> Details in links\n",
+    "id": "FreeBSD-2026-0411",
+    "modified": "2026-08-25T00:00:00Z",
+    "published": "2026-08-25T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://mariadb.com/docs/release-notes/community-server/12.3/12.3.3"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-61081"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60585"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60331"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60747"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-47023"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60184"
+        },
+        {
+            "type": "WEB",
+            "url": "https://mariadb.com/docs/release-notes/community-server/11.8/11.8.9"
+        },
+        {
+            "type": "WEB",
+            "url": "https://mariadb.com/docs/release-notes/community-server/11.4/11.4.13"
+        },
+        {
+            "type": "WEB",
+            "url": "https://mariadb.com/docs/release-notes/community-server/10.11/10.11.19"
+        },
+        {
+            "type": "WEB",
+            "url": "https://mariadb.com/docs/release-notes/community-server/10.6/10.6.28"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "MariaDB -- Multiple vulnerabilities"
+}

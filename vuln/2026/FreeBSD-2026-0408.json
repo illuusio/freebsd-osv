@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jackson-core"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.22.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/FasterXML/jackson-core/blob/2.x/release-notes/VERSION-2.x"
+        ],
+        "discovery": "2026-03-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-68498"
+            ]
+        },
+        "vid": "0cb42b4a-9f19-11f1-a655-3497f65b111b"
+    },
+    "details": "The Jackson project reports:\n\n> Enforce maxNameLength incrementally in ReaderBasedJsonParser\n>\n> Fail parsing from DataInput if\n> StreamReadConstraints.getMaxDocumentLength() set\n>\n> Fix maxDocumentLength bypass in async parser single feedInput() case\n>\n> Enforce StreamReadConstraints.maxNumberLength for non-blocking (async)\n> parser\n>\n> UTF8DataInputJsonParser needs to enforce\n> StreamReadConstraints.maxNameLength limit\n",
+    "id": "FreeBSD-2026-0408",
+    "modified": "2026-08-23T00:00:00Z",
+    "published": "2026-08-23T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/FasterXML/jackson-core/blob/2.x/release-notes/VERSION-2.x"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-68498"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-2m67-wjpj-xhg9"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "jackson-core -- StreamReadConstraints can be bypassed"
+}

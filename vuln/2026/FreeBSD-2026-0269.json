@@ -60,30 +60,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/erlang/otp/security/advisories/GHSA-xcxj-5pg2-v72j"
+            "https://github.com/erlang/otp/security/advisories/GHSA-6f4f-chj5-5g97"
         ],
         "discovery": "2026-06-10T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-49760"
+                "CVE-2026-49759"
             ]
         },
-        "vid": "d87de755-64d4-11f1-ab11-4c526214c986"
+        "vid": "d87db2a1-64d4-11f1-ab11-4c526214c986"
     },
-    "details": "https://github.com/erlang/otp/security/advisories/GHSA-xcxj-5pg2-v72j\nreports:\n\n> Fixed a stack overflow in ei_s_print_term in erl_interface for very\n> large integer terms (more than 2000 hexadecimal digits long).\n",
+    "details": "https://github.com/erlang/otp/security/advisories/GHSA-6f4f-chj5-5g97\nreports:\n\n> A buffer overflow error when parsing SCTP ERROR or ABORT chunks has\n> been fixed. This could lead to stack corruption and VM crash, but\n> ultimately with hard work by an attacker be refined into maybe even\n> remote code execution.\n",
     "id": "FreeBSD-2026-0269",
     "modified": "2026-06-10T00:00:00Z",
     "published": "2026-06-10T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/erlang/otp/security/advisories/GHSA-xcxj-5pg2-v72j"
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-6f4f-chj5-5g97"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49760"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49759"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Erlang/OTP -- stack overflow in ei_s_print_term for very large integer terms"
+    "summary": "Erlang/OTP -- buffer overflow parsing SCTP ERROR/ABORT chunks"
 }

@@ -3,83 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "emacs"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "28.1,3"
-                        },
-                        {
-                            "fixed": "30.2_4,3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "emacs-canna"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "28.1,3"
-                        },
-                        {
-                            "fixed": "30.2_4,3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "emacs-nox"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "28.1,3"
-                        },
-                        {
-                            "fixed": "30.2_4,3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "emacs-wayland"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "28.1,3"
-                        },
-                        {
-                            "fixed": "30.2_4,3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "emacs-devel"
+                "name": "zeek"
             },
             "ranges": [
                 {
@@ -88,26 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "31.0.50.20250201,3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "emacs-devel-nox"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "31.0.50.20250201,3"
+                            "fixed": "8.0.9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -116,32 +21,22 @@
         }
     ],
     "database_specific": {
-        "discovery": "2026-04-17T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-6861"
-            ]
-        },
-        "vid": "c7be43b0-78f0-11f1-8898-1c697a616631"
+        "cite": [
+            "https://github.com/zeek/zeek/releases/tag/v8.0.9"
+        ],
+        "discovery": "2026-07-06T00:00:00Z",
+        "vid": "d47e608f-2e2a-4366-ad17-ce2480bf912d"
     },
-    "details": "# Problem Description\n\nWhen GNU Emacs renders an SVG image whose image spec includes a :css\nproperty, an off-by-one error in svg_load_image() writes a NUL byte one\nposition past the end of a heap allocation. The copied string is also\nleft without NUL termination within its allocation, causing a subsequent\nout-of-bounds read.\n\n# Impact\n\nA single NUL byte heap overflow is a well-understood exploitation\nprimitive (\\\"poison NUL byte\\\") that can corrupt heap metadata and\npotentially be escalated to arbitrary code execution. The overflow can\nbe triggered by Lisp code that displays an SVG image with a crafted :css\nproperty.\n",
+    "details": "Tim Wojtulewicz of Corelight reports:\n\n> The NVT, Rlogin, and RSH analyzers have received fixes to avoid\n> unbounded state growth. Due to the fact that these packets can be\n> received from remote hosts, these are considered DoS risks.\n>\n> A specially crafted WebSocket payload can cause the Spicy WebSocket\n> analyzer to use excessive memory when processing close, ping, and pong\n> frames. Due to the fact that these packets can be received from remote\n> hosts, these are considered a DoS risk.\n>\n> A specially crafted series of Finger packets can cause the Spicy\n> Finger analyzer to use excessive amounts of memory and potentially\n> crash Zeek. Due to the fact that these packets can be received from\n> remote hosts, this is considered a DoS risk.\n>\n> A specially crafted Kerberos packet can cause the Kerberos analyzer to\n> enter an invalid state and potentially crash Zeek. Due to the fact\n> that these packets can be received from remote hosts, this is\n> considered a DoS risk.\n>\n> A specially crafted series of RDP packets can cause the RDP analyzer\n> to use excessive amounts of memory and potentially crash Zeek. Due to\n> the fact that these packets can be received from remote hosts, this is\n> considered a DoS risk.\n>\n> A specially crafted IP packet can cause the IP analyzer to read past\n> the end of the contents of the packet when emitting the\n> packet_contents event and possibly crash. Due to the fact that these\n> packets can be received from remote hosts, this is considered a DoS\n> risk.\n>\n> A specially crafted IP packet can cause the packet discarding code to\n> read off the end of the packet when looking for follow-on header data.\n> This may potentially lead to a crash of Zeek. Due to the fact that\n> these packets can be received from remote hosts, this is considered a\n> DoS risk.\n>\n> A specially crafted series of Gnutella packets may cause Zeek to\n> continue accumulating memory and eventually crash. Due to the fact\n> that these packets can be received from remote hosts, this is\n> considered a DoS risk.\n>\n> A specially crafted ICMPv6 packet can cause the ICMP analyzer to skip\n> part of the packet and not report corresponding events and logs. Due\n> to the fact that these packets can be received from remote hosts, this\n> is considered an evasion risk.\n>\n> A specially crafted SSH packet can cause the SSH analyzer to throw\n> BinPAC exceptions for extremely large packets and skip logging them\n> otherwise. Due to the fact that these packets can be received from\n> remote hosts, this is considered an evasion risk.\n>\n> A number of issues with the HTTP analyzer were found involving unusual\n> Content-Length, Transfer-Encoding and Expect header usage. Due to the\n> fact that these packets can be received from remote hosts, this is\n> considered an evasion risk.\n>\n> A series of fixes were applied to the serialization code in Zeek to\n> avoid buffer overreads with both Broker and ZeroMQ traffic. On debug\n> builds, these hit various abort() conditions and cause Zeek to exit.\n> Due to the fact that all of these states require direct access to the\n> Broker/ZeroMQ ports (meaning access to the local network to some\n> degree), this isn't considered a DoS risk.\n",
     "id": "FreeBSD-2026-0323",
     "modified": "2026-07-06T00:00:00Z",
     "published": "2026-07-06T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6861"
-        },
-        {
-            "type": "WEB",
-            "url": "https://debbugs.gnu.org/cgi/bugreport.cgi?bug=80851"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-6861"
+            "type": "REPORT",
+            "url": "https://github.com/zeek/zeek/releases/tag/v8.0.9"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Emacs -- Heap out-of-bounds write when rendering SVG images"
+    "summary": "zeek -- potential DoS vulnerabilities"
 }

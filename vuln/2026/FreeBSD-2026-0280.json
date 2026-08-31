@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "chromium"
+                "name": "routinator"
             },
             "ranges": [
                 {
@@ -12,26 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "149.0.7827.155"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ungoogled-chromium"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "149.0.7827.155"
+                            "fixed": "0.15.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,190 +22,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01750511403.html"
+            "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-49232.txt"
         ],
-        "discovery": "2026-06-11T00:00:00Z",
+        "discovery": "2026-06-08T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-12437",
-                "CVE-2026-12438",
-                "CVE-2026-12439",
-                "CVE-2026-12440",
-                "CVE-2026-12441",
-                "CVE-2026-12442",
-                "CVE-2026-12443",
-                "CVE-2026-12444",
-                "CVE-2026-12445",
-                "CVE-2026-12446",
-                "CVE-2026-12447",
-                "CVE-2026-12448",
-                "CVE-2026-12449",
-                "CVE-2026-12450",
-                "CVE-2026-12451",
-                "CVE-2026-12452",
-                "CVE-2026-12453",
-                "CVE-2026-12454",
-                "CVE-2026-12455",
-                "CVE-2026-12456",
-                "CVE-2026-12457",
-                "CVE-2026-12458",
-                "CVE-2026-12459",
-                "CVE-2026-12460",
-                "CVE-2026-12461",
-                "CVE-2026-12462",
-                "CVE-2026-12463",
-                "CVE-2026-12464",
-                "CVE-2026-12465",
-                "CVE-2026-12466",
-                "CVE-2026-12467",
-                "CVE-2026-12468",
-                "CVE-2026-12469"
+                "CVE-2026-49232"
             ]
         },
-        "vid": "cffe1232-e4b3-4c72-8b4c-6a8298c9b289"
+        "vid": "b1c6c691-6a57-11f1-bf61-3c7c3fba4204"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 33 security fixes:\n>\n> - \\[516496659\\] Critical CVE-2026-12437: Use after free in WebShare.\n> - \\[516947912\\] Critical CVE-2026-12438: Inappropriate implementation\n>   in WebView.\n> - \\[519728275\\] Critical CVE-2026-12439: Use after free in Digital\n>   Credentials.\n> - \\[519731619\\] Critical CVE-2026-12440: Use after free in\n>   DigitalCredentials.\n> - \\[520157118\\] Critical CVE-2026-12441: Use after free in File Input.\n> - \\[521950423\\] Critical CVE-2026-12442: Use after free in Passwords.\n> - \\[522566295\\] Critical CVE-2026-12443: Use after free in Web\n>   Authentication.\n> - \\[513160088\\] High CVE-2026-12444: Out of bounds read in Chromoting.\n> - \\[513199795\\] High CVE-2026-12445: Use after free in Extensions.\n> - \\[513313107\\] High CVE-2026-12446: Insufficient data validation in\n>   Passwords.\n> - \\[513405023\\] High CVE-2026-12447: Heap buffer overflow in WebRTC.\n> - \\[513458233\\] High CVE-2026-12448: Inappropriate implementation in\n>   WebView.\n> - \\[513480539\\] High CVE-2026-12449: Use after free in Chromoting.\n> - \\[514531776\\] High CVE-2026-12450: Inappropriate implementation in\n>   Media.\n> - \\[514741076\\] High CVE-2026-12451: Use after free in\n>   DigitalCredentials.\n> - \\[515462244\\] High CVE-2026-12452: Use after free in Downloads.\n> - \\[516448843\\] High CVE-2026-12453: Insufficient validation of\n>   untrusted input in Input.\n> - \\[516926968\\] High CVE-2026-12454: Race in Safe Browsing.\n> - \\[517069848\\] High CVE-2026-12455: Use after free in Tab Strip.\n> - \\[517124587\\] High CVE-2026-12456: Insufficient validation of\n>   untrusted input in Extensions.\n> - \\[517153117\\] High CVE-2026-12457: Insufficient data validation in\n>   Extensions.\n> - \\[517258337\\] High CVE-2026-12458: Incorrect security UI in\n>   Passwords.\n> - \\[517406035\\] High CVE-2026-12459: Inappropriate implementation in\n>   Serial.\n> - \\[517484284\\] High CVE-2026-12460: Insufficient policy enforcement\n>   in File System Access.\n> - \\[517727318\\] High CVE-2026-12461: Out of bounds read in WebRTC.\n> - \\[517916024\\] High CVE-2026-12462: Use after free in Media.\n> - \\[518042749\\] High CVE-2026-12463: Inappropriate implementation in\n>   Views.\n> - \\[519358344\\] High CVE-2026-12464: Use after free in Browser.\n> - \\[520189702\\] High CVE-2026-12465: Insufficient validation of\n>   untrusted input in Metrics.\n> - \\[520199394\\] High CVE-2026-12466: Heap buffer overflow in WebRTC.\n> - \\[520202726\\] High CVE-2026-12467: Use after free in Extensions.\n> - \\[521485244\\] High CVE-2026-12468: Inappropriate implementation in\n>   Updater.\n> - \\[521618871\\] High CVE-2026-12469: Uninitialized Use in GPU.\n",
+    "details": "<https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-49232.txt>\nreports:\n\n> Routinator exits on any error when accepting incoming HTTP or RTR\n> connections, including ones it can recover from such as running out of\n> file descriptors. This condition can be triggered maliciously by an\n> attacker by opening a large number of connections to the HTTP or RTR\n> server. This only affects users that make their HTTP or RTR server\n> available to untrusted networks.\n>\n> Thanks to [X41 D-Sec GmbH](https://www.x41-dsec.de/) for reporting the\n> vulnerability.\n",
     "id": "FreeBSD-2026-0280",
-    "modified": "2026-06-15T00:00:00Z",
-    "published": "2026-06-15T00:00:00Z",
+    "modified": "2026-06-17T00:00:00Z",
+    "published": "2026-06-17T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01750511403.html"
+            "url": "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-49232.txt"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12437"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12438"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12439"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12440"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12441"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12442"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12443"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12444"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12445"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12446"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12447"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12448"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12449"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12450"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12451"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12452"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12453"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12454"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12455"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12456"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12457"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12458"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12459"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12460"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12461"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12462"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12463"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12464"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12465"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12466"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12467"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12468"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12469"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49232"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "chromium -- security fixes"
+    "summary": "Routinator -- CWE-755 Improper Handling of Exceptional Conditions"
 }

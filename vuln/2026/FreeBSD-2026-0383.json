@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "erlang"
+                "name": "keycloak"
             },
             "ranges": [
                 {
@@ -12,64 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "28.5.0.5,4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "erlang-runtime27"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "27.3.4.16"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "erlang-runtime28"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "28.5.0.5"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "erlang-runtime29"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "29.0.5"
+                            "fixed": "26.7.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,38 +22,50 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/erlang/otp/releases/tag/OTP-28.5.0.5"
+            "https://www.keycloak.org/2026/08/keycloak-2671-released"
         ],
-        "discovery": "2026-07-30T00:00:00Z",
+        "discovery": "2026-08-05T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2008-5161"
+                "CVE-2026-9793",
+                "CVE-2026-4629",
+                "CVE-2026-14209",
+                "CVE-2026-14614",
+                "CVE-2026-14615"
             ]
         },
-        "vid": "0b58454e-8ff3-11f1-b35c-4c526214c986"
+        "vid": "e1208b90-91c3-11f1-a0bc-3c7c3fba4204"
     },
-    "details": "The Erlang/OTP team reports:\n\n> The SSH client and server now reject incoming packets not aligned to\n> the cipher block size as required by RFC 4253 section 6. For CBC\n> ciphers, a timing-safe \\\"packet discard\\\" mechanism (CVE-2008-5161\n> mitigation) ensures structural errors are indistinguishable from MAC\n> failures before disconnecting. AEAD and encrypt-then-MAC modes\n> disconnect immediately.\n",
+    "details": "The Keycloak Team reports:\n\n> - CVE-2026-9793: JWE request object bypasses requestObjectSignatureAlg\n>   enforcement\n> - CVE-2026-4629: Privilege escalation via hardcoded role mapper\n>   injection in manage-clients\n> - CVE-2026-14209: Keycloak Admin UI Extension \\`brute-force-user\\`\n>   User Disclosure via \\`search=id:\\` under FGAP v2\n> - CVE-2026-14614: Keycloak 26.6.3 Fine-Grained Admin Permissions\n>   Bypass in Client Scope Assignment\n> - CVE-2026-14615: FGAP v2 parent group children endpoint bypasses\n>   per-child view permission filter\n",
     "id": "FreeBSD-2026-0383",
-    "modified": "2026-08-04T00:00:00Z",
-    "published": "2026-08-04T00:00:00Z",
+    "modified": "2026-08-06T00:00:00Z",
+    "published": "2026-08-06T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/erlang/otp/releases/tag/OTP-28.5.0.5"
+            "url": "https://www.keycloak.org/2026/08/keycloak-2671-released"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5161"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-9793"
         },
         {
             "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-5161"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4629"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/erlang/otp/pull/11110"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14209"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14614"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14615"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "erlang -- SSH plaintext recovery attack against CBC ciphers"
+    "summary": "Keycloak -- multiple vulnerabilities"
 }

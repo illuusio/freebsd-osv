@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "erlang-runtime27"
+                "name": "h2o"
             },
             "ranges": [
                 {
@@ -12,45 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "27.3.4.13"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "erlang-runtime28"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "28.5.0.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "erlang-runtime29"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "29.0.2"
+                            "fixed": "20260609"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,30 +22,25 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/erlang/otp/security/advisories/GHSA-6f4f-chj5-5g97"
+            "https://github.com/h2o/h2o/security/advisories/GHSA-qcrr-wrhc-pgq9"
         ],
-        "discovery": "2026-06-10T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-49759"
-            ]
-        },
-        "vid": "d87db2a1-64d4-11f1-ab11-4c526214c986"
+        "discovery": "2026-06-04T00:00:00Z",
+        "vid": "35c57495-2231-4733-a66e-044f3dad8b21"
     },
-    "details": "https://github.com/erlang/otp/security/advisories/GHSA-6f4f-chj5-5g97\nreports:\n\n> A buffer overflow error when parsing SCTP ERROR or ABORT chunks has\n> been fixed. This could lead to stack corruption and VM crash, but\n> ultimately with hard work by an attacker be refined into maybe even\n> remote code execution.\n",
+    "details": "h2o project reports:\n\n> An HTTP/2 attack can combine HPACK decompression state amplification\n> with stalled streams. Depending on server configuration, decoded\n> header state can be retained by stalled streams, causing excessive\n> memory use and denial of service.\n",
     "id": "FreeBSD-2026-0270",
-    "modified": "2026-06-10T00:00:00Z",
-    "published": "2026-06-10T00:00:00Z",
+    "modified": "2026-06-11T00:00:00Z",
+    "published": "2026-06-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/erlang/otp/security/advisories/GHSA-6f4f-chj5-5g97"
+            "url": "https://github.com/h2o/h2o/security/advisories/GHSA-qcrr-wrhc-pgq9"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49759"
+            "type": "WEB",
+            "url": "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Erlang/OTP -- buffer overflow parsing SCTP ERROR/ABORT chunks"
+    "summary": "h2o -- HTTP/2 state amplification denial of service"
 }

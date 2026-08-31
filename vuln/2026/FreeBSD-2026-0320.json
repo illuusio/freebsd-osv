@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "traefik"
+                "name": "roundcube-php82"
             },
             "ranges": [
                 {
@@ -12,7 +12,64 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.7.6"
+                            "fixed": "1.7.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php83"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.7.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php84"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.7.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.7.2,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,40 +79,35 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/traefik/traefik/releases/tag/v3.7.6"
+            "https://github.com/roundcube/roundcubemail/releases/tag/1.7.2"
         ],
-        "discovery": "2026-06-30T00:00:00Z",
+        "discovery": "2026-07-05T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-54763",
-                "CVE-2026-54764",
-                "CVE-2026-54765"
+                "CVE-2026-54432",
+                "CVE-2026-54433"
             ]
         },
-        "vid": "803b9816-77af-11f1-ba71-5404a68ad561"
+        "vid": "d5578ba4-7889-11f1-b72c-8447094a420f"
     },
-    "details": "The traefik project releases a new version addressing multiple CVEs:\n\n> - CVE-2026-54763 (underscore-variant identity spoofing)\n> - CVE-2026-54764 (ForwardAuth middleware leaks X-Forwarded-Port\n>   spoofing)\n> - CVE-2026-54765 (Gateway HTTPRoute backendRef filters can leak\n>   backend context)\n",
+    "details": "The Rouncube project reports:\n\n> See links for more detail\n",
     "id": "FreeBSD-2026-0320",
-    "modified": "2026-07-04T00:00:00Z",
-    "published": "2026-07-04T00:00:00Z",
+    "modified": "2026-07-05T00:00:00Z",
+    "published": "2026-07-05T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/traefik/traefik/releases/tag/v3.7.6"
+            "url": "https://github.com/roundcube/roundcubemail/releases/tag/1.7.2"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54763"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54432"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54764"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54765"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54433"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "traefik -- Multiple vulnerabilities"
+    "summary": "Roundcube -- Multiple vulnerabilities"
 }

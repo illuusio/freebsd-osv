@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "powerdns-recursor"
+                "name": "mysql97-client"
             },
             "ranges": [
                 {
@@ -12,7 +12,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "5.4.4"
+                            "fixed": "9.7.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mysql97-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.7.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -21,44 +40,242 @@
         }
     ],
     "database_specific": {
-        "cite": [
-            "https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2026-10.html"
-        ],
-        "discovery": "2026-07-22T00:00:00Z",
+        "discovery": "2026-07-21T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-52868",
-                "CVE-2026-52686"
+                "CVE-2026-46936",
+                "CVE-2026-47008",
+                "CVE-2026-47012",
+                "CVE-2026-47023",
+                "CVE-2026-47052",
+                "CVE-2026-47064",
+                "CVE-2026-60145",
+                "CVE-2026-60163",
+                "CVE-2026-60174",
+                "CVE-2026-60177",
+                "CVE-2026-60178",
+                "CVE-2026-60181",
+                "CVE-2026-60182",
+                "CVE-2026-60183",
+                "CVE-2026-60184",
+                "CVE-2026-60185",
+                "CVE-2026-60186",
+                "CVE-2026-60187",
+                "CVE-2026-60188",
+                "CVE-2026-60189",
+                "CVE-2026-60190",
+                "CVE-2026-60191",
+                "CVE-2026-60194",
+                "CVE-2026-60195",
+                "CVE-2026-60311",
+                "CVE-2026-60314",
+                "CVE-2026-60315",
+                "CVE-2026-60316",
+                "CVE-2026-60324",
+                "CVE-2026-60331",
+                "CVE-2026-60332",
+                "CVE-2026-60585",
+                "CVE-2026-60718",
+                "CVE-2026-60725",
+                "CVE-2026-60747",
+                "CVE-2026-61081",
+                "CVE-2026-61093",
+                "CVE-2026-61094",
+                "CVE-2026-61096",
+                "CVE-2026-61108",
+                "CVE-2026-61109",
+                "CVE-2026-61128",
+                "CVE-2026-61144"
             ]
         },
-        "vid": "575ddefc-9085-11f1-b295-98b78501ef2a"
+        "vid": "10f5f76e-90a5-11f1-bc30-3497f65b111b"
     },
-    "details": "PowerDNS Team reports:\n\n> - CVE-2026-52688: RRSIGs with too few labels can lead to bypass of\n>   DNSSEC wildcard validation\n> - CVE-2026-52686: Wildcard CNAME proof validation bypass\u00b6\n",
+    "details": "The Oracle Critical Patch Update of July 2026 addresses 54 issues in\nOracle MySQL, 43 of which apply to the MySQL 9.7 series and to the MySQL\nRouter shipped with these ports. The 9.7 branch is affected by every\nserver issue of the 8.4 branch plus twelve additional ones in code paths\nthat only exist in 9.x.\n\nThe affected server components are Optimizer, Replication, Group\nReplication (plugin and GCS), X Plugin, Clone Plugin, InnoDB, JSON, JSON\nDuality, GIS, DDL, Configurator, Performance Schema and Pluggable\nAuthentication.\n\nMost of the issues require an authenticated account, in many cases one\nwith high privileges, and let an attacker hang or repeatedly crash the\nserver, resulting in a denial of service. Three issues need no\ncredentials at all: CVE-2026-60315 (CVSS 8.2) is reachable over the X\nprotocol and affects availability, while CVE-2026-60314 and\nCVE-2026-60725 affect MySQL Router over HTTP, the latter allowing\nunauthorized read and write access. The highest rated issue for this\nbranch is CVE-2026-60163 (CVSS 8.4) in the Group Replication plugin,\nexploitable locally with full impact on confidentiality, integrity and\navailability. CVE-2026-60181 in the Configurator component requires user\ninteraction and is specific to the 9.7 branch.\n\nPlease refer to the referenced CVE entries for the details of each\nindividual issue.\n",
     "id": "FreeBSD-2026-0379",
     "modified": "2026-08-05T00:00:00Z",
     "published": "2026-08-05T00:00:00Z",
     "references": [
         {
-            "type": "REPORT",
-            "url": "https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2026-10.html"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-46936"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52868"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-47008"
         },
         {
             "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-52688"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-47012"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52686"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-47023"
         },
         {
             "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-52686"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-47052"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-47064"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60145"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60163"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60174"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60177"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60178"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60181"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60182"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60183"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60184"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60185"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60186"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60187"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60188"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60189"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60190"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60191"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60194"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60195"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60311"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60314"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60315"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60316"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60324"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60331"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60332"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60585"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60718"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60725"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60747"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-61081"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-61093"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-61094"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-61096"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-61108"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-61109"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-61128"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-61144"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.oracle.com/security-alerts/cpujul2026.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://dev.mysql.com/community/security/advisories/2026-07-21/"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "PowerDNS Recursor -- multiple vulnerabilities"
+    "summary": "MySQL 9.7 -- Multiple vulnerabilities"
 }

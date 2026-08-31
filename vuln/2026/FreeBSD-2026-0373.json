@@ -3,16 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "netbird"
+                "name": "weechat"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0.5.0,1"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "0.76.0"
+                            "fixed": "4.9.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,21 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/netbirdio/netbird/security/advisories/GHSA-qcpp-8vwj-hhwr"
+            "https://weechat.org/doc/weechat/security/"
         ],
-        "discovery": "2026-07-29T00:00:00Z",
-        "vid": "ef71114e-8c1c-11f1-a221-3c7c3fba4204"
+        "discovery": "2026-07-26T00:00:00Z",
+        "vid": "0d5b4884-8c2b-11f1-8144-8447094a420f"
     },
-    "details": "The NetBird Team reports:\n\n> The NetBird client daemon exposes its gRPC control interface to any\n> local process with no authentication, in all versions from 0.5.0\n> (March 2022) to 0.75.1. On Linux, macOS and FreeBSD the interface is a\n> Unix domain socket (/var/run/netbird.sock) with\n> world-readable/writable permissions (0666). On Windows it is a\n> loopback TCP listener (127.0.0.1:41731), where the transport carries\n> no caller identity at all. Any unprivileged local user can connect and\n> invoke all daemon RPCs without credentials.\n",
+    "details": "The Weechat project reports:\n\n> Use-after-free and double free when a remote relay sends an event with\n> an array as body.\n>\n> Use-after-free in the irc plugin when a batched message disconnects\n> the server.\n>\n> Stack buffer overflow when building a JOIN command with channel keys.\n",
     "id": "FreeBSD-2026-0373",
     "modified": "2026-07-30T00:00:00Z",
     "published": "2026-07-30T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/netbirdio/netbird/security/advisories/GHSA-qcpp-8vwj-hhwr"
+            "url": "https://weechat.org/doc/weechat/security/"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "NetBird -- Local Privilege Escalation via Unauthenticated IPC Socket"
+    "summary": "Weechat -- Multiple vulnerabilities"
 }

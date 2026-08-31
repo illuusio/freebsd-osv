@@ -22,30 +22,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/h2o/h2o/security/advisories/GHSA-w68q-rqwx-7wvq"
+            "https://github.com/h2o/h2o/security/advisories/GHSA-rf9v-m59p-mq84"
         ],
         "discovery": "2026-05-29T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-44452"
+                "CVE-2026-44453"
             ]
         },
-        "vid": "fba766f4-ccda-4e1b-8875-ab857c6a6532"
+        "vid": "644d5e6c-1bd9-4904-8440-16c04100a2e1"
     },
-    "details": "h2o project reports:\n\n> When h2o receives a TLS or QUIC ClientHello containing a zero-length\n> SNI extension, it can overrun the zero-length hostname while copying\n> it. This can trigger a segmentation fault and cause a denial of\n> service.\n",
+    "details": "h2o project reports:\n\n> When serving static files, h2o can allocate a file path on the stack\n> using alloca. On systems using musl libc, a large allocation can\n> exceed the default pthread stack size and crash the server, causing a\n> denial of service.\n",
     "id": "FreeBSD-2026-0272",
     "modified": "2026-06-11T00:00:00Z",
     "published": "2026-06-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/h2o/h2o/security/advisories/GHSA-w68q-rqwx-7wvq"
+            "url": "https://github.com/h2o/h2o/security/advisories/GHSA-rf9v-m59p-mq84"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44452"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44453"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "h2o -- heap overrun parsing zero-length SNI"
+    "summary": "h2o -- stack overflow serving static files on musl libc"
 }

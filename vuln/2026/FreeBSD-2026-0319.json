@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "p5-CGI-Session"
+                "name": "traefik"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.49"
+                            "fixed": "3.7.6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +22,40 @@
     ],
     "database_specific": {
         "cite": [
-            "https://metacpan.org/dist/CGI-Session/changes"
+            "https://github.com/traefik/traefik/releases/tag/v3.7.6"
         ],
         "discovery": "2026-06-30T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-56016"
+                "CVE-2026-54763",
+                "CVE-2026-54764",
+                "CVE-2026-54765"
             ]
         },
-        "vid": "dfa2ef44-7785-11f1-99fc-40b034429ecf"
+        "vid": "803b9816-77af-11f1-ba71-5404a68ad561"
     },
-    "details": "CGI-Session project reports:\n\n> SECURITY: Strengthen cryptographic randomness of MD5 driver.\n",
+    "details": "The traefik project releases a new version addressing multiple CVEs:\n\n> - CVE-2026-54763 (underscore-variant identity spoofing)\n> - CVE-2026-54764 (ForwardAuth middleware leaks X-Forwarded-Port\n>   spoofing)\n> - CVE-2026-54765 (Gateway HTTPRoute backendRef filters can leak\n>   backend context)\n",
     "id": "FreeBSD-2026-0319",
     "modified": "2026-07-04T00:00:00Z",
     "published": "2026-07-04T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://metacpan.org/dist/CGI-Session/changes"
+            "url": "https://github.com/traefik/traefik/releases/tag/v3.7.6"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-56016"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54763"
         },
         {
             "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56016"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54764"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54765"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "p5-CGI-Session -- secuity fixes"
+    "summary": "traefik -- Multiple vulnerabilities"
 }

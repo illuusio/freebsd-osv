@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-mkdocs-material"
+                "name": "ejabberd"
             },
             "ranges": [
                 {
@@ -12,140 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "9.7.7"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py311-mkdocs-material"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "9.7.7"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py312-mkdocs-material"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "9.7.7"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313-mkdocs-material"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "9.7.7"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313t-mkdocs-material"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "9.7.7"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py314-mkdocs-material"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "9.7.7"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py314t-mkdocs-material"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "9.7.7"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py315-mkdocs-material"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "9.7.7"
+                            "fixed": "26.07"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -155,21 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/squidfunk/mkdocs-material/security/advisories/GHSA-xvg9-69gf-fjrf"
+            "https://www.process-one.net/blog/ejabberd-26-07/#security"
         ],
-        "discovery": "2026-07-17T00:00:00Z",
-        "vid": "1976b049-8ccc-11f1-b333-901b0edee044"
+        "discovery": "2026-07-30T00:00:00Z",
+        "vid": "ca42379d-8d45-11f1-a129-901b0e9408dc"
     },
-    "details": "Martin Donath reports:\n\n> Material for MkDocs 7.2.0 through 9.7.6 contains a DOM-based\n> cross-site scripting vulnerability in the optional search.suggest\n> feature. A crafted q URL parameter could execute JavaScript in the\n> documentation site\\'s origin after user interaction.\n",
+    "details": "ejabberd team reports:\n\n> - It\\'s possible to craft PLAIN auth request and authenticate as one\n>   user, but then open session for different one.\n> - mod_caps persistent cache can be poisoned by using legacy version\n>   requests.This cache was only used to determine list of nodes that\n>   should trigger notifications in PubSub presence-based delivery.\n> - SQL injection in mod_pubsub handling of paging requests.\n> - Possible atom exhaustion that can be triggered by issuing REST\n>   requests to mod_http_api.\n> - It was possible to make ejabberd send redirect response for OAuth\n>   requests to unvetted url. This required enabling ejabberd to act as\n>   OAuth provider (by adding request handler for ejabberd_oauth in http\n>   listener). As part of this fix we changed oauth_client_id_check\n>   default value to db.\n> - using ejabberd as OAuth provider will be only allowed by clients\n> - that were previously registered with oauth_add_client_password or\n>   oauth_add_client_implicit commands.\n> - Tokens generated by mod_bosh, captcha, mod_auth_fast,\n>   mod_http_upload and mod_invites used not cryptographically strong\n>   random number generators.\n> - Files server by mod_http_upload didn\\'t have XSS prevention headers.\n> - Issues in authentication of SIP requests.\n> - Request to web_admin were lacking CSRF protection.\n> - It was possible to skip captcha verification in mod_register_web.\n> - mod_conversejs allowed putting unescaped value from url in page\n>   content.\n",
     "id": "FreeBSD-2026-0375",
-    "modified": "2026-08-07T00:00:00Z",
-    "published": "2026-07-31T00:00:00Z",
+    "modified": "2026-08-01T00:00:00Z",
+    "published": "2026-08-01T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/squidfunk/mkdocs-material/security/advisories/GHSA-xvg9-69gf-fjrf"
+            "url": "https://www.process-one.net/blog/ejabberd-26-07/#security"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-mkdocs-material -- DOM XSS vulnerability"
+    "summary": "ejabberd -- Multiple security vulnerabilities"
 }

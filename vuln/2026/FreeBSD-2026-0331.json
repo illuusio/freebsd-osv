@@ -3,16 +3,29 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "mailpit"
+                "name": "apache-commons-httpclient"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
-                        },
+                            "introduced": "3.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jakarta-commons-httpclient"
+            },
+            "ranges": [
+                {
+                    "events": [
                         {
-                            "fixed": "1.30.4"
+                            "introduced": "3.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,29 +35,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/axllent/mailpit/releases/tag/v1.30.4"
+            "https://nvd.nist.gov/vuln/detail/CVE-2012-5783"
         ],
-        "discovery": "2026-07-09T00:00:00Z",
-        "vid": "7a56b0f7-7b62-11f1-8a70-10ffe07f9334"
+        "discovery": "2012-04-11T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2012-5783"
+            ]
+        },
+        "vid": "de3f0385-7c37-11f1-8dc2-dca632daf43b"
     },
-    "details": "Mailpit author reports:\n\n> Mailpit\\'s SMTP server reads each command line with an unbounded\n> bufio.Reader.ReadString(\\'\\\\n\\') before parsing the command or\n> enforcing any protocol length limit. A remote SMTP client can send an\n> oversized single command line and force Mailpit to allocate\n> attacker-controlled memory before the server returns a syntax error or\n> times out, even though RFC 5321 limits SMTP command lines to 512\n> octets including CRLF.\n>\n> Mailpit\\'s thumbnail endpoint decodes attacker-supplied image\n> attachments into a full raster before checking any decoded-pixel,\n> dimension, or memory budget. A remote client that can store an email\n> and reach the default web API can supply a compact high-dimension\n> image, then request `/api/v1/message/{id}/part/{partID}/thumb` to\n> force server-side memory and CPU work far larger than the encoded\n> attachment size before Mailpit returns a 180x120 thumbnail.\n",
+    "details": "MITRE reports:\n\n> Apache Commons HttpClient 3.x, as used in \\..., does not verify that\n> the server hostname matches a domain name in the subject\\'s Common\n> Name (CN) or subjectAltName field of the X.509 certificate, which\n> allows man-in-the-middle attackers to spoof SSL servers via an\n> arbitrary valid certificate.\n",
     "id": "FreeBSD-2026-0331",
-    "modified": "2026-07-09T00:00:00Z",
-    "published": "2026-07-09T00:00:00Z",
+    "modified": "2026-07-10T00:00:00Z",
+    "published": "2026-07-10T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/axllent/mailpit/releases/tag/v1.30.4"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-5783"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-w878-pj84-3j5v"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-75mr-qw9x-3r39"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-5783"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "mailpit -- multiple vulnerabilities"
+    "summary": "httpclient -- Improper Certificate Validation"
 }

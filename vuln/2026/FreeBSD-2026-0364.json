@@ -2,36 +2,17 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "chromium"
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "15.1"
                         },
                         {
-                            "fixed": "150.0.7871.186"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ungoogled-chromium"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "150.0.7871.186"
+                            "fixed": "15.1_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -40,46 +21,31 @@
         }
     ],
     "database_specific": {
-        "cite": [
-            "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_01320465736.html"
-        ],
-        "discovery": "2026-07-23T00:00:00Z",
+        "discovery": "2026-07-29T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-16807",
-                "CVE-2026-16806",
-                "CVE-2026-16805",
-                "CVE-2026-16804"
+                "CVE-2026-58083"
+            ],
+            "freebsdsa": [
+                "SA-26:50.kqueue"
             ]
         },
-        "vid": "c4005254-b922-430f-b94a-dac9f59a527b"
+        "vid": "a4e4a74c-8bb7-11f1-a6ab-bc241121aa0a"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 4 security fixes:\n>\n> - \\[518237034\\] High CVE-2026-16807: Out of bounds write in Codecs.\n> - \\[522064153\\] High CVE-2026-16806: Use after free in WebMCP.\n> - \\[523292588\\] High CVE-2026-16805: Use after free in Blink.\n> - \\[524721670\\] High CVE-2026-16804: Use after free in Input.\n",
+    "details": "# Problem Description:\n\nWhile the kernel was copying knotes during fork, a knote with a\ntimer-based filter could fire and be enqueued on the kqueue\\'s active\nlist before the copy was complete. The copy routine did not account for\nthis and could enqueue the new knote a second time, corrupting the\nactive list. In addition, the copy routine did not hold the appropriate\nlocks while reading knote state, allowing further races.\n\n# Impact:\n\nAn unprivileged local user can trigger a use-after-free in the kernel,\npotentially leading to privilege escalation.\n",
     "id": "FreeBSD-2026-0364",
-    "modified": "2026-07-29T00:00:00Z",
-    "published": "2026-07-29T00:00:00Z",
+    "modified": "2026-07-30T00:00:00Z",
+    "published": "2026-07-30T00:00:00Z",
     "references": [
         {
-            "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_01320465736.html"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58083"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16807"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16806"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16805"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16804"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:50.kqueue.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "chromium -- security fixes"
+    "summary": "FreeBSD -- Use-after-free in kqueue copy-on-fork"
 }

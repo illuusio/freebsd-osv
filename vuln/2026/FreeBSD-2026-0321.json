@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "roundcube-php82"
+                "name": "weechat"
             },
             "ranges": [
                 {
@@ -12,64 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.7.2,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "roundcube-php83"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.7.2,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "roundcube-php84"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.7.2,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "roundcube-php85"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.7.2,1"
+                            "fixed": "4.9.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,35 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/roundcube/roundcubemail/releases/tag/1.7.2"
+            "https://github.com/weechat/weechat/security/advisories/GHSA-wmpc-m6g9-fwj8"
         ],
         "discovery": "2026-07-05T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-54432",
-                "CVE-2026-54433"
-            ]
-        },
-        "vid": "d5578ba4-7889-11f1-b72c-8447094a420f"
+        "vid": "d7939352-788b-11f1-b72c-8447094a420f"
     },
-    "details": "The Rouncube project reports:\n\n> See links for more detail\n",
+    "details": "The Weechat project reports:\n\n> Pre-auth memory leak in relay-api POST /api/handshake (unfreed JSON\n> body) \u2192 unauthenticated remote memory-exhaustion DoS.\n",
     "id": "FreeBSD-2026-0321",
     "modified": "2026-07-05T00:00:00Z",
     "published": "2026-07-05T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/roundcube/roundcubemail/releases/tag/1.7.2"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54432"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54433"
+            "url": "https://github.com/weechat/weechat/security/advisories/GHSA-wmpc-m6g9-fwj8"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Roundcube -- Multiple vulnerabilities"
+    "summary": "Weechat -- Memory leak in relay-API"
 }

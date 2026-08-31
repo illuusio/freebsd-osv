@@ -57,33 +57,28 @@
         "discovery": "2026-06-30T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-49427",
-                "CVE-2026-49428"
+                "CVE-2026-49426"
             ],
             "freebsdsa": [
-                "SA-26:44.posixshm"
+                "SA-26:45.audit"
             ]
         },
-        "vid": "91017b3b-74e2-11f1-958d-bc241121aa0a"
+        "vid": "cd658f09-74e2-11f1-958d-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nPages belonging to largepage shared memory objects were not explicitly\nwired. When sendfile(2) transmitted such an object with the SF_NOCACHE\nflag, it freed the underlying pages after transmission even though\nexisting mappings still referred to them. \\[CVE-2026-49427\\]\n\nSeparately, certain system calls, such open(2) with the O_TRUNC flag\nset, and fspacectl(2), could incorrectly free memory in largepage\nobjects. These operations are not permitted on largepage objects, but\nthe implementation did not verify this. \\[CVE-2026-49428\\]\n\n# Impact:\n\nAn unprivileged local user can abuse the bug to access freed kernel\nmemory. This can be exploited to escalate privileges.\n",
+    "details": "# Problem Description:\n\nWhen auditing a system call executed via ptrace(PT_SC_REMOTE), the\nkernel passed the return value of an internal setup function to\nAUDIT_SYSCALL_EXIT() rather than the actual result of the executed\nsystem call. As a result, committed audit records for system calls which\nreturned an error do not reflect the true outcome of the operation. That\nis, they indicate that the operation succeeded when it in fact failed.\n\n# Impact:\n\nAudit records for system calls executed via ptrace(PT_SC_REMOTE) may\nshow an incorrect error status. An attacker with the ability to debug a\nprocess could use this to produce misleading audit trails, potentially\nundermining audit-based Intrusion Detection Systems (IDS).\n",
     "id": "FreeBSD-2026-0311",
     "modified": "2026-07-01T00:00:00Z",
     "published": "2026-07-01T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49427"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49426"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49428"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:44.posixshm.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:45.audit.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Multiple vulnerabilities in POSIX largepage objects"
+    "summary": "FreeBSD -- Incorrect audit records for ptrace(2) syscall requests"
 }

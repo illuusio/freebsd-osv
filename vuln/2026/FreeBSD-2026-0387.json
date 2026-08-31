@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "libXfont2"
+                "name": "gstreamer1-libav"
             },
             "ranges": [
                 {
@@ -12,7 +12,64 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.0.9"
+                            "fixed": "1.28.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-bad"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-good"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-ugly"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,35 +79,70 @@
     ],
     "database_specific": {
         "cite": [
-            "https://lists.x.org/archives/xorg-announce/2026-August/003734.html"
+            "https://gstreamer.freedesktop.org/security/"
         ],
         "discovery": "2026-08-05T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-44950",
-                "CVE-2026-59679"
+                "CVE-2026-18649"
             ]
         },
-        "vid": "1fae5869-9275-11f1-83e9-901b0e13f1a0"
+        "vid": "dde0fb16-2731-4d3c-aabf-459357235745"
     },
-    "details": "Zhixi \\\"Jace\\\" Sun, independent security researcher reports:\n\n> - CVE-2026-44950: Font Server Client Cumulative Glyph Data Heap Buffer\n>   Overflow\n> - CVE-2026-59679: Font Server Client encoding Out-Of-Bounds Read/Write\n",
+    "details": "The GStreamer project reports:\n\n> Multiple security issues were identified and fixed in the GStreamer\n> framework.\n>\n> - GStreamer-SA-2026-0067: Heap buffer overflow and memory leak in JPEG\n>   2000 decoder\n> - GStreamer-SA-2026-0068: Heap buffer overflow in QCELP RTP\n>   depayloader\n> - GStreamer-SA-2026-0069: Heap buffer overflow in FFmpeg demuxer\n>   wrapper\n> - GStreamer-SA-2026-0070: Out-of bounds write in H.265/HEVC parser\n>   short-term RPS parsing\n> - GStreamer-SA-2026-0071: Heap buffer overflow in DVD subpicture\n>   decoder\n> - GStreamer-SA-2026-0072: Multiple out-of-bounds reads, out-of-bounds\n>   writes, and integer overflow vulnerabilities in the AVI demuxer\n> - GStreamer-SA-2026-0073: Out-of-bounds read in Matroska demuxer FLAC\n>   header parser\n> - GStreamer-SA-2026-0075: Integer overflow and underflow in ASF\n>   demuxer bounds checks\n> - GStreamer-SA-2026-0076: Unbounded memory growth in H.264/H.265 RTP\n>   depayloaders during fragmented NAL unit reassembly\n> - GStreamer-SA-2026-0077: Heap out-of-bounds write in IMA ADPCM audio\n>   decoder\n",
     "id": "FreeBSD-2026-0387",
-    "modified": "2026-08-07T00:00:00Z",
-    "published": "2026-08-07T00:00:00Z",
+    "modified": "2026-08-08T00:00:00Z",
+    "published": "2026-08-08T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://lists.x.org/archives/xorg-announce/2026-August/003734.html"
+            "url": "https://gstreamer.freedesktop.org/security/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44950"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18649"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-59679"
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0067.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0068.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0069.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0070.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0071.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0072.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0073.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0075.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0076.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0077.html"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "libXfont2 -- multiple vulnerabilities"
+    "summary": "gstreamer1 -- multiple vulnerabilities"
 }

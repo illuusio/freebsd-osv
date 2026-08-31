@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gstreamer1-libav"
+                "name": "roundcube-php82"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.28.6"
+                            "fixed": "1.7.3,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gstreamer1-plugins-bad"
+                "name": "roundcube-php83"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.28.6"
+                            "fixed": "1.7.3,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gstreamer1-plugins-good"
+                "name": "roundcube-php84"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.28.6"
+                            "fixed": "1.7.3,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gstreamer1-plugins-ugly"
+                "name": "roundcube-php85"
             },
             "ranges": [
                 {
@@ -69,7 +69,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.28.6"
+                            "fixed": "1.7.3,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.7.3,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,70 +98,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://gstreamer.freedesktop.org/security/"
+            "https://roundcube.net/news/2026/08/09/security-updates-1.6.18-and-1.7.3"
         ],
-        "discovery": "2026-08-05T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-18649"
-            ]
-        },
-        "vid": "dde0fb16-2731-4d3c-aabf-459357235745"
+        "discovery": "2026-08-09T00:00:00Z",
+        "vid": "54d19b85-93d4-11f1-8144-8447094a420f"
     },
-    "details": "The GStreamer project reports:\n\n> Multiple security issues were identified and fixed in the GStreamer\n> framework.\n>\n> - GStreamer-SA-2026-0067: Heap buffer overflow and memory leak in JPEG\n>   2000 decoder\n> - GStreamer-SA-2026-0068: Heap buffer overflow in QCELP RTP\n>   depayloader\n> - GStreamer-SA-2026-0069: Heap buffer overflow in FFmpeg demuxer\n>   wrapper\n> - GStreamer-SA-2026-0070: Out-of bounds write in H.265/HEVC parser\n>   short-term RPS parsing\n> - GStreamer-SA-2026-0071: Heap buffer overflow in DVD subpicture\n>   decoder\n> - GStreamer-SA-2026-0072: Multiple out-of-bounds reads, out-of-bounds\n>   writes, and integer overflow vulnerabilities in the AVI demuxer\n> - GStreamer-SA-2026-0073: Out-of-bounds read in Matroska demuxer FLAC\n>   header parser\n> - GStreamer-SA-2026-0075: Integer overflow and underflow in ASF\n>   demuxer bounds checks\n> - GStreamer-SA-2026-0076: Unbounded memory growth in H.264/H.265 RTP\n>   depayloaders during fragmented NAL unit reassembly\n> - GStreamer-SA-2026-0077: Heap out-of-bounds write in IMA ADPCM audio\n>   decoder\n",
+    "details": "The Roundcube project reports:\n\n> - \\>Missing basic validation for content proxied by the css proxy\n> - SSRF bypass via specific local address URLs using 100.64.0.0/10 and\n>   fe80::/10 nets\n> - SSRF filter bypass via various forms of nip.io/sslip.io hostnames\n>   evading is_local_url() check\n> - remote content blocking bypass via unclosed url() in a FuncIRI\n>   attribute\n> - LDAP filter injection via unescaped %u/%fu/%d substitution into the\n>   search_filter\n> - arbitrary Sieve script injection via a filter rule name bypassing\n>   managesieve_disabled_actions\n> - RCE via cmd_learn driver of markasjunk plugin\n> - Fix IMAP command injection via mail search and LITERAL+ byte-count\n>   desynchronization\n> - password's modoboa driver leak of an authentication token to a\n>   user-controlled host\n> - stored XSS in \"Add to address book\" action\n> - HTML/CSS sanitization bypass via SVG animate by attribute\n",
     "id": "FreeBSD-2026-0388",
-    "modified": "2026-08-08T00:00:00Z",
-    "published": "2026-08-08T00:00:00Z",
+    "modified": "2026-08-09T00:00:00Z",
+    "published": "2026-08-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://gstreamer.freedesktop.org/security/"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18649"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0067.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0068.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0069.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0070.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0071.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0072.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0073.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0075.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0076.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0077.html"
+            "url": "https://roundcube.net/news/2026/08/09/security-updates-1.6.18-and-1.7.3"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "gstreamer1 -- multiple vulnerabilities"
+    "summary": "Roundcube -- Multiple vulnerabilities"
 }

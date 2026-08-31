@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "jetbrains-goland"
+                "name": "chromium"
             },
             "ranges": [
                 {
@@ -12,7 +12,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2026.2"
+                            "fixed": "150.0.7871.124"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "150.0.7871.124"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +41,100 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.jetbrains.com/privacy-security/issues-fixed/"
+            "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0353146366.html"
         ],
-        "discovery": "2026-07-23T00:00:00Z",
+        "discovery": "2026-07-14T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-64802"
+                "CVE-2026-15764",
+                "CVE-2026-15765",
+                "CVE-2026-15766",
+                "CVE-2026-15767",
+                "CVE-2026-15768",
+                "CVE-2026-15769",
+                "CVE-2026-15770",
+                "CVE-2026-15771",
+                "CVE-2026-15772",
+                "CVE-2026-15773",
+                "CVE-2026-15774",
+                "CVE-2026-15775",
+                "CVE-2026-15776",
+                "CVE-2026-15777",
+                "CVE-2026-15778"
             ]
         },
-        "vid": "35a830f6-8aab-11f1-a744-b42e991fc52e"
+        "vid": "5e1d97cf-4b04-48ae-9eb4-57a943d2d3ea"
     },
-    "details": "https://www.jetbrains.com/privacy-security/issues-fixed/ reports:\n\n> - In JetBrains GoLand before 2026.2 arbitrary code execution was\n>   possible before granting project trust in the Go Modules integration\n> - In JetBrains GoLand before 2026.2 sensitive configuration values\n>   written to log files by default\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 15 security fixes:\n>\n> - \\[517100492\\] Critical CVE-2026-15764: Use after free in Ozone.\n> - \\[518007484\\] Critical CVE-2026-15765: Use after free in Ozone.\n> - \\[514010477\\] High CVE-2026-15766: Uninitialized Use in Skia.\n> - \\[514748734\\] High CVE-2026-15767: Heap buffer overflow in libyuv.\n> - \\[517931625\\] High CVE-2026-15768: Insufficient policy enforcement\n>   in HTML-in-Canvas.\n> - \\[519731111\\] High CVE-2026-15769: Insufficient validation of\n>   untrusted input in Linux Toolkit Theming.\n> - \\[524792614\\] High CVE-2026-15770: Uninitialized Use in V8.\n> - \\[525177160\\] High CVE-2026-15771: Insufficient validation of\n>   untrusted input in Media.\n> - \\[525317502\\] High CVE-2026-15772: Use after free in GPU.\n> - \\[527676561\\] High CVE-2026-15773: Use after free in Core.\n> - \\[530646115\\] High CVE-2026-15774: Use after free in Skia.\n> - \\[531319201\\] High CVE-2026-15775: Insufficient policy enforcement\n>   in V8.\n> - \\[532595489\\] High CVE-2026-15776: Type Confusion in V8.\n> - \\[532929679\\] High CVE-2026-15777: Use after free in UI.\n> - \\[513795122\\] Medium CVE-2026-15778: Insufficient validation of\n>   untrusted input in Navigation.\n",
     "id": "FreeBSD-2026-0360",
-    "modified": "2026-07-28T00:00:00Z",
-    "published": "2026-07-28T00:00:00Z",
+    "modified": "2026-07-29T00:00:00Z",
+    "published": "2026-07-29T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.jetbrains.com/privacy-security/issues-fixed/"
+            "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0353146366.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-64802"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15764"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15765"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15766"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15767"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15768"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15769"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15770"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15771"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15772"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15773"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15774"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15775"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15776"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15777"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15778"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "GoLand -- Multiple vulnerabilities"
+    "summary": "chromium -- security fixes"
 }

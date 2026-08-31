@@ -27,17 +27,6 @@
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.4"
-                        },
-                        {
-                            "fixed": "14.4_8"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
                 }
             ]
         }
@@ -46,28 +35,28 @@
         "discovery": "2026-07-29T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-58085"
+                "CVE-2026-58086"
             ],
             "freebsdsa": [
-                "SA-26:52.if_wg"
+                "SA-26:53.ktrace"
             ]
         },
-        "vid": "3840a83e-8bb8-11f1-a6ab-bc241121aa0a"
+        "vid": "73482c83-8bb8-11f1-a6ab-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nAfter dispatching a decrypt operation to OCF and receiving the result,\nthe wg(4) driver failed to check whether the MAC verification step\nsucceeded. The driver thus silently accepted packets with an invalid\nPoly1305 authentication tag.\n\n# Impact:\n\nA remote attacker who can send UDP packets to a WireGuard endpoint, and\nwho can guess the bounds of the receiver\\'s replay window, can inject\nforged or modified transport data packets into the tunnel.\n\nA remote attacker who can intercept WireGuard packets bound for a\nFreeBSD host can modify the ciphertext and authenticated data without\ndetection by the receiver.\n",
+    "details": "# Problem Description:\n\nAs an inadvertent side effect of an unrelated code change, PRIV_KTRACE\nwas always denied to a jailed root user. Tracing configured by a jailed\nroot user was therefore not flagged as privileged.\n\n# Impact:\n\nAn unprivileged user in a jail that has permission to debug the target\nprocess can modify the jailed root user\\'s ktrace(2) flags, or disable\ntracing outright. A jailed root user therefore cannot reliably trace\nunprivileged processes.\n",
     "id": "FreeBSD-2026-0367",
     "modified": "2026-07-30T00:00:00Z",
     "published": "2026-07-30T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58085"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58086"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:52.if_wg.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:53.ktrace.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Missing MAC validation in wg(4) packet decryption"
+    "summary": "FreeBSD -- ktrace(2) privilege incorrectly validated in jails"
 }

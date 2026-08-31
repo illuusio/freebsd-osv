@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitea"
+                "name": "phpmyfaq-php83"
             },
             "ranges": [
                 {
@@ -12,7 +12,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.27.1"
+                            "fixed": "4.1.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpmyfaq-php84"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpmyfaq-php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,43 +60,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://blog.gitea.com/release-of-1.27.1/"
+            "https://www.phpmyfaq.de/security/advisory-2026-08-04/"
         ],
-        "discovery": "2026-08-11T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-59774",
-                "CVE-2026-60004"
-            ]
-        },
-        "vid": "f4af92f7-95ae-11f1-a6f7-b42e991fc52e"
+        "discovery": "2026-08-04T00:00:00Z",
+        "vid": "7a691536-968b-11f1-9863-50ebf6bdf8e9"
     },
-    "details": "Gitea reports\n\n> This release addresses the following security vulnerabilities. Please\n> upgrade as soon as possible.\n>\n> Unauthenticated arbitrary file read via the Org-mode #INCLUDE\n> directive.\n>\n> Remote code execution via the diffpatch API through Git hook\n> installation.\n",
+    "details": "phpMyFAQ team reports:\n\n> The WebAuthn login flow never persists the challenge it issues, so the\n> replay guard never runs. An attacker who captures a valid assertion\n> can replay it to authenticate as the victim.\n>\n> The brute-force throttle protecting the administration two-factor\n> prompt is scoped to the session. An attacker who starts with a fresh\n> cookie jar resets the counter and can guess TOTP codes without any\n> effective rate limit.\n>\n> An LDAP login silently reactivates a local account that an\n> administrator has blocked, and the state change is not written to the\n> audit log, so a revoked user regains access unnoticed.\n>\n> The remember-me cookie is issued before the second factor has been\n> verified. An attacker who knows only the password can keep the cookie\n> from the incomplete login and use it to return as the fully\n> authenticated user, bypassing two-factor authentication.\n>\n> Glossary input is escaped before it is truncated. Truncation can cut\n> an escape sequence in half, which allows an authenticated user to\n> inject SQL into the resulting query.\n>\n> A tracking file below the document root is served without\n> authentication and contains password reset tokens, allowing an\n> unauthenticated visitor to take over the accounts those tokens belong\n> to.\n>\n> The public PDF export does not check whether a FAQ record is active,\n> so an unauthenticated visitor can retrieve the title and solution of\n> drafts and unpublished entries.\n>\n> Comment endpoints do not verify authorization for the parent FAQ\n> record, exposing the comments, the personal data of the commenters,\n> and attachment metadata of restricted records.\n>\n> The PostgreSQL search backend declares the wrong LIKE ESCAPE\n> character, which makes the wildcard-escaping fix ineffective on that\n> backend.\n>\n> The administration API endpoints that read the LDAP, Elasticsearch,\n> OpenSearcr, and dashboard configuration only require a login instead\n> of the CONFIGURATION_EDIT permission, so any authenticated user can\n> read these settings.\n>\n> An authenticated FAQ editor can reference a local file as an image in\n> a FAQ entry and have the PDF export embed and disclose its contents.\n>\n> The registration endpoints remain reachable even when\n> security.enableRegistration is turned off, so visitors can still\n> create accounts on an installation that is meant to be closed.\n>\n> The content backup is written as a ZIP archive into the web-accessible\n> document root, where anyone who guesses or learns its name can\n> download the full contents of the installation.\n>\n> The backup, database migration, and maintenance mode endpoints can be\n> reached without authentication, allowing an unauthenticated attacker\n> to export data or put the installation into maintenance mode.\n",
     "id": "FreeBSD-2026-0393",
-    "modified": "2026-08-11T00:00:00Z",
-    "published": "2026-08-11T00:00:00Z",
+    "modified": "2026-08-12T00:00:00Z",
+    "published": "2026-08-12T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://blog.gitea.com/release-of-1.27.1/"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-59774"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/go-gitea/gitea/security/advisories/GHSA-6v53-hr58-556r"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60004"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/go-gitea/gitea/security/advisories/GHSA-rcr6-4jqh-j84m"
+            "url": "https://www.phpmyfaq.de/security/advisory-2026-08-04/"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "gitea -- Multiple vulnerabilities"
+    "summary": "phpmyfaq -- multiple vulnerabilities"
 }

@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-08-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-58094"
+            ],
+            "freebsdsa": [
+                "SA-26:63.posixshm"
+            ]
+        },
+        "vid": "ef63188f-a0ff-11f1-ae1f-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nThe FIOSSHMLPGCNF ioctl(2) operation configures the page size for a\nlargepage shared memory object. This is intended to be used immediately\nafter creating the object, before any memory is allocated for the\nobject. The handler checked whether a page size had already been\nconfigured without holding the rangelock. Two concurrent callers could\nboth observe an unconfigured object and set conflicting page sizes,\nleaving the object in an inconsistent state.\n\n# Impact:\n\nAn unprivileged local user can exploit this race to escalate privileges.\n",
+    "id": "FreeBSD-2026-0419",
+    "modified": "2026-08-26T00:00:00Z",
+    "published": "2026-08-26T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58094"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:63.posixshm.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- TOCTOU race in POSIX shared memory large page configuration"
+}

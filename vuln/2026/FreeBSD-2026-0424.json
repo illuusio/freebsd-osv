@@ -1,0 +1,82 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nsd"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.15.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://community.nlnetlabs.nl/t/nsd-4-15-1-security-release/3447"
+        ],
+        "discovery": "2026-08-26T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-18664",
+                "CVE-2026-18916",
+                "CVE-2026-19401",
+                "CVE-2026-19538"
+            ]
+        },
+        "vid": "a711b018-a24b-11f1-81e6-3c7c3fba4204"
+    },
+    "details": "NLnet Labs reports:\n\n> - CVE-2026-18664: IP range access control restrictions are bypassed\n>   for some unintended IP. Reported by [Qifan Zhang from Palo Alto\n>   Networks](https://qifanz.com/), [Claude](https://claude.ai) and [Ada\n>   Logics](https://adalogics.com/).\n> - CVE-2026-18916: Any remote client can denial TCP service by\n>   throttling the TCP receive window (down to 1). Reported by [akoul\n>   (Akhil Koul)](https://github.com/akoul)\n> - CVE-2026-19401: Any remote client can denial UDP service by sending\n>   a specifically crafted query with multiple DNS Cookie options.\n>   Reported by [Qifan Zhang from Palo Alto\n>   Networks](https://qifanz.com/) and\n>   [afldl](mailto:zhangph@yandex.com).\n> - CVE-2026-19538: Anyone with access to the proxy protocol port over\n>   TCP or TLS can bypass BLOCKED access control items. Reported by\n>   [Qifan Zhang from Palo Alto Networks](https://qifanz.com/).\n",
+    "id": "FreeBSD-2026-0424",
+    "modified": "2026-08-27T00:00:00Z",
+    "published": "2026-08-27T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://community.nlnetlabs.nl/t/nsd-4-15-1-security-release/3447"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18664"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-18664.txt"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18916"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-18916.txt"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19401"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-19401.txt"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19538"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-19538.txt"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "NSD -- multiple vulnerabilities"
+}

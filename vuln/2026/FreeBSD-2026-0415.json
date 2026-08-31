@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-08-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-58091"
+            ],
+            "freebsdsa": [
+                "SA-26:58.sound"
+            ]
+        },
+        "vid": "226751fb-a0fe-11f1-ae1f-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nThe implementation of this ioctl attempts to acquire locks on all\nchannels in a sync group. If locking a channel would block, it releases\nthe sync group list lock and sleeps. Upon reawakening, it is possible\nthat the sync group structure is freed, but the implementation did not\nhandle this possibility.\n\n# Impact:\n\nOn a system with a multiple audio devices, an unprivileged local user\ncan exploit this use-after-free to escalate privileges.\n",
+    "id": "FreeBSD-2026-0415",
+    "modified": "2026-08-26T00:00:00Z",
+    "published": "2026-08-26T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58091"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:58.sound.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Kernel use-after-free via the SNDCTL_DSP_SYNCSTART ioctl"
+}

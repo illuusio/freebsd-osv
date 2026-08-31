@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-08-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-58093"
+            ],
+            "freebsdsa": [
+                "SA-26:62.tty"
+            ]
+        },
+        "vid": "a34b5154-a0ff-11f1-ae1f-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nThe TIOCSCTTY ioctl handler drops the tty lock in order to acquire the\nprocess tree lock. After reacquiring the tty lock, the handler did not\nrevalidate the state of the terminal, and could proceed to link a\nterminal that was concurrently being destroyed to the calling process\\'\nsession.\n\n# Impact:\n\nAn unprivileged local user can exploit this race condition to escalate\nprivileges.\n",
+    "id": "FreeBSD-2026-0418",
+    "modified": "2026-08-26T00:00:00Z",
+    "published": "2026-08-26T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58093"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:62.tty.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Kernel use-after-free via tty ioctls"
+}

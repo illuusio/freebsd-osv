@@ -2,17 +2,17 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:kernel",
-                "name": "FreeBSD-kernel"
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ce"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "15.1"
+                            "introduced": "19.2.0"
                         },
                         {
-                            "fixed": "15.1_2"
+                            "fixed": "19.2.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -20,10 +20,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "15.0"
+                            "introduced": "19.1.0"
                         },
                         {
-                            "fixed": "15.0_12"
+                            "fixed": "19.1.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,10 +31,51 @@
                 {
                     "events": [
                         {
-                            "introduced": "14.4"
+                            "introduced": "8.8.0"
                         },
                         {
-                            "fixed": "14.4_8"
+                            "fixed": "19.0.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.2.0"
+                        },
+                        {
+                            "fixed": "19.2.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.1.0"
+                        },
+                        {
+                            "fixed": "19.1.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "8.8.0"
+                        },
+                        {
+                            "fixed": "19.0.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -43,31 +84,91 @@
         }
     ],
     "database_specific": {
+        "cite": [
+            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-2-1-released/?nav=19.2.1"
+        ],
         "discovery": "2026-07-29T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-58088"
-            ],
-            "freebsdsa": [
-                "SA-26:55.elf"
+                "CVE-2026-6267",
+                "CVE-2026-12436",
+                "CVE-2026-15975",
+                "CVE-2026-13113",
+                "CVE-2026-16553",
+                "CVE-2026-6336",
+                "CVE-2026-14341",
+                "CVE-2026-3093",
+                "CVE-2026-15077",
+                "CVE-2026-15831",
+                "CVE-2026-14351",
+                "CVE-2026-4672",
+                "CVE-2025-14562"
             ]
         },
-        "vid": "ced14fa7-8bb8-11f1-a6ab-bc241121aa0a"
+        "vid": "661d3db5-8bd9-11f1-9c40-2cf05da270f3"
     },
-    "details": "# Problem Description:\n\nThe ELF core dump code counted the number of dumpable VM map entries,\nallocated a buffer for the corresponding program headers, then iterated\nover the map a second time to populate them. A process sharing the\naddress space via rfork(2) can mutate the map between the two passes,\ncausing the second pass to write program headers past the end of the\nbuffer.\n\n# Impact:\n\nAn unprivileged local user sharing an address space with a process that\ndumps core can trigger an out-of-bounds write on the kernel heap,\npotentially leading to privilege escalation.\n",
+    "details": "Gitlab reports:\n\n> Sensitive Information Exposure issue in Workhorse impacts GitLab CE/EE\n>\n> Mass Assignment issue in Pipeline Schedule API impacts GitLab CE/EE\n>\n> Denial of Service issue in Merge Request Discussions impacts GitLab\n> CE/EE\n>\n> Race Condition issue in merge request approval rules impacts GitLab EE\n>\n> Insufficiently Protected Credentials issue in Virtual Registries\n> impacts GitLab EE\n>\n> Improper Access Control issue in project import status impacts GitLab\n> CE/EE\n>\n> Improper Authorization issue in project import functionality impacts\n> GitLab CE/EE\n>\n> Cross-site Scripting issue in paginated views impacts GitLab CE/EE\n>\n> Prompt Injection issue in Duo Code Review impacts GitLab EE\n>\n> Incorrect Security Token Generation issue in Duo Workflows impacts\n> GitLab EE\n>\n> Exposure of Sensitive Information issue in merge request title\n> generation impacts GitLab CE/EE\n>\n> Improper Access Control issue in Pipeline Test Report API impacts\n> GitLab CE/EE\n>\n> Incorrect Authorization issue in merge request collaboration settings\n> impacts GitLab CE/EE\n",
     "id": "FreeBSD-2026-0370",
     "modified": "2026-07-30T00:00:00Z",
     "published": "2026-07-30T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58088"
+            "type": "REPORT",
+            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-2-1-released/?nav=19.2.1"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:55.elf.asc"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6267"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12436"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15975"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13113"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16553"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6336"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14341"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3093"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15077"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15831"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14351"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4672"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14562"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Race condition in ELF core dump segment counting"
+    "summary": "Gitlab -- vulnerabilities"
 }

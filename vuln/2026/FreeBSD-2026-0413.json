@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-08-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-58089"
+            ],
+            "freebsdsa": [
+                "SA-26:56.hwpmc"
+            ]
+        },
+        "vid": "9c2801aa-a0fd-11f1-ae1f-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nWhen a process calls execve(2) to execute a setuid or setgid image,\nhwpmc(4) is supposed to detach PMCs owned by unprivileged processes. An\ninverted check meant that this scenario was not handled properly.\n\n# Impact:\n\nAn unprivileged local user who has attached PMCs to a process can\ncontinue monitoring it after the process executes a setuid or setgid\nbinary, contrary to the intended policy.\n",
+    "id": "FreeBSD-2026-0413",
+    "modified": "2026-08-26T00:00:00Z",
+    "published": "2026-08-26T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58089"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:56.hwpmc.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- hwpmc fails to detach PMCs during exec credential transitions"
+}

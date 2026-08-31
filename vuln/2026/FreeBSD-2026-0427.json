@@ -1,0 +1,63 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpbb3"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.3.17"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/phpbb/phpbb/blob/release-3.3.17/phpBB/docs/CHANGELOG.html"
+        ],
+        "discovery": "2026-05-04T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-29199"
+            ]
+        },
+        "vid": "4d06b948-a323-11f1-a655-3497f65b111b"
+    },
+    "details": "The phpBB Team reports:\n\n> Changes since 3.3.16: Improper state verification in OAuth\n> implementation (SECURITY-293), improve secure downloads referer\n> checking (SECURITY-292), hardening of hostname lookups (SECURITY-295).\n>\n> Changes since 3.3.15: Password Reset Link Poisoning (SECURITY-285),\n> IDOR when composing PMs (SECURITY-286), CSRF on report submission\n> (SECURITY-287), Cross-User Notification Read State Manipulation\n> (SECURITY-290), hardening against non-rasterized image uploads\n> (SECURITY-289).\n>\n> Changes since 3.3.14: Use jQuery to generate HTML from page data\n> (SECURITY-283).\n\nThe password reset issue fixed in 3.3.16 has been assigned\nCVE-2026-29199 (CVSS 8.1). When force_server_vars is disabled, phpBB\ntakes the host name from the HTTP Host header to build the password\nreset link, so an attacker able to control that header can have reset\nmails point to a domain under their control, which may lead to account\ntakeover.\n",
+    "id": "FreeBSD-2026-0427",
+    "modified": "2026-08-28T00:00:00Z",
+    "published": "2026-08-28T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/phpbb/phpbb/blob/release-3.3.17/phpBB/docs/CHANGELOG.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-29199"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-7gm6-w7mx-58cr"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-29199"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.phpbb.com/community/viewtopic.php?t=2671024"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "phpBB -- multiple vulnerabilities"
+}

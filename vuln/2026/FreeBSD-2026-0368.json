@@ -27,6 +27,17 @@
                         }
                     ],
                     "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
                 }
             ]
         }
@@ -35,28 +46,28 @@
         "discovery": "2026-07-29T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-58086"
+                "CVE-2026-58087"
             ],
             "freebsdsa": [
-                "SA-26:53.ktrace"
+                "SA-26:54.sysvsem"
             ]
         },
-        "vid": "73482c83-8bb8-11f1-a6ab-bc241121aa0a"
+        "vid": "aa5f956e-8bb8-11f1-a6ab-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nAs an inadvertent side effect of an unrelated code change, PRIV_KTRACE\nwas always denied to a jailed root user. Tracing configured by a jailed\nroot user was therefore not flagged as privileged.\n\n# Impact:\n\nAn unprivileged user in a jail that has permission to debug the target\nprocess can modify the jailed root user\\'s ktrace(2) flags, or disable\ntracing outright. A jailed root user therefore cannot reliably trace\nunprivileged processes.\n",
+    "details": "# Problem Description:\n\nThe GETALL and SETALL commands in semctl(2) recorded the number of\nsemaphores in the target set, dropped the lock protecting the set,\nallocated a buffer sized for that count, and reacquired the lock. A\nsequence-number check was used to verify that the set had not been\nreplaced in the interim, but the sequence number wraps after 0x8000\ncreate/destroy cycles. By rapidly destroying and recreating semaphore\nsets at the same index, another process can cause the sequence number to\nwrap, allowing a set with a different number of semaphores to pass\nvalidation. The subsequent copy then reads or writes past the end of the\nallocated buffer.\n\n# Impact:\n\nAn unprivileged local user can trigger out-of-bounds reads and writes on\nkernel heap memory, potentially leading to privilege escalation.\n",
     "id": "FreeBSD-2026-0368",
     "modified": "2026-07-30T00:00:00Z",
     "published": "2026-07-30T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58086"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58087"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:53.ktrace.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:54.sysvsem.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- ktrace(2) privilege incorrectly validated in jails"
+    "summary": "FreeBSD -- Heap out-of-bounds access in semctl(2)"
 }

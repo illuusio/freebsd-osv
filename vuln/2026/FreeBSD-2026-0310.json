@@ -57,28 +57,33 @@
         "discovery": "2026-06-30T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-49422"
+                "CVE-2026-49427",
+                "CVE-2026-49428"
             ],
             "freebsdsa": [
-                "SA-26:43.tcp"
+                "SA-26:44.posixshm"
             ]
         },
-        "vid": "6c547c1b-74e2-11f1-958d-bc241121aa0a"
+        "vid": "91017b3b-74e2-11f1-958d-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nThe RACK setsockopt(2) handler drops the connection lock in order to\ncopy option data from userspace, then reacquires the lock. After\nreacquiring, it verifies that the TCP stack had not been switched away,\nbut did not reload its pointer to the stack\\'s per-connection control\nblock. If userspace switches stacks twice during this window, the check\nwill succeed but the saved pointer will refer to freed memory.\n\n# Impact:\n\nThe bug may be exploitable by an unprivileged local user to escalate\nprivileges.\n",
+    "details": "# Problem Description:\n\nPages belonging to largepage shared memory objects were not explicitly\nwired. When sendfile(2) transmitted such an object with the SF_NOCACHE\nflag, it freed the underlying pages after transmission even though\nexisting mappings still referred to them. \\[CVE-2026-49427\\]\n\nSeparately, certain system calls, such open(2) with the O_TRUNC flag\nset, and fspacectl(2), could incorrectly free memory in largepage\nobjects. These operations are not permitted on largepage objects, but\nthe implementation did not verify this. \\[CVE-2026-49428\\]\n\n# Impact:\n\nAn unprivileged local user can abuse the bug to access freed kernel\nmemory. This can be exploited to escalate privileges.\n",
     "id": "FreeBSD-2026-0310",
     "modified": "2026-07-01T00:00:00Z",
     "published": "2026-07-01T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49422"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49427"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:43.tcp.asc"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49428"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:44.posixshm.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Use-after-free in TCP RACK stack option handler"
+    "summary": "FreeBSD -- Multiple vulnerabilities in POSIX largepage objects"
 }

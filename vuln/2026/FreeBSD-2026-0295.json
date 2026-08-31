@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gstreamer1-libav"
+                "name": "dnsdist"
             },
             "ranges": [
                 {
@@ -12,83 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.28.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "gstreamer1-plugins"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.28.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "gstreamer1-plugins-bad"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.28.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "gstreamer1-plugins-good"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.28.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "gstreamer1-plugins-ugly"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.28.4"
+                            "fixed": "2.0.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,153 +22,60 @@
     ],
     "database_specific": {
         "cite": [
-            "https://gstreamer.freedesktop.org/security/"
+            "https://www.dnsdist.org/security-advisories/powerdns-advisory-for-dnsdist-2026-09.html"
         ],
-        "discovery": "2026-06-12T00:00:00Z",
+        "discovery": "2026-06-25T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-12891",
-                "CVE-2026-12892",
-                "CVE-2026-12893",
-                "CVE-2026-52717",
-                "CVE-2026-52718",
-                "CVE-2026-52719",
-                "CVE-2026-52720",
-                "CVE-2026-52721",
-                "CVE-2026-52722",
-                "CVE-2026-53703",
-                "CVE-2026-53704",
-                "CVE-2026-53705"
+                "CVE-2026-40011",
+                "CVE-2026-42004",
+                "CVE-2026-42005",
+                "CVE-2026-40208",
+                "CVE-2026-40209",
+                "CVE-2026-40210",
+                "CVE-2026-40211"
             ]
         },
-        "vid": "4e82a0e6-6801-42c6-8fb6-91b6b275a9e1"
+        "vid": "6c0e17cf-73a0-11f1-910d-3c7c3fba4204"
     },
-    "details": "The GStreamer project reports:\n\n> Multiple security issues were identified and fixed in the GStreamer\n> framework.\n>\n> - GStreamer-SA-2026-0030: Missing bounds checks in RTCP SDES packet\n>   parsing\n> - GStreamer-SA-2026-0031: Integer overflow and truncation in MXF\n>   demuxer\n> - GStreamer-SA-2026-0032: Out-of-bounds read and write in XMP tag\n>   parser\n> - GStreamer-SA-2026-0033: Out-of-bounds read and modification of const\n>   data in ID3v2 parser\n> - GStreamer-SA-2026-0034: Division by zero in mDVDsub subtitle parser\n> - GStreamer-SA-2026-0035: Integer overflow in WavPack decoder\n> - GStreamer-SA-2026-0036: Out-of-bounds read in SBC audio parser\n>   header parsing\n> - GStreamer-SA-2026-0037: Heap corruption in gst-libav AV protocol\n>   pipe\n> - GStreamer-SA-2026-0038: Memory leak and NULL pointer dereference in\n>   gst-libav demuxer\n> - GStreamer-SA-2026-0039: Assertion in AV1 parser tile data parsing\n> - GStreamer-SA-2026-0040: Out-of-bounds read in VA JPEG decoder\n>   segment parsing\n> - GStreamer-SA-2026-0042: Out-of-bounds reads and integer overflows in\n>   RealMedia demuxer\n> - GStreamer-SA-2026-0043: Out-of-bounds read and write in RFB source\n> - GStreamer-SA-2026-0045: Out-of-bounds reads in PCAP parser due to\n>   missing bounds checks\n> - GStreamer-SA-2026-0046: Integer overflow in VMNC decoder cursor\n>   payload size calculation\n> - GStreamer-SA-2026-0047: One-byte out-of-bounds read in H.264 NAL\n>   unit parser\n> - GStreamer-SA-2026-0048: Out-of-bounds read in H.266 parser VUI\n>   aspect ratio parsing\n",
+    "details": "The DNSdist team reports:\n\n> - CVE-2026-40011: Prometheus denial of service via crafted DNS queries\n> - CVE-2026-42004: EDNS options smuggling\n> - CVE-2026-42005: Insufficient input validation of internal web server\n> - CVE-2026-40208: Denial of service via DoH3 queries\n> - CVE-2026-40209: Denial of service via IXFR queries\n> - CVE-2026-40210: Out-of-bounds read in SetMacAddrAction\n> - CVE-2026-40211: Denial of service via crafted DoH3 queries\n>\n> Thanks to people below for reporting these vulnerabilities.\n>\n> - Haruki Oyama (Waseda University)\n> - Vitaly Simonovich\n> - ilya rozentsvaig\n> - ylwango613\n> - Qifan Zhang (Palo Alto Networks)\n> - Mehtab Zafar\n",
     "id": "FreeBSD-2026-0295",
     "modified": "2026-06-29T00:00:00Z",
     "published": "2026-06-29T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://gstreamer.freedesktop.org/security/"
+            "url": "https://www.dnsdist.org/security-advisories/powerdns-advisory-for-dnsdist-2026-09.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12891"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40011"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12892"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42004"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12893"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42005"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52717"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40208"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52718"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40209"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52719"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40210"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52720"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52721"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52722"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53703"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53704"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53705"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0030.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0031.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0032.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0033.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0034.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0035.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0036.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0037.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0038.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0039.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0040.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0042.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0043.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0045.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0046.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0047.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0048.html"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40211"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "gstreamer1 -- multiple vulnerabilities"
+    "summary": "DNSdist -- vulnerabilities"
 }

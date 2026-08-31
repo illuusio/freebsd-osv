@@ -16,6 +16,17 @@
                         }
                     ],
                     "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
                 }
             ]
         }
@@ -24,28 +35,28 @@
         "discovery": "2026-07-29T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-58083"
+                "CVE-2026-58084"
             ],
             "freebsdsa": [
-                "SA-26:50.kqueue"
+                "SA-26:51.ktimer"
             ]
         },
-        "vid": "a4e4a74c-8bb7-11f1-a6ab-bc241121aa0a"
+        "vid": "eab90fc5-8bb7-11f1-a6ab-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nWhile the kernel was copying knotes during fork, a knote with a\ntimer-based filter could fire and be enqueued on the kqueue\\'s active\nlist before the copy was complete. The copy routine did not account for\nthis and could enqueue the new knote a second time, corrupting the\nactive list. In addition, the copy routine did not hold the appropriate\nlocks while reading knote state, allowing further races.\n\n# Impact:\n\nAn unprivileged local user can trigger a use-after-free in the kernel,\npotentially leading to privilege escalation.\n",
+    "details": "# Problem Description:\n\nTo retrieve the previous timer value, the kernel calls\nrealtimer_gettime(), which obtains the current time for the timer\\'s\nclock. For a timer using CLOCK_TAI this can fail when no TAI offset has\nbeen configured, but the error return was not checked, so the\nuninitialized output buffer was copied to userspace.\n\n# Impact:\n\nAn unprivileged local user can obtain uninitialized kernel stack memory\nby creating a POSIX timer with CLOCK_TAI and calling timer_settime(2),\npotentially disclosing sensitive kernel data.\n",
     "id": "FreeBSD-2026-0365",
     "modified": "2026-07-30T00:00:00Z",
     "published": "2026-07-30T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58083"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58084"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:50.kqueue.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:51.ktimer.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Use-after-free in kqueue copy-on-fork"
+    "summary": "FreeBSD -- Kernel stack disclosure via timer_settime(2)"
 }

@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "150.0.7871.124"
+                            "fixed": "150.0.7871.128"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "150.0.7871.124"
+                            "fixed": "150.0.7871.128"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,98 +41,58 @@
     ],
     "database_specific": {
         "cite": [
-            "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0353146366.html"
+            "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_049796704.html"
         ],
-        "discovery": "2026-07-14T00:00:00Z",
+        "discovery": "2026-07-16T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-15764",
-                "CVE-2026-15765",
-                "CVE-2026-15766",
-                "CVE-2026-15767",
-                "CVE-2026-15768",
-                "CVE-2026-15769",
-                "CVE-2026-15770",
-                "CVE-2026-15771",
-                "CVE-2026-15772",
-                "CVE-2026-15773",
-                "CVE-2026-15774",
-                "CVE-2026-15775",
-                "CVE-2026-15776",
-                "CVE-2026-15777",
-                "CVE-2026-15778"
+                "CVE-2026-15899",
+                "CVE-2026-15900",
+                "CVE-2026-15901",
+                "CVE-2026-15902",
+                "CVE-2026-15903",
+                "CVE-2026-15904",
+                "CVE-2026-15905"
             ]
         },
-        "vid": "5e1d97cf-4b04-48ae-9eb4-57a943d2d3ea"
+        "vid": "3acf4890-b59c-4265-9867-2cf1ae6869f2"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 15 security fixes:\n>\n> - \\[517100492\\] Critical CVE-2026-15764: Use after free in Ozone.\n> - \\[518007484\\] Critical CVE-2026-15765: Use after free in Ozone.\n> - \\[514010477\\] High CVE-2026-15766: Uninitialized Use in Skia.\n> - \\[514748734\\] High CVE-2026-15767: Heap buffer overflow in libyuv.\n> - \\[517931625\\] High CVE-2026-15768: Insufficient policy enforcement\n>   in HTML-in-Canvas.\n> - \\[519731111\\] High CVE-2026-15769: Insufficient validation of\n>   untrusted input in Linux Toolkit Theming.\n> - \\[524792614\\] High CVE-2026-15770: Uninitialized Use in V8.\n> - \\[525177160\\] High CVE-2026-15771: Insufficient validation of\n>   untrusted input in Media.\n> - \\[525317502\\] High CVE-2026-15772: Use after free in GPU.\n> - \\[527676561\\] High CVE-2026-15773: Use after free in Core.\n> - \\[530646115\\] High CVE-2026-15774: Use after free in Skia.\n> - \\[531319201\\] High CVE-2026-15775: Insufficient policy enforcement\n>   in V8.\n> - \\[532595489\\] High CVE-2026-15776: Type Confusion in V8.\n> - \\[532929679\\] High CVE-2026-15777: Use after free in UI.\n> - \\[513795122\\] Medium CVE-2026-15778: Insufficient validation of\n>   untrusted input in Navigation.\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 7 security fixes:\n>\n> - \\[516987782\\] Critical CVE-2026-15899: Use after free in\n>   CameraCapture.\n> - \\[523750584\\] Critical CVE-2026-15900: Use after free in GPU.\n> - \\[533446300\\] Critical CVE-2026-15901: Use after free in Network.\n> - \\[522436154\\] High CVE-2026-15902: Use after free in Cast.\n> - \\[531503216\\] High CVE-2026-15903: Out of bounds read and write in\n>   V8.\n> - \\[532925350\\] High CVE-2026-15904: Use after free in Ozone.\n> - \\[532970574\\] High CVE-2026-15905: Use after free in Aura.\n",
     "id": "FreeBSD-2026-0361",
     "modified": "2026-07-29T00:00:00Z",
     "published": "2026-07-29T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_0353146366.html"
+            "url": "https://chromereleases.googleblog.com/2026/07/stable-channel-update-for-desktop_049796704.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15764"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15899"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15765"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15900"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15766"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15901"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15767"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15902"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15768"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15903"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15769"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15904"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15770"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15771"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15772"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15773"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15774"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15775"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15776"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15777"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15778"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15905"
         }
     ],
     "schema_version": "1.7.0",

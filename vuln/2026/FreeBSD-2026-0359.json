@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "firefox"
+                "name": "jetbrains-goland"
             },
             "ranges": [
                 {
@@ -12,45 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "152.0.0,2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "firefox-esr"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "140.12,2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "thunderbird"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "140.13"
+                            "fixed": "2026.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,30 +22,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.mozilla.org/en-US/security/advisories/mfsa2026-68/#CVE-2026-16360"
+            "https://www.jetbrains.com/privacy-security/issues-fixed/"
         ],
-        "discovery": "2026-07-21T00:00:00Z",
+        "discovery": "2026-07-23T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-16360"
+                "CVE-2026-64802"
             ]
         },
-        "vid": "b579bbde-8aa2-11f1-a744-b42e991fc52e"
+        "vid": "35a830f6-8aab-11f1-a744-b42e991fc52e"
     },
-    "details": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-68/#CVE-2026-16360\nreports:\n\n> Memory safety bugs present in Firefox ESR 115.37, Firefox ESR 140.12\n> and Firefox 152. Some of these bugs showed evidence of memory\n> corruption and we presume that with enough effort some of these could\n> have been exploited to run arbitrary code.\n",
+    "details": "https://www.jetbrains.com/privacy-security/issues-fixed/ reports:\n\n> - In JetBrains GoLand before 2026.2 arbitrary code execution was\n>   possible before granting project trust in the Go Modules integration\n> - In JetBrains GoLand before 2026.2 sensitive configuration values\n>   written to log files by default\n",
     "id": "FreeBSD-2026-0359",
     "modified": "2026-07-28T00:00:00Z",
     "published": "2026-07-28T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-68/#CVE-2026-16360"
+            "url": "https://www.jetbrains.com/privacy-security/issues-fixed/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16360"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-64802"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Mozilla -- Memory safety bugs"
+    "summary": "GoLand -- Multiple vulnerabilities"
 }

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "routinator"
+                "name": "jenkins"
             },
             "ranges": [
                 {
@@ -12,7 +12,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.15.2"
+                            "fixed": "2.568"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jenkins-lts"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.555.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +41,65 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-49235.txt"
+            "https://www.jenkins.io/security/advisory/2026-06-10/"
         ],
-        "discovery": "2026-06-08T00:00:00Z",
+        "discovery": "2026-06-10T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-49235"
+                "CVE-2026-53435",
+                "CVE-2026-53436",
+                "CVE-2026-53437",
+                "CVE-2026-53438",
+                "CVE-2026-53439",
+                "CVE-2026-53440",
+                "CVE-2026-53441",
+                "CVE-2026-53442"
             ]
         },
-        "vid": "ab152ccb-6a59-11f1-bf61-3c7c3fba4204"
+        "vid": "35598415-56de-4562-959c-11fb1fd2d995"
     },
-    "details": "<https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-49235.txt>\nreports:\n\n> When Routinator encounters a file via RRDP using a specifically\n> crafted Document Type Definition, Routinator crashes.\n>\n> Thanks to [X41 D-Sec GmbH](https://www.x41-dsec.de/) for reporting the\n> vulnerability.\n",
+    "details": "Jenkins Security Advisory 2026-06-10:\n\n> - SECURITY-3707 / CVE-2026-53435: Deserialization vulnerability (High)\n> - SECURITY-3711+3755 / CVE-2026-53436, CVE-2026-53437: Open redirect\n>   vulnerability (Medium)\n> - SECURITY-3712 / CVE-2026-53438: Missing permission check allows\n>   canceling queue items (Medium)\n> - SECURITY-3713 / CVE-2026-53439: Missing permission checks allow\n>   obtaining limited user profile information (Medium)\n> - SECURITY-3721 / CVE-2026-53440: Open redirect vulnerability in\n>   \\\"Delegate to servlet container\\\" security realm (Medium)\n> - SECURITY-3731 / CVE-2026-53441: Stored XSS vulnerability in node\n>   offline cause description (High)\n> - SECURITY-3744 / CVE-2026-53442: Plaintext secrets persisted and\n>   served by config.xml endpoints (Medium)\n",
     "id": "FreeBSD-2026-0284",
     "modified": "2026-06-17T00:00:00Z",
     "published": "2026-06-17T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-49235.txt"
+            "url": "https://www.jenkins.io/security/advisory/2026-06-10/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49235"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53435"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53436"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53437"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53438"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53439"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53440"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53441"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53442"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Routinator -- CWE-755 Improper Handling of Exceptional Conditions"
+    "summary": "jenkins -- multiple vulnerabilities"
 }

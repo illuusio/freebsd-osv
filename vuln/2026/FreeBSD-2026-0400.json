@@ -1,0 +1,119 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ce"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.2.0"
+                        },
+                        {
+                            "fixed": "19.2.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.1.0"
+                        },
+                        {
+                            "fixed": "19.1.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.11.10"
+                        },
+                        {
+                            "fixed": "19.0.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.2.0"
+                        },
+                        {
+                            "fixed": "19.2.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.1.0"
+                        },
+                        {
+                            "fixed": "19.1.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.11.10"
+                        },
+                        {
+                            "fixed": "19.0.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-2-4-released/?nav=19.2.4"
+        ],
+        "discovery": "2026-08-17T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-19478",
+                "CVE-2026-19650"
+            ]
+        },
+        "vid": "3a65fb7e-9ac2-11f1-bdc8-2cf05da270f3"
+    },
+    "details": "Gitlab reports:\n\n> Code Injection issue via GraphQL directive impacts GitLab CE/EE\n>\n> Cross-Site Request Forgery issue in GraphQL multiplex query handler\n> impacts GitLab CE/EE\n",
+    "id": "FreeBSD-2026-0400",
+    "modified": "2026-08-18T00:00:00Z",
+    "published": "2026-08-18T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-2-4-released/?nav=19.2.4"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19478"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19650"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Gitlab -- Vulnerabilities"
+}

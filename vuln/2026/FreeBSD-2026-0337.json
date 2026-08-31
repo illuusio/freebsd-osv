@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "nginx"
+                "name": "phpmyfaq-php83"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.30.4,3"
+                            "fixed": "4.1.6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "nginx-devel"
+                "name": "phpmyfaq-php84"
             },
             "ranges": [
                 {
@@ -31,7 +31,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.31.3"
+                            "fixed": "4.1.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpmyfaq-php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,40 +60,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://nginx.org/en/security_advisories.html"
+            "https://www.phpmyfaq.de/security/advisory-2026-07-13/"
         ],
-        "discovery": "2026-07-15T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-42533",
-                "CVE-2026-56434",
-                "CVE-2026-60005"
-            ]
-        },
-        "vid": "56feeac6-8263-11f1-92ba-bc24110523fe"
+        "discovery": "2026-07-13T00:00:00Z",
+        "vid": "0a0aca9f-8290-11f1-a93b-50ebf6bdf8e9"
     },
-    "details": "The nginx development team reports:\n\n> Buffer overflow when using map and regex (CVE-2026-42533). Severity:\n> major.\n>\n> Memory disclosure when using ngx_http_slice_module (CVE-2026-60005).\n> Severity: medium.\n>\n> Use-after-free when using ngx_http_ssi_module (CVE-2026-56434).\n> Severity: medium.\n",
+    "details": "phpMyFAQ team reports:\n\n> An authenticated administrator can supply an untrusted update-package\n> path to the configuration API, causing phpMyFAQ to write an arbitrary\n> PHP file to the server and thereby execute attacker-controlled code.\n>\n> An attacker can exploit a path traversal in the category image\n> deletion routine to remove arbitrary files outside the intended\n> directory, which can leave the installation in a state that allows a\n> setup takeover.\n>\n> The two-factor authentication login flow can be completed without\n> verifying the password factor, so an attacker who possesses only the\n> second factor is able to authenticate as the victim.\n>\n> A delegated administrator with only the GROUP_EDIT permission can\n> assign group memberships without restriction through\n> GroupController::updateMembers, inheriting rights they do not hold and\n> escalating their privileges.\n>\n> An authenticated user can inject SQL through an unescaped stop word\n> inserted via StopWords::add(), allowing manipulation of the underlying\n> database query.\n",
     "id": "FreeBSD-2026-0337",
     "modified": "2026-07-18T00:00:00Z",
     "published": "2026-07-18T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://nginx.org/en/security_advisories.html"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42533"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-56434"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60005"
+            "url": "https://www.phpmyfaq.de/security/advisory-2026-07-13/"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "nginx -- multiple vulnerabilities"
+    "summary": "phpmyfaq -- multiple vulnerabilities"
 }

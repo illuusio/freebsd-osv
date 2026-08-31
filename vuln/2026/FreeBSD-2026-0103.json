@@ -10,6 +10,9 @@
                     "events": [
                         {
                             "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.10.21"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -26,6 +29,9 @@
                     "events": [
                         {
                             "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.11.16"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -123,7 +129,7 @@
     },
     "details": "Seth Larson reports:\n\n> HTTP proxy via \\\"CONNECT\\\" tunneling doesn\\'t sanitize CR/LF\n> (CVE-2026-1502).\n",
     "id": "FreeBSD-2026-0103",
-    "modified": "2026-06-19T00:00:00Z",
+    "modified": "2026-08-14T00:00:00Z",
     "published": "2026-04-12T00:00:00Z",
     "references": [
         {

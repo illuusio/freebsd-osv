@@ -46,28 +46,28 @@
         "discovery": "2026-06-30T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-49424"
+                "CVE-2026-49425"
             ],
             "freebsdsa": [
-                "SA-26:47.linux"
+                "SA-26:48.compat32"
             ]
         },
-        "vid": "2355c475-74e3-11f1-958d-bc241121aa0a"
+        "vid": "43f9ca02-74e3-11f1-958d-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nThe Linux waitid() implementation translates a FreeBSD siginfo_t struct\ninto a stack-declared Linux siginfo_t. It did not first zero the stack\nstruct.\n\n# Impact:\n\nAn unprivileged user may observe 104 bytes of uninitialized kernel stack\ndata, which may contain sensitive information.\n",
+    "details": "# Problem Description:\n\nThe compat32 kevent() handler translates a 64-bit kevent struct into a\nstack- declared 32-bit struct. It did not first zero the stack struct.\n\n# Impact:\n\nAn unprivileged user may observe a small amount of uninitialized kernel\nstack data, which may contain sensitive information.\n",
     "id": "FreeBSD-2026-0314",
     "modified": "2026-07-01T00:00:00Z",
     "published": "2026-07-01T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49424"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49425"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:47.linux.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:48.compat32.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Kernel stack disclosure in Linux compatibility layer"
+    "summary": "FreeBSD-kernel -- Kernel stack disclosure in 32-bit compatibility support"
 }

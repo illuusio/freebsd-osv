@@ -60,30 +60,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/erlang/otp/security/advisories/GHSA-24cv-hwgr-37fq"
+            "https://github.com/erlang/otp/security/advisories/GHSA-xcxj-5pg2-v72j"
         ],
         "discovery": "2026-06-10T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-48858"
+                "CVE-2026-49760"
             ]
         },
-        "vid": "d87e0681-64d4-11f1-ab11-4c526214c986"
+        "vid": "d87de755-64d4-11f1-ab11-4c526214c986"
     },
-    "details": "https://github.com/erlang/otp/security/advisories/GHSA-24cv-hwgr-37fq\nreports:\n\n> The FTP client in passive mode did not validate the IP address\n> returned in the server\\'s response, allowing a compromised or\n> malicious server to redirect the data connection to an arbitrary host.\n> This enables server-side request forgery (SSRF) and FTP bounce\n> attacks.\n",
+    "details": "https://github.com/erlang/otp/security/advisories/GHSA-xcxj-5pg2-v72j\nreports:\n\n> Fixed a stack overflow in ei_s_print_term in erl_interface for very\n> large integer terms (more than 2000 hexadecimal digits long).\n",
     "id": "FreeBSD-2026-0268",
     "modified": "2026-06-10T00:00:00Z",
     "published": "2026-06-10T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/erlang/otp/security/advisories/GHSA-24cv-hwgr-37fq"
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-xcxj-5pg2-v72j"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-48858"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49760"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Erlang/OTP -- FTP passive-mode client does not validate server response IP"
+    "summary": "Erlang/OTP -- stack overflow in ei_s_print_term for very large integer terms"
 }

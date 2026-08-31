@@ -3,79 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitlab-ce"
+                "name": "mailpit"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "19.1.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "19.1.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "19.0.0"
-                        },
-                        {
-                            "fixed": "19.0.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "9.1.0"
-                        },
-                        {
-                            "fixed": "18.11.7"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "gitlab-ee"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "19.1.0"
-                        },
-                        {
-                            "fixed": "19.1.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "19.0.0"
-                        },
-                        {
-                            "fixed": "19.0.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "9.1.0"
-                        },
-                        {
-                            "fixed": "18.11.7"
+                            "fixed": "1.30.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -85,65 +22,29 @@
     ],
     "database_specific": {
         "cite": [
-            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-1-2-released/"
+            "https://github.com/axllent/mailpit/releases/tag/v1.30.4"
         ],
-        "discovery": "2026-07-08T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-6896",
-                "CVE-2026-13320",
-                "CVE-2026-11827",
-                "CVE-2026-8472",
-                "CVE-2026-7492",
-                "CVE-2025-12506",
-                "CVE-2026-13151",
-                "CVE-2026-6352"
-            ]
-        },
-        "vid": "84ce0c0c-7b4e-11f1-9c40-2cf05da270f3"
+        "discovery": "2026-07-09T00:00:00Z",
+        "vid": "7a56b0f7-7b62-11f1-8a70-10ffe07f9334"
     },
-    "details": "Gitlab reports:\n\n> Cross-site Scripting issue in vulnerability evidence table renderer\n> impacts GitLab EE\n>\n> HTML Injection in wiki markup rendering impacts GitLab CE/EE\n>\n> Insufficiently Protected Credentials issue in repository mirroring\n> impacts GitLab EE\n>\n> Improper Access Control issue in work items impacts GitLab EE\n>\n> Missing Authorization issue in commit discussion display impacts\n> GitLab CE/EE\n>\n> Ambiguity Reference issue in a tag or branch impacts GitLab CE/EE\n>\n> Incorrect Authorization issue in group-level settings impacts GitLab\n> EE\n>\n> Incorrect Authorization issue in compliance violation management\n> impacts GitLab EE\n",
+    "details": "Mailpit author reports:\n\n> Mailpit\\'s SMTP server reads each command line with an unbounded\n> bufio.Reader.ReadString(\\'\\\\n\\') before parsing the command or\n> enforcing any protocol length limit. A remote SMTP client can send an\n> oversized single command line and force Mailpit to allocate\n> attacker-controlled memory before the server returns a syntax error or\n> times out, even though RFC 5321 limits SMTP command lines to 512\n> octets including CRLF.\n>\n> Mailpit\\'s thumbnail endpoint decodes attacker-supplied image\n> attachments into a full raster before checking any decoded-pixel,\n> dimension, or memory budget. A remote client that can store an email\n> and reach the default web API can supply a compact high-dimension\n> image, then request `/api/v1/message/{id}/part/{partID}/thumb` to\n> force server-side memory and CPU work far larger than the encoded\n> attachment size before Mailpit returns a 180x120 thumbnail.\n",
     "id": "FreeBSD-2026-0330",
     "modified": "2026-07-09T00:00:00Z",
     "published": "2026-07-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-1-2-released/"
+            "url": "https://github.com/axllent/mailpit/releases/tag/v1.30.4"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6896"
+            "type": "WEB",
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-w878-pj84-3j5v"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13320"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-11827"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-8472"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7492"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-12506"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13151"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6352"
+            "type": "WEB",
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-75mr-qw9x-3r39"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Gitlab -- Vulnerabilities"
+    "summary": "mailpit -- multiple vulnerabilities"
 }

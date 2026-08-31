@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "postgresql-jdbc"
+                "name": "icinga2"
             },
             "ranges": [
                 {
@@ -12,15 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "47.7.12"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "47.7.4"
+                            "fixed": "2.16.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -30,30 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-j92g-9f8w-j867"
+            "https://github.com/Icinga/icinga2/security/advisories/GHSA-vj39-ww8j-vvx5"
         ],
-        "discovery": "2026-06-30T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-54291"
-            ]
-        },
-        "vid": "7701f760-745c-11f1-bc50-6cc21735f730"
+        "discovery": "2026-06-29T00:00:00Z",
+        "vid": "5b7cb356-749c-11f1-8a71-50ebf6bdf8e9"
     },
-    "details": "PostgreSQL project reports:\n\n> channelBinding=require connections can be silently downgraded from\n> SCRAM-SHA-256-PLUS (with channel binding) to plain SCRAM-SHA-256\n> (without it), losing the man-in-the-middle protection the setting is\n> meant to guarantee. An attacker who can intercept the TLS connection\n> triggers the downgrade with a certificate whose signature algorithm\n> has no tls-server-end-point channel-binding hash. Examples are\n> Ed25519, Ed448, and post-quantum algorithms.\n",
+    "details": "The Icinga team reports:\n\n> The code handling certificate update JSON-RPC messages was flawed and\n> did not properly validate the sender of the message, allowing an\n> unauthenticated attacker that can connect to Icinga 2 to update both\n> the own certificate as well as the trusted CA certificate. Updating\n> the trusted CA allows an attacker to impersonate a trusted node,\n> allowing them to take control over the node.\n>\n> Any Icinga 2 instance that is accessible to an attacker over the\n> network is affected.\n",
     "id": "FreeBSD-2026-0302",
     "modified": "2026-06-30T00:00:00Z",
     "published": "2026-06-30T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-j92g-9f8w-j867"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54291"
+            "url": "https://github.com/Icinga/icinga2/security/advisories/GHSA-vj39-ww8j-vvx5"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "PostgresSQL JDBC -- Silent channel-binding authentication downgrade via unsupported certificate algorithms"
+    "summary": "icinga2 -- Improper access control for JSON-RPC update certificate messages"
 }

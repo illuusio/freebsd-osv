@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "chromium"
+                "name": "postgresql-jdbc"
             },
             "ranges": [
                 {
@@ -12,26 +12,15 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "149.0.7827.200"
+                            "fixed": "47.7.12"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ungoogled-chromium"
-            },
-            "ranges": [
+                },
                 {
                     "events": [
                         {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "149.0.7827.200"
+                            "introduced": "47.7.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,40 +30,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html"
+            "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-j92g-9f8w-j867"
         ],
-        "discovery": "2026-06-25T00:00:00Z",
+        "discovery": "2026-06-30T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-13281",
-                "CVE-2026-13282",
-                "CVE-2026-13283"
+                "CVE-2026-54291"
             ]
         },
-        "vid": "5181294e-7471-11f1-8de5-a8a1599412c6"
+        "vid": "7701f760-745c-11f1-bc50-6cc21735f730"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 3 security fixes:\n>\n> - \\[513138301\\] High CVE-2026-13281: Integer overflow in Mojo.\n>   Reported by Google on 2026-05-14\n> - \\[517522620\\] High CVE-2026-13282: Use after free in Payments.\n>   Reported by Google on 2026-05-28\n> - \\[522561151\\] High CVE-2026-13283: Use after free in AdFilter.\n>   Reported by Google on 2026-06-11\n",
+    "details": "PostgreSQL project reports:\n\n> channelBinding=require connections can be silently downgraded from\n> SCRAM-SHA-256-PLUS (with channel binding) to plain SCRAM-SHA-256\n> (without it), losing the man-in-the-middle protection the setting is\n> meant to guarantee. An attacker who can intercept the TLS connection\n> triggers the downgrade with a certificate whose signature algorithm\n> has no tls-server-end-point channel-binding hash. Examples are\n> Ed25519, Ed448, and post-quantum algorithms.\n",
     "id": "FreeBSD-2026-0301",
     "modified": "2026-06-30T00:00:00Z",
     "published": "2026-06-30T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html"
+            "url": "https://github.com/pgjdbc/pgjdbc/security/advisories/GHSA-j92g-9f8w-j867"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13281"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13282"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13283"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54291"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "chromium -- security fixes"
+    "summary": "PostgresSQL JDBC -- Silent channel-binding authentication downgrade via unsupported certificate algorithms"
 }

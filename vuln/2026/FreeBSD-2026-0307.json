@@ -57,38 +57,28 @@
         "discovery": "2026-06-30T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-49429",
-                "CVE-2026-49430",
-                "CVE-2026-49431"
+                "CVE-2026-49420"
             ],
             "freebsdsa": [
-                "SA-26:40.zfs"
+                "SA-26:41.libalias"
             ]
         },
-        "vid": "9534b664-74e1-11f1-958d-bc241121aa0a"
+        "vid": "f5dd96dd-74e1-11f1-958d-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nThe ZFS_IOC_USERSPACE_MANY ioctl, used by zfs-userspace(8), truncated a\n64-bit output buffer size to a 32-bit integer for the kernel allocation,\nbut used the original 64-bit size as the buffer limit when writing\nrecords.\n\nThe ZFS_IOC_RECV_NEW ioctl, in the heal receive path, similarly\ntruncated a 64-bit payload size to a 32-bit integer for allocation, then\nused the original 64-bit size as the length for a byteswap operation.\n\nThe ZFS_IOC_SET_PROP ioctl, used by zfs-set(8), incorrectly validated\nthe calling user such that an unprivileged user is able to set metadata\non a dataset indicating that the dataset has received properties from a\nzfs-recv(8) stream.\n\n# Impact:\n\nA local user with the \\\"userused\\\" delegated ZFS permission can trigger\na kernel heap overflow via the ZFS_IOC_USERSPACE_MANY ioctl, potentially\nescalating privileges. \\[CVE-2026-49429\\]\n\nA local user with the \\\"receive\\\" delegated ZFS permission can trigger\nkernel memory corruption via ZFS_IOC_RECV_NEW by sending a crafted\nreceive stream in heal mode. \\[CVE-2026-49430\\]\n\nAny local user can set the internal ZFS metadata flag \\\"\\$hasrecvd\\\" on\ndatasets via ZFS_IOC_SET_PROP. \\[CVE-2026-49431\\]\n",
+    "details": "# Problem Description:\n\nThe RTSP handler in libalias rewrote outgoing packets into a\nfixed-length stack buffer without checking whether the rewritten data\nfit in the buffer, or whether the result fit back in the original\npacket.\n\n# Impact:\n\nA host sending crafted RTSP traffic from inside a NAT gateway using\nlibalias can overflow a stack buffer, potentially achieving remote code\nexecution in the kernel (when using ipfw(4) NAT) or in the natd(8)\nprocess (which generally runs as the root user).\n",
     "id": "FreeBSD-2026-0307",
     "modified": "2026-07-01T00:00:00Z",
     "published": "2026-07-01T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49429"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49420"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49430"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49431"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:40.zfs.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:41.libalias.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Multiple vulnerabilities in OpenZFS"
+    "summary": "FreeBSD -- Buffer overflow in libalias RTSP handler"
 }

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "dnsdist"
+                "name": "powerdns-recursor"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.0.7"
+                            "fixed": "5.4.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,38 +22,39 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.dnsdist.org/security-advisories/powerdns-advisory-for-dnsdist-2026-09.html"
+            "https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2026-08.html"
         ],
-        "discovery": "2026-06-25T00:00:00Z",
+        "discovery": "2026-04-04T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-40011",
-                "CVE-2026-42004",
+                "CVE-2026-3361",
+                "CVE-2026-40012",
                 "CVE-2026-42005",
-                "CVE-2026-40208",
-                "CVE-2026-40209",
-                "CVE-2026-40210",
-                "CVE-2026-40211"
+                "CVE-2026-42387",
+                "CVE-2026-42388",
+                "CVE-2026-42389",
+                "CVE-2026-42390",
+                "CVE-2026-52690"
             ]
         },
-        "vid": "6c0e17cf-73a0-11f1-910d-3c7c3fba4204"
+        "vid": "62c4ed54-73aa-11f1-910d-3c7c3fba4204"
     },
-    "details": "The DNSdist team reports:\n\n> - CVE-2026-40011: Prometheus denial of service via crafted DNS queries\n> - CVE-2026-42004: EDNS options smuggling\n> - CVE-2026-42005: Insufficient input validation of internal web server\n> - CVE-2026-40208: Denial of service via DoH3 queries\n> - CVE-2026-40209: Denial of service via IXFR queries\n> - CVE-2026-40210: Out-of-bounds read in SetMacAddrAction\n> - CVE-2026-40211: Denial of service via crafted DoH3 queries\n>\n> Thanks to people below for reporting these vulnerabilities.\n>\n> - Haruki Oyama (Waseda University)\n> - Vitaly Simonovich\n> - ilya rozentsvaig\n> - ylwango613\n> - Qifan Zhang (Palo Alto Networks)\n> - Mehtab Zafar\n",
+    "details": "PowerDNS Team reports:\n\n> - CVE-2026-3361: ZoneToCache can poison the cache\n> - CVE-2026-40012: Information about ECS zero scoped answers might leak\n>   to clients that use a specific ECS\n> - CVE-2026-42005: Unbounded resource consumption in internal webserver\n> - CVE-2026-42387: Insufficient input validation in ZoneToCache\n> - CVE-2026-42388: Missing input validation for catalog zones\n> - CVE-2026-42389: Reject more queries with invalid header values\n> - CVE-2026-42390: ZONEMD validation can be bypassed\n> - CVE-2026-52690: Spoofed answers can mark an authoritative non-EDNS\n>   capable\n>\n> Thanks to people below for reporting these vulnerabilities.\n>\n> - Danial Mahadzir\n> - ilya rozentsvaig\n> - Vitaly Simonovich\n> - ylwango613\n> - nurmukhammyed\n> - Mehtab Zafar\n",
     "id": "FreeBSD-2026-0296",
     "modified": "2026-06-29T00:00:00Z",
     "published": "2026-06-29T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.dnsdist.org/security-advisories/powerdns-advisory-for-dnsdist-2026-09.html"
+            "url": "https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2026-08.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40011"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3361"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42004"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40012"
         },
         {
             "type": "ADVISORY",
@@ -61,21 +62,25 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40208"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42387"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40209"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42388"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40210"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42389"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40211"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42390"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52690"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "DNSdist -- vulnerabilities"
+    "summary": "powerdns-recursor -- vulnerabilities"
 }

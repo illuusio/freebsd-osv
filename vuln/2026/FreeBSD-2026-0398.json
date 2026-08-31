@@ -1,0 +1,262 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "postgresql14-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "14.24"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "postgresql15-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "15.19"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "postgresql16-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "16.15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "postgresql17-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "17.11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "postgresql18-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "18.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.postgresql.org/about/news/postgresql-186-1711-1615-1519-1424-and-19-beta-3-released-3365/"
+        ],
+        "discovery": "2026-08-13T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-6464",
+                "CVE-2026-6469",
+                "CVE-2026-6470",
+                "CVE-2026-6471",
+                "CVE-2026-14662",
+                "CVE-2026-14663",
+                "CVE-2026-14664",
+                "CVE-2026-14666",
+                "CVE-2026-14668",
+                "CVE-2026-14669",
+                "CVE-2026-14670",
+                "CVE-2026-14671",
+                "CVE-2026-14672",
+                "CVE-2026-14673",
+                "CVE-2026-14676",
+                "CVE-2026-14677",
+                "CVE-2026-14678",
+                "CVE-2026-14679",
+                "CVE-2026-14680",
+                "CVE-2026-14681",
+                "CVE-2026-15741",
+                "CVE-2026-15742",
+                "CVE-2026-16238",
+                "CVE-2026-16239",
+                "CVE-2026-16241",
+                "CVE-2026-18024",
+                "CVE-2026-18408",
+                "CVE-2026-19385"
+            ]
+        },
+        "vid": "05d311bc-9991-11f1-bc50-6cc21735f730"
+    },
+    "details": "The PostgreSQL project reports:\n\n> CVE-2026-6464: psql COPY FROM STDIN, if the copy fails before data\n> rows begin, processes the following data lines as psql commands.\n>\n> CVE-2026-6469: ALTER TABLE ALTER TYPE incorrectly reassigns ownership\n> of dependent extended statistics objects to the current user.\n>\n> CVE-2026-6470: Missing privilege check for type USAGE allows denial of\n> service against ALTER and DROP of the type.\n>\n> CVE-2026-6471: Logical decoding lets a REPLICATION- privileged user\n> dlopen an arbitrary file via the decoding plugin choice, running\n> arbitrary code as the server\\'s OS user.\n>\n> CVE-2026-14662: Integer wraparound in tsvector and tsquery functions\n> can undersize an allocation, causing a buffer overflow and arbitrary\n> code execution.\n>\n> CVE-2026-14663: pgcrypto silently encrypts to and decrypts from\n> cleartext for ciphers OpenSSL has disabled, letting an attacker\n> recover cleartext.\n>\n> CVE-2026-14664: Heap buffer overflow in the regexp engine allows\n> arbitrary code execution via crafted input text.\n>\n> CVE-2026-14666: Row-level security policy caching can retain a stale\n> policy after role changes, letting a user complete now-forbidden reads\n> or writes.\n>\n> CVE-2026-14668: Type confusion in the ctid selectivity estimator\n> discloses a derivative of an arbitrary 4-byte span of server memory.\n>\n> CVE-2026-14669: Heap buffer overflow in to_char(timestamptz) via a\n> long POSIX timezone abbreviation allows arbitrary code execution.\n>\n> CVE-2026-14670: Heap buffer overflow in plperl, on return of a tied\n> hash, allows the function owner to execute arbitrary code.\n>\n> CVE-2026-14671: Type confusion in module \\\"refint\\\" allows an object\n> creator to execute arbitrary code.\n>\n> CVE-2026-14672: SCRAM authentication reveals whether a role exists via\n> an observable difference in the reported iteration count.\n>\n> CVE-2026-14673: amcheck fails to clear an untrusted search path,\n> letting an EXECUTE grantee run arbitrary functions as an expression\n> index\\'s owner.\n>\n> CVE-2026-14676: Heap buffer overflow in pg_stat_statements via crafted\n> queries with array constants allows arbitrary code execution.\n>\n> CVE-2026-14677: Integer wraparound in 32-bit pltcl/plperl builds can\n> undersize an allocation, allowing arbitrary code execution.\n>\n> CVE-2026-14678: pg_trgm\\'s picksplit function reads past the end of a\n> heap buffer, potentially disclosing limited memory.\n>\n> CVE-2026-14679: Stack buffer overflow in argument-name matching lets\n> an object creator write a few attacker- influenced bytes into server\n> memory.\n>\n> CVE-2026-14680: Type confusion via \\\"internal\\\"-typed function\n> arguments allows any user to execute arbitrary code.\n>\n> CVE-2026-14681: GSSAPI encryption is not properly enforced when\n> coupled with an initial direct SSL connection.\n>\n> CVE-2026-15741: Expression deparse of EXTRACT() allows SQL injection\n> via a hostile object definition, affecting pg_dump and psql.\n>\n> CVE-2026-15742: Integer wraparound in fuzzystrmatch\\'s levenshtein()\n> functions allows writes to arbitrary addresses and code execution.\n>\n> CVE-2026-16238: Type confusion in pg_restore_attribute_stats() allows\n> arbitrary code execution via conflated range/multirange values.\n>\n> CVE-2026-16239: Type confusion via cursor DECLARE and CLOSE allows a\n> user to execute arbitrary code.\n>\n> CVE-2026-16241: Integer underflow in ECPG can crash the client via a\n> bytea value lacking its mandatory prefix.\n>\n> CVE-2026-18024: The ascii() function reads past the end of a buffer,\n> disclosing a few bytes of server memory.\n>\n> CVE-2026-18408: psql\\'s \\\\unrestrict lets a malicious pg_dump\n> origin-server superuser execute arbitrary code in the restoring\n> client.\n>\n> CVE-2026-19385: Heap buffer overflow in pg_dump, when dumping long\n> function transform lists, allows arbitrary code execution.\n",
+    "id": "FreeBSD-2026-0398",
+    "modified": "2026-08-16T00:00:00Z",
+    "published": "2026-08-16T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.postgresql.org/about/news/postgresql-186-1711-1615-1519-1424-and-19-beta-3-released-3365/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6464"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6469"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6470"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6471"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14662"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14663"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14664"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14666"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14668"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14669"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14670"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14671"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14672"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14673"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14676"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14677"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14678"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14679"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14680"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14681"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15741"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15742"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16238"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16239"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16241"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18024"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18408"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19385"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "PostgreSQL -- Multiple vulnerabilities"
+}

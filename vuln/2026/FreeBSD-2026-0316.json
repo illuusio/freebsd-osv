@@ -2,50 +2,36 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:kernel",
-                "name": "FreeBSD-kernel"
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvpn"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "15.1"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "15.1_1"
+                            "fixed": "2.7.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvpn-devel"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "15.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "15.0_11"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.4"
-                        },
-                        {
-                            "fixed": "14.4_7"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.3"
-                        },
-                        {
-                            "fixed": "14.3_16"
+                            "fixed": "g20260701,2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -54,36 +40,60 @@
         }
     ],
     "database_specific": {
-        "discovery": "2026-06-30T00:00:00Z",
+        "cite": [
+            "https://community.openvpn.net/Downloads#openvpn-275-released-1-july-2026"
+        ],
+        "discovery": "2026-07-01T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-58081",
-                "CVE-2026-58082"
-            ],
-            "freebsdsa": [
-                "SA-26:49.iconv"
+                "CVE-2026-11771",
+                "CVE-2026-12932",
+                "CVE-2026-12996",
+                "CVE-2026-13117",
+                "CVE-2026-13122",
+                "CVE-2026-13698"
             ]
         },
-        "vid": "78910e7e-74e3-11f1-958d-bc241121aa0a"
+        "vid": "ffa897a0-756f-11f1-b291-a74de6bb0320"
     },
-    "details": "# Problem Description:\n\nSeveral encoding modules, including HZ, UTF-7, VIQR, and ZW, did not\nproperly check the size of the caller-supplied output buffer before\nwriting converted characters. \\[CVE-2026-58081\\]\n\nThe ISO-2022 encoding module used a stack buffer sized to MB_LEN_MAX (6\nbytes) for intermediate character output. Some ISO-2022 variants can\nrequire up to 10 bytes per character, in which case conversions can\ntrigger a stack buffer overflow of up to four bytes. \\[CVE-2026-58082\\]\n\n# Impact:\n\nAn application that uses iconv(3) to convert untrusted input to or from\none of the affected encodings may be vulnerable to buffer overflows if\nit uses one of the affected encoding modules.\n",
+    "details": "The OpenVPN community project team reports:\n\n> \\[\\...\\] OpenVPN 2.7.5 \\[\\...\\] is a bugfix release fixing several\n> security issues:\n>\n> - Fix use-after-free bug in ack_write_buf(), triggerable by a\n>   well-timed sequence of control channel + authentication packets\n>   (CVE-2026-12996)\n> - Fix use-after-free bug in tls_wrap_reneg(), triggerable by suitable\n>   sequence of dynamic tls-crypt control-channel packets\n>   (CVE-2026-13117)\n> - Fix server crash on reception of suitably malformed auth-token, if\n>   \\--auth-gen-token external-auth is active (CVE-2026-13122)\n> - Fix memory-leak in tls-crypt-v2 client key handling that could lead\n>   to out-of-memory situations and subsequent server crashes\n>   (CVE-2026-12932)\n> - Fix possible 1-byte buffer overrun on NTLMv2 proxy responses.\n>   (CVE-2026-11771)\n> - Fix another memory leak on reception of suitable tls-crypt-v2\n>   packets that could lead to an out of memory situation and server\n>   crash (CVE-2026-13698)\n",
     "id": "FreeBSD-2026-0316",
     "modified": "2026-07-01T00:00:00Z",
     "published": "2026-07-01T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58081"
+            "type": "REPORT",
+            "url": "https://community.openvpn.net/Downloads#openvpn-275-released-1-july-2026"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/OpenVPN/openvpn/blob/v2.7.5/Changes.rst#overview-of-changes-in-275"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58082"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-11771"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:49.iconv.asc"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12932"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12996"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13117"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13122"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13698"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Multiple vulnerabilities in iconv(3)"
+    "summary": "openvpn -- multiple vulnerabilities"
 }

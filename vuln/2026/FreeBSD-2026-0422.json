@@ -1,0 +1,116 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "php82-composer"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.10.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "php83-composer"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.10.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "php84-composer"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.10.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "php85-composer"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.10.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/composer/composer/releases/tag/2.10.3"
+        ],
+        "discovery": "2026-08-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-59944"
+            ]
+        },
+        "vid": "db135cd1-a232-11f1-85ed-10ffe07f9334"
+    },
+    "details": "Composer project reports:\n\n> Validate package bin paths against path traversal using symlinks\n> (GHSA-96h3-5x6v-m776, CVE-2026-59944)\n>\n> Fixed command injection via malicious Perforce url\n> (GHSA-rvx4-ffvw-m9q3)\n",
+    "id": "FreeBSD-2026-0422",
+    "modified": "2026-08-27T00:00:00Z",
+    "published": "2026-08-27T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/composer/composer/releases/tag/2.10.3"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-59944"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/composer/composer/security/advisories/GHSA-96h3-5x6v-m776"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/composer/composer/security/advisories/GHSA-rvx4-ffvw-m9q3"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "PHP Composer -- Multiple vulnerabilities"
+}

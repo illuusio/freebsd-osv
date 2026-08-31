@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "vaultwarden"
+                "name": "erlang"
             },
             "ranges": [
                 {
@@ -12,7 +12,64 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.37.0"
+                            "fixed": "28.5.0.4,4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime27"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "27.3.4.15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime28"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "28.5.0.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime29"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "29.0.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,21 +79,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.0"
+            "https://github.com/erlang/otp/releases/tag/OTP-29.0.4"
         ],
-        "discovery": "2026-07-24T00:00:00Z",
-        "vid": "68b8de3a-8821-11f1-b72c-8447094a420f"
+        "discovery": "2026-07-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-42792"
+            ]
+        },
+        "vid": "445e3324-89e1-11f1-b35c-4c526214c986"
     },
-    "details": "The Vaultwarden project reports:\n\n> - SSRF via the icon endpoint \\[GHSA-hw4g-2v3f-74x5\\]\n>   \\[GHSA-vh5m-fc9v-m84g\\] (Medium, 5.8 / 6.3)\n> - Cross-Organization Cipher Access \\[GHSA-xwf8-pjh7-h589\\] (Medium,\n>   5.9)\n> - Organization Policy Bypass on Directory Import\n>   \\[GHSA-88qc-6ch9-mc3j\\] (Medium, 5.5)\n> - Send Access-Count Bypass \\[GHSA-rxhg-2pw9-vf25\\] (Medium, 5.3)\n> - Unauthenticated WebSocket Flooding DDOS \\[GHSA-96f7-78q5-j345\\]\n>   (Medium, 5.3)\n> - Cross-Organization Secret Sharing \\[GHSA-455c-vgg9-jxw8\\] (Medium,\n>   4.3)\n> - Organization Import Authorization\n>   \\[GHSA-f3qw-qg77-hmm4\\]\\[GHSA-jq2g-h4xr-4mcr\\] (Medium, 4.3)\n> - Organization Data Enumeration via the Manager role\n>   \\[GHSA-rqf8-2568-r7mc\\] (Medium, 4.3)\n",
+    "details": "The Erlang/OTP team reports:\n\n> Mitigated a denial of service attack in epmd.\n",
     "id": "FreeBSD-2026-0347",
-    "modified": "2026-07-25T00:00:00Z",
-    "published": "2026-07-25T00:00:00Z",
+    "modified": "2026-07-27T00:00:00Z",
+    "published": "2026-07-27T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.0"
+            "url": "https://github.com/erlang/otp/releases/tag/OTP-29.0.4"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42792"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Vaultwarden -- multiple vulnerabilities"
+    "summary": "Erlang/OTP -- denial of service in epmd"
 }

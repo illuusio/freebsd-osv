@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "27.0,4"
+                            "introduced": "0"
                         },
                         {
                             "fixed": "28.5.0.4,4"
@@ -79,30 +79,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/erlang/otp/security/advisories/GHSA-54pw-5645-jh86"
+            "https://github.com/erlang/otp/security/advisories/GHSA-7xgh-gmgf-q2g7"
         ],
         "discovery": "2026-07-27T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-54890"
+                "CVE-2026-59250"
             ]
         },
-        "vid": "445dc6b9-89e1-11f1-b35c-4c526214c986"
+        "vid": "445da2cc-89e1-11f1-b35c-4c526214c986"
     },
-    "details": "https://github.com/erlang/otp/security/advisories/GHSA-54pw-5645-jh86\nreports:\n\n> A specially crafted External Term Format (ETF) payload of merely 7\n> bytes triggers a crash in the BEAM virtual machine when processed by\n> binary_to_term/1,2. The BIT_BINARY_EXT tag with specific parameters\n> causes an unsigned integer underflow during bitstring size\n> calculation, resulting in an enormous memory allocation attempt that\n> immediately terminates the VM. This is a full system crash, not a\n> recoverable process exception: Erlang supervision mechanisms, the\n> \\[safe\\] option and standard error handling cannot prevent it.\n",
+    "details": "https://github.com/erlang/otp/security/advisories/GHSA-7xgh-gmgf-q2g7\nreports:\n\n> A remote unauthenticated attacker can crash Erlang nodes running the\n> megaco text codec with the flex scanner option by sending an\n> H.248/Megaco message with a property parm name exceeding 452 bytes.\n> The overflow occurs in a C linked-in driver, causing the entire BEAM\n> VM process to terminate. It is reachable pre-authentication, as the\n> flex scanner processes raw TCP payloads before protocol validation.\n",
     "id": "FreeBSD-2026-0351",
     "modified": "2026-07-27T00:00:00Z",
     "published": "2026-07-27T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/erlang/otp/security/advisories/GHSA-54pw-5645-jh86"
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-7xgh-gmgf-q2g7"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54890"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-59250"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Erlang/OTP -- binary_to_term crash on crafted BIT_BINARY_EXT input"
+    "summary": "Erlang/OTP -- megaco flex scanner buffer overflow"
 }

@@ -31,34 +31,64 @@
                     "type": "ECOSYSTEM"
                 }
             ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "httpclient"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.5.13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "5.0.0"
+                        },
+                        {
+                            "fixed": "5.0.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
         }
     ],
     "database_specific": {
         "cite": [
-            "https://nvd.nist.gov/vuln/detail/CVE-2012-5783"
+            "https://nvd.nist.gov/vuln/detail/CVE-2020-13956"
         ],
-        "discovery": "2012-04-11T00:00:00Z",
+        "discovery": "2020-02-12T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2012-5783"
+                "CVE-2020-13956"
             ]
         },
-        "vid": "de3f0385-7c37-11f1-8dc2-dca632daf43b"
+        "vid": "fa0c03dd-7c3a-11f1-8dc2-dca632daf43b"
     },
-    "details": "MITRE reports:\n\n> Apache Commons HttpClient 3.x, as used in \\..., does not verify that\n> the server hostname matches a domain name in the subject\\'s Common\n> Name (CN) or subjectAltName field of the X.509 certificate, which\n> allows man-in-the-middle attackers to spoof SSL servers via an\n> arbitrary valid certificate.\n",
+    "details": "Apache Software Foundation reports:\n\n> Apache HttpClient versions prior to version 4.5.13 and 5.0.3 can\n> misinterpret malformed authority component in request URIs passed to\n> the library as java.net.URI object and pick the wrong target host for\n> request execution.\n",
     "id": "FreeBSD-2026-0332",
     "modified": "2026-07-10T00:00:00Z",
     "published": "2026-07-10T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-5783"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-13956"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2012-5783"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-13956"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "httpclient -- Improper Certificate Validation"
+    "summary": "Apache HttpClient -- misinterpret malformed authority component"
 }

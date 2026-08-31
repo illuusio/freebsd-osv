@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "zeek"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.0.10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/zeek/zeek/releases/tag/v8.0.10"
+        ],
+        "discovery": "2026-08-19T00:00:00Z",
+        "vid": "e6a17802-cda9-4f53-8870-b629e4ac3d40"
+    },
+    "details": "Tim Wojtulewicz of Corelight reports:\n\n> HIGH: SMB: Chains of AndX messages can crash Zeek\n>\n> HIGH: DNP3: Memory exhaustion via file control (g70v1) fields\n>\n> HIGH: SIP: Memory exhaustion from long request/response paths\n>\n> HIGH: DHCP: Memory exhaustion from retained options after analyzer\n> violation\n>\n> HIGH: SMTP: Memory exhaustion from large numbers of rcptto/to/cc/path\n> entries\n>\n> HIGH: SMB: DCE/RPC memory exhaustion from fragment state\n>\n> HIGH: Analyzer manager: Equivalent scheduled analyzers could exhaust\n> memory\n>\n> HIGH: ZIP: Unbounded decompression\n>\n> HIGH: Redis: Parsed Redis traffic memory exhaustion\n>\n> HIGH: Invalid IPv6 fragments can lead to unbounded state growth\n>\n> HIGH: SSH: Quadratic KEX algorithm CPU exhaustion\n>\n> HIGH: NVT: Oversized line recovery writes before heap buffer\n>\n> HIGH: DHCP: Unbounded state growth via join_data\n>\n> HIGH: FTP: Unbounded state growth via ftp_data_expected\n>\n> HIGH: OCSP: Empty byName responder ID crashes Zeek\n>\n> HIGH: ARP: Tunneled ARP traffic crashes Zeek\n>\n> HIGH: LDAP: Unbounded per-connection script state\n>\n> HIGH: IRC DCC SEND has unbounded state growth\n>\n> HIGH: tunnel_changed event limit bypass on direct/tunneled toggles\n>\n> HIGH: Recursive stack exhaustion from deep packet analyzer chains\n>\n> MEDIUM: Telnet: AUTH STATUS options before a NAME is received results\n> in event argument mismatch\n>\n> MEDIUM: UDP: udp_contents events could trigger out-of-bounds reads\n>\n> MEDIUM: NetBIOS: Memory exhaustion from declared session lengths\n>\n> MEDIUM: IRC: Single DCC Send packet can result in scripting error\n>\n> MEDIUM: IRC: Invalid DCC Send host/port fields can lead to unexpected\n> parsing results\n",
+    "id": "FreeBSD-2026-0402",
+    "modified": "2026-08-19T00:00:00Z",
+    "published": "2026-08-19T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/zeek/zeek/releases/tag/v8.0.10"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "zeek -- multiple vulnerabilities"
+}

@@ -1,0 +1,210 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.0.22,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl34"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.4.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl35"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.5.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl36"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.6.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl40"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.0.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://openssl-library.org/news/secadv/20260825.txt"
+        ],
+        "discovery": "2026-08-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-63072",
+                "CVE-2026-63076",
+                "CVE-2026-14457",
+                "CVE-2026-54874",
+                "CVE-2026-63073",
+                "CVE-2026-63074",
+                "CVE-2026-63075",
+                "CVE-2026-75803"
+            ],
+            "freebsdsa": [
+                "SA-26:61.openssl"
+            ]
+        },
+        "vid": "9008d14d-a0af-11f1-8144-8447094a420f"
+    },
+    "details": "The OpenSSL poject reports:\n\n> - Heap Buffer Overflow in CMS Key Unwrapping (CVE-2026-63072)\n>   (Moderate)\n> - Invalid Pointer Dereference in CMP Server via Crafted protectionAlg\n>   (CVE-2026-63076) (Moderate)\n> - RPK Server Signature Algorithm Selection Can Dereference a Missing\n>   Certificate (CVE-2026-14457) (Low)\n> - Excessive Memory Use Buffering DTLS Records for a Future Epoch\n>   (CVE-2026-54874) (Low)\n> - Untrusted Sender DN Used as Format String in CMP Response Validation\n>   (CVE-2026-63073) (Low)\n> - CMP Indefinite Cache Growth of ExtraCerts (CVE-2026-63074) (Low)\n> - QUIC ACK-only Packet Retention Can Cause Memory Exhaustion\n>   (CVE-2026-63075) (Low)\n> - AEAD Forgeries with Empty Ciphertext When Using EVP_Cipher()\n>   (CVE-2026-75803) (Low)\n",
+    "id": "FreeBSD-2026-0412",
+    "modified": "2026-08-26T00:00:00Z",
+    "published": "2026-08-25T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://openssl-library.org/news/secadv/20260825.txt"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-63072"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-63076"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14457"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54874"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-63073"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-63074"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-63075"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-75803"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:61.openssl.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "OpenSSL -- Multiple vulnerabilities"
+}

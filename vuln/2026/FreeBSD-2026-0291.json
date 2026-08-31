@@ -3,38 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitlab-ce"
+                "name": "ffmpeg"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "19.1.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "19.1.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "19.0.0"
-                        },
-                        {
-                            "fixed": "19.0.3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "8.3.0"
-                        },
-                        {
-                            "fixed": "18.11.6"
+                            "fixed": "8.1.2,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -44,38 +22,35 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitlab-ee"
+                "name": "ffmpeg4"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "19.1.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "19.1.1"
+                            "fixed": "4.4.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ffmpeg6"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "19.0.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "19.0.3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "8.3.0"
-                        },
-                        {
-                            "fixed": "18.11.6"
+                            "fixed": "6.1.6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -85,90 +60,38 @@
     ],
     "database_specific": {
         "cite": [
-            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-1-1-released/"
+            "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/23159"
         ],
-        "discovery": "2026-06-24T00:00:00Z",
+        "discovery": "2026-06-18T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-10086",
-                "CVE-2026-10712",
-                "CVE-2026-12053",
-                "CVE-2026-5309",
-                "CVE-2026-2238",
-                "CVE-2026-11379",
-                "CVE-2026-8330",
-                "CVE-2026-1606",
-                "CVE-2026-5952",
-                "CVE-2026-5796",
-                "CVE-2026-0934",
-                "CVE-2026-3176",
-                "CVE-2026-12635"
+                "CVE-2026-8461"
             ]
         },
-        "vid": "ee1e7aef-7117-11f1-873f-2cf05da270f3"
+        "vid": "ba8d239f-709f-11f1-a30e-28d2443e6cfa"
     },
-    "details": "Gitlab reports:\n\n> Cross-site Scripting issue in Analytics Dashboard impacts GitLab EE\n>\n> Cross-site Scripting issue in Web IDE workbench asset handler impacts\n> GitLab CE/EE\n>\n> Information Disclosure issue in Duo Workflows impacts GitLab EE\n>\n> Authorization Bypass issue in Virtual Registry Cleanup Policy API\n> impacts GitLab EE\n>\n> Improper Authorization issue in Rapid Diffs impacts GitLab CE/EE\n>\n> Incorrect Authorization issue in DAST scanner and site profile\n> management impacts GitLab EE\n>\n> Insufficient Filtering issue in CI/CD API impacts GitLab CE/EE\n>\n> Improper Input Validation issue in Snippets impacts GitLab CE/EE\n>\n> Incorrect Authorization issue in Maven Package Registry impacts GitLab\n> CE/EE\n>\n> Improper Access Control issue in group packages API impacts GitLab\n> CE/EE\n>\n> Improper Access Control issue in Protected Environments API impacts\n> GitLab EE\n>\n> Missing Authorization issue in Security Dashboard impacts GitLab EE\n>\n> Server-Side Request Forgery issue in Repository Mirroring impacts\n> GitLab CE/EE\n",
+    "details": "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/23159 reports:\n\n> An out-of-bounds write vulnerability in FFmpeg\\'s libavcodec library,\n> specifically in the MagicYUV decoder, allows denial-of-service and, in\n> some cases, can be exploited for remote code execution. This\n> vulnerability is associated with the file libavcodec/magicyuv.C. This\n> issue affects FFmpeg before version 8.1.2.\n",
     "id": "FreeBSD-2026-0291",
-    "modified": "2026-06-26T00:00:00Z",
-    "published": "2026-06-26T00:00:00Z",
+    "modified": "2026-06-25T00:00:00Z",
+    "published": "2026-06-25T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-1-1-released/"
+            "url": "https://code.ffmpeg.org/FFmpeg/FFmpeg/pulls/23159"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-10086"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-8461"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-10712"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-8461"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12053"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5309"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2238"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-11379"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-8330"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1606"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5952"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5796"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0934"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3176"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12635"
+            "url": "https://github.com/advisories/GHSA-qff7-4q6c-m8h6"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Gitlab -- Vulnerabilities"
+    "summary": "ffmpeg -- Out-of-bounds write"
 }

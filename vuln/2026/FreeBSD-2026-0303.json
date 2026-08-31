@@ -2,17 +2,50 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "icinga2"
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "15.1"
                         },
                         {
-                            "fixed": "2.16.2"
+                            "fixed": "15.1_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_16"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -21,22 +54,31 @@
         }
     ],
     "database_specific": {
-        "cite": [
-            "https://github.com/Icinga/icinga2/security/advisories/GHSA-vj39-ww8j-vvx5"
-        ],
-        "discovery": "2026-06-29T00:00:00Z",
-        "vid": "5b7cb356-749c-11f1-8a71-50ebf6bdf8e9"
+        "discovery": "2026-06-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-49418"
+            ],
+            "freebsdsa": [
+                "SA-26:37.vm"
+            ]
+        },
+        "vid": "5a34b147-74e0-11f1-958d-bc241121aa0a"
     },
-    "details": "The Icinga team reports:\n\n> The code handling certificate update JSON-RPC messages was flawed and\n> did not properly validate the sender of the message, allowing an\n> unauthenticated attacker that can connect to Icinga 2 to update both\n> the own certificate as well as the trusted CA certificate. Updating\n> the trusted CA allows an attacker to impersonate a trusted node,\n> allowing them to take control over the node.\n>\n> Any Icinga 2 instance that is accessible to an attacker over the\n> network is affected.\n",
+    "details": "# Problem Description:\n\nWhen msync(MS_INVALIDATE) is called on a mapping of an unmanaged device\nobject, the physical pages in the mapping range are marked invalid but\nremain in the pager\\'s page list. A subsequent page fault will cause the\nfault handler to re-insert the page into the object\\'s list. This\ncorrupts the list, and on object destruction the page is freed twice.\n\n# Impact:\n\nAn unprivileged local user with access to a device that provides\nmemory-mapped I/O can trigger a use-after-free in the kernel, though\nthis is limited to a pool of objects (\\\"fictitious pages\\\") that are\nnever recycled for a different purpose. It may be possible to exploit\nthis to escalate privileges.\n",
     "id": "FreeBSD-2026-0303",
-    "modified": "2026-06-30T00:00:00Z",
-    "published": "2026-06-30T00:00:00Z",
+    "modified": "2026-07-01T00:00:00Z",
+    "published": "2026-07-01T00:00:00Z",
     "references": [
         {
-            "type": "REPORT",
-            "url": "https://github.com/Icinga/icinga2/security/advisories/GHSA-vj39-ww8j-vvx5"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49418"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:37.vm.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "icinga2 -- Improper access control for JSON-RPC update certificate messages"
+    "summary": "FreeBSD -- Use-after-free in device pager page list"
 }

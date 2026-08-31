@@ -3,16 +3,79 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "h2o"
+                "name": "gitlab-ce"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "19.0.0"
                         },
                         {
-                            "fixed": "20260609"
+                            "fixed": "19.0.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.11.0"
+                        },
+                        {
+                            "fixed": "18.11.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.0.0"
+                        },
+                        {
+                            "fixed": "18.10.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.0.0"
+                        },
+                        {
+                            "fixed": "19.0.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.11.0"
+                        },
+                        {
+                            "fixed": "18.11.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.0.0"
+                        },
+                        {
+                            "fixed": "18.10.8"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +85,85 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/h2o/h2o/security/advisories/GHSA-rf9v-m59p-mq84"
+            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-0-2-released/"
         ],
-        "discovery": "2026-05-29T00:00:00Z",
+        "discovery": "2026-06-11T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-44453"
+                "CVE-2026-6552",
+                "CVE-2026-10087",
+                "CVE-2026-7250",
+                "CVE-2026-8589",
+                "CVE-2026-1500",
+                "CVE-2026-6269",
+                "CVE-2026-9204",
+                "CVE-2026-10733",
+                "CVE-2026-6277",
+                "CVE-2026-6976",
+                "CVE-2026-3553",
+                "CVE-2026-9694"
             ]
         },
-        "vid": "644d5e6c-1bd9-4904-8440-16c04100a2e1"
+        "vid": "ac9bab80-6618-11f1-8e04-2cf05da270f3"
     },
-    "details": "h2o project reports:\n\n> When serving static files, h2o can allocate a file path on the stack\n> using alloca. On systems using musl libc, a large allocation can\n> exceed the default pthread stack size and crash the server, causing a\n> denial of service.\n",
+    "details": "Gitlab reports:\n\n> Improper Access Control issue in Group SAML Identity API impacts\n> GitLab EE\n>\n> Cross-site Scripting issue in Analytics Dashboard impacts GitLab EE\n>\n> Denial of Service issue in Grape API JSON parsing middleware impacts\n> GitLab CE/EE\n>\n> HTML injection issue in certain group setting fields impacts GitLab EE\n>\n> Denial of Service issue in Group Placeholder Reassignments API impacts\n> GitLab CE/EE\n>\n> Improper Access Control issue in Merge Requests API impacts GitLab\n> CE/EE\n>\n> Server-Side Request Forgery issue in Gitaly repository import impacts\n> GitLab CE/EE\n>\n> HTML injection issue in CI/CD Catalog impacts GitLab CE/EE\n>\n> Improper Access Control issue in Security Inventory impacts GitLab EE\n>\n> Authorization Bypass issue in Merge Request diff impacts GitLab CE/EE\n>\n> Improper Access Control issue in Todos API impacts GitLab CE/EE\n>\n> Improper Neutralization issue in Service Desk email template impacts\n> GitLab CE/EE\n",
     "id": "FreeBSD-2026-0273",
-    "modified": "2026-06-11T00:00:00Z",
-    "published": "2026-06-11T00:00:00Z",
+    "modified": "2026-06-12T00:00:00Z",
+    "published": "2026-06-12T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/h2o/h2o/security/advisories/GHSA-rf9v-m59p-mq84"
+            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-0-2-released/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44453"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6552"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-10087"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7250"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-8589"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1500"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6269"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-9204"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-10733"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6277"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6976"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3553"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-9694"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "h2o -- stack overflow serving static files on musl libc"
+    "summary": "Gitlab -- vulnerabilities"
 }

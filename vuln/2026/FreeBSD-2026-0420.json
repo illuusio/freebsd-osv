@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "matrix-conduit"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.10.13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://conduit.rs/changelog/#v0-10-13-2026-08-26"
+        ],
+        "discovery": "2026-08-26T00:00:00Z",
+        "vid": "1ff5a036-a13e-11f1-a129-901b0e9408dc"
+    },
+    "details": "Conduit team reports:\n\n> Fixes a vulnerability where endpoints which required authentication,\n> but functionality do not depend on the user/server calling it, could\n> have their authentication bypassed, as well as causing crashes for all\n> other authenticated endpoints. It is recommended you upgrade ASAP.\n",
+    "id": "FreeBSD-2026-0420",
+    "modified": "2026-08-26T00:00:00Z",
+    "published": "2026-08-26T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://conduit.rs/changelog/#v0-10-13-2026-08-26"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "conduit -- authentication bypass vulnerability"
+}

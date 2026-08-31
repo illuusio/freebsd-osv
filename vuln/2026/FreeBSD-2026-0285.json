@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "jenkins"
+                "name": "nginx-devel"
             },
             "ranges": [
                 {
@@ -12,26 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.568"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "jenkins-lts"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "2.555.3"
+                            "fixed": "1.31.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -40,66 +21,38 @@
         }
     ],
     "database_specific": {
-        "cite": [
-            "https://www.jenkins.io/security/advisory/2026-06-10/"
-        ],
-        "discovery": "2026-06-10T00:00:00Z",
+        "discovery": "2026-06-17T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-53435",
-                "CVE-2026-53436",
-                "CVE-2026-53437",
-                "CVE-2026-53438",
-                "CVE-2026-53439",
-                "CVE-2026-53440",
-                "CVE-2026-53441",
-                "CVE-2026-53442"
+                "CVE-2026-42530",
+                "CVE-2026-42055",
+                "CVE-2026-48142"
             ]
         },
-        "vid": "35598415-56de-4562-959c-11fb1fd2d995"
+        "vid": "08b0c0f6-6a85-11f1-b8e5-3497f65b111b"
     },
-    "details": "Jenkins Security Advisory 2026-06-10:\n\n> - SECURITY-3707 / CVE-2026-53435: Deserialization vulnerability (High)\n> - SECURITY-3711+3755 / CVE-2026-53436, CVE-2026-53437: Open redirect\n>   vulnerability (Medium)\n> - SECURITY-3712 / CVE-2026-53438: Missing permission check allows\n>   canceling queue items (Medium)\n> - SECURITY-3713 / CVE-2026-53439: Missing permission checks allow\n>   obtaining limited user profile information (Medium)\n> - SECURITY-3721 / CVE-2026-53440: Open redirect vulnerability in\n>   \\\"Delegate to servlet container\\\" security realm (Medium)\n> - SECURITY-3731 / CVE-2026-53441: Stored XSS vulnerability in node\n>   offline cause description (High)\n> - SECURITY-3744 / CVE-2026-53442: Plaintext secrets persisted and\n>   served by config.xml endpoints (Medium)\n",
+    "details": "The nginx developers report:\n\nA use-after-free vulnerability when using HTTP/3 and processing a\nspecially crafted QUIC session may allow memory corruption or a\nsegmentation fault in a worker process (CVE-2026-42530).\n\nA heap memory buffer overflow vulnerability when using the\n\\\"ignore_invalid_headers off;\\\" and \\\"large_client_header_buffers\\\"\ndirectives with large configured values while proxying a specially\ncrafted request to an HTTP/2 or gRPC backend may allow memory corruption\nor a segmentation fault in a worker process (CVE-2026-42055).\n\nA heap memory buffer overread vulnerability while handling a specially\ncrafted response with decoding from UTF-8 via the \\\"charset_map\\\"\ndirective may allow limited disclosure of worker process memory or a\nsegmentation fault in a worker process (CVE-2026-48142).\n",
     "id": "FreeBSD-2026-0285",
     "modified": "2026-06-17T00:00:00Z",
     "published": "2026-06-17T00:00:00Z",
     "references": [
         {
-            "type": "REPORT",
-            "url": "https://www.jenkins.io/security/advisory/2026-06-10/"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42530"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53435"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42055"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53436"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-48142"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53437"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53438"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53439"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53440"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53441"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53442"
+            "type": "WEB",
+            "url": "https://nginx.org/en/CHANGES"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "jenkins -- multiple vulnerabilities"
+    "summary": "nginx -- multiple vulnerabilities"
 }

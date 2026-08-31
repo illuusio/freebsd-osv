@@ -3,16 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "ldns"
+                "name": "go-git"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "1.2.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "1.9.1"
+                            "fixed": "5.11.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.nlnetlabs.nl/downloads/ldns/CVE-2026-10846.txt"
+            "https://github.com/go-git/go-git/security/advisories/GHSA-mw99-9chc-xw7r"
         ],
-        "discovery": "2026-06-10T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-10846"
-            ]
-        },
-        "vid": "71a85f96-6f18-11f1-8569-3c7c3fba4204"
+        "discovery": "2023-12-24T00:00:00Z",
+        "vid": "6a472f75-6fdc-11f1-bc26-8447094a420f"
     },
-    "details": "<https://www.nlnetlabs.nl/downloads/ldns/CVE-2026-10846.txt> reports:\n\n> NLnet Labs ldns 1.2.0 up to and including versions 1.9.0, when used in\n> applications as (stub) resolver over UDP, lacks matching the query\n> destination address and port with the response source address and\n> port. Furthermore not the query ID, neither the question of the query\n> is matched with that of the response. This makes applications, that\n> use ldns for (stub) resolver functionality over UDP, vulnerable for\n> off-path poisoning attacks. The drill tool, which is shipped with\n> ldns, suffers from this vulnerability.\n>\n> We would like to thank Pablo Ruiz from\n> [codecome.ai](https://www.codecome.ai/) for finding and reporting this\n> vulnerability.\n",
+    "details": "The go-git project reports:\n\n> See link for details.\n",
     "id": "FreeBSD-2026-0289",
-    "modified": "2026-06-23T00:00:00Z",
-    "published": "2026-06-23T00:00:00Z",
+    "modified": "2026-06-24T00:00:00Z",
+    "published": "2026-06-24T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.nlnetlabs.nl/downloads/ldns/CVE-2026-10846.txt"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-10846"
+            "url": "https://github.com/go-git/go-git/security/advisories/GHSA-mw99-9chc-xw7r"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "ldns -- CWE-346 Origin Validation Error"
+    "summary": "go-git -- DoS vulnerability"
 }

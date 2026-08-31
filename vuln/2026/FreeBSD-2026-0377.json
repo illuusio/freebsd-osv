@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "weechat"
+                "name": "angie"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.10.0"
+                            "fixed": "1.12.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,35 +22,52 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/weechat/weechat/releases/tag/v4.10.0"
+            "https://en.angie.software/angie/docs/oss_changes/#angie-1-12-1"
         ],
-        "discovery": "2026-08-02T00:00:00Z",
+        "discovery": "2026-07-17T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-53524",
-                "CVE-2026-53525"
+                "CVE-2026-42533",
+                "CVE-2026-60005",
+                "CVE-2026-56434"
             ]
         },
-        "vid": "12d42997-8e54-11f1-8144-8447094a420f"
+        "vid": "347fe124-8f53-11f1-9f4f-3c7c3fba4204"
     },
-    "details": "The Weechat project reports:\n\n> - core: fix buffer overflow in display of time in chat area with a\n>   custom time format\n> - core: fix integer overflow in size calculation when evaluating\n>   \\\"\\${hide:\\...}\\\" and \\\"\\${base_encode:\\...}\\\"\n> - core: fix possible buffer overflow in command /color alias\n> - core: fix possible buffer overflow in list of commands displayed by\n>   /help\n> - irc: fix heap use-after-free when a batched message causes a\n>   disconnection from the server (GHSA-rfmh-3r7f-jpx5)\n> - irc: fix stack buffer overflow when splitting a JOIN message with a\n>   large list of channels and keys (GHSA-q2xg-9ggx-77mr)\n> - irc: limit size of data received from the server to prevent memory\n>   exhaustion\n> - irc: fix out-of-bounds read on incoming DCC command with a quoted\n>   filename ending the message\n> - logger: fix path traversal in log file name when a buffer local\n>   variable contains the char used internally to protect directory\n>   separators\n> - relay: fix use-after-free and double free on remote buffer\n>   (GHSA-hx59-4hq9-6vmw)\n> - relay: fix authentication bypass with the \\\"plain\\\" password hash\n>   algorithm (GHSA-68ff-gq39-pqjm)\n> - relay: limit size of decompressed websocket frame with\n>   permessage-deflate to prevent memory exhaustion\n>   (GHSA-v2v4-45wm-5cr3, CVE-2026-53524)\n> - relay: limit size of received websocket frame and HTTP body to\n>   prevent memory exhaustion\n> - relay: limit size of partial message received while reading an HTTP\n>   request to prevent memory exhaustion\n> - relay: fix timing attack on password authentication\n>   (GHSA-vhv8-g2r9-cwcc, CVE-2026-53525)\n> - relay: fix out-of-bounds read in dump of data\n> - relay/api: fix memory leak in resources \\\"handshake\\\", \\\"input\\\" and\n>   \\\"completion\\\" (GHSA-wmpc-m6g9-fwj8)\n> - relay: fix read of uncompressed websocket frame\n> - api, relay: fix timing attack on TOTP validation\n>   (GHSA-vhv8-g2r9-cwcc, CVE-2026-53525)\n> - xfer: replace directory separator in remote nick by underscore in\n>   download filename to prevent writing the file outside the download\n>   directory\n> - xfer: fix out-of-bounds read when receiving empty line in DCC chat\n> - xfer: fix out-of-bounds write in xfer file transfer resume\n",
+    "details": "The Angie Software Team reports:\n\n> When evaluating a string expression in which unnamed capture variables\n> (\\$1, \\$2, etc.) preceded a map directive variable whose value is\n> determined by a regular expression, or when using a non-cacheable\n> (volatile) map directive variable whose key contained a capture\n> variable also used in the value of the same directive, worker process\n> memory corruption or a worker process crash could occur\n> (CVE-2026-42533); the fix was ported from nginx 1.31.3.\n>\n> When using the slice directive or background cache update, if unnamed\n> capture variables (\\$1, \\$2, etc.) were used together with a\n> non-cacheable (volatile) map directive variable with a regular\n> expression, the value of an unnamed capture variable could contain\n> arbitrary bytes from worker process memory, or a worker process crash\n> could occur (CVE-2026-60005); the fix was ported from nginx 1.31.3.\n>\n> When using the SSI module with unbuffered proxying, worker process\n> memory corruption or a worker process crash could occur\n> (CVE-2026-56434); the fix was ported from nginx 1.31.3.\n",
     "id": "FreeBSD-2026-0377",
-    "modified": "2026-08-02T00:00:00Z",
-    "published": "2026-08-02T00:00:00Z",
+    "modified": "2026-08-03T00:00:00Z",
+    "published": "2026-08-03T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/weechat/weechat/releases/tag/v4.10.0"
+            "url": "https://en.angie.software/angie/docs/oss_changes/#angie-1-12-1"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53524"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42533"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53525"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-42533"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60005"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-60005"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-56434"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-56434"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Weechat -- Multiple vulnerabilities"
+    "summary": "Angie -- multiple vulnerabilities"
 }

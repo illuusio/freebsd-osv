@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "jenkins"
+                "name": "erlang"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.576"
+                            "fixed": "28.5.0.5,4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "jenkins-lts"
+                "name": "erlang-runtime27"
             },
             "ranges": [
                 {
@@ -31,7 +31,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.568.2"
+                            "fixed": "27.3.4.16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime28"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "28.5.0.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime29"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "29.0.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,50 +79,38 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.jenkins.io/security/advisory/2026-08-05/"
+            "https://github.com/erlang/otp/releases/tag/OTP-28.5.0.5"
         ],
-        "discovery": "2026-08-05T00:00:00Z",
+        "discovery": "2026-07-30T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-70426",
-                "CVE-2026-70427",
-                "CVE-2026-70428",
-                "CVE-2026-70429",
-                "CVE-2026-70430"
+                "CVE-2008-5161"
             ]
         },
-        "vid": "9096f6e4-3a2f-4d16-89fb-f909aa0a7760"
+        "vid": "0b58454e-8ff3-11f1-b35c-4c526214c986"
     },
-    "details": "Jenkins Security Advisory 2026-08-05:\n\n> - SECURITY-3911 / CVE-2026-70426: Agent-to-controller deserialization\n>   filter bypass (Critical)\n> - SECURITY-3930 / CVE-2026-70427: Link following vulnerability allows\n>   arbitrary file creation (High)\n> - SECURITY-3927 / CVE-2026-70428: Path traversal vulnerability in file\n>   parameters (High)\n> - SECURITY-3924 / CVE-2026-70429: Improper handling of case\n>   sensitivity allows privilege escalation (High)\n> - SECURITY-3916 / CVE-2026-70430: Users with Overall/Manage permission\n>   can instantiate any types related to configuration (Low)\n",
+    "details": "The Erlang/OTP team reports:\n\n> The SSH client and server now reject incoming packets not aligned to\n> the cipher block size as required by RFC 4253 section 6. For CBC\n> ciphers, a timing-safe \\\"packet discard\\\" mechanism (CVE-2008-5161\n> mitigation) ensures structural errors are indistinguishable from MAC\n> failures before disconnecting. AEAD and encrypt-then-MAC modes\n> disconnect immediately.\n",
     "id": "FreeBSD-2026-0382",
-    "modified": "2026-08-06T00:00:00Z",
-    "published": "2026-08-06T00:00:00Z",
+    "modified": "2026-08-04T00:00:00Z",
+    "published": "2026-08-04T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.jenkins.io/security/advisory/2026-08-05/"
+            "url": "https://github.com/erlang/otp/releases/tag/OTP-28.5.0.5"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70426"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2008-5161"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70427"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2008-5161"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70428"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70429"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70430"
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/pull/11110"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "jenkins -- multiple vulnerabilities"
+    "summary": "erlang -- SSH plaintext recovery attack against CBC ciphers"
 }

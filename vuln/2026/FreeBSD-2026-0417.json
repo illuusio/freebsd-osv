@@ -1,0 +1,83 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-08-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-58095",
+                "CVE-2026-58096",
+                "CVE-2026-58097"
+            ],
+            "freebsdsa": [
+                "SA-26:60.ppp"
+            ]
+        },
+        "vid": "204af099-a0ff-11f1-ae1f-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nppp(8) contained three memory safety errors in its handling of multilink\nendpoint discriminator options.\n\nmp_Enddisc() used incorrect length calculations when formatting endpoint\ndiscriminator addresses for display, allowing a received endpoint option\nto overflow a global result buffer. \\[CVE-2026-58095\\]\n\nLcpDecodeConfig() did not validate the length of received endpoint\ndiscriminator options against the minimum required by RFC 1717.\nUndersized options would trigger an out-of-bounds write.\n\\[CVE-2026-58096\\]\n\nmp_SetEnddisc() copied a user-supplied PSN endpoint value without length\nvalidation, allowing a buffer overflow via the ppp(8) command interface.\n\\[CVE-2026-58097\\]\n\n# Impact:\n\nA malicious PPP peer can exploit CVE-2026-58095 and CVE-2026-58096 to\ncrash ppp(8) or potentially execute arbitrary code as root. A local user\nwith access to the ppp(8) command interface can exploit CVE-2026-58097\nsimilarly.\n",
+    "id": "FreeBSD-2026-0417",
+    "modified": "2026-08-26T00:00:00Z",
+    "published": "2026-08-26T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58095"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58096"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58097"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:60.ppp.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Multiple vulnerabilities in ppp(8)"
+}

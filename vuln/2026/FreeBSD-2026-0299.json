@@ -3,16 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "rclone"
+                "name": "nsd"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "1.46.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "1.74.3"
+                            "fixed": "4.14.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +22,60 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/rclone/rclone/security/advisories/GHSA-qw24-gh76-8rvv"
+            "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12244.txt",
+            "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12245.txt",
+            "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12246.txt",
+            "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12490.txt"
         ],
-        "discovery": "2026-06-24T00:00:00Z",
+        "discovery": "2026-06-25T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-49980"
+                "CVE-2026-12244",
+                "CVE-2026-12245",
+                "CVE-2026-12246",
+                "CVE-2026-12490"
             ]
         },
-        "vid": "0f3342e3-73ba-11f1-910d-3c7c3fba4204"
+        "vid": "bebbc065-73d2-11f1-910d-3c7c3fba4204"
     },
-    "details": "<https://github.com/rclone/rclone/security/advisories/GHSA-qw24-gh76-8rvv>\nreports:\n\n> Rclone is a command-line program to sync files and directories to and\n> from different cloud storage providers.\\\n> From 1.46.0 until 1.74.3, rclone rcd \\--rc-serve accepts\n> unauthenticated GET and HEAD requests to paths of the form:\n> /\\[remote:path\\]/object.\\\n> The remote value is parsed from the URL and passed to normal backend\n> initialization. Inline remote configuration can set backend options\n> that execute local commands during initialization.\\\n> As a result, a single unauthenticated GET or HEAD request can execute\n> a command as the rclone process user.\n>\n> Thanks to [Nick Craig-Wood](https://github.com/ncw) for reporting this\n> vulnerability.\n",
+    "details": "NLnet Labs reports:\n\n> CVE-2026-12244: A specially crafted SVCB RR can cause a heap overflow\n> of up to 65509 attacker controlled bytes.\n>\n> If NSD is configured as secondary for a zone, the primary of that zone\n> can crash NSD with an AXFR containing a DNS message with a special\n> crafted SVCB RR with an rdata size of 65512, that let\\'s an (uint16_t)\n> variable that is used to allocate space needed for the RR wrap\n> (because total size \\> 65535), causing a heap overflow. The attacker\n> can perform a controlled (RCE class) head write of up to 65509 bytes\\\n> \\\n> Even though the data is from a configured primary inside NSD\\'s trust\n> boundary, we do consider the risk significant enough for multi-tenant\n> secondary DNS deployments, given the potential severity of the attack.\n\n> CVE-2026-12245: An attacker can keep all children in a crash-restart\n> loop denying DoT service.\n>\n> NSD from version 4.13.0 has a heap use-after-free bug in logging\n> errors on TLS connections, causing a crash of the server process,\n> which can be triggered trivially by sending a DNS query over a DoT\n> connection, and closing the connection without reading the response.\\\n> \\\n> Any client with access to the DoT port (853) can trigger this. Even\n> though a new server process will be immediately reforked to replace\n> the crashed one, an attacker can keep all children in a crash-restart\n> loop denying DoT service.\n\n> CVE-2026-12246: The RR type APL rdata address, if too large, causes\n> out of bounds write on the stack, when the zonefile is written out.\n>\n> NSD version 4.14.0 introduced a bug where a specially crafted APL RR,\n> with an adflength larger than permitted for the address family will\n> overwrite the stack when the zone is written to disk, with a maximum\n> of 111 attacker controlled bytes.\\\n> \\\n> Even though the data is from a configured primary inside NSD\\'s trust\n> boundary, we do consider the risk significant enough for multi-tenant\n> secondary DNS deployments, where a primary could introduce the rogue\n> APL with the secondary not noticing or only after the fact.\n\n> CVE-2026-12490: Secondaries authenticated by a client certificate to\n> transfer a zone over TLS, can bypass verification by transferring over\n> TCP.\n>\n> When a \\\"provide-xfr\\\" is given with a \\\"tls-auth-name\\\", a secondary\n> requesting a transfer should provide a client certificate with that\n> name. However, no client certificate is needed when the request comes\n> in over TLS over the regular \\\"tls-port\\\" (and not the\n> \\\"tls-auth-port\\\") or over over TCP over the regular port, when the\n> other conditions of the \\\"provide-xfr\\\" rule match.\\\n> \\\n> The transfer security restrictions for client certificates can be\n> bypassed completely if the attacker can match the other access control\n> conditions, and the \\\"tls-auth-xfr-only\\\" option is not explicitly set\n> to \\\"yes\\\" (which it by default is not)\n\nThanks to people below for reporting and disclosing these\nvulnerabilities:\n\n- Qifan Zhang from Palo Alto Networks\n- Haruki Oyama from Waseda University\n- zhangph\n",
     "id": "FreeBSD-2026-0299",
     "modified": "2026-06-29T00:00:00Z",
     "published": "2026-06-29T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/rclone/rclone/security/advisories/GHSA-qw24-gh76-8rvv"
+            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12244.txt"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12245.txt"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12246.txt"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12490.txt"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49980"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12244"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12245"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12246"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12490"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "rclone -- Unauthenticated command execution in `rclone rcd --rc-serve` via inline remote instantiation"
+    "summary": "NSD -- vulnerabilities"
 }

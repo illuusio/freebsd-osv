@@ -27,6 +27,28 @@
                         }
                     ],
                     "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.3"
+                        },
+                        {
+                            "fixed": "14.3_16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
                 }
             ]
         }
@@ -35,28 +57,28 @@
         "discovery": "2026-06-30T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-49419"
+                "CVE-2026-49415"
             ],
             "freebsdsa": [
-                "SA-26:38.jail"
+                "SA-26:39.execve"
             ]
         },
-        "vid": "a65c31d1-74e0-11f1-958d-bc241121aa0a"
+        "vid": "4b0d0a49-74e1-11f1-958d-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nWhen the JAIL_AT_DESC flag is specified, kern_jail_set() and\nkern_jail_get() released the reference to the caller\\'s current prison\nbefore looking up the jail descriptor. If the descriptor lookup failed,\nerror-handling paths released the same reference a second time.\n\n# Impact:\n\nAn unprivileged local user can trigger a prison reference count\nunderflow, which may cause the prison structure to be freed while still\nin use. When this is done on the jail host, the bug will generally\nresult in an immediate panic. However, if the user is running in a jail,\nthen it may be possible to exploit the bug to elevate privileges.\n",
+    "details": "# Problem Description:\n\nDuring execve(2) of a SUID binary, the new virtual address space is\ninstalled before the process credentials are updated. During this\nwindow, a process running as the same user can access the target\nprocess\\'s memory via procfs or linprocfs, because the kernel\\'s\ndebugging permission check still saw the original credentials.\n\n# Impact:\n\nAn unprivileged local user can exploit this race to modify the address\nspace of a SUID binary before its credentials are elevated, potentially\ngaining full control of the affected system.\n",
     "id": "FreeBSD-2026-0305",
     "modified": "2026-07-01T00:00:00Z",
     "published": "2026-07-01T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49419"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49415"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:38.jail.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:39.execve.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Jail reference count underflow"
+    "summary": "FreeBSD -- Local privilege escalation via execve(2) TOCTOU race"
 }

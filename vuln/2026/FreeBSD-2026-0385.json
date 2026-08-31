@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-djangorestframework"
+                "name": "dnsdist"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.17.2,1"
+                            "fixed": "2.1.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-djangorestframework"
+                "name": "powerdns"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.17.2,1"
+                            "fixed": "5.1.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py312-djangorestframework"
+                "name": "powerdns-recursor"
             },
             "ranges": [
                 {
@@ -50,216 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.17.2,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313-djangorestframework"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.17.2,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313t-djangorestframework"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.17.2,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py314-djangorestframework"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.17.2,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py314t-djangorestframework"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.17.2,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py315-djangorestframework"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.17.2,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py312-dj60-djangorestframework"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.17.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313-dj60-djangorestframework"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.17.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313t-dj60-djangorestframework"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.17.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py314-dj60-djangorestframework"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.17.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py314t-dj60-djangorestframework"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.17.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py315-dj60-djangorestframework"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.17.2"
+                            "fixed": "5.4.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -269,29 +60,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/encode/django-rest-framework/releases/tag/3.17.2"
+            "https://blog.powerdns.com/2026/08/06/powerdns-security-advisory-2026-11-for-powerdns-authoritative-server-recursor-and-dnsdist"
         ],
-        "discovery": "2026-08-05T00:00:00Z",
-        "vid": "5ce58e67-919a-11f1-b333-901b0edee044"
+        "discovery": "2026-07-28T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-52682"
+            ]
+        },
+        "vid": "7e45952f-9268-11f1-ab2f-3c7c3fba4204"
     },
-    "details": "Bruno Alla reports:\n\n> - Potential bypass of Django \\`DATA_UPLOAD_MAX_MEMORY_SIZE\\` when\n>   parsing oversized JSON and urlencoded request bodies via DRF\n>   \\`request.data\\`\n> - AdminRenderer may disclose GET-protected data when rendering invalid\n>   write requests\n",
+    "details": "> CVE-2026-52682: A crafted DNS packet can cause increased memory and\n> CPU consumption.\n",
     "id": "FreeBSD-2026-0385",
     "modified": "2026-08-07T00:00:00Z",
     "published": "2026-08-07T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/encode/django-rest-framework/releases/tag/3.17.2"
+            "url": "https://blog.powerdns.com/2026/08/06/powerdns-security-advisory-2026-11-for-powerdns-authoritative-server-recursor-and-dnsdist"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/encode/django-rest-framework/security/advisories/GHSA-2m8g-3cmr-wg3w"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/encode/django-rest-framework/security/advisories/GHSA-g47c-3xmw-q6m2"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52682"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-djangorestframework -- two vulnerabilities"
+    "summary": "DNSDist, PowerDNS, PowerDNS Recursor -- vulnerability"
 }

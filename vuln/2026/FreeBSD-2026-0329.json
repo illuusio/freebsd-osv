@@ -3,16 +3,79 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "libXfont2"
+                "name": "gitlab-ce"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "19.1.0"
                         },
                         {
-                            "fixed": "2.0.8"
+                            "fixed": "19.1.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.0.0"
+                        },
+                        {
+                            "fixed": "19.0.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "9.1.0"
+                        },
+                        {
+                            "fixed": "18.11.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.1.0"
+                        },
+                        {
+                            "fixed": "19.1.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.0.0"
+                        },
+                        {
+                            "fixed": "19.0.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "9.1.0"
+                        },
+                        {
+                            "fixed": "18.11.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,40 +85,65 @@
     ],
     "database_specific": {
         "cite": [
-            "https://lists.x.org/archives/xorg-announce/2026-July/003714.html"
+            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-1-2-released/"
         ],
         "discovery": "2026-07-08T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-56001",
-                "CVE-2026-56002",
-                "CVE-2026-56003"
+                "CVE-2026-6896",
+                "CVE-2026-13320",
+                "CVE-2026-11827",
+                "CVE-2026-8472",
+                "CVE-2026-7492",
+                "CVE-2025-12506",
+                "CVE-2026-13151",
+                "CVE-2026-6352"
             ]
         },
-        "vid": "9a1fdf39-7b10-11f1-a315-589cfc10a551"
+        "vid": "84ce0c0c-7b4e-11f1-9c40-2cf05da270f3"
     },
-    "details": "X.Org project reports:\n\n> Multiple issues have been found in the libXfont2 library published by\n> X.Org for which we are releasing security fixes in libXfont2-2.0.8.\n",
+    "details": "Gitlab reports:\n\n> Cross-site Scripting issue in vulnerability evidence table renderer\n> impacts GitLab EE\n>\n> HTML Injection in wiki markup rendering impacts GitLab CE/EE\n>\n> Insufficiently Protected Credentials issue in repository mirroring\n> impacts GitLab EE\n>\n> Improper Access Control issue in work items impacts GitLab EE\n>\n> Missing Authorization issue in commit discussion display impacts\n> GitLab CE/EE\n>\n> Ambiguity Reference issue in a tag or branch impacts GitLab CE/EE\n>\n> Incorrect Authorization issue in group-level settings impacts GitLab\n> EE\n>\n> Incorrect Authorization issue in compliance violation management\n> impacts GitLab EE\n",
     "id": "FreeBSD-2026-0329",
-    "modified": "2026-07-08T00:00:00Z",
-    "published": "2026-07-08T00:00:00Z",
+    "modified": "2026-07-09T00:00:00Z",
+    "published": "2026-07-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://lists.x.org/archives/xorg-announce/2026-July/003714.html"
+            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-1-2-released/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-56001"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6896"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-56002"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13320"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-56003"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-11827"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-8472"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7492"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-12506"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13151"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6352"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "libXfont2 -- Multiple vulnerabilities"
+    "summary": "Gitlab -- Vulnerabilities"
 }

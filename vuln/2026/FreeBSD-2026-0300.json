@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "nsd"
+                "name": "chromium"
             },
             "ranges": [
                 {
@@ -12,7 +12,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.14.3"
+                            "fixed": "149.0.7827.200"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "149.0.7827.200"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,60 +41,40 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12244.txt",
-            "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12245.txt",
-            "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12246.txt",
-            "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12490.txt"
+            "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html"
         ],
         "discovery": "2026-06-25T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-12244",
-                "CVE-2026-12245",
-                "CVE-2026-12246",
-                "CVE-2026-12490"
+                "CVE-2026-13281",
+                "CVE-2026-13282",
+                "CVE-2026-13283"
             ]
         },
-        "vid": "bebbc065-73d2-11f1-910d-3c7c3fba4204"
+        "vid": "5181294e-7471-11f1-8de5-a8a1599412c6"
     },
-    "details": "NLnet Labs reports:\n\n> CVE-2026-12244: A specially crafted SVCB RR can cause a heap overflow\n> of up to 65509 attacker controlled bytes.\n>\n> If NSD is configured as secondary for a zone, the primary of that zone\n> can crash NSD with an AXFR containing a DNS message with a special\n> crafted SVCB RR with an rdata size of 65512, that let\\'s an (uint16_t)\n> variable that is used to allocate space needed for the RR wrap\n> (because total size \\> 65535), causing a heap overflow. The attacker\n> can perform a controlled (RCE class) head write of up to 65509 bytes\\\n> \\\n> Even though the data is from a configured primary inside NSD\\'s trust\n> boundary, we do consider the risk significant enough for multi-tenant\n> secondary DNS deployments, given the potential severity of the attack.\n\n> CVE-2026-12245: An attacker can keep all children in a crash-restart\n> loop denying DoT service.\n>\n> NSD from version 4.13.0 has a heap use-after-free bug in logging\n> errors on TLS connections, causing a crash of the server process,\n> which can be triggered trivially by sending a DNS query over a DoT\n> connection, and closing the connection without reading the response.\\\n> \\\n> Any client with access to the DoT port (853) can trigger this. Even\n> though a new server process will be immediately reforked to replace\n> the crashed one, an attacker can keep all children in a crash-restart\n> loop denying DoT service.\n\n> CVE-2026-12246: The RR type APL rdata address, if too large, causes\n> out of bounds write on the stack, when the zonefile is written out.\n>\n> NSD version 4.14.0 introduced a bug where a specially crafted APL RR,\n> with an adflength larger than permitted for the address family will\n> overwrite the stack when the zone is written to disk, with a maximum\n> of 111 attacker controlled bytes.\\\n> \\\n> Even though the data is from a configured primary inside NSD\\'s trust\n> boundary, we do consider the risk significant enough for multi-tenant\n> secondary DNS deployments, where a primary could introduce the rogue\n> APL with the secondary not noticing or only after the fact.\n\n> CVE-2026-12490: Secondaries authenticated by a client certificate to\n> transfer a zone over TLS, can bypass verification by transferring over\n> TCP.\n>\n> When a \\\"provide-xfr\\\" is given with a \\\"tls-auth-name\\\", a secondary\n> requesting a transfer should provide a client certificate with that\n> name. However, no client certificate is needed when the request comes\n> in over TLS over the regular \\\"tls-port\\\" (and not the\n> \\\"tls-auth-port\\\") or over over TCP over the regular port, when the\n> other conditions of the \\\"provide-xfr\\\" rule match.\\\n> \\\n> The transfer security restrictions for client certificates can be\n> bypassed completely if the attacker can match the other access control\n> conditions, and the \\\"tls-auth-xfr-only\\\" option is not explicitly set\n> to \\\"yes\\\" (which it by default is not)\n\nThanks to people below for reporting and disclosing these\nvulnerabilities:\n\n- Qifan Zhang from Palo Alto Networks\n- Haruki Oyama from Waseda University\n- zhangph\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 3 security fixes:\n>\n> - \\[513138301\\] High CVE-2026-13281: Integer overflow in Mojo.\n>   Reported by Google on 2026-05-14\n> - \\[517522620\\] High CVE-2026-13282: Use after free in Payments.\n>   Reported by Google on 2026-05-28\n> - \\[522561151\\] High CVE-2026-13283: Use after free in AdFilter.\n>   Reported by Google on 2026-06-11\n",
     "id": "FreeBSD-2026-0300",
-    "modified": "2026-06-29T00:00:00Z",
-    "published": "2026-06-29T00:00:00Z",
+    "modified": "2026-06-30T00:00:00Z",
+    "published": "2026-06-30T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12244.txt"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12245.txt"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12246.txt"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-12490.txt"
+            "url": "https://chromereleases.googleblog.com/2026/06/stable-channel-update-for-desktop_01245939337.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12244"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13281"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12245"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13282"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12246"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12490"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13283"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "NSD -- vulnerabilities"
+    "summary": "chromium -- security fixes"
 }

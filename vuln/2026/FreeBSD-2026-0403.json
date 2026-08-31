@@ -1,0 +1,140 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "151.0.7922.169"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "151.0.7922.169"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_0826575033.html"
+        ],
+        "discovery": "2026-08-18T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-76034",
+                "CVE-2026-76036",
+                "CVE-2026-76033",
+                "CVE-2026-76037",
+                "CVE-2026-76044",
+                "CVE-2026-76039",
+                "CVE-2026-76040",
+                "CVE-2026-76035",
+                "CVE-2026-76042",
+                "CVE-2026-76046",
+                "CVE-2026-76043",
+                "CVE-2026-76041",
+                "CVE-2026-76047",
+                "CVE-2026-76038",
+                "CVE-2026-76045"
+            ]
+        },
+        "vid": "d14c86b6-9ca3-11f1-bf98-a8a1599412c6"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 15 security fixes:\n>\n> - \\[534923522\\] Critical CVE-2026-76034: Buffer overflow in WebGL.\n> - \\[540087398\\] Critical CVE-2026-76036: Buffer overflow in Dawn.\n> - \\[516715010\\] High CVE-2026-76033: Inappropriate implementation in\n>   CORS.\n> - \\[517612295\\] High CVE-2026-76037: Link following in\n>   CredentialProvider.\n> - \\[522732244\\] High CVE-2026-76044: Race condition in USB.\n> - \\[525167753\\] High CVE-2026-76039: Incorrect reference resolution in\n>   Core.\n> - \\[534862220\\] High CVE-2026-76040: Use after free in Browser.\n> - \\[536439844\\] High CVE-2026-76035: Inappropriate implementation in\n>   Media.\n> - \\[536460270\\] High CVE-2026-76042: Use of uninitialized resource in\n>   GPU.\n> - \\[536581050\\] High CVE-2026-76046: Buffer overflow in ANGLE.\n> - \\[539350801\\] High CVE-2026-76043: Incorrect calculation in V8.\n> - \\[540027341\\] High CVE-2026-76041: Information leak in Skia.\n> - \\[541251902\\] High CVE-2026-76047: Type confusion in V8.\n> - \\[541926503\\] High CVE-2026-76038: Type confusion in V8.\n> - \\[543082390\\] High CVE-2026-76045: Use after free in WebGL.\n",
+    "id": "FreeBSD-2026-0403",
+    "modified": "2026-08-20T00:00:00Z",
+    "published": "2026-08-20T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_0826575033.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76034"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76036"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76033"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76037"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76044"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76039"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76040"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76035"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76042"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76046"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76043"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76041"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76047"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76038"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76045"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- security fixes"
+}

@@ -3,149 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-calibreweb"
+                "name": "openssh-portable"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0.6.24"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "0.6.27"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py311-calibreweb"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0.6.24"
-                        },
-                        {
-                            "fixed": "0.6.27"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py312-calibreweb"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0.6.24"
-                        },
-                        {
-                            "fixed": "0.6.27"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313-calibreweb"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0.6.24"
-                        },
-                        {
-                            "fixed": "0.6.27"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313t-calibreweb"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0.6.24"
-                        },
-                        {
-                            "fixed": "0.6.27"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py314-calibreweb"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0.6.24"
-                        },
-                        {
-                            "fixed": "0.6.27"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py314t-calibreweb"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0.6.24"
-                        },
-                        {
-                            "fixed": "0.6.27"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py315-calibreweb"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0.6.24"
-                        },
-                        {
-                            "fixed": "0.6.27"
+                            "fixed": "10.5.p1,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -155,48 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/advisories/GHSA-2g7m-ph9x-7q7m",
-            "https://github.com/advisories/GHSA-qc4j-v7h6-xr5h"
+            "https://www.openssh.org/txt/release-10.5"
         ],
-        "discovery": "2025-07-24T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2025-6998",
-                "CVE-2025-7404"
-            ]
-        },
-        "vid": "e87b74fa-940d-11f1-b046-3c7c3fba4204"
+        "discovery": "2026-08-11T00:00:00Z",
+        "vid": "20655058-9565-11f1-8144-8447094a420f"
     },
-    "details": "The Calibre Web Team reports:\n\n> ReDoS in strip_whitespaces() function in cps/string_helper.py in\n> Calibre Web and Autocaliweb allows unauthenticated remote attackers to\n> cause denial of service via specially crafted username parameter that\n> triggers catastrophic backtracking during login.\\\n> This issue affects Calibre Web: 0.6.24 (Nicolette); Autocaliweb: from\n> 0.7.0 before 0.7.1.\n\n> Improper Neutralization of Special Elements used in an OS Command\n> (\\'OS Command Injection\\') vulnerability in Calibre Web, Autocaliweb\n> allows Blind OS Command Injection.\\\n> This issue affects Calibre Web: 0.6.24 (Nicolette); Autocaliweb: from\n> 0.7.0 before 0.7.1.\n",
+    "details": "The OpenSSH project reports:\n\n> - ssh-agent(1): fix an interaction between agent locking and the\n>   session-bind@openssh.com extension that is used to identify\n>   forwarded agents.\n> - ssh(1): avoid potential realloc use-after-free in the client if a\n>   remote forwarding is added via the local session multiplexing socket\n>   while a remote forwarding open request is pending with the server.\n> - sshd(8): make the authorized_keys \\\"restrict\\\" keyword apply\n>   correctly to tunnel forwarding too (which is administratively\n>   disabled by default).\n",
     "id": "FreeBSD-2026-0390",
-    "modified": "2026-08-09T00:00:00Z",
-    "published": "2026-08-09T00:00:00Z",
+    "modified": "2026-08-11T00:00:00Z",
+    "published": "2026-08-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/advisories/GHSA-2g7m-ph9x-7q7m"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://github.com/advisories/GHSA-qc4j-v7h6-xr5h"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-6998"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-6998"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-7404"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-7404"
+            "url": "https://www.openssh.org/txt/release-10.5"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Calibre Web -- two vulnerabilities"
+    "summary": "OpenSSH -- Multiple vulnerbilities"
 }
