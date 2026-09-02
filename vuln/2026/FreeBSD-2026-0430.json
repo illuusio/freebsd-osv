@@ -1,0 +1,146 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "keycloak"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.7.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.keycloak.org/2026/08/keycloak-2673-released"
+        ],
+        "discovery": "2026-08-31T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-35563",
+                "CVE-2026-16093",
+                "CVE-2026-16072",
+                "CVE-2026-16108",
+                "CVE-2026-16105",
+                "CVE-2026-16089",
+                "CVE-2026-16104",
+                "CVE-2026-16106",
+                "CVE-2026-17059",
+                "CVE-2026-18218",
+                "CVE-2026-18215",
+                "CVE-2026-18201",
+                "CVE-2026-18209",
+                "CVE-2026-18214",
+                "CVE-2026-18571",
+                "CVE-2026-18572",
+                "CVE-2026-18573",
+                "CVE-2026-18570",
+                "CVE-2026-19729",
+                "CVE-2026-79652"
+            ]
+        },
+        "vid": "2eb1927c-a57b-11f1-9b1f-3c7c3fba4204"
+    },
+    "details": "The Keycloak Team reports:\n\n> - \\[CVE-2026-35563\\]: LDAP client implementation in version 2.1.7 does\n>   not verify if the server certificate matches the intended LDAP\n>   hostname\n> - \\[CVE-2026-16093\\]: Required signed-JWT assertion policy can be\n>   bypassed with unsigned assertion headers\n> - \\[CVE-2026-16072\\]: Organization managers can create managed members\n>   through stored registration links without manage-users\n> - \\[CVE-2026-16108\\]: Realm default-group reads disclose hidden groups\n>   under FGAP v2\n> - \\[CVE-2026-16105\\]: Missing per-role authorization on\n>   RoleContainerResource composite endpoints\n> - \\[CVE-2026-16089\\]: Authorization codes can be retargeted to another\n>   client session\n> - \\[CVE-2026-16104\\]: Authenticator config surfaces expose raw\n>   reCAPTCHA secrets\n> - \\[CVE-2026-16106\\]: Incorrect authorization in admin role-composite\n>   deletion allows delegated admin to remove privileged child roles\n> - \\[CVE-2026-17059\\]: Information disclosure: GET /roles/{role}/users\n>   returns user PII without the per-user view filter\n> - \\[CVE-2026-18218\\]: Client not-before revocation is ignored when\n>   realm not-before is older but nonzero\n> - \\[CVE-2026-18215\\]: Microsoft external access-token exchange\n>   bypasses configured tenant\n> - \\[CVE-2026-18201\\]: Generic identity-provider creation can bind\n>   brokers to organizations without manage-organizations\n> - \\[CVE-2026-18209\\]: Incomplete fix for redirect_uri OIDC\n>   response-parameter injection: forbidden-parameter check (commit\n>   18832bca) inspects only the query string, not the URL fragment\n> - \\[CVE-2026-18214\\]: Google external access-token exchange bypasses\n>   hosted-domain restriction\n> - \\[CVE-2026-18571\\]: FGAP V2: Group assignment bypass during user\n>   creation (POST /users) allows adding unpermitted groups\n> - \\[CVE-2026-18572\\]: UMA claim token can override the authorization\n>   time-policy clock\n> - \\[CVE-2026-18573\\]: Client access-type condition evaluates updates\n>   against the old client type\n> - \\[CVE-2026-18570\\]: Full-scope-disabled client policy validation can\n>   be bypassed by omitting fullScopeAllowed\n> - \\[CVE-2026-19729\\]: Incomplete fix for CVE-2026-9083 --- relative\n>   path traversal still enables filesystem probing in 26.6.4\n> - \\[CVE-2026-79652\\]: Keycloak jwt-bearer authorization grant does not\n>   enforce consentRequired\n",
+    "id": "FreeBSD-2026-0430",
+    "modified": "2026-08-31T00:00:00Z",
+    "published": "2026-08-31T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.keycloak.org/2026/08/keycloak-2673-released"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35563"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16093"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16072"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16108"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16105"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16089"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16104"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16106"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-17059"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18218"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18215"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18201"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18209"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18214"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18571"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18572"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18573"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18570"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19729"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79652"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Keycloak -- multiple vulnerabilities"
+}

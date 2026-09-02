@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "expat2"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.8.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/libexpat/libexpat/pull/1321"
+        ],
+        "discovery": "2026-08-18T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-66046"
+            ]
+        },
+        "vid": "88917664-a65c-11f1-a49c-00a0980083d7"
+    },
+    "details": "https://github.com/libexpat/libexpat/pull/1321 reports:\n\n> Expat through 2.8.3 contains a denial of service vulnerability caused\n> by quadratic algorithmic complexity in the storeAtts() function in\n> xmlparse.c, where processing N specified attributes with\n> non-normalized values triggers an O(N\\^2) linear scan of\n> elementType-\\>defaultAtts to determine CDATA status. A remote\n> unauthenticated attacker can supply a single well-formed XML document\n> of a few megabytes to an application parsing untrusted XML to cause\n> excessive CPU consumption, resulting in denial of service without\n> requiring authentication, external entity resolution, or non-default\n> parser options.\n",
+    "id": "FreeBSD-2026-0434",
+    "modified": "2026-09-01T00:00:00Z",
+    "published": "2026-09-01T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/libexpat/libexpat/pull/1321"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-66046"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "expat2 -- Inefficient Algorithmic Complexity"
+}

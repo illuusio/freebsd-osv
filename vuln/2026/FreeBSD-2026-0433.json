@@ -1,0 +1,238 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "28.5.0.6,4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime27"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "27.3.4.17"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime28"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "28.5.0.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "erlang-runtime29"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "29.0.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/erlang/otp/security/advisories"
+        ],
+        "discovery": "2026-09-01T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-55951",
+                "CVE-2026-59696",
+                "CVE-2026-66357",
+                "CVE-2026-66835",
+                "CVE-2026-69664",
+                "CVE-2026-70399",
+                "CVE-2026-70405",
+                "CVE-2026-70409",
+                "CVE-2026-71380",
+                "CVE-2026-71562",
+                "CVE-2026-73270",
+                "CVE-2026-73276",
+                "CVE-2026-73812",
+                "CVE-2026-74835",
+                "CVE-2026-74994"
+            ]
+        },
+        "vid": "e9dfc357-a63f-11f1-9195-4c526214c986"
+    },
+    "details": "The Erlang/OTP project reports:\n\n> OTP 29.0.6, 28.5.0.6 and 27.3.4.17 fix the following issues, most of\n> them in the inets httpd and httpc implementations:\n>\n> - CVE-2026-55951: httpc Memory Exhaustion via Unbounded Header\n>   Accumulation.\n> - CVE-2026-59696: stdlib: Denial-of-Service enabled by Unbounded\n>   Integer Conversion.\n> - CVE-2026-66357: HTTP Request Smuggling via obs-fold Header\n>   Continuation in httpd.\n> - CVE-2026-66835: Possible directory protection bypass in Erlang-OTP\n>   inets httpd.\n> - CVE-2026-69664: Denial of Service via Malformed Chunk Size in httpd.\n> - CVE-2026-70399: Denial of Service via Unenforced Default max_clients\n>   Limit in httpd.\n> - CVE-2026-70405: snmp: Denial-of-Service enabled by Unbounded Integer\n>   Conversion.\n> - CVE-2026-70409: eldap: Denial-of-Service enabled by Unbounded\n>   Integer Conversion.\n> - CVE-2026-71380: Denial of Service via Body-Read Timeout Gap in httpd\n>   (Slowloris Variant).\n> - CVE-2026-71562: inets: Denial-of-Service enabled by Unbounded\n>   Integer Conversion.\n> - CVE-2026-73270: Authentication Bypass via Case-Insensitive\n>   Filesystem Path Matching in httpd mod_auth.\n> - CVE-2026-73276: HTTP Request Smuggling via Whitespace-Before-Colon\n>   Header Dropping in httpd.\n> - CVE-2026-73812: HTTP Request Smuggling via Transfer-Encoding and\n>   Content-Length in httpd.\n> - CVE-2026-74835: Memory Exhaustion via Unenforced max_body_size\n>   During Chunked Body Reception in httpd.\n> - CVE-2026-74994: Authentication Bypass via Directory Namespace\n>   Collapse in httpd mod_auth (dets/mnesia backends).\n",
+    "id": "FreeBSD-2026-0433",
+    "modified": "2026-09-01T00:00:00Z",
+    "published": "2026-09-01T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/erlang/otp/security/advisories"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55951"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-59696"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-66357"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-66835"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-69664"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70399"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70405"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70409"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-71380"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-71562"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73270"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73276"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73812"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-74835"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-74994"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-f9fw-mg7q-4g3x"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-8qw4-2chm-mvj2"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-qh2f-33hj-37qf"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-r4vv-vc2c-2fw6"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-mr35-8h7w-w3gq"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-pwvh-c689-f8q5"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-q7cq-pfgf-5hr7"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-9vgh-c8cm-m9p4"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-5vp4-58hc-h8cc"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-cqx9-9hq6-m8wf"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-mh78-93cr-jx8f"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-6v7q-jwgh-cx8p"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-7j6m-4ffg-hg46"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-8qrh-x566-5xv5"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/erlang/otp/security/advisories/GHSA-c3cq-q8x6-547g"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Erlang/OTP -- multiple vulnerabilities in inets, stdlib, snmp and eldap"
+}

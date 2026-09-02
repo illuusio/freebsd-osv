@@ -1,0 +1,1700 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "152.0.7977.64"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "152.0.7977.64"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_0256176589.html"
+        ],
+        "discovery": "2026-08-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-79282",
+                "CVE-2026-79290",
+                "CVE-2026-79054",
+                "CVE-2026-79121",
+                "CVE-2026-79224",
+                "CVE-2026-79052",
+                "CVE-2026-79150",
+                "CVE-2026-78935",
+                "CVE-2026-79012",
+                "CVE-2026-79200",
+                "CVE-2026-78989",
+                "CVE-2026-79069",
+                "CVE-2026-79175",
+                "CVE-2026-79218",
+                "CVE-2026-79195",
+                "CVE-2026-78939",
+                "CVE-2026-79194",
+                "CVE-2026-79247",
+                "CVE-2026-79219",
+                "CVE-2026-79047",
+                "CVE-2026-79292",
+                "CVE-2026-78986",
+                "CVE-2026-79039",
+                "CVE-2026-78934",
+                "CVE-2026-79011",
+                "CVE-2026-78911",
+                "CVE-2026-79257",
+                "CVE-2026-79202",
+                "CVE-2026-79212",
+                "CVE-2026-79183",
+                "CVE-2026-79155",
+                "CVE-2026-79093",
+                "CVE-2026-79019",
+                "CVE-2026-79187",
+                "CVE-2026-79288",
+                "CVE-2026-79130",
+                "CVE-2026-78965",
+                "CVE-2026-79117",
+                "CVE-2026-79082",
+                "CVE-2026-79111",
+                "CVE-2026-79072",
+                "CVE-2026-79142",
+                "CVE-2026-78948",
+                "CVE-2026-78908",
+                "CVE-2026-78895",
+                "CVE-2026-79043",
+                "CVE-2026-79235",
+                "CVE-2026-79232",
+                "CVE-2026-79118",
+                "CVE-2026-79174",
+                "CVE-2026-78900",
+                "CVE-2026-79188",
+                "CVE-2026-79189",
+                "CVE-2026-79048",
+                "CVE-2026-79240",
+                "CVE-2026-79014",
+                "CVE-2026-79198",
+                "CVE-2026-79131",
+                "CVE-2026-79149",
+                "CVE-2026-79275",
+                "CVE-2026-79138",
+                "CVE-2026-79026",
+                "CVE-2026-79027",
+                "CVE-2026-78904",
+                "CVE-2026-78899",
+                "CVE-2026-78954",
+                "CVE-2026-79274",
+                "CVE-2026-78938",
+                "CVE-2026-78952",
+                "CVE-2026-79236",
+                "CVE-2026-79078",
+                "CVE-2026-79209",
+                "CVE-2026-79030",
+                "CVE-2026-79216",
+                "CVE-2026-79007",
+                "CVE-2026-78893",
+                "CVE-2026-79222",
+                "CVE-2026-79071",
+                "CVE-2026-79076",
+                "CVE-2026-79088",
+                "CVE-2026-79104",
+                "CVE-2026-79044",
+                "CVE-2026-78958",
+                "CVE-2026-78961",
+                "CVE-2026-79262",
+                "CVE-2026-79106",
+                "CVE-2026-79176",
+                "CVE-2026-78966",
+                "CVE-2026-79186",
+                "CVE-2026-79267",
+                "CVE-2026-79016",
+                "CVE-2026-79010",
+                "CVE-2026-79286",
+                "CVE-2026-78945",
+                "CVE-2026-78999",
+                "CVE-2026-78941",
+                "CVE-2026-79032",
+                "CVE-2026-79109",
+                "CVE-2026-79256",
+                "CVE-2026-79237",
+                "CVE-2026-78898",
+                "CVE-2026-78985",
+                "CVE-2026-79028",
+                "CVE-2026-79210",
+                "CVE-2026-79046",
+                "CVE-2026-79129",
+                "CVE-2026-78937",
+                "CVE-2026-78987",
+                "CVE-2026-78990",
+                "CVE-2026-78909",
+                "CVE-2026-79271",
+                "CVE-2026-79144",
+                "CVE-2026-79065",
+                "CVE-2026-79192",
+                "CVE-2026-79140",
+                "CVE-2026-79128",
+                "CVE-2026-78942",
+                "CVE-2026-79116",
+                "CVE-2026-79006",
+                "CVE-2026-79095",
+                "CVE-2026-79084",
+                "CVE-2026-78991",
+                "CVE-2026-79248",
+                "CVE-2026-78891",
+                "CVE-2026-79031",
+                "CVE-2026-79110",
+                "CVE-2026-79136",
+                "CVE-2026-78907",
+                "CVE-2026-79087",
+                "CVE-2026-79231",
+                "CVE-2026-78969",
+                "CVE-2026-79137",
+                "CVE-2026-79057",
+                "CVE-2026-78894",
+                "CVE-2026-79264",
+                "CVE-2026-78910",
+                "CVE-2026-79066",
+                "CVE-2026-79255",
+                "CVE-2026-79086",
+                "CVE-2026-79038",
+                "CVE-2026-78940",
+                "CVE-2026-79107",
+                "CVE-2026-79120",
+                "CVE-2026-79270",
+                "CVE-2026-79067",
+                "CVE-2026-79213",
+                "CVE-2026-78943",
+                "CVE-2026-79259",
+                "CVE-2026-79208",
+                "CVE-2026-79251",
+                "CVE-2026-79226",
+                "CVE-2026-79042",
+                "CVE-2026-79122",
+                "CVE-2026-79199",
+                "CVE-2026-79013",
+                "CVE-2026-79074",
+                "CVE-2026-79215",
+                "CVE-2026-79049",
+                "CVE-2026-79132",
+                "CVE-2026-79201",
+                "CVE-2026-79051",
+                "CVE-2026-79053",
+                "CVE-2026-79285",
+                "CVE-2026-78906",
+                "CVE-2026-79250",
+                "CVE-2026-79020",
+                "CVE-2026-79217",
+                "CVE-2026-79204",
+                "CVE-2026-78912",
+                "CVE-2026-78955",
+                "CVE-2026-79143",
+                "CVE-2026-79241",
+                "CVE-2026-78967",
+                "CVE-2026-79214",
+                "CVE-2026-79228",
+                "CVE-2026-78953",
+                "CVE-2026-79229",
+                "CVE-2026-79002",
+                "CVE-2026-79272",
+                "CVE-2026-79127",
+                "CVE-2026-79151",
+                "CVE-2026-78936",
+                "CVE-2026-78905",
+                "CVE-2026-79050",
+                "CVE-2026-79008",
+                "CVE-2026-78975",
+                "CVE-2026-79287",
+                "CVE-2026-79094",
+                "CVE-2026-79173",
+                "CVE-2026-78976",
+                "CVE-2026-79276",
+                "CVE-2026-79191",
+                "CVE-2026-79099",
+                "CVE-2026-79024",
+                "CVE-2026-79193",
+                "CVE-2026-79242",
+                "CVE-2026-79180",
+                "CVE-2026-79293",
+                "CVE-2026-79023",
+                "CVE-2026-79146",
+                "CVE-2026-79238",
+                "CVE-2026-78949",
+                "CVE-2026-79291",
+                "CVE-2026-79283",
+                "CVE-2026-78892",
+                "CVE-2026-79070",
+                "CVE-2026-79205",
+                "CVE-2026-78903",
+                "CVE-2026-78959",
+                "CVE-2026-79234",
+                "CVE-2026-78983",
+                "CVE-2026-79083",
+                "CVE-2026-78944",
+                "CVE-2026-79178",
+                "CVE-2026-79059",
+                "CVE-2026-79245",
+                "CVE-2026-78978",
+                "CVE-2026-79103",
+                "CVE-2026-79154",
+                "CVE-2026-79230",
+                "CVE-2026-79068",
+                "CVE-2026-79269",
+                "CVE-2026-79085",
+                "CVE-2026-79134",
+                "CVE-2026-79064",
+                "CVE-2026-79003",
+                "CVE-2026-79220",
+                "CVE-2026-78951",
+                "CVE-2026-79249",
+                "CVE-2026-79091",
+                "CVE-2026-79265",
+                "CVE-2026-78913",
+                "CVE-2026-79258",
+                "CVE-2026-79211",
+                "CVE-2026-79252",
+                "CVE-2026-78962",
+                "CVE-2026-78901",
+                "CVE-2026-79097",
+                "CVE-2026-79227",
+                "CVE-2026-79203",
+                "CVE-2026-79033",
+                "CVE-2026-79139",
+                "CVE-2026-79221",
+                "CVE-2026-79034",
+                "CVE-2026-79075",
+                "CVE-2026-78960",
+                "CVE-2026-78984",
+                "CVE-2026-78963",
+                "CVE-2026-79004",
+                "CVE-2026-79182",
+                "CVE-2026-79185",
+                "CVE-2026-79073",
+                "CVE-2026-79266",
+                "CVE-2026-79025",
+                "CVE-2026-79141",
+                "CVE-2026-78974",
+                "CVE-2026-79055",
+                "CVE-2026-79263",
+                "CVE-2026-79124",
+                "CVE-2026-79184",
+                "CVE-2026-79289",
+                "CVE-2026-79001",
+                "CVE-2026-79077",
+                "CVE-2026-78950",
+                "CVE-2026-79196",
+                "CVE-2026-79000",
+                "CVE-2026-78979",
+                "CVE-2026-79181",
+                "CVE-2026-79190",
+                "CVE-2026-79206",
+                "CVE-2026-78897",
+                "CVE-2026-79119",
+                "CVE-2026-79089",
+                "CVE-2026-79147",
+                "CVE-2026-79098",
+                "CVE-2026-79022",
+                "CVE-2026-79233",
+                "CVE-2026-79261",
+                "CVE-2026-78977",
+                "CVE-2026-79040",
+                "CVE-2026-79273",
+                "CVE-2026-79243",
+                "CVE-2026-79123",
+                "CVE-2026-79005",
+                "CVE-2026-79090",
+                "CVE-2026-78946",
+                "CVE-2026-78968",
+                "CVE-2026-79041",
+                "CVE-2026-79284",
+                "CVE-2026-78896",
+                "CVE-2026-79058",
+                "CVE-2026-79009",
+                "CVE-2026-79060",
+                "CVE-2026-79177",
+                "CVE-2026-78956",
+                "CVE-2026-79239",
+                "CVE-2026-79015",
+                "CVE-2026-79108",
+                "CVE-2026-79056",
+                "CVE-2026-79018",
+                "CVE-2026-78980",
+                "CVE-2026-78947",
+                "CVE-2026-79244",
+                "CVE-2026-79112",
+                "CVE-2026-79246",
+                "CVE-2026-79223",
+                "CVE-2026-79045",
+                "CVE-2026-79197",
+                "CVE-2026-79148",
+                "CVE-2026-79125",
+                "CVE-2026-79207",
+                "CVE-2026-79017",
+                "CVE-2026-79105",
+                "CVE-2026-79225",
+                "CVE-2026-79021",
+                "CVE-2026-79133",
+                "CVE-2026-79179",
+                "CVE-2026-79152",
+                "CVE-2026-78981",
+                "CVE-2026-78957",
+                "CVE-2026-79126",
+                "CVE-2026-78915",
+                "CVE-2026-79253",
+                "CVE-2026-79260",
+                "CVE-2026-79254",
+                "CVE-2026-78914",
+                "CVE-2026-78964"
+            ]
+        },
+        "vid": "16cb13dc-a55d-11f1-bf98-a8a1599412c6"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 327 security fixes:\n>\n> - \\[496807874\\] Critical CVE-2026-79282: Use after free in ANGLE.\n> - \\[516427761\\] Critical CVE-2026-79290: Use after free in Aura.\n> - \\[516764384\\] Critical CVE-2026-79054: Use after free in Chromecast.\n> - \\[516777082\\] Critical CVE-2026-79121: Improper input validation in\n>   Chromecast.\n> - \\[516988476\\] Critical CVE-2026-79224: Use after free in Chromecast.\n> - \\[517518019\\] Critical CVE-2026-79052: Use after free in Aura.\n> - \\[518006007\\] Critical CVE-2026-79150: Use after free in Views.\n> - \\[522082472\\] Critical CVE-2026-78935: Use of uninitialized variable\n>   in Mobile.\n> - \\[523704817\\] Critical CVE-2026-79012: Use after free in\n>   Safebrowsing.\n> - \\[532921800\\] Critical CVE-2026-79200: Use after free in Aura.\n> - \\[532617619\\] High CVE-2026-78989: Out of bounds read in ANGLE.\n> - \\[508638064\\] High CVE-2026-79069: Memory corruption in Tint.\n> - \\[498885920\\] High CVE-2026-79175: Type confusion in Accessibility.\n> - \\[500311587\\] High CVE-2026-79218: Incorrect authorization in\n>   Sandbox.\n> - \\[501892500\\] High CVE-2026-79195: Use after free in Script.\n> - \\[513261751\\] High CVE-2026-78939: Use after free in Chromecast.\n> - \\[515470739\\] High CVE-2026-79194: Use after free in Chromoting.\n> - \\[515473074\\] High CVE-2026-79247: Use after free in Chromoting.\n> - \\[516947491\\] High CVE-2026-79219: Use after free in Bluetooth.\n> - \\[517515945\\] High CVE-2026-79047: Use after free in Views.\n> - \\[517519352\\] High CVE-2026-79292: Integer overflow in Chromecast.\n> - \\[517527943\\] High CVE-2026-78986: Uninitialized resource in GPU.\n> - \\[517548647\\] High CVE-2026-79039: Use after free in Mobile.\n> - \\[517550232\\] High CVE-2026-78934: Race condition in ReadAloud.\n> - \\[517736936\\] High CVE-2026-79011: UI misrepresentation in Browser.\n> - \\[517742721\\] High CVE-2026-78911: Incorrect authorization in USB.\n> - \\[517959443\\] High CVE-2026-79257: Use after free in Views.\n> - \\[521285077\\] High CVE-2026-79202: Use after free in Chromecast.\n> - \\[521502218\\] High CVE-2026-79212: Missing authorization in\n>   Passwords.\n> - \\[521942358\\] High CVE-2026-79183: Use after free in Accessibility.\n> - \\[522294538\\] High CVE-2026-79155: Race condition in FileSystem.\n> - \\[523095011\\] High CVE-2026-79093: Incorrect authorization in Paint.\n> - \\[523266585\\] High CVE-2026-79019: Out of bounds write in ANGLE.\n> - \\[523296105\\] High CVE-2026-79187: Use after free in WebRTC.\n> - \\[523714535\\] High CVE-2026-79288: Improper input validation in\n>   Autofill.\n> - \\[523717796\\] High CVE-2026-79130: Buffer overflow in ANGLE.\n> - \\[523723064\\] High CVE-2026-78965: Uninitialized resource in ANGLE.\n> - \\[523738212\\] High CVE-2026-79117: Race condition in WebAppInstalls.\n> - \\[524698525\\] High CVE-2026-79082: Incorrect authorization in\n>   Transactions Platform.\n> - \\[525683797\\] High CVE-2026-79111: Improper input validation in\n>   Dawn.\n> - \\[528397177\\] High CVE-2026-79072: Improper state validation in\n>   Performance.\n> - \\[529509587\\] High CVE-2026-79142: Buffer overflow in ANGLE.\n> - \\[529991907\\] High CVE-2026-78948: Buffer overflow in WebGL.\n> - \\[532904047\\] High CVE-2026-78908: Information leak in Canvas.\n> - \\[532914190\\] High CVE-2026-78895: Information leak in Paint.\n> - \\[532988552\\] High CVE-2026-79043: Out of bounds write in ANGLE.\n> - \\[534468209\\] High CVE-2026-79235: Use after free in WebGL.\n> - \\[534591074\\] High CVE-2026-79232: Use after free in Aura.\n> - \\[535379043\\] High CVE-2026-79118: Uninitialized resource in ANGLE.\n> - \\[535876894\\] High CVE-2026-79174: Incorrect authorization in\n>   Extensions.\n> - \\[536428615\\] High CVE-2026-78900: Improper input validation in\n>   Media.\n> - \\[536444272\\] High CVE-2026-79188: Out of bounds write in ANGLE.\n> - \\[536505721\\] High CVE-2026-79189: Out of bounds write in ANGLE.\n> - \\[536531630\\] High CVE-2026-79048: Out of bounds write in ANGLE.\n> - \\[536532605\\] High CVE-2026-79240: Out of bounds write in ANGLE.\n> - \\[536568319\\] High CVE-2026-79014: Race condition in Autofill.\n> - \\[536606137\\] High CVE-2026-79198: Use after free in Platform.\n> - \\[536626343\\] High CVE-2026-79131: Out of bounds write in ANGLE.\n> - \\[536636648\\] High CVE-2026-79149: Use after free in ANGLE.\n> - \\[536659904\\] High CVE-2026-79275: Use after free in ANGLE.\n> - \\[536681676\\] High CVE-2026-79138: Out of bounds write in ANGLE.\n> - \\[537109028\\] High CVE-2026-79026: Use after free in Extensions.\n> - \\[537233963\\] High CVE-2026-79027: Use after free in WebRTC.\n> - \\[537835609\\] High CVE-2026-78904: Type confusion in ANGLE.\n> - \\[540430406\\] High CVE-2026-78899: Use after free in V8.\n> - \\[540870921\\] High CVE-2026-78954: Incorrect authorization in\n>   Extensions.\n> - \\[543707066\\] High CVE-2026-79274: Information leak in GPU.\n> - \\[545767601\\] High CVE-2026-78938: Type confusion in V8.\n> - \\[545820931\\] High CVE-2026-78952: Out of bounds write in Crashpad.\n> - \\[546670199\\] High CVE-2026-79236: Type confusion in V8.\n> - \\[548340637\\] High CVE-2026-79078: Use after free in FedCM.\n> - \\[495021566\\] Medium CVE-2026-79209: Type confusion in Animation.\n> - \\[40057398\\] Medium CVE-2026-79030: Observable discrepancy in\n>   Autofill.\n> - \\[536913431\\] Medium CVE-2026-79216: Buffer overflow in Blink.\n> - \\[495579602\\] Medium CVE-2026-79007: Uninitialized resource in GPU.\n> - \\[495998981\\] Medium CVE-2026-78893: Information leak in QUIC.\n> - \\[496195129\\] Medium CVE-2026-79222: Incorrect authorization in\n>   CustomTabs.\n> - \\[496292729\\] Medium CVE-2026-79071: Race condition in GPU.\n> - \\[496395158\\] Medium CVE-2026-79076: Improper input validation in\n>   Sync.\n> - \\[496401361\\] Medium CVE-2026-79088: Incorrect authorization in\n>   FileSystem.\n> - \\[497017869\\] Medium CVE-2026-79104: Missing authorization in\n>   Sensor.\n> - \\[497095313\\] Medium CVE-2026-79044: Missing authorization in\n>   WebAppInstalls.\n> - \\[497205529\\] Medium CVE-2026-78958: Uninitialized resource in Skia.\n> - \\[497269030\\] Medium CVE-2026-78961: Incorrect authorization in\n>   Core.\n> - \\[497338168\\] Medium CVE-2026-79262: Incorrect authorization in\n>   Network.\n> - \\[497456156\\] Medium CVE-2026-79106: Improper input validation in\n>   Input.\n> - \\[497538341\\] Medium CVE-2026-79176: UI misrepresentation in\n>   Extensions.\n> - \\[497637694\\] Medium CVE-2026-78966: Externally controlled reference\n>   in QUIC.\n> - \\[497646947\\] Medium CVE-2026-79186: Incorrect authorization in\n>   Network.\n> - \\[497839983\\] Medium CVE-2026-79267: Race condition in Workers.\n> - \\[497854976\\] Medium CVE-2026-79016: Observable discrepancy in SVG.\n> - \\[497869284\\] Medium CVE-2026-79010: Operation on a resource after\n>   expiration or release in Network.\n> - \\[497940451\\] Medium CVE-2026-79286: Missing authorization in\n>   CustomTabs.\n> - \\[497948894\\] Medium CVE-2026-78945: Use after free in Views.\n> - \\[497957278\\] Medium CVE-2026-78999: Improper privilege management\n>   in Navigation.\n> - \\[498327743\\] Medium CVE-2026-78941: Information leak in Core.\n> - \\[498328139\\] Medium CVE-2026-79032: Improper input validation in\n>   Network.\n> - \\[498367544\\] Medium CVE-2026-79109: Improper input validation in\n>   Printing.\n> - \\[499007248\\] Medium CVE-2026-79256: Externally controlled reference\n>   in WebView.\n> - \\[499068536\\] Medium CVE-2026-79237: Incorrect authorization in\n>   Navigation.\n> - \\[499423269\\] Medium CVE-2026-78898: Incorrect authorization in\n>   Downloads.\n> - \\[500038021\\] Medium CVE-2026-78985: Incorrect reference resolution\n>   in FileSystem.\n> - \\[500492844\\] Medium CVE-2026-79028: Observable discrepancy in\n>   Network.\n> - \\[501331457\\] Medium CVE-2026-79210: Use after free in Audio.\n> - \\[501437087\\] Medium CVE-2026-79046: Race condition in Permissions.\n> - \\[501572758\\] Medium CVE-2026-79129: Use after free in Sessions.\n> - \\[501590191\\] Medium CVE-2026-78937: Use after free in Search.\n> - \\[501594511\\] Medium CVE-2026-78987: Information leak in Canvas.\n> - \\[501604761\\] Medium CVE-2026-78990: Use after free in Compositing.\n> - \\[501637242\\] Medium CVE-2026-78909: Use after free in Views.\n> - \\[501661601\\] Medium CVE-2026-79271: Information leak in DOM.\n> - \\[501759192\\] Medium CVE-2026-79144: Information leak in Skia.\n> - \\[501799770\\] Medium CVE-2026-79065: Improper input validation in\n>   Network.\n> - \\[502082953\\] Medium CVE-2026-79192: Improper input validation in\n>   Variations.\n> - \\[502101200\\] Medium CVE-2026-79140: Use after free in Views.\n> - \\[502109333\\] Medium CVE-2026-79128: Use after free in Views.\n> - \\[502139081\\] Medium CVE-2026-78942: Incorrect reference resolution\n>   in Loader.\n> - \\[502232151\\] Medium CVE-2026-79116: Missing authorization in Viz.\n> - \\[502344135\\] Medium CVE-2026-79006: Protection mechanism failure in\n>   HttpsUpgrades.\n> - \\[502488051\\] Medium CVE-2026-79095: Information leak in Payments.\n> - \\[502805441\\] Medium CVE-2026-79084: Inadequate encryption strength\n>   in Notifications.\n> - \\[502888857\\] Medium CVE-2026-78991: Race condition in WebProtect.\n> - \\[502918844\\] Medium CVE-2026-79248: Incorrect authorization in\n>   Input.\n> - \\[503013378\\] Medium CVE-2026-78891: Buffer overflow in WebRTC.\n> - \\[503472696\\] Medium CVE-2026-79031: Improper resource exposure in\n>   Preload.\n> - \\[503585863\\] Medium CVE-2026-79110: Missing authorization in\n>   Preload.\n> - \\[503624894\\] Medium CVE-2026-79136: Incorrect authorization in\n>   ServiceWorker.\n> - \\[503847023\\] Medium CVE-2026-78907: Incorrect authorization in\n>   WebProtect.\n> - \\[504226770\\] Medium CVE-2026-79087: Injection in Chrome Tabs.\n> - \\[504356442\\] Medium CVE-2026-79231: Buffer overflow in Media.\n> - \\[504633668\\] Medium CVE-2026-78969: Uninitialized resource in\n>   Video.\n> - \\[505951430\\] Medium CVE-2026-79137: Incorrect authorization in\n>   Extensions.\n> - \\[505967344\\] Medium CVE-2026-79057: Race condition in Start.\n> - \\[505991181\\] Medium CVE-2026-78894: Race condition in Payments.\n> - \\[507483993\\] Medium CVE-2026-79264: Incorrect reference resolution\n>   in Preload.\n> - \\[511260796\\] Medium CVE-2026-78910: Buffer overflow in V8.\n> - \\[511736672\\] Medium CVE-2026-79066: Improper input validation in\n>   Navigation.\n> - \\[511794959\\] Medium CVE-2026-79255: Improper input validation in\n>   WebRTC.\n> - \\[511804361\\] Medium CVE-2026-79086: Missing authorization in\n>   CustomTabs.\n> - \\[511806043\\] Medium CVE-2026-79038: Incorrect authorization in\n>   WebProtect.\n> - \\[511819962\\] Medium CVE-2026-78940: Improper initialization in\n>   Network.\n> - \\[511822878\\] Medium CVE-2026-79107: Incorrect authorization in\n>   TabGroups.\n> - \\[512971896\\] Medium CVE-2026-79120: Uninitialized resource in\n>   ANGLE.\n> - \\[513048462\\] Medium CVE-2026-79270: Uninitialized resource in\n>   ANGLE.\n> - \\[513049445\\] Medium CVE-2026-79067: Missing authorization in\n>   Network.\n> - \\[513119757\\] Medium CVE-2026-79213: Incorrect authorization in\n>   WebAppInstalls.\n> - \\[513192145\\] Medium CVE-2026-78943: Improper input validation in\n>   Editing.\n> - \\[513222422\\] Medium CVE-2026-79259: Improper input validation in\n>   Safebrowsing.\n> - \\[513287677\\] Medium CVE-2026-79208: Missing authorization in HTTP2.\n> - \\[513392351\\] Medium CVE-2026-79251: Improper input validation in\n>   Network.\n> - \\[513607252\\] Medium CVE-2026-79226: Improper privilege management\n>   in Regional Capabilities.\n> - \\[513608317\\] Medium CVE-2026-79042: Missing authorization in\n>   Payments.\n> - \\[513608831\\] Medium CVE-2026-79122: Information leak in SignIn.\n> - \\[513719741\\] Medium CVE-2026-79199: Incorrect authorization in\n>   Network.\n> - \\[513737209\\] Medium CVE-2026-79013: Improper input validation in\n>   Sync.\n> - \\[513745793\\] Medium CVE-2026-79074: Information leak in Network.\n> - \\[513760788\\] Medium CVE-2026-79215: Integer overflow in WebGL.\n> - \\[513786555\\] Medium CVE-2026-79049: Incorrect reference resolution\n>   in Passwords.\n> - \\[513834155\\] Medium CVE-2026-79132: Improper input validation in\n>   Input.\n> - \\[513836495\\] Medium CVE-2026-79201: Improper access control in\n>   Workers.\n> - \\[513841856\\] Medium CVE-2026-79051: Incorrect authorization in\n>   Loader.\n> - \\[513850062\\] Medium CVE-2026-79053: Missing authorization in\n>   Lighthouse.\n> - \\[513918923\\] Medium CVE-2026-79285: Uninitialized resource in\n>   ANGLE.\n> - \\[513923164\\] Medium CVE-2026-78906: Race condition in ANGLE.\n> - \\[514006744\\] Medium CVE-2026-79250: UI misrepresentation in\n>   Navigation.\n> - \\[514017820\\] Medium CVE-2026-79020: Out of bounds read in Skia.\n> - \\[514055709\\] Medium CVE-2026-79217: Incorrect authorization in\n>   Mobile.\n> - \\[514069975\\] Medium CVE-2026-79204: UI misrepresentation in Input.\n> - \\[514078852\\] Medium CVE-2026-78912: UI misrepresentation in\n>   Browser.\n> - \\[514439436\\] Medium CVE-2026-78955: Observable discrepancy in\n>   PerformanceAPIs.\n> - \\[514454739\\] Medium CVE-2026-79143: Incorrect authorization in\n>   FileSystem.\n> - \\[514508415\\] Medium CVE-2026-79241: Out of bounds read in GPU.\n> - \\[514529599\\] Medium CVE-2026-78967: Missing authorization in\n>   BFCache.\n> - \\[515477007\\] Medium CVE-2026-79214: Improper input validation in\n>   Preload.\n> - \\[516398679\\] Medium CVE-2026-79228: Incorrect authorization in\n>   SiteIsolation.\n> - \\[516665605\\] Medium CVE-2026-78953: Missing authorization in\n>   SiteIsolation.\n> - \\[516824665\\] Medium CVE-2026-79229: Uninitialized resource in\n>   ANGLE.\n> - \\[516899248\\] Medium CVE-2026-79002: Incorrect authorization in\n>   SiteIsolation.\n> - \\[516921259\\] Medium CVE-2026-79272: Improper input validation in\n>   FindInPage.\n> - \\[517045394\\] Medium CVE-2026-79127: Out of bounds write in ANGLE.\n> - \\[517074167\\] Medium CVE-2026-79151: Improper input validation in\n>   Safebrowsing.\n> - \\[517095594\\] Medium CVE-2026-78936: Observable discrepancy in\n>   CustomTabs.\n> - \\[517245017\\] Medium CVE-2026-78905: Type confusion in ANGLE.\n> - \\[517364411\\] Medium CVE-2026-79050: Incorrect authorization in\n>   Network.\n> - \\[517382613\\] Medium CVE-2026-79008: Improper input validation in\n>   GPU.\n> - \\[517398863\\] Medium CVE-2026-78975: Incorrect authorization in DOM.\n> - \\[517404644\\] Medium CVE-2026-79287: Observable discrepancy in\n>   Forms.\n> - \\[517467117\\] Medium CVE-2026-79094: Race condition in Workers.\n> - \\[517487890\\] Medium CVE-2026-79173: UI misrepresentation in\n>   WebAppInstalls.\n> - \\[517550421\\] Medium CVE-2026-78976: Improper input validation in\n>   StorageAccessAPI.\n> - \\[517580738\\] Medium CVE-2026-79276: Improper privilege management\n>   in FileSystem.\n> - \\[517606780\\] Medium CVE-2026-79191: Incorrect authorization in\n>   SiteIsolation.\n> - \\[517608454\\] Medium CVE-2026-79099: Missing authorization in\n>   Network.\n> - \\[517634590\\] Medium CVE-2026-79024: Information leak in\n>   ServiceWorker.\n> - \\[517655953\\] Medium CVE-2026-79193: Information leak in Canvas.\n> - \\[517697155\\] Medium CVE-2026-79242: Observable discrepancy in HTML.\n> - \\[517719358\\] Medium CVE-2026-79180: UI misrepresentation in\n>   CustomTabs.\n> - \\[517746687\\] Medium CVE-2026-79293: Information leak in Animation.\n> - \\[517761566\\] Medium CVE-2026-79023: Incorrect authorization in\n>   Editing.\n> - \\[517772510\\] Medium CVE-2026-79146: Information leak in CustomTabs.\n> - \\[517774971\\] Medium CVE-2026-79238: Incorrect authorization in\n>   ServiceWorker.\n> - \\[517910756\\] Medium CVE-2026-78949: Observable discrepancy in\n>   CustomTabs.\n> - \\[518023156\\] Medium CVE-2026-79291: Information leak in CSS.\n> - \\[518035396\\] Medium CVE-2026-79283: UI misrepresentation in\n>   Geometry.\n> - \\[518053893\\] Medium CVE-2026-78892: Incorrect authorization in\n>   Chromoting.\n> - \\[518062961\\] Medium CVE-2026-79070: Incorrect reference resolution\n>   in Cache.\n> - \\[518065628\\] Medium CVE-2026-79205: Incorrect authorization in\n>   Network.\n> - \\[518078552\\] Medium CVE-2026-78903: Incomplete cleanup in\n>   SiteIsolation.\n> - \\[518084889\\] Medium CVE-2026-78959: Improper handling of case\n>   sensitivity in FileSystem.\n> - \\[518094442\\] Medium CVE-2026-79234: Injection in CSS.\n> - \\[519369088\\] Medium CVE-2026-78983: Use after free in Views.\n> - \\[519984038\\] Medium CVE-2026-79083: Improper enforcement of\n>   behavioral workflow in Media.\n> - \\[520052954\\] Medium CVE-2026-78944: Use after free in DevTools.\n> - \\[520117546\\] Medium CVE-2026-79178: Incorrect authorization in Web\n>   Authentication (Passkeys & Security Keys).\n> - \\[520121111\\] Medium CVE-2026-79059: Information leak in BFCache.\n> - \\[520179360\\] Medium CVE-2026-79245: Use after free in UI.\n> - \\[520464738\\] Medium CVE-2026-78978: Out of bounds read in ANGLE.\n> - \\[520481800\\] Medium CVE-2026-79103: Incorrect reference resolution\n>   in Speech.\n> - \\[520492291\\] Medium CVE-2026-79154: Missing authorization in\n>   DevTools.\n> - \\[520504922\\] Medium CVE-2026-79230: Improper input validation in\n>   ANGLE.\n> - \\[520516462\\] Medium CVE-2026-79068: Improper resource exposure in\n>   StreamsAPI.\n> - \\[520542088\\] Medium CVE-2026-79269: Uninitialized resource in\n>   ANGLE.\n> - \\[522077127\\] Medium CVE-2026-79085: Missing authorization in\n>   Network.\n> - \\[522351802\\] Medium CVE-2026-79134: Incorrect authorization in\n>   GetUserMedia.\n> - \\[522550059\\] Medium CVE-2026-79064: Use after free in Network.\n> - \\[522791354\\] Medium CVE-2026-79003: Incorrect authorization in\n>   Device.\n> - \\[522823211\\] Medium CVE-2026-79220: Information leak in Network.\n> - \\[522957054\\] Medium CVE-2026-78951: Use after free in\n>   ServiceWorker.\n> - \\[523232966\\] Medium CVE-2026-79249: Code injection in Bisection.\n> - \\[523557855\\] Medium CVE-2026-79091: Use after free in Bluetooth.\n> - \\[523661149\\] Medium CVE-2026-79265: Incomplete cleanup in\n>   GetUserMedia.\n> - \\[523716748\\] Medium CVE-2026-78913: Use after free in Chromoting.\n> - \\[524418836\\] Medium CVE-2026-79258: Incorrect authorization in\n>   WebXR.\n> - \\[524520965\\] Medium CVE-2026-79211: Incorrect authorization in USB.\n> - \\[524541667\\] Medium CVE-2026-79252: Information leak in\n>   ServiceWorker.\n> - \\[524822825\\] Medium CVE-2026-78962: Uninitialized resource in\n>   WebXR.\n> - \\[525686865\\] Medium CVE-2026-78901: Race condition in V8.\n> - \\[525689847\\] Medium CVE-2026-79097: Use after free in V8.\n> - \\[532162132\\] Medium CVE-2026-79227: Type confusion in DevTools.\n> - \\[532182486\\] Medium CVE-2026-79203: Improper input validation in\n>   DevTools.\n> - \\[532914769\\] Medium CVE-2026-79033: Insufficient control flow\n>   management in DevTools.\n> - \\[532917452\\] Medium CVE-2026-79139: Improper input validation in\n>   Media.\n> - \\[532923954\\] Medium CVE-2026-79221: Uninitialized resource in Dawn.\n> - \\[532957785\\] Medium CVE-2026-79034: Information leak in CORS.\n> - \\[533093250\\] Medium CVE-2026-79075: Information leak in\n>   Geolocation.\n> - \\[533917984\\] Medium CVE-2026-78960: Information leak in Extensions.\n> - \\[535374213\\] Medium CVE-2026-78984: Uninitialized resource in GPU.\n> - \\[536428842\\] Medium CVE-2026-78963: Improper input validation in\n>   Media.\n> - \\[536428988\\] Medium CVE-2026-79004: Out of bounds read in Media.\n> - \\[536444242\\] Medium CVE-2026-79182: Improper input validation in\n>   Media.\n> - \\[536526176\\] Medium CVE-2026-79185: Information leak in DOM.\n> - \\[536662911\\] Medium CVE-2026-79073: Improper state validation in\n>   Parser.\n> - \\[537145191\\] Medium CVE-2026-79266: Use after free in DevTools.\n> - \\[537846307\\] Medium CVE-2026-79025: Improper input validation in\n>   Workers.\n> - \\[538969297\\] Medium CVE-2026-79141: Incorrect authorization in\n>   Browser.\n> - \\[503048520\\] Low CVE-2026-78974: UI misrepresentation in Linux\n>   Toolkit Theming.\n> - \\[497232609\\] Low CVE-2026-79055: Information leak in Sharing.\n> - \\[497256260\\] Low CVE-2026-79263: Race condition in Extensions.\n> - \\[497493136\\] Low CVE-2026-79124: Information leak in Intents.\n> - \\[497499482\\] Low CVE-2026-79184: Missing authorization in Preload.\n> - \\[497876969\\] Low CVE-2026-79289: Improper control of a resource\n>   through its lifetime in Workers.\n> - \\[500484520\\] Low CVE-2026-79001: Information leak in Bluetooth.\n> - \\[501416859\\] Low CVE-2026-79077: Incorrect authorization in\n>   WebProtect.\n> - \\[501881082\\] Low CVE-2026-78950: Integer overflow in WebRTC.\n> - \\[502252964\\] Low CVE-2026-79196: Race condition in Editing.\n> - \\[502514083\\] Low CVE-2026-79000: Improper input validation in\n>   DeviceBoundSessionCredentials.\n> - \\[503720291\\] Low CVE-2026-78979: Race condition in Core.\n> - \\[506539337\\] Low CVE-2026-79181: Observable discrepancy in Glic.\n> - \\[513172858\\] Low CVE-2026-79190: Incorrect authorization in\n>   Extensions.\n> - \\[513361380\\] Low CVE-2026-79206: Out of bounds read in FileSystem.\n> - \\[513486883\\] Low CVE-2026-78897: Missing authorization in\n>   BrowserTag.\n> - \\[513688690\\] Low CVE-2026-79119: Use after free in PDF.\n> - \\[513792983\\] Low CVE-2026-79089: Race condition in Transactions\n>   Platform.\n> - \\[513969378\\] Low CVE-2026-79147: Information leak in Skia.\n> - \\[514010111\\] Low CVE-2026-79098: UI misrepresentation in\n>   PermissionElement.\n> - \\[514038302\\] Low CVE-2026-79022: UI misrepresentation in\n>   Transactions Platform.\n> - \\[514061923\\] Low CVE-2026-79233: UI misrepresentation in\n>   CustomTabs.\n> - \\[514408247\\] Low CVE-2026-79261: Incorrect authorization in\n>   Controls.\n> - \\[516864349\\] Low CVE-2026-78977: Uninitialized resource in GPU.\n> - \\[516950646\\] Low CVE-2026-79040: Uninitialized resource in GPU.\n> - \\[517167020\\] Low CVE-2026-79273: Incorrect reference resolution in\n>   WebView.\n> - \\[517394060\\] Low CVE-2026-79243: Improper input validation in\n>   ReadingList.\n> - \\[517395590\\] Low CVE-2026-79123: Improper input validation in NTP\n>   Footer.\n> - \\[517540292\\] Low CVE-2026-79005: Incorrect authorization in\n>   StorageAccessAPI.\n> - \\[517673944\\] Low CVE-2026-79090: Improper privilege management in\n>   Actor.\n> - \\[517718241\\] Low CVE-2026-78946: Incorrect authorization in Select.\n> - \\[518125889\\] Low CVE-2026-78968: Missing authorization in Core.\n> - \\[518249083\\] Low CVE-2026-79041: Missing authorization in Browser.\n> - \\[519210950\\] Low CVE-2026-79284: UI misrepresentation in Core.\n> - \\[519229463\\] Low CVE-2026-78896: Information leak in\n>   StorageAccessAPI.\n> - \\[519242511\\] Low CVE-2026-79058: Missing authorization in\n>   Passwords.\n> - \\[519246298\\] Low CVE-2026-79009: UI misrepresentation in UI.\n> - \\[519254827\\] Low CVE-2026-79060: Incorrect authorization in\n>   StorageAccessAPI.\n> - \\[520002854\\] Low CVE-2026-79177: Incorrect authorization in Media.\n> - \\[520016142\\] Low CVE-2026-78956: Type confusion in V8.\n> - \\[520781436\\] Low CVE-2026-79239: Out of bounds read in Tint.\n> - \\[522291712\\] Low CVE-2026-79015: Improper input validation in\n>   ServiceWorker.\n> - \\[522304549\\] Low CVE-2026-79108: UI misrepresentation in Web\n>   Authentication (Passkeys & Security Keys).\n> - \\[522418913\\] Low CVE-2026-79056: Use after free in ServiceWorker.\n> - \\[522803735\\] Low CVE-2026-79018: Information leak in FoldableAPIs.\n> - \\[523237735\\] Low CVE-2026-78980: Improper input validation in\n>   ReaderMode.\n> - \\[523313378\\] Low CVE-2026-78947: Incomplete cleanup in Chromium.\n> - \\[523572877\\] Low CVE-2026-79244: Use after free in Animation.\n> - \\[524864599\\] Low CVE-2026-79112: Out of bounds read in Skia.\n> - \\[525311654\\] Low CVE-2026-79246: Information leak in DataTransfer.\n> - \\[530816571\\] Low CVE-2026-79223: Integer overflow in Chromium.\n> - \\[531245718\\] Low CVE-2026-79045: Type confusion in V8.\n> - \\[531297707\\] Low CVE-2026-79197: Use after free in V8.\n> - \\[532303080\\] Low CVE-2026-79148: Off-by-one error in DevTools.\n> - \\[533001362\\] Low CVE-2026-79125: Information leak in XR.\n> - \\[533014006\\] Low CVE-2026-79207: Information leak in Passwords.\n> - \\[533021205\\] Low CVE-2026-79017: Race condition in Extensions.\n> - \\[533046298\\] Low CVE-2026-79105: Improper input validation in\n>   Mobile.\n> - \\[533059149\\] Low CVE-2026-79225: Incorrect authorization in\n>   Browser.\n> - \\[533060125\\] Low CVE-2026-79021: Missing authorization in\n>   InterestGroups.\n> - \\[533075126\\] Low CVE-2026-79133: Incorrect authorization in Forms.\n> - \\[533079345\\] Low CVE-2026-79179: Incorrect authorization in DOM.\n> - \\[533083384\\] Low CVE-2026-79152: Incorrect authorization in\n>   CustomTabs.\n> - \\[533121405\\] Low CVE-2026-78981: Information leak in Mobile.\n> - \\[533123348\\] Low CVE-2026-78957: Information leak in Mobile.\n> - \\[533408915\\] Low CVE-2026-79126: Incorrect provision of specified\n>   functionality in Proxy.\n> - \\[533418127\\] Low CVE-2026-78915: Race condition in Enterprise.\n> - \\[533511921\\] Low CVE-2026-79253: Improper input validation in\n>   Network.\n> - \\[533511967\\] Low CVE-2026-79260: Improper input validation in\n>   Cookies.\n> - \\[534556413\\] Low CVE-2026-79254: Incorrect reference resolution in\n>   CustomTabs.\n> - \\[536166543\\] Low CVE-2026-78914: Uninitialized resource in Skia.\n> - \\[539341100\\] Low CVE-2026-78964: Use after free in Sync.\n",
+    "id": "FreeBSD-2026-0431",
+    "modified": "2026-08-31T00:00:00Z",
+    "published": "2026-08-31T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_0256176589.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79282"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79290"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79054"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79121"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79224"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79052"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79150"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78935"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79012"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79200"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78989"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79069"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79175"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79218"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79195"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78939"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79194"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79247"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79219"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79047"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79292"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78986"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79039"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78934"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79011"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78911"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79257"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79202"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79212"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79183"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79155"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79093"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79019"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79187"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79288"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79130"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78965"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79117"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79082"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79111"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79072"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79142"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78948"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78908"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78895"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79043"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79235"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79232"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79118"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79174"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78900"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79188"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79189"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79048"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79240"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79014"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79198"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79131"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79149"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79275"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79138"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79026"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79027"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78904"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78899"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78954"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79274"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78938"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78952"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79236"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79078"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79209"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79030"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79216"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79007"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78893"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79222"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79071"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79076"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79088"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79104"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79044"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78958"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78961"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79262"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79106"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79176"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78966"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79186"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79267"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79016"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79010"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79286"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78945"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78999"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78941"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79032"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79109"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79256"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79237"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78898"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78985"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79028"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79210"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79046"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79129"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78937"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78987"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78990"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78909"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79271"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79144"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79065"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79192"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79140"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79128"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78942"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79116"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79006"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79095"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79084"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78991"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79248"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78891"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79031"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79110"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79136"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78907"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79087"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79231"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78969"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79137"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79057"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78894"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79264"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78910"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79066"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79255"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79086"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79038"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78940"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79107"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79120"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79270"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79067"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79213"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78943"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79259"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79208"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79251"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79226"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79042"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79122"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79199"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79013"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79074"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79215"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79049"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79132"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79201"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79051"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79053"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79285"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78906"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79250"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79020"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79217"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79204"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78912"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78955"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79143"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79241"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78967"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79214"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79228"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78953"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79229"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79002"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79272"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79127"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79151"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78936"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78905"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79050"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79008"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78975"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79287"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79094"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79173"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78976"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79276"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79191"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79099"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79024"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79193"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79242"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79180"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79293"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79023"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79146"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79238"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78949"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79291"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79283"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78892"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79070"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79205"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78903"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78959"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79234"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78983"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79083"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78944"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79178"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79059"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79245"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78978"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79103"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79154"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79230"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79068"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79269"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79085"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79134"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79064"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79003"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79220"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78951"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79249"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79091"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79265"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78913"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79258"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79211"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79252"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78962"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78901"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79097"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79227"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79203"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79033"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79139"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79221"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79034"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79075"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78960"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78984"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78963"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79004"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79182"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79185"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79073"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79266"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79025"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79141"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78974"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79055"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79263"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79124"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79184"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79289"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79001"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79077"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78950"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79196"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79000"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78979"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79181"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79190"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79206"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78897"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79119"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79089"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79147"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79098"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79022"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79233"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79261"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78977"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79040"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79273"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79243"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79123"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79005"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79090"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78946"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78968"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79041"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79284"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78896"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79058"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79009"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79060"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79177"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78956"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79239"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79015"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79108"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79056"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79018"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78980"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78947"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79244"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79112"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79246"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79223"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79045"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79197"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79148"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79125"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79207"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79017"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79105"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79225"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79021"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79133"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79179"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79152"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78981"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78957"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79126"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78915"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79253"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79260"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79254"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78914"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78964"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- security fixes"
+}

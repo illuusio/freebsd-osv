@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "expat2"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.8.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/libexpat/libexpat/pull/1331"
+        ],
+        "discovery": "2026-08-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-76641"
+            ]
+        },
+        "vid": "11ab3b16-a65d-11f1-a49c-00a0980083d7"
+    },
+    "details": "https://github.com/libexpat/libexpat/pull/1331 reports:\n\n> Expat through 2.8.3 contains an out-of-bounds read vulnerability that\n> allows attackers to trigger memory corruption by processing XML with\n> external entity parsers created via XML_ExternalEntityParserCreate. A\n> struct size mismatch between ELEMENT_TYPE members causes storeAtts to\n> read the attIndex member past allocated memory boundaries, resulting\n> in failure to normalize whitespace in non-CDATA attributes or a wild\n> pointer dereference causing a segfault. This vulnerability was\n> introduced by the fix for CVE-2026-66046.\n",
+    "id": "FreeBSD-2026-0435",
+    "modified": "2026-09-01T00:00:00Z",
+    "published": "2026-09-01T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/libexpat/libexpat/pull/1331"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76641"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "expat2 -- Out-of-bounds Read"
+}

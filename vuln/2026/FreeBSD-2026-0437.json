@@ -1,0 +1,195 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "152.0.7977.75"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "152.0.7977.75"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html"
+        ],
+        "discovery": "2026-09-01T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-84353",
+                "CVE-2026-84352",
+                "CVE-2026-84354",
+                "CVE-2026-84359",
+                "CVE-2026-84357",
+                "CVE-2026-84324",
+                "CVE-2026-84349",
+                "CVE-2026-84326",
+                "CVE-2026-84333",
+                "CVE-2026-84351",
+                "CVE-2026-84325",
+                "CVE-2026-84328",
+                "CVE-2026-84347",
+                "CVE-2026-84323",
+                "CVE-2026-84355",
+                "CVE-2026-84358",
+                "CVE-2026-84332",
+                "CVE-2026-84330",
+                "CVE-2026-84334",
+                "CVE-2026-84348",
+                "CVE-2026-84335",
+                "CVE-2026-84327",
+                "CVE-2026-84329",
+                "CVE-2026-84356",
+                "CVE-2026-84350",
+                "CVE-2026-84331"
+            ]
+        },
+        "vid": "19d0eaf5-a698-11f1-bf98-a8a1599412c6"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 26 security fixes:\n>\n> - \\[522307103\\] Critical CVE-2026-84353: Use after free in Shared Tab\n>   Groups.\n> - \\[546260492\\] Critical CVE-2026-84352: Use after free in WebGL.\n> - \\[498839176\\] High CVE-2026-84354: Incorrect authorization in\n>   FileSystem.\n> - \\[514078656\\] High CVE-2026-84359: Information leak in Skia.\n> - \\[523208474\\] High CVE-2026-84357: Improper input validation in\n>   Omnibox.\n> - \\[533534913\\] High CVE-2026-84324: Use after free in Proxy.\n> - \\[537105664\\] High CVE-2026-84349: Use after free in Browser.\n> - \\[547936520\\] High CVE-2026-84326: Uninitialized resource in V8.\n> - \\[549311485\\] High CVE-2026-84333: Use after free in Dawn.\n> - \\[551593376\\] High CVE-2026-84351: Buffer overflow in GPU.\n> - \\[553117928\\] High CVE-2026-84325: Improper input validation in\n>   DataTransfer.\n> - \\[498710886\\] Medium CVE-2026-84328: Missing authorization in\n>   FileSystem.\n> - \\[501679156\\] Medium CVE-2026-84347: Use after free in WebRTC.\n> - \\[502411391\\] Medium CVE-2026-84323: Missing authorization in\n>   FileSystem.\n> - \\[511774376\\] Medium CVE-2026-84355: Incorrect authorization in\n>   Navigation.\n> - \\[514006886\\] Medium CVE-2026-84358: Improper privilege management\n>   in Downloads.\n> - \\[514489238\\] Medium CVE-2026-84332: Incorrect authorization in\n>   SiteSettings.\n> - \\[517091927\\] Medium CVE-2026-84330: UI misrepresentation in\n>   FullScreen.\n> - \\[517798926\\] Medium CVE-2026-84334: Incorrect authorization in\n>   Chromoting.\n> - \\[518100026\\] Medium CVE-2026-84348: Information leak in\n>   MediaCapture.\n> - \\[522302504\\] Medium CVE-2026-84335: Incorrect authorization in\n>   TabStrip.\n> - \\[498725213\\] Low CVE-2026-84327: Incorrect authorization in\n>   Autofill.\n> - \\[498850269\\] Low CVE-2026-84329: Confused deputy in\n>   CredentialProvider.\n> - \\[503787232\\] Low CVE-2026-84356: UI misrepresentation in\n>   FullScreen.\n> - \\[513713427\\] Low CVE-2026-84350: Use after free in TabStrip.\n> - \\[521753402\\] Low CVE-2026-84331: Incorrect authorization in Actor.\n",
+    "id": "FreeBSD-2026-0437",
+    "modified": "2026-09-02T00:00:00Z",
+    "published": "2026-09-02T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/09/stable-channel-update-for-desktop.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84353"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84352"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84354"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84359"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84357"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84324"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84349"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84326"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84333"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84351"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84325"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84328"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84347"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84323"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84355"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84358"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84332"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84330"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84334"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84348"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84335"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84327"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84329"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84356"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84350"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84331"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- security fixes"
+}

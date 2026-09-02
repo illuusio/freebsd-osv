@@ -1,0 +1,65 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "sudo-rs"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0.2.8"
+                        },
+                        {
+                            "fixed": "0.2.15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "sudo-rs-coexist"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0.2.8"
+                        },
+                        {
+                            "fixed": "0.2.15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/trifectatechfoundation/sudo-rs/security/advisories/GHSA-f42v-x7gq-phc8"
+        ],
+        "discovery": "2026-08-31T00:00:00Z",
+        "vid": "c0acdbac-a524-11f1-8039-589cfc103809"
+    },
+    "details": "Trifecta Tech Foundation reports:\n\n> Users that are explicitly permitted to edit only specific files using\n> sudoedit, are still able to place files in arbitrary directories.\n>\n> This only affects systems where sudoedit is used to give very\n> fine-grained edit permissions, which is not the default configuration.\n> For users that have full sudoedit permission or no sudoedit permission\n> at all, no escalation is enabled by this bug.\n>\n> A user that is allowed to place files in an arbitrary directory can\n> (by placing a file in /etc/sudoers.d) obviously fully escalate their\n> privileges.\n",
+    "id": "FreeBSD-2026-0429",
+    "modified": "2026-08-31T00:00:00Z",
+    "published": "2026-08-31T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/trifectatechfoundation/sudo-rs/security/advisories/GHSA-f42v-x7gq-phc8"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/trifectatechfoundation/sudo-rs/releases/tag/v0.2.15"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "security/sudo-rs -- sudoedit could circumvent /etc/sudoers restrictions"
+}
