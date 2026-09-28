@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-postorius"
+                "name": "expat"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.3.13_2"
+                            "fixed": "2.8.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-postorius"
+                "name": "linux-c7-expat"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.3.13_2"
+                            "fixed": "2.8.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py312-postorius"
+                "name": "linux-rl9-expat"
             },
             "ranges": [
                 {
@@ -50,64 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.3.13_2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313-postorius"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.3.13_2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py314-postorius"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.3.13_2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py315-postorius"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.3.13_2"
+                            "fixed": "2.8.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -117,30 +60,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://nvd.nist.gov/vuln/detail/CVE-2026-44742"
+            "https://blog.hartwork.org/posts/expat-2-8-1-released/"
         ],
-        "discovery": "2025-01-29T00:00:00Z",
+        "discovery": "2025-10-01T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-44742"
+                "CVE-2026-45186"
             ]
         },
-        "vid": "5b3b7f60-4de9-11f1-873e-0f64d023d0c7"
+        "vid": "bacc1417-4d82-11f1-87f3-18dbf25a98c6"
     },
-    "details": "NIST reports:\n\n> Postorius through 1.3.13 does not escape HTML in the message subject\n> when rendering it in the Held messages pop-up, as exploited in the\n> wild in May 2026.\n",
+    "details": "> Expat 2.8.1 was released yesterday. The key motivation for cutting a\n> release and doing so now was:\n>\n> Fixing vulnerability CVE-2026-45186 that allows easy denial of\n> service.\n>\n> See also https://github.com/libexpat/libexpat/pull/1216\n",
     "id": "FreeBSD-2026-0192",
-    "modified": "2026-05-12T00:00:00Z",
-    "published": "2026-05-12T00:00:00Z",
+    "modified": "2026-05-11T00:00:00Z",
+    "published": "2026-05-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-44742"
+            "url": "https://blog.hartwork.org/posts/expat-2-8-1-released/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44742"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45186"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-45186"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "postorius -- XSS"
+    "summary": "Vulnerability found in Expat"
 }

@@ -57,28 +57,28 @@
         "discovery": "2026-04-21T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-6386"
+                "CVE-2026-5398"
             ],
             "freebsdsa": [
-                "SA-26:11.amd64"
+                "SA-26:10.tty"
             ]
         },
-        "vid": "128951d0-3df0-11f1-bb07-bc241121aa0a"
+        "vid": "971b5528-3def-11f1-bb07-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nIn order to apply a particular protection key to an address range, the\nkernel must update the corresponding page table entries. The subroutine\nwhich handled this failed to take into account the presence of 1GB\nlargepage mappings created using the shm_create_largepage(3) interface.\nIn particular, it would always treat a page directory page entry as\npointing to another page table page.\n\n# Impact:\n\nThe bug can be abused by an unprivileged user to cause\npmap_pkru_update_range() to treat userspace memory as a page table page,\nand thus overwrite memory to which the application would otherwise not\nhave access.\n",
+    "details": "# Problem Description:\n\nThe implementation of TIOCNOTTY failed to clear a back-pointer from the\nstructure representing the controlling terminal to the calling process\\'\nsession. If the invoking process then exits, the terminal structure may\nend up containing a pointer to freed memory.\n\n# Impact:\n\nA malicious process can abuse the dangling pointer to grant itself root\nprivileges.\n",
     "id": "FreeBSD-2026-0120",
     "modified": "2026-04-22T00:00:00Z",
     "published": "2026-04-22T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6386"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5398"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:11.amd64.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:10.tty.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Missing large page handling in pmap_pkru_update_range()"
+    "summary": "FreeBSD -- Kernel use-after-free bug in the TIOCNOTTY handler"
 }

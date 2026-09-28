@@ -1,0 +1,91 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "p5-YAML-Syck"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.47"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://metacpan.org/dist/YAML-Syck/changes"
+        ],
+        "discovery": "2026-07-16T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-57075",
+                "CVE-2026-57076",
+                "CVE-2026-57077",
+                "CVE-2025-11683",
+                "CVE-2026-13713"
+            ]
+        },
+        "vid": "501ff33c-b996-11f1-ad2b-40b034429ecf"
+    },
+    "details": "YAML-Syck project reports:\n\n> YAML-Syck 1.47 fix the following issues:\n>\n> - CVE-2026-57075 (CWE-125): out-of-bounds read in the base64 decoder\n>   caused by signed-char indexing of the decode table on !!binary input\n> - CVE-2026-57076 (CWE-416): use-after-free of an anchor key string\n>   shared between the node and the anchors table\n> - CVE-2026-57077 (CWE-125): one-byte out-of-bounds read in the lexer\n>   newline scan during block-scalar parsing (incomplete-fix follow-on\n>   to CVE-2025-11683)\n> - CVE-2026-13713 (CWE-416/CWE-415): use-after-free / double-free of an\n>   anchor node on anchor redefinition, a remote-crash DoS from a 7-byte\n>   input\n",
+    "id": "FreeBSD-2026-0478",
+    "modified": "2026-09-26T00:00:00Z",
+    "published": "2026-09-26T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://metacpan.org/dist/YAML-Syck/changes"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-57075"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-57076"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-57077"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-11683"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13713"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-57075"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-57076"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-57077"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2025-11683"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-13713"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "p5-YAML-Syck -- Multiple vulnerabilities"
+}

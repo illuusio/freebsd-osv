@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "chromium"
+                "name": "phpmyfaq-php83"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "151.0.7922.108"
+                            "fixed": "4.1.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "ungoogled-chromium"
+                "name": "phpmyfaq-php84"
             },
             "ranges": [
                 {
@@ -31,7 +31,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "151.0.7922.108"
+                            "fixed": "4.1.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpmyfaq-php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,230 +60,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01193673229.html"
+            "https://www.phpmyfaq.de/security/advisory-2026-08-04/"
         ],
-        "discovery": "2026-08-06T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-19137",
-                "CVE-2026-19149",
-                "CVE-2026-19154",
-                "CVE-2026-19157",
-                "CVE-2026-19170",
-                "CVE-2026-19172",
-                "CVE-2026-19169",
-                "CVE-2026-19168",
-                "CVE-2026-19138",
-                "CVE-2026-19139",
-                "CVE-2026-19140",
-                "CVE-2026-19141",
-                "CVE-2026-19142",
-                "CVE-2026-19143",
-                "CVE-2026-19144",
-                "CVE-2026-19145",
-                "CVE-2026-19146",
-                "CVE-2026-19147",
-                "CVE-2026-19148",
-                "CVE-2026-19150",
-                "CVE-2026-19151",
-                "CVE-2026-19152",
-                "CVE-2026-19153",
-                "CVE-2026-19155",
-                "CVE-2026-19156",
-                "CVE-2026-19158",
-                "CVE-2026-19159",
-                "CVE-2026-19160",
-                "CVE-2026-19161",
-                "CVE-2026-19162",
-                "CVE-2026-19163",
-                "CVE-2026-19164",
-                "CVE-2026-19165",
-                "CVE-2026-19166",
-                "CVE-2026-19167",
-                "CVE-2026-19171",
-                "CVE-2026-19173",
-                "CVE-2026-19174",
-                "CVE-2026-19175",
-                "CVE-2026-19176",
-                "CVE-2026-19177"
-            ]
-        },
-        "vid": "8acd79a5-35ee-4076-b107-3550bbd7d118"
+        "discovery": "2026-08-04T00:00:00Z",
+        "vid": "7a691536-968b-11f1-9863-50ebf6bdf8e9"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 41 security fixes:\n>\n> - \\[499602793\\] Critical CVE-2026-19137: Use after free in WebGL.\n> - \\[524824288\\] Critical CVE-2026-19149: Use after free in ura.\n> - \\[532941869\\] Critical CVE-2026-19154: Use after free in Skia.\n> - \\[534903095\\] Critical CVE-2026-19157: Out of bounds write in GLE.\n> - \\[537729021\\] Critical CVE-2026-19170: Use after free in WebGL.\n> - \\[537838324\\] Critical CVE-2026-19172: Use after free in Views.\n> - \\[537390933\\] High CVE-2026-19169: Insufficient validation of\n>   untrusted input in Contextual Tasks.\n> - \\[536945254\\] High CVE-2026-19168: Inappropriate implementation in\n>   V8.\n> - \\[500097298\\] High CVE-2026-19138: Heap buffer overflow in\n>   CrashReporting.\n> - \\[511731805\\] High CVE-2026-19139: Race in CredentialProvider.\n> - \\[513044017\\] High CVE-2026-19140: Use after free in GPU.\n> - \\[513602949\\] High CVE-2026-19141: Use after free in Resources.\n> - \\[515428251\\] High CVE-2026-19142: Use after free in Views.\n> - \\[517772612\\] High CVE-2026-19143: Insufficient validation of\n>   untrusted input in WebPKs.\n> - \\[520167277\\] High CVE-2026-19144: Use after free in HTML.\n> - \\[521878431\\] High CVE-2026-19145: Use after free in Translate.\n> - \\[523713150\\] High CVE-2026-19146: Uninitialized Use in GPU.\n> - \\[524439798\\] High CVE-2026-19147: Use after free in ura.\n> - \\[524460000\\] High CVE-2026-19148: Out of bounds write in GPU.\n> - \\[526380803\\] High CVE-2026-19150: Inappropriate implementation in\n>   V8.\n> - \\[530663440\\] High CVE-2026-19151: Use after free in V8.\n> - \\[531165110\\] High CVE-2026-19152: Inappropriate implementation in\n>   avigation.\n> - \\[532939327\\] High CVE-2026-19153: Insufficient validation of\n>   untrusted input in Workers.\n> - \\[533053621\\] High CVE-2026-19155: Use after free in Payments.\n> - \\[533331920\\] High CVE-2026-19156: Heap buffer overflow in Base.\n> - \\[535749174\\] High CVE-2026-19158: Use after free in Views.\n> - \\[536067175\\] High CVE-2026-19159: Use after free in Views.\n> - \\[536068737\\] High CVE-2026-19160: Uninitialized Use in Skia.\n> - \\[536165038\\] High CVE-2026-19161: Uninitialized Use in Skia.\n> - \\[536271629\\] High CVE-2026-19162: Out of bounds write in V8.\n> - \\[536449742\\] High CVE-2026-19163: Use after free in Media.\n> - \\[536470854\\] High CVE-2026-19164: Insufficient validation of\n>   untrusted input in Codecs.\n> - \\[536512612\\] High CVE-2026-19165: Use after free in Extensions.\n> - \\[536584251\\] High CVE-2026-19166: Use after free in Web\n>   uthentication.\n> - \\[536666274\\] High CVE-2026-19167: Integer overflow in GPU.\n> - \\[537832446\\] High CVE-2026-19171: Use after free in Media.\n> - \\[538332338\\] High CVE-2026-19173: Out of bounds write in Skia.\n> - \\[538378084\\] High CVE-2026-19174: Integer overflow in V8.\n> - \\[540138836\\] High CVE-2026-19175: Use after free in Payments.\n> - \\[540157141\\] High CVE-2026-19176: Use after free in Skia.\n> - \\[540289900\\] High CVE-2026-19177: Insufficient validation of\n>   untrusted input in UI.\n",
+    "details": "phpMyFAQ team reports:\n\n> The WebAuthn login flow never persists the challenge it issues, so the\n> replay guard never runs. An attacker who captures a valid assertion\n> can replay it to authenticate as the victim.\n>\n> The brute-force throttle protecting the administration two-factor\n> prompt is scoped to the session. An attacker who starts with a fresh\n> cookie jar resets the counter and can guess TOTP codes without any\n> effective rate limit.\n>\n> An LDAP login silently reactivates a local account that an\n> administrator has blocked, and the state change is not written to the\n> audit log, so a revoked user regains access unnoticed.\n>\n> The remember-me cookie is issued before the second factor has been\n> verified. An attacker who knows only the password can keep the cookie\n> from the incomplete login and use it to return as the fully\n> authenticated user, bypassing two-factor authentication.\n>\n> Glossary input is escaped before it is truncated. Truncation can cut\n> an escape sequence in half, which allows an authenticated user to\n> inject SQL into the resulting query.\n>\n> A tracking file below the document root is served without\n> authentication and contains password reset tokens, allowing an\n> unauthenticated visitor to take over the accounts those tokens belong\n> to.\n>\n> The public PDF export does not check whether a FAQ record is active,\n> so an unauthenticated visitor can retrieve the title and solution of\n> drafts and unpublished entries.\n>\n> Comment endpoints do not verify authorization for the parent FAQ\n> record, exposing the comments, the personal data of the commenters,\n> and attachment metadata of restricted records.\n>\n> The PostgreSQL search backend declares the wrong LIKE ESCAPE\n> character, which makes the wildcard-escaping fix ineffective on that\n> backend.\n>\n> The administration API endpoints that read the LDAP, Elasticsearch,\n> OpenSearcr, and dashboard configuration only require a login instead\n> of the CONFIGURATION_EDIT permission, so any authenticated user can\n> read these settings.\n>\n> An authenticated FAQ editor can reference a local file as an image in\n> a FAQ entry and have the PDF export embed and disclose its contents.\n>\n> The registration endpoints remain reachable even when\n> security.enableRegistration is turned off, so visitors can still\n> create accounts on an installation that is meant to be closed.\n>\n> The content backup is written as a ZIP archive into the web-accessible\n> document root, where anyone who guesses or learns its name can\n> download the full contents of the installation.\n>\n> The backup, database migration, and maintenance mode endpoints can be\n> reached without authentication, allowing an unauthenticated attacker\n> to export data or put the installation into maintenance mode.\n",
     "id": "FreeBSD-2026-0394",
-    "modified": "2026-08-13T00:00:00Z",
-    "published": "2026-08-13T00:00:00Z",
+    "modified": "2026-08-12T00:00:00Z",
+    "published": "2026-08-12T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2026/08/stable-channel-update-for-desktop_01193673229.html"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19137"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19149"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19154"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19157"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19170"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19172"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19169"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19168"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19138"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19139"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19140"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19141"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19142"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19143"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19144"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19145"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19146"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19147"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19148"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19150"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19151"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19152"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19153"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19155"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19156"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19158"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19159"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19160"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19161"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19162"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19163"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19164"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19165"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19166"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19167"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19171"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19173"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19174"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19175"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19176"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19177"
+            "url": "https://www.phpmyfaq.de/security/advisory-2026-08-04/"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "chromium -- security fixes"
+    "summary": "phpmyfaq -- multiple vulnerabilities"
 }

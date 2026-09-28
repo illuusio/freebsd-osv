@@ -46,28 +46,28 @@
         "discovery": "2026-08-25T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-58094"
+                "CVE-2026-58093"
             ],
             "freebsdsa": [
-                "SA-26:63.posixshm"
+                "SA-26:62.tty"
             ]
         },
-        "vid": "ef63188f-a0ff-11f1-ae1f-bc241121aa0a"
+        "vid": "a34b5154-a0ff-11f1-ae1f-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nThe FIOSSHMLPGCNF ioctl(2) operation configures the page size for a\nlargepage shared memory object. This is intended to be used immediately\nafter creating the object, before any memory is allocated for the\nobject. The handler checked whether a page size had already been\nconfigured without holding the rangelock. Two concurrent callers could\nboth observe an unconfigured object and set conflicting page sizes,\nleaving the object in an inconsistent state.\n\n# Impact:\n\nAn unprivileged local user can exploit this race to escalate privileges.\n",
+    "details": "# Problem Description:\n\nThe TIOCSCTTY ioctl handler drops the tty lock in order to acquire the\nprocess tree lock. After reacquiring the tty lock, the handler did not\nrevalidate the state of the terminal, and could proceed to link a\nterminal that was concurrently being destroyed to the calling process\\'\nsession.\n\n# Impact:\n\nAn unprivileged local user can exploit this race condition to escalate\nprivileges.\n",
     "id": "FreeBSD-2026-0419",
     "modified": "2026-08-26T00:00:00Z",
     "published": "2026-08-26T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58094"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58093"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:63.posixshm.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:62.tty.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- TOCTOU race in POSIX shared memory large page configuration"
+    "summary": "FreeBSD -- Kernel use-after-free via tty ioctls"
 }

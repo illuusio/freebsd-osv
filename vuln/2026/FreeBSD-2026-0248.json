@@ -2,39 +2,17 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:kernel",
-                "name": "FreeBSD-kernel"
+                "ecosystem": "FreeBSD:ports",
+                "name": "elixir"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "15.0"
+                            "introduced": "1.5.0"
                         },
                         {
-                            "fixed": "15.0_10"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.4"
-                        },
-                        {
-                            "fixed": "14.4_6"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.3"
-                        },
-                        {
-                            "fixed": "14.3_15"
+                            "fixed": "1.19.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -43,31 +21,31 @@
         }
     ],
     "database_specific": {
+        "cite": [
+            "https://github.com/elixir-lang/elixir/security/advisories/GHSA-w2h8-8x3g-278p"
+        ],
         "discovery": "2026-06-09T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-45256"
-            ],
-            "freebsdsa": [
-                "SA-26:25.thr"
+                "CVE-2026-49762"
             ]
         },
-        "vid": "91163897-6472-11f1-958d-bc241121aa0a"
+        "vid": "45accfb8-56e4-41b7-8463-572ce643fde0"
     },
-    "details": "# Problem Description:\n\nWhen used to deliver a signal to a specific thread, thr_kill2(2) called\np_cansignal() to determine whether the operation was permitted but did\nnot check the result before delivering the signal. The signal was sent\neven when the permission check failed. The system call returned the\nresulting error to the caller, but by then the signal had already been\ndelivered.\n\n# Impact:\n\nThe missing check allows an unprivileged local user who knows or can\nguess a target\\'s process and thread IDs to send any signal to a process\nthey would not normally be permitted to signal, including processes\nowned by other users or by root. The same check enforces jail\nboundaries, so a jailed process can signal processes on the host or in\nother jails. Thread IDs are allocated globally and sequentially, and so\ncan be discovered by brute force with no visibility into the target.\n\nAn attacker can stop or terminate arbitrary processes, including\ncritical system daemons, resulting in a Denial of Service (DoS).\n",
+    "details": "PJUllrich reports:\n\n> The Version module parses numeric version components without length\n> limits. Untrusted input can trigger creation of arbitrary-precision\n> integers, causing CPU and memory exhaustion.\n",
     "id": "FreeBSD-2026-0248",
-    "modified": "2026-06-10T00:00:00Z",
-    "published": "2026-06-10T00:00:00Z",
+    "modified": "2026-06-09T00:00:00Z",
+    "published": "2026-06-09T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45256"
+            "type": "REPORT",
+            "url": "https://github.com/elixir-lang/elixir/security/advisories/GHSA-w2h8-8x3g-278p"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:25.thr.asc"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49762"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Missing permission check in thr_kill2(2)"
+    "summary": "Elixir -- Denial of service via unbounded integer parsing in Version"
 }

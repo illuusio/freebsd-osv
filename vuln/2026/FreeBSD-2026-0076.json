@@ -16,39 +16,6 @@
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.4"
-                        },
-                        {
-                            "fixed": "14.4_1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.3"
-                        },
-                        {
-                            "fixed": "14.3_10"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "13.5"
-                        },
-                        {
-                            "fixed": "13.5_11"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
                 }
             ]
         }
@@ -57,28 +24,28 @@
         "discovery": "2026-03-25T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-4747"
+                "CVE-2026-4652"
             ],
             "freebsdsa": [
-                "SA-26:08.rpcsec_gss"
+                "SA-26:07.nvmf"
             ]
         },
-        "vid": "733febba-28d2-11f1-b35e-bc241121aa0a"
+        "vid": "11bf64f0-28d2-11f1-b35e-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nEach RPCSEC_GSS data packet is validated by a routine which checks a\nsignature in the packet. This routine copies a portion of the packet\ninto a stack buffer, but fails to ensure that the buffer is sufficiently\nlarge, and a malicious client can trigger a stack overflow. Notably,\nthis does not require the client to authenticate itself first.\n\n# Impact:\n\nAs kgssapi.ko\\'s RPCSEC_GSS implementation is vulnerable, remote code\nexecution in the kernel is possible by an authenticated user that is\nable to send packets to the kernel\\'s NFS server while kgssapi.ko is\nloaded into the kernel.\n\nIn userspace, applications which have librpcgss_sec loaded and run an\nRPC server are vulnerable to remote code execution from any client able\nto send it packets. We are not aware of any such applications in the\nFreeBSD base system.\n",
+    "details": "# Problem Description:\n\nOn a system exposing an NVMe/TCP target, a remote client can trigger a\nkernel panic by sending a CONNECT command for an I/O queue with a bogus\nor stale CNTLID.\n\n# Impact:\n\nAn attacker with network access to the NVMe/TCP target can trigger an\nunauthenticated Denial of Service condition on the affected machine.\n",
     "id": "FreeBSD-2026-0076",
     "modified": "2026-03-26T00:00:00Z",
     "published": "2026-03-26T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4747"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4652"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:08.rpcsec_gss.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:07.nvmf.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Remote code execution via RPCSEC_GSS packet validation"
+    "summary": "FreeBSD -- Remote denial of service via null pointer dereference"
 }

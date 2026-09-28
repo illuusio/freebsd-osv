@@ -3,16 +3,27 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "phpbb3"
+                "name": "elixir"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "1.15.0"
                         },
                         {
-                            "fixed": "3.3.17"
+                            "fixed": "1.18.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "1.19.0"
+                        },
+                        {
+                            "fixed": "1.19.6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,42 +33,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/phpbb/phpbb/blob/release-3.3.17/phpBB/docs/CHANGELOG.html"
+            "https://github.com/elixir-lang/elixir/security/advisories/GHSA-jf5q-v438-665c"
         ],
-        "discovery": "2026-05-04T00:00:00Z",
+        "discovery": "2026-08-28T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-29199"
+                "CVE-2026-75758"
             ]
         },
-        "vid": "4d06b948-a323-11f1-a655-3497f65b111b"
+        "vid": "aac25935-f19d-4ac8-80fc-043365686a63"
     },
-    "details": "The phpBB Team reports:\n\n> Changes since 3.3.16: Improper state verification in OAuth\n> implementation (SECURITY-293), improve secure downloads referer\n> checking (SECURITY-292), hardening of hostname lookups (SECURITY-295).\n>\n> Changes since 3.3.15: Password Reset Link Poisoning (SECURITY-285),\n> IDOR when composing PMs (SECURITY-286), CSRF on report submission\n> (SECURITY-287), Cross-User Notification Read State Manipulation\n> (SECURITY-290), hardening against non-rasterized image uploads\n> (SECURITY-289).\n>\n> Changes since 3.3.14: Use jQuery to generate HTML from page data\n> (SECURITY-283).\n\nThe password reset issue fixed in 3.3.16 has been assigned\nCVE-2026-29199 (CVSS 8.1). When force_server_vars is disabled, phpBB\ntakes the host name from the HTTP Host header to build the password\nreset link, so an attacker able to control that header can have reset\nmails point to a domain under their control, which may lead to account\ntakeover.\n",
+    "details": "tomciopp reports:\n\n> Uncontrolled recursion in the Elixir standard library lets an attacker\n> who controls a list passed to inspect/1, List.to_string/1, or\n> List.to_charlist/1 exhaust a BEAM node\\'s memory.\n>\n> Inspect.List checks only a bounded prefix (4096 elements by default)\n> to determine whether a list is a charlist, then attempts to convert\n> the entire list. When a list contains a long printable prefix followed\n> by an invalid element, the classification passes but the conversion\n> fails. The error handling path then inspects the same list again,\n> creating unbounded recursion that grows process memory until heap\n> limits are exceeded or the node exhausts resources.\n",
     "id": "FreeBSD-2026-0427",
     "modified": "2026-08-28T00:00:00Z",
     "published": "2026-08-28T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/phpbb/phpbb/blob/release-3.3.17/phpBB/docs/CHANGELOG.html"
+            "url": "https://github.com/elixir-lang/elixir/security/advisories/GHSA-jf5q-v438-665c"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-29199"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-7gm6-w7mx-58cr"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-29199"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-75758"
         },
         {
             "type": "WEB",
-            "url": "https://www.phpbb.com/community/viewtopic.php?t=2671024"
+            "url": "https://github.com/elixir-lang/elixir/releases/tag/v1.19.6"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "phpBB -- multiple vulnerabilities"
+    "summary": "Elixir -- Denial of service via uncontrolled recursion in charlist conversion"
 }

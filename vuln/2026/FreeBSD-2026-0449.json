@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "yt-dlp"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2026.07.04"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/yt-dlp/yt-dlp/security/advisories/GHSA-6v4j-43gg-vj32"
+        ],
+        "discovery": "2026-07-08T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-55404"
+            ]
+        },
+        "vid": "cd5bfb7d-ac34-11f1-9b94-901b0e13f1a0"
+    },
+    "details": "https://github.com/yt-dlp/yt-dlp/security/advisories/GHSA-6v4j-43gg-vj32\nreports:\n\n> yt-dlp and youtube-dl are command-line audio/video downloaders. Prior\n> to 2026.7.4, the \\--write-link, \\--write-url-link, and\n> \\--write-desktop-link options can write .url or .desktop shortcut\n> files using attacker-controlled webpage_url or filename metadata\n> without sufficient validation or escaping, allowing malicious file://\n> URI injection on Windows or newline-based desktop entry key injection\n> on Linux that can execute commands if the generated shortcut is\n> opened. This issue is fixed in version 2026.7.4.\n",
+    "id": "FreeBSD-2026-0449",
+    "modified": "2026-09-09T00:00:00Z",
+    "published": "2026-09-09T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/yt-dlp/yt-dlp/security/advisories/GHSA-6v4j-43gg-vj32"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55404"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "yt-dlp: Improper Neutralization of Special Elements"
+}

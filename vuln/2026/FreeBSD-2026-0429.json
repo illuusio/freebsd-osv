@@ -3,35 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "sudo-rs"
+                "name": "c-lightning"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0.2.8"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "0.2.15"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "sudo-rs-coexist"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0.2.8"
-                        },
-                        {
-                            "fixed": "0.2.15"
+                            "fixed": "26.06.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,25 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/trifectatechfoundation/sudo-rs/security/advisories/GHSA-f42v-x7gq-phc8"
+            "https://github.com/ElementsProject/lightning/releases/tag/v26.06.7"
         ],
-        "discovery": "2026-08-31T00:00:00Z",
-        "vid": "c0acdbac-a524-11f1-8039-589cfc103809"
+        "discovery": "2026-08-27T00:00:00Z",
+        "vid": "d2e1db41-f7a7-45e9-ace3-b94038416545"
     },
-    "details": "Trifecta Tech Foundation reports:\n\n> Users that are explicitly permitted to edit only specific files using\n> sudoedit, are still able to place files in arbitrary directories.\n>\n> This only affects systems where sudoedit is used to give very\n> fine-grained edit permissions, which is not the default configuration.\n> For users that have full sudoedit permission or no sudoedit permission\n> at all, no escalation is enabled by this bug.\n>\n> A user that is allowed to place files in an arbitrary directory can\n> (by placing a file in /etc/sudoers.d) obviously fully escalate their\n> privileges.\n",
+    "details": "Core Lightning team reports:\n\n> This point release includes fixes for vulnerabilities responsibly\n> reported by a number of sources. It also comes at a time when\n> increasingly capable AI models are being used to identify potential\n> vulnerabilities in open-source code, significantly increasing the\n> volume and pace of security reports.\n>\n> The potential impact and associated risks are front of mind for\n> everyone involved, not least the remediation team who have worked\n> tirelessly to triage, resolve, and compile this release.\n>\n> This embargo period will last for two weeks. The source code will not\n> be published until 14 days have passed. During this time, we strongly\n> encourage everyone to upgrade. At the end of this two-week period, the\n> full release details will be made available.\n>\n> This delay is designed to reduce the chances of prospective attackers\n> reverse-engineering the fixes and exploiting them before the network\n> can update.\n",
     "id": "FreeBSD-2026-0429",
-    "modified": "2026-08-31T00:00:00Z",
-    "published": "2026-08-31T00:00:00Z",
+    "modified": "2026-08-29T00:00:00Z",
+    "published": "2026-08-29T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/trifectatechfoundation/sudo-rs/security/advisories/GHSA-f42v-x7gq-phc8"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/trifectatechfoundation/sudo-rs/releases/tag/v0.2.15"
+            "url": "https://github.com/ElementsProject/lightning/releases/tag/v26.06.7"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "security/sudo-rs -- sudoedit could circumvent /etc/sudoers restrictions"
+    "summary": "net-p2p/c-lightning -- unknown vulnerability"
 }

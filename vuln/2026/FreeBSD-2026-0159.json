@@ -41,35 +41,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=2025583"
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=2023343"
         ],
         "discovery": "2026-04-21T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-6781",
-                "CVE-2026-6780"
+                "CVE-2026-6779"
             ]
         },
-        "vid": "5f2386b6-430a-11f1-a627-b42e991fc52e"
+        "vid": "58a378c8-430a-11f1-a627-b42e991fc52e"
     },
-    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2025583 reports:\n\n> Denial-of-service in the Audio/Video: Playback component.\n",
+    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2023343 reports:\n\n> Other issue in the JavaScript Engine component.\n",
     "id": "FreeBSD-2026-0159",
     "modified": "2026-04-28T00:00:00Z",
     "published": "2026-04-28T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2025583"
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2023343"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6781"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6780"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6779"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Mozilla -- Denial-of-service"
+    "summary": "Mozilla -- Other issue in the JavaScript Engine component"
 }

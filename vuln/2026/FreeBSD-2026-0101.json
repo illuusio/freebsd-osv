@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-ormar"
+                "name": "tiff"
             },
             "ranges": [
                 {
@@ -12,102 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.23.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py311-ormar"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "0.23.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py312-ormar"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "0.23.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313-ormar"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "0.23.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313t-ormar"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "0.23.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py314-ormar"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "0.23.1"
+                            "fixed": "4.7.1_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -117,43 +22,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/collerek/ormar/security/advisories"
+            "https://www.cve.org/CVERecord?id=CVE-2026-4775"
         ],
-        "discovery": "2026-02-22T00:00:00Z",
+        "discovery": "2026-03-24T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-26198",
-                "CVE-2026-27953"
+                "CVE-2026-4775"
             ]
         },
-        "vid": "8d549898-3598-11f1-a8bc-3c7c3fba4204"
+        "vid": "766bb9b5-357f-11f1-98f0-00a098b42aeb"
     },
-    "details": "https://github.com/ormar-orm/ormar/security/advisories reports:\n\n> - SQL Injection in aggregate functions min() and max()\n> - Pydantic Validation Bypass via \\_\\_pk_only\\_\\_ and \\_\\_excluded\\_\\_\n>   Kwargs Injection in Model Constructor\n",
+    "details": "PrymEvol and Quang Luong reports:\n\n> A flaw was found in the libtiff library. A remote attacker could\n> exploit a signed integer overflow vulnerability in the\n> putcontig8bitYCbCr44tile function by providing a specially crafted\n> TIFF file. This flaw can lead to an out-of-bounds heap write due to\n> incorrect memory pointer calculations, potentially causing a denial of\n> service (application crash) or arbitrary code execution.\n",
     "id": "FreeBSD-2026-0101",
     "modified": "2026-04-11T00:00:00Z",
     "published": "2026-04-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/collerek/ormar/security/advisories"
+            "url": "https://www.cve.org/CVERecord?id=CVE-2026-4775"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-26198"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/ormar-orm/ormar/security/advisories/GHSA-xxh2-68g9-8jqr"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27953"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/ormar-orm/ormar/security/advisories/GHSA-f964-whrq-44h8"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4775"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-ormar -- vulnerabilities"
+    "summary": "(lib)tiff -- Integer Overflow or Wraparound"
 }

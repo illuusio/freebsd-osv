@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "python310"
+                "name": "vaultwarden"
             },
             "ranges": [
                 {
@@ -12,102 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.10.20_3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "python311"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.11.15_4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "python312"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.12.13_4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "python313"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.13.14"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "python313t"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.13.14"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "python314"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.14.4_1"
+                            "fixed": "1.35.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -117,34 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://mail.python.org/archives/list/security-announce@python.org/thread/HTWB2Z6KT5QQX4RYEZAFININDHNOSIF3/"
+            "https://github.com/dani-garcia/vaultwarden/releases/tag/1.35.5"
         ],
-        "discovery": "2026-04-11T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-6100"
-            ]
-        },
-        "vid": "b8e9f33c-375d-11f1-a119-e36228bfe7d4"
+        "discovery": "2026-04-12T00:00:00Z",
+        "vid": "57f31f61-36a1-11f1-9839-8447094a420f"
     },
-    "details": "Seth Larson reports:\n\n> There is a CRITICAL severity vulnerability affecting CPython.\n>\n> Use-after-free (UAF) was possible in the lzma.LZMADecompressor,\n> bz2.BZ2Decompressor, and gzip.GzipFile when a memory allocation fails\n> with a MemoryError and the decompression instance is re-used. This\n> scenario can be triggered if the process is under memory pressure. The\n> fix cleans up the dangling pointer in this specific error condition.\n>\n> The vulnerability is only present if the program re-uses decompressor\n> instances across multiple decompression calls even after a MemoryError\n> is raised during decompression. Using the helper functions to one-shot\n> decompress data such as lzma.decompress(), bz2.decompress(),\n> gzip.decompress(), and zlib.decompress() are not affected as a new\n> decompressor instance is created for each call. If the decompressor\n> instance is not re-used after an error condition, this usage is\n> similarly not vulnerable.\n",
+    "details": "The Vaultwarden project reports:\n\n> GHSA-937x-3j8m-7w7p Unconfirmed Owner Can Purge Entire Organization\n> Vault.\n>\n> GHSA-569v-845w-g82p Cross-Org Group Binding Enables Unauthorized Read\n> And Write Access Into Another Organization\n>\n> GHSA-6j4w-g4jh-xjfx Refresh tokens not invalidated on security stamp\n> rotation\n",
     "id": "FreeBSD-2026-0105",
-    "modified": "2026-08-09T00:00:00Z",
-    "published": "2026-04-13T00:00:00Z",
+    "modified": "2026-04-12T00:00:00Z",
+    "published": "2026-04-12T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://mail.python.org/archives/list/security-announce@python.org/thread/HTWB2Z6KT5QQX4RYEZAFININDHNOSIF3/"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6100"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/python/cpython/issues/148395"
+            "url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.35.5"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Python -- use-after-free vulnerability in decompressors under memory pressure"
+    "summary": "Vaultwarden -- Multiple vulnerabilities"
 }

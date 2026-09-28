@@ -1,0 +1,176 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitea"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.27.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://blog.gitea.com/release-of-1.27.3/"
+        ],
+        "discovery": "2026-08-29T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-66877",
+                "CVE-2026-71184",
+                "CVE-2026-68957",
+                "CVE-2026-60010",
+                "CVE-2026-70406",
+                "CVE-2026-63792",
+                "CVE-2026-66874",
+                "CVE-2026-68964",
+                "CVE-2026-67577",
+                "CVE-2026-66849",
+                "CVE-2026-73135",
+                "CVE-2026-78433",
+                "CVE-2026-70407",
+                "CVE-2026-73126",
+                "CVE-2026-70400",
+                "CVE-2026-70396",
+                "CVE-2026-63021",
+                "CVE-2026-62925",
+                "CVE-2026-73273",
+                "CVE-2026-60021",
+                "CVE-2026-60018",
+                "CVE-2026-73130",
+                "CVE-2026-70402",
+                "CVE-2026-66853",
+                "CVE-2026-71301",
+                "CVE-2026-73504"
+            ]
+        },
+        "vid": "fac18f5f-afc2-11f1-8266-3c7c3fba4204"
+    },
+    "details": "Gitea reports:\n\n> This release contains fixes for 26 security issues, hardens issue\n> searching that an unfiltered query no longer enumerates every public\n> repository into the indexer filter and removes unsafe code from the\n> internal private endpoints. Please upgrade as soon as possible.\n",
+    "id": "FreeBSD-2026-0453",
+    "modified": "2026-09-13T00:00:00Z",
+    "published": "2026-09-13T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://blog.gitea.com/release-of-1.27.3/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-66877"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-71184"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-68957"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60010"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70406"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-63792"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-66874"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-68964"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-67577"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-66849"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73135"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78433"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70407"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73126"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70400"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70396"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-63021"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-62925"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73273"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60021"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60018"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73130"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-70402"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-66853"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-71301"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73504"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Gitea -- multiple vulnerabilities"
+}

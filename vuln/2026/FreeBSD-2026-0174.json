@@ -2,8 +2,8 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "FreeBSD"
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
             },
             "ranges": [
                 {
@@ -57,28 +57,28 @@
         "discovery": "2026-04-29T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-42512"
+                "CVE-2026-7164"
             ],
             "freebsdsa": [
-                "SA-26:15.dhclient"
+                "SA-26:14.pf"
             ]
         },
-        "vid": "58acf4c5-4435-11f1-bb07-bc241121aa0a"
+        "vid": "225ba563-4435-11f1-bb07-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nAs dhclient is building an environment to pass to dhclient-script, it\nmay need to resize the array of string pointers. The code which expands\nthe array incorrectly calculates its new size when requesting memory,\nresulting in a heap buffer overrun.\n\n# Impact:\n\nA specially crafted packet can cause dhclient to overrun its buffer of\nenvironment entries. This can result in a crash, but it may be possible\nto leverage this bug to achieve remote code execution.\n",
+    "details": "# Problem Description:\n\nIncorrect packet validation allowed unbounded recursion parsing SCTP\nchunk parameters. This can eventually result in a stack overflow and\npanic.\n\n# Impact:\n\nRemote attackers can craft packets which cause affected systems to\npanic. This affects any system where pf is configured to process\ntraffic, independent of the configured ruleset.\n",
     "id": "FreeBSD-2026-0174",
     "modified": "2026-04-30T00:00:00Z",
     "published": "2026-04-30T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42512"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7164"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:15.dhclient.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:14.pf.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Remotely triggerable out-of-bounds heap write in dhclient"
+    "summary": "FreeBSD -- pf can overflow the stack parsing crafted SCTP packets"
 }

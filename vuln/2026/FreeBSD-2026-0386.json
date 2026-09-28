@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "libXfont2"
+                "name": "dnsdist"
             },
             "ranges": [
                 {
@@ -12,7 +12,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.0.9"
+                            "fixed": "2.1.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "powerdns"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.1.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "powerdns-recursor"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.4.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,35 +60,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://lists.x.org/archives/xorg-announce/2026-August/003734.html"
+            "https://blog.powerdns.com/2026/08/06/powerdns-security-advisory-2026-11-for-powerdns-authoritative-server-recursor-and-dnsdist"
         ],
-        "discovery": "2026-08-05T00:00:00Z",
+        "discovery": "2026-07-28T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-44950",
-                "CVE-2026-59679"
+                "CVE-2026-52682"
             ]
         },
-        "vid": "1fae5869-9275-11f1-83e9-901b0e13f1a0"
+        "vid": "7e45952f-9268-11f1-ab2f-3c7c3fba4204"
     },
-    "details": "Zhixi \\\"Jace\\\" Sun, independent security researcher reports:\n\n> - CVE-2026-44950: Font Server Client Cumulative Glyph Data Heap Buffer\n>   Overflow\n> - CVE-2026-59679: Font Server Client encoding Out-Of-Bounds Read/Write\n",
+    "details": "> CVE-2026-52682: A crafted DNS packet can cause increased memory and\n> CPU consumption.\n",
     "id": "FreeBSD-2026-0386",
     "modified": "2026-08-07T00:00:00Z",
     "published": "2026-08-07T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://lists.x.org/archives/xorg-announce/2026-August/003734.html"
+            "url": "https://blog.powerdns.com/2026/08/06/powerdns-security-advisory-2026-11-for-powerdns-authoritative-server-recursor-and-dnsdist"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44950"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-59679"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-52682"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "libXfont2 -- multiple vulnerabilities"
+    "summary": "DNSDist, PowerDNS, PowerDNS Recursor -- vulnerability"
 }

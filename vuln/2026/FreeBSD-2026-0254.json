@@ -46,28 +46,28 @@
         "discovery": "2026-06-09T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2025-10263"
+                "CVE-2026-49413"
             ],
             "freebsdsa": [
-                "SA-26:31.arm64"
+                "SA-26:30.linux"
             ]
         },
-        "vid": "438b0278-6474-11f1-958d-bc241121aa0a"
+        "vid": "fa5289e4-6473-11f1-958d-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nSome Arm CPUs have errata where the ordering of stores and the TLBI+DSB\nsequence may be incorrect. If one CPU stores to a virtual address while\nanother CPU invalidates the translation for that address, the second\nCPU\\'s TLBI+DSB may complete before the first CPU\\'s store has been\nglobally observed.\n\n# Impact:\n\nThis erratum may allow software to write to a previously writable\nlocation after the page table is modified to forbid writes to that\nlocation. Consequently this may allow software to write to memory owned\nby a higher exception level, possibly allowing software to escalate\nprivilege to that higher exception level.\n",
+    "details": "# Problem Description:\n\nThe Linuxulator determined whether a binary was set-user-ID or\nset-group-ID by checking the P_SUGID process flag. During execve(2),\nthis flag is not yet set at the point where the auxiliary vector is\nconstructed, so AT_SECURE was incorrectly set to zero for set-user-ID\nand set-group-ID executables.\n\n# Impact:\n\nAn unprivileged local user can inject a shared library via LD_PRELOAD\ninto a set-user-ID or set-group-ID Linux binary, gaining the privileges\nof that binary.\n",
     "id": "FreeBSD-2026-0254",
     "modified": "2026-06-10T00:00:00Z",
     "published": "2026-06-10T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-10263"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49413"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:31.arm64.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:30.linux.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Arm CPU errata may bypass page table permission changes"
+    "summary": "FreeBSD -- Flaw in Linuxulator execution of setugid binaries"
 }

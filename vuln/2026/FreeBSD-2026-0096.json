@@ -22,6 +22,25 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
+                "name": "firefox-esr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "140.9.1,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
                 "name": "thunderbird"
             },
             "ranges": [
@@ -31,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "149.0.2"
+                            "fixed": "140.9.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,28 +60,28 @@
     ],
     "database_specific": {
         "cite": [
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2025475%2C2025477"
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2022369%2C2023026%2C2023545%2C2023555%2C2023958%2C2025422%2C2025468%2C2025492%2C2025505"
         ],
         "discovery": "2026-04-07T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-5735"
+                "CVE-2026-5734"
             ]
         },
-        "vid": "359d8e42-33fb-11f1-8ac1-b42e991fc52e"
+        "vid": "33e56419-33fb-11f1-8ac1-b42e991fc52e"
     },
-    "details": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2025475%2C2025477\nreports:\n\n> Memory safety bugs present in Firefox 149.0.1 and Thunderbird 149.0.1.\n> Some of these bugs showed evidence of memory corruption and we presume\n> that with enough effort some of these could have been exploited to run\n> arbitrary code.\n",
+    "details": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2022369%2C2023026%2C2023545%2C2023555%2C2023958%2C2025422%2C2025468%2C2025492%2C2025505\nreports:\n\n> Memory safety bugs present in Firefox ESR 140.9.0, Thunderbird ESR\n> 140.9.0, Firefox 149.0.1 and Thunderbird 149.0.1. Some of these bugs\n> showed evidence of memory corruption and we presume that with enough\n> effort some of these could have been exploited to run arbitrary code.\n",
     "id": "FreeBSD-2026-0096",
     "modified": "2026-04-09T00:00:00Z",
     "published": "2026-04-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2025475%2C2025477"
+            "url": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2022369%2C2023026%2C2023545%2C2023555%2C2023958%2C2025422%2C2025468%2C2025492%2C2025505"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5735"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5734"
         }
     ],
     "schema_version": "1.7.0",

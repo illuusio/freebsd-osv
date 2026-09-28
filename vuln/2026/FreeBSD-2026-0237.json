@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "xwayland"
+                "name": "xorg-server"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "24.1.12,1"
+                            "fixed": "21.1.23,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -38,7 +38,7 @@
                 "CVE-2026-50264"
             ]
         },
-        "vid": "36cb0ced-5e23-11f1-86a2-589cfc10a551"
+        "vid": "592ced15-5e20-11f1-86a2-589cfc10a551"
     },
     "details": "X.Org project reports:\n\n> Multiple issues have been found in the X server and Xwayland\n> implementations published by X.Org for which we are releasing security\n> fixes for in xorg-server-21.1.23 and xwayland-24.1.12.\n",
     "id": "FreeBSD-2026-0237",
@@ -91,5 +91,5 @@
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "xwayland -- Multiple vulnerabilities"
+    "summary": "xorg-server -- Multiple vulnerabilities"
 }

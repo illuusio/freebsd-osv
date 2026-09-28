@@ -1,0 +1,70 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "znc"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.10.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://wiki.znc.in/ChangeLog/1.10.3"
+        ],
+        "discovery": "2026-09-13T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2020-11022",
+                "CVE-2020-11023",
+                "CVE-2026-82373",
+                "CVE-2026-82374"
+            ]
+        },
+        "vid": "b7ae786a-af80-11f1-9800-641c67a117d8"
+    },
+    "details": "ZNC reports:\n\n> CVE-2026-82373: Use-after-free when unloading modules, triggered by\n> unprivileged users. To mitigate, set DenyLoadMod to true.\n>\n> CVE-2026-82374: Null pointer dereference in crypt module, triggered by\n> IRC server.\n>\n> CVE-2020-11022, CVE-2020-11023: Updated the old bundled vulnerable\n> version of jQuery to 3.5.1.\n",
+    "id": "FreeBSD-2026-0451",
+    "modified": "2026-09-13T00:00:00Z",
+    "published": "2026-09-13T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://wiki.znc.in/ChangeLog/1.10.3"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-11022"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-11023"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-82373"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-82374"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/znc/znc/releases/tag/znc-1.10.3"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "znc -- multiple vulnerabilities"
+}

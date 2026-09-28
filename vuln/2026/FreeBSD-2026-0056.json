@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "oauth2-proxy"
+                "name": "firefox"
             },
             "ranges": [
                 {
@@ -12,7 +12,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "7.14.2"
+                            "fixed": "148.0.0,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox-esr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "140.8.0,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "148.0.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -21,24 +59,29 @@
         }
     ],
     "database_specific": {
-        "discovery": "2026-02-05T00:00:00Z",
+        "discovery": "2026-02-24T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2025-68121"
+                "CVE-2026-2809",
+                "CVE-2026-2808"
             ]
         },
-        "vid": "10319b08-f050-4beb-95e3-fe025cdafd25"
+        "vid": "15f4e0f6-1338-11f1-a55d-b42e991fc52e"
     },
-    "details": "During session resumption in crypto/tls, if the underlying Config has\nits ClientCAs or RootCAs fields mutated between the initial handshake\nand the resumed handshake, the resumed handshake may succeed when it\nshould have failed.\n",
+    "details": "CVE-2026-2809: Memory safety bug in the JavaScript: WebAssembly\ncomponent.\n\nCVE-2026-2808: Integer overflow in the JavaScript: Standard Library\ncomponent.\n",
     "id": "FreeBSD-2026-0056",
-    "modified": "2026-02-27T00:00:00Z",
-    "published": "2026-02-27T00:00:00Z",
+    "modified": "2026-02-26T00:00:00Z",
+    "published": "2026-02-26T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-68121"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2809"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2808"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "oauth2-proxy -- multiple vulnerabilities"
+    "summary": "Mozilla -- Multiple vulnerabilities"
 }

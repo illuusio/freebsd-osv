@@ -1,0 +1,125 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "electron42"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "42.11.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/electron/electron/releases/tag/v42.11.1"
+        ],
+        "discovery": "2026-09-01T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-15764",
+                "CVE-2026-15765",
+                "CVE-2026-15766",
+                "CVE-2026-15767",
+                "CVE-2026-15768",
+                "CVE-2026-15769",
+                "CVE-2026-15770",
+                "CVE-2026-15771",
+                "CVE-2026-15772",
+                "CVE-2026-15773",
+                "CVE-2026-15774",
+                "CVE-2026-15775",
+                "CVE-2026-15776",
+                "CVE-2026-15777",
+                "CVE-2026-15778"
+            ]
+        },
+        "vid": "271556c1-ddbf-4d44-95e6-a731841539b2"
+    },
+    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities: CVE-2026-15764,\n> CVE-2026-15765, CVE-2026-15766, CVE-2026-15767, CVE-2026-15768,\n> CVE-2026-15769, CVE-2026-15770, CVE-2026-15771, CVE-2026-15772,\n> CVE-2026-15773, CVE-2026-15774, CVE-2026-15775, CVE-2026-15776,\n> CVE-2026-15777, and CVE-2026-15778.\n",
+    "id": "FreeBSD-2026-0440",
+    "modified": "2026-09-03T00:00:00Z",
+    "published": "2026-09-03T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/electron/electron/releases/tag/v42.11.1"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15764"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15765"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15766"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15767"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15768"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15769"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15770"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15771"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15772"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15773"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15774"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15775"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15776"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15777"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15778"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/electron/electron/pull/53344"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "electron42 -- multiple vulnerabilities"
+}

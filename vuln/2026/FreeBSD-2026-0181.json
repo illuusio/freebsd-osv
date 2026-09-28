@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "apache24"
+                "name": "modsecurity3"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.4.67"
+                            "fixed": "3.0.15"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -21,81 +21,33 @@
         }
     ],
     "database_specific": {
-        "cite": [
-            "https://dlcdn.apache.org/httpd/CHANGES_2.4.67"
-        ],
-        "discovery": "2026-05-04T00:00:00Z",
+        "discovery": "2026-04-28T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-34059",
-                "CVE-2026-34032",
-                "CVE-2026-33857",
-                "CVE-2026-33523",
-                "CVE-2026-33007",
-                "CVE-2026-33006",
-                "CVE-2026-29169",
-                "CVE-2026-29168",
-                "CVE-2026-28780",
-                "CVE-2026-24072",
-                "CVE-2026-23918"
+                "CVE-2026-42268",
+                "CVE-2026-30923"
             ]
         },
-        "vid": "1ccc383b-486a-11f1-8b62-8447094a420f"
+        "vid": "3c02dcfd-47d7-11f1-99fb-3497f65b111b"
     },
-    "details": "The Apache httpd project reports:\n\n> mod_proxy_ajp: CVE-2026-34059, CVE-2026-34032, CVE-2026-33857,\n> CVE-2026-28780\n>\n> multiple modules: CVE-2026-33523\n>\n> mod_authn_socache: CVE-2026-33007\n>\n> mod_auth_digest: CVE-2026-33006\n>\n> mod_dav_lock: mod_dav_lock\n>\n> mod_md: CVE-2026-29168\n>\n> mod_rewrite: CVE-2026-24072\n>\n> mod_http2: CVE-2026-23918\n",
+    "details": "ModSecurity is an open source web application firewall engine.\n\nAccording to the upstream changelog, multiple vulnerabilities have been\nfixed.\n\n- CVE-2026-42268: unsigned integer underflow in verify operators\n- CVE-2026-30923: buffer overflow in hex_decode\n",
     "id": "FreeBSD-2026-0181",
-    "modified": "2026-05-05T00:00:00Z",
-    "published": "2026-05-05T00:00:00Z",
+    "modified": "2026-05-04T00:00:00Z",
+    "published": "2026-05-04T00:00:00Z",
     "references": [
         {
-            "type": "REPORT",
-            "url": "https://dlcdn.apache.org/httpd/CHANGES_2.4.67"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42268"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34059"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-30923"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34032"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33857"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33523"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33007"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33006"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-29169"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-29168"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-28780"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-24072"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-23918"
+            "type": "WEB",
+            "url": "https://github.com/owasp-modsecurity/ModSecurity/blob/v3.0.15/CHANGES"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "www/apache24 -- Multiple vulnerabilities"
+    "summary": "modsecurity3 -- multiple vulnerabilities"
 }

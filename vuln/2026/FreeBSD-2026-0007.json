@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "mailpit"
+                "name": "phpmyfaq-php82"
             },
             "ranges": [
                 {
@@ -12,7 +12,64 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.28.2"
+                            "fixed": "4.0.16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpmyfaq-php83"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.0.16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpmyfaq-php84"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.0.16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpmyfaq-php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.0.16"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +79,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/axllent/mailpit/security/advisories/GHSA-524m-q5m7-79mm"
+            "https://www.phpmyfaq.de/security/advisory-2025-12-29/"
         ],
-        "discovery": "2026-01-10T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-22689"
-            ]
-        },
-        "vid": "d822839e-ee4f-11f0-b53e-0897988a1c07"
+        "discovery": "2025-12-29T00:00:00Z",
+        "vid": "79c3c751-ee20-11f0-b17e-50ebf6bdf8e9"
     },
-    "details": "Mailpit author reports:\n\n> The Mailpit WebSocket server is configured to accept connections from\n> any origin. This lack of Origin header validation introduces a\n> Cross-Site WebSocket Hijacking (CSWSH) vulnerability.\n>\n> An attacker can host a malicious website that, when visited by a\n> developer running Mailpit locally, establishes a WebSocket connection\n> to the victim\\'s Mailpit instance (default ws://localhost:8025). This\n> allows the attacker to intercept sensitive data such as email\n> contents, headers, and server statistics in real-time.\n",
+    "details": "phpMyFAQ team reports:\n\n> Stored cross-site scripting (XSS) and unauthenticated config backup\n> download vulnerability\n",
     "id": "FreeBSD-2026-0007",
     "modified": "2026-01-10T00:00:00Z",
     "published": "2026-01-10T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-524m-q5m7-79mm"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22689"
+            "url": "https://www.phpmyfaq.de/security/advisory-2025-12-29/"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "mail/mailpit -- Cross-Site WebSocket Hijacking"
+    "summary": "phpmyfaq -- multiple vulnerabilities"
 }

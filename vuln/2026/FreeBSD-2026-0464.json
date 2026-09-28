@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "angie"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.12.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://en.angie.software/angie/docs/oss_changes/#angie-1-12-2"
+        ],
+        "discovery": "2026-09-17T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-90439"
+            ]
+        },
+        "vid": "6cf2ff4b-b38c-11f1-a655-3497f65b111b"
+    },
+    "details": "The Angie Software Team reports:\n\n> When using an OpenSSL version without native HTTP/3 support (3.5.0 or\n> earlier), if the default server for the address that accepted a\n> regular HTTPS request also used HTTP/3 (the listen directive with the\n> quic parameter, possibly on a different port), while a server block\n> without HTTP/3 was selected by domain name (SNI), limited worker\n> process memory corruption or a worker process crash could occur\n> (CVE-2026-90439); the fix was ported from nginx 1.31.6.\n",
+    "id": "FreeBSD-2026-0464",
+    "modified": "2026-09-18T00:00:00Z",
+    "published": "2026-09-18T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://en.angie.software/angie/docs/oss_changes/#angie-1-12-2"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-90439"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-90439"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Angie -- worker process memory corruption when using HTTP/3"
+}

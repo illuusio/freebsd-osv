@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "immich"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.2.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://nvd.nist.gov/vuln/detail/CVE-2026-82272"
+        ],
+        "discovery": "2026-08-28T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-82272"
+            ]
+        },
+        "vid": "fcc6917b-adbc-11f1-a655-3497f65b111b"
+    },
+    "details": "VulnCheck reports:\n\n> Immich through 3.1.0 fails to properly enforce locked asset visibility\n> when assets are locked through the single-asset endpoint, allowing\n> them to remain accessible through shared albums and links.\n\nIn 3.2.2 the single-asset endpoint still lacks the album removal that\nthe bulk endpoint performs, and the album and shared link access checks\nstill carry no visibility filter. Both code paths of the web interface\nuse the bulk endpoint, so the state can only be reached by calling the\nAPI directly, and such assets stay visible only to those the owner\nalready shares the album or the link with. The identifier was assigned\nby VulnCheck, not by the immich project, which has published no advisory\nand has not confirmed the report. NVD has not analysed the entry.\n",
+    "id": "FreeBSD-2026-0448",
+    "modified": "2026-09-16T00:00:00Z",
+    "published": "2026-09-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-82272"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-82272"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/immich-app/immich/issues/29526"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "immich -- locked assets remain accessible through shared albums and links"
+}

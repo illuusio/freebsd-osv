@@ -1,0 +1,65 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "angie-module-njs"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.0.1,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://nginx.org/en/docs/njs/changes.html#njs1.0.1"
+        ],
+        "discovery": "2026-09-02T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-18329",
+                "CVE-2026-78222",
+                "CVE-2026-78689"
+            ]
+        },
+        "vid": "6cf326a2-b38c-11f1-a655-3497f65b111b"
+    },
+    "details": "The njs development team reports:\n\n> Access control bypass in js_access when an asynchronous request body\n> continuation threw an exception or produced an unhandled rejection\n> (CVE-2026-18329). Previously, nginx could continue processing the\n> request as though the js_access check had succeeded. Affects\n> 0.9.9-1.0.0.\n>\n> Worker process crash when reading Response.statusText after an\n> upstream server returned a status line with an empty reason phrase\n> (CVE-2026-78222). Affects 0.5.1-1.0.0.\n>\n> Heap buffer overflow while parsing namespace prefix lists passed to\n> xml.exclusiveC14n() (CVE-2026-78689). Affects 0.7.10-1.0.0.\n",
+    "id": "FreeBSD-2026-0463",
+    "modified": "2026-09-18T00:00:00Z",
+    "published": "2026-09-18T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://nginx.org/en/docs/njs/changes.html#njs1.0.1"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18329"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78222"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78689"
+        },
+        {
+            "type": "WEB",
+            "url": "https://nginx.org/en/docs/njs/security.html#advisories"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "angie-module-njs -- multiple vulnerabilities"
+}

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "chromium"
+                "name": "powerdns-recursor"
             },
             "ranges": [
                 {
@@ -12,26 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "145.0.7632.109"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ungoogled-chromium"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "145.0.7632.109"
+                            "fixed": "5.3.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,40 +22,57 @@
     ],
     "database_specific": {
         "cite": [
-            "https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_18.html"
+            "https://blog.powerdns.com/2025/12/08/powerdns-security-advisories-2025-07-and-2025-08"
         ],
-        "discovery": "2026-02-18T00:00:00Z",
+        "discovery": "2025-12-08T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-2648",
-                "CVE-2026-2649",
-                "CVE-2026-2650"
+                "CVE-2025-59029",
+                "CVE-2025-59030",
+                "CVE-2026-24027",
+                "CVE-2026-0398"
             ]
         },
-        "vid": "a977cb1c-0d7d-11f1-85c5-a8a1599412c6"
+        "vid": "67793feb-0b5b-11f1-a1c0-0050569f0b83"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 3 security fixes:\n>\n> - \\[477033835\\] High CVE-2026-2648: Heap buffer overflow in PDFium.\n>   Reported by soiax on 2026-01-19\n> - \\[481074858\\] High CVE-2026-2649: Integer overflow in V8. Reported\n>   by JunYoung Park(@candymate) of KAIST Hacking Lab on 2026-02-03\n> - \\[476461867\\] Medium CVE-2026-2650: Heap buffer overflow in Media.\n>   Reported by Google on 2026-01-18\n",
+    "details": "PowerDNS Team reports:\n\n> 2025-07: Internal logic flaw in cache management can lead to a denial\n> of service in Recursor\n>\n> 2025-08: Insufficient validation of incoming notifies over TCP can\n> lead to a denial of service in Recursor\n>\n> 2026-01: Crafted zones can lead to increased resource usage in\n> Recursor\n>\n> 2026-01: This problem can be triggered by publishing and querying a\n> crafted zone that causes large memory usage.\n",
     "id": "FreeBSD-2026-0045",
-    "modified": "2026-02-19T00:00:00Z",
-    "published": "2026-02-19T00:00:00Z",
+    "modified": "2026-02-16T00:00:00Z",
+    "published": "2026-02-16T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_18.html"
+            "url": "https://blog.powerdns.com/2025/12/08/powerdns-security-advisories-2025-07-and-2025-08"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2648"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-59029"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2649"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-59030"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2650"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-24027"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0398"
+        },
+        {
+            "type": "WEB",
+            "url": "https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2025-07.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2025-08.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://docs.powerdns.com/recursor/security-advisories/powerdns-advisory-2026-01.html"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "chromium -- security fixes"
+    "summary": "powerdns-recursor -- Denial of Service"
 }

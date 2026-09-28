@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "traefik"
+                "name": "terraform"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.7.11"
+                            "fixed": "1.15.9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,21 +22,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/traefik/traefik/releases/tag/v3.7.11"
+            "https://discuss.hashicorp.com/t/hcsec-2026-31-go-slug-vulnerable-to-exclusion-bypass-in-terraformignore-handling/77668"
         ],
-        "discovery": "2026-08-19T00:00:00Z",
-        "vid": "b22fee3d-9f14-11f1-b948-5404a68ad561"
+        "discovery": "2026-08-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-14978"
+            ]
+        },
+        "vid": "4496ae0c-9d7d-11f1-a655-3497f65b111b"
     },
-    "details": "The traefik project releases a new version addressing multiple\nvulnerabilities:\n\n> - GHSA-5w68-77r2-r64c (Complete authentication bypass in the\n>   \\`digestAuth\\` middleware)\n> - GHSA-g55h-rg46-x9c5 (TLS option confusion in multi-host routers can\n>   bypass mTLS for protected hosts)\n> - GHSA-j994-9gqj-9hwq (Same-host Ingress TLS option conflict disables\n>   client-certificate authentication)\n> - GHSA-m6wx-622r-48r9 (Kubernetes Ingress service middleware bypasses\n>   crossProviderNamespaces)\n",
+    "details": "HashiCorp reports:\n\n> Terraform bundles the go-slug library, which builds the archive\n> uploaded to HCP Terraform or Terraform Enterprise when a run is\n> started. In go-slug before v0.18.3, matching of .terraformignore rules\n> does not consistently treat canonically equivalent Unicode filenames\n> as the same path. On filesystems that normalize filenames, a file\n> whose displayed name appears to match an exclusion rule can still end\n> up in the generated upload bundle, so local files an operator intended\n> to keep out of remote runs may be transmitted.\n>\n> Exploitation requires local control over the working directory\n> contents, use of .terraformignore, and filenames and ignore patterns\n> that differ only by Unicode normalization form. Setups that do not use\n> .terraformignore, use ASCII-only filenames and patterns, or run on\n> filesystems that do not perform this normalization are not affected.\n",
     "id": "FreeBSD-2026-0407",
-    "modified": "2026-08-23T00:00:00Z",
-    "published": "2026-08-23T00:00:00Z",
+    "modified": "2026-08-21T00:00:00Z",
+    "published": "2026-08-21T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/traefik/traefik/releases/tag/v3.7.11"
+            "url": "https://discuss.hashicorp.com/t/hcsec-2026-31-go-slug-vulnerable-to-exclusion-bypass-in-terraformignore-handling/77668"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14978"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.9"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "traefik -- Multiple vulnerabilities"
+    "summary": "terraform -- exclusion bypass in .terraformignore handling"
 }

@@ -46,28 +46,28 @@
         "discovery": "2026-05-20T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-45251"
+                "CVE-2026-45250"
             ],
             "freebsdsa": [
-                "SA-26:19.file"
+                "SA-26:18.setcred"
             ]
         },
-        "vid": "ee21f41f-54b5-11f1-8d7a-bc241121aa0a"
+        "vid": "39728e41-54b5-11f1-8d7a-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nA file descriptor can be closed while a thread is blocked in a poll(2)\nor select(2) call waiting for that descriptor. Because the blocked\nthread does not hold a reference to the underlying object, this closure\nmay result in the object being freed while the thread remains blocked.\nIn this situation, the kernel must remove the blocked thread from the\nper-object wait queue prior to freeing the object.\n\nIn the case of some file descriptor types, the kernel failed to unlink\nblocked threads from the object before freeing it. When the blocked\nthread is subsequently woken, it accesses memory that has already been\nfreed resulting in a use-after-free vulnerability.\n\n# Impact:\n\nThe use-after-free vulnerability may be triggered by an unprivileged\nlocal user and can be exploited to obtain superuser privileges.\n",
+    "details": "# Problem Description:\n\nThe setcred(2) system call is only available to privileged users.\nHowever, before the privilege level of the caller is checked, the\nuser-supplied list of supplementary groups is copied into a fixed-size\nkernel stack buffer without first validating its length. If the supplied\nlist exceeds the capacity of that buffer, a stack buffer overflow\noccurs.\n\n# Impact:\n\nBecause the bounds check on the supplementary groups list occurs after\nthe kernel stack buffer has already been written, an unprivileged local\nuser may trigger the overflow without holding any special privilege.\nSuccessful exploitation may allow an attacker to execute arbitrary code\nin the context of the kernel, allowing an unprivileged local user to\ngain elevated privileges on the affected system.\n",
     "id": "FreeBSD-2026-0205",
     "modified": "2026-05-21T00:00:00Z",
     "published": "2026-05-21T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45251"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45250"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:19.file.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:18.setcred.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Kernel use-after-free via file descriptor syscalls"
+    "summary": "FreeBSD -- Stack buffer overflow via setcred(2)"
 }

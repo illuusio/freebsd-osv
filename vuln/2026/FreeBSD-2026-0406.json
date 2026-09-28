@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "terraform"
+                "name": "tailscale"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.15.9"
+                            "fixed": "1.102.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://discuss.hashicorp.com/t/hcsec-2026-31-go-slug-vulnerable-to-exclusion-bypass-in-terraformignore-handling/77668"
+            "https://tailscale.com/security-bulletins#ts-2026-011"
         ],
-        "discovery": "2026-08-20T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-14978"
-            ]
-        },
-        "vid": "4496ae0c-9d7d-11f1-a655-3497f65b111b"
+        "discovery": "2026-08-18T00:00:00Z",
+        "vid": "4bf4495e-9d4e-11f1-a129-901b0e9408dc"
     },
-    "details": "HashiCorp reports:\n\n> Terraform bundles the go-slug library, which builds the archive\n> uploaded to HCP Terraform or Terraform Enterprise when a run is\n> started. In go-slug before v0.18.3, matching of .terraformignore rules\n> does not consistently treat canonically equivalent Unicode filenames\n> as the same path. On filesystems that normalize filenames, a file\n> whose displayed name appears to match an exclusion rule can still end\n> up in the generated upload bundle, so local files an operator intended\n> to keep out of remote runs may be transmitted.\n>\n> Exploitation requires local control over the working directory\n> contents, use of .terraformignore, and filenames and ignore patterns\n> that differ only by Unicode normalization form. Setups that do not use\n> .terraformignore, use ASCII-only filenames and patterns, or run on\n> filesystems that do not perform this normalization are not affected.\n",
+    "details": "Tailscale team reports:\n\n> Insufficient validation of 4via6 subnet router destinations permitted\n> access to host-scoped addresses, including cloud metadata and loopback\n> services. TS-2026-11\n",
     "id": "FreeBSD-2026-0406",
     "modified": "2026-08-21T00:00:00Z",
     "published": "2026-08-21T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://discuss.hashicorp.com/t/hcsec-2026-31-go-slug-vulnerable-to-exclusion-bypass-in-terraformignore-handling/77668"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14978"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/hashicorp/terraform/releases/tag/v1.15.9"
+            "url": "https://tailscale.com/security-bulletins#ts-2026-011"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "terraform -- exclusion bypass in .terraformignore handling"
+    "summary": "tailscale -- Insufficient validation of 4via6 subnet router destinations"
 }

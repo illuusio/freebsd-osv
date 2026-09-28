@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "firefox"
+                "name": "ejabberd"
             },
             "ranges": [
                 {
@@ -12,45 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "148.0.0,2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "firefox-esr"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "140.8.0,2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "thunderbird"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "148.0.0"
+                            "fixed": "26.04"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,30 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=2009552"
+            "https://www.process-one.net/blog/ejabberd-26-04/"
         ],
-        "discovery": "2026-02-24T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2026-2781"
-            ]
-        },
-        "vid": "c4972d4f-3d93-11f1-9073-b42e991fc52e"
+        "discovery": "2026-04-20T00:00:00Z",
+        "vid": "82064ab5-3d76-11f1-89ab-901b0e9408dc"
     },
-    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2009552 reports:\n\n> Integer overflow in the Libraries component in NSS.\n",
+    "details": "ejabberd team reports:\n\n> This release adds new options that limit max memory used by XML parser\n> used to process XMPP payloads, to prevent potential Denial of Service\n> attack. The default values for pre-auth provide sufficient protection\n> for ejabberd against non-authenticated users on c2s and s2s, so there\n> is no need to change your configuration.\n",
     "id": "FreeBSD-2026-0118",
     "modified": "2026-04-21T00:00:00Z",
     "published": "2026-04-21T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2009552"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2781"
+            "url": "https://www.process-one.net/blog/ejabberd-26-04/"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Mozilla -- Integer overflow"
+    "summary": "ejabberd -- Potential DDoS in XML Parser"
 }

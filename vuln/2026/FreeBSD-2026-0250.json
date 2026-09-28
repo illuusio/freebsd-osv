@@ -46,33 +46,28 @@
         "discovery": "2026-06-09T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-45258",
-                "CVE-2026-49417"
+                "CVE-2026-45257"
             ],
             "freebsdsa": [
-                "SA-26:27.sound"
+                "SA-26:26.ktls"
             ]
         },
-        "vid": "253188dd-6473-11f1-958d-bc241121aa0a"
+        "vid": "f2c4892a-6472-11f1-958d-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nThe sound(4) driver contained two memory-safety errors in its mmap(2)\nsupport.\n\nFirst, dsp_mmap_single() validated the requested mapping by checking the\nsum of the user-supplied offset and length against the buffer size. This\naddition could overflow, so that a large offset and length wrapped\naround and passed the check. The offset was then narrowed from 64 to 32\nbits when converted to a buffer address, yielding a mapping that\nextended past the audio buffer into unrelated kernel memory.\n(CVE-2026-45258)\n\nSecond, the audio buffer backing a mapping could be freed when the\ndevice was closed even though the mapping remained valid. The freed\nmemory could then be reused elsewhere while still accessible through the\nstale mapping. (CVE-2026-49417)\n\n# Impact:\n\nThe /dev/dsp device nodes are world-accessible by default. On a system\nwith an audio device, either issue allows an unprivileged local user to\nread and write kernel memory, which can be used to escalate privileges,\npotentially gaining full control of the affected system. At a minimum,\nan attacker can crash the kernel, resulting in a Denial of Service\n(DoS).\n",
+    "details": "# Problem Description:\n\nThe KTLS receive path decrypted each record in place, assuming that the\nmbufs holding received data were anonymous and safe to modify. This\nassumption does not hold for data placed on a socket by sendfile(2),\nwhich can reference file-backed memory directly through non-anonymous\nM_EXTPG pages or EXT_SFBUF mbufs. When the sender transmits such data\nover a loopback connection without enabling KTLS on the transmit side,\nthe file-backed mbufs reach the receiver\\'s decryption path unchanged.\nDecrypting a record in place then overwrites the backing file\\'s page\ncache instead of a private copy of the data.\n\n# Impact:\n\nAn unprivileged local user who can read a file can overwrite its\ncontents with data of their choosing by sending the file over a loopback\nconnection on which they have enabled KTLS receive. The write modifies\nthe page cache directly, so it bypasses file flags such as schg and is\nwritten back to disk. By overwriting a setuid binary or other trusted\nfile, a local user can escalate privileges, potentially gaining full\ncontrol of the affected system.\n",
     "id": "FreeBSD-2026-0250",
     "modified": "2026-06-10T00:00:00Z",
     "published": "2026-06-10T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45258"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45257"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49417"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:27.sound.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:26.ktls.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Multiple vulnerabilities in the sound(4) mmap path"
+    "summary": "FreeBSD -- Arbitrary file overwrite via the KTLS receive path"
 }

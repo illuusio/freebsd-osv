@@ -46,28 +46,28 @@
         "discovery": "2026-05-20T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-45254"
+                "CVE-2026-45255"
             ],
             "freebsdsa": [
-                "SA-26:24.cap_net"
+                "SA-26:23.bsdinstall"
             ]
         },
-        "vid": "37ab0cbc-54b7-11f1-8d7a-bc241121aa0a"
+        "vid": "039c0ab0-54b7-11f1-8d7a-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nIn the case of the cap_net service, when a key present in the old limit\nwas omitted from the new limit, the missing key was treated as \\\"allow\nany\\\" instead of being rejected.\n\n# Impact:\n\nIn certain scenarios, an application that had previously restricted a\nsubset of network operations could ask for a new limit that extended the\npermissions of the process.\n",
+    "details": "# Problem Description:\n\nWhen bsdinstall or bsdconfig are prompted to scan for nearby Wi-Fi\nnetworks, they build up a list of network names and use bsddialog(1) to\nprompt the user to select a network. This is implemented using a shell\nscript, and the code which handled network names was not careful to\nprevent expansion by the shell. As a result, a suitably crafted network\nname can be used to execute commands via a subshell.\n\n# Impact:\n\nThe problem can be exploited to execute code as root on the system\nrunning bsdinstall or bsdconfig. The attacker would need to create an\naccess point with a specially crafted name and be within range of a\nWi-Fi scan. Note that bsdinstall and bsdconfig are vulnerable as soon as\nthe user prompts them to scan for nearby networks; they do not need to\nactually select the malicious network.\n",
     "id": "FreeBSD-2026-0210",
     "modified": "2026-05-21T00:00:00Z",
     "published": "2026-05-21T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45254"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45255"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:24.cap_net.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:23.bsdinstall.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Incorrect libcap_net limitation list manipulation"
+    "summary": "FreeBSD -- Remote code execution via installer Wi-Fi access point scans"
 }

@@ -3,49 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "FreeBSD"
+                "name": "openexr"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "15.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "15.0_7"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.4"
-                        },
-                        {
-                            "fixed": "14.4_3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.3"
-                        },
-                        {
-                            "fixed": "14.3_12"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "13.5"
-                        },
-                        {
-                            "fixed": "13.5_13"
+                            "fixed": "3.4.11"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -54,31 +21,41 @@
         }
     ],
     "database_specific": {
+        "cite": [
+            "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.11"
+        ],
         "discovery": "2026-04-29T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-42511"
-            ],
-            "freebsdsa": [
-                "SA-26:12.dhclient"
+                "CVE-2026-42217",
+                "CVE-2026-42216",
+                "CVE-2026-41142"
             ]
         },
-        "vid": "9eb2533e-4434-11f1-bb07-bc241121aa0a"
+        "vid": "787cde46-4424-11f1-943f-05b19d100dca"
     },
-    "details": "# Problem Description:\n\nThe BOOTP file field is written to the lease file without escaping\nembedded double-quotes, allowing injection of arbitrary dhclient.conf\ndirectives. When the lease file is subsequently re-parsed by dhclient,\ne.g., after a system restart, an attacker-controlled field from the\nlease is passed to dhclient-script(8), which evaluates it.\n\n# Impact:\n\nA rogue DHCP server may be able to execute arbirary code as root on a\nsystem running dhclient.\n",
+    "details": "Cary Phillips reports:\n\n> \\[OpenEXR v3.4.11 is a p\\]atch release that addresses the following\n> security vulnerabilities:\n>\n> - CVE-2026-42217 Shift exponent overflow in\n>   readVariableLengthInteger() (ImfIDManifest.cpp)\n> - CVE-2026-42216 Out-of-bounds read in IDManifest::init() during\n>   prefix expansion\n> - CVE-2026-41142 Integer overflow in ImageChannel::resize leads to\n>   heap OOB write via OpenEXRUtil public API\n> - OSS-fuzz 504280155 Heap-buffer-overflow in DwaCompressor_uncompress\n> - OSS-fuzz 505062709 Null-dereference READ in\n>   Imf_3_3::prefixFromLayerName\n",
     "id": "FreeBSD-2026-0171",
-    "modified": "2026-04-30T00:00:00Z",
-    "published": "2026-04-30T00:00:00Z",
+    "modified": "2026-04-29T00:00:00Z",
+    "published": "2026-04-29T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42511"
+            "type": "REPORT",
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.11"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:12.dhclient.asc"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42217"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42216"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-41142"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Remote code execution via malicious DHCP options"
+    "summary": "openexr -- multiple vulnerabilities"
 }

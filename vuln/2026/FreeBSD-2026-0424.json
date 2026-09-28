@@ -3,16 +3,79 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "nsd"
+                "name": "gitlab-ce"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "19.3.0"
                         },
                         {
-                            "fixed": "4.15.1"
+                            "fixed": "19.3.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.2.0"
+                        },
+                        {
+                            "fixed": "19.2.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "11.3.0"
+                        },
+                        {
+                            "fixed": "19.1.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.3.0"
+                        },
+                        {
+                            "fixed": "19.3.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.2.0"
+                        },
+                        {
+                            "fixed": "19.2.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "11.3.0"
+                        },
+                        {
+                            "fixed": "19.1.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,61 +85,60 @@
     ],
     "database_specific": {
         "cite": [
-            "https://community.nlnetlabs.nl/t/nsd-4-15-1-security-release/3447"
+            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-1-released/?nav=19.3.1"
         ],
         "discovery": "2026-08-26T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-18664",
-                "CVE-2026-18916",
-                "CVE-2026-19401",
-                "CVE-2026-19538"
+                "CVE-2026-18252",
+                "CVE-2026-77801",
+                "CVE-2025-10903",
+                "CVE-2026-3035",
+                "CVE-2026-4398",
+                "CVE-2026-15387",
+                "CVE-2026-7487"
             ]
         },
-        "vid": "a711b018-a24b-11f1-81e6-3c7c3fba4204"
+        "vid": "161b1c49-a29b-11f1-a883-2cf05da270f3"
     },
-    "details": "NLnet Labs reports:\n\n> - CVE-2026-18664: IP range access control restrictions are bypassed\n>   for some unintended IP. Reported by [Qifan Zhang from Palo Alto\n>   Networks](https://qifanz.com/), [Claude](https://claude.ai) and [Ada\n>   Logics](https://adalogics.com/).\n> - CVE-2026-18916: Any remote client can denial TCP service by\n>   throttling the TCP receive window (down to 1). Reported by [akoul\n>   (Akhil Koul)](https://github.com/akoul)\n> - CVE-2026-19401: Any remote client can denial UDP service by sending\n>   a specifically crafted query with multiple DNS Cookie options.\n>   Reported by [Qifan Zhang from Palo Alto\n>   Networks](https://qifanz.com/) and\n>   [afldl](mailto:zhangph@yandex.com).\n> - CVE-2026-19538: Anyone with access to the proxy protocol port over\n>   TCP or TLS can bypass BLOCKED access control items. Reported by\n>   [Qifan Zhang from Palo Alto Networks](https://qifanz.com/).\n",
+    "details": "Gitlab reports:\n\n> Inclusion of Functionality from Untrusted Control Sphere issue in Duo\n> Claude AI agent impacts GitLab EE\n>\n> Denial of Service issue in import pipeline impacts GitLab CE/EE\n>\n> Denial of Service issue in SCIM API impacts GitLab EE\n>\n> Improper Access Control issue in protected environments impacts GitLab\n> EE\n>\n> Authorization Bypass issue in compliance framework assignment impacts\n> GitLab EE\n>\n> Improper Handling of Untrusted Data issue in Pipeline Execution\n> Policies impacts GitLab EE\n>\n> Improper Authorization issue in merge request approval rules reset\n> impacts GitLab EE\n",
     "id": "FreeBSD-2026-0424",
-    "modified": "2026-08-27T00:00:00Z",
-    "published": "2026-08-27T00:00:00Z",
+    "modified": "2026-08-28T00:00:00Z",
+    "published": "2026-08-28T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://community.nlnetlabs.nl/t/nsd-4-15-1-security-release/3447"
+            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-1-released/?nav=19.3.1"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18664"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-18664.txt"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18252"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18916"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-18916.txt"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-77801"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19401"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-19401.txt"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-10903"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19538"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3035"
         },
         {
-            "type": "WEB",
-            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-19538.txt"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4398"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15387"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7487"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "NSD -- multiple vulnerabilities"
+    "summary": "Gitlab -- Vulnerabilities"
 }

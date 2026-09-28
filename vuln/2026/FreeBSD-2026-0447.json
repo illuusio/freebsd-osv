@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "immich"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.2.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/immich-app/immich/security/advisories/GHSA-h5w4-vjv4-9r5q"
+        ],
+        "discovery": "2026-08-23T00:00:00Z",
+        "vid": "fcc6baaa-adbc-11f1-a655-3497f65b111b"
+    },
+    "details": "The immich project reports:\n\n> The /maintenance endpoint fails to validate the continue URL\n> parameter. When maintenance mode is disabled, which is the default,\n> the application accepts unvalidated redirect targets, enabling both\n> open redirects and reflected cross-site scripting. An unauthenticated\n> user can craft a malicious link leading to account takeover, including\n> administrative accounts, through same-origin API requests with\n> credentials.\n",
+    "id": "FreeBSD-2026-0447",
+    "modified": "2026-09-11T00:00:00Z",
+    "published": "2026-09-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/immich-app/immich/security/advisories/GHSA-h5w4-vjv4-9r5q"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "immich -- open redirect and reflected XSS in maintenance endpoint"
+}

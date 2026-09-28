@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "elixir"
+                "name": "elixir-devel"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "1.5.0"
                         },
                         {
-                            "fixed": "1.19.5"
+                            "fixed": "1.20.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -30,7 +30,7 @@
                 "CVE-2026-49762"
             ]
         },
-        "vid": "45accfb8-56e4-41b7-8463-572ce643fde0"
+        "vid": "f778ad20-0d5f-49c4-af45-4493ff0696d9"
     },
     "details": "PJUllrich reports:\n\n> The Version module parses numeric version components without length\n> limits. Untrusted input can trigger creation of arbitrary-precision\n> integers, causing CPU and memory exhaustion.\n",
     "id": "FreeBSD-2026-0247",

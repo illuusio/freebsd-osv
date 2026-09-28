@@ -60,30 +60,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=2021080"
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=2017857"
         ],
         "discovery": "2026-04-21T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-6762"
+                "CVE-2026-6761"
             ]
         },
-        "vid": "75b1251d-4305-11f1-a627-b42e991fc52e"
+        "vid": "73091a42-4305-11f1-a627-b42e991fc52e"
     },
-    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2021080 reports:\n\n> Spoofing issue in the DOM: Core & HTML component.\n",
+    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2017857 reports:\n\n> Privilege escalation in the Networking component.\n",
     "id": "FreeBSD-2026-0141",
     "modified": "2026-04-28T00:00:00Z",
     "published": "2026-04-28T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2021080"
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2017857"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6762"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6761"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Mozilla -- Spoofing issue"
+    "summary": "Mozilla -- Privilege escalation"
 }

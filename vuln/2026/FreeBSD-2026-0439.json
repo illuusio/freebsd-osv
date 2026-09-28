@@ -1,0 +1,130 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jenkins"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.580"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jenkins-lts"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.568.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.jenkins.io/security/advisory/2026-09-02/"
+        ],
+        "discovery": "2026-09-02T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-84645",
+                "CVE-2026-84646",
+                "CVE-2026-84647",
+                "CVE-2026-84648",
+                "CVE-2026-84649",
+                "CVE-2026-84650",
+                "CVE-2026-84651",
+                "CVE-2026-84652",
+                "CVE-2026-84653",
+                "CVE-2026-84654",
+                "CVE-2026-84655",
+                "CVE-2026-84656",
+                "CVE-2026-84657"
+            ]
+        },
+        "vid": "102bc631-a6da-11f1-ba21-00e0edd85c6a"
+    },
+    "details": "Jenkins Security Advisory 2026-09-02:\n\n> - (High) SECURITY-3972 / CVE-2026-84645: Deserialization vulnerability\n> - (Medium) SECURITY-3908 / CVE-2026-84646: Lack of type restriction in\n>   deserialization\n> - (High) SECURITY-3915 / CVE-2026-84647: Instantiation of any types\n>   related to configuration\n> - (High) SECURITY-3967 / CVE-2026-84648: Stored XSS vulnerability in\n>   system log viewer\n> - (High) SECURITY-3878 / CVE-2026-84649: Cross-origin exposure of CSRF\n>   token\n> - (High) SECURITY-4032 / CVE-2026-84650: Unsafe deserialization allows\n>   overwriting configuration\n> - (Medium) SECURITY-4025 / CVE-2026-84651: Unsafe deserialization\n>   allows overwriting other agents\n> - (High) SECURITY-4016 / CVE-2026-84652: Session fixation\n>   vulnerability\n> - (Medium) SECURITY-3981 / CVE-2026-84653: Incorrect permission check\n>   in Appearance configuration page\n> - (Medium) SECURITY-3926 / CVE-2026-84654: Form submission data\n>   binding can set static fields\n> - (Medium) SECURITY-3879 / CVE-2026-84655: Injection vulnerability in\n>   REST API\n> - (Medium) SECURITY-4006 / CVE-2026-84656: Missing permission check\n>   allows reading build parameters\n> - (Medium) SECURITY-4015 / CVE-2026-84657: Missing permission check\n>   allows canceling builds\n",
+    "id": "FreeBSD-2026-0439",
+    "modified": "2026-09-02T00:00:00Z",
+    "published": "2026-09-02T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.jenkins.io/security/advisory/2026-09-02/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84645"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84646"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84647"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84648"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84649"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84650"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84651"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84652"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84653"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84654"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84655"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84656"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84657"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "jenkins -- multiple vulnerabilities"
+}

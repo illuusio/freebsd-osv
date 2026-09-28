@@ -3,16 +3,35 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "FreeBSD"
+                "name": "chromium"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "15.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "15.0_3"
+                            "fixed": "144.0.7559.132"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "144.0.7559.132"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -21,31 +40,36 @@
         }
     ],
     "database_specific": {
-        "discovery": "2026-02-10T00:00:00Z",
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop.html"
+        ],
+        "discovery": "2026-02-03T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-2261"
-            ],
-            "freebsdsa": [
-                "SA-26:03.blocklistd"
+                "CVE-2026-1861",
+                "CVE-2026-1862"
             ]
         },
-        "vid": "8d8012e5-0705-11f1-8148-bc241121aa0a"
+        "vid": "9bc5a730-0585-11f1-85c5-a8a1599412c6"
     },
-    "details": "# Problem Description:\n\nDue to a programming error, blocklistd leaks a socket descriptor for\neach adverse event report it receives.\n\nOnce a certain number of leaked sockets is reached, blocklistd becomes\nunable to run the helper script: a child process is forked, but this\nchild dereferences a null pointer and crashes before it is able to exec\nthe helper. At this point, blocklistd still records adverse events but\nis unable to block new addresses or unblock addresses whose database\nentries have expired.\n\nOnce a second, much higher number of leaked sockets is reached,\nblocklistd becomes unable to receive new adverse event reports.\n\n# Impact:\n\nAn attacker may take advantage of this by triggering a large number of\nadverse events from sacrificial IP addresses to effectively disable\nblocklistd before launching an attack.\n\nEven in the absence of attacks or probes by would-be attackers, adverse\nevents will occur regularly in the course of normal operations, and\nblocklistd will gradually run out file descriptors and become\nineffective.\n\nThe accumulation of open sockets may have knock-on effects on other\nparts of the system, resulting in a general slowdown until blocklistd is\nrestarted.\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 2 security fixes:\n>\n> - \\[478942410\\] High CVE-2026-1861: Heap buffer overflow in libvpx.\n>   Reported by Google on 2026-01-26\n> - \\[479726070\\] High CVE-2026-1862: Type Confusion in V8. Reported by\n>   Chaoyuan Peng (@ret2happy) on 2026-01-29\n",
     "id": "FreeBSD-2026-0033",
-    "modified": "2026-02-11T00:00:00Z",
-    "published": "2026-02-11T00:00:00Z",
+    "modified": "2026-02-09T00:00:00Z",
+    "published": "2026-02-09T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2261"
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:03.blocklistd.asc"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1861"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1862"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- blocklistd(8) socket leak"
+    "summary": "chromium -- multiple security fixes"
 }

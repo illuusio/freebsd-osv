@@ -18,6 +18,25 @@
                     "type": "ECOSYSTEM"
                 }
             ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox-esr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "140.10.2,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
         }
     ],
     "database_specific": {
@@ -27,12 +46,12 @@
         "discovery": "2026-05-07T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-8093"
+                "CVE-2026-8092"
             ]
         },
-        "vid": "7eae7f45-4aae-11f1-88d3-b42e991fc52e"
+        "vid": "7a9f1c15-4aae-11f1-88d3-b42e991fc52e"
     },
-    "details": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/ reports:\n\n> Memory safety bugs present in Firefox 150.0.1. Some of these bugs\n> showed evidence of memory corruption and we presume that with enough\n> effort some of these could have been exploited to run arbitrary code.\n",
+    "details": "https://www.mozilla.org/en-US/security/advisories/mfsa2026-40/ reports:\n\n> Memory safety bugs. Some of these bugs showed evidence of memory\n> corruption and we presume that with enough effort some of these could\n> have been exploited to run arbitrary code.\n",
     "id": "FreeBSD-2026-0188",
     "modified": "2026-05-08T00:00:00Z",
     "published": "2026-05-08T00:00:00Z",
@@ -43,9 +62,9 @@
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-8093"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-8092"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "firefox -- Memory safety bugs present in Firefox 150"
+    "summary": "firefox -- Memory safety bugs present in Firefox ESR 115"
 }

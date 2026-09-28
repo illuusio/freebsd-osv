@@ -1,0 +1,69 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "p5-Dancer2"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.2.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "http://www.openwall.com/lists/oss-security/2026/09/22/3",
+            "http://www.openwall.com/lists/oss-security/2026/09/22/1"
+        ],
+        "discovery": "2026-09-22T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-93709",
+                "CVE-2026-93711"
+            ]
+        },
+        "vid": "6690917c-b657-11f1-ad2b-40b034429ecf"
+    },
+    "details": "Dancer project reports:\n\n> Dancer2 versions before 2.2.0 for Perl do not strip CR and LF from\n> response header names in headers_to_array. The routine removes CR and\n> LF from each header value but not from the name. A name carrying them\n> therefore reaches the PSGI server intact. A server that does not\n> validate keys writes it to the wire, so the bytes after the CRLF\n> arrive as their own header line. The application has to derive the\n> header name from request data, not just the value. An attacker who\n> controls that data adds their own headers and splits the response.\n\n> Dancer2 versions before 2.2.0 for Perl serve a layout as a page when\n> an equivalent spelling of its path misses the guard in the AutoPage\n> handler. The handler compares the request path against the layout\n> directory name as text, while the lookup that follows canonicalises\n> it. A doubled slash, a dot segment, a percent-encoded slash, or a\n> different capitalisation on a case-insensitive filesystem therefore\n> misses the guard. The handler is off by default, enabled with\n> auto_page. The layout wrapping every page is already public, so this\n> discloses one of the application\\'s other layouts.\n",
+    "id": "FreeBSD-2026-0467",
+    "modified": "2026-09-22T00:00:00Z",
+    "published": "2026-09-22T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "http://www.openwall.com/lists/oss-security/2026/09/22/3"
+        },
+        {
+            "type": "REPORT",
+            "url": "http://www.openwall.com/lists/oss-security/2026/09/22/1"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-93709"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-93711"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-93709"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-93711"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "p5-Dancer2 -- Multiple vulnerabilities"
+}

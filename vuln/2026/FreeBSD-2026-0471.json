@@ -1,0 +1,61 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "podman"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.8.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/podman-container-tools/podman/releases/tag/v5.8.7"
+        ],
+        "discovery": "2026-09-16T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-11395",
+                "CVE-2026-79699",
+                "CVE-2026-79705"
+            ]
+        },
+        "vid": "050e54b4-b81e-11f1-b540-589cfc10a551"
+    },
+    "details": "The Podman developers report:\n\n> This release addresses (CVE-2025-11395), where importing images\n> containing crafted layer tarballs with the podman load command, or\n> importing volumes containing crafted symlinks with podman volume\n> import, allows overwriting files on the host.\n>\n> This release also addresses CVE-2026-79699 and CVE-2026-79705, though\n> we do not believe these CVEs are exploitable through the Podman\n> command line.\n",
+    "id": "FreeBSD-2026-0471",
+    "modified": "2026-09-24T00:00:00Z",
+    "published": "2026-09-24T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/podman-container-tools/podman/releases/tag/v5.8.7"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-11395"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79699"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79705"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "podman -- vulnerabilities"
+}

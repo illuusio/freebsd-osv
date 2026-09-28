@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "mysql80-client"
+                "name": "mariadb118-client"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "8.0.46"
+                            "fixed": "11.8.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "mysql84-client"
+                "name": "mariadb114-client"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "8.4.9"
+                            "fixed": "11.4.11"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "mysql96-client"
+                "name": "mariadb1011-client"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "9.6.1"
+                            "fixed": "10.11.17"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "mysql80-server"
+                "name": "mariadb106-client"
             },
             "ranges": [
                 {
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "8.0.46"
+                            "fixed": "10.6.26"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "mysql84-server"
+                "name": "mariadb118-server"
             },
             "ranges": [
                 {
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "8.4.9"
+                            "fixed": "11.8.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,7 +98,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "mysql96-server"
+                "name": "mariadb114-server"
             },
             "ranges": [
                 {
@@ -107,7 +107,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "9.6.1"
+                            "fixed": "11.4.11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb1011-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.11.17"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb106-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.6.26"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -117,175 +155,67 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.oracle.com/security-alerts/cpuapr2026.html"
+            "https://mariadb.com/docs/release-notes/community-server/11.8/11.8.7"
         ],
-        "discovery": "2026-04-21T00:00:00Z",
+        "discovery": "2026-05-18T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2025-15467",
-                "CVE-2026-34270",
-                "CVE-2026-34271",
-                "CVE-2026-34276",
-                "CVE-2026-34308",
-                "CVE-2026-22009",
-                "CVE-2026-22017",
-                "CVE-2026-34272",
-                "CVE-2026-34303",
-                "CVE-2025-14017",
-                "CVE-2026-34318",
-                "CVE-2026-34317",
-                "CVE-2026-34319",
-                "CVE-2026-22004",
-                "CVE-2026-34304",
-                "CVE-2026-35236",
-                "CVE-2026-35237",
-                "CVE-2026-35238",
-                "CVE-2026-34293",
-                "CVE-2026-35239",
-                "CVE-2026-35235",
-                "CVE-2026-21998",
-                "CVE-2026-22005",
-                "CVE-2026-22002",
-                "CVE-2026-34267",
-                "CVE-2026-34278",
-                "CVE-2026-35240",
-                "CVE-2026-35234",
-                "CVE-2026-22015",
-                "CVE-2026-22001"
+                "CVE-2026-44173",
+                "CVE-2026-44172",
+                "CVE-2026-44171",
+                "CVE-2026-44170",
+                "CVE-2026-44169",
+                "CVE-2026-44168"
             ]
         },
-        "vid": "f69dbfcc-535b-11f1-8b62-8447094a420f"
+        "vid": "31b7e7bc-5358-11f1-8b62-8447094a420f"
     },
-    "details": "Oracle reports:\n\n> See linked CVE\\'s for details.\n",
+    "details": "The MariaDB project reports:\n\n> See linked CVE\\'s for details.\n",
     "id": "FreeBSD-2026-0202",
     "modified": "2026-05-19T00:00:00Z",
     "published": "2026-05-19T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.oracle.com/security-alerts/cpuapr2026.html"
+            "url": "https://mariadb.com/docs/release-notes/community-server/11.8/11.8.7"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-15467"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44173"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34270"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44172"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34271"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44171"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34276"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44170"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34308"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44169"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22009"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-44168"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22017"
+            "type": "WEB",
+            "url": "https://mariadb.com/docs/release-notes/community-server/11.4/11.4.11"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34272"
+            "type": "WEB",
+            "url": "https://mariadb.com/docs/release-notes/community-server/10.11/11.11.17"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34303"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14017"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34318"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34317"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34319"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22004"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34304"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35236"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35237"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35238"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34293"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35239"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35235"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-21998"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22005"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22002"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34267"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34278"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35240"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35234"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22015"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22001"
+            "type": "WEB",
+            "url": "https://mariadb.com/docs/release-notes/community-server/10.6/10.6.26"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "MySQL -- Multiple vulnerabilities"
+    "summary": "MariaDB -- Multiple vulnerabilities"
 }

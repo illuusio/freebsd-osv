@@ -41,30 +41,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=2021768"
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=2016915"
         ],
         "discovery": "2026-04-21T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-6775"
+                "CVE-2026-6774"
             ]
         },
-        "vid": "27c3930a-4307-11f1-a627-b42e991fc52e"
+        "vid": "2510f10a-4307-11f1-a627-b42e991fc52e"
     },
-    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2021768 reports:\n\n> Incorrect boundary conditions in the WebRTC component.\n",
+    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2016915 reports:\n\n> Mitigation bypass in the DOM: Security component.\n",
     "id": "FreeBSD-2026-0154",
     "modified": "2026-04-28T00:00:00Z",
     "published": "2026-04-28T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2021768"
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2016915"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6775"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6774"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Mozilla -- Incorrect boundary conditions in the WebRTC component"
+    "summary": "Mozilla -- Mitigation bypass"
 }

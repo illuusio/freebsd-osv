@@ -2,17 +2,28 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "firefox"
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "14.3"
                         },
                         {
-                            "fixed": "147.0.2,2"
+                            "fixed": "14.3_8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "13.5"
+                        },
+                        {
+                            "fixed": "13.5_9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -21,36 +32,31 @@
         }
     ],
     "database_specific": {
-        "cite": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=2007302"
-        ],
         "discovery": "2026-01-27T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-24868",
-                "CVE-2026-24869"
+                "CVE-2025-15547"
+            ],
+            "freebsdsa": [
+                "SA-26:02.jail"
             ]
         },
-        "vid": "9dac4f05-fc65-11f0-96db-b42e991fc52e"
+        "vid": "90071333-fbe5-11f0-a13f-bc241121aa0a"
     },
-    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2007302 reports:\n\n> Mitigation bypass in the Privacy: Anti-Tracking component.\n>\n> Use-after-free in the Layout: Scrolling and Overflow component.\n",
+    "details": "# Problem Description:\n\nBy default, jailed processes cannot mount filesystems, including\nnullfs(4). However, the allow.mount.nullfs option enables mounting\nnullfs filesystems, subject to privilege checks.\n\nIf a privileged user within a jail is able to nullfs-mount directories,\na limitation of the kernel\\'s path lookup logic allows that user to\nescape the jail\\'s chroot, yielding access to the full filesystem of the\nhost or parent jail.\n\n# Impact:\n\nIn a jail configured to allow nullfs(4) mounts from within the jail, the\njailed root user can escape the jail\\'s filesystem root.\n",
     "id": "FreeBSD-2026-0023",
     "modified": "2026-01-28T00:00:00Z",
     "published": "2026-01-28T00:00:00Z",
     "references": [
         {
-            "type": "REPORT",
-            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2007302"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-15547"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-24868"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-24869"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:02.jail.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Firefox -- Multiple vulnerabilities"
+    "summary": "FreeBSD -- Jail escape by a privileged user via nullfs"
 }

@@ -22,25 +22,6 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "firefox-esr"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "140.9.0,2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
                 "name": "thunderbird"
             },
             "ranges": [
@@ -62,99 +43,114 @@
         "discovery": "2026-03-24T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-4721",
-                "CVE-2026-4709",
-                "CVE-2026-4707",
-                "CVE-2026-4706",
-                "CVE-2026-4699",
-                "CVE-2026-4698",
-                "CVE-2026-4696",
-                "CVE-2026-4694",
-                "CVE-2026-4693",
-                "CVE-2026-4692",
-                "CVE-2026-4691",
-                "CVE-2026-4690",
-                "CVE-2026-4689",
-                "CVE-2026-4687",
-                "CVE-2026-4686",
-                "CVE-2026-4685",
-                "CVE-2026-4684"
+                "CVE-2026-4688",
+                "CVE-2026-4695",
+                "CVE-2026-4697",
+                "CVE-2026-4700",
+                "CVE-2026-4701",
+                "CVE-2026-4702",
+                "CVE-2026-4704",
+                "CVE-2026-4705",
+                "CVE-2026-4708",
+                "CVE-2026-4710",
+                "CVE-2026-4711",
+                "CVE-2026-4712",
+                "CVE-2026-4713",
+                "CVE-2026-4714",
+                "CVE-2026-4715",
+                "CVE-2026-4716",
+                "CVE-2026-4717",
+                "CVE-2026-4718",
+                "CVE-2026-4719",
+                "CVE-2026-4720"
             ]
         },
-        "vid": "32819a60-2943-11f1-8461-b42e991fc52e"
+        "vid": "6d445322-2945-11f1-8461-b42e991fc52e"
     },
-    "details": "CVE-2026-4721: Memory safety bugs. Potential arbitrary code execution.\n\nCVE-2026-4709: Incorrect boundary conditions in the Audio/Video: GMP\ncomponent.\n\nCVE-2026-4707: Incorrect boundary conditions in the Graphics: Canvas2D\ncomponent.\n\nCVE-2026-4706: Incorrect boundary conditions in the Graphics: Canvas2D\ncomponent.\n\nCVE-2026-4699: Incorrect boundary conditions in the Layout: Text and\nFonts component.\n\nCVE-2026-4698: JIT miscompilation in the JavaScript Engine: JIT\ncomponent.\n\nCVE-2026-4696: Use-after-free in the Layout: Text and Fonts component.\n\nCVE-2026-4694: Incorrect boundary conditions, integer overflow in the\nGraphics component.\n\nCVE-2026-4693: Incorrect boundary conditions in the Audio/Video:\nPlayback component.\n\nCVE-2026-4692: Sandbox escape in the Responsive Design Mode component.\n\nCVE-2026-4691: Use-after-free in the CSS Parsing and Computation\ncomponent.\n\nCVE-2026-4690: Sandbox escape due to integer overflow in the XPCOM\ncomponent.\n\nCVE-2026-4689: Sandbox escape due to integer overflow in the XPCOM\ncomponent.\n\nCVE-2026-4687: Sandbox escape in the Telemetry component.\n\nCVE-2026-4686: Incorrect boundary conditions in the Graphics: Canvas2D\ncomponent.\n\nCVE-2026-4685: Incorrect boundary conditions in the Graphics: Canvas2D\ncomponent.\n\nCVE-2026-4684: Race condition, use-after-free in the Graphics: WebRender\ncomponent.\n",
+    "details": "CVE-2026-4688: Sandbox escape due to use-after-free in Disability Access\nAPIs.\n\nCVE-2026-4695: Incorrect boundary conditions in the Audio/Video: Web\nCodecs component.\n\nCVE-2026-4697: Incorrect boundary conditions in the Audio/Video: Web\nCodecs component.\n\nCVE-2026-4700: Mitigation bypass in the Networking: HTTP component.\n\nCVE-2026-4701: Use-after-free in the JavaScript Engine component.\n\nCVE-2026-4702: JIT miscompilation in the JavaScript Engine component.\n\nCVE-2026-4704: Denial-of-service in the WebRTC: Signaling component.\n\nCVE-2026-4705: Undefined behavior in the WebRTC: Signaling component.\n\nCVE-2026-4708: Incorrect boundary conditions in the Graphics component.\n\nCVE-2026-4710: Incorrect boundary conditions in the Audio/Video\ncomponent.\n\nCVE-2026-4711: Use-after-free in the Widget: Cocoa component.\n\nCVE-2026-4712: Information disclosure in the Widget: Cocoa component.\n\nCVE-2026-4713: Incorrect boundary conditions in the Graphics component.\n\nCVE-2026-4714: Incorrect boundary conditions in the Audio/Video\ncomponent.\n\nCVE-2026-4715: Uninitialized memory in the Graphics: Canvas2D component.\n\nCVE-2026-4716: Incorrect boundary conditions and uninitialized memory in\nthe JavaScript Engine.\n\nCVE-2026-4717: Privilege escalation in the Netmonitor component.\n\nCVE-2026-4718: Undefined behavior in the WebRTC: Signaling component.\n\nCVE-2026-4719: Incorrect boundary conditions in the Graphics: Text\ncomponent.\n\nCVE-2026-4720: Memory safety bugs\n",
     "id": "FreeBSD-2026-0078",
     "modified": "2026-03-26T00:00:00Z",
     "published": "2026-03-26T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4721"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4688"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4709"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4695"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4707"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4697"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4706"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4700"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4699"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4701"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4698"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4702"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4696"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4704"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4694"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4705"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4693"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4708"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4692"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4710"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4691"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4711"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4690"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4712"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4689"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4713"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4687"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4714"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4686"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4715"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4685"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4716"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4684"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4717"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4718"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4719"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4720"
         }
     ],
     "schema_version": "1.7.0",

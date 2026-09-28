@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "popt"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.19_2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://access.redhat.com/errata/RHSA-2026:56984"
+        ],
+        "discovery": "2026-08-04T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-18739"
+            ]
+        },
+        "vid": "0142953c-b716-11f1-a70f-00a0980083d7"
+    },
+    "details": "https://access.redhat.com/errata/RHSA-2026:56984 reports:\n\n> A flaw was found in popt, a command-line option parsing library. An\n> off-by-one error in the poptStuffArgs function, when repeatedly called\n> by a host application or through deep alias nesting, can lead to\n> corruption of internal program data. This corruption could potentially\n> enable a local attacker to execute arbitrary code if the host\n> application then unsafely processes the altered data.\n",
+    "id": "FreeBSD-2026-0469",
+    "modified": "2026-09-23T00:00:00Z",
+    "published": "2026-09-23T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://access.redhat.com/errata/RHSA-2026:56984"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18739"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "popt -- Out-of-bounds Write"
+}

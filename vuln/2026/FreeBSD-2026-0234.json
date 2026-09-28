@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gohugo"
+                "name": "mariadb118-server"
             },
             "ranges": [
                 {
@@ -12,7 +12,64 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.162.0,1"
+                            "fixed": "11.8.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb114-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "11.4.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb1011-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.11.18"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mariadb106-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.6.27"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,35 +79,52 @@
     ],
     "database_specific": {
         "cite": [
-            "https://go.dev/issue/78913"
+            "https://mariadb.com/docs/release-notes/community-server/11.8/11.8.8"
         ],
-        "discovery": "2026-05-07T00:00:00Z",
+        "discovery": "2026-05-28T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-39823",
-                "CVE-2026-39826"
+                "CVE-2026-48165",
+                "CVE-2026-48163",
+                "CVE-2026-49261"
             ]
         },
-        "vid": "20d59b47-5ba3-11f1-bf1b-b42e991fc52e"
+        "vid": "2eb8a9ab-5b5d-11f1-8607-8447094a420f"
     },
-    "details": "https://go.dev/issue/78913 reports:\n\n> CVE-2026-27142 fixed a vulnerability in which URLs were not correctly\n> escaped inside of a \\<meta\\> tag\\'s \\<content\\> attribute. If the URL\n> content were to insert ASCII whitespaces around the \\'=\\' rune inside\n> of the \\<content\\> attribute, the escaper would fail to similarly\n> escape it, leading to XSS.\n>\n> If a trusted template author were to write a \\<script\\> tag containing\n> an empty \\'type\\' attribute or a \\'type\\' attribute with an ASCII\n> whitespace, the execution of the template would incorrectly escape any\n> data passed into the \\<script\\> block.\n",
+    "details": "The MariaDB project reports:\n\n> Multiple vulnerabilities in MariaDB Cluster (Galera)\n",
     "id": "FreeBSD-2026-0234",
-    "modified": "2026-05-29T00:00:00Z",
+    "modified": "2026-05-30T00:00:00Z",
     "published": "2026-05-29T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://go.dev/issue/78913"
+            "url": "https://mariadb.com/docs/release-notes/community-server/11.8/11.8.8"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39823"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-48165"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39826"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-48163"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49261"
+        },
+        {
+            "type": "WEB",
+            "url": "https://mariadb.com/docs/release-notes/community-server/11.4/11.4.12"
+        },
+        {
+            "type": "WEB",
+            "url": "https://mariadb.com/docs/release-notes/community-server/10.11/10.11.8"
+        },
+        {
+            "type": "WEB",
+            "url": "https://mariadb.com/docs/release-notes/community-server/10.6/10.6.27"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "www/gohugo -- CWE-79: XSS vulnerabilities"
+    "summary": "MariaDB -- Multiple vulnerabilities"
 }

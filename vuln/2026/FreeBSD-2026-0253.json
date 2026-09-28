@@ -46,28 +46,28 @@
         "discovery": "2026-06-09T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-49413"
+                "CVE-2026-49412"
             ],
             "freebsdsa": [
-                "SA-26:30.linux"
+                "SA-26:28.ip6_multicast"
             ]
         },
-        "vid": "fa5289e4-6473-11f1-958d-bc241121aa0a"
+        "vid": "c5b7ac13-6473-11f1-958d-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nThe Linuxulator determined whether a binary was set-user-ID or\nset-group-ID by checking the P_SUGID process flag. During execve(2),\nthis flag is not yet set at the point where the auxiliary vector is\nconstructed, so AT_SECURE was incorrectly set to zero for set-user-ID\nand set-group-ID executables.\n\n# Impact:\n\nAn unprivileged local user can inject a shared library via LD_PRELOAD\ninto a set-user-ID or set-group-ID Linux binary, gaining the privileges\nof that binary.\n",
+    "details": "# Problem Description:\n\nThe kernel handler for IPV6_MSFILTER dropped a serializing lock in order\nto copy the source-filter list from userspace, then reacquired the lock.\nDuring this window another thread could free the multicast filter\nstructure, leaving the handler with a stale pointer to freed memory.\n\n# Impact:\n\nAn unprivileged local user can exploit this use-after-free to escalate\nprivileges.\n",
     "id": "FreeBSD-2026-0253",
     "modified": "2026-06-10T00:00:00Z",
     "published": "2026-06-10T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49413"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49412"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:30.linux.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:28.ip6_multicast.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Flaw in Linuxulator execution of setugid binaries"
+    "summary": "FreeBSD -- Use-after-free bug in the IPV6_MSFILTER socket option handler"
 }

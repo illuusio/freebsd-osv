@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "traefik"
+                "name": "munge"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.6.8"
+                            "fixed": "0.5.18"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +22,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/traefik/traefik/security/advisories/GHSA-89p3-4642-cr2w"
+            "https://github.com/dun/munge/security/advisories/GHSA-r9cr-jf4v-75gh"
         ],
-        "discovery": "2026-02-11T00:00:00Z",
+        "discovery": "2026-02-10T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-25949"
+                "CVE-2026-25506"
             ]
         },
-        "vid": "590979aa-09f7-11f1-a730-5404a68ad561"
+        "vid": "17186409-09d2-11f1-a39c-b42e991fc52e"
     },
-    "details": "The traefik project reports:\n\n> There is a potential vulnerability in Traefik managing STARTTLS\n> requests. An unauthenticated client can bypass Traefik entrypoint\n> respondingTimeouts.readTimeout by sending the 8-byte Postgres\n> SSLRequest (STARTTLS) prelude and then stalling, causing connections\n> to remain open indefinitely, leading to a denial of service\n",
+    "details": "https://github.com/dun/munge/security/advisories/GHSA-r9cr-jf4v-75gh\nreports:\n\n> MUNGE is an authentication service for creating and validating user\n> credentials. From 0.5 to 0.5.17, local attacker can exploit a buffer\n> overflow vulnerability in munged (the MUNGE authentication daemon) to\n> leak cryptographic key material from process memory. With the leaked\n> key material, the attacker could forge arbitrary MUNGE credentials to\n> impersonate any user (including root) to services that rely on MUNGE\n> for authentication. The vulnerability allows a buffer overflow by\n> sending a crafted message with an oversized address length field,\n> corrupting munged\\'s internal state and enabling extraction of the MAC\n> subkey used for credential verification. This vulnerability is fixed\n> in 0.5.18.\n",
     "id": "FreeBSD-2026-0042",
     "modified": "2026-02-14T00:00:00Z",
     "published": "2026-02-14T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/traefik/traefik/security/advisories/GHSA-89p3-4642-cr2w"
+            "url": "https://github.com/dun/munge/security/advisories/GHSA-r9cr-jf4v-75gh"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-25949"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-25949"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-25506"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "traefik -- TCP readTimeout bypass via STARTTLS on Postgres"
+    "summary": "munge -- CWE-787: Out-of-bounds Write"
 }

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "putty"
+                "name": "gstreamer1"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.84"
+                            "fixed": "1.28.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "putty-nogtk"
+                "name": "gstreamer1-plugins"
             },
             "ranges": [
                 {
@@ -31,7 +31,83 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.84"
+                            "fixed": "1.28.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-base"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-good"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-bad"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-ugly"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,25 +117,45 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html"
+            "https://gstreamer.freedesktop.org/security/"
         ],
-        "discovery": "2026-05-22T00:00:00Z",
-        "vid": "5f7c686c-558e-11f1-b38d-9be2e6022e28"
+        "discovery": "2026-05-11T00:00:00Z",
+        "vid": "ea4c5b9d-55f7-11f1-915c-8974b59277b5"
     },
-    "details": "Simon Tatham reports:\n\n> These features are new in PuTTY 0.84:\n>\n> - Security issue: fixed a remotely triggerable double-free in RSA key\n>   exchange. (We don\\'t know of any way it is exploitable to execute\n>   code.)\n> - Minor security issue: fixed a remotely triggerable crash in NIST\n>   ECDSA signature verification. (An assertion failure -- definitely\n>   not exploitable to execute code.)\n> - Minor security issue: fixed marking of Telnet and Rlogin session\n>   data with a trust sigil after you authenticated to a proxy (possibly\n>   allowing a server to spoof a repeat proxy password prompt).\n",
+    "details": "The GStreamer project reports multiple security vulnerabilities fixed in\nthe 1.28.3 release:\n\n> Six security vulnerabilities were addressed, including:\n>\n> - Bounds check errors in MXF VANC packet handling.\n> - Use-after-free in GStreamer core buffer value deserialization.\n> - Out-of-bounds read in MXF demuxer temporal offset check.\n> - Out-of-bounds write in H.266/VVC parser when parsing PPS tile\n>   slices.\n> - Insufficient validation in MOV/MP4 demuxer uncompressed video\n>   handling.\n> - Out-of-bounds reads in MPEG PS PES header parsing.\n>\n> These could lead to application crashes, memory corruption, or\n> potentially arbitrary code execution.\n",
     "id": "FreeBSD-2026-0215",
     "modified": "2026-05-22T00:00:00Z",
     "published": "2026-05-22T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html"
+            "url": "https://gstreamer.freedesktop.org/security/"
         },
         {
             "type": "WEB",
-            "url": "https://lists.tartarus.org/pipermail/putty-announce/2026/000042.html"
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0024.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0025.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0026.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0027.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0028.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0029.html"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "putty -- multiple security vulnerabilities"
+    "summary": "gstreamer1 -- multiple vulnerabilities"
 }

@@ -1,0 +1,112 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "njs"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.0.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libnjs"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.0.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx-module-njs"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.0.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx-full"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.30.4_7,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://my.f5.com/manage/s/article/K000162602"
+        ],
+        "discovery": "2026-09-02T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-78689"
+            ]
+        },
+        "vid": "0bfb082c-a7b6-11f1-a655-3497f65b111b"
+    },
+    "details": "F5 reports:\n\n> A flaw in the NGINX JavaScript XML module allows an out-of-bounds\n> write when xml.exclusiveC14n() processes a crafted XML namespace\n> prefix list. This may lead to worker process crashes, heap corruption\n> or memory disclosure. The NGINX SAML reference implementation is\n> affected because it processes SAML data before signature verification.\n",
+    "id": "FreeBSD-2026-0441",
+    "modified": "2026-09-03T00:00:00Z",
+    "published": "2026-09-03T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://my.f5.com/manage/s/article/K000162602"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78689"
+        },
+        {
+            "type": "WEB",
+            "url": "https://nginx.org/en/docs/njs/changes.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "njs -- heap buffer overflow in XML exclusive canonicalization"
+}

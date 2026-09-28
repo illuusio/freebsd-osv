@@ -3,16 +3,79 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "mongodb80"
+                "name": "gitlab-ce"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "18.8.0"
                         },
                         {
-                            "fixed": "8.0.18"
+                            "fixed": "18.8.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.7.0"
+                        },
+                        {
+                            "fixed": "18.7.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "8.0.0"
+                        },
+                        {
+                            "fixed": "18.6.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "18.8.0"
+                        },
+                        {
+                            "fixed": "18.8.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.7.0"
+                        },
+                        {
+                            "fixed": "18.7.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "8.0.0"
+                        },
+                        {
+                            "fixed": "18.6.6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,50 +85,100 @@
     ],
     "database_specific": {
         "cite": [
-            "https://jira.mongodb.org/browse/SERVER-114126",
-            "https://jira.mongodb.org/browse/SERVER-102364",
-            "https://jira.mongodb.org/browse/SERVER-113532"
+            "https://about.gitlab.com/releases/2026/02/10/patch-release-gitlab-18-8-4-released/"
         ],
         "discovery": "2026-02-10T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-1850",
-                "CVE-2026-1849",
-                "CVE-2026-1847"
+                "CVE-2025-7659",
+                "CVE-2025-8099",
+                "CVE-2026-0958",
+                "CVE-2025-14560",
+                "CVE-2026-0595",
+                "CVE-2026-1458",
+                "CVE-2026-1456",
+                "CVE-2026-1387",
+                "CVE-2025-12575",
+                "CVE-2026-1094",
+                "CVE-2025-12073",
+                "CVE-2026-1080",
+                "CVE-2025-14592",
+                "CVE-2026-1282",
+                "CVE-2025-14594"
             ]
         },
-        "vid": "77e32b14-0800-11f1-8a6f-b42e991fc52e"
+        "vid": "9d9940e7-071c-11f1-93ca-2cf05da270f3"
     },
-    "details": "https://jira.mongodb.org/browse/SERVER-114126 reports:\n\n> Complex queries can cause excessive memory usage in MongoDB Query\n> Planner resulting in an Out-Of-Memory Crash.\n\nhttps://jira.mongodb.org/browse/SERVER-102364 reports:\n\n> MongoDB Server may experience an out-of-memory failure while\n> evaluating expressions that produce deeply nested documents. The issue\n> arises in recursive functions because the server does not periodically\n> check the depth of the expression.\n\nhttps://jira.mongodb.org/browse/SERVER-113532 reports:\n\n> Inserting certain large documents into a replica set could lead to\n> replica set secondaries not being able to fetch the oplog from the\n> primary. This could stall replication inside the replica set leading\n> to server crash.\n",
+    "details": "Gitlab reports:\n\n> Incomplete Validation issue in Web IDE impacts GitLab CE/EE\n>\n> Denial of Service issue in GraphQL introspection impacts GitLab CE/EE\n>\n> Denial of Service issue in JSON validation middleware impacts GitLab\n> CE/EE\n>\n> Cross-site Scripting issue in Code Flow impacts GitLab CE/EE\n>\n> HTML Injection issue in test case titles impacts GitLab CE/EE\n>\n> Denial of Service issue in Markdown processor impacts GitLab CE/EE\n>\n> Denial of Service issue in Markdown Preview impacts GitLab CE/EE\n>\n> Denial of Service issue in dashboard impacts GitLab EE\n>\n> Server-Side Request Forgery issue in Virtual Registry impacts GitLab\n> EE\n>\n> Improper Validation issue in diff parser impacts GitLab CE/EE\n>\n> Server-Side Request Forgery issue in Git repository import impacts\n> GitLab CE/EE\n>\n> Authorization Bypass issue in iterations API impacts GitLab EE\n>\n> Missing Authorization issue in GLQL API impacts GitLab CE/EE\n>\n> Stored HTML Injection issue in project label impacts GitLab CE/EE\n>\n> Authorization Bypass issue in Pipeline Schedules API impacts GitLab\n> CE/EE\n",
     "id": "FreeBSD-2026-0035",
-    "modified": "2026-02-12T00:00:00Z",
-    "published": "2026-02-12T00:00:00Z",
+    "modified": "2026-02-11T00:00:00Z",
+    "published": "2026-02-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://jira.mongodb.org/browse/SERVER-114126"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://jira.mongodb.org/browse/SERVER-102364"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://jira.mongodb.org/browse/SERVER-113532"
+            "url": "https://about.gitlab.com/releases/2026/02/10/patch-release-gitlab-18-8-4-released/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1850"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-7659"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1849"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-8099"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1847"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0958"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14560"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0595"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1458"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1456"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1387"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-12575"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1094"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-12073"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1080"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14592"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1282"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14594"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "MongoDB Server -- Multiple vulnerabilities"
+    "summary": "Gitlab -- vulnerabilities"
 }

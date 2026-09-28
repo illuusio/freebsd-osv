@@ -1,0 +1,164 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ce"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.4.0"
+                        },
+                        {
+                            "fixed": "19.4.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.3.0"
+                        },
+                        {
+                            "fixed": "19.3.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "13.11.0"
+                        },
+                        {
+                            "fixed": "19.2.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.4.0"
+                        },
+                        {
+                            "fixed": "19.4.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.3.0"
+                        },
+                        {
+                            "fixed": "19.3.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "13.11.0"
+                        },
+                        {
+                            "fixed": "19.2.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-1-released/?nav=19.4.1"
+        ],
+        "discovery": "2026-09-23T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-89078",
+                "CVE-2026-93577",
+                "CVE-2026-84739",
+                "CVE-2026-92470",
+                "CVE-2026-92874",
+                "CVE-2026-92530",
+                "CVE-2026-8937",
+                "CVE-2026-92529",
+                "CVE-2026-10518",
+                "CVE-2026-4523",
+                "CVE-2026-92628"
+            ]
+        },
+        "vid": "3f11e437-b7cd-11f1-a883-2cf05da270f3"
+    },
+    "details": "Gitlab reports:\n\n> Double Free issue in Regular Expression Parser impacts GitLab CE/EE\n>\n> Integer Overflow issue in Regular Expression Compiler impacts GitLab\n> CE/EE\n>\n> Cross-site Scripting issue in merge request diff viewer impacts GitLab\n> CE/EE\n>\n> Missing Authorization issue in Duo AI job troubleshooting feature\n> impacts GitLab EE\n>\n> Incorrect Authorization issue in MCP API scope enforcement impacts\n> GitLab CE/EE\n>\n> Use of Less Trusted Source issue in Direct Transfer import user\n> mapping impacts GitLab CE/EE\n>\n> Missing Authorization issue in Epic Issues REST API impacts GitLab\n> CE/EE\n>\n> Incorrect Authorization issue in Duo Workflow Service token governance\n> enforcement impacts GitLab EE\n>\n> Improper Access Control issue in GraphQL memberRoles\n> dependentSecurityPolicies resolver impacts GitLab EE\n>\n> Missing Authorization issue in GraphQL CI job trace API impacts GitLab\n> CE/EE\n>\n> Race Condition issue in MCP gitlab_search tool impacts GitLab CE/EE\n",
+    "id": "FreeBSD-2026-0470",
+    "modified": "2026-09-24T00:00:00Z",
+    "published": "2026-09-24T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-1-released/?nav=19.4.1"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-89078"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-93577"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84739"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92470"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92874"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92530"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-8937"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92529"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-10518"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4523"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92628"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Gitlab -- vulnerabilities"
+}

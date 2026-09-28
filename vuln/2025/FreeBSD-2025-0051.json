@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "30.1,3"
+                            "fixed": "31.1_2,3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "30.1,3"
+                            "fixed": "31.1_2,3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "30.1,3"
+                            "fixed": "31.1_2,3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "30.1,3"
+                            "fixed": "31.1_2,3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "31.0.50.20250101,3"
+                            "fixed": "32.0.50.20260915,3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -107,7 +107,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "31.0.50.20250101,3"
+                            "fixed": "32.0.50.20260915,3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -126,7 +126,7 @@
     },
     "details": "# Problem Description:\n\nAn Emacs user who chooses to invoke elisp-completion-at-point (for code\ncompletion) on untrusted Emacs Lisp source code can trigger unsafe Lisp\nmacro expansion that allows attackers to execute arbitrary code. This\nunsafe expansion also occurs if a user chooses to enable on-the-fly\ndiagnosis that byte compiles untrusted Emacs Lisp source code.\n",
     "id": "FreeBSD-2025-0051",
-    "modified": "2025-02-24T00:00:00Z",
+    "modified": "2026-09-16T00:00:00Z",
     "published": "2025-02-24T00:00:00Z",
     "references": [
         {

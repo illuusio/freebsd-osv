@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "traefik"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.7.13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/traefik/traefik/releases/tag/v3.7.13"
+        ],
+        "discovery": "2026-09-04T00:00:00Z",
+        "vid": "0627020f-b21c-11f1-bc39-5404a68ad561"
+    },
+    "details": "The traefik project releases a new version addressing multiple\nvulnerabilities:\n\n> - GHSA-qqjf-53cj-pwvv (HTTP/3 Backend NTLM Connection Reuse)\n> - GHSA-f52w-8j3h-j724 (bypassing path-scoped routing)\n> - GHSA-v67p-phpq-fc8x (entrypoint header-name sanitization bypass)\n> - GHSA-w4v4-9rw7-5326 (HTTP Request/Response Smuggling)\n> - GHSA-8fcf-v89g-xpg6 (unauthenticated username-enumeration timing\n>   oracle)\n",
+    "id": "FreeBSD-2026-0460",
+    "modified": "2026-09-16T00:00:00Z",
+    "published": "2026-09-16T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/traefik/traefik/releases/tag/v3.7.13"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "traefik -- Multiple vulnerabilities"
+}

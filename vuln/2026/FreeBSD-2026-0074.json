@@ -2,39 +2,36 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:kernel",
-                "name": "FreeBSD-kernel"
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "15.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "15.0_5"
+                            "fixed": "146.0.7680.164"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "14.4"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "14.4_1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.3"
-                        },
-                        {
-                            "fixed": "14.3_10"
+                            "fixed": "146.0.7680.164"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -43,31 +40,66 @@
         }
     ],
     "database_specific": {
-        "discovery": "2026-03-25T00:00:00Z",
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_23.html"
+        ],
+        "discovery": "2026-03-23T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-4247"
-            ],
-            "freebsdsa": [
-                "SA-26:06.tcp"
+                "CVE-2026-4673",
+                "CVE-2026-4674",
+                "CVE-2026-4675",
+                "CVE-2026-4676",
+                "CVE-2026-4677",
+                "CVE-2026-4678",
+                "CVE-2026-4679",
+                "CVE-2026-4680"
             ]
         },
-        "vid": "7aa913e9-28d1-11f1-b35e-bc241121aa0a"
+        "vid": "07d6b170-fed8-4ee2-ba96-b6d61b6d6a26"
     },
-    "details": "# Problem Description:\n\nWhen a challenge ACK is to be sent tcp_respond() constructs and sends\nthe challenge ACK and consumes the mbuf that is passed in. When no\nchallenge ACK should be sent the function returns and leaks the mbuf.\n\n# Impact:\n\nIf an attacker is either on path with an established TCP connection, or\ncan themselves establish a TCP connection, to an affected FreeBSD\nmachine, they can easily craft and send packets which meet the challenge\nACK criteria and cause the FreeBSD host to leak an mbuf for each crafted\npacket in excess of the configured rate limit settings i.e. with default\nsettings, crafted packets in excess of the first 5 sent within a 1s\nperiod will leak an mbuf.\n\nTechnically, off-path attackers can also exploit this problem by\nguessing the IP addresses, TCP port numbers and in some cases the\nsequence numbers of established connections and spoofing packets towards\na FreeBSD machine, but this is harder to do effectively.\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 8 security fixes:\n>\n> - \\[485397284\\] High CVE-2026-4673: Heap buffer overflow in WebAudio.\n>   Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-02-18\n> - \\[488188166\\] High CVE-2026-4674: Out of bounds read in CSS.\n>   Reported by Syn4pse on 2026-02-27\n> - \\[488270257\\] High CVE-2026-4675: Heap buffer overflow in WebGL.\n>   Reported by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-02-27\n> - \\[488613135\\] High CVE-2026-4676: Use after free in Dawn. Reported\n>   by 86ac1f1587b71893ed2ad792cd7dde32 on 2026-03-01\n> - \\[490533968\\] High CVE-2026-4677: Out of bounds read in WebAudio.\n>   Reported by c6eed09fc8b174b0f3eebedcceb1e792 on 2026-03-07\n> - \\[491164019\\] High CVE-2026-4678: Use after free in WebGPU. Reported\n>   by Google on 2026-03-10\n> - \\[491516670\\] High CVE-2026-4679: Integer overflow in Fonts.\n>   Reported by GF, Un3xploitable Of DeadSec on 2026-03-11\n> - \\[491869946\\] High CVE-2026-4680: Use after free in FedCM. Reported\n>   by Shaheen Fazim on 2026-03-12\n",
     "id": "FreeBSD-2026-0074",
-    "modified": "2026-03-26T00:00:00Z",
-    "published": "2026-03-26T00:00:00Z",
+    "modified": "2026-03-24T00:00:00Z",
+    "published": "2026-03-24T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4247"
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/03/stable-channel-update-for-desktop_23.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:06.tcp.asc"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4673"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4674"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4675"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4676"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4677"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4678"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4679"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4680"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- TCP: remotely exploitable DoS vector (mbuf leak)"
+    "summary": "chromium -- security fixes"
 }

@@ -60,30 +60,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=2024220"
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=2023753"
         ],
         "discovery": "2026-04-21T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-6770"
+                "CVE-2026-6769"
             ]
         },
-        "vid": "1a442c0b-4307-11f1-a627-b42e991fc52e"
+        "vid": "177a7146-4307-11f1-a627-b42e991fc52e"
     },
-    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2024220 reports:\n\n> Other issue in the Storage: IndexedDB component.\n",
+    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2023753 reports:\n\n> Privilege escalation in the Debugger component.\n",
     "id": "FreeBSD-2026-0149",
     "modified": "2026-04-28T00:00:00Z",
     "published": "2026-04-28T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2024220"
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2023753"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6770"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6769"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Mozilla -- Other issue in the Storage: IndexedDB component"
+    "summary": "Mozilla -- Privilege escalation in the Debugger component"
 }

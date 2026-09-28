@@ -27,6 +27,17 @@
                         }
                     ],
                     "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
                 }
             ]
         }
@@ -35,28 +46,28 @@
         "discovery": "2026-08-25T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-58090"
+                "CVE-2026-58089"
             ],
             "freebsdsa": [
-                "SA-26:57.unix"
+                "SA-26:56.hwpmc"
             ]
         },
-        "vid": "e99e4b19-a0fd-11f1-ae1f-bc241121aa0a"
+        "vid": "9c2801aa-a0fd-11f1-ae1f-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nThe SOCK_STREAM receive path in the unix socket implementation failed to\nfully detach control messages from the socket buffer before processing\nthem. Some error paths would free those messages, leaving freed data\nmbufs in the receive socket buffer.\n\n# Impact:\n\nAn unprivileged local user can exploit this use-after-free to escalate\nprivileges.\n",
+    "details": "# Problem Description:\n\nWhen a process calls execve(2) to execute a setuid or setgid image,\nhwpmc(4) is supposed to detach PMCs owned by unprivileged processes. An\ninverted check meant that this scenario was not handled properly.\n\n# Impact:\n\nAn unprivileged local user who has attached PMCs to a process can\ncontinue monitoring it after the process executes a setuid or setgid\nbinary, contrary to the intended policy.\n",
     "id": "FreeBSD-2026-0414",
     "modified": "2026-08-26T00:00:00Z",
     "published": "2026-08-26T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58090"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58089"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:57.unix.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:56.hwpmc.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Use-after-free in unix SOCK_STREAM message handling"
+    "summary": "FreeBSD -- hwpmc fails to detach PMCs during exec credential transitions"
 }

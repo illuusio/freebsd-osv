@@ -46,28 +46,28 @@
         "discovery": "2026-05-20T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-45255"
+                "CVE-2026-39461"
             ],
             "freebsdsa": [
-                "SA-26:23.bsdinstall"
+                "SA-26:22.libcasper"
             ]
         },
-        "vid": "039c0ab0-54b7-11f1-8d7a-bc241121aa0a"
+        "vid": "90fe1784-54b6-11f1-8d7a-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nWhen bsdinstall or bsdconfig are prompted to scan for nearby Wi-Fi\nnetworks, they build up a list of network names and use bsddialog(1) to\nprompt the user to select a network. This is implemented using a shell\nscript, and the code which handled network names was not careful to\nprevent expansion by the shell. As a result, a suitably crafted network\nname can be used to execute commands via a subshell.\n\n# Impact:\n\nThe problem can be exploited to execute code as root on the system\nrunning bsdinstall or bsdconfig. The attacker would need to create an\naccess point with a specially crafted name and be within range of a\nWi-Fi scan. Note that bsdinstall and bsdconfig are vulnerable as soon as\nthe user prompts them to scan for nearby networks; they do not need to\nactually select the malicious network.\n",
+    "details": "# Problem Description:\n\nlibcasper(3) communicates with helper processes via UNIX domain sockets,\nand uses the select(2) system call to wait for data to become available.\nHowever, it does not verify that its socket descriptor fits within\nselect(2)\\'s descriptor set size limit of FD_SETSIZE (1024).\n\n# Impact:\n\nAn attacker able to cause an application using libcasper(3) to allocate\nlarge file descriptors, e.g., by opening many descriptors and executing\na program which is not careful to close them upon startup, may trigger\nstack corruption. If the target application runs with setuid root\nprivileges, this could be used to escalate local privileges.\n",
     "id": "FreeBSD-2026-0209",
     "modified": "2026-05-21T00:00:00Z",
     "published": "2026-05-21T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45255"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39461"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:23.bsdinstall.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:22.libcasper.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Remote code execution via installer Wi-Fi access point scans"
+    "summary": "FreeBSD -- select(2) file descriptor set overflow causes stack overflow"
 }

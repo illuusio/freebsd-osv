@@ -57,28 +57,28 @@
         "discovery": "2026-04-29T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-39457"
+                "CVE-2026-42512"
             ],
             "freebsdsa": [
-                "SA-26:16.libnv"
+                "SA-26:15.dhclient"
             ]
         },
-        "vid": "892fabf5-4435-11f1-bb07-bc241121aa0a"
+        "vid": "58acf4c5-4435-11f1-bb07-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nWhen exchanging data over a socket, libnv uses select(2) to wait for\ndata to arrive. However, it does not verify whether the provided socket\ndescriptor fits in select(2)\\'s file descriptor set size limit of\nFD_SETSIZE (1024).\n\n# Impact:\n\nAn attacker who is able to force a libnv application to allocate large\nfile descriptors, e.g., by opening many descriptors and executing a\nprogram which is not careful to close them upon startup, can trigger\nstack corruption. If the target application is setuid-root, then this\ncould be used to elevate local privileges.\n",
+    "details": "# Problem Description:\n\nAs dhclient is building an environment to pass to dhclient-script, it\nmay need to resize the array of string pointers. The code which expands\nthe array incorrectly calculates its new size when requesting memory,\nresulting in a heap buffer overrun.\n\n# Impact:\n\nA specially crafted packet can cause dhclient to overrun its buffer of\nenvironment entries. This can result in a crash, but it may be possible\nto leverage this bug to achieve remote code execution.\n",
     "id": "FreeBSD-2026-0175",
     "modified": "2026-04-30T00:00:00Z",
     "published": "2026-04-30T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39457"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42512"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:16.libnv.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:15.dhclient.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Stack overflow via select() file descriptor set overflow"
+    "summary": "FreeBSD -- Remotely triggerable out-of-bounds heap write in dhclient"
 }

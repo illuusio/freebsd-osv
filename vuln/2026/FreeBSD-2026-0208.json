@@ -2,8 +2,8 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "FreeBSD"
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
             },
             "ranges": [
                 {
@@ -46,28 +46,28 @@
         "discovery": "2026-05-20T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-39461"
+                "CVE-2026-45253"
             ],
             "freebsdsa": [
-                "SA-26:22.libcasper"
+                "SA-26:21.ptrace"
             ]
         },
-        "vid": "90fe1784-54b6-11f1-8d7a-bc241121aa0a"
+        "vid": "6c96da5e-54b6-11f1-8d7a-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nlibcasper(3) communicates with helper processes via UNIX domain sockets,\nand uses the select(2) system call to wait for data to become available.\nHowever, it does not verify that its socket descriptor fits within\nselect(2)\\'s descriptor set size limit of FD_SETSIZE (1024).\n\n# Impact:\n\nAn attacker able to cause an application using libcasper(3) to allocate\nlarge file descriptors, e.g., by opening many descriptors and executing\na program which is not careful to close them upon startup, may trigger\nstack corruption. If the target application runs with setuid root\nprivileges, this could be used to escalate local privileges.\n",
+    "details": "# Problem Description:\n\nptrace(PT_SC_REMOTE) failed to properly validate parameters for the\nsyscall(2) and \\_\\_syscall(2) meta-system calls. As a result, a user\nwith the ability to debug a process may trigger arbitrary code execution\nin the kernel, even if the target process has no special privileges.\n\n# Impact:\n\nThe missing validation allows an unprivileged local user to escalate\nprivileges, potentially gaining full control of the affected system.\n",
     "id": "FreeBSD-2026-0208",
     "modified": "2026-05-21T00:00:00Z",
     "published": "2026-05-21T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-39461"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45253"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:22.libcasper.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:21.ptrace.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- select(2) file descriptor set overflow causes stack overflow"
+    "summary": "FreeBSD -- Missing validation in ptrace(PT_SC_REMOTE)"
 }

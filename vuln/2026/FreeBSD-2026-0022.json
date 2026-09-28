@@ -2,10 +2,21 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:kernel",
-                "name": "FreeBSD-kernel"
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
             },
             "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
                 {
                     "events": [
                         {
@@ -29,34 +40,191 @@
                     "type": "ECOSYSTEM"
                 }
             ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.0.19,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl33"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.3.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl34"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.4.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl35"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.5.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl36"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.6.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
         }
     ],
     "database_specific": {
+        "cite": [
+            "https://openssl-library.org/news/secadv/20260127.txt"
+        ],
         "discovery": "2026-01-27T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2025-15547"
+                "CVE-2025-11187",
+                "CVE-2025-15467",
+                "CVE-2025-15468",
+                "CVE-2025-15469",
+                "CVE-2025-66199",
+                "CVE-2025-68160",
+                "CVE-2025-69418",
+                "CVE-2025-69419",
+                "CVE-2025-69420",
+                "CVE-2025-69421",
+                "CVE-2026-22795",
+                "CVE-2026-22796"
             ],
             "freebsdsa": [
-                "SA-26:02.jail"
+                "SA-26:01.openssl"
             ]
         },
-        "vid": "90071333-fbe5-11f0-a13f-bc241121aa0a"
+        "vid": "4b824428-fb93-11f0-b194-8447094a420f"
     },
-    "details": "# Problem Description:\n\nBy default, jailed processes cannot mount filesystems, including\nnullfs(4). However, the allow.mount.nullfs option enables mounting\nnullfs filesystems, subject to privilege checks.\n\nIf a privileged user within a jail is able to nullfs-mount directories,\na limitation of the kernel\\'s path lookup logic allows that user to\nescape the jail\\'s chroot, yielding access to the full filesystem of the\nhost or parent jail.\n\n# Impact:\n\nIn a jail configured to allow nullfs(4) mounts from within the jail, the\njailed root user can escape the jail\\'s filesystem root.\n",
+    "details": "The OpenSSL project reports:\n\n> - Improper validation of PBMAC1 parameters in PKCS#12 MAC verification\n>   (CVE-2025-11187)\n> - Stack buffer overflow in CMS AuthEnvelopedData parsing\n>   (CVE-2025-15467)\n> - NULL dereference in SSL_CIPHER_find() function on unknown cipher ID\n>   (CVE-2025-15468)\n> - \\\"openssl dgst\\\" one-shot codepath silently truncates inputs \\>16MB\n>   (CVE-2025-15469)\n> - TLS 1.3 CompressedCertificate excessive memory allocation\n>   (CVE-2025-66199)\n> - Heap out-of-bounds write in BIO_f_linebuffer on short writes\n>   (CVE-2025-68160)\n> - Unauthenticated/unencrypted trailing bytes with low-level OCB\n>   function calls (CVE-2025-69418)\n> - Out of bounds write in PKCS12_get_friendlyname() UTF-8 conversion\n>   (CVE-2025-69419)\n> - Missing ASN1_TYPE validation in TS_RESP_verify_response() function\n>   (CVE-2025-69420)\n> - NULL Pointer Dereference in PKCS12_item_decrypt_d2i_ex function\n>   (CVE-2025-69421)\n> - Missing ASN1_TYPE validation in PKCS#12 parsing (CVE-2026-22795)\n> - ASN1_TYPE Type Confusion in the PKCS7_digest_from_attributes()\n>   function (CVE-2026-22796)\n",
     "id": "FreeBSD-2026-0022",
     "modified": "2026-01-28T00:00:00Z",
-    "published": "2026-01-28T00:00:00Z",
+    "published": "2026-01-27T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-15547"
+            "type": "REPORT",
+            "url": "https://openssl-library.org/news/secadv/20260127.txt"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:02.jail.asc"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-11187"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-15467"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-15468"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-15469"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-66199"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-68160"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-69418"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-69419"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-69420"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-69421"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22795"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-22796"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:01.openssl.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Jail escape by a privileged user via nullfs"
+    "summary": "OpenSSL -- Multiple vulnerabilities"
 }

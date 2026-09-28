@@ -27,17 +27,6 @@
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.4"
-                        },
-                        {
-                            "fixed": "14.4_9"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
                 }
             ]
         }
@@ -46,38 +35,28 @@
         "discovery": "2026-08-25T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-58095",
-                "CVE-2026-58096",
-                "CVE-2026-58097"
+                "CVE-2026-58092"
             ],
             "freebsdsa": [
-                "SA-26:60.ppp"
+                "SA-26:59.mac_do"
             ]
         },
-        "vid": "204af099-a0ff-11f1-ae1f-bc241121aa0a"
+        "vid": "55fbe7b1-a0fe-11f1-ae1f-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nppp(8) contained three memory safety errors in its handling of multilink\nendpoint discriminator options.\n\nmp_Enddisc() used incorrect length calculations when formatting endpoint\ndiscriminator addresses for display, allowing a received endpoint option\nto overflow a global result buffer. \\[CVE-2026-58095\\]\n\nLcpDecodeConfig() did not validate the length of received endpoint\ndiscriminator options against the minimum required by RFC 1717.\nUndersized options would trigger an out-of-bounds write.\n\\[CVE-2026-58096\\]\n\nmp_SetEnddisc() copied a user-supplied PSN endpoint value without length\nvalidation, allowing a buffer overflow via the ppp(8) command interface.\n\\[CVE-2026-58097\\]\n\n# Impact:\n\nA malicious PPP peer can exploit CVE-2026-58095 and CVE-2026-58096 to\ncrash ppp(8) or potentially execute arbitrary code as root. A local user\nwith access to the ppp(8) command interface can exploit CVE-2026-58097\nsimilarly.\n",
+    "details": "# Problem Description:\n\nIn FreeBSD 15.0, the kernel structure used to represent user credentials\nchanged: previously the primary group ID was stored in the first element\nof the array containing the list of supplementary group IDs, whereas now\nthe primary group ID is stored in a dedicated field. This change was\nlargely internal to the kernel and not user-visible.\n\nOne function, group_is_primary(), was not properly updated as a part of\nthis transition. This function is used by mac_do to determine the\nprimary group ID of the credential after applying a transition rule,\nused when the rule target does not explicitly specify a group.\n\nAs a result, with certain mac_do rules, it is possible for a credential\nswitch to incorrectly set the primary group ID to the ID stored in the\nfirst element of the original credential\\'s supplementary group array.\nIf the list of supplementary groups is empty, this value will be 0,\ncorresponding to the \\\"wheel\\\" group. For example, a rule such as\n\\\"uid=1001\\>uid=1002\\\" can be abused to set the primary group ID to 0\neven if the process did not originally belong to group 0.\n\n# Impact:\n\nCertain mac_do rules can be abused to set a process\\' group ID to 0.\nNote however, that the rule must apply to the caller in order for the\nbug to be triggered, e.g., given the ruleset \\\"uid=1001\\>uid=1002\\\", the\nuser must have user ID 1001 in order to trigger the bug.\n\nFurther, logged-in users will in general have a non-empty supplementary\ngroup list, in which case the bug can at worst be used to set the\ncredential\\'s first supplementary group ID as its primary group ID.\nProcesses must explicitly remove themselves from all supplementary\ngroups, using the privileged setgroups(2) system call, in order to\nexploit the bug to set 0 as the primary group ID.\n\nSince membership in group 0 is often used to enable controlled privilege\nescalation, the bug might be further exploitable to obtain root\nprivileges, depending on the system configuration. For instance, a\nruleset such as the following could be exploited by a process running as\nuser 1001 and with an empty supplementary group list:\n\\\"uid=1001\\>uid=1002;gid=0\\>uid=0\\\".\n",
     "id": "FreeBSD-2026-0417",
     "modified": "2026-08-26T00:00:00Z",
     "published": "2026-08-26T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58095"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58092"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58096"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58097"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:60.ppp.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:59.mac_do.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Multiple vulnerabilities in ppp(8)"
+    "summary": "FreeBSD -- Unauthorized credential switching"
 }

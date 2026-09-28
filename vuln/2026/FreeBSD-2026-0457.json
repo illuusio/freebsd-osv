@@ -1,0 +1,74 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.30.5,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx-devel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.31.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://nginx.org/en/security_advisories.html"
+        ],
+        "discovery": "2026-09-15T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-90439"
+            ]
+        },
+        "vid": "7dc8fd4b-b1a7-11f1-a655-3497f65b111b"
+    },
+    "details": "The nginx development team reports:\n\n> Buffer overflow when using ngx_http_v3_module (CVE-2026-90439).\n> Severity: medium.\n>\n> A heap memory buffer overflow might occur in a worker process under\n> certain configurations when using HTTP/3 with OpenSSL 3.5.0 and\n> earlier.\n",
+    "id": "FreeBSD-2026-0457",
+    "modified": "2026-09-16T00:00:00Z",
+    "published": "2026-09-16T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://nginx.org/en/security_advisories.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-90439"
+        },
+        {
+            "type": "WEB",
+            "url": "https://my.f5.com/manage/s/article/K000162604"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "nginx -- buffer overflow when using ngx_http_v3_module"
+}

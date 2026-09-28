@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "python310"
+                "name": "py310-ormar"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.10.21"
+                            "fixed": "0.23.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "python311"
+                "name": "py311-ormar"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.11.16"
+                            "fixed": "0.23.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "python312"
+                "name": "py312-ormar"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.12.13_4"
+                            "fixed": "0.23.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "python313"
+                "name": "py313-ormar"
             },
             "ranges": [
                 {
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.13.14"
+                            "fixed": "0.23.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "python313t"
+                "name": "py313t-ormar"
             },
             "ranges": [
                 {
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.13.14"
+                            "fixed": "0.23.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,7 +98,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "python314"
+                "name": "py314-ormar"
             },
             "ranges": [
                 {
@@ -107,7 +107,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.14.4"
+                            "fixed": "0.23.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -117,21 +117,43 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/python/cpython/issues/146333"
+            "https://github.com/collerek/ormar/security/advisories"
         ],
-        "discovery": "2026-03-23T00:00:00Z",
-        "vid": "5ec4dcf6-3588-11f1-b51c-6dd25bec137b"
+        "discovery": "2026-02-22T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-26198",
+                "CVE-2026-27953"
+            ]
+        },
+        "vid": "8d549898-3598-11f1-a8bc-3c7c3fba4204"
     },
-    "details": "Stan Ulbrych reports:\n\n> configparser.RawConfigParser.{OPTCRE,OPTCRE_NV} regexes \\[are\\]\n> vulnerable to quadratic backtracking.\n",
+    "details": "https://github.com/ormar-orm/ormar/security/advisories reports:\n\n> - SQL Injection in aggregate functions min() and max()\n> - Pydantic Validation Bypass via \\_\\_pk_only\\_\\_ and \\_\\_excluded\\_\\_\n>   Kwargs Injection in Model Constructor\n",
     "id": "FreeBSD-2026-0102",
-    "modified": "2026-08-14T00:00:00Z",
-    "published": "2026-04-12T00:00:00Z",
+    "modified": "2026-04-11T00:00:00Z",
+    "published": "2026-04-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/python/cpython/issues/146333"
+            "url": "https://github.com/collerek/ormar/security/advisories"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-26198"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/ormar-orm/ormar/security/advisories/GHSA-xxh2-68g9-8jqr"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27953"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/ormar-orm/ormar/security/advisories/GHSA-f964-whrq-44h8"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Python -- configparser vulnerable to excessive CPU use"
+    "summary": "py-ormar -- vulnerabilities"
 }

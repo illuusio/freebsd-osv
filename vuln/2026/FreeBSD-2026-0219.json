@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "jellyfin"
+                "name": "roundcube-php82"
             },
             "ranges": [
                 {
@@ -12,7 +12,108 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "10.11.10"
+                            "fixed": "1.6.16,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "1.7.0,1"
+                        },
+                        {
+                            "fixed": "1.7.1,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php83"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.6.16,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "1.7.0,1"
+                        },
+                        {
+                            "fixed": "1.7.1,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php84"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.6.16,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "1.7.0,1"
+                        },
+                        {
+                            "fixed": "1.7.1,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "roundcube-php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.6.16,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "1.7.0,1"
+                        },
+                        {
+                            "fixed": "1.7.1,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,33 +123,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/jellyfin/jellyfin/releases/tag/v10.11.10"
+            "https://roundcube.net/news/2026/05/24/security-updates-1.6.16-and-1.7.1"
         ],
         "discovery": "2026-05-24T00:00:00Z",
-        "vid": "87ff1d7e-6b24-4a5b-9825-90dcda5ee119"
+        "vid": "b8777bc2-5758-11f1-8607-8447094a420f"
     },
-    "details": "The Jellyfin project reports:\n\n> Jellyfin Server 10.11.10 fixes three security vulnerabilities:\n>\n> - GHSA-f47c-m7gr-q92j: (details pending disclosure)\n> - GHSA-jg92-mrxq-vv75: (details pending disclosure)\n> - GHSA-wwwm-px48-fpvq: (details pending disclosure)\n",
+    "details": "The Roundcube Webmail project reports:\n\n> See link for details. No CVE numbers available at the moment.\n",
     "id": "FreeBSD-2026-0219",
-    "modified": "2026-05-25T00:00:00Z",
-    "published": "2026-05-25T00:00:00Z",
+    "modified": "2026-05-24T00:00:00Z",
+    "published": "2026-05-24T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/jellyfin/jellyfin/releases/tag/v10.11.10"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/jellyfin/jellyfin/security/advisories/GHSA-f47c-m7gr-q92j"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/jellyfin/jellyfin/security/advisories/GHSA-jg92-mrxq-vv75"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/jellyfin/jellyfin/security/advisories/GHSA-wwwm-px48-fpvq"
+            "url": "https://roundcube.net/news/2026/05/24/security-updates-1.6.16-and-1.7.1"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "jellyfin -- multiple vulnerabilities"
+    "summary": "Roundcube Webmail -- Multiple vulnerabilities"
 }

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "ejabberd"
+                "name": "zeek"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "26.04"
+                            "fixed": "8.0.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,21 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.process-one.net/blog/ejabberd-26-04/"
+            "https://github.com/zeek/zeek/releases/tag/v8.0.7"
         ],
         "discovery": "2026-04-20T00:00:00Z",
-        "vid": "82064ab5-3d76-11f1-89ab-901b0e9408dc"
+        "vid": "0d8b1126-0864-4934-b63f-c713526ead32"
     },
-    "details": "ejabberd team reports:\n\n> This release adds new options that limit max memory used by XML parser\n> used to process XMPP payloads, to prevent potential Denial of Service\n> attack. The default values for pre-auth provide sufficient protection\n> for ejabberd against non-authenticated users on c2s and s2s, so there\n> is no need to change your configuration.\n",
+    "details": "Tim Wojtulewicz of Corelight reports:\n\n> A series of DNS messages containing long DNS compression chains can\n> cause Zeek to spend a long time processing packets and potentially\n> crash. Due to the fact that these packets can be received from remote\n> hosts, this is a DoS risk.\n>\n> A specially-crafted LDAP search request can cause Zeek to spend a long\n> time processing the packet, resulting in Zeek silently dropping the\n> LDAP analyzer for the connection. Due to the fact that these packets\n> can be received from remote hosts, this is an evasion risk.\n>\n> A specially-crafted series of ASN.1 messages in LDAP packets can cause\n> Zeek to spend a long time processing the packets, resulting in Zeek\n> silently dropping the LDAP analyzer for the connection. Due to the\n> fact that these packets can be received from remote hosts, this is an\n> evasion risk.\n",
     "id": "FreeBSD-2026-0117",
-    "modified": "2026-04-21T00:00:00Z",
-    "published": "2026-04-21T00:00:00Z",
+    "modified": "2026-04-20T00:00:00Z",
+    "published": "2026-04-20T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.process-one.net/blog/ejabberd-26-04/"
+            "url": "https://github.com/zeek/zeek/releases/tag/v8.0.7"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "ejabberd -- Potential DDoS in XML Parser"
+    "summary": "zeek -- potential DoS vulnerabilities"
 }

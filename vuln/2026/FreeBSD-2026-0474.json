@@ -1,0 +1,136 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "p5-DBI"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.654"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://metacpan.org/dist/DBI/changes"
+        ],
+        "discovery": "2026-09-19T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-15392",
+                "CVE-2026-78030",
+                "CVE-2026-73193",
+                "CVE-2026-73194",
+                "CVE-2026-60081",
+                "CVE-2026-60082",
+                "CVE-2026-15043",
+                "CVE-2026-14380",
+                "CVE-2026-14740",
+                "CVE-2026-14739"
+            ]
+        },
+        "vid": "675bc714-b8cd-11f1-ad2b-40b034429ecf"
+    },
+    "details": "DBI project reports:\n\n> DBI 1.650, 1.651, 1.652, 1.653 and 1.654 fix the following issues:\n>\n> - CVE-2026-88815: Fix DBI::sql_type_cast on IV/NV\n> - CVE-2026-88816: Fix FetchHashKeyName on IV/NV\n> - CVE-2026-78030: Fix arbitrary module and file loading via\n>   dbm_type/dbm_mldbm\n> - CVE-2026-15392: Tighten symlink outside of f_dir\n> - CVE-2026-73194: Force placeholder limit on :# and :p# too\n> - CVE-2026-73193: Limit statements to 292 Mb in preparse\n> - CVE-2026-15043: Fix inverted comparisons for strings in\n>   DBI::SQL::Nano\n> - CVE-2026-15392: Fix DBD::File to ensure that the table is not a\n>   symlink outside of f_dir\n> - CVE-2026-60082: Fix an out-of-bounds error when a statement handle\n>   has no fields but the source row is not empty\n> - CVE-2026-60081: Add an overridable upper bound \\$MAX_PATH_DEPTH for\n>   DBI::ProfileData\n> - CVE-2026-14739: Set a hard limit of 99999 on \\'?\\' placeholders\n> - CVE-2026-14740: Fix out-of-bounds read in preparse of SQL that\n>   starts with a comment\n> - CVE-2026-14380: Fix code injection via Profile DSN attribute or\n>   DBI_PROFILE variable\n",
+    "id": "FreeBSD-2026-0474",
+    "modified": "2026-09-25T00:00:00Z",
+    "published": "2026-09-25T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://metacpan.org/dist/DBI/changes"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15392"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78030"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73193"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73194"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60081"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60082"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15043"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14380"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14740"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14739"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-15392"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-78030"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-73193"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-73194"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-60081"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-60082"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-15043"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-14380"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-14740"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-14739"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "databases/p5-DBI -- multiple vulnerabilities"
+}

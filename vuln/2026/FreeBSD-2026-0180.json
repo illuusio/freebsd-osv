@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "modsecurity3"
+                "name": "firefox"
             },
             "ranges": [
                 {
@@ -12,7 +12,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.0.15"
+                            "fixed": "150.0.1,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "firefox-esr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "140.10.1,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "150.0.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -21,33 +59,31 @@
         }
     ],
     "database_specific": {
+        "cite": [
+            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2028537%2C2029911%2C2031121%2C2033602"
+        ],
         "discovery": "2026-04-28T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-42268",
-                "CVE-2026-30923"
+                "CVE-2026-7323"
             ]
         },
-        "vid": "3c02dcfd-47d7-11f1-99fb-3497f65b111b"
+        "vid": "e4a08820-470d-11f1-be75-b42e991fc52e"
     },
-    "details": "ModSecurity is an open source web application firewall engine.\n\nAccording to the upstream changelog, multiple vulnerabilities have been\nfixed.\n\n- CVE-2026-42268: unsigned integer underflow in verify operators\n- CVE-2026-30923: buffer overflow in hex_decode\n",
+    "details": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2028537%2C2029911%2C2031121%2C2033602\nreports:\n\n> Memory safety bugs. Some of these bugs showed evidence of memory\n> corruption and we presume that with enough effort some of these could\n> have been exploited to run arbitrary code.\n",
     "id": "FreeBSD-2026-0180",
-    "modified": "2026-05-04T00:00:00Z",
-    "published": "2026-05-04T00:00:00Z",
+    "modified": "2026-05-03T00:00:00Z",
+    "published": "2026-05-03T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42268"
+            "type": "REPORT",
+            "url": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2028537%2C2029911%2C2031121%2C2033602"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-30923"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/owasp-modsecurity/ModSecurity/blob/v3.0.15/CHANGES"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7323"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "modsecurity3 -- multiple vulnerabilities"
+    "summary": "Mozilla -- Memory safety bugs"
 }

@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "popt"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.19_2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://access.redhat.com/errata/RHSA-2026:56984"
+        ],
+        "discovery": "2026-09-01T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-18743"
+            ]
+        },
+        "vid": "e86be66a-b715-11f1-a70f-00a0980083d7"
+    },
+    "details": "https://access.redhat.com/errata/RHSA-2026:56984 reports:\n\n> A flaw was found in popt. This vulnerability allows an attacker to\n> provide specially crafted configuration content to a host, which, when\n> loaded, can lead to a small memory corruption issue. This occurs\n> because of an error in how the \\`poptConfigFileToString\\` function\n> reallocates memory for buffers. Successful exploitation could result\n> in heap metadata corruption, potentially causing the affected process\n> to become unavailable (denial of service).\n",
+    "id": "FreeBSD-2026-0468",
+    "modified": "2026-09-23T00:00:00Z",
+    "published": "2026-09-23T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://access.redhat.com/errata/RHSA-2026:56984"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18743"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "popt -- Incorrect Calculation of Buffer Size"
+}

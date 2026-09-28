@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "chromium"
+                "name": "firefox"
             },
             "ranges": [
                 {
@@ -12,26 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "144.0.7559.109"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ungoogled-chromium"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "144.0.7559.109"
+                            "fixed": "147.0.2,2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,30 +22,35 @@
     ],
     "database_specific": {
         "cite": [
-            "https://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop_27.html"
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=2007302"
         ],
         "discovery": "2026-01-27T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-1504"
+                "CVE-2026-24868",
+                "CVE-2026-24869"
             ]
         },
-        "vid": "409d70ab-fc23-11f0-85c5-a8a1599412c6"
+        "vid": "9dac4f05-fc65-11f0-96db-b42e991fc52e"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 1 security fix:\n>\n> - \\[474435504\\] High CVE-2026-1504: Inappropriate implementation in\n>   Background Fetch API. Reported by Luan Herrera (@lbherrera\\_) on\n>   2026-01-09\n",
+    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2007302 reports:\n\n> Mitigation bypass in the Privacy: Anti-Tracking component.\n>\n> Use-after-free in the Layout: Scrolling and Overflow component.\n",
     "id": "FreeBSD-2026-0024",
     "modified": "2026-01-28T00:00:00Z",
     "published": "2026-01-28T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop_27.html"
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2007302"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1504"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-24868"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-24869"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "chromium -- security fix"
+    "summary": "Firefox -- Multiple vulnerabilities"
 }

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "apache24"
+                "name": "xwayland"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.4.67_2"
+                            "fixed": "24.1.12,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +22,74 @@
     ],
     "database_specific": {
         "cite": [
-            "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb"
+            "https://lists.x.org/archives/xorg-announce/2026-June/003702.html"
         ],
-        "discovery": "2026-06-02T00:00:00Z",
+        "discovery": "2026-06-01T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-49975"
+                "CVE-2026-50256",
+                "CVE-2026-50257",
+                "CVE-2026-50258",
+                "CVE-2026-50259",
+                "CVE-2026-50260",
+                "CVE-2026-50261",
+                "CVE-2026-50262",
+                "CVE-2026-50263",
+                "CVE-2026-50264"
             ]
         },
-        "vid": "0d6d9d9b-5feb-11f1-8607-8447094a420f"
+        "vid": "36cb0ced-5e23-11f1-86a2-589cfc10a551"
     },
-    "details": "Calif security reports:\n\n> Remote DoS in mod_http2\n",
+    "details": "X.Org project reports:\n\n> Multiple issues have been found in the X server and Xwayland\n> implementations published by X.Org for which we are releasing security\n> fixes for in xorg-server-21.1.23 and xwayland-24.1.12.\n",
     "id": "FreeBSD-2026-0238",
-    "modified": "2026-06-04T00:00:00Z",
-    "published": "2026-06-04T00:00:00Z",
+    "modified": "2026-06-01T00:00:00Z",
+    "published": "2026-06-01T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://blog.calif.io/p/codex-discovered-a-hidden-http2-bomb"
+            "url": "https://lists.x.org/archives/xorg-announce/2026-June/003702.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49975"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50256"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50257"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50258"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50259"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50260"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50261"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50262"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50263"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50264"
+        },
+        {
+            "type": "WEB",
+            "url": "https://lists.x.org/archives/xorg-announce/2026-June/003705.html"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Apache httpd -- DoS exploit in HTTP/2"
+    "summary": "xwayland -- Multiple vulnerabilities"
 }

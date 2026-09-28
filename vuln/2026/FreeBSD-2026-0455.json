@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "cjose"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.6.2.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/OpenIDC/cjose/security/advisories/GHSA-f6wf-pqg3-6wqq"
+        ],
+        "discovery": "2026-09-08T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-53939"
+            ]
+        },
+        "vid": "3a38fdda-b05a-11f1-9369-b42e991fc52e"
+    },
+    "details": "https://github.com/OpenIDC/cjose/security/advisories/GHSA-f6wf-pqg3-6wqq\nreports:\n\n> OpenIDC/cjose is a C library implementing the Javascript Object\n> Signing and Encryption (JOSE). In versions 0.6.1 through 0.6.2.5, when\n> cjose encrypts a JWE using an AES-CBC-HMAC content-encryption\n> algorithm (\\`A128CBC-HS256\\`, \\`A192CBC-HS384\\`, or \\`A256CBC-HS512\\`)\n> together with any key-management algorithm that generates a fresh\n> content-encryption key (CEK), the CEK is all zero bytes instead of\n> being randomly generated. The resulting JWE is therefore encrypted and\n> authenticated under a fixed, publicly known key, so anyone who obtains\n> the JWE can recover the plaintext and forge or modify the content.\n> This is fixed in version 0.6.2.6 by \\`\\_cjose_jwe_set_cek_aes_cbc()\\`\n> generating the CEK from \\`RAND_bytes\\`. A regression test asserts that\n> the \\`encrypted_key\\` differs across two encryptions for each\n> AES-CBC-HMAC variant. Until upgrading, for data encrypted with cjose,\n> three options are available. Use an AES-GCM \\`enc\\` (\\`A128GCM\\` /\n> \\`A192GCM\\` / \\`A256GCM\\`) instead of an AES-CBC-HMAC \\`enc\\`, use\n> \\`alg=dir\\` with a caller-supplied CEK, or avoid using cjose for JWE\n> encryption with the affected algorithm pair. These are mitigations for\n> new ciphertexts only; data already encrypted under the zero key\n> remains compromised and should be re-encrypted (and any secrets it\n> contained rotated).\n",
+    "id": "FreeBSD-2026-0455",
+    "modified": "2026-09-14T00:00:00Z",
+    "published": "2026-09-14T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/OpenIDC/cjose/security/advisories/GHSA-f6wf-pqg3-6wqq"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53939"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "cjose -- Use of Hard-coded Cryptographic Key"
+}

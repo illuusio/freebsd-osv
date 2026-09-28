@@ -60,30 +60,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://bugzilla.mozilla.org/show_bug.cgi?id=2023207"
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=2022419"
         ],
         "discovery": "2026-04-21T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-6766"
+                "CVE-2026-6765"
             ]
         },
-        "vid": "7ff13e75-4305-11f1-a627-b42e991fc52e"
+        "vid": "7da0d8ae-4305-11f1-a627-b42e991fc52e"
     },
-    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2023207 reports:\n\n> Incorrect boundary conditions in the Libraries component in NSS.\n",
+    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2022419 reports:\n\n> Information disclosure in the Form Autofill component.\n",
     "id": "FreeBSD-2026-0145",
     "modified": "2026-04-28T00:00:00Z",
     "published": "2026-04-28T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2023207"
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2022419"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6766"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6765"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Mozilla -- Incorrect boundary conditions"
+    "summary": "Mozilla -- Information disclosure"
 }

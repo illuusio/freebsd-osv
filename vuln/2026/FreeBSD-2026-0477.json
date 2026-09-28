@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "p5-Authen-SASL"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.2100"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://metacpan.org/dist/Authen-SASL/changes"
+        ],
+        "discovery": "2026-09-06T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-86219"
+            ]
+        },
+        "vid": "023a3d0c-b987-11f1-ad2b-40b034429ecf"
+    },
+    "details": "Authen-SASL project reports:\n\n> Authen::SASL::Perl::DIGEST_MD5 versions before 2.2100 for Perl accept\n> replayed authentication responses via unverified nonce in server_step.\n> server_start generates a fresh nonce and sends it in the challenge,\n> and nothing later compares that value against the nonce the client\n> returns. server_step derives the expected digest from the client\\'s\n> own parameters, so a response verifies whenever its digest matches the\n> nonce it carries. The count table it also checks is keyed on the\n> client-supplied nonce and starts empty in each new server object, so a\n> captured first response, carrying \\`nc=00000001\\`, passes that too.\n> RFC 2831 defines the nonce in the response as the value the server\n> sent in the preceding challenge. An attacker who observes one\n> successful \\`qop=auth\\` exchange can replay the captured response\n> against a later session for the same service, host, realm and user,\n> and authenticate as that user without knowing the password.\n",
+    "id": "FreeBSD-2026-0477",
+    "modified": "2026-09-26T00:00:00Z",
+    "published": "2026-09-26T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://metacpan.org/dist/Authen-SASL/changes"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-86219"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-86219"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "p5-Authen-SASL -- Replay attack in Authen::SASL::Perl::DIGEST_MD5"
+}

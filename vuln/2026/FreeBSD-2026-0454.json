@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "cjose"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.6.2.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/OpenIDC/cjose/security/advisories/GHSA-75r7-f5cv-g3wj"
+        ],
+        "discovery": "2026-09-08T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-53938"
+            ]
+        },
+        "vid": "35b3a492-b05a-11f1-9369-b42e991fc52e"
+    },
+    "details": "https://github.com/OpenIDC/cjose/security/advisories/GHSA-75r7-f5cv-g3wj\nreports:\n\n> OpenIDC/cjose is a C library implementing the Javascript Object\n> Signing and Encryption (JOSE). Prior to version 0.6.2.5, cjose\\'s JWE\n> decryption path for the AES Key Wrap key-management algorithms\n> (\\`alg\\` = \\`A128KW\\`, \\`A192KW\\`, \\`A256KW\\`) does not validate the\n> length of the attacker-supplied \\`encrypted_key\\` (JWE Encrypted Key)\n> before unwrapping it into a fixed-size, heap-allocated Content\n> Encryption Key (CEK) buffer. A remote, unauthenticated attacker who\n> can submit a crafted JWE to an application that decrypts it with an\n> AES-KW symmetric key can trigger an out-of-bounds heap write,\n> corrupting the heap. This leads at minimum to a crash (denial of\n> service) and, depending on the heap layout and allocator, may be\n> leverageable for further memory-corruption impact.\n> \\`cjose_jwe_import()\\` / \\`cjose_jwe_decrypt()\\` are\n> pre-authentication entry points: they parse and process fully\n> attacker-controlled input. Upgrade to cjose 0.6.2.5 to receive a\n> patch. If upgrading is not immediately possible, reject the AES Key\n> Wrap algorithms (\\`A128KW\\`/\\`A192KW\\`/\\`A256KW\\`) for untrusted JWEs\n> at the application layer.\n",
+    "id": "FreeBSD-2026-0454",
+    "modified": "2026-09-14T00:00:00Z",
+    "published": "2026-09-14T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/OpenIDC/cjose/security/advisories/GHSA-75r7-f5cv-g3wj"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-53938"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "cjose -- Heap-based Buffer Overflow"
+}

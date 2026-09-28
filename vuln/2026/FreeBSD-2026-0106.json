@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.10.20_4"
+                            "fixed": "3.10.20_3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -107,7 +107,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.14.4_2"
+                            "fixed": "3.14.4_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -117,42 +117,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://mail.python.org/archives/list/security-announce@python.org/thread/JQDUNJVB4AQNTJECSUKOBDU3XCJIPSE5/"
+            "https://mail.python.org/archives/list/security-announce@python.org/thread/HTWB2Z6KT5QQX4RYEZAFININDHNOSIF3/"
         ],
-        "discovery": "2026-04-06T00:00:00Z",
+        "discovery": "2026-04-11T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-4786"
+                "CVE-2026-6100"
             ]
         },
-        "vid": "cf75f572-378a-11f1-a119-e36228bfe7d4"
+        "vid": "b8e9f33c-375d-11f1-a119-e36228bfe7d4"
     },
-    "details": "Seth Larson reports:\n\n> \\[CVE-2026-4786\\] Incomplete mitigation of CVE-2026-4519, %action\n> expansion for command injection to webbrowser.open()\n>\n> There is a HIGH severity vulnerability affecting CPython.\n>\n> Mitgation of CVE-2026-4519 was incomplete. If the URL contained\n> \\\"%action\\\" the mitigation could be bypassed for certain browser types\n> the \\\"webbrowser.open()\\\" API could have commands injected into the\n> underlying shell. See CVE-2026-4519 for details.\n",
+    "details": "Seth Larson reports:\n\n> There is a CRITICAL severity vulnerability affecting CPython.\n>\n> Use-after-free (UAF) was possible in the lzma.LZMADecompressor,\n> bz2.BZ2Decompressor, and gzip.GzipFile when a memory allocation fails\n> with a MemoryError and the decompression instance is re-used. This\n> scenario can be triggered if the process is under memory pressure. The\n> fix cleans up the dangling pointer in this specific error condition.\n>\n> The vulnerability is only present if the program re-uses decompressor\n> instances across multiple decompression calls even after a MemoryError\n> is raised during decompression. Using the helper functions to one-shot\n> decompress data such as lzma.decompress(), bz2.decompress(),\n> gzip.decompress(), and zlib.decompress() are not affected as a new\n> decompressor instance is created for each call. If the decompressor\n> instance is not re-used after an error condition, this usage is\n> similarly not vulnerable.\n",
     "id": "FreeBSD-2026-0106",
     "modified": "2026-08-09T00:00:00Z",
     "published": "2026-04-13T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://mail.python.org/archives/list/security-announce@python.org/thread/JQDUNJVB4AQNTJECSUKOBDU3XCJIPSE5/"
+            "url": "https://mail.python.org/archives/list/security-announce@python.org/thread/HTWB2Z6KT5QQX4RYEZAFININDHNOSIF3/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4786"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6100"
         },
         {
             "type": "WEB",
-            "url": "https://www.cve.org/CVERecord?id=CVE-2026-4786"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/python/cpython/issues/148169"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/python/cpython/pull/148170"
+            "url": "https://github.com/python/cpython/issues/148395"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "python -- more webbrowser.open() command injection vulnerabilities"
+    "summary": "Python -- use-after-free vulnerability in decompressors under memory pressure"
 }

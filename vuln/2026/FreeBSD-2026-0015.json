@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "oauth2-proxy"
+                "name": "firefox"
             },
             "ranges": [
                 {
@@ -12,7 +12,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "7.14.1"
+                            "fixed": "147.0.0,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "147.0.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -21,39 +40,39 @@
         }
     ],
     "database_specific": {
-        "discovery": "2026-01-16T00:00:00Z",
+        "discovery": "2026-01-13T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2025-61729",
-                "CVE-2025-61727",
-                "CVE-2025-47914",
-                "CVE-2025-58181"
+                "CVE-2026-0892",
+                "CVE-2026-0889",
+                "CVE-2026-0888",
+                "CVE-2026-0881"
             ]
         },
-        "vid": "fb561db9-0fc1-4d92-81a2-ee01839c9119"
+        "vid": "ff20d3a3-f211-11f0-9ca3-b42e991fc52e"
     },
-    "details": "Within HostnameError.Error(), when constructing an error string, there\nis no limit to the number of hosts that will be printed out.\nFurthermore, the error string is constructed by repeated string\nconcatenation, leading to quadratic runtime. Therefore, a certificate\nprovided by a malicious actor can result in excessive resource\nconsumption.\n\nA flaw was found in the crypto/x509 package in the Go standard library.\nThis vulnerability allows a certificate validation bypass via an\nexcluded subdomain constraint in a certificated chain as it does not\nrestrict the usage of wildcard SANs in the leaf certificate.\n\nSSH Agent servers do not validate the size of messages when processing\nnew identity requests, which may cause the program to panic if the\nmessage is malformed due to an out of bounds read.\n\nSSH servers parsing GSSAPI authentication requests do not validate the\nnumber of mechanisms specified in the request, allowing an attacker to\ncause unbounded memory consumption.\n",
+    "details": "Memory safety bugs present in Firefox 146 and Thunderbird 146. Some of\nthese bugs showed evidence of memory corruption and we presume that with\nenough effort some of these could have been exploited to run arbitrary\ncode.\n\nDenial-of-service in the DOM: Service Workers component.\n\nInformation disclosure in the XML component.\n\nSandbox escape in the Messaging System component.\n",
     "id": "FreeBSD-2026-0015",
-    "modified": "2026-01-18T00:00:00Z",
-    "published": "2026-01-18T00:00:00Z",
+    "modified": "2026-01-15T00:00:00Z",
+    "published": "2026-01-15T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-61729"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0892"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-61727"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0889"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-47914"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0888"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-58181"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0881"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "oauth2-proxy -- multiple vulnerabilities"
+    "summary": "Mozilla -- multiple vulnerabilities"
 }

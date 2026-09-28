@@ -22,6 +22,25 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
+                "name": "firefox-esr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "140.7.0,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
                 "name": "thunderbird"
             },
             "ranges": [
@@ -31,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "147.0.0"
+                            "fixed": "147"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -43,34 +62,49 @@
         "discovery": "2026-01-13T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-0892",
-                "CVE-2026-0889",
-                "CVE-2026-0888",
-                "CVE-2026-0881"
+                "CVE-2026-0891",
+                "CVE-2026-0890",
+                "CVE-2026-0887",
+                "CVE-2026-0885",
+                "CVE-2026-0884",
+                "CVE-2026-0883",
+                "CVE-2026-0878"
             ]
         },
-        "vid": "ff20d3a3-f211-11f0-9ca3-b42e991fc52e"
+        "vid": "085101eb-f212-11f0-9ca3-b42e991fc52e"
     },
-    "details": "Memory safety bugs present in Firefox 146 and Thunderbird 146. Some of\nthese bugs showed evidence of memory corruption and we presume that with\nenough effort some of these could have been exploited to run arbitrary\ncode.\n\nDenial-of-service in the DOM: Service Workers component.\n\nInformation disclosure in the XML component.\n\nSandbox escape in the Messaging System component.\n",
+    "details": "Memory safety bugs present in firefox-esr 140.6, Thunderbird ESR 140.6,\nFirefox 146 and Thunderbird 146.\n\nSpoofing issue in the DOM: Copy & Paste and Drag & Drop component.\n\nClickjacking issue and information disclosure in the PDF Viewer\ncomponent.\n\nUse-after-free in the JavaScript: GC component.\n\nUse-after-free in the JavaScript Engine component.\n\nInformation disclosure in the Networking component.\n\nSandbox escape due to incorrect boundary conditions in the Graphics:\nCanvasWebGL component.\n",
     "id": "FreeBSD-2026-0014",
     "modified": "2026-01-15T00:00:00Z",
     "published": "2026-01-15T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0892"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0891"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0889"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0890"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0888"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0887"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0881"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0885"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0884"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0883"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0878"
         }
     ],
     "schema_version": "1.7.0",

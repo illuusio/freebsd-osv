@@ -46,28 +46,28 @@
         "discovery": "2026-06-09T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-45257"
+                "CVE-2026-45256"
             ],
             "freebsdsa": [
-                "SA-26:26.ktls"
+                "SA-26:25.thr"
             ]
         },
-        "vid": "f2c4892a-6472-11f1-958d-bc241121aa0a"
+        "vid": "91163897-6472-11f1-958d-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nThe KTLS receive path decrypted each record in place, assuming that the\nmbufs holding received data were anonymous and safe to modify. This\nassumption does not hold for data placed on a socket by sendfile(2),\nwhich can reference file-backed memory directly through non-anonymous\nM_EXTPG pages or EXT_SFBUF mbufs. When the sender transmits such data\nover a loopback connection without enabling KTLS on the transmit side,\nthe file-backed mbufs reach the receiver\\'s decryption path unchanged.\nDecrypting a record in place then overwrites the backing file\\'s page\ncache instead of a private copy of the data.\n\n# Impact:\n\nAn unprivileged local user who can read a file can overwrite its\ncontents with data of their choosing by sending the file over a loopback\nconnection on which they have enabled KTLS receive. The write modifies\nthe page cache directly, so it bypasses file flags such as schg and is\nwritten back to disk. By overwriting a setuid binary or other trusted\nfile, a local user can escalate privileges, potentially gaining full\ncontrol of the affected system.\n",
+    "details": "# Problem Description:\n\nWhen used to deliver a signal to a specific thread, thr_kill2(2) called\np_cansignal() to determine whether the operation was permitted but did\nnot check the result before delivering the signal. The signal was sent\neven when the permission check failed. The system call returned the\nresulting error to the caller, but by then the signal had already been\ndelivered.\n\n# Impact:\n\nThe missing check allows an unprivileged local user who knows or can\nguess a target\\'s process and thread IDs to send any signal to a process\nthey would not normally be permitted to signal, including processes\nowned by other users or by root. The same check enforces jail\nboundaries, so a jailed process can signal processes on the host or in\nother jails. Thread IDs are allocated globally and sequentially, and so\ncan be discovered by brute force with no visibility into the target.\n\nAn attacker can stop or terminate arbitrary processes, including\ncritical system daemons, resulting in a Denial of Service (DoS).\n",
     "id": "FreeBSD-2026-0249",
     "modified": "2026-06-10T00:00:00Z",
     "published": "2026-06-10T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45257"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45256"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:26.ktls.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:25.thr.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Arbitrary file overwrite via the KTLS receive path"
+    "summary": "FreeBSD -- Missing permission check in thr_kill2(2)"
 }

@@ -1,0 +1,99 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "unbound"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.26.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://community.nlnetlabs.nl/t/unbound-1-26-1-released/3463"
+        ],
+        "discovery": "2026-09-15T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-81642",
+                "CVE-2026-81634",
+                "CVE-2026-82717",
+                "CVE-2026-77955",
+                "CVE-2026-78227",
+                "CVE-2026-80225",
+                "CVE-2026-82720",
+                "CVE-2026-85501",
+                "CVE-2026-77860"
+            ]
+        },
+        "vid": "3f4d285d-b1f6-11f1-8f5e-3c7c3fba4204"
+    },
+    "details": "NLnet Labs reports:\n\n> This release consolidates security fixes for issues reported over a\n> period of time. There are fixes for:\n>\n> - CVE-2026-81642: Heap buffer overflow and possible Remote Code\n>   Execution when digesting DNSKEY.\n> - CVE-2026-81634: Possible heap buffer overflow during DNSSEC\n>   canonicalization.\n> - CVE-2026-82717: CNAME synthesis could lead to heap corruption.\n> - CVE-2026-77955: Possible ZONEMD verification bypass window.\n> - CVE-2026-78227: Use-after-free in DoQ stream output buffer on reset\n>   re-transmission.\n> - CVE-2026-80225: Possible degradation of service from continuous\n>   queries on the same TCP/DoT connection.\n> - CVE-2026-82720: Use-after-free in DoH stream cleanup code path.\n> - CVE-2026-85501: Retrap: Novel Vulnerabilities to launch Algorithmic\n>   Complexity Attacks on DNSSEC.\n> - CVE-2026-77860: 'serve-expired' can bypass Unbound 'wait-limit'.\n",
+    "id": "FreeBSD-2026-0458",
+    "modified": "2026-09-16T00:00:00Z",
+    "published": "2026-09-16T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://community.nlnetlabs.nl/t/unbound-1-26-1-released/3463"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-81642"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-81634"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-82717"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-77955"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78227"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-80225"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-82720"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-85501"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-77860"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/NLnetLabs/unbound/releases/tag/release-1.26.1"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/projects/unbound/security-advisories/"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Unbound -- multiple vulnerabilities"
+}

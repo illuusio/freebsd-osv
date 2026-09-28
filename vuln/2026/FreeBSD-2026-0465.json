@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mailpit"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.31.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/axllent/mailpit/security/advisories/GHSA-2vgv-6hcp-mf43"
+        ],
+        "discovery": "2026-09-19T00:00:00Z",
+        "vid": "c1980e14-b424-11f1-bd9f-10ffe07f9334"
+    },
+    "details": "Mailpit author reports:\n\n> The fix for CVE-2026-67446 / GHSA-75mr-qw9x-3r39 (\\\"Thumbnail\n> generation decodes unbounded image dimensions before scaling\\\",\n> patched in v1.30.4) bounds only the width \u00d7 height of a single frame.\n> The decoded-size budget is still not enforced over frame count, so an\n> animated PNG whose per-frame dimensions sit just under the limit still\n> expands to a multiple of it. A remote, unauthenticated client can\n> deliver such an attachment over SMTP and then request one thumbnail to\n> force a multi-gigabyte native allocation.\n",
+    "id": "FreeBSD-2026-0465",
+    "modified": "2026-09-19T00:00:00Z",
+    "published": "2026-09-19T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-2vgv-6hcp-mf43"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "mailpit -- Multi-frame animation bypass of thumbnail pixel budget"
+}

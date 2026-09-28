@@ -1,0 +1,95 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "freeipa-server"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.13.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.freeipa.org/release-notes/4-13-4.html"
+        ],
+        "discovery": "2026-08-19T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-11861",
+                "CVE-2026-13097",
+                "CVE-2026-19550",
+                "CVE-2026-73196",
+                "CVE-2026-73197",
+                "CVE-2026-73198",
+                "CVE-2026-73199",
+                "CVE-2026-76578",
+                "CVE-2026-79678"
+            ]
+        },
+        "vid": "9736fef3-ada6-11f1-a655-3497f65b111b"
+    },
+    "details": "The FreeIPA project reports:\n\n> - CVE-2026-76578: the access control instruction for self-managed OTP\n>   tokens requires no authentication and does not restrict which\n>   attributes may be written alongside the token entry. An\n>   unauthenticated LDAP client can create a Kerberos principal and add\n>   it to the administrators group.\n> - CVE-2026-79678: insufficiently validated \\--organization and\n>   \\--base-url input to idp-add reaches a constrained eval() before the\n>   LDAP access control check is enforced, allowing any authenticated\n>   principal to enumerate server environment variables and to exhaust\n>   memory.\n> - CVE-2026-11861: where a cross-realm trust with Active Directory is\n>   configured, Active Directory users can bypass authentication for\n>   FreeIPA services including the Web UI, the SMB server and the LDAP\n>   directory.\n> - CVE-2026-13097: the uniqueness constraint on Kerberos principal name\n>   attributes does not account for equivalent representations of the\n>   same name, so a user with LDAP write privileges can create a service\n>   principal that impersonates a privileged one.\n> - CVE-2026-19550: trust-fetch-domains is gated by a read-only\n>   permission on the trust object rather than a trust administration\n>   permission, letting any authenticated user trigger a privileged\n>   trust refresh against an attacker-supplied server.\n> - CVE-2026-73196: an oversized OTP key value is decoded and re-encoded\n>   without a size limit, consuming excessive CPU and memory.\n> - CVE-2026-73197: the migration endpoint reads oversized POST bodies\n>   fully into memory, which an unauthenticated client can abuse for\n>   denial of service.\n> - CVE-2026-73198: the i18n_messages endpoint accepts arbitrarily large\n>   request bodies, which an unauthenticated client can abuse for memory\n>   exhaustion.\n> - CVE-2026-73199: a null pointer dereference in the ipa-enrollment\n>   SLAPI plugin crashes the directory server when a malformed LDAP\n>   extended operation omits a required request value.\n",
+    "id": "FreeBSD-2026-0445",
+    "modified": "2026-09-11T00:00:00Z",
+    "published": "2026-09-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.freeipa.org/release-notes/4-13-4.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-11861"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13097"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19550"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73196"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73197"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73198"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73199"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76578"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79678"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.freeipa.org/release-notes/4-13-3.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeIPA -- multiple vulnerabilities"
+}

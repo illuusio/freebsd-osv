@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvpn"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.7.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://community.openvpn.net/Security%20Announcements/CVE-2026-84732/source"
+        ],
+        "discovery": "2026-09-04T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-84732"
+            ]
+        },
+        "vid": "25012057-a886-11f1-a836-b42e991fc52e"
+    },
+    "details": "OpenVPN team reports:\n\n> OpenVPN 2.x allows attackers to potentially cause a denial of service\n> against the control channel reliability layer, either by driving the\n> reliable TLS retransmission timeout to grow without bound, or by\n> sending acknowledgements for packets that cannot be outstanding.\n",
+    "id": "FreeBSD-2026-0442",
+    "modified": "2026-09-04T00:00:00Z",
+    "published": "2026-09-04T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://community.openvpn.net/Security%20Announcements/CVE-2026-84732/source"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84732"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-84732"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "OpenVPN: denial of service"
+}

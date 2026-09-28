@@ -2,8 +2,8 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:kernel",
-                "name": "FreeBSD-kernel"
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
             },
             "ranges": [
                 {
@@ -57,28 +57,28 @@
         "discovery": "2026-04-29T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-7270"
+                "CVE-2026-42511"
             ],
             "freebsdsa": [
-                "SA-26:13.exec"
+                "SA-26:12.dhclient"
             ]
         },
-        "vid": "f528ea29-4434-11f1-bb07-bc241121aa0a"
+        "vid": "9eb2533e-4434-11f1-bb07-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nAn operator precedence bug in the kernel results in a scenario where a\nbuffer overflow causes attacker-controlled data to overwrite adjacent\nexecve(2) argument buffers.\n\n# Impact:\n\nThe bug may be exploitable by an unprivileged user to obtain superuser\nprivileges.\n",
+    "details": "# Problem Description:\n\nThe BOOTP file field is written to the lease file without escaping\nembedded double-quotes, allowing injection of arbitrary dhclient.conf\ndirectives. When the lease file is subsequently re-parsed by dhclient,\ne.g., after a system restart, an attacker-controlled field from the\nlease is passed to dhclient-script(8), which evaluates it.\n\n# Impact:\n\nA rogue DHCP server may be able to execute arbirary code as root on a\nsystem running dhclient.\n",
     "id": "FreeBSD-2026-0172",
     "modified": "2026-04-30T00:00:00Z",
     "published": "2026-04-30T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7270"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42511"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:13.exec.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:12.dhclient.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Local privilege escalation via execve()"
+    "summary": "FreeBSD -- Remote code execution via malicious DHCP options"
 }

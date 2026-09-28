@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "jenkins"
+                "name": "firefox"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.551"
+                            "fixed": "147.0.4,2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "jenkins-lts"
+                "name": "firefox-esr"
             },
             "ranges": [
                 {
@@ -31,7 +31,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.541.2"
+                            "fixed": "140.7.1,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "thunderbird"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "147.0.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,35 +60,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.jenkins.io/security/advisory/2026-02-18/"
+            "https://bugzilla.mozilla.org/show_bug.cgi?id=2014390"
         ],
-        "discovery": "2026-02-18T00:00:00Z",
+        "discovery": "2026-02-16T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-27099",
-                "CVE-2026-27100"
+                "CVE-2026-2447"
             ]
         },
-        "vid": "428e782a-0e92-11f1-a9b1-0cc47ada5f32"
+        "vid": "6a81dc74-0e8b-11f1-b7d1-b42e991fc52e"
     },
-    "details": "Jenkins Security Advisory:\n\n> # Description\n>\n> ##### (High) SECURITY-3669 / CVE-2026-27099\n>\n> Stored XSS vulnerability in node offline cause description\n>\n> ##### (Medium) SECURITY-3658 / CVE-2026-27100\n>\n> Build information disclosure vulnerability through Run Parameter\n",
+    "details": "https://bugzilla.mozilla.org/show_bug.cgi?id=2014390 reports:\n\n> Heap buffer overflow in libvpx.\n",
     "id": "FreeBSD-2026-0047",
     "modified": "2026-02-20T00:00:00Z",
     "published": "2026-02-20T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.jenkins.io/security/advisory/2026-02-18/"
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2014390"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27099"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27100"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2447"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "jenkins -- multiple vulnerabilities"
+    "summary": "Mozilla -- Heap buffer overflow"
 }

@@ -1,0 +1,47 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "anki"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/ankitects/anki/security/advisories/GHSA-jw6j-j4mf-8jgm",
+            "https://github.com/ankitects/anki/security/advisories/GHSA-932p-crhj-v43p"
+        ],
+        "discovery": "2026-09-14T00:00:00Z",
+        "vid": "ce54d883-b060-11f1-b187-901b0edee044"
+    },
+    "details": "Abdo Hasani reports:\n\n> Imported note HTML may execute inside an embedded image-occlusion\n> document that retains the editor profile\\'s desktop API credentials.\n> This could cross the boundary between untrusted note content and\n> privileged desktop operations.\n\n> An improper path validation vulnerability allows an attacker to\n> execute arbitrary code on a victim\\'s system when they interact with a\n> malicious flashcard deck. This vulnerability is triggered when a user\n> right-clicks an image within the editor and selects the \\\"Open image\\\"\n> action; if an embedded \\\"\\<img\\>\\\" tag contains a path with a\n> dangerous extension in its src attribute, the operating system may\n> execute the file.\n",
+    "id": "FreeBSD-2026-0456",
+    "modified": "2026-09-14T00:00:00Z",
+    "published": "2026-09-14T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/ankitects/anki/security/advisories/GHSA-jw6j-j4mf-8jgm"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://github.com/ankitects/anki/security/advisories/GHSA-932p-crhj-v43p"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "anki -- multiple vulnerabilities"
+}

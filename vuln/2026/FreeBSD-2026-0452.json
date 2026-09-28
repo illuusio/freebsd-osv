@@ -1,0 +1,105 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "strongswan"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "6.1.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.strongswan.org/blog/2026/09/07/strongswan-6.1.0-released.html"
+        ],
+        "discovery": "2026-09-07T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-78123",
+                "CVE-2026-78124",
+                "CVE-2026-78126",
+                "CVE-2026-78127",
+                "CVE-2026-78129",
+                "CVE-2026-78130",
+                "CVE-2026-78131",
+                "CVE-2026-78132",
+                "CVE-2026-78133",
+                "CVE-2026-78134",
+                "CVE-2026-78135"
+            ]
+        },
+        "vid": "e627950e-ad4f-11f1-8656-000af7b98cf6"
+    },
+    "details": "The strongSwan project reports:\n\n> strongSwan 6.1.0 fixes eleven vulnerabilities:\n>\n> - CVE-2026-78123: A flaw in the openssl plugin in the processing of\n>   PKCS#7 containers can result in a crash. Affects 5.0.2 and newer.\n> - CVE-2026-78124: A flaw in the openssl plugin in the enumeration of\n>   certificates in PKCS#7 containers can result in memory leaks.\n>   Affects 5.0.2 and newer.\n> - CVE-2026-78126: A flaw in the eap-aka plugin in the processing of an\n>   unexpected AKA-Synchronization-Failure can result in a crash.\n>   Affects 4.1.10 and newer.\n> - CVE-2026-78127: A flaw in libcharon in the logging of IKE messages\n>   can result in a denial of service via memory exhaustion. Affects\n>   4.1.2 and newer.\n> - CVE-2026-78129: A flaw in libstrongswan in the processing of\n>   encrypted PKCS#7 containers can result in a denial of service.\n>   Affects 4.6.2 and newer.\n> - CVE-2026-78130: A flaw in the x509 plugin in the verification of\n>   X.509 attribute certificates can lead to a denial of service.\n>   Affects 4.2.0 and newer.\n> - CVE-2026-78131: A flaw in the x509 plugin in the parsing of\n>   identities in X.509 attribute certificates can lead to a denial of\n>   service via memory exhaustion. Affects 4.2.0 and newer.\n> - CVE-2026-78132: A flaw in the x509 plugin in the parsing of the\n>   ietfAttrSyntax ASN.1 type in X.509 attribute certificates can lead\n>   to a denial of service. Affects 5.1.3 and newer.\n> - CVE-2026-78133: A flaw in libcharon in the handling of IKEv2\n>   rekeying collisions can result in a use-after-free and potentially\n>   remote code execution. Affects 6.0.0 and newer.\n> - CVE-2026-78134: A flaw in the eap-peap and eap-ttls plugins in the\n>   propagation of authentication details from inner EAP methods can\n>   result in incorrect identity binding and potential authorization\n>   bypass. Affects 4.5.0 and newer.\n> - CVE-2026-78135: A flaw in libcharon in the handling of\n>   CREATE_CHILD_SA requests on unestablished IKE SAs can result in the\n>   creation of a usable Child SA before authentication completes.\n>   Affects 5.9.7 and newer.\n",
+    "id": "FreeBSD-2026-0452",
+    "modified": "2026-09-10T00:00:00Z",
+    "published": "2026-09-10T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.strongswan.org/blog/2026/09/07/strongswan-6.1.0-released.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78123"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78124"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78126"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78127"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78129"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78130"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78131"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78132"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78133"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78134"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78135"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/strongswan/strongswan/releases/tag/6.1.0"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "strongSwan -- multiple vulnerabilities"
+}

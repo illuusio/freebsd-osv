@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "powerdns-recursor"
+                "name": "png"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "5.3.5"
+                            "fixed": "1.6.55"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,57 +22,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://blog.powerdns.com/2025/12/08/powerdns-security-advisories-2025-07-and-2025-08"
+            "https://github.com/pnggroup/libpng/security/advisories/GHSA-g8hp-mq4h-rqm3"
         ],
-        "discovery": "2025-12-08T00:00:00Z",
+        "discovery": "2026-02-10T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2025-59029",
-                "CVE-2025-59030",
-                "CVE-2026-24027",
-                "CVE-2026-0398"
+                "CVE-2026-25646"
             ]
         },
-        "vid": "67793feb-0b5b-11f1-a1c0-0050569f0b83"
+        "vid": "f9cb72e4-0b52-11f1-8e75-b42e991fc52e"
     },
-    "details": "PowerDNS Team reports:\n\n> 2025-07: Internal logic flaw in cache management can lead to a denial\n> of service in Recursor\n>\n> 2025-08: Insufficient validation of incoming notifies over TCP can\n> lead to a denial of service in Recursor\n>\n> 2026-01: Crafted zones can lead to increased resource usage in\n> Recursor\n>\n> 2026-01: This problem can be triggered by publishing and querying a\n> crafted zone that causes large memory usage.\n",
+    "details": "https://github.com/pnggroup/libpng/security/advisories/GHSA-g8hp-mq4h-rqm3\nreports:\n\n> LIBPNG is a reference library for use in applications that read,\n> create, and manipulate PNG (Portable Network Graphics) raster image\n> files. Prior to 1.6.55, an out-of-bounds read vulnerability exists in\n> the png_set_quantize() API function. When the function is called with\n> no histogram and the number of colors in the palette is more than\n> twice the maximum supported by the user\\'s display, certain palettes\n> will cause the function to enter into an infinite loop that reads past\n> the end of an internal heap-allocated buffer. The images that trigger\n> this vulnerability are valid per the PNG specification. This\n> vulnerability is fixed in 1.6.55.\n",
     "id": "FreeBSD-2026-0044",
     "modified": "2026-02-16T00:00:00Z",
     "published": "2026-02-16T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://blog.powerdns.com/2025/12/08/powerdns-security-advisories-2025-07-and-2025-08"
+            "url": "https://github.com/pnggroup/libpng/security/advisories/GHSA-g8hp-mq4h-rqm3"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-59029"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-59030"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-24027"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-0398"
-        },
-        {
-            "type": "WEB",
-            "url": "https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2025-07.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://doc.powerdns.com/recursor/security-advisories/powerdns-advisory-2025-08.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://docs.powerdns.com/recursor/security-advisories/powerdns-advisory-2026-01.html"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-25646"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "powerdns-recursor -- Denial of Service"
+    "summary": "png -- CWE-122: Heap-based Buffer Overflow"
 }

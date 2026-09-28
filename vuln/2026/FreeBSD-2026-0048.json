@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "openexr"
+                "name": "jenkins"
             },
             "ranges": [
                 {
@@ -12,18 +12,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.3.7"
+                            "fixed": "2.551"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jenkins-lts"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "3.4.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "3.4.5"
+                            "fixed": "2.541.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -33,25 +41,35 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.5"
+            "https://www.jenkins.io/security/advisory/2026-02-18/"
         ],
-        "discovery": "2026-02-16T00:00:00Z",
-        "vid": "716d25a6-0fdc-11f1-bfdf-ff9355aecb00"
+        "discovery": "2026-02-18T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-27099",
+                "CVE-2026-27100"
+            ]
+        },
+        "vid": "428e782a-0e92-11f1-a9b1-0cc47ada5f32"
     },
-    "details": "Cary Phillips reports:\n\n> \\[openexr\\] v3.4.5 \\[\\...\\] fixes an incorrect size check in\n> istream_nonparallel_read that could lead to a buffer overflow on\n> invalid input data.\n",
+    "details": "Jenkins Security Advisory:\n\n> # Description\n>\n> ##### (High) SECURITY-3669 / CVE-2026-27099\n>\n> Stored XSS vulnerability in node offline cause description\n>\n> ##### (Medium) SECURITY-3658 / CVE-2026-27100\n>\n> Build information disclosure vulnerability through Run Parameter\n",
     "id": "FreeBSD-2026-0048",
-    "modified": "2026-02-22T00:00:00Z",
-    "published": "2026-02-22T00:00:00Z",
+    "modified": "2026-02-20T00:00:00Z",
+    "published": "2026-02-20T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.5"
+            "url": "https://www.jenkins.io/security/advisory/2026-02-18/"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/AcademySoftwareFoundation/openexr/commit/6bb2ddf1068573d073edf81270a015b38cc05cef"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27099"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-27100"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "openexr -- buffer overflow in istream_nonparallel_read on invalid input data"
+    "summary": "jenkins -- multiple vulnerabilities"
 }

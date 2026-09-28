@@ -46,28 +46,28 @@
         "discovery": "2026-06-09T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-49412"
+                "CVE-2026-45259"
             ],
             "freebsdsa": [
-                "SA-26:28.ip6_multicast"
+                "SA-26:28.capsicum"
             ]
         },
-        "vid": "c5b7ac13-6473-11f1-958d-bc241121aa0a"
+        "vid": "94f20492-6473-11f1-958d-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nThe kernel handler for IPV6_MSFILTER dropped a serializing lock in order\nto copy the source-filter list from userspace, then reacquired the lock.\nDuring this window another thread could free the multicast filter\nstructure, leaving the handler with a stale pointer to freed memory.\n\n# Impact:\n\nAn unprivileged local user can exploit this use-after-free to escalate\nprivileges.\n",
+    "details": "# Problem Description:\n\nsigqueue(2) was marked as permitted in capability mode with the\nintroduction of Capsicum in 2011, but the implementation of\nkern_sigqueue did not include a capability mode check restricting signal\ndelivery to the calling process\\'s own PID.\n\n# Impact:\n\nA process in capability mode can use sigqueue(2) to send signals to any\nprocess it could signal following standard Unix permissions, bypassing\nthe Capsicum sandbox restriction. A compromised sandboxed process could\ninterfere with other processes, for example by sending SIGKILL or\nSIGSTOP. This could be any process running as the same user, or any\nprocess, for a superuser sandboxed process.\n",
     "id": "FreeBSD-2026-0252",
     "modified": "2026-06-10T00:00:00Z",
     "published": "2026-06-10T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49412"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-45259"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:28.ip6_multicast.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:28.capsicum.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Use-after-free bug in the IPV6_MSFILTER socket option handler"
+    "summary": "FreeBSD -- sigqueue(2) missing capability mode restriction"
 }

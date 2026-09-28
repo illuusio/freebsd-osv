@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "vaultwarden"
+                "name": "openexr"
             },
             "ranges": [
                 {
@@ -12,7 +12,18 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.35.4"
+                            "fixed": "3.3.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "3.4.0"
+                        },
+                        {
+                            "fixed": "3.4.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,21 +33,25 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/dani-garcia/vaultwarden/releases/tag/1.35.4"
+            "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.5"
         ],
-        "discovery": "2026-02-23T00:00:00Z",
-        "vid": "4594110e-1151-11f1-b3f8-8447094a420f"
+        "discovery": "2026-02-16T00:00:00Z",
+        "vid": "716d25a6-0fdc-11f1-bfdf-ff9355aecb00"
     },
-    "details": "The Vaultwarden project reports:\n\n> - GHSA-w9f8-m526-h7fh. This vulnerability would allow an attacker to\n>   access a cipher from a different user (fully encrypted) if they\n>   already know its internal UUID.\n> - GHSA-h4hq-rgvh-wh27. This vulnerability allows an attacker with\n>   manager-level access within an organization to modify collections\n>   they can access, even if they do not have management permissions for\n>   them.\n> - GHSA-r32r-j5jq-3w4m. This vulnerability allows an attacker with\n>   manager-level access within an organization to modify collections\n>   they are not assigned.\n",
+    "details": "Cary Phillips reports:\n\n> \\[openexr\\] v3.4.5 \\[\\...\\] fixes an incorrect size check in\n> istream_nonparallel_read that could lead to a buffer overflow on\n> invalid input data.\n",
     "id": "FreeBSD-2026-0049",
-    "modified": "2026-02-24T00:00:00Z",
-    "published": "2026-02-24T00:00:00Z",
+    "modified": "2026-02-22T00:00:00Z",
+    "published": "2026-02-22T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.35.4"
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.5"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/commit/6bb2ddf1068573d073edf81270a015b38cc05cef"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Vaultwarden -- Multiple vulnerabilities"
+    "summary": "openexr -- buffer overflow in istream_nonparallel_read on invalid input data"
 }

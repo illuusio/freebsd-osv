@@ -1,0 +1,199 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ce"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.3.0"
+                        },
+                        {
+                            "fixed": "19.3.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.2.0"
+                        },
+                        {
+                            "fixed": "19.2.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "10.1.0"
+                        },
+                        {
+                            "fixed": "19.1.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.3.0"
+                        },
+                        {
+                            "fixed": "19.3.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.2.0"
+                        },
+                        {
+                            "fixed": "19.2.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "10.1.0"
+                        },
+                        {
+                            "fixed": "19.1.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/?nav=19.3.2"
+        ],
+        "discovery": "2026-09-10T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-85706",
+                "CVE-2026-87719",
+                "CVE-2026-88765",
+                "CVE-2026-79708",
+                "CVE-2026-78252",
+                "CVE-2026-13210",
+                "CVE-2025-14871",
+                "CVE-2026-1168",
+                "CVE-2024-11222",
+                "CVE-2026-12910",
+                "CVE-2026-82837",
+                "CVE-2026-19619",
+                "CVE-2026-86341",
+                "CVE-2026-86340",
+                "CVE-2026-7514",
+                "CVE-2026-8030",
+                "CVE-2026-16794",
+                "CVE-2026-3855"
+            ]
+        },
+        "vid": "7fd351d1-af26-11f1-a883-2cf05da270f3"
+    },
+    "details": "Gitlab reports:\n\n> Path Traversal issue in repository commits API impacts GitLab CE/EE\n>\n> Insecure Deserialization issue in GraphQL subscription serializer\n> impacts GitLab EE\n>\n> Buffer Overflow issue in Unicode conversion wrapper impacts GitLab EE\n>\n> Scheduled Pipeline Execution Policy test allows Developers to access\n> protected CI/CD variables\n>\n> Cross-site Scripting issue in Markdown JSON table renderer impacts\n> GitLab CE/EE\n>\n> Incorrect Authorization issue in CI/CD environment variable scope\n> matcher impacts GitLab CE/EE\n>\n> Denial of Service issue in GraphQL complexity limiter impacts GitLab\n> CE/EE\n>\n> Denial of Service issue in GraphQL complexity limiter impacts GitLab\n> CE/EE\n>\n> Race Condition issue in Merge Request Pipelines impacts GitLab CE/EE\n>\n> Improper Authentication issue in SAML SSO sign-in restriction\n> enforcement impacts GitLab CE/EE\n>\n> Insufficiently Protected Credentials issue in Workhorse senddata\n> emitters impacts GitLab CE/EE\n>\n> Cross-site Scripting issue in Content Editor impacts GitLab CE/EE\n>\n> Access Control Implementation issue in protected environment approval\n> rules impacts GitLab EE\n>\n> Authorization Bypass issue in protected environment approval rules\n> impacts GitLab EE\n>\n> Missing Authorization issue in Generic Package Registry impacts GitLab\n> CE/EE\n>\n> Improper Input Validation issue in Namespace Transfer impacts GitLab\n> CE/EE\n>\n> Missing Authorization issue in Compliance Framework management impacts\n> GitLab EE\n>\n> Improper Input Validation issue in Terraform State API impacts GitLab\n> CE/EE\n",
+    "id": "FreeBSD-2026-0450",
+    "modified": "2026-09-13T00:00:00Z",
+    "published": "2026-09-13T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-3-2-released/?nav=19.3.2"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-85706"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-87719"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-88765"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79708"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78252"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13210"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-14871"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1168"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-11222"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12910"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-82837"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19619"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-86341"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-86340"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7514"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-8030"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16794"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3855"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Gitlab -- vulnerabilities"
+}

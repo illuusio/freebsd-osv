@@ -9,17 +9,6 @@
                 {
                     "events": [
                         {
-                            "introduced": "15.0"
-                        },
-                        {
-                            "fixed": "15.0_4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
                             "introduced": "14.3"
                         },
                         {
@@ -46,28 +35,28 @@
         "discovery": "2026-02-24T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-3038"
+                "CVE-2025-15576"
             ],
             "freebsdsa": [
-                "SA-26:05.route"
+                "SA-26:04.jail"
             ]
         },
-        "vid": "fbc47390-11e9-11f1-8148-bc241121aa0a"
+        "vid": "a88f5b2d-11e9-11f1-8148-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nThe rtsock_msg_buffer() function serializes routing information into a\nbuffer. As a part of this, it copies sockaddr structures into a\nsockaddr_storage structure on the stack. It assumes that the source\nsockaddr length field had already been validated, but this is not\nnecessarily the case, and it\\'s possible for a malicious userspace\nprogram to craft a request which triggers a 127-byte overflow.\n\nIn practice, this overflow immediately overwrites the canary for the\nrtsock_msg_buffer() stack frame, resulting in a panic once the function\nreturns.\n\n# Impact:\n\nThe bug allows an unprivileged user to crash the kernel by triggering a\nstack buffer overflow in rtsock_msg_buffer(). In particular, the\noverflow will corrupt a stack canary value that is verified when the\nfunction returns; this mitigates the impact of the stack overflow by\ntriggering a kernel panic.\n\nOther kernel bugs may exist which allow userspace to find the canary\nvalue and thus defeat the mitigation, at which point local privilege\nescalation may be possible.\n",
+    "details": "# Problem Description:\n\nIf two sibling jails are restricted to separate filesystem trees, which\nis to say that neither of the two jail root directories is an ancestor\nof the other, jailed processes may nonetheless be able to access a\nshared directory via a nullfs mount, if the administrator has configured\none.\n\nIn this case, cooperating processes in the two jails may establish a\nconnection using a unix domain socket and exchange directory descriptors\nwith each other.\n\nWhen performing a filesystem name lookup, at each step of the lookup,\nthe kernel checks whether the lookup would descend below the jail root\nof the current process. If the jail root directory is not encountered,\nthe lookup continues.\n\n# Impact:\n\nIn a configuration where processes in two different jails are able to\nexchange file descriptors using a unix domain socket, it is possible for\na jailed process to receive a directory for a descriptor that is below\nthat process\\' jail root. This enables full filesystem access for a\njailed process, breaking the chroot.\n\nNote that the system administrator is still responsible for ensuring\nthat an unprivileged user on the jail host is not able to pass directory\ndescriptors to a jailed process, even in a patched kernel.\n",
     "id": "FreeBSD-2026-0051",
     "modified": "2026-02-25T00:00:00Z",
     "published": "2026-02-25T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3038"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-15576"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:05.route.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:04.jail.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Local DoS and possible privilege escalation via routing sockets"
+    "summary": "FreeBSD -- Jail chroot escape via fd exchange with a different jail"
 }

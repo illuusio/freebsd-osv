@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "firefox"
+                "name": "go-ethereum"
             },
             "ranges": [
                 {
@@ -12,64 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "149.0.2,2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "firefox-esr"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "140.9.1,2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "thunderbird"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "149.0.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "thunderbird-esr"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "140.9.1"
+                            "fixed": "1.17.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,30 +22,52 @@
     ],
     "database_specific": {
         "cite": [
-            "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2021894%2C2022225%2C2022252%2C2022294%2C2023007%2C2023130%2C2023191%2C2023364%2C2023829%2C2024074%2C2024417%2C2024433%2C2024436%2C2024437%2C2024453%2C2024461%2C2024462%2C2024472%2C2024474%2C2024477%2C2025364%2C2025401%2C2025402%2C2025472%2C2026287%2C2026299%2C2026305%2C2026426"
+            "https://github.com/ethereum/go-ethereum/security/advisories"
         ],
-        "discovery": "2026-04-07T00:00:00Z",
+        "discovery": "2026-02-17T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-5731"
+                "CVE-2026-26313",
+                "CVE-2026-26314",
+                "CVE-2026-26315"
             ]
         },
-        "vid": "6ae8f9e5-3a26-11f1-b60b-b42e991fc52e"
+        "vid": "9c8c00ce-3642-11f1-bd03-3c7c3fba4204"
     },
-    "details": "Mozilla reports:\n\n> Memory safety bugs present in Firefox ESR, Firefox ESR , Thunderbird\n> ESR, and Thunderbird. Some of these bugs showed evidence of memory\n> corruption and we presume that with enough effort some of these could\n> have been exploited to run arbitrary code.\n",
+    "details": "https://github.com/ethereum/go-ethereum/security/advisories reports:\n\n> - DoS via malicious p2p message (CVE-2026-26313)\n> - DoS via malicious p2p message (CVE-2026-26314)\n> - Improper ECIES Public Key Validation in RLPx Handshake\n>   (CVE-2026-26315)\n",
     "id": "FreeBSD-2026-0112",
-    "modified": "2026-04-17T00:00:00Z",
-    "published": "2026-04-17T00:00:00Z",
+    "modified": "2026-04-12T00:00:00Z",
+    "published": "2026-04-12T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://bugzilla.mozilla.org/buglist.cgi?bug_id=2021894%2C2022225%2C2022252%2C2022294%2C2023007%2C2023130%2C2023191%2C2023364%2C2023829%2C2024074%2C2024417%2C2024433%2C2024436%2C2024437%2C2024453%2C2024461%2C2024462%2C2024472%2C2024474%2C2024477%2C2025364%2C2025401%2C2025402%2C2025472%2C2026287%2C2026299%2C2026305%2C2026426"
+            "url": "https://github.com/ethereum/go-ethereum/security/advisories"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5731"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-26313"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/ethereum/go-ethereum/security/advisories/GHSA-689v-6xwf-5jf3"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-26314"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/ethereum/go-ethereum/security/advisories/GHSA-2gjw-fg97-vg3r"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-26315"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/ethereum/go-ethereum/security/advisories/GHSA-m6j8-rg6r-7mv8"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Mozilla -- Memory safety bugs"
+    "summary": "go-ethereum -- vulnerabilities"
 }

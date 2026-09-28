@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "php82-composer"
+                "name": "xwayland"
             },
             "ranges": [
                 {
@@ -12,64 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.9.6"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "php83-composer"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "2.9.6"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "php84-composer"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "2.9.6"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "php85-composer"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "2.9.6"
+                            "fixed": "24.1.10,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,35 +22,50 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/composer/composer/releases/tag/2.9.6"
+            "https://lists.x.org/archives/xorg-announce/2026-April/003677.html"
         ],
         "discovery": "2026-04-14T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-40261",
-                "CVE-2026-40176"
+                "CVE-2026-33999",
+                "CVE-2026-34000",
+                "CVE-2026-34001",
+                "CVE-2026-34002",
+                "CVE-2026-34003"
             ]
         },
-        "vid": "7a7a17b2-381c-11f1-a663-10ffe07f9334"
+        "vid": "099423d1-3815-11f1-a284-589cfc10a551"
     },
-    "details": "Composer project reports:\n\n> Fixed command injection via malicious Perforce reference\n> (GHSA-gqw4-4w2p-838q / CVE-2026-40261)\n>\n> Fixed command injection via malicious Perforce repository definition\n> (GHSA-wg36-wvj6-r67p / CVE-2026-40176)\n",
+    "details": "X.Org project reports:\n\n> Multiple issues have been found in the X server and Xwayland\n> implementations published by X.Org for which we are releasing security\n> fixes for in xorg-server-21.1.22 and xwayland-24.1.10.\n",
     "id": "FreeBSD-2026-0109",
     "modified": "2026-04-14T00:00:00Z",
     "published": "2026-04-14T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/composer/composer/releases/tag/2.9.6"
+            "url": "https://lists.x.org/archives/xorg-announce/2026-April/003677.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40261"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-33999"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-40176"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34000"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34001"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34002"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-34003"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "PHP Composer -- Multiple vulnerabilities"
+    "summary": "xwayland -- Multiple vulnerabilities"
 }

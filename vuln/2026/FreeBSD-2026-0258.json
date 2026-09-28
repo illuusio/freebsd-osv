@@ -2,8 +2,8 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "FreeBSD"
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
             },
             "ranges": [
                 {
@@ -46,28 +46,28 @@
         "discovery": "2026-06-09T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-10846"
+                "CVE-2026-49416"
             ],
             "freebsdsa": [
-                "SA-26:36.ldns"
+                "SA-26:34.vt"
             ]
         },
-        "vid": "fc0c7763-6477-11f1-958d-bc241121aa0a"
+        "vid": "71036b90-6476-11f1-958d-bc241121aa0a"
     },
-    "details": "# Problem Description:\n\nWhen used as a stub resolver over UDP, ldns failed to verify that a\nreceived response belonged to the outstanding query. It did not check\nthat the response source address and port matched the query destination,\nthat the transaction ID matched, or that the question section of the\nresponse matched that of the query.\n\n# Impact:\n\nWithout these checks, an off-path attacker who cannot observe the query\ncan forge UDP responses that ldns will accept as genuine. By injecting\nspoofed replies, the attacker can return arbitrary DNS data to any\nprogram that uses ldns for stub resolving, including drill(1).\n",
+    "details": "# Problem Description:\n\nThe CONS_HISTORY ioctl handler did not adequately validate the requested\nhistory size. A large value caused an integer overflow in the buffer\nsize calculation, resulting in a heap allocation smaller than expected.\nSubsequent initialization of the buffer wrote beyond the end of the\nallocation.\n\n# Impact:\n\nAn unprivileged local user with access to a vt(4) device can trigger an\nout-of-bounds write in the kernel, potentially escalating privileges.\n",
     "id": "FreeBSD-2026-0258",
     "modified": "2026-06-10T00:00:00Z",
     "published": "2026-06-10T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-10846"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-49416"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:36.ldns.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:34.vt.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Insufficient response validation in the ldns stub resolver"
+    "summary": "FreeBSD -- Integer overflow in vt(4) CONS_HISTORY ioctl"
 }

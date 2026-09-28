@@ -10,9 +10,6 @@
                     "events": [
                         {
                             "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.10.20_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -29,9 +26,6 @@
                     "events": [
                         {
                             "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.11.15_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -48,9 +42,6 @@
                     "events": [
                         {
                             "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.12.13_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -67,9 +58,6 @@
                     "events": [
                         {
                             "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.13.12_3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -86,9 +74,6 @@
                     "events": [
                         {
                             "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.13.12_3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -105,9 +90,41 @@
                     "events": [
                         {
                             "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python314t"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python315"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "3.14.4"
+                            "fixed": "3.15.0.a6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -117,30 +134,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/python/cpython/pull/143931"
+            "https://github.com/python/cpython/pull/143924"
         ],
-        "discovery": "2026-03-20T00:00:00Z",
+        "discovery": "2026-01-20T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-4519"
+                "CVE-2025-15367"
             ]
         },
-        "vid": "9fdad262-2e0f-11f1-88c7-00a098b42aeb"
+        "vid": "6d3488ae-2e0f-11f1-88c7-00a098b42aeb"
     },
-    "details": "https://github.com/python/cpython/pull/143931 reports:\n\n> The webbrowser.open() API would accept leading dashes in the URL which\n> could be handled as command line options for certain web browsers. New\n> behavior rejects leading dashes. Users are recommended to sanitize\n> URLs prior to passing to webbrowser.open().\n",
+    "details": "Python Software Foundation Security Developer reports:\n\n> The poplib module, when passed a user-controlled command, can have\n> additional commands injected using newlines. Mitigation rejects\n> commands containing control characters.\n",
     "id": "FreeBSD-2026-0087",
-    "modified": "2026-04-04T00:00:00Z",
+    "modified": "2026-08-14T00:00:00Z",
     "published": "2026-04-01T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/python/cpython/pull/143931"
+            "url": "https://github.com/python/cpython/pull/143924"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4519"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-15367"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Python -- The webbrowser.open() API allows leading dashes"
+    "summary": "Python -- poplib module, when passed a user-controlled command, can have additional commands injected using newlines"
 }

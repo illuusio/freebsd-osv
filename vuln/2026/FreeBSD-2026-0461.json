@@ -1,0 +1,100 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "389-ds-base"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.2.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/389ds/389-ds-base/releases/tag/389-ds-base-3.2.3"
+        ],
+        "discovery": "2026-09-07T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-11770",
+                "CVE-2026-18355",
+                "CVE-2026-18453",
+                "CVE-2026-18922",
+                "CVE-2026-19843",
+                "CVE-2026-76560"
+            ]
+        },
+        "vid": "3f5c81ae-b227-11f1-a655-3497f65b111b"
+    },
+    "details": "The 389 Directory Server project reports:\n\n> CVE-2026-11770: the replication extended operations did not verify\n> that the bind DN is accepted by the replica, and the CleanRUV status\n> filters were open to LDAP injection.\n>\n> CVE-2026-18355: a missing minimum length check in\n> sasl_io_start_packet() lets an authenticated SASL user trigger an\n> unsigned integer underflow, causing heap corruption and a crash of the\n> server.\n>\n> CVE-2026-18453: op_shared_search() does not check for a NULL backend\n> pointer when reusing a paged results slot, so an unauthenticated\n> client can crash ns-slapd with two search requests on one connection.\n> Paged results and anonymous access are enabled by default.\n>\n> CVE-2026-18922: a failed one-shot SASL exchange leaves stale identity\n> data in the auxprop context, so a later successful bind on the same\n> connection can inherit it and escalate to Directory Manager.\n>\n> CVE-2026-19843: the cockpit LDAP editor passed the entry DN into a\n> shell command line, so a user who can create or rename an entry can\n> have the host run commands as root when an administrator opens that\n> entry.\n>\n> CVE-2026-76560: anonymous clients could satisfy SELFDN, USERDNATTR and\n> LDAPURL ACL bind rules, granting unauthorized access.\n",
+    "id": "FreeBSD-2026-0461",
+    "modified": "2026-09-17T00:00:00Z",
+    "published": "2026-09-17T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/389ds/389-ds-base/releases/tag/389-ds-base-3.2.3"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-11770"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18355"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18453"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18922"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19843"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76560"
+        },
+        {
+            "type": "WEB",
+            "url": "https://access.redhat.com/security/cve/CVE-2026-11770"
+        },
+        {
+            "type": "WEB",
+            "url": "https://access.redhat.com/security/cve/CVE-2026-18355"
+        },
+        {
+            "type": "WEB",
+            "url": "https://access.redhat.com/security/cve/CVE-2026-18453"
+        },
+        {
+            "type": "WEB",
+            "url": "https://access.redhat.com/security/cve/CVE-2026-18922"
+        },
+        {
+            "type": "WEB",
+            "url": "https://access.redhat.com/security/cve/CVE-2026-19843"
+        },
+        {
+            "type": "WEB",
+            "url": "https://access.redhat.com/security/cve/CVE-2026-76560"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "389-ds-base -- multiple vulnerabilities"
+}

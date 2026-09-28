@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "fetchmail"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "5.0.8"
+                        },
+                        {
+                            "fixed": "6.6.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.fetchmail.info/fetchmail-SA-2026-01.txt"
+        ],
+        "discovery": "2026-06-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-94184"
+            ]
+        },
+        "vid": "15e880b4-b9ed-11f1-b17e-3c7c3fba4204"
+    },
+    "details": "Fetchmail reports:\n\n> \\[CVE-2026-94184\\]: Fetchmail\\'s NTLM authentication client can in\n> some cases be susceptible to a remote code execution from a malicious\n> server when fetchmail is configured with the NTLM feature enabled,\n> depending on build details. fetchmail 6.6.7 release candidates, 6.6.7\n> and subsequent releases are unaffected.\n",
+    "id": "FreeBSD-2026-0480",
+    "modified": "2026-09-26T00:00:00Z",
+    "published": "2026-09-26T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.fetchmail.info/fetchmail-SA-2026-01.txt"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94184"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-94184"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Fetchmail -- NTLM potential remote code execution"
+}

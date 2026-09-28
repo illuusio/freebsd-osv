@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "libsodium"
+                "name": "mailpit"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.0.21"
+                            "fixed": "1.28.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +22,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://00f.net/2025/12/30/libsodium-vulnerability/"
+            "https://github.com/axllent/mailpit/security/advisories/GHSA-8v65-47jx-7mfr"
         ],
-        "discovery": "2025-12-30T00:00:00Z",
+        "discovery": "2026-01-06T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2025-69277"
+                "CVE-2026-21859"
             ]
         },
-        "vid": "583b63f5-ebae-11f0-939f-47e3830276dd"
+        "vid": "df33c83b-eb4f-11f0-a46f-0897988a1c07"
     },
-    "details": "Libsodium maintainer reports:\n\n> The function crypto_core_ed25519_is_valid_point(), a low-level\n> function used to check if a given elliptic curve point is valid, was\n> supposed to reject points that aren\\'t in the main cryptographic\n> group, but some points were slipping through.\n",
+    "details": "Mailpit author reports:\n\n> A Server-Side Request Forgery (SSRF) vulnerability exists in\n> Mailpit\\'s /proxy endpoint that allows attackers to make requests to\n> internal network resources.\n>\n> The /proxy endpoint allows requests to internal network resources.\n> While it validates http:// and https:// schemes, it does not block\n> internal IP addresses, allowing attackers to access internal services\n> and APIs.\n",
     "id": "FreeBSD-2026-0004",
-    "modified": "2026-01-07T00:00:00Z",
-    "published": "2026-01-07T00:00:00Z",
+    "modified": "2026-01-06T00:00:00Z",
+    "published": "2026-01-06T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://00f.net/2025/12/30/libsodium-vulnerability/"
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-8v65-47jx-7mfr"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-69277"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-21859"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "security/libsodium -- crypto_core_ed25519_is_valid_point mishandles checks for whether an elliptic curve point is valid"
+    "summary": "mail/mailpit -- Server-Side Request Forgery"
 }

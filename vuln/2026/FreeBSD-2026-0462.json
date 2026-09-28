@@ -1,0 +1,61 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "vinyl09"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.0.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "varnish7"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "6.3.0"
+                        },
+                        {
+                            "fixed": "8.0.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://vinyl-cache.org/security/VSV00020.html"
+        ],
+        "discovery": "2026-09-16T00:00:00Z",
+        "vid": "a2fda5d7-b2fb-11f1-9800-641c67a117d8"
+    },
+    "details": "Vinyl Development Team reports:\n\n> A workspace buffer overflow vulnerability was found in the .upper()\n> and .lower() string type methods of VCL.\n>\n> This can be used as a remote denial of service (DoS) vector to make\n> the child process segfault or assert, and then restart.\n>\n> Effectively exploiting this vulnerability requires prior knowledge\n> about the VCL in use and the ability to craft a request that contains\n> a string that is long enough to fill the remaining workspace at the\n> call site while staying under the different request size limits\n> (http_req_size, http_req_hdr_len, ..etc).\n",
+    "id": "FreeBSD-2026-0462",
+    "modified": "2026-09-18T00:00:00Z",
+    "published": "2026-09-18T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://vinyl-cache.org/security/VSV00020.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Vinyl/Varnish -- VCL string methods workspace overflow"
+}

@@ -1,0 +1,74 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "p5-Image-ExifTool"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "13.54"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "p5-Image-ExifTool-devel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "13.54"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/advisories/GHSA-qjrf-c4wp-pgxx"
+        ],
+        "discovery": "2026-05-01T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-7580"
+            ]
+        },
+        "vid": "bba381b5-b842-11f1-8205-107c614c014e"
+    },
+    "details": "> ExifTool versions up to 13.53 contain a code injection flaw in the\n> Process_mrld function of lib/Image/ExifTool/GM.pm, reached while\n> parsing JPEG, QuickTime, MOV and MP4 files. When exiftool is invoked\n> with the -ee (extract embedded) option on a crafted file, a local\n> attacker with low privileges can inject code that runs in the Perl\n> runtime context of the exiftool process.\n>\n> The issue is fixed in ExifTool 13.54.\n",
+    "id": "FreeBSD-2026-0472",
+    "modified": "2026-09-24T00:00:00Z",
+    "published": "2026-09-24T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/advisories/GHSA-qjrf-c4wp-pgxx"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7580"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-7580"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "p5-Image-ExifTool -- code injection via crafted media"
+}

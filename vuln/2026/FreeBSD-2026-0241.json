@@ -3,16 +3,79 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "weechat"
+                "name": "gitlab-ce"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "19.0.0"
                         },
                         {
-                            "fixed": "4.9.2"
+                            "fixed": "19.0.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.11.0"
+                        },
+                        {
+                            "fixed": "18.11.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.7.0"
+                        },
+                        {
+                            "fixed": "18.10.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.0.0"
+                        },
+                        {
+                            "fixed": "19.0.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.11.0"
+                        },
+                        {
+                            "fixed": "18.11.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.7.0"
+                        },
+                        {
+                            "fixed": "18.10.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,45 +85,60 @@
     ],
     "database_specific": {
         "cite": [
-            "https://weechat.org/download/weechat/4.9.2/"
+            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-0-1-released/"
         ],
-        "discovery": "2026-06-07T00:00:00Z",
-        "vid": "d31259c0-624d-11f1-8607-8447094a420f"
+        "discovery": "2026-05-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-4868",
+                "CVE-2026-1402",
+                "CVE-2026-6713",
+                "CVE-2026-5296",
+                "CVE-2026-2601",
+                "CVE-2026-8716",
+                "CVE-2026-2710"
+            ]
+        },
+        "vid": "9b94eb13-6159-11f1-be36-2cf05da270f3"
     },
-    "details": "The Weechat project reports:\n\n> See links for detail.\n",
+    "details": "Gitlab reports:\n\n> Improper Access Control issue in Duo AI workflow runners impacts\n> GitLab EE\n>\n> Denial of Service issue in Wiki impacts GitLab CE/EE\n>\n> Incorrect Authorization issue in GraphQL WorkItem API impacts GitLab\n> CE/EE\n>\n> Improper Authorization issue in Duo Workflows API impacts GitLab EE\n>\n> Missing Authorization issue in Operations impacts GitLab EE\n>\n> Incorrect Name Resolution issue in Pipelines impacts GitLab CE/EE\n>\n> Incorrect Authorization issue in certain authentication endpoints\n> impacts GitLab CE/EE\n",
     "id": "FreeBSD-2026-0241",
-    "modified": "2026-06-07T00:00:00Z",
-    "published": "2026-06-07T00:00:00Z",
+    "modified": "2026-06-06T00:00:00Z",
+    "published": "2026-06-06T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://weechat.org/download/weechat/4.9.2/"
+            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-0-1-released/"
         },
         {
-            "type": "WEB",
-            "url": "https://weechat.org/doc/weechat/security/#WSA-2026-3"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-4868"
         },
         {
-            "type": "WEB",
-            "url": "https://weechat.org/doc/weechat/security/#WSA-2026-4"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1402"
         },
         {
-            "type": "WEB",
-            "url": "https://weechat.org/doc/weechat/security/#WSA-2026-5"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6713"
         },
         {
-            "type": "WEB",
-            "url": "https://weechat.org/doc/weechat/security/#WSA-2026-6"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5296"
         },
         {
-            "type": "WEB",
-            "url": "https://weechat.org/doc/weechat/security/#WSA-2026-7"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2601"
         },
         {
-            "type": "WEB",
-            "url": "https://weechat.org/doc/weechat/security/#WSA-2026-8"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-8716"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-2710"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Weechat -- Multiple vulnerabilities"
+    "summary": "Gitlab -- vulnerabilities"
 }

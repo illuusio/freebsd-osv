@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-wheel"
+                "name": "chromium"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.46.2"
+                            "fixed": "144.0.7559.96"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-wheel"
+                "name": "ungoogled-chromium"
             },
             "ranges": [
                 {
@@ -31,83 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.46.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py312-wheel"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "0.46.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313-wheel"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "0.46.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313t-wheel"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "0.46.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py314-wheel"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "0.46.2"
+                            "fixed": "144.0.7559.96"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -117,30 +41,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/pypa/wheel/security/advisories/GHSA-8rrh-rw8j-w5fx"
+            "https://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop_20.html"
         ],
-        "discovery": "2026-01-22T00:00:00Z",
+        "discovery": "2026-01-20T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-24049"
+                "CVE-2026-1220"
             ]
         },
-        "vid": "65439aa0-f77d-11f0-9821-b0416f0c4c67"
+        "vid": "f8560c1b-f772-11f0-85c5-a8a1599412c6"
     },
-    "details": "https://github.com/pypa/wheel/security/advisories/GHSA-8rrh-rw8j-w5fx\nreports:\n\n> wheel is a command line tool for manipulating Python wheel files, as\n> defined in PEP 427. In versions 0.46.1 and below, the unpack function\n> is vulnerable to file permission modification through mishandling of\n> file permissions after extraction. The logic blindly trusts the\n> filename from the archive header for the chmod operation, even though\n> the extraction process itself might have sanitized the path. Attackers\n> can craft a malicious wheel file that, when unpacked, changes the\n> permissions of critical system files (e.g., /etc/passwd, SSH keys,\n> config files), allowing for Privilege Escalation or arbitrary code\n> execution by modifying now-writable scripts. This issue has been fixed\n> in version 0.46.2.\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 1 security fix:\n>\n> - \\[473851441\\] High CVE-2026-1220: Race in V8. Reported by\n>   \\@p1nky4745 on 2026-01-07\n",
     "id": "FreeBSD-2026-0019",
     "modified": "2026-01-22T00:00:00Z",
     "published": "2026-01-22T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/pypa/wheel/security/advisories/GHSA-8rrh-rw8j-w5fx"
+            "url": "https://chromereleases.googleblog.com/2026/01/stable-channel-update-for-desktop_20.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-24049"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-1220"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "wheel -- CWE-22: Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')"
+    "summary": "chromium -- multiple security fixes"
 }

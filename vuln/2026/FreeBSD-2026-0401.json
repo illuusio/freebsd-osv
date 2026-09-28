@@ -3,16 +3,79 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "podman"
+                "name": "gitlab-ce"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "5.7.0"
+                            "introduced": "19.2.0"
                         },
                         {
-                            "fixed": "5.8.6"
+                            "fixed": "19.2.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.1.0"
+                        },
+                        {
+                            "fixed": "19.1.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.11.10"
+                        },
+                        {
+                            "fixed": "19.0.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.2.0"
+                        },
+                        {
+                            "fixed": "19.2.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.1.0"
+                        },
+                        {
+                            "fixed": "19.1.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "18.11.10"
+                        },
+                        {
+                            "fixed": "19.0.8"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +85,35 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/podman-container-tools/podman/security/advisories/GHSA-fx76-2j3w-2mx6"
+            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-2-4-released/?nav=19.2.4"
         ],
-        "discovery": "2026-08-13T00:00:00Z",
+        "discovery": "2026-08-17T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-19730"
+                "CVE-2026-19478",
+                "CVE-2026-19650"
             ]
         },
-        "vid": "01c15468-9b7b-11f1-a75c-589cfc10a551"
+        "vid": "3a65fb7e-9ac2-11f1-bdc8-2cf05da270f3"
     },
-    "details": "The Podman developers report:\n\n> When running podman quadlet install \\--replace to replace a Quadlet\n> file, if the original Quadlet is larger than the new Quadlet, the file\n> would not be truncated and content from the original would be\n> preserved.\n",
+    "details": "Gitlab reports:\n\n> Code Injection issue via GraphQL directive impacts GitLab CE/EE\n>\n> Cross-Site Request Forgery issue in GraphQL multiplex query handler\n> impacts GitLab CE/EE\n",
     "id": "FreeBSD-2026-0401",
     "modified": "2026-08-18T00:00:00Z",
     "published": "2026-08-18T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/podman-container-tools/podman/security/advisories/GHSA-fx76-2j3w-2mx6"
+            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-2-4-released/?nav=19.2.4"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19730"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19478"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/podman-container-tools/podman/releases/tag/v5.8.6"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19650"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "podman -- podman quadlet install --replace does not fully replace the old file"
+    "summary": "Gitlab -- Vulnerabilities"
 }

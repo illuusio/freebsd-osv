@@ -1,0 +1,50 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "crowdsec"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.8.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/crowdsecurity/crowdsec/releases/tag/v1.8.0"
+        ],
+        "discovery": "2026-08-31T00:00:00Z",
+        "vid": "6a6ddb1d-ac6b-11f1-982d-3c7c3fba4204"
+    },
+    "details": "The CrowdSec Team reports:\n\n> - [\\[GHSA-g2x2-jgfg-pg7g\\]](https://github.com/crowdsecurity/crowdsec/security/advisories/GHSA-g2x2-jgfg-pg7g):\n>   HTTP acquisition datasource lacks a decompressed body cap and trusts\n>   Content-Length.\n> - [\\[GHSA-rh69-4vqj-9gj8\\]](https://github.com/crowdsecurity/crowdsec/security/advisories/GHSA-rh69-4vqj-9gj8):\n>   Unbounded request-body read in kubernetes-audit acquisition webhook.\n",
+    "id": "FreeBSD-2026-0444",
+    "modified": "2026-09-09T00:00:00Z",
+    "published": "2026-09-09T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/crowdsecurity/crowdsec/releases/tag/v1.8.0"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/crowdsecurity/crowdsec/security/advisories/GHSA-g2x2-jgfg-pg7g"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/crowdsecurity/crowdsec/security/advisories/GHSA-rh69-4vqj-9gj8"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "CrowdSec -- multiple vulnerabilities"
+}
