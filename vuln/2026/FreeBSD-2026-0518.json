@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx-module-cache-purge"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.0.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/nginx-modules/ngx_cache_purge/releases/tag/3.0.4"
+        ],
+        "discovery": "2026-10-11T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-108981"
+            ]
+        },
+        "vid": "f0604004-c87b-11f1-9006-3497f65b111b"
+    },
+    "details": "The ngx_cache_purge developers report:\n\n> Fixed a symlink traversal vulnerability during cache tree traversal.\n> An attacker with the ability to create symbolic links inside the cache\n> directory could potentially cause cache purge operations to delete\n> arbitrary files accessible to the NGINX worker process\n> (CVE-2026-108981).\n",
+    "id": "FreeBSD-2026-0518",
+    "modified": "2026-10-15T00:00:00Z",
+    "published": "2026-10-15T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/nginx-modules/ngx_cache_purge/releases/tag/3.0.4"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-108981"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "nginx-module-cache-purge -- symlink traversal when walking cache trees"
+}

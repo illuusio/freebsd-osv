@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "arti"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.7.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://gitlab.torproject.org/tpo/core/arti/-/blob/arti-v2.7.0/CHANGELOG.md"
+        ],
+        "discovery": "2026-10-01T00:00:00Z",
+        "vid": "a93ff4d6-bdcd-11f1-af91-9cbf0d00daec"
+    },
+    "details": "Torproject reports:\n\n> Various security issues discovered in versions below 2.7.0.\n",
+    "id": "FreeBSD-2026-0489",
+    "modified": "2026-10-01T00:00:00Z",
+    "published": "2026-10-01T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://gitlab.torproject.org/tpo/core/arti/-/blob/arti-v2.7.0/CHANGELOG.md"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "arti -- Various security issues"
+}

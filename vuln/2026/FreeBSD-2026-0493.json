@@ -1,0 +1,172 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "bind920"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.20.29"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://downloads.isc.org/isc/bind9/9.20.29/doc/arm/html/notes.html#security-fixes"
+        ],
+        "discovery": "2026-09-16T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-19668",
+                "CVE-2026-19033",
+                "CVE-2026-77119",
+                "CVE-2026-19941",
+                "CVE-2026-19666",
+                "CVE-2026-19667",
+                "CVE-2026-19662",
+                "CVE-2026-75029",
+                "CVE-2026-77692",
+                "CVE-2026-81736",
+                "CVE-2026-76163",
+                "CVE-2026-78301",
+                "CVE-2026-80274",
+                "CVE-2026-81563"
+            ]
+        },
+        "vid": "45921d77-b346-11f1-952f-589cfc023192"
+    },
+    "details": "ISC team reports:\n\n> CVE-2026-19668: Resource Exhaustion via Excessive DNSSEC Cryptographic\n> Material Matching\n>\n> CVE-2026-19033: Unauthenticated IXFR deltas are applied to the live\n> zone before TSIG verification\n>\n> CVE-2026-77119: NSEC3 insecure-referral proof can use unrelated cached\n> NSEC3 RRsets\n>\n> CVE-2026-19941: checkwildcard() accepts an out-of-zone NSEC as a\n> wildcard-nonexistence proof\n>\n> CVE-2026-19666: Use-after-free in query_addnoqnameproof() via the\n> DNS64 filter64 path\n>\n> CVE-2026-19667: Remote assertion failure via 16-bit length truncation\n> in dns_ncache_add()\n>\n> CVE-2026-19662: qpcache NOQNAME proof use-after-free crashes recursive\n> resolver\n>\n> CVE-2026-75029: Message parser retains every identical singleton\n> RDATA, enabling wire-to-work amplification\n>\n> CVE-2026-77692: Unauthenticated remote crash of named via a single DoH\n> SIG(0) request\n>\n> CVE-2026-81736: Remote CPU denial of service through cached SVCB/HTTPS\n> AliasMode trees\n>\n> CVE-2026-76163: named aborts on a TKEY query when the user\n> configuration has no global options statement\n>\n> CVE-2026-78301: Out-of-zone database nodes can become authoritative\n> zone cuts\n>\n> CVE-2026-80274: Validating resolver can abort while caching a\n> mismatched NOQNAME proof\n>\n> CVE-2026-81563: SVCB AliasMode additional-data error leaks qpcache\n> references\n",
+    "id": "FreeBSD-2026-0493",
+    "modified": "2026-10-04T00:00:00Z",
+    "published": "2026-10-04T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://downloads.isc.org/isc/bind9/9.20.29/doc/arm/html/notes.html#security-fixes"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19668"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19033"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-77119"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19941"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19666"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19667"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19662"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-75029"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-77692"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-81736"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76163"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78301"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-80274"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-81563"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-19668"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-19033"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-77119"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-19941"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-19666"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-19667"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-19662"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-75029"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-77692"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-81736"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-76163"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-78301"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-80274"
+        },
+        {
+            "type": "WEB",
+            "url": "https://kb.isc.org/docs/cve-2026-81563"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "bind920 -- multiple vulnerabilities"
+}

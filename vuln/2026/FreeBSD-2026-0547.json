@@ -1,0 +1,169 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ce"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.5.0"
+                        },
+                        {
+                            "fixed": "19.5.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.4.0"
+                        },
+                        {
+                            "fixed": "19.4.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "7.0.0"
+                        },
+                        {
+                            "fixed": "19.3.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.5.0"
+                        },
+                        {
+                            "fixed": "19.5.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.4.0"
+                        },
+                        {
+                            "fixed": "19.4.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "7.0.0"
+                        },
+                        {
+                            "fixed": "19.3.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/?nav=19.5.1"
+        ],
+        "discovery": "2026-10-21T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-110264",
+                "CVE-2026-15723",
+                "CVE-2026-112212",
+                "CVE-2026-12664",
+                "CVE-2026-16255",
+                "CVE-2026-105777",
+                "CVE-2026-13319",
+                "CVE-2026-112378",
+                "CVE-2026-105711",
+                "CVE-2026-14288",
+                "CVE-2026-112326",
+                "CVE-2026-103515"
+            ]
+        },
+        "vid": "7db37b57-ced8-11f1-ac90-2cf05da270f3"
+    },
+    "details": "Gitlab reports:\n\n> Integer Overflow issue in Regular Expression Compiler impacts GitLab\n> CE/EE\n>\n> Improper Authentication issue in OmniAuth-to-LDAP auto-linking email\n> lookup impacts GitLab CE/EE\n>\n> Cache Poisoning issue in OAuth/OIDC discovery endpoints impacts GitLab\n> CE/EE\n>\n> Improper Access Control issue in GraphQL work item email address field\n> impacts GitLab CE/EE\n>\n> Incomplete enforcement of instance-wide SAML/LDAP membership lock\n> allows unauthorized member additions in GitLab EE\n>\n> Internal Credential Exposure issue in internal response headers\n> impacts GitLab CE/EE\n>\n> Authorization Bypass Through User-Controlled Key issue in group\n> milestones API impacts GitLab CE/EE\n>\n> Use of Less Trusted Source issue in AI Gateway feature enablement\n> header impacts GitLab EE\n>\n> Use of Cache Containing Sensitive Information issue in merge request\n> title rendering impacts GitLab CE/EE\n>\n> Improper Access Control issue in merge request approval policy\n> enforcement impacts GitLab EE\n>\n> Improper Cleanup on Thrown Exception issue in security findings\n> impacts GitLab EE\n>\n> Improper Access Control issue in group Duo admin-lock enforcement for\n> Amazon Q settings impacts GitLab EE\n",
+    "id": "FreeBSD-2026-0547",
+    "modified": "2026-10-23T00:00:00Z",
+    "published": "2026-10-23T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-5-1-released/?nav=19.5.1"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110264"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15723"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112212"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12664"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16255"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-105777"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-13319"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112378"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-105711"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14288"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112326"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-103515"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Gitlab -- vulnerabilities"
+}

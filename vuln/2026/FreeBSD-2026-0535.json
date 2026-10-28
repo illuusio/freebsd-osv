@@ -1,0 +1,66 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.5"
+                        },
+                        {
+                            "fixed": "14.5_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-10-21T00:00:00Z",
+        "references": {
+            "freebsdsa": [
+                "SA-26:73.caroot"
+            ]
+        },
+        "vid": "070a35ef-cd22-11f1-ada3-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\neMudhra generated several of its TLS intermediate CA certificates using\na flawed procedure that used trivially small private keys. The keys have\nbeen recovered by several parties and publicly disclosed. The\nintermediates are signed by the \\\"emSign ECC Root CA - G3\\\" root\ncertificate, which was included in the trusted certificate bundle.\n\nThe intermediates have been revoked, but OpenSSL does not check\ncertificate revocation by default.\n\nThe corrected bundle marks \\\"emSign ECC Root CA - G3\\\" as untrusted. It\nalso incorporates the other root certificate additions and removals in\nNSS 3.131.1.\n\n# Impact:\n\nAn attacker able to intercept network traffic can use the compromised\nkeys to issue a certificate that impersonates any TLS server, allowing\nthe traffic to be read or modified without detection.\n",
+    "id": "FreeBSD-2026-0535",
+    "modified": "2026-10-21T00:00:00Z",
+    "published": "2026-10-21T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:73.caroot.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- TLS certificate store update due to eMudhra compromise"
+}

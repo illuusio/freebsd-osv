@@ -1,0 +1,82 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nsd"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "4.10.0"
+                        },
+                        {
+                            "fixed": "4.15.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://community.nlnetlabs.nl/t/nsd-4-15-3-security-release/3490"
+        ],
+        "discovery": "2026-10-14T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-101337",
+                "CVE-2026-101338",
+                "CVE-2026-101339",
+                "CVE-2026-101341"
+            ]
+        },
+        "vid": "bac88b3f-c8a1-11f1-866a-3c7c3fba4204"
+    },
+    "details": "NLnet Labs reports:\n\n> This security release has fixes for vulnerabilities which were all for\n> cases with specially crafted and formatted data in zone files. Zone\n> files which are written out by NSD itself, such as for zones for which\n> NSD is secondary, would not be formatted like this. The zone file had\n> to be fed to NSD directly, but could in multi-tenant configurations,\n> come from an operator controlled provisioning system accessible to\n> third parties. Zone files that are regularly formatted (generated from\n> DNS software) or come from trusted sources would not trigger these\n> vulnerabilities.\n>\n> - CVE-2026-101337: Reserve correct number of bytes for base64 sequence\n>   tokens, regardless of stream decoder phase.\n> - CVE-2026-101338: No SVCB and/or HTTPS parameters are parsed when the\n>   RDATA is already filled to the brim.\n> - CVE-2026-101339: Fix for dname possibility to overwrite the stack\n>   when near the RDATA limit.\n> - CVE-2026-101341: Also check that RDATA stays within bounds while\n>   parsing string tokens under 32 bytes.\n",
+    "id": "FreeBSD-2026-0520",
+    "modified": "2026-10-15T00:00:00Z",
+    "published": "2026-10-15T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://community.nlnetlabs.nl/t/nsd-4-15-3-security-release/3490"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101337"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101338"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101339"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101341"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-101337.txt"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-101338.txt"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-101339.txt"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/nsd/CVE-2026-101341.txt"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "NSD -- multiple vulnerabilities"
+}

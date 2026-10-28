@@ -1,0 +1,148 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "curl"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.23.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-10-14T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-107929",
+                "CVE-2026-107928",
+                "CVE-2026-94266",
+                "CVE-2026-94265",
+                "CVE-2026-92386",
+                "CVE-2026-92387",
+                "CVE-2026-92388",
+                "CVE-2026-92389",
+                "CVE-2026-92390",
+                "CVE-2026-92391",
+                "CVE-2026-92392",
+                "CVE-2026-86410",
+                "CVE-2026-86412",
+                "CVE-2026-86413",
+                "CVE-2026-86414",
+                "CVE-2026-86415",
+                "CVE-2026-87861",
+                "CVE-2026-87862",
+                "CVE-2026-87863",
+                "CVE-2026-87865",
+                "CVE-2026-87866"
+            ]
+        },
+        "vid": "14dab969-c797-11f1-a6ea-8447094a420f"
+    },
+    "details": "The Curl project reports:\n\n> - local interface connection reuse mixup (CVE-2026-107929)\n> - info leak uploading over WebSockets with GnuTLS (CVE-2026-107928)\n> - password leak in CURLINFO_EFFECTIVE_URL (CVE-2026-94266)\n> - Authorization: Negotiate sent to foreign origin (CVE-2026-94265)\n> - server-set cookie aborts cookie jar load (CVE-2026-92386)\n> - never-ending loop via server response omission (CVE-2026-92387)\n> - FTP wildcard write callback mixup (CVE-2026-92388)\n> - TFTP direction confusion (CVE-2026-92389)\n> - -J no-clobber guarantee bypassed with 103 early hints\n>   (CVE-2026-92390)\n> - curl_mime_free stack overflow by recursion (CVE-2026-92391)\n> - HTTP/2 upload Use-After-Free (CVE-2026-92392)\n> - redirect to SFTP or SCP bypasses host verification (CVE-2026-86410)\n> - server-set cookie erases cookie jar (CVE-2026-86412)\n> - Negotiate credentials sent to redirected origin (CVE-2026-86413)\n> - leaking host credentials to HTTP proxy (CVE-2026-86414)\n> - auto client cert connection reuse mixup (CVE-2026-86415)\n> - cross-origin reuse of a Negotiate connection (CVE-2026-87861)\n> - HSTS cache import drops longer-lived child (CVE-2026-87862)\n> - HSTS response erases persisted entries (CVE-2026-87863)\n> - knownhost callback mismatches key as missing (CVE-2026-87865)\n> - wolfSSL public-key pinning bypass (CVE-2026-87866)\n",
+    "id": "FreeBSD-2026-0512",
+    "modified": "2026-10-14T00:00:00Z",
+    "published": "2026-10-14T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107929"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107928"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94266"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94265"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92386"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92387"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92388"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92389"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92390"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92391"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92392"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-86410"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-86412"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-86413"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-86414"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-86415"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-87861"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-87862"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-87863"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-87865"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-87866"
+        },
+        {
+            "type": "WEB",
+            "url": "https://curl.se/docs/security.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Curl -- Multiple vulnerabilities"
+}

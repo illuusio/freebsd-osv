@@ -1,0 +1,56 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jackson-databind"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.22.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/FasterXML/jackson-databind/blob/2.x/release-notes/VERSION-2.x"
+        ],
+        "discovery": "2026-09-21T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-91776",
+                "CVE-2026-91777"
+            ]
+        },
+        "vid": "7b3ea5d6-cf3d-11f1-a655-3497f65b111b"
+    },
+    "details": "The Jackson project reports:\n\n> CVE-2026-91776: TypeDeserializerBase caches the resolved deserializer\n> under the raw, attacker supplied type id. With name based polymorphism\n> and a fallback, every unrecognized type id adds an entry and the cache\n> grows without bound.\n>\n> CVE-2026-91777: forward reference completion for JsonIdentityInfo\n> object ids scans the pending reference accumulator for every resolved\n> id, which is quadratic in the number of references.\n",
+    "id": "FreeBSD-2026-0542",
+    "modified": "2026-10-22T00:00:00Z",
+    "published": "2026-10-22T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/FasterXML/jackson-databind/blob/2.x/release-notes/VERSION-2.x"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-91776"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-91777"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "jackson-databind -- denial of service"
+}

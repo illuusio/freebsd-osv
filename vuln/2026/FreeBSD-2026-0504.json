@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mutt"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.4.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://gitlab.com/muttmua/mutt/-/work_items/533"
+        ],
+        "discovery": "2026-10-08T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-107570"
+            ]
+        },
+        "vid": "28c48cd9-e79a-4ad6-8e62-1317c2ec19a1"
+    },
+    "details": "Kevin J. McCarthy reports:\n\n> Fixing an OOB heap write. This is triggered by a specially crafted\n> Content-Header line in an email that is used as a template for a new\n> email, via \\<resend-message \\>. Thanks to Calif.io, in collaboration\n> with Anthropic for sending me a detailed write up and suggested patch.\n",
+    "id": "FreeBSD-2026-0504",
+    "modified": "2026-10-09T00:00:00Z",
+    "published": "2026-10-09T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://gitlab.com/muttmua/mutt/-/work_items/533"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107570"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2026-107570"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "mutt -- Heap out-of-bounds write via crafted Content-Header line"
+}

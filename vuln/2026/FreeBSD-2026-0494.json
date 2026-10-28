@@ -1,0 +1,61 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libressl"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.3.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libressl-devel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.3.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.3.3-relnotes.txt"
+        ],
+        "discovery": "2026-10-04T00:00:00Z",
+        "vid": "85bcb950-c0b4-11f1-a6ea-8447094a420f"
+    },
+    "details": "The LibreSSL project reports:\n\n> - Ensure verify callbacks always returning 1 can see a hostname\n>   mismatch\n> - Correct botched size check in dtls1_preprocess_fragment()\n> - Limit size of buffered DTLS handshake messages\n> - Avoid potential overread on interrupted retransmission in DTLS\n> - Fix OCSP responder authorization bypass in libtls and ocspcheck(8)\n",
+    "id": "FreeBSD-2026-0494",
+    "modified": "2026-10-05T00:00:00Z",
+    "published": "2026-10-05T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/libressl-4.3.3-relnotes.txt"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "LibreSSL -- Multiple vulnerabilities"
+}

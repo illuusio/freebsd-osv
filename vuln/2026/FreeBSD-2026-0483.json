@@ -1,0 +1,56 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-09-29T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-58099",
+                "CVE-2026-58100"
+            ],
+            "freebsdsa": [
+                "SA-26:65.kqueue"
+            ]
+        },
+        "vid": "d725b228-bccc-11f1-906f-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nWhen copying knotes from a parent kqueue to a child, the copy code did\nnot correctly exclude marker knotes (used internally to track list\ntraversal position) before marking them as in-flux and releasing the\nkqueue lock. If another thread freed a marker while the lock was\ndropped, the subsequent in-flux decrement operated on freed memory.\n(CVE-2026-58099)\n\nkqueue_fork_copy_knote() indexed into the child\\'s file descriptor table\nusing a knote\\'s file descriptor number without a bounds check. Because\nthe child\\'s table is copied before knotes are transferred, a concurrent\nthread in the parent could grow the parent\\'s table and register knotes\nwith file descriptor numbers beyond the end of the child\\'s table,\ncausing an out-of-bounds read. (CVE-2026-58100)\n\n# Impact:\n\nAn unprivileged local user may be able to exploit these races to\nescalate privileges.\n",
+    "id": "FreeBSD-2026-0483",
+    "modified": "2026-09-30T00:00:00Z",
+    "published": "2026-09-30T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58099"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58100"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:65.kqueue.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Memory safety bugs in kqueue copy-on-fork implementation"
+}

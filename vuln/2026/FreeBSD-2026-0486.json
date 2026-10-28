@@ -1,0 +1,84 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.5"
+                        },
+                        {
+                            "fixed": "14.5_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-09-29T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-101303"
+            ],
+            "freebsdsa": [
+                "SA-26:69.udp"
+            ]
+        },
+        "vid": "6d92b2a3-bcce-11f1-906f-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nThe IPv6 UDP send path for unconnected sockets did not apply the jail\npolicy of rewriting a loopback destination address to the jail\\'s\nprimary IPv6 address.\n\n# Impact:\n\nA process in a classic (non-VNET) jail can send UDP datagrams to\nservices listening on the host\\'s IPv6 loopback address, bypassing jail\nnetwork isolation.\n",
+    "id": "FreeBSD-2026-0486",
+    "modified": "2026-09-30T00:00:00Z",
+    "published": "2026-09-30T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101303"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:69.udp.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- IPv6 UDP sendto(2) bypasses jail loopback restriction"
+}

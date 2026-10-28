@@ -1,0 +1,66 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libX11"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.8.14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://lists.x.org/archives/xorg-announce/2026-October/003752.html"
+        ],
+        "discovery": "2026-10-17T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-88806",
+                "CVE-2026-94283",
+                "CVE-2026-94284",
+                "CVE-2026-94285"
+            ]
+        },
+        "vid": "fbf59c13-ca23-11f1-ada1-ac5afc632ba3"
+    },
+    "details": "X.Org reports:\n\n> Multiple issues have been found in the X client library\n> implementations published by X.Org for which we are releasing security\n> fixes for.\n>\n> - CVE-2026-88806: Out-of-bounds write vulnerability in libX11\\'s XKB\n>   (X Keyboard Extension) action parser\n> - CVE-2026-94283: Out-of-bounds read vulnerability in libX11\\'s XIM (X\n>   Input Method) attribute parser\n> - CVE-2026-94284: Out-of-bounds read vulnerability in libX11\\'s XIM\n>   trigger-key registration parser\n> - CVE-2026-94285: Out-of-bounds read in libX11\\'s byte-oriented\n>   codeset parser\n",
+    "id": "FreeBSD-2026-0524",
+    "modified": "2026-10-17T00:00:00Z",
+    "published": "2026-10-17T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://lists.x.org/archives/xorg-announce/2026-October/003752.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-88806"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94283"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94284"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94285"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "libX11 -- multiple vulnerabilities"
+}

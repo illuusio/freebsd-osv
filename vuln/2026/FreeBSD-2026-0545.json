@@ -1,0 +1,136 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "keycloak"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.8.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.keycloak.org/2026/10/keycloak-2681-released"
+        ],
+        "discovery": "2026-10-13T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-15943",
+                "CVE-2026-18569",
+                "CVE-2026-82968",
+                "CVE-2026-94001",
+                "CVE-2026-94000",
+                "CVE-2026-94218",
+                "CVE-2026-94215",
+                "CVE-2026-94213",
+                "CVE-2026-94217",
+                "CVE-2026-96446",
+                "CVE-2026-96445",
+                "CVE-2026-97177",
+                "CVE-2026-95503",
+                "CVE-2026-97311",
+                "CVE-2026-97846",
+                "CVE-2026-101333",
+                "CVE-2026-103884",
+                "CVE-2026-107121"
+            ]
+        },
+        "vid": "5101359e-ce3c-11f1-bf7a-3c7c3fba4204"
+    },
+    "details": "The Keycloak Team reports:\n\n> - \\[CVE-2026-15943\\]: OIDC identity provider update reuses masked\n>   client secret after token URL changes.\n> - \\[CVE-2026-18569\\]: OIDC broker backchannel logout accepts unsigned\n>   forged logout tokens when signature validation is disabled.\n> - \\[CVE-2026-82968\\]: Persistent wrong-account linking through null /\n>   GitHub identity provider.\n> - \\[CVE-2026-94001\\]: Admin credential DELETE bypasses denied\n>   reset-password permission.\n> - \\[CVE-2026-94000\\]: A delegated admin with only \\`manage-users\\` can\n>   become \\`realm-admin\\` by joining (or being created into) a group\n>   that maps an admin role.\n> - \\[CVE-2026-94218\\]: 2FA setup enforcement bypass via\n>   /realms/{realm}/login-actions/restart --- #YWH-PGM40475-254\n> - \\[CVE-2026-94215\\]: Cross-realm realm resource read/write via\n>   per-request session-level cache in RealmCacheSession.\n> - \\[CVE-2026-94213\\]: Missing user view authorization in the\n>   Authorization Services policy evaluation endpoint, possible\n>   incomplete fix of CVE-2026-37978.\n> - \\[CVE-2026-94217\\]: UMA scope merge across resource owners via name\n>   collision in resolveResourcePermission.\n> - \\[CVE-2026-96446\\]: Security vulnerability in Keycloak 26.7.3 ---\n>   PAR single-use bypass via prompt=none.\n> - \\[CVE-2026-96445\\]: Conditional OTP trusts skip headers on untrusted\n>   proxy paths.\n> - \\[CVE-2026-97177\\]: Generic user update bypasses denied\n>   reset-password permission.\n> - \\[CVE-2026-95503\\]: Potential KDC spoofing attack when Kerberos\n>   password authentication is enabled.\n> - \\[CVE-2026-97311\\]: Broken access control in Admin REST API:\n>   roles/{role-name}/groups discloses groups the caller cannot view\n>   (incomplete fix of the 26.7.2 hardening).\n> - \\[CVE-2026-97846\\]: Standard Token Exchange bypasses required mTLS\n>   certificate binding and issues an active bearer token when no client\n>   certificate is supplied.\n> - \\[CVE-2026-101333\\]: Unbounded metric series creation via idp tag on\n>   broker login endpoint.\n> - \\[CVE-2026-91777\\]: Third-party dependency fix,\n>   com.fasterxml.jackson.core:jackson-databind\n> - Multiple CVEs in third-party dependency\n>   tools.jackson.core:jackson-databind\n> - \\[CVE-2026-103884\\]: Path traversal via X.509 CRL Distribution\n>   Point - client-supplied CRL path escapes \\$KC_HOME/conf\n> - Multiple CVEs in third-party dependency simple-git.\n> - Flaky test: initial-access.spec.ts \\'Initial access token\\' fails\n>   with TypeError on table data read.\n> - \\[CVE-2026-107121\\]: SMTP starttls=true permits plaintext credential\n>   and message downgrade.\n",
+    "id": "FreeBSD-2026-0545",
+    "modified": "2026-10-22T00:00:00Z",
+    "published": "2026-10-22T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.keycloak.org/2026/10/keycloak-2681-released"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15943"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-18569"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-82968"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94001"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94000"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94218"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94215"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94213"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94217"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96446"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96445"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97177"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-95503"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97311"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97846"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101333"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-103884"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107121"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Keycloak -- multiple vulnerabilities"
+}

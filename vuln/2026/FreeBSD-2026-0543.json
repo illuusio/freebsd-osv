@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jackson-databind"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.22.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/FasterXML/jackson-databind/blob/2.x/release-notes/VERSION-2.x"
+        ],
+        "discovery": "2026-10-17T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-110879"
+            ]
+        },
+        "vid": "8c1b47e2-cf3d-11f1-a655-3497f65b111b"
+    },
+    "details": "The Jackson project reports:\n\n> Type parameters of generic type ids, and element types of array type\n> ids, were not passed to the configured PolymorphicTypeValidator, so a\n> deny-listed type could be reached through a type parameter.\n>\n> They are now validated like direct type ids. Approval by base type\n> only covers subtypes of that base type, allowIfSubTypeIsArray() no\n> longer accepts abstract or interface element types without\n> allow-listing, and approval of an array type covers its element type\n> only when given as exactly that class.\n",
+    "id": "FreeBSD-2026-0543",
+    "modified": "2026-10-22T00:00:00Z",
+    "published": "2026-10-22T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/FasterXML/jackson-databind/blob/2.x/release-notes/VERSION-2.x"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110879"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "jackson-databind -- type parameters bypass the polymorphic type validator"
+}

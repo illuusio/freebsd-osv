@@ -1,0 +1,50 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "newsboat"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "2.10"
+                        },
+                        {
+                            "fixed": "2.45"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/newsboat/newsboat/blob/r2.45/CHANGELOG.md#security"
+        ],
+        "discovery": "2026-10-04T00:00:00Z",
+        "vid": "1be69a2e-c883-11f1-b5c5-3c7c3fba4204"
+    },
+    "details": "Newsboat Team reports:\n\n> - (CVE ID Pending) Remote code execution via manual OPML import\n>   (\\--import-from-opml)\n> - [GHSA-4m8m-vj3m-hfxx](https://github.com/newsboat/newsboat/security/advisories/GHSA-4m8m-vj3m-hfxx):\n>   Remote code execution via OPML import (both manual\n>   \\--import-from-opml and opml-url config setting)\n> - [GHSA-pvg7-gjxf-23c9](https://github.com/newsboat/newsboat/security/advisories/GHSA-pvg7-gjxf-23c9):\n>   Podboat could write at arbitrary paths\n",
+    "id": "FreeBSD-2026-0519",
+    "modified": "2026-10-15T00:00:00Z",
+    "published": "2026-10-15T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/newsboat/newsboat/blob/r2.45/CHANGELOG.md#security"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/newsboat/newsboat/security/advisories/GHSA-4m8m-vj3m-hfxx"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/newsboat/newsboat/security/advisories/GHSA-pvg7-gjxf-23c9"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Newsboat -- vulnerabilities"
+}

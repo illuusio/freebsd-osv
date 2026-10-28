@@ -1,0 +1,50 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "anki"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.9.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/ankitects/anki/releases/tag/26.09.2"
+        ],
+        "discovery": "2026-09-15T00:00:00Z",
+        "vid": "e1e332d7-cbe2-11f1-8d05-74563cf85f9d"
+    },
+    "details": "Anki developers report:\n\n> Security: Prevent external links in deck descriptions rendered in the\n> overview/congrats screen from manipulating the page in certain cases\n> when clicked.\n",
+    "id": "FreeBSD-2026-0533",
+    "modified": "2026-10-19T00:00:00Z",
+    "published": "2026-10-19T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/ankitects/anki/releases/tag/26.09.2"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/ankitects/anki/commit/7add01b1bc89"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/ankitects/anki/commit/83254832b0fb"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "anki -- page manipulation via deck description links"
+}

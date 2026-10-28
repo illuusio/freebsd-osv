@@ -1,0 +1,136 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.30.6,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx-full"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.30.6,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx-lite"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.30.6,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "nginx-devel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.31.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://nginx.org/en/security_advisories.html"
+        ],
+        "discovery": "2026-10-14T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-15176",
+                "CVE-2026-93479",
+                "CVE-2026-95101",
+                "CVE-2026-97629",
+                "CVE-2026-97205"
+            ]
+        },
+        "vid": "95970257-c867-11f1-9006-3497f65b111b"
+    },
+    "details": "The nginx developers report:\n\n> A buffer overflow might occur in a worker process when using the\n> \\\"alias\\\" directive if the request URI was changed by the \\\"rewrite\\\"\n> directive and was then mapped to a file path (CVE-2026-15176).\n>\n> A buffer overflow might occur in a worker process while evaluating\n> string expressions with variables, which affected the document root\n> calculation and request logging in the http and stream modules\n> (CVE-2026-93479).\n>\n> When using HTTP/3 a part of an unknown frame might be treated as the\n> request body, which might result in bypassing the\n> \\\"client_max_body_size\\\" limit or injecting data in the proxied\n> request (CVE-2026-95101).\n>\n> When using TLS session ticket key rotation, one of the keys was left\n> uninitialized, which might allow to forge a session (CVE-2026-97629).\n>\n> When using asynchronous file I/O (AIO), use-after-free might occur in\n> certain configurations if the SSI page has \\\"include virtual\\\"\n> commands (CVE-2026-97205).\n",
+    "id": "FreeBSD-2026-0514",
+    "modified": "2026-10-15T00:00:00Z",
+    "published": "2026-10-15T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://nginx.org/en/security_advisories.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15176"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-93479"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-95101"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97629"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97205"
+        },
+        {
+            "type": "WEB",
+            "url": "https://nginx.org/en/CHANGES-1.30"
+        },
+        {
+            "type": "WEB",
+            "url": "https://nginx.org/en/CHANGES"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "nginx -- multiple vulnerabilities"
+}

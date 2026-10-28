@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mailpit"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.32.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/axllent/mailpit/security/advisories/GHSA-379p-g4f4-hq5h"
+        ],
+        "discovery": "2026-10-23T00:00:00Z",
+        "vid": "df4083bc-cea6-11f1-94b3-10ffe07f9334"
+    },
+    "details": "Mailpit author reports:\n\n> The thumbnail endpoint GET /api/v1/message/{ID}/part/{PartID}/thumb\n> parses EXIF metadata of image attachments with\n> github.com/rwcarlsen/goexif to apply orientation. goexif\\'s TIFF IFD\n> walker only detects a self-referencing IFD (next == prev). An\n> attachment whose IFD chain forms a cycle of length 2 (IFD0 \u2192 IFD1 \u2192\n> IFD0) sends the request handler into an infinite loop that appends a\n> new \\*tiff.Dir on every iteration. The goroutine never terminates,\n> pins one CPU core permanently, and its live heap grows without bound.\n> A 651-byte JPEG is sufficient.\n",
+    "id": "FreeBSD-2026-0546",
+    "modified": "2026-10-23T00:00:00Z",
+    "published": "2026-10-23T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/axllent/mailpit/security/advisories/GHSA-379p-g4f4-hq5h"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "mailpit -- Unbounded CPU and memory consumption in thumbnail endpoint via cyclic EXIF IFD chain"
+}

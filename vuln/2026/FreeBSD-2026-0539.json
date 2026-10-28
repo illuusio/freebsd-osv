@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "p5-DBI"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.656"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://metacpan.org/dist/DBI/changes"
+        ],
+        "discovery": "2026-10-21T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-108518"
+            ]
+        },
+        "vid": "23eecf73-cd85-11f1-97dc-40b034429ecf"
+    },
+    "details": "DBI project reports:\n\n> Prevent dbi_profile crash (CVE-2026-108518) (Henrik Teichmann).\n",
+    "id": "FreeBSD-2026-0539",
+    "modified": "2026-10-21T00:00:00Z",
+    "published": "2026-10-21T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://metacpan.org/dist/DBI/changes"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-108518"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-108518"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "p5-DBI -- Prevent dbi_profile crash"
+}

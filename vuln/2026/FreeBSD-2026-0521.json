@@ -1,0 +1,86 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "p5-Text-CSV_XS"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.65"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://metacpan.org/dist/Text-CSV_XS/changes"
+        ],
+        "discovery": "2026-10-15T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-110759",
+                "CVE-2026-110758",
+                "CVE-2026-110757",
+                "CVE-2026-110756",
+                "CVE-2026-110755",
+                "CVE-2026-110754",
+                "CVE-2026-110753",
+                "CVE-2026-110752"
+            ]
+        },
+        "vid": "dec22770-c953-11f1-bebb-3c7c3fba4204"
+    },
+    "details": "H.Merijn Brand - Tux \\<linux@tux.freedom.nl\\> reports:\n\n> Text::CSV_XS versions before 1.65 have these vulnerabilities listed\n> below.\n>\n> - CVE-2026-110759: parse (): report trailing lone CR, do not store EOF\n>   as 0xFF\n> - CVE-2026-110758: Under allow_whitespace, do not strip beyond field\n>   start\n> - CVE-2026-110757: combine (): decide quoting from the bytes, not the\n>   NV flags\n> - CVE-2026-110756: Flush saved bytes in Combine ()\n> - CVE-2026-110755: Re-use AHEAD with \\\\r instead of copying\n> - CVE-2026-110754: getline (): free the result array when the parse\n>   fails\n> - CVE-2026-110753: Do not free the bound column scalar in\n>   skip_empty_rows\n> - CVE-2026-110752: fragment (): do not size memory by the selector\n>   integers\n",
+    "id": "FreeBSD-2026-0521",
+    "modified": "2026-10-16T00:00:00Z",
+    "published": "2026-10-16T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://metacpan.org/dist/Text-CSV_XS/changes"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110759"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110758"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110757"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110756"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110755"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110754"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110753"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110752"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Text::CSV_XS -- multiple vulnerabilities"
+}

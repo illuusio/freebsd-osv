@@ -1,0 +1,70 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "drupal11"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "11.4.0"
+                        },
+                        {
+                            "fixed": "11.4.10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "drupal10"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.6.19"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.drupal.org/sa-core-2026-014"
+        ],
+        "discovery": "2026-10-14T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-108097"
+            ]
+        },
+        "vid": "3de00266-caf6-11f1-881f-d89ef317b2fc"
+    },
+    "details": "Drupal core reports:\n\n> A remote code execution vulnerability exists within the Field UI\n> module in Drupal core.\n>\n> The vulnerability is not directly exploitable with core alone, but\n> multiple serious exploit paths exist with contributed modules. At\n> least one known exploit path does not require authentication. Custom\n> code may also expose the vulnerable functionality.\n>\n> The vulnerability can be mitigated by uninstalling the core Field UI\n> module (field_ui), which will provide protection while sites are\n> updated.\n",
+    "id": "FreeBSD-2026-0503",
+    "modified": "2026-10-18T00:00:00Z",
+    "published": "2026-10-18T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.drupal.org/sa-core-2026-014"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-108097"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Drupal 10 and 11 -- remote code execution"
+}

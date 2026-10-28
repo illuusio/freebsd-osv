@@ -1,0 +1,91 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "p5-Plack"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.0055"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://metacpan.org/dist/Plack/changes"
+        ],
+        "discovery": "2026-10-13T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-110333",
+                "CVE-2026-110332",
+                "CVE-2026-110335",
+                "CVE-2026-110334",
+                "CVE-2026-110336"
+            ]
+        },
+        "vid": "fdb34ad1-c7ac-11f1-97dc-40b034429ecf"
+    },
+    "details": "Plack project reports:\n\n> \\[SECURITY\\]\n>\n> - Fix memory leak of every request env in Plack::Middleware::Recursive\n>   (CVE-2026-110333)\n> - Plack::Request::Upload-\\>basename never returns \\'\\', \\'.\\' or\n>   \\'..\\' (CVE-2026-110332)\n> - Plack::App::URLMap matches SERVER_PORT literally when stripping it\n>   from Host (CVE-2026-110335)\n>\n> \\[BUG FIXES\\]\n>\n> - Plack::Middleware::ErrorDocument restores the env after a\n>   subrequest, so outer middleware such as AccessLog sees the original\n>   request (CVE-2026-110334)\n>\n> \\[BUG FIXES\\]\n>\n> - Document that Plack::Handler::FCGI and Apache2 keep dot segments in\n>   PATH_INFO and warn against relying on front-server path-based access\n>   control (CVE-2026-110336)\n",
+    "id": "FreeBSD-2026-0513",
+    "modified": "2026-10-14T00:00:00Z",
+    "published": "2026-10-14T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://metacpan.org/dist/Plack/changes"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110333"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110332"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110335"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110334"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110336"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-110333"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-110332"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-110335"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-110334"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-110336"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "p5-Plack -- Multiple vulnerabilities"
+}

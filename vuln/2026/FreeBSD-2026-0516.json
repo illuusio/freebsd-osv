@@ -1,0 +1,73 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.5"
+                        },
+                        {
+                            "fixed": "14.5_2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-10-14T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-101308"
+            ],
+            "freebsdsa": [
+                "SA-26:71.sound"
+            ]
+        },
+        "vid": "1fef3562-c848-11f1-ada3-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nWhen an audio channel\\'s buffer needs to be resized, the sound(4) driver\nchecks that the buffer is not memory-mapped and then drops the channel\nlock to allocate a new buffer. An mmap(2) call on another thread can\ncomplete during this window, after which the resize path frees the\nnow-mapped buffer without rechecking.\n\n# Impact:\n\nAn unprivileged local user with access to a sound device can exploit\nthis race to trigger a use-after-free in the kernel, potentially\nescalating privileges.\n",
+    "id": "FreeBSD-2026-0516",
+    "modified": "2026-10-15T00:00:00Z",
+    "published": "2026-10-15T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101308"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:71.sound.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- TOCTOU race between sound(4) buffer resizing and mmap"
+}

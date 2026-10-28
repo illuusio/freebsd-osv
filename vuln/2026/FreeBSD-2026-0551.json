@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "traefik"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.7.16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/traefik/traefik/releases/tag/v3.7.16"
+        ],
+        "discovery": "2026-10-20T00:00:00Z",
+        "vid": "67ba2e09-cff9-11f1-a264-5404a68ad561"
+    },
+    "details": "The traefik project releases a new version addressing ForwardAuth\nvulnerabilities:\n\n> - GHSA-hrpp-p4fc-wwf8 (ForwardAuth leaking NTLM/Negotiate-bound\n>   identity across clients)\n",
+    "id": "FreeBSD-2026-0551",
+    "modified": "2026-10-24T00:00:00Z",
+    "published": "2026-10-24T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/traefik/traefik/releases/tag/v3.7.16"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "traefik -- ForwardAuth vulnerability"
+}

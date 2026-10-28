@@ -1,0 +1,166 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-svglib"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py312-svglib"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313-svglib"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313t-svglib"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314-svglib"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314t-svglib"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py315-svglib"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/deeplook/svglib/security/advisories/GHSA-249c-7rgc-f52h",
+            "https://github.com/deeplook/svglib/security/advisories/GHSA-555j-qj3j-c8jv",
+            "https://github.com/deeplook/svglib/security/advisories/GHSA-2p5c-8vcc-4rcw"
+        ],
+        "discovery": "2026-10-22T00:00:00Z",
+        "vid": "bdac753c-d1d5-11f1-985e-901b0edee044"
+    },
+    "details": "Dinu Gherman reports:\n\n> The SVG \\<path\\> elliptical-arc parser in\n> \\\"svglib.utils.split_arc_values()\\\" builds a regex with multiple\n> empty-matchable float groups and two mandatory flag groups, then runs\n> it under \\\"re.finditer()\\\". An arc argument that is a long run of\n> digits (containing no 0/1 where a flag is expected) triggers\n> catastrophic backtracking whose cost grows exponentially (\\~2x per \\~4\n> extra digits). Reachable from any untrusted SVG via svg2rlg / svg2pdf.\n\n> \\\"svg2rlg()\\\" expands \\<use\\> references without any limit on the\n> total number of expansions. Only direct cycles are rejected\n> (CircularRefError). A group containing N \\<use\\> elements that point\n> to another such group multiplies the work by N per nesting level, so\n> an SVG of about 1.4 KB makes svglib clone and render over 100,000\n> nodes, taking tens of seconds of CPU time and hundreds of MiB of\n> memory. Each additional level adds about 245 bytes to the document and\n> multiplies time by \\~10. This is the SVG \\<use\\> variant of the XML\n> \\\"billion laughs\\\" attack (the same class as librsvg CVE-2019-20446).\n\n> svglib converts SVG into ReportLab drawings / PDF / PNG (svg2rlg).\n> When it renders an or element, SvgRenderer.xlink_href_target()\n> resolves the element\\'s xlink:href / href to a local file path and\n> embeds that file into the output. The resolution joins the\n> attacker-controlled reference onto the SVG\\'s own directory with\n> \\\"os.path.join()\\\" and performs no containment check. Because\n> \\\"os.path.join(base, iri)\\\" discards base the moment iri is absolute,\n> and .. segments collapse above base, a crafted SVG can name any file\n> the rendering process can read. If that file decodes as a raster image\n> (any extension) its bytes are copied verbatim into the output; if it\n> is an XML-parseable .svg its rendered content, text included, is\n> inlined. The result is arbitrary local file read against a service\n> that converts untrusted SVGs from a file path. This is a different\n> class and a different code path from the 2020 XXE (CVE-2020-10799,\n> fixed in 0.9.4).\n",
+    "id": "FreeBSD-2026-0554",
+    "modified": "2026-10-27T00:00:00Z",
+    "published": "2026-10-27T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/deeplook/svglib/security/advisories/GHSA-249c-7rgc-f52h"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://github.com/deeplook/svglib/security/advisories/GHSA-555j-qj3j-c8jv"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://github.com/deeplook/svglib/security/advisories/GHSA-2p5c-8vcc-4rcw"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "py-svglib -- Multiple vulnerabilities"
+}

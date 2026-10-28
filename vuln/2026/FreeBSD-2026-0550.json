@@ -1,0 +1,153 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "node"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "24.22.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "node22"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "22.23.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "node24"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "24.22.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "node26"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.12.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+        ],
+        "discovery": "2026-10-21T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-105481",
+                "CVE-2026-105482",
+                "CVE-2026-105483",
+                "CVE-2026-106069",
+                "CVE-2026-106070",
+                "CVE-2026-106071",
+                "CVE-2026-106072",
+                "CVE-2026-106073",
+                "CVE-2026-106074",
+                "CVE-2026-111497"
+            ]
+        },
+        "vid": "33a752ba-4cbe-46d8-abda-587011d90575"
+    },
+    "details": "Node.js reports:\n\n> dns.resolve truncates names containing NUL char (CVE-2026-105482) -\n> (high)\n>\n> TLS certificate hostname bypass when the IP is written fullwidth\n> digits (CVE-2026-105483) - (high)\n>\n> TLS certificate hostname bypass when the host loosely resolves to an\n> IP address (CVE-2026-106069) - (high)\n>\n> Node.js Brotli decoder out-of-bounds write permits remote code\n> execution (CVE-2026-111497) - (high)\n>\n> Keep-alive socket process a response that was written before the\n> request was sent (CVE-2026-105481) - (medium)\n>\n> Improper certificate validation for non-canonical IPv4 hostnames\n> allows DNS SANs to authenticate IP endpoints (CVE-2026-106072) -\n> (medium)\n>\n> crypto.randomUUID() and randomInt() entropy caches are saved into\n> user-land startup snapshots and SEAs, so every process repeats the\n> same values (CVE-2026-106074) - (medium)\n>\n> Node.js ZipFile returns attacker-controlled prefix bytes after failed\n> ZIP header validation (CVE-2026-106070) - (low)\n>\n> Permission Model filesystem over-grant via wildcard radix lookup\n> (CVE-2026-106071) - (low)\n>\n> Permission Model bypass with fs.realpathSync (CVE-2026-106073) - (low)\n",
+    "id": "FreeBSD-2026-0550",
+    "modified": "2026-10-24T00:00:00Z",
+    "published": "2026-10-24T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-105481"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-105482"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-105483"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-106069"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-106070"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-106071"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-106072"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-106073"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-106074"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-111497"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Node.js -- multiple vulnerabilities"
+}

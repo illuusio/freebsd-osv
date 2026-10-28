@@ -1,0 +1,251 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.5.9,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl30"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.0.23"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl34"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.4.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl36"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.6.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl40"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.0.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.5"
+                        },
+                        {
+                            "fixed": "14.5_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://openssl-library.org/news/secadv/20260929.txt"
+        ],
+        "discovery": "2026-09-29T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-84782",
+                "CVE-2026-84783",
+                "CVE-2026-35189",
+                "CVE-2026-35191",
+                "CVE-2026-42772",
+                "CVE-2026-54872",
+                "CVE-2026-54873",
+                "CVE-2026-54875",
+                "CVE-2026-72897",
+                "CVE-2026-75804",
+                "CVE-2026-75805",
+                "CVE-2026-75806",
+                "CVE-2026-77696",
+                "CVE-2026-84784"
+            ],
+            "freebsdsa": [
+                "SA-26:68.openssl"
+            ]
+        },
+        "vid": "0d183075-bcb5-11f1-b09d-8447094a420f"
+    },
+    "details": "The OpenSSL project reports:\n\n> - DTLS Retransmits Handshake Messages From a Stale Buffer Offset\n>   (CVE-2026-84782) \\[High\\]\n> - Use-After-Free in X.509 Extension Cache Under Concurrent Use\n>   (CVE-2026-84783) \\[Moderate\\]\n> - Excessive Memory Allocation in Relative CRLDP Processing\n>   (CVE-2026-35189) \\[Low\\]\n> - QUIC Unvalidated Amplification Credit may be Over Accounted\n>   (CVE-2026-35191) \\[Low\\]\n> - Potential CPU DoS via O(n\\^2) Fragment Reassembly in QUIC\n>   (CVE-2026-42772) \\[Low\\]\n> - Timing Side-Channel in Scalar Multiplication for Non-NIST EC Curves\n>   (CVE-2026-54872) \\[Low\\]\n> - QUIC STREAM Fragment Metadata DoS (CVE-2026-54873) \\[Low\\]\n> - Non-Constant-Time SM2 Scalar Multiplication on ARM64 and RISC-V\n>   (CVE-2026-54875) \\[Low\\]\n> - Out-of-Bounds Access After SSL_set_SSL_CTX() During a Handshake\n>   (CVE-2026-72897) \\[Low\\]\n> - QUIC Connection-Level Flow Control is Not Enforced for Streams\n>   (CVE-2026-75804) \\[Low\\]\n> - NULL Pointer Dereference in CMP Client Revocation Response Handling\n>   (CVE-2026-75805) \\[Low\\]\n> - Unauthenticated and Undersized DTLS 1.2 AEAD Record Causes DoS\n>   (CVE-2026-75806) \\[Low\\]\n> - Timing Side-Channel in SM2 Signature Generation (CVE-2026-77696)\n>   \\[Low\\]\n> - QUIC: Unbounded RETIRE_CONNECTION_ID Backlog (CVE-2026-84784)\n>   \\[Low\\]\n",
+    "id": "FreeBSD-2026-0481",
+    "modified": "2026-09-30T00:00:00Z",
+    "published": "2026-09-30T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://openssl-library.org/news/secadv/20260929.txt"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84782"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84783"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35189"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35191"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42772"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54872"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54873"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54875"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-72897"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-75804"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-75805"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-75806"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-77696"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84784"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:68.openssl.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "OpenSSL -- Multiple vulnerabilities"
+}

@@ -1,0 +1,193 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-WsgiDAV"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.3.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py312-WsgiDAV"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.3.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313-WsgiDAV"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.3.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313t-WsgiDAV"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.3.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314-WsgiDAV"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.3.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314t-WsgiDAV"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.3.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py315-WsgiDAV"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.3.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.cve.org/CVERecord?id=CVE-2026-48099",
+            "https://www.cve.org/CVERecord?id=CVE-2026-55509",
+            "https://github.com/mar10/wsgidav/security/advisories/GHSA-wm65-64rq-rh8r"
+        ],
+        "discovery": "2026-05-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-48099",
+                "CVE-2026-55509",
+                "CVE-2026-55560"
+            ]
+        },
+        "vid": "0f5aaca7-c4d5-11f1-96b4-74563cf85f9d"
+    },
+    "details": "cve@mitre.org reports:\n\n> WsgiDAV is a generic and extendable WebDAV server based on WSGI.\n> WsgiDAV 4.3.3 and prior can allow a WebDAV request path containing an\n> encoded parent-directory segment to escape the configured filesystem\n> share root in a specific path layout. The issue is fixed with version\n> 4.3.4.\n\n> WsgiDAV is a generic and extendable WebDAV server based on WSGI. Prior\n> to 4.3.5, the sample MySQLBrowserProvider in\n> wsgidav/samples/mysql_dav_provider.py concatenates the record key\n> parsed from a request URL directly into SQL WHERE clauses. The\n> affected \\_exists_record_by_primary_key, \\_get_field_by_primary_key,\n> and \\_get_record_by_primary_key methods are part of a shipped example\n> provider that is not enabled by default. An attacker who can access a\n> share explicitly configured with this non-default provider can inject\n> SQL through a normal GET request; anonymously exposed read shares\n> permit a status-code oracle and extraction of arbitrary data reachable\n> by the configured MySQL account. This issue is fixed in version 4.3.5.\n\nThe WsgiDAV project reports:\n\n> When follow_symlinks is false (the default), WsgiDAV is expected to\n> prevent serving content through symbolic links - a request for a\n> symlink returns 403 Forbidden: Symlink support is disabled. However,\n> that guard inspects only the leaf component of the resolved path, and\n> the root-containment check is purely lexical (os.path.abspath, which\n> does not resolve symlinks).\n>\n> As a result, a symlink used as an intermediate directory in the\n> request path is neither blocked by the guard nor caught by the\n> containment check, and the request escapes the configured share root.\n> This allows reading, writing, and deleting files outside the root.\n",
+    "id": "FreeBSD-2026-0506",
+    "modified": "2026-10-11T00:00:00Z",
+    "published": "2026-10-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2026-48099"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2026-55509"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://github.com/mar10/wsgidav/security/advisories/GHSA-wm65-64rq-rh8r"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-48099"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55509"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-55560"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/mar10/wsgidav/security/advisories/GHSA-wxq4-cc2q-338q"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/mar10/wsgidav/security/advisories/GHSA-p6gw-4frg-j7jw"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "py-WsgiDAV -- Multiple vulnerabilities"
+}

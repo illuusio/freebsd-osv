@@ -1,0 +1,84 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.5"
+                        },
+                        {
+                            "fixed": "14.5_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-09-29T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-58098"
+            ],
+            "freebsdsa": [
+                "SA-26:64.sysvsem"
+            ]
+        },
+        "vid": "6ef25129-bccc-11f1-906f-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nWhen semop(2) blocks waiting for a semaphore condition, it releases the\nper-set lock and sleeps. Upon waking, it checks the sequence number\nembedded in the semaphore set\\'s IPC identifier to detect whether the\nset was removed while the caller was asleep. This sequence number is\nonly 15 bits wide. If enough semaphore sets are created and destroyed in\nthe same table slot while a caller is blocked, the counter wraps around,\nand semop(2) may falsely conclude that the original set still exists.\nThe subsequent access to a semaphore within the set may then be out of\nbounds.\n\n# Impact:\n\nAn unprivileged local user can trigger an out-of-bounds access on kernel\nheap memory, potentially leading to privilege escalation.\n",
+    "id": "FreeBSD-2026-0482",
+    "modified": "2026-09-30T00:00:00Z",
+    "published": "2026-09-30T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-58098"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:64.sysvsem.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Heap out-of-bounds access in semop(2)"
+}

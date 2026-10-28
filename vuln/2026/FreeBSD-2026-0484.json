@@ -1,0 +1,94 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "15.0"
+                        },
+                        {
+                            "fixed": "15.0_14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.5"
+                        },
+                        {
+                            "fixed": "14.5_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-09-29T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-101304",
+                "CVE-2026-101305",
+                "CVE-2026-101306"
+            ],
+            "freebsdsa": [
+                "SA-26:66.jail"
+            ]
+        },
+        "vid": "1fe3495b-bccd-11f1-906f-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nThree flaws allow a jailed process to bypass FD_RESOLVE_BENEATH:\n\n1.  When fdescfs(4) was mounted in a jail with the \\\"nodup\\\" option,\n    opening /dev/fd/N returned a descriptor that did not inherit\n    FD_RESOLVE_BENEATH or the Capsicum capability rights of\n    descriptor N. (CVE-2026-101304)\n2.  renameat(2) did not enforce FD_RESOLVE_BENEATH on its directory\n    arguments. A jailed process could rename a directory relative to a\n    restricted descriptor, then escape the jail root via fchdir(2). This\n    requires the directory to reside on a filesystem that is also\n    reachable from the jail\\'s root. (CVE-2026-101305)\n3.  SCM_RIGHTS file descriptor passing did not preserve\n    FD_RESOLVE_BENEATH when a descriptor was transferred. A process\n    could clear the restriction by sending the descriptor to itself over\n    a Unix domain socket. (CVE-2026-101306)\n\n# Impact:\n\nA process in a jail that has received a directory file descriptor from\nanother jail can use these techniques to escape the jail\\'s filesystem\nroot restriction.\n",
+    "id": "FreeBSD-2026-0484",
+    "modified": "2026-09-30T00:00:00Z",
+    "published": "2026-09-30T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101304"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101305"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101306"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:66.jail.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Multiple jail filesystem root escapes"
+}

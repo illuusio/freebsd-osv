@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ejabberd"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.09"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.process-one.net/blog/ejabberd-26-09/#security"
+        ],
+        "discovery": "2026-09-30T00:00:00Z",
+        "vid": "ec9017a0-c4fe-11f1-bbb3-901b0e9408dc"
+    },
+    "details": "ejabberd team reports:\n\n> - Unauthenticated Remote Code Execution on ejabberd (reported by Gia\n>   Bui) when:\n>   - ejabberd versions is at least 25.10\n>   - BOSH is enabled on any port\n>   - S2S is enabled\n>   - mod_adhoc_api is loaded\n>   - outbound connectivity from ejabberd on ports epmd (default 4369),\n>     s2s (default 5269) and Erlang distribution port (dynamically\n>     assigned, typically in the range 49152-65535 unless\n>     FIREWALL_WINDOW is set in ejabberdctl.cfg).\n> - DoS attack on 16.12+ versions if BOSH is enabled on any port.\n> - Cross-Tenant MUC, Roster and Shared-Roster unauthorized access\n>   (reported by Hoang Gia).\n",
+    "id": "FreeBSD-2026-0505",
+    "modified": "2026-10-10T00:00:00Z",
+    "published": "2026-10-10T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.process-one.net/blog/ejabberd-26-09/#security"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "ejabberd -- Multiple security vulnerabilities"
+}

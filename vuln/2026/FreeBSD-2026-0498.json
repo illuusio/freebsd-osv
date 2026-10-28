@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "rabbitmq-c"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.18.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/alanxz/rabbitmq-c/security/advisories/GHSA-5fp7-wg2f-hhgp"
+        ],
+        "discovery": "2026-09-15T00:00:00Z",
+        "vid": "03302734-c15d-11f1-8561-107c611e671e"
+    },
+    "details": "The rabbitmq-c project reports:\n\n> A malicious AMQP peer can trigger memory exhaustion in rabbitmq-c\n> clients by sending frames with unrecognised types or invalid channel\n> numbers. The client allocates per-channel memory pools and stores\n> complete frames before validating the channel against the negotiated\n> limits or the frame type, and discards unknown frames without\n> releasing that memory, allowing a sustained stream of small frames to\n> exhaust client resources.\n",
+    "id": "FreeBSD-2026-0498",
+    "modified": "2026-10-06T00:00:00Z",
+    "published": "2026-10-06T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/alanxz/rabbitmq-c/security/advisories/GHSA-5fp7-wg2f-hhgp"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "rabbitmq-c -- remote client-side memory exhaustion"
+}

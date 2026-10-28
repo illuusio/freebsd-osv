@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.14.5"
+                            "fixed": "2.9.13_10"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -76,7 +76,7 @@
     },
     "details": "Alan Coopersmith reports:\n\n> As discussed in <https://gitlab.gnome.org/GNOME/libxml2/-/issues/913>\n> the security policy of libxml2 has been changed to disclose\n> vulnerabilities before fixes are available so that people other than\n> the maintainer can contribute to fixing security issues in this\n> library.\n>\n> As part of this, the following 5 CVE\\'s have been disclosed recently:\n>\n> (CVE-2025-49794) Heap use after free (UAF) leads to Denial of service\n> (DoS) <https://gitlab.gnome.org/GNOME/libxml2/-/issues/931> \\[\\...\\]\n>\n> (CVE-2025-49795) Null pointer dereference leads to Denial of service\n> (DoS) <https://gitlab.gnome.org/GNOME/libxml2/-/issues/932> \\[\\...\\]\n>\n> (CVE-2025-49796) Type confusion leads to Denial of service (DoS)\n> <https://gitlab.gnome.org/GNOME/libxml2/-/issues/933> \\[\\...\\]\n>\n> For all three of the above, note that upstream is considering removing\n> Schematron support completely, as discussed in\n> <https://gitlab.gnome.org/GNOME/libxml2/-/issues/935>.\n>\n> (CVE-2025-6021) Integer Overflow Leading to Buffer Overflow in\n> xmlBuildQName() <https://gitlab.gnome.org/GNOME/libxml2/-/issues/926>\n> \\[\\...\\]\n>\n> (CVE-2025-6170) Stack-based Buffer Overflow in xmllint Shell\n> <https://gitlab.gnome.org/GNOME/libxml2/-/issues/941> \\[\\...\\]\n",
     "id": "FreeBSD-2025-0228",
-    "modified": "2025-07-15T00:00:00Z",
+    "modified": "2026-10-16T00:00:00Z",
     "published": "2025-07-12T00:00:00Z",
     "references": [
         {

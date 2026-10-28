@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "podman"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.8.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/podman-container-tools/podman/releases/tag/v5.8.8"
+        ],
+        "discovery": "2026-10-11T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-94603"
+            ]
+        },
+        "vid": "bb4528f4-c5d4-11f1-8c8c-ac5afc632ba3"
+    },
+    "details": "The Podman developers report:\n\n> This release addresses (CVE-2026-94603), where a \\\"podman run\\\" on a\n> checkpoint image (any image with the\n> io.podman.annotations.checkpoint.runtime.name annotation) could\n> disable all sandboxing, including sandboxing specified by the user,\n> when the container was created.\n>\n> Removed support for checkpoint images in podman run due to serious\n> security concerns with the different security models of running images\n> and running checkpoints. Checkpoints ignore user-specified security\n> configuration and are very difficult to run safely.\n",
+    "id": "FreeBSD-2026-0507",
+    "modified": "2026-10-11T00:00:00Z",
+    "published": "2026-10-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/podman-container-tools/podman/releases/tag/v5.8.8"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94603"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "podman -- vulnerabilities"
+}

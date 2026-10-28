@@ -1,0 +1,176 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "emacs"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "31.1_3,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "emacs-canna"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "31.1_3,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "emacs-nox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "31.1_3,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "emacs-wayland"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "31.1_3,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "emacs-devel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "32.0.50.20261019,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "emacs-devel-nox"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "32.0.50.20261019,3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-08-21T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-79992",
+                "CVE-2026-108976"
+            ]
+        },
+        "vid": "436ad1a7-ccc8-11f1-af18-c4ff99d93a55"
+    },
+    "details": "# Problem Description\n\nTRAMP (Transparent Remote (file) Access, Multiple Protocol) is a part of\nEmacs that provides an interface for editing remote files transparently.\nIt builds the login command for a remote connection from\ntramp-login-args by joining the expanded values without quoting and\npasses the resulting string to a local shell. The user name part of a\nremote file name may contain shell metacharacters, and nothing sanitizes\nthem. Because the file name dispatch regexp was anchored to the start of\na line rather than the start of the string, a file name containing a\nnewline followed by a remote file name syntax, for example in a symbolic\nlink target, is handed to TRAMP.\n\nThe first fix (CVE-2026-79992), included in Emacs 31.1, excluded shell\nmetacharacters from TRAMP user names, but tramp-user-regexp still\npermitted \\\"!\\\", \\\"#\\\", \\\"&\\\", \\\",\\\" and control characters. User and\nhost names were also not re-validated after environment variable\nexpansion, and the values of tramp-default-user and tramp-default-host\nwere not validated at all. This incomplete fix was assigned\nCVE-2026-108976. The commit completing the fix cites CVE-2026-79992\nbecause it was written before the second identifier was published. The\nFreeBSD Emacs package versions 31.1,3 through 31.1_2,3 and emacs-devel\nsnapshots from 32.0.50.20260902 through 32.0.50.20261001 are affected\nonly by CVE-2026-108976.\n\n# Impact\n\nMerely processing a crafted file name, for example with file-exists-p,\nexecutes the embedded command with the privileges of the user running\nEmacs. No remote connection has to succeed.\n",
+    "id": "FreeBSD-2026-0534",
+    "modified": "2026-10-20T00:00:00Z",
+    "published": "2026-10-20T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-79992"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-108976"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.openwall.com/lists/oss-security/2026/08/21/1"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.openwall.com/lists/oss-security/2026/08/26/15"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.openwall.com/lists/oss-security/2026/10/11/1"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.openwall.com/lists/oss-security/2026/10/14/4"
+        },
+        {
+            "type": "WEB",
+            "url": "https://git.savannah.gnu.org/cgit/emacs.git/commit/?id=f3e7104d05bdb8e32ba13bf75604108ad88536dc"
+        },
+        {
+            "type": "WEB",
+            "url": "https://git.savannah.gnu.org/cgit/emacs.git/commit/?id=044b0203267db3b7912325d076d79a79000afe75"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-79992"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-108976"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Emacs -- Local command injection via crafted file names in TRAMP"
+}

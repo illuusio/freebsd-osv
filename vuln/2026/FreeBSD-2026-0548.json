@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "vifm"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.14.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://hackmd.io/@1ExmmukzRMWN7B4gQ4W-4Q/SkX7Pmiofg"
+        ],
+        "discovery": "2026-10-13T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-110237"
+            ]
+        },
+        "vid": "158544f8-cf02-11f1-b0f1-d0f4051da3a3"
+    },
+    "details": "https://hackmd.io/@1ExmmukzRMWN7B4gQ4W-4Q/SkX7Pmiofg reports:\n\n> Vifm 0.8.1-beta through 0.14.4 reuses a pre-existing IPC FIFO in the\n> shared temporary directory without checking ownership, allowing local\n> users to execute commands as another user. Attackers can pre-create a\n> world-writable vifm-ipc-vifm FIFO and write IPC packets with -c and !\n> shell commands that execute with the victim\\'s privileges.\n",
+    "id": "FreeBSD-2026-0548",
+    "modified": "2026-10-23T00:00:00Z",
+    "published": "2026-10-23T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://hackmd.io/@1ExmmukzRMWN7B4gQ4W-4Q/SkX7Pmiofg"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110237"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "vifm -- Unverified Ownership"
+}

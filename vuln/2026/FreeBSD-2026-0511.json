@@ -1,0 +1,137 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libwasmtime"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "36.0.17"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "37.0.0"
+                        },
+                        {
+                            "fixed": "48.0.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "49.0.0"
+                        },
+                        {
+                            "fixed": "49.0.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "wasmtime"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "36.0.17"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "37.0.0"
+                        },
+                        {
+                            "fixed": "48.0.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "49.0.0"
+                        },
+                        {
+                            "fixed": "49.0.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.2"
+        ],
+        "discovery": "2026-10-02T00:00:00Z",
+        "vid": "371fc9b2-c543-11f1-b115-74563cf85f9d"
+    },
+    "details": "Wasmtime development team reports:\n\n> - Wasmtime component async-lifted callback result count is\n>   unvalidated, causing a native stack buffer overflow.\n> - Mis-typed WebAssembly tag imports can lead to GC heap corruption.\n> - Rooting for GC values live across try_call may be missing, causing\n>   GC heap corruption.\n> - Excessive allocated memory on the host when guests don\\'t have\n>   stdio.\n> - Guest can panic host through filesystem timestamp before the epoch\n>   on wasip3.\n> - Wasmtime wasi:http implementation panics with a zero timeout\n>   supplied.\n> - WASI preview 0 implementation of poll_oneoff circumvents fuel\n>   consumption.\n> - fd_readdir copies uninitialized struct padding into guest memory.\n",
+    "id": "FreeBSD-2026-0511",
+    "modified": "2026-10-11T00:00:00Z",
+    "published": "2026-10-11T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.2"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-32h6-97mm-8q3c"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-cfhf-m2cr-62wj"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-hw8m-q44c-ggrf"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-gqmc-89g8-p25r"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-mr2v-56j5-cmfc"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-w4qr-p94g-mjhv"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-j366-h8gg-77pm"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-96f6-r43r-8c24"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "libwasmtime -- Multiple vulnerabilities"
+}

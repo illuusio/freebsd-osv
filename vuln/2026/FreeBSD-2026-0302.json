@@ -9,18 +9,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "47.7.4"
                         },
                         {
                             "fixed": "47.7.12"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "47.7.4"
                         }
                     ],
                     "type": "ECOSYSTEM"

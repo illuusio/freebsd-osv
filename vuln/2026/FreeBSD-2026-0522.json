@@ -1,0 +1,52 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "miniupnpd"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.10,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-04-17T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-5720"
+            ]
+        },
+        "vid": "43dc274d-f74b-4420-8ef8-d2e108213002"
+    },
+    "details": "An integer underflow in the SOAPAction header parsing in\nParseHttpHeaders() lets a remote attacker trigger an out-of-bounds read\nby sending a malformed SOAPAction header containing a single quote. This\ncan crash miniupnpd or disclose memory beyond the HTTP request buffer.\n",
+    "id": "FreeBSD-2026-0522",
+    "modified": "2026-10-16T00:00:00Z",
+    "published": "2026-10-16T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5720"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.vulncheck.com/advisories/miniupnpd-integer-underflow-soapaction-header-parsing"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/miniupnp/miniupnp/commit/f56bd09b2f2650126b832c5f30a65a09e28167fa"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "miniupnpd -- Integer underflow in SOAPAction header parsing"
+}

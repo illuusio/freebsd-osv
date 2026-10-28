@@ -76,7 +76,7 @@
     },
     "details": "Alan Coopersmith reports:\n\n> On 6/16/25 15:12, Alan Coopersmith wrote:\n>\n> *BTW, users of libxml2 may also be using its sibling project, libxslt,\n> which currently has no active maintainer, but has three unfixed\n> security issues reported against it according to\n> <https://gitlab.gnome.org/Teams/Releng/security/-/wikis/2025#libxml2-and-libxslt>*\n>\n> 2 of the 3 have now been disclosed:\n>\n> (CVE-2025-7424) libxslt: Type confusion in xmlNode.psvi between\n> stylesheet and source nodes\\\n> <https://gitlab.gnome.org/GNOME/libxslt/-/issues/139>\n> <https://project-zero.issues.chromium.org/issues/409761909>\n>\n> (CVE-2025-7425) libxslt: heap-use-after-free in xmlFreeID caused by\n> \\`atype\\` corruption\\\n> <https://gitlab.gnome.org/GNOME/libxslt/-/issues/140>\\\n> <https://project-zero.issues.chromium.org/issues/410569369>\n>\n> Engineers from Apple & Google have proposed patches in the GNOME\n> gitlab issues, but neither has had a fix applied to the git repo since\n> there is currently no maintainer for libxslt.\n\nNote that a fourth vulnerability was reported on June 18, 2025, which\nremains undisclosed to date (GNOME libxslt issue 148, link below), see\n<https://gitlab.gnome.org/Teams/Releng/security/-/wikis/2025#libxml2-and-libxslt>\n\nIv\u00e1n Chavero reports vs. v1.1.44:\n\n> \\[CVE-2025-11731\\] Fix: End function node ancestor search at document\n",
     "id": "FreeBSD-2025-0229",
-    "modified": "2026-01-02T00:00:00Z",
+    "modified": "2026-10-25T00:00:00Z",
     "published": "2025-07-12T00:00:00Z",
     "references": [
         {

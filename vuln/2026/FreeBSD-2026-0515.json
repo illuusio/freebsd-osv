@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-10-14T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-101307"
+            ],
+            "freebsdsa": [
+                "SA-26:70.tcp"
+            ]
+        },
+        "vid": "e40e981e-c847-11f1-ada3-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nWhen the PCM sample array needs to grow, the RACK stack doubles a 16-bit\nallocation counter. Repeated doublings caused the counter to wrap to\nzero, resulting in a near-zero-length allocation followed by a copy of\nthe existing samples into the undersized buffer. A remote peer can\ntrigger the expansion by sending a sufficient number of ACKs on an\nestablished connection.\n\n# Impact:\n\nA remote attacker who can establish a TCP connection to a system using\nthe RACK stack can trigger an out-of-bounds write of approximately 512\nKB in the kernel heap possibly resulting in a kernel panic.\n",
+    "id": "FreeBSD-2026-0515",
+    "modified": "2026-10-15T00:00:00Z",
+    "published": "2026-10-15T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101307"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:70.tcp.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Remotely triggerable buffer overflow in tcp_rack"
+}

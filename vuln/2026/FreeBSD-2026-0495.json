@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "vaultwarden"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.37.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.4"
+        ],
+        "discovery": "2026-10-06T00:00:00Z",
+        "vid": "3a72cd47-c157-11f1-a6ea-8447094a420f"
+    },
+    "details": "The Vaultwarden project reports:\n\n> - Organization member revocation \\[GHSA-69q9-v8p6-xvx3\\] (High, 8.1)\n> - Two-factor authentication \\[GHSA-7jg8-8m5x-6j9r\\] (Medium, 6.8)\n> - Organization invitations \\[GHSA-v576-3wvq-xh3c\\] (Medium, 6.8)\n> - Attachments \\[GHSA-q5x6-grh5-fqgc\\] (Medium, 6.5)\n> - Organization event logs \\[GHSA-64mc-4p6f-r7x9\\] (Medium, 4.3)\n> - Cipher sharing \\[GHSA-7ccc-c43j-4p36\\] (Medium, 4.3)\n> - Organization API key \\[GHSA-qwx4-wcv4-mpcv\\] (Low, 3.8)\n",
+    "id": "FreeBSD-2026-0495",
+    "modified": "2026-10-06T00:00:00Z",
+    "published": "2026-10-06T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/dani-garcia/vaultwarden/releases/tag/1.37.4"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Vaultwarden -- Multiple vulnerabilities"
+}

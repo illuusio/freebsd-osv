@@ -1,0 +1,71 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "unbound"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.26.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://community.nlnetlabs.nl/t/unbound-1-26-2-released/3495"
+        ],
+        "discovery": "2026-10-21T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-97206",
+                "CVE-2026-50106",
+                "CVE-2026-96405",
+                "CVE-2026-109125",
+                "CVE-2026-35501"
+            ]
+        },
+        "vid": "0be28489-cd2f-11f1-8135-8447094a420f"
+    },
+    "details": "NLNetLabs reports:\n\n> This release consolidates security fixes for issues reported over a\n> period of time.\n>\n> - CVE-2026-97206, DoQ path-migration can lead to use-after-free on\n>   multi-threaded deployments.\n> - CVE-2026-50106, Possible insecure NXDOMAIN for non-existing records\n>   under a configured island trust anchor underneath an insecure\n>   parent.\n> - CVE-2026-96405, Aggregate DNS name chained pointer decompression\n>   work leads to degradation of service.\n> - CVE-2026-109125, Possible cache poisoning vulnerability via a cache\n>   side-channel exposed by 'unwanted-reply-threshold'.\n> - CVE-2026-35501, Bypass of a configured island trust anchor\n>   underneath an insecure parent from an attacker-controlled NSEC\n>   record.\n",
+    "id": "FreeBSD-2026-0536",
+    "modified": "2026-10-21T00:00:00Z",
+    "published": "2026-10-21T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://community.nlnetlabs.nl/t/unbound-1-26-2-released/3495"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97206"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50106"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96405"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-109125"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-35501"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Unbound -- Multiple vulnerabilities"
+}

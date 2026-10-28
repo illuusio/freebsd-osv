@@ -1,0 +1,229 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ce"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.4.0"
+                        },
+                        {
+                            "fixed": "19.4.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.3.0"
+                        },
+                        {
+                            "fixed": "19.3.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "10.3.0"
+                        },
+                        {
+                            "fixed": "19.2.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitlab-ee"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "19.4.0"
+                        },
+                        {
+                            "fixed": "19.4.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "19.3.0"
+                        },
+                        {
+                            "fixed": "19.3.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "10.3.0"
+                        },
+                        {
+                            "fixed": "19.2.8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-2-released/?nav=19.4.2"
+        ],
+        "discovery": "2026-10-12T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-97229",
+                "CVE-2026-92883",
+                "CVE-2026-16301",
+                "CVE-2026-14814",
+                "CVE-2026-81839",
+                "CVE-2026-96893",
+                "CVE-2026-101168",
+                "CVE-2026-7767",
+                "CVE-2026-16275",
+                "CVE-2026-84284",
+                "CVE-2026-85529",
+                "CVE-2026-100755",
+                "CVE-2026-14552",
+                "CVE-2026-6567",
+                "CVE-2026-104661",
+                "CVE-2026-14210",
+                "CVE-2026-105458",
+                "CVE-2026-5954",
+                "CVE-2026-92528",
+                "CVE-2026-78335",
+                "CVE-2026-100104",
+                "CVE-2026-82632",
+                "CVE-2026-103549",
+                "CVE-2026-9268"
+            ]
+        },
+        "vid": "5518664d-c652-11f1-b273-2cf05da270f3"
+    },
+    "details": "Gitlab reports:\n\n> Integer Overflow issue in CI/CD Regular Expression Compiler impacts\n> GitLab CE/EE\n>\n> Cross-site Scripting issue in syntax highlighting impacts GitLab CE/EE\n>\n> Improper Authorization issue in downstream pipeline creation service\n> impacts GitLab CE/EE\n>\n> Permissive Regular Expression issue in repository file access impacts\n> GitLab CE/EE\n>\n> Incorrect Authorization issue in scheduled pipeline execution policy\n> impacts GitLab EE\n>\n> Improper Neutralization of Input Used for LLM Prompting issue in\n> GitLab Duo Agent Platform impacts GitLab EE\n>\n> Sensitive Information Exposure issue in GitLab Pages impacts GitLab\n> CE/EE\n>\n> Open Redirect issue in Kubernetes proxy impacts GitLab CE/EE\n>\n> Incorrect Authorization issue in GraphQL notes widget impacts GitLab\n> CE/EE\n>\n> Incorrect Authorization issue in GraphQL work item hierarchy impacts\n> GitLab CE/EE\n>\n> Incorrect Authorization issue in GraphQL scope impacts GitLab CE/EE\n>\n> Page cache poisoning via improper cache key construction in merge\n> requests impacts GitLab CE/EE\n>\n> Incorrect Authorization issue in work items GraphQL API impacts GitLab\n> CE/EE\n>\n> Missing Authorization issue in merge request accessibility report\n> comparison endpoint impacts GitLab CE/EE\n>\n> Incorrect Privilege Assignment issue in custom roles impacts GitLab EE\n>\n> Insufficient Granularity of Access Control issue in project label\n> management impacts GitLab CE/EE\n>\n> Governance Control Bypass issue in Duo Agent Platform impacts GitLab\n> EE\n>\n> Incorrect Authorization issue in package registry impacts GitLab CE/EE\n>\n> Incorrect Authorization issue in merge request approval eligibility\n> check impacts GitLab EE\n>\n> Incorrect Authorization issue in fine-grained personal access tokens\n> impacts GitLab CE/EE\n>\n> Server Side Request Forgery (SSRF) issue in repository import impacts\n> GitLab CE/EE\n>\n> Incorrect Authorization issue in project import impacts GitLab CE/EE\n>\n> Incorrect Authorization issue in Package Registry impacts GitLab CE/EE\n>\n> Improper Access Control issue in project CI/CD settings impacts GitLab\n> EE\n",
+    "id": "FreeBSD-2026-0509",
+    "modified": "2026-10-12T00:00:00Z",
+    "published": "2026-10-12T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://docs.gitlab.com/releases/patches/patch-release-gitlab-19-4-2-released/?nav=19.4.2"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97229"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92883"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16301"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14814"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-81839"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96893"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101168"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-7767"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16275"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84284"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-85529"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-100755"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14552"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-6567"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-104661"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14210"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-105458"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-5954"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92528"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-78335"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-100104"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-82632"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-103549"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-9268"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Gitlab -- vulnerabilities"
+}

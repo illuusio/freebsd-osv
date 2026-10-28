@@ -1,0 +1,140 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "php82"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.2.35"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "php83"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.3.36"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "php84"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.4.27"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.5.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "php86"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.6.0.r4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.php.net/archive/2026.php#2026-10-21-5"
+        ],
+        "discovery": "2026-10-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-109618",
+                "CVE-2026-109619"
+            ]
+        },
+        "vid": "d8e16d08-cd2f-11f1-8135-8447094a420f"
+    },
+    "details": "The PHP project reports:\n\n> PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 fix two critical vulnerabilities\n> that can allow unauthenticated remote code execution.\n",
+    "id": "FreeBSD-2026-0537",
+    "modified": "2026-10-21T00:00:00Z",
+    "published": "2026-10-21T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.php.net/archive/2026.php#2026-10-21-5"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-109618"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-109619"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "PHP -- Multiple vulnerabilities"
+}

@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssh-portable"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.6.p1,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.openssh.org/txt/release-10.6"
+        ],
+        "discovery": "2026-10-06T00:00:00Z",
+        "vid": "26fd839c-c338-11f1-a6ea-8447094a420f"
+    },
+    "details": "The OpenSSH project reports:\n\n> - sftp(1): more strictly validate paths returned from the server to\n>   avoid some cases where a server could return paths that could\n>   manipulate a recursive copy operation into writing outside its\n>   target directory.\n> - sshd(8): when GSSAPIAuthentication is in use, only store GSSAPI\n>   credentials when authentication has succeeded. Avoids a situation\n>   where credentials from a failed GSSAPIAuthentication attempt may\n>   persist and be made inappropriately available if another\n>   authentication subsequently succeeds.\n> - sshd(8): reset GSSAPIAuthentication before authentication, avoiding\n>   state from one authentication attempt being confused with that of a\n>   later attempt.\n> - sshd(8), ssh(1): disable LZ77 dictionary coder to mitigate the\n>   side-channel leaks described in \\\"Crossing the Streams: SSH\n>   Plaintext Recovery via a Common Compression Context in Multiplexed\n>   Channels\\\"\n> - ssh(1): disallow \\'\\$\\' and \\'\\\\\\' characters in usernames entered\n>   on the command-line to avoid usernames from untrusted sources\n>   yielding injection in shell context via ProxyCommand, Match exec,\n>   etc. Usernames specified via the configuration files are not subject\n>   this this control.\n> - ssh-keygen(1): correct handling of Daylight Saving Time when\n>   converting dates. Previous handling could cause errors of up to +/-\n>   1 hour (unless you are in the Antarctica/Troll timezone, where the\n>   error could be +/- 2 hours). These errors could result in creation\n>   of certificates with incorrect expiry times.\n> - sshd(8), ssh(1): ensure that compressed payloads don\\'t inflate past\n>   the maximum supported packet length.\n> - sshd(8): fully honor the authorized_keys \\\"restrict\\\" keyword, which\n>   was not being properly applied to tunnel forwarding (PermitTunnel,\n>   disabled by default).\n> - sshd(8): correctly handle some options that accept \\\"none\\\". Some\n>   options, including AuthorizedPrincipalsFile, were documented as\n>   accepting \\\"none\\\" as a way to disable them; however, when\n>   overridden by an sshd_config(5) Match keyword, this argument was\n>   being incorrectly interpreted as a literal file.\n> - sshd(8): on platforms that do not support file descriptor passing\n>   and that require root for PTY allocation, the post-authentication\n>   sshd-session process retains root privilege, whereas on other\n>   platforms this process runs with the privilege of the logged-in\n>   user. When sshd-session was run with elevated privilege, it could\n>   perform certain actions as root and circumvent controls that would\n>   normally have applied to the user, such as making unix domain socket\n>   connections or binding (via -R forwarding) to low- numbered TCP\n>   ports.\n",
+    "id": "FreeBSD-2026-0500",
+    "modified": "2026-10-08T00:00:00Z",
+    "published": "2026-10-08T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.openssh.org/txt/release-10.6"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "OpenSSH -- Multiple vulnerabilities"
+}

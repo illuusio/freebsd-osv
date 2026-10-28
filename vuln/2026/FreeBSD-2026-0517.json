@@ -1,0 +1,83 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.5"
+                        },
+                        {
+                            "fixed": "14.5_2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-10-14T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-101309",
+                "CVE-2026-101310",
+                "CVE-2026-101311"
+            ],
+            "freebsdsa": [
+                "SA-26:72.bhyve"
+            ]
+        },
+        "vid": "3f9e602e-c849-11f1-ada3-bc241121aa0a"
+    },
+    "details": "# Problem Description:\n\nSeveral vulnerabilities were found in the bhyve hypervisor\\'s device\nmodels.\n\nThe xHCI (USB 3) device model did not validate or save the event ring\nsize provided by the guest. The size was re-read from guest memory on\neach use, and Transfer Request Block (TRB) fields were loaded without\nprotection against concurrent modification by the guest. This race\ncondition could be triggered by a guest running malicious, privileged\ncode. (CVE-2026-101309)\n\nThe HDA audio device model did not check for zero-length Buffer\nDescriptor List (BDL) entries when starting a stream. A zero-length\nentry caused an out-of-bounds read or write during DMA transfer\nprocessing. BDL fields were also subject to modification by the guest\nafter validation. (CVE-2026-101310)\n\nThe framebuffer device model\\'s maximum resolution constants were\nduplicated between the framebuffer and RFB modules and had gotten out of\nsync. Additionally, writes to the framebuffer BAR could set arbitrary\nwidth and height values without validation, and the framebuffer BAR I/O\nand RFB rendering threads were not synchronized. (CVE-2026-101311)\n\n# Impact:\n\nA malicious guest can crash the bhyve process or potentially execute\narbitrary code in the host userspace context running the virtual\nmachine, subject to bhyve\\'s Capsicum sandbox.\n",
+    "id": "FreeBSD-2026-0517",
+    "modified": "2026-10-15T00:00:00Z",
+    "published": "2026-10-15T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101309"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101310"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101311"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:72.bhyve.asc"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "FreeBSD -- Multiple vulnerabilities in bhyve device models"
+}

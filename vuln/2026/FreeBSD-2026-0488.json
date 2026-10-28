@@ -1,0 +1,74 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "apache-commons-lang"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "2.0"
+                        },
+                        {
+                            "fixed": "2.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "apache-commons-lang3"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "3.0"
+                        },
+                        {
+                            "fixed": "3.18.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.openwall.com/lists/oss-security/2025/07/11/1"
+        ],
+        "discovery": "2025-07-11T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-48924"
+            ]
+        },
+        "vid": "a7738854-bc00-11f1-a829-dca632daf43b"
+    },
+    "details": "OSS-Fuzz, Gary Gregory reports:\n\n> Uncontrolled Recursion vulnerability in Apache Commons Lang. This\n> issue affects Apache Commons Lang: Starting with\n> commons-lang:commons-lang 2.0 to 2.6, and, from\n> org.apache.commons:commons-lang3 3.0 before 3.18.0. The methods\n> ClassUtils.getClass(\\...) can throw StackOverflowError on very long\n> inputs. Because an Error is usually not handled by applications and\n> libraries, a StackOverflowError could cause an application to stop.\n> Users are recommended to upgrade to version 3.18.0, which fixes the\n> issue.\n",
+    "id": "FreeBSD-2026-0488",
+    "modified": "2026-09-29T00:00:00Z",
+    "published": "2026-09-29T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.openwall.com/lists/oss-security/2025/07/11/1"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-48924"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2025-48924"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "apache-commons-lang -- Uncontrolled Recursion vulnerability"
+}

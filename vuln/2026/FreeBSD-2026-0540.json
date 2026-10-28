@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "brotli"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.2.1,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/google/brotli/releases/tag/v1.2.1"
+        ],
+        "discovery": "2026-10-22T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-111497"
+            ]
+        },
+        "vid": "f1e61d76-cdb6-11f1-b15e-589cfc104230"
+    },
+    "details": "-Brotli project reports:\n\n> CVE-2026-111497: out-of-bounds write permits remote code execution.\n",
+    "id": "FreeBSD-2026-0540",
+    "modified": "2026-10-22T00:00:00Z",
+    "published": "2026-10-22T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/google/brotli/releases/tag/v1.2.1"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-111497"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "brotli -- out-of-bounds write permits remote code execution"
+}

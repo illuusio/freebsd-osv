@@ -1,0 +1,48 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ca_root_nss"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.131.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-10-21T00:00:00Z",
+        "references": {
+            "freebsdsa": [
+                "SA-26:73.caroot"
+            ]
+        },
+        "vid": "b755b277-cf12-11f1-bae2-3497f65b111b"
+    },
+    "details": "# Problem Description:\n\neMudhra generated several of its TLS intermediate CA certificates with\ntrivially small private keys, which have since been recovered and\npublicly disclosed. Those intermediates are signed by the \\\"emSign ECC\nRoot CA - G3\\\" root certificate, which this port installs as part of its\ntrusted bundle up to and including version 3.131. NSS 3.131.1 removes\nthe root certificate.\n\nThe intermediates have been revoked, but OpenSSL does not check\ncertificate revocation by default.\n\nFreeBSD-SA-26:73.caroot addresses the base system trust store by marking\nthe root certificate as untrusted. That only affects the store generated\nby certctl(8), never the bundle installed by this port. On FreeBSD 14\nthe port owns /etc/ssl/cert.pem by default, and software reading the\nbundle directly, such as programs built with Go or Rust, uses\n/usr/local/etc/ssl/cert.pem or /usr/local/share/certs on every version\nof FreeBSD. Such configurations keep trusting the root certificate until\nthe package is updated.\n\n# Impact:\n\nAn attacker able to intercept network traffic can use the compromised\nkeys to issue a certificate that impersonates any TLS server, allowing\nthe traffic to be read or modified without detection.\n",
+    "id": "FreeBSD-2026-0549",
+    "modified": "2026-10-23T00:00:00Z",
+    "published": "2026-10-23T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-26:73.caroot.asc"
+        },
+        {
+            "type": "WEB",
+            "url": "https://bugzilla.mozilla.org/show_bug.cgi?id=2084101"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "ca_root_nss -- trusted root certificate from compromised CA eMudhra"
+}

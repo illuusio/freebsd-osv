@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "traefik"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.7.14"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/traefik/traefik/releases/tag/v3.7.14"
+        ],
+        "discovery": "2026-10-06T00:00:00Z",
+        "vid": "049d88bb-c4a2-11f1-9d0b-5404a68ad561"
+    },
+    "details": "The traefik project releases a new version addressing multiple\nvulnerabilities:\n\n> - GHSA-53qr-784g-cj35 (FastProxy backend connection pool leaks\n>   identity)\n> - GHSA-cw35-4q88-3rmp (NTLM/Kerberos sticky round tripper is not keyed\n>   by service)\n> - GHSA-fh26-gfpp-7xxx (snicheck skips the check when \\`req.TLS\\` is\n>   nil)\n> - GHSA-mwrr-6hp4-pxr6 (Ingress-NGINX provider forwards forged\n>   Ssl-Client-\\* identity headers\n> - GHSA-qm9f-w54v-q2qh (Preauthenticated Negotiate contaminates\n>   Traefik\\'s backend connection pool\n> - GHSA-qvj7-gq9c-hp7q (ssl-passthrough sibling HTTP router serves the\n>   auth-protected backend without auth)\n> - GHSA-rv2h-qh7j-xrjw (colliding auth-tls-secret names merge two\n>   client CAs into one TLS option)\n> - GHSA-mhjw-hmjv-p99x (Unsynchroinized write to sticky round tripper\n>   shared by concurrent HTTP/2 streams)\n",
+    "id": "FreeBSD-2026-0502",
+    "modified": "2026-10-10T00:00:00Z",
+    "published": "2026-10-10T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/traefik/traefik/releases/tag/v3.7.14"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "traefik -- Multiple vulnerabilities"
+}

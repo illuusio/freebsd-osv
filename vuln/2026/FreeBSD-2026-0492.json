@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "expat"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.8.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/libexpat/libexpat/pull/1282"
+        ],
+        "discovery": "2026-09-19T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-93990"
+            ]
+        },
+        "vid": "7fed71c4-be3a-11f1-ab8d-00a0980083d7"
+    },
+    "details": "https://github.com/libexpat/libexpat/pull/1282 reports:\n\n> Expat before 2.8.5 fails to validate that a high surrogate in UTF-16\n> input is followed by a low surrogate, allowing malformed UTF-16\n> sequences to be accepted. Attackers can supply UTF-16 encoded XML\n> containing lone high surrogates that consume the following code unit,\n> causing Expat to pass unpaired surrogates to applications built with\n> XML_UNICODE and to silently replace input characters in other builds.\n",
+    "id": "FreeBSD-2026-0492",
+    "modified": "2026-10-04T00:00:00Z",
+    "published": "2026-10-04T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/libexpat/libexpat/pull/1282"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-93990"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "libexpat -- Improper Handling of Unicode Encoding"
+}

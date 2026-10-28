@@ -1,0 +1,76 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "keycloak"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.8.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.keycloak.org/2026/10/keycloak-2680-released"
+        ],
+        "discovery": "2026-10-01T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-12388",
+                "CVE-2026-14781",
+                "CVE-2026-19608",
+                "CVE-2026-54515",
+                "CVE-2026-59889",
+                "CVE-2026-59903"
+            ]
+        },
+        "vid": "a28dd61b-be3e-11f1-bd34-3c7c3fba4204"
+    },
+    "details": "The Keycloak Team reports:\n\n> - \\[CVE-2026-12388\\]: IdP mapper admin role escalation.\n> - \\[CVE-2026-14781\\]: OIDC broker applies id_token email_verified to\n>   userinfo email, marking unverified addresses as verified.\n> - \\[CVE-2026-19608\\]: Name-only group claims let same-name groups\n>   satisfy path-specific group policies.\n> - \\[CVE-2026-54515\\], \\[CVE-2026-59889\\]: Third-party dependency fix,\n>   com.fasterxml.jackson.core:jackson-databind 2.22.0.\n> - \\[CVE-2026-59903\\]: Third-party dependency fix,\n>   io.netty:netty-codec-http:4.1.136.Final.\n",
+    "id": "FreeBSD-2026-0491",
+    "modified": "2026-10-02T00:00:00Z",
+    "published": "2026-10-02T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.keycloak.org/2026/10/keycloak-2680-released"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12388"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-14781"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19608"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-54515"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-59889"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-59903"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Keycloak -- multiple vulnerabilities"
+}

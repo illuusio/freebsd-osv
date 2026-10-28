@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "traefik"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.7.15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/traefik/traefik/releases/tag/v3.7.15"
+        ],
+        "discovery": "2026-10-15T00:00:00Z",
+        "vid": "10baec0d-ca7a-11f1-8dcf-5404a68ad561"
+    },
+    "details": "The traefik project releases a new version addressing multiple\nvulnerabilities:\n\n> - GHSA-p8wx-ph99-xgcr (mTLS (auth-tls-secret) silently disabled for a\n>   host)\n> - GHSA-ww7c-q3mv-xx22 (Data race on the shared bufio.Reader)\n> - GHSA-28hp-c82p-8vqj (TLS-option cache hit skips the cross-namespace\n>   authorization check)\n",
+    "id": "FreeBSD-2026-0529",
+    "modified": "2026-10-17T00:00:00Z",
+    "published": "2026-10-17T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/traefik/traefik/releases/tag/v3.7.15"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "traefik -- Multiple vulnerabilities"
+}
