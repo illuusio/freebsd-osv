@@ -80,7 +80,7 @@
                             "introduced": "1.5.0.b1"
                         },
                         {
-                            "fixed": "1.5.0.b1"
+                            "last_affected": "1.5.0.b1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -91,7 +91,7 @@
                             "introduced": "1.5.0.b1,1"
                         },
                         {
-                            "fixed": "1.5.0.b1,1"
+                            "last_affected": "1.5.0.b1,1"
                         }
                     ],
                     "type": "ECOSYSTEM"

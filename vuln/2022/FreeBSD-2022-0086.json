@@ -67,7 +67,6 @@
             "cvename": [
                 "CVE-2022-0778",
                 "CVE-2021-22570",
-                "CVE-2022-0778",
                 "CVE-2022-21454",
                 "CVE-2022-21482",
                 "CVE-2022-21483",
@@ -119,10 +118,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2021-22570"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-0778"
         },
         {
             "type": "ADVISORY",

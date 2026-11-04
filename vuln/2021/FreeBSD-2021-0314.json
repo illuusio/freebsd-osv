@@ -22,7 +22,7 @@
     ],
     "database_specific": {
         "cite": [
-            "://roundcube.net/news/2021/12/30/update-1.5.2-released"
+            "https://roundcube.net/news/2021/12/30/update-1.5.2-released"
         ],
         "discovery": "2021-12-30T00:00:00Z",
         "vid": "47197b47-6a1a-11ec-8be6-d4c9ef517024"
@@ -34,10 +34,6 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "://roundcube.net/news/2021/12/30/update-1.5.2-released"
-        },
-        {
-            "type": "WEB",
             "url": "https://roundcube.net/news/2021/12/30/update-1.5.2-released"
         }
     ],

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "rt44"
+                "name": "xorg-server"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.4.6"
+                            "fixed": "21.1.9,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "rt50"
+                "name": "xephyr"
             },
             "ranges": [
                 {
@@ -31,7 +31,83 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "5.0.4"
+                            "fixed": "21.1.9,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "xorg-vfbserver"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "21.1.9,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "xorg-nestserver"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "21.1.9,2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "xwayland"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "23.2.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "xwayland-devel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "21.0.99.1.542"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -40,38 +116,36 @@
         }
     ],
     "database_specific": {
-        "discovery": "2023-10-18T00:00:00Z",
+        "cite": [
+            "https://lists.x.org/archives/xorg-announce/2023-October/003430.html"
+        ],
+        "discovery": "2023-10-25T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-41259",
-                "CVE-2023-41260",
-                "CVE-2023-45024"
+                "CVE-2023-5367",
+                "CVE-2023-5380"
             ]
         },
-        "vid": "e14b9870-62a4-11ee-897b-000bab9f87f1"
+        "vid": "9e2fdfc7-e237-4393-9fa5-2d50908c66b3"
     },
-    "details": "Request Tracker reports:\n\nCVE-2023-41259 SECURITY: RT is vulnerable to unvalidated email headers\nin incoming email and the mail-gateway REST interface.\n\nCVE-2023-41260 SECURITY: RT is vulnerable to information leakage via\nresponse messages returned from requests sent via the mail-gateway REST\ninterface.\n\nCVE-2023-45024 SECURITY: RT 5.0 is vulnerable to information leakage via\ntransaction searches made by authenticated users in the transaction\nquery builder.\n",
+    "details": "The X.Org project reports:\n\n> - ZDI-CAN-22153/CVE-2023-5367: X.Org server: OOB write in\n>   XIChangeDeviceProperty/RRChangeOutputProperty\n>\n>   When prepending values to an existing property an invalid offset\n>   calculation causes the existing values to be appended at the wrong\n>   offset. The resulting memcpy() would write into memory outside the\n>   heap-allocated array.\n>\n> - ZDI-CAN-21608/CVE-2023-5380: Use-after-free bug in DestroyWindow\n>\n>   This vulnerability requires a legacy multi-screen setup with\n>   multiple protocol screens (\\\"Zaphod\\\"). If the pointer is warped\n>   from one screen to the root window of the other screen, the\n>   enter/leave code may retain a reference to the previous pointer\n>   window. Destroying this window leaves that reference in place, other\n>   windows may then trigger a use-after-free bug when they are\n>   destroyed.\n",
     "id": "FreeBSD-2023-0320",
-    "modified": "2023-10-18T00:00:00Z",
-    "published": "2023-10-18T00:00:00Z",
+    "modified": "2023-10-25T00:00:00Z",
+    "published": "2023-10-25T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-41259"
+            "type": "REPORT",
+            "url": "https://lists.x.org/archives/xorg-announce/2023-October/003430.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-41260"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5367"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-45024"
-        },
-        {
-            "type": "WEB",
-            "url": "https://bestpractical.com/request-tracker/"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5380"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Request Tracker -- multiple vulnerabilities"
+    "summary": "xorg-server -- Multiple vulnerabilities"
 }

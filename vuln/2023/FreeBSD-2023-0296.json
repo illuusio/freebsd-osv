@@ -2,74 +2,28 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "electron22"
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "13.2"
                         },
                         {
-                            "fixed": "22.3.25"
+                            "fixed": "13.2_4"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "electron24"
-            },
-            "ranges": [
+                },
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "12.4"
                         },
                         {
-                            "fixed": "24.8.5"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "electron25"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "25.8.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "libvpx"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.13.1"
+                            "fixed": "12.4_6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -78,35 +32,31 @@
         }
     ],
     "database_specific": {
-        "cite": [
-            "https://github.com/electron/electron/releases/tag/v22.3.25"
-        ],
-        "discovery": "2023-09-28T00:00:00Z",
+        "discovery": "2023-10-03T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-5217"
+                "CVE-2023-5368"
+            ],
+            "freebsdsa": [
+                "SA-23:12.msdosfs"
             ]
         },
-        "vid": "2bcd6ba4-d8e2-42e5-9033-b50b722821fb"
+        "vid": "fefcd340-624f-11ee-8e38-002590c1f29c"
     },
-    "details": "Electron developers report:\n\n> This update fixes the following vulnerability:\n>\n> - Security: backported fix for CVE-2023-5217.\n",
+    "details": "# Problem Description:\n\nIn certain cases using the truncate or ftruncate system call to extend a\nfile size populates the additional space in the file with unallocated\ndata from the underlying disk device, rather than zero bytes.\n\n# Impact:\n\nA user with write access to files on a msdosfs file system may be able\nto read unintended data (for example, from a previously deleted file).\n",
     "id": "FreeBSD-2023-0296",
-    "modified": "2023-09-30T00:00:00Z",
-    "published": "2023-09-29T00:00:00Z",
+    "modified": "2023-10-04T00:00:00Z",
+    "published": "2023-10-04T00:00:00Z",
     "references": [
         {
-            "type": "REPORT",
-            "url": "https://github.com/electron/electron/releases/tag/v22.3.25"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5368"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5217"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-qqvq-6xgj-jw8g"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-23:12.msdosfs.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "electron{22,24,25} -- Heap buffer overflow in vp8 encoding in libvpx"
+    "summary": "FreeBSD -- msdosfs data disclosure"
 }

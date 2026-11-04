@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "git"
+                "name": "chromium"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.40.1"
+                            "fixed": "113.0.5672.63"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "git-lite"
+                "name": "ungoogled-chromium"
             },
             "ranges": [
                 {
@@ -31,26 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.40.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "git-tiny"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "2.40.1"
+                            "fixed": "113.0.5672.63"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,43 +41,75 @@
     ],
     "database_specific": {
         "cite": [
-            "INSERT URL HERE"
+            "https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html"
         ],
-        "discovery": "2023-04-25T00:00:00Z",
+        "discovery": "2023-05-03T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-25652",
-                "CVE-2023-29007"
+                "CVE-2023-2459",
+                "CVE-2023-2460",
+                "CVE-2023-2461",
+                "CVE-2023-2462",
+                "CVE-2023-2463",
+                "CVE-2023-2464",
+                "CVE-2023-2465",
+                "CVE-2023-2466",
+                "CVE-2023-2467",
+                "CVE-2023-2468"
             ]
         },
-        "vid": "d2c6173f-e43b-11ed-a1d7-002590f2a714"
+        "vid": "246174d3-e979-11ed-8290-a8a1599412c6"
     },
-    "details": "git developers reports:\n\n> This update includes 2 security fixes:\n>\n> - CVE-2023-25652: By feeding specially crafted input to \\`git apply\n>   \\--reject\\`, a path outside the working tree can be overwritten with\n>   partially controlled contents (corresponding to the rejected hunk(s)\n>   from the given patch)\n> - CVE-2023-29007: A specially crafted \\`.gitmodules\\` file with\n>   submodule URLs that are longer than 1024 characters can used to\n>   exploit a bug that can be used to inject arbitrary configuration\n>   into user\\'s git config. This can result in arbitrary execution of\n>   code, by inserting values for core.pager, core.editor and so on\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 15 security fixes:\n>\n> - \\[1423304\\] Medium CVE-2023-2459: Inappropriate implementation in\n>   Prompts. Reported by Rong Jian of VRI on 2023-03-10\n> - \\[1419732\\] Medium CVE-2023-2460: Insufficient validation of\n>   untrusted input in Extensions. Reported by Martin Bajanik,\n>   Fingerprint\\[.\\]com on 2023-02-27\n> - \\[1350561\\] Medium CVE-2023-2461: Use after free in OS Inputs.\n>   Reported by \\@ginggilBesel on 2022-08-06\n> - \\[1375133\\] Medium CVE-2023-2462: Inappropriate implementation in\n>   Prompts. Reported by Alesandro Ortiz on 2022-10-17\n> - \\[1406120\\] Medium CVE-2023-2463: Inappropriate implementation in\n>   Full Screen Mode. Reported by Irvan Kurniawan (sourc7) on 2023-01-10\n> - \\[1418549\\] Medium CVE-2023-2464: Inappropriate implementation in\n>   PictureInPicture. Reported by Thomas Orlita on 2023-02-23\n> - \\[1399862\\] Medium CVE-2023-2465: Inappropriate implementation in\n>   CORS. Reported by \\@kunte_ctf on 2022-12-10\n> - \\[1385714\\] Low CVE-2023-2466: Inappropriate implementation in\n>   Prompts. Reported by Jasper Rebane (popstonia) on 2022-11-17\n> - \\[1413586\\] Low CVE-2023-2467: Inappropriate implementation in\n>   Prompts. Reported by Thomas Orlita on 2023-02-07\n> - \\[1416380\\] Low CVE-2023-2468: Inappropriate implementation in\n>   PictureInPicture. Reported by Alesandro Ortiz on 2023-02-15\n",
     "id": "FreeBSD-2023-0151",
-    "modified": "2023-04-26T00:00:00Z",
-    "published": "2023-04-26T00:00:00Z",
+    "modified": "2023-05-03T00:00:00Z",
+    "published": "2023-05-03T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "INSERT URL HERE"
+            "url": "https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-25652"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/git/git/security/advisories/GHSA-2hvf-7c8p-28fx"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2459"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-29007"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2460"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/git/git/security/advisories/GHSA-v48j-4xgg-4844"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2461"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2462"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2463"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2464"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2465"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2466"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2467"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2468"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "git -- Multiple vulnerabilities"
+    "summary": "chromium -- multiple vulnerabilities"
 }

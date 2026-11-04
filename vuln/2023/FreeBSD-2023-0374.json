@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "9.4.0,1"
+                            "introduced": "10.0.0,1"
                         },
                         {
-                            "fixed": "10.0.8,1"
+                            "fixed": "10.0.10,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +22,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/glpi-project/glpi/releases/tag/10.0.8"
+            "https://github.com/glpi-project/glpi/security/advisories/GHSA-mv2r-gpw3-g476"
         ],
-        "discovery": "2023-07-05T00:00:00Z",
+        "discovery": "2023-09-27T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-34244"
+                "CVE-2023-41320"
             ]
         },
-        "vid": "b14a6ddc-6821-11ee-b06f-0050569ceb3a"
+        "vid": "6f6518ab-6830-11ee-b06f-0050569ceb3a"
     },
-    "details": "security-advisories@github.com reports:\n\n> GLPI is a free asset and IT management software package. Starting in\n> version 9.4.0 and prior to version 10.0.8, a malicious link can be\n> crafted by an unauthenticated user that can exploit a reflected XSS in\n> case any authenticated user opens the crafted link. Users should\n> upgrade to version 10.0.8 to receive a patch.\n",
+    "details": "security-advisories@github.com reports:\n\n> GLPI stands for Gestionnaire Libre de Parc Informatique is a Free\n> Asset and IT Management Software package, that provides ITIL Service\n> Desk features, licenses tracking and software auditing. UI layout\n> preferences management can be hijacked to lead to SQL injection. This\n> injection can be use to takeover an administrator account. Users are\n> advised to upgrade to version 10.0.10. There are no known workarounds\n> for this vulnerability.\n",
     "id": "FreeBSD-2023-0374",
     "modified": "2023-10-11T00:00:00Z",
     "published": "2023-10-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/glpi-project/glpi/releases/tag/10.0.8"
+            "url": "https://github.com/glpi-project/glpi/security/advisories/GHSA-mv2r-gpw3-g476"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-34244"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-41320"
         },
         {
             "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-34244"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-41320"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "GLPI vulnerable to reflected XSS in search pages"
+    "summary": "Account takeover via SQL Injection in UI layout preferences in GLPI"
 }

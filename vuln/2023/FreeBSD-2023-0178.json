@@ -3,57 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "grafana"
+                "name": "xmltooling"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "9.4.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "9.4.12"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "9.5.0"
-                        },
-                        {
-                            "fixed": "9.5.3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "grafana9"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "9.4.0"
-                        },
-                        {
-                            "fixed": "9.4.12"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "9.5.0"
-                        },
-                        {
-                            "fixed": "9.5.3"
+                            "fixed": "3.2.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -63,34 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://grafana.com/blog/2023/06/06/grafana-security-release-new-grafana-versions-with-security-fixes-for-cve-2023-2183-and-cve-2023-2801/"
+            "https://shibboleth.net/community/advisories/secadv_20230612.txt"
         ],
-        "discovery": "2023-06-06T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2023-2801"
-            ]
-        },
-        "vid": "652064ef-056f-11ee-8e16-6c3be5272acd"
+        "discovery": "2023-06-12T00:00:00Z",
+        "vid": "f7e9a1cc-0931-11ee-94b4-6cc21735f730"
     },
-    "details": "Grafana Labs reports:\n\n> We have discovered a vulnerability with Grafana's data source query\n> endpoints that could end up crashing a Grafana instance.\n>\n> If you have public dashboards (PD) enabled, we are scoring this as a\n> CVSS 7.5 High.\n>\n> If you have disabled PD, this vulnerability is still a risk, but\n> triggering the issue requires data source read privileges and access\n> to the Grafana API through a developer script.\n",
+    "details": "Shibboleth consortium reports:\n\n> An updated version of the XMLTooling library that is part of the\n> OpenSAML and Shibboleth Service Provider software is now available\n> which corrects a server-side request forgery (SSRF) vulnerability.\n>\n> Including certain legal but \\\"malicious in intent\\\" content in the\n> KeyInfo element defined by the XML Signature standard will result in\n> attempts by the SP\\'s shibd process to dereference untrusted URLs.\n>\n> While the content of the URL must be supplied within the message and\n> does not include any SP internal state or dynamic content, there is at\n> minimum a risk of denial of service, and the attack could be combined\n> with others to create more serious vulnerabilities in the future.\n",
     "id": "FreeBSD-2023-0178",
-    "modified": "2023-06-07T00:00:00Z",
-    "published": "2023-06-07T00:00:00Z",
+    "modified": "2023-06-12T00:00:00Z",
+    "published": "2023-06-12T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://grafana.com/blog/2023/06/06/grafana-security-release-new-grafana-versions-with-security-fixes-for-cve-2023-2183-and-cve-2023-2801/"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2801"
-        },
-        {
-            "type": "WEB",
-            "url": "CVE-2023-2801"
+            "url": "https://shibboleth.net/community/advisories/secadv_20230612.txt"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Grafana -- Grafana DS proxy race condition"
+    "summary": "xmltooling -- remote resource access"
 }

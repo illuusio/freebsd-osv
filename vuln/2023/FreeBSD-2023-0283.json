@@ -3,35 +3,27 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "electron24"
+                "name": "gitlab-ce"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "16.3.0"
                         },
                         {
-                            "fixed": "24.8.3"
+                            "fixed": "16.3.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "electron25"
-            },
-            "ranges": [
+                },
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "13.12.0"
                         },
                         {
-                            "fixed": "25.8.1"
+                            "fixed": "16.2.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,61 +33,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/electron/electron/releases/tag/v24.8.3"
+            "https://about.gitlab.com/releases/2023/09/18/security-release-gitlab-16-3-4-released/"
         ],
-        "discovery": "2023-09-13T00:00:00Z",
+        "discovery": "2023-09-18T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-4763",
-                "CVE-2023-4762",
-                "CVE-2023-4761",
-                "CVE-2023-4863"
+                "CVE-2023-4998"
             ]
         },
-        "vid": "773ce35b-eabb-47e0-98ca-669b2b98107a"
+        "vid": "32a4896a-56da-11ee-9186-001b217b3468"
     },
-    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-4763.\n> - Security: backported fix for CVE-2023-4762.\n> - Security: backported fix for CVE-2023-4761.\n> - Security: backported fix for CVE-2023-4863.\n",
+    "details": "Gitlab reports:\n\n> Attacker can abuse scan execution policies to run pipelines as another\n> user\n",
     "id": "FreeBSD-2023-0283",
-    "modified": "2023-09-13T00:00:00Z",
-    "published": "2023-09-13T00:00:00Z",
+    "modified": "2023-09-19T00:00:00Z",
+    "published": "2023-09-19T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/electron/electron/releases/tag/v24.8.3"
+            "url": "https://about.gitlab.com/releases/2023/09/18/security-release-gitlab-16-3-4-released/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4763"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-w5hv-g8p5-vwjr"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4762"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-3wjr-p76q-rg8q"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4761"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-8cgp-x4c5-vg9g"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4863"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-j7hp-h8jx-5ppr"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4998"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "electron{24,25} -- multiple vulnerabilities"
+    "summary": "Gitlab -- vulnerability"
 }

@@ -23,7 +23,7 @@
                             "introduced": "20.04.3"
                         },
                         {
-                            "fixed": "20.04.3"
+                            "last_affected": "20.04.3"
                         }
                     ],
                     "type": "ECOSYSTEM"

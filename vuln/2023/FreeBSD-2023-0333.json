@@ -3,27 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "FreeBSD"
+                "name": "libsndfile"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "13.2"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "13.2_5"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "12.4"
-                        },
-                        {
-                            "fixed": "12.4_7"
+                            "fixed": "1.2.2_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -32,31 +21,35 @@
         }
     ],
     "database_specific": {
-        "discovery": "2023-11-08T00:00:00Z",
+        "cite": [
+            "https://github.com/libsndfile/libsndfile/issues/789"
+        ],
+        "discovery": "2023-07-18T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-5941"
-            ],
-            "freebsdsa": [
-                "SA-23:15.stdio"
+                "CVE-2022-33065"
             ]
         },
-        "vid": "5afcc9a4-7e04-11ee-8e38-002590c1f29c"
+        "vid": "4ade0c4d-7e83-11ee-9a8c-00155d01f201"
     },
-    "details": "# Problem Description:\n\nFor line-buffered streams the \\_\\_sflush() function did not correctly\nupdate the FILE object\\'s write space member when the write(2) system\ncall returns an error.\n\n# Impact:\n\nDepending on the nature of an application that calls libc\\'s stdio\nfunctions and the presence of errors returned from the write(2) system\ncall (or an overridden stdio write routine) a heap buffer overfly may\noccur. Such overflows may lead to data corruption or the execution of\narbitrary code at the privilege level of the calling program.\n",
+    "details": "cve@mitre.org reports:\n\n> Multiple signed integers overflow in function au_read_header in\n> src/au.c and in functions mat4_open and mat4_read_header in src/mat4.c\n> in Libsndfile, allows an attacker to cause Denial of Service or other\n> unspecified impacts.\n",
     "id": "FreeBSD-2023-0333",
     "modified": "2023-11-08T00:00:00Z",
     "published": "2023-11-08T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5941"
+            "type": "REPORT",
+            "url": "https://github.com/libsndfile/libsndfile/issues/789"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-23:15.stdio.asc"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-33065"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-33065"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- libc stdio buffer overflow"
+    "summary": "libsndfile_project -- Integer overflow in dataend calculation"
 }

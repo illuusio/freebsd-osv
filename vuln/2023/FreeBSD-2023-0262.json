@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-treq"
+                "name": "electron22"
             },
             "ranges": [
                 {
@@ -12,83 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "22.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py38-treq"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "22.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py39-treq"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "22.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py310-treq"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "22.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py311-treq"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "22.1.0"
+                            "fixed": "22.3.23"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,30 +22,43 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/GHSA-fhpf-pp6p-55qc"
+            "https://github.com/electron/electron/releases/tag/v22.3.23"
         ],
-        "discovery": "2022-02-01T00:00:00Z",
+        "discovery": "2023-08-30T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-23607"
+                "CVE-2023-4427",
+                "CVE-2023-4428"
             ]
         },
-        "vid": "181f5e49-b71d-4527-9464-d4624d69acc3"
+        "vid": "579c7489-c23d-454a-b0fc-ed9d80ea46e0"
     },
-    "details": "> Treq\\'s request methods (\\`treq.get\\`, \\`treq.post\\`,\n> \\`HTTPClient.request\\`, \\`HTTPClient.get\\`, etc.) accept cookies as a\n> dictionary.\n>\n> Such cookies are not bound to a single domain, and are therefore sent\n> to \\*every\\* domain (\\\"supercookies\\\").\n>\n> This can potentially cause sensitive information to leak upon an HTTP\n> redirect to a different domain., e.g. should \\`https://example.com\\`\n> redirect to \\`http://cloudstorageprovider.com\\` the latter will\n> receive the cookie \\`session\\`.\n",
+    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-4427.\n> - Security: backported fix for CVE-2023-4428.\n",
     "id": "FreeBSD-2023-0262",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/GHSA-fhpf-pp6p-55qc"
+            "url": "https://github.com/electron/electron/releases/tag/v22.3.23"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-23607"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4427"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-qqwc-fhxf-4mf3"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4428"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-m56x-9vph-h345"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-treq -- sensitive information leak vulnerability"
+    "summary": "electron22 -- multiple vulnerabilities"
 }

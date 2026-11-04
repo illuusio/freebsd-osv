@@ -1,0 +1,81 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libreswan"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.4.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/libreswan/libreswan/releases#release-v5.4.1"
+        ],
+        "discovery": "2026-10-05T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-50721",
+                "CVE-2026-77205",
+                "CVE-2026-77206",
+                "CVE-2026-77207",
+                "CVE-2026-50722",
+                "CVE-2026-94453",
+                "CVE-2026-12413"
+            ]
+        },
+        "vid": "cc1f80fa-d50e-11f1-8135-8447094a420f"
+    },
+    "details": "The libreswan project reports:\n\n> - CVE-2026-50721: Libreswan, via the function\n>   RSA_authenticate_hash_signature_raw_rsa(), did not correctly verify\n>   the length of the authentication hash when the SIG payload of an\n>   IKEv1 packet was encoded using PKCS #1 RSA Encryption as per RFC\n>   2313.\n> - CVE-2026-50722: Libreswan, via the function\n>   RSA_authenticate_hash_signature_pkcs1_1_5_rsa(), did not correctly\n>   verify the DER encoding of the ASN.1 digest when the IKEv2 AUTH\n>   payload was encoded using RSASSA-PKCS1-v1_5 (RFC 8017).\n> - CVE-2026-77206: Libreswan\\'s IKEv2 state machine has a null pointer\n>   dereference bug in the EAP handling code for authentication. As a\n>   result of inconsistency within the IKEv2 state machine code, this\n>   bug can be triggered by any IKEv2 connection, even if EAP is not\n>   configured at all.\n> - CVE-2026-77207: Libreswan has a null pointer dereference bug in the\n>   PKCS#7 handling code for IKE certificate authentication.\n> - CVE-2026-94453: Libreswan\\'s pluto daemon has a use-after-free\n>   vulnerability when a client connecting using IKE over TCP closes the\n>   connection and another packet (retransmit or malicious) is received\n>   for the same tuple.\n> - CVE-2026-12413: An invalidly formatted IKEv2 fragment causes the\n>   Libreswan pluto daemon to crash and restart. Continued exploitation\n>   would cause a denial of service.\n> - CVE-2024-3652: The Libreswan Project was notified of an issue\n>   causing libreswan to restart when using IKEv1 without specifying an\n>   esp= line.\n> - CVE-2026-77205: Denial of Service via sending bogus X.509\n>   certificates\n",
+    "id": "FreeBSD-2026-0577",
+    "modified": "2026-10-31T00:00:00Z",
+    "published": "2026-10-31T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/libreswan/libreswan/releases#release-v5.4.1"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50721"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-77205"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-77206"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-77207"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-50722"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-94453"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-12413"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "libreswan -- Multiple vulnerabilities."
+}

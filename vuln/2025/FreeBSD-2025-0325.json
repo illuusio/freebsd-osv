@@ -22,7 +22,7 @@
     ],
     "database_specific": {
         "cite": [
-            "INSERT URL HERE"
+            "https://github.com/zeek/zeek/releases/tag/v8.0.2"
         ],
         "discovery": "2025-10-13T00:00:00Z",
         "vid": "50fd6a75-0587-4987-bef2-bb933cd78ea1"
@@ -34,10 +34,6 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "INSERT URL HERE"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/zeek/zeek/releases/tag/v8.0.2"
         }
     ],

@@ -1,0 +1,432 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py312-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313t-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314t-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py315-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py312-dj60-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313-dj60-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313t-dj60-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314-dj60-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314t-dj60-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py315-dj60-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-dj61-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py312-dj61-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313-dj61-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py313t-dj61-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314-dj61-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py314t-dj61-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py315-dj61-djangorestframework"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.18.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/encode/django-rest-framework/security/advisories/GHSA-3547-9m27-7rxg",
+            "https://github.com/encode/django-rest-framework/security/advisories/GHSA-xw6w-gcfp-cf8m",
+            "https://github.com/encode/django-rest-framework/security/advisories/GHSA-33wh-fxxf-88vv"
+        ],
+        "discovery": "2026-10-06T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-114136",
+                "CVE-2026-114137",
+                "CVE-2026-114138"
+            ]
+        },
+        "vid": "b0395fb0-d45c-11f1-985e-901b0edee044"
+    },
+    "details": "Bruno Alla reports:\n\n> An unauthenticated attacker can defeat Django\\'s\n> \\\"DATA_UPLOAD_MAX_MEMORY_SIZE\\\" limit and force a worker process to\n> allocate arbitrary memory, by naming a compression codec in the\n> Content-Type charset parameter. A 108-byte request body produces a\n> 50,331,648-character value inside the view, an amplification factor of\n> 466,033, and grows process peak RSS by about 97 MiB. No application\n> configuration is required beyond DRF\\'s default parser set; the\n> endpoint only has to accept a JSON body.\n\n> Deleting an authentication token through \\\"TokenProxy\\\" silently\n> deletes nothing. The call raises no exception and reports success, the\n> database row survives, and the token keeps authenticating. Any\n> application, admin integration or operational script that revokes\n> credentials by calling \\\".delete()\\\" on a \\\"TokenProxy\\\" instance\n> believes it has revoked a token that is still live.\n\n> DRF\\'s content negotiation parses each Accept token several times per\n> request and never limits the number of tokens or their total size.\n> Each parse ends up in Django\\'s parse_header_parameters, which takes\n> quadratic time when a quoted parameter value is packed with\n> semicolons. On my machine a single GET with a 780KB Accept header made\n> of 96 such tokens kept one gunicorn worker busy for 18.87 seconds\n> (Django 6.1, djangorestframework 3.18.0, gunicorn 26.0.0, Python 3.13,\n> Docker on macOS). The header is syntactically valid, fits inside\n> gunicorn\\'s default header limits, and needs no authentication. Two\n> concurrent requests, which is one per sync worker, made a default two\n> worker deployment stop answering for my whole 40 second test window.\n> It recovered half a second after I stopped sending.\n",
+    "id": "FreeBSD-2026-0571",
+    "modified": "2026-10-30T00:00:00Z",
+    "published": "2026-10-30T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/encode/django-rest-framework/security/advisories/GHSA-3547-9m27-7rxg"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://github.com/encode/django-rest-framework/security/advisories/GHSA-xw6w-gcfp-cf8m"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://github.com/encode/django-rest-framework/security/advisories/GHSA-33wh-fxxf-88vv"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-114136"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-114137"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-114138"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "py-djangorestframework -- Multiple vulnerabilities"
+}

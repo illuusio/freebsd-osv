@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "virtualbox-ose"
+                "name": "jenkins"
             },
             "ranges": [
                 {
@@ -12,7 +12,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "6.1.46"
+                            "fixed": "2.416"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "jenkins-lts"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.401.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +41,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.oracle.com/security-alerts/cpujul2023.html"
+            "https://www.jenkins.io/security/advisory/2023-07-26/"
         ],
-        "discovery": "2023-07-18T00:00:00Z",
+        "discovery": "2023-07-26T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-22016"
+                "CVE-2023-39151"
             ]
         },
-        "vid": "f32b1fbd-264d-11ee-a468-80fa5b29d485"
+        "vid": "a0321b74-031d-485c-bb76-edd75256a6f0"
     },
-    "details": "secalert_us@oracle.com reports:\n\n> Vulnerability in the Oracle VM VirtualBox product of Oracle\n> Virtualization (component: Core). Supported versions that are affected\n> are Prior to 6.1.46 and Prior to 7.0.10. Easily exploitable\n> vulnerability allows high privileged attacker with logon to the\n> infrastructure where Oracle VM VirtualBox executes to compromise\n> Oracle VM VirtualBox. Successful attacks require human interaction\n> from a person other than the attacker. Successful attacks of this\n> vulnerability can result in unauthorized ability to cause a hang or\n> frequently repeatable crash (complete DOS) of Oracle VM VirtualBox.\n> CVSS 3.1 Base Score 4.2 (Availability impacts). CVSS Vector:\n> (CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:N/I:N/A:H).\n",
+    "details": "Jenkins Security Advisory:\n\n> # Description\n>\n> ##### (High) SECURITY-3188 / CVE-2023-39151\n>\n> Stored XSS vulnerability\n",
     "id": "FreeBSD-2023-0212",
-    "modified": "2023-07-19T00:00:00Z",
-    "published": "2023-07-19T00:00:00Z",
+    "modified": "2023-07-26T00:00:00Z",
+    "published": "2023-07-26T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.oracle.com/security-alerts/cpujul2023.html"
+            "url": "https://www.jenkins.io/security/advisory/2023-07-26/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22016"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-22016"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-39151"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "virtualbox-ose -- multiple vulnerabilities"
+    "summary": "jenkins -- Stored XSS vulnerability"
 }

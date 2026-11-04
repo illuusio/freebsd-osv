@@ -22,7 +22,7 @@
     ],
     "database_specific": {
         "cite": [
-            "INSERT URL HERE"
+            "http://mail-archives.apache.org/mod_mbox/httpd-announce/201607.mbox/CVE-2016-4979-68283"
         ],
         "discovery": "2016-07-01T00:00:00Z",
         "references": {
@@ -39,15 +39,11 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "INSERT URL HERE"
+            "url": "http://mail-archives.apache.org/mod_mbox/httpd-announce/201607.mbox/CVE-2016-4979-68283"
         },
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2016-4979"
-        },
-        {
-            "type": "WEB",
-            "url": "http://mail-archives.apache.org/mod_mbox/httpd-announce/201607.mbox/CVE-2016-4979-68283"
         }
     ],
     "schema_version": "1.7.0",

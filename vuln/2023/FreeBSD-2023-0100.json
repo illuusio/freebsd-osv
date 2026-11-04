@@ -3,6 +3,44 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
+                "name": "py37-rencode"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "1.0.6_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-rencode"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "1.0.6_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
                 "name": "py39-rencode"
             },
             "ranges": [
@@ -12,7 +50,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.0.6_1"
+                            "last_affected": "1.0.6_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-rencode"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "1.0.6_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-rencode"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "1.0.6_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -34,7 +110,7 @@
     },
     "details": "NIST reports:\n\n> The rencode package through 1.0.6 for Python allows an infinite loop\n> in typecode decoding (such as via ;\\\\x2f\\\\x7f), enabling a remote\n> attack that consumes CPU and memory.\n",
     "id": "FreeBSD-2023-0100",
-    "modified": "2023-03-26T00:00:00Z",
+    "modified": "2026-10-31T00:00:00Z",
     "published": "2023-03-25T00:00:00Z",
     "references": [
         {
@@ -55,5 +131,5 @@
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py39-rencode -- infinite loop that could lead to Denial of Service"
+    "summary": "py-rencode -- infinite loop that could lead to Denial of Service"
 }

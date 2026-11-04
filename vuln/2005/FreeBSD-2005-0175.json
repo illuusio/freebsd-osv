@@ -80,7 +80,7 @@
                             "introduced": "1.4.4"
                         },
                         {
-                            "fixed": "1.4.4"
+                            "last_affected": "1.4.4"
                         }
                     ],
                     "type": "ECOSYSTEM"

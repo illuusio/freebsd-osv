@@ -41,7 +41,7 @@
     ],
     "database_specific": {
         "cite": [
-            "ftp://ftp.tin.org/pub/news/clients/tin/stable/CHANGES",
+            "https://bzr.tin.org/doc/CHANGES",
             "http://www.openpkg.org/security/advisories/OpenPKG-SA-2006.005-tin.html"
         ],
         "discovery": "2006-02-15T00:00:00Z",
@@ -54,7 +54,7 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "ftp://ftp.tin.org/pub/news/clients/tin/stable/CHANGES"
+            "url": "https://bzr.tin.org/doc/CHANGES"
         },
         {
             "type": "REPORT",

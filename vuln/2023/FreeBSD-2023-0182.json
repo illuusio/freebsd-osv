@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "xmltooling"
+                "name": "electron22"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.2.4"
+                            "fixed": "22.3.13"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,21 +22,124 @@
     ],
     "database_specific": {
         "cite": [
-            "https://shibboleth.net/community/advisories/secadv_20230612.txt"
+            "https://github.com/electron/electron/releases/tag/v22.3.13"
         ],
-        "discovery": "2023-06-12T00:00:00Z",
-        "vid": "f7e9a1cc-0931-11ee-94b4-6cc21735f730"
+        "discovery": "2023-06-14T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2023-2724",
+                "CVE-2023-2723",
+                "CVE-2023-2725",
+                "CVE-2023-2721",
+                "CVE-2023-3079",
+                "CVE-2023-2933",
+                "CVE-2023-2932",
+                "CVE-2023-2931",
+                "CVE-2023-2936",
+                "CVE-2023-2935",
+                "CVE-2023-2930"
+            ]
+        },
+        "vid": "3c3d3dcb-bef7-4d20-9580-b4216b5ff6a2"
     },
-    "details": "Shibboleth consortium reports:\n\n> An updated version of the XMLTooling library that is part of the\n> OpenSAML and Shibboleth Service Provider software is now available\n> which corrects a server-side request forgery (SSRF) vulnerability.\n>\n> Including certain legal but \\\"malicious in intent\\\" content in the\n> KeyInfo element defined by the XML Signature standard will result in\n> attempts by the SP\\'s shibd process to dereference untrusted URLs.\n>\n> While the content of the URL must be supplied within the message and\n> does not include any SP internal state or dynamic content, there is at\n> minimum a risk of denial of service, and the attack could be combined\n> with others to create more serious vulnerabilities in the future.\n",
+    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-2724.\n> - Security: backported fix for CVE-2023-2723.\n> - Security: backported fix for CVE-2023-2725.\n> - Security: backported fix for CVE-2023-2721.\n> - Security: backported fix for CVE-2023-3079.\n> - Security: backported fix for CVE-2023-2933.\n> - Security: backported fix for CVE-2023-2932.\n> - Security: backported fix for CVE-2023-2931.\n> - Security: backported fix for CVE-2023-2936.\n> - Security: backported fix for CVE-2023-2935.\n> - Security: backported fix for CVE-2023-2930.\n",
     "id": "FreeBSD-2023-0182",
-    "modified": "2023-06-12T00:00:00Z",
-    "published": "2023-06-12T00:00:00Z",
+    "modified": "2023-06-16T00:00:00Z",
+    "published": "2023-06-16T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://shibboleth.net/community/advisories/secadv_20230612.txt"
+            "url": "https://github.com/electron/electron/releases/tag/v22.3.13"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2724"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-j5rv-3m5p-q6rc"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2723"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-7797-6fvm-v8xw"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2725"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-c4fp-wmv9-q4cr"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2721"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-5cww-gpqh-ggqj"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3079"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-8mwf-hvfp-6xfg"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2933"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-qrc7-3p69-2jpf"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2932"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-7g49-wq8x-r6rh"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2931"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-w3xh-m877-x3c2"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2936"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-x723-3x32-qg44"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2935"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-5ccq-3h49-vjp2"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2930"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-44xq-533g-gj79"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "xmltooling -- remote resource access"
+    "summary": "electron22 -- multiple vulnerabilities"
 }

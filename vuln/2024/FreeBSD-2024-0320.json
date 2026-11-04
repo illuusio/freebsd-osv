@@ -99,7 +99,6 @@
                 "CVE-2024-8650",
                 "CVE-2024-9367",
                 "CVE-2024-12292",
-                "CVE-2024-12292",
                 "CVE-2024-10043"
             ]
         },
@@ -145,10 +144,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2024-9367"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2024-12292"
         },
         {
             "type": "ADVISORY",

@@ -1,0 +1,109 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "routinator"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.15.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.nlnetlabs.nl/projects/routinator/security-advisories/"
+        ],
+        "discovery": "2026-10-26T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-72752",
+                "CVE-2026-72753",
+                "CVE-2026-72754",
+                "CVE-2026-72755",
+                "CVE-2026-72756",
+                "CVE-2026-72757",
+                "CVE-2026-72758"
+            ]
+        },
+        "vid": "6dc20034-d4a7-11f1-9893-3c7c3fba4204"
+    },
+    "details": "Routinator Team reports:\n\n> - CVE-2026-72752: Routinator runs out of memory when the JSON output\n>   is requested many times concurrently. This condition can be\n>   triggered maliciously by an attacker by opening a large number of\n>   connections to the HTTP server. Additionally Routinator runs into a\n>   stack overflow and exits when a payload item with too much metadata\n>   is discarded at once.\n> - CVE-2026-72753: When Routinator encounters an RRDP notification file\n>   with gaps in the delta entries, it is still accepted and parsed,\n>   potentially leading to missing data. If it encounters too many delta\n>   entries it may run out of memory.\n> - CVE-2026-72754: When Routinator encounters a CRL with many entries,\n>   it may hang or run out of memory. If Routinator encounters a CRL\n>   file with the wrong encoding, it may exit.\n> - CVE-2026-72755: Routinator stores a newly-retrieved TA certificate\n>   via HTTPS in cache before validation, potentially overwriting a\n>   known good TA certificate even if validation fails.\n> - CVE-2026-72756: Routinator exits when an rsync URI for a file\n>   obtained over RRDP contains a path that cannot be stored on disk,\n>   such as too long file names, and folder names that overlap with\n>   existing file names.\n> - CVE-2026-72757: Routinator runs out of open connections on the HTTP\n>   server when many connections are opened but never closed, leaving\n>   the HTTP server unavailable. This condition can be triggered\n>   maliciously by an attacker by opening a large number of connections\n>   to the HTTP server.\n> - CVE-2026-72758: When parsing an AS range in Routinator, if the\n>   maximum value of the range is smaller than the minimum value of the\n>   range, Routinator will never reach the maximum value and run out of\n>   memory.\n",
+    "id": "FreeBSD-2026-0574",
+    "modified": "2026-10-30T00:00:00Z",
+    "published": "2026-10-30T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.nlnetlabs.nl/projects/routinator/security-advisories/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-72752"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-72753"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-72754"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-72755"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-72756"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-72757"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-72758"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-72752.txt"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-72753.txt"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-72754.txt"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-72755.txt"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-72756.txt"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-72757.txt"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.nlnetlabs.nl/downloads/routinator/CVE-2026-72758.txt"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Routinator -- multiple vulnerabilities"
+}

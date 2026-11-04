@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "h2o"
+                "name": "py37-django32"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.2.6"
+                            "fixed": "3.2.19"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "h2o-devel"
+                "name": "py38-django32"
             },
             "ranges": [
                 {
@@ -31,7 +31,216 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.3.0.d.20230427"
+                            "fixed": "3.2.19"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-django32"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.2.19"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-django32"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.2.19"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-django32"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.2.19"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-django41"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-django41"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-django41"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-django41"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-django42"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-django42"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-django42"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-django42"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,34 +250,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/h2o/h2o/issues/3228"
+            "https://www.djangoproject.com/weblog/2023/may/03/security-releases/"
         ],
-        "discovery": "2023-04-27T00:00:00Z",
+        "discovery": "2023-05-01T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-30847"
+                "CVE-2023-31047"
             ]
         },
-        "vid": "4da51989-5a8b-4eb9-b442-46d94ec0802d"
+        "vid": "d55e1b4d-eadc-11ed-9cc0-080027de9982"
     },
-    "details": "Elijah Glover reports:\n\n> Malformed HTTP/1.1 requests can crash worker processes. occasionally\n> locking up child workers and causing denial of service, and an outage\n> dropping any open connections.\n",
+    "details": "Django reports:\n\n> CVE-2023-31047: Potential bypass of validation when uploading multiple\n> files using one form field.\n",
     "id": "FreeBSD-2023-0152",
-    "modified": "2023-04-30T00:00:00Z",
-    "published": "2023-04-30T00:00:00Z",
+    "modified": "2023-05-05T00:00:00Z",
+    "published": "2023-05-05T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/h2o/h2o/issues/3228"
+            "url": "https://www.djangoproject.com/weblog/2023/may/03/security-releases/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-30847"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/h2o/h2o/security/advisories/GHSA-p5hj-phwj-hrvx"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-31047"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "h2o -- Malformed HTTP/1.1 causes Out-of-Memory Denial of Service"
+    "summary": "Django -- multiple vulnerabilities"
 }

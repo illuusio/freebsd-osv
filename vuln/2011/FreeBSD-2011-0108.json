@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "3.6.*,1,1"
+                            "introduced": "3.6.*,1"
                         },
                         {
                             "fixed": "3.6.20,1"
@@ -20,7 +20,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "5.0.*,1,1"
+                            "introduced": "5.0.*,1"
                         },
                         {
                             "fixed": "6.0,1"
@@ -128,7 +128,6 @@
                 "CVE-2011-2993",
                 "CVE-2011-2988",
                 "CVE-2011-2987",
-                "CVE-2011-0084",
                 "CVE-2011-2990",
                 "CVE-2011-2986"
             ]
@@ -207,10 +206,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2011-2987"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2011-0084"
         },
         {
             "type": "ADVISORY",

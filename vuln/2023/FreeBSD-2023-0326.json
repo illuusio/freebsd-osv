@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "zeek"
+                "name": "chromium"
             },
             "ranges": [
                 {
@@ -12,7 +12,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "6.0.2"
+                            "fixed": "119.0.6045.105"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "119.0.6045.105"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "qt6-webengine"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "6.6.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,21 +60,90 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/zeek/zeek/releases/tag/v6.0.2"
+            "https://chromereleases.googleblog.com/2023/10/stable-channel-update-for-desktop_31.html"
         ],
-        "discovery": "2023-10-27T00:00:00Z",
-        "vid": "386a14bb-1a21-41c6-a2cf-08d79213379b"
+        "discovery": "2023-10-31T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2023-5480",
+                "CVE-2023-5482",
+                "CVE-2023-5849",
+                "CVE-2023-5850",
+                "CVE-2023-5851",
+                "CVE-2023-5852",
+                "CVE-2023-5853",
+                "CVE-2023-5854",
+                "CVE-2023-5855",
+                "CVE-2023-5856",
+                "CVE-2023-5857",
+                "CVE-2023-5858",
+                "CVE-2023-5859"
+            ]
+        },
+        "vid": "a1e27775-7a61-11ee-8290-a8a1599412c6"
     },
-    "details": "Tim Wojtulewicz of Corelight reports:\n\n> A specially-crafted SSL packet could cause Zeek to leak memory and\n> potentially crash.\n>\n> A specially-crafted series of FTP packets could cause Zeek to log\n> entries for requests that have already been completed, using resources\n> unnecessarily and potentially causing Zeek to lose other traffic.\n>\n> A specially-crafted series of SSL packets could cause Zeek to output a\n> very large number of unnecessary alerts for the same record.\n>\n> A specially-crafted series of SSL packets could cause Zeek to generate\n> very long ssl_history fields in the ssl.log, potentially using a large\n> amount of memory due to unbounded state growth\n>\n> A specially-crafted IEEE802.11 packet could cause Zeek to overflow\n> memory and potentially crash\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 15 security fixes:\n>\n> - \\[1492698\\] High CVE-2023-5480: Inappropriate implementation in\n>   Payments. Reported by Vsevolod Kokorin (Slonser) of Solidlab on\n>   2023-10-14\n> - \\[1492381\\] High CVE-2023-5482: Insufficient data validation in USB.\n>   Reported by DarkNavy on 2023-10-13\n> - \\[1492384\\] High CVE-2023-5849: Integer overflow in USB. Reported by\n>   DarkNavy on 2023-10-13\n> - \\[1281972\\] Medium CVE-2023-5850: Incorrect security UI in\n>   Downloads. Reported by Mohit Raj (shadow2639) on 2021-12-22\n> - \\[1473957\\] Medium CVE-2023-5851: Inappropriate implementation in\n>   Downloads. Reported by Shaheen Fazim on 2023-08-18\n> - \\[1480852\\] Medium CVE-2023-5852: Use after free in Printing.\n>   Reported by \\[pwn2car\\] on 2023-09-10\n> - \\[1456876\\] Medium CVE-2023-5853: Incorrect security UI in\n>   Downloads. Reported by Hafiizh on 2023-06-22\n> - \\[1488267\\] Medium CVE-2023-5854: Use after free in Profiles.\n>   Reported by Dohyun Lee (@l33d0hyun) of SSD-Disclosure Labs & DNSLab,\n>   Korea Univ on 2023-10-01\n> - \\[1492396\\] Medium CVE-2023-5855: Use after free in Reading Mode.\n>   Reported by ChaobinZhang on 2023-10-13\n> - \\[1493380\\] Medium CVE-2023-5856: Use after free in Side Panel.\n>   Reported by Weipeng Jiang (@Krace) of VRI on 2023-10-17\n> - \\[1493435\\] Medium CVE-2023-5857: Inappropriate implementation in\n>   Downloads. Reported by Will Dormann on 2023-10-18\n> - \\[1457704\\] Low CVE-2023-5858: Inappropriate implementation in\n>   WebApp Provider. Reported by Axel Chong on 2023-06-24\n> - \\[1482045\\] Low CVE-2023-5859: Incorrect security UI in Picture In\n>   Picture. Reported by Junsung Lee on 2023-09-13\n",
     "id": "FreeBSD-2023-0326",
-    "modified": "2023-10-27T00:00:00Z",
-    "published": "2023-10-27T00:00:00Z",
+    "modified": "2023-11-03T00:00:00Z",
+    "published": "2023-11-03T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/zeek/zeek/releases/tag/v6.0.2"
+            "url": "https://chromereleases.googleblog.com/2023/10/stable-channel-update-for-desktop_31.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5480"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5482"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5849"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5850"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5851"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5852"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5853"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5854"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5855"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5856"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5857"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5858"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5859"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "zeek -- potential DoS vulnerabilities"
+    "summary": "chromium -- multiple vulnerabilities"
 }

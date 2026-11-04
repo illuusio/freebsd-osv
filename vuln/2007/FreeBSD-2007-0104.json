@@ -20,7 +20,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "*,1,1"
+                            "introduced": "*,1"
                         },
                         {
                             "fixed": "3.0.26a,1"

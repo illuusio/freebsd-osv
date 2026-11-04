@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "chromium"
+                "name": "glpi"
             },
             "ranges": [
                 {
@@ -12,26 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "113.0.5672.63"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ungoogled-chromium"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "113.0.5672.63"
+                            "fixed": "10.0.7,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,75 +22,60 @@
     ],
     "database_specific": {
         "cite": [
-            "https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html"
+            "https://github.com/glpi-project/glpi/releases/tag/10.0.7"
         ],
-        "discovery": "2023-05-03T00:00:00Z",
+        "discovery": "2023-03-20T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-2459",
-                "CVE-2023-2460",
-                "CVE-2023-2461",
-                "CVE-2023-2462",
-                "CVE-2023-2463",
-                "CVE-2023-2464",
-                "CVE-2023-2465",
-                "CVE-2023-2466",
-                "CVE-2023-2467",
-                "CVE-2023-2468"
+                "CVE-2023-28849",
+                "CVE-2023-28632",
+                "CVE-2023-28838",
+                "CVE-2023-28852",
+                "CVE-2023-28636",
+                "CVE-2023-28639",
+                "CVE-2023-28634"
             ]
         },
-        "vid": "246174d3-e979-11ed-8290-a8a1599412c6"
+        "vid": "68958e18-ed94-11ed-9688-b42e991fc52e"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 15 security fixes:\n>\n> - \\[1423304\\] Medium CVE-2023-2459: Inappropriate implementation in\n>   Prompts. Reported by Rong Jian of VRI on 2023-03-10\n> - \\[1419732\\] Medium CVE-2023-2460: Insufficient validation of\n>   untrusted input in Extensions. Reported by Martin Bajanik,\n>   Fingerprint\\[.\\]com on 2023-02-27\n> - \\[1350561\\] Medium CVE-2023-2461: Use after free in OS Inputs.\n>   Reported by \\@ginggilBesel on 2022-08-06\n> - \\[1375133\\] Medium CVE-2023-2462: Inappropriate implementation in\n>   Prompts. Reported by Alesandro Ortiz on 2022-10-17\n> - \\[1406120\\] Medium CVE-2023-2463: Inappropriate implementation in\n>   Full Screen Mode. Reported by Irvan Kurniawan (sourc7) on 2023-01-10\n> - \\[1418549\\] Medium CVE-2023-2464: Inappropriate implementation in\n>   PictureInPicture. Reported by Thomas Orlita on 2023-02-23\n> - \\[1399862\\] Medium CVE-2023-2465: Inappropriate implementation in\n>   CORS. Reported by \\@kunte_ctf on 2022-12-10\n> - \\[1385714\\] Low CVE-2023-2466: Inappropriate implementation in\n>   Prompts. Reported by Jasper Rebane (popstonia) on 2022-11-17\n> - \\[1413586\\] Low CVE-2023-2467: Inappropriate implementation in\n>   Prompts. Reported by Thomas Orlita on 2023-02-07\n> - \\[1416380\\] Low CVE-2023-2468: Inappropriate implementation in\n>   PictureInPicture. Reported by Alesandro Ortiz on 2023-02-15\n",
+    "details": "glpi Project reports:\n\n> Multiple vulnerabilities found and fixed in this version:\n>\n> - High CVE-2023-28849: SQL injection and Stored XSS via inventory\n>   agent request.\n> - High CVE-2023-28632: Account takeover by authenticated user.\n> - High CVE-2023-28838: SQL injection through dynamic reports.\n> - Moderate CVE-2023-28852: Stored XSS through dashboard\n>   administration.\n> - Moderate CVE-2023-28636: Stored XSS on external links.\n> - Moderate CVE-2023-28639: Reflected XSS in search pages.\n> - Moderate CVE-2023-28634: Privilege Escalation from technician to\n>   super-admin.\n> - Low CVE-2023-28633: Blind Server-Side Request Forgery (SSRF) in RSS\n>   feeds.\n",
     "id": "FreeBSD-2023-0155",
-    "modified": "2023-05-03T00:00:00Z",
-    "published": "2023-05-03T00:00:00Z",
+    "modified": "2024-04-25T00:00:00Z",
+    "published": "2023-05-08T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop.html"
+            "url": "https://github.com/glpi-project/glpi/releases/tag/10.0.7"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2459"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28849"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2460"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28632"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2461"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28838"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2462"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28852"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2463"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28636"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2464"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28639"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2465"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2466"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2467"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2468"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28634"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "chromium -- multiple vulnerabilities"
+    "summary": "glpi -- multiple vulnerabilities"
 }

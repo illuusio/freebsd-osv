@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "4.0,1,1"
+                            "introduced": "4.0,1"
                         },
                         {
                             "fixed": "7.0,1"
@@ -20,7 +20,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "3.6.*,1,1"
+                            "introduced": "3.6.*,1"
                         },
                         {
                             "fixed": "3.6.23,1"
@@ -39,7 +39,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.9.2.*,1"
+                            "introduced": "1.9.2.*"
                         },
                         {
                             "fixed": "1.9.2.23"
@@ -134,7 +134,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "4.0,1"
+                            "introduced": "4.0"
                         },
                         {
                             "fixed": "7.0"

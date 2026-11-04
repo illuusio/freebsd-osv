@@ -3,92 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-wagtail"
+                "name": "electron24"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "4.2.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "4.2.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py38-wagtail"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "4.2.0"
-                        },
-                        {
-                            "fixed": "4.2.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py39-wagtail"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "4.2.0"
-                        },
-                        {
-                            "fixed": "4.2.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py310-wagtail"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "4.2.0"
-                        },
-                        {
-                            "fixed": "4.2.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py311-wagtail"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "4.2.0"
-                        },
-                        {
-                            "fixed": "4.2.2"
+                            "fixed": "24.8.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,30 +22,61 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/GHSA-33pv-vcgh-jfg9"
+            "https://github.com/electron/electron/releases/tag/v24.8.2"
         ],
-        "discovery": "2023-04-03T00:00:00Z",
+        "discovery": "2023-08-30T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-28837"
+                "CVE-2023-4427",
+                "CVE-2023-4428",
+                "CVE-2023-4430",
+                "CVE-2023-4572"
             ]
         },
-        "vid": "2def7c4b-736f-4754-9f03-236fcb586d91"
+        "vid": "29f050e9-3ef4-4c5f-8204-503b41caf181"
     },
-    "details": "> A memory exhaustion bug exists in Wagtail\\'s handling of uploaded\n> images and documents.\n>\n> For both images and documents, files are loaded into memory during\n> upload for additional processing.\n>\n> A user with access to upload images or documents through the Wagtail\n> admin interface could upload a file so large that it results in a\n> crash or denial of service.\n>\n> The vulnerability is not exploitable by an ordinary site visitor\n> without access to the Wagtail admin.\n>\n> It can only be exploited by admin users with permission to upload\n> images or documents.\n>\n> Image uploads are restricted to 10MB by default, however this\n> validation only happens on the frontend and on the backend after the\n> vulnerable code.\n",
+    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-4427.\n> - Security: backported fix for CVE-2023-4428.\n> - Security: backported fix for CVE-2023-4430.\n> - Security: backported fix for CVE-2023-4572.\n",
     "id": "FreeBSD-2023-0263",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/GHSA-33pv-vcgh-jfg9"
+            "url": "https://github.com/electron/electron/releases/tag/v24.8.2"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28837"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4427"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-qqwc-fhxf-4mf3"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4428"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-m56x-9vph-h345"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4430"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-h295-rcc5-87jh"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4572"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-6994-5wq3-gpjv"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-wagtail -- DoS vulnerability"
+    "summary": "electron24 -- multiple vulnerabilities"
 }

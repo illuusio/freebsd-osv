@@ -1,0 +1,141 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "sqlite3"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.54.0,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "FreeBSD"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "15.1"
+                        },
+                        {
+                            "fixed": "15.1_7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.5"
+                        },
+                        {
+                            "fixed": "14.5_4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "14.4"
+                        },
+                        {
+                            "fixed": "14.4_13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.vulncheck.com/advisories/sqlite-before-3.54.0-fts5-heap-buffer-overflow-via-fts5mergerowidlists"
+        ],
+        "discovery": "2026-10-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-119371",
+                "CVE-2026-119372",
+                "CVE-2026-119373",
+                "CVE-2026-119374",
+                "CVE-2026-119375",
+                "CVE-2026-119376",
+                "CVE-2026-119377",
+                "CVE-2026-119378",
+                "CVE-2026-119379",
+                "CVE-2026-119591"
+            ]
+        },
+        "vid": "84cd82e1-d49f-11f1-bae2-3497f65b111b"
+    },
+    "details": "VulnCheck reports:\n\n> Ten vulnerabilities fixed in SQLite 3.54.0 were published on\n> 2026-10-30. Four of them corrupt the heap: buffer overflows in the\n> FTS5 functions fts5MergeRowidLists() and fts5DoSecureDelete() and in\n> the session extension sessionUpdateFind(), and a use-after-free in the\n> R-Tree function nodeWrite(). A fifth, a use-after-free in the FTS3\n> function fts3BestSnippet(), is reached through snippet().\n>\n> The remaining five crash the process or leak data: unbounded recursion\n> through a chain of common table expressions, through a chain of\n> COLLATE operators and through countOfViewOptimization() in a VALUES\n> clause, an information leak on a page size mismatch in the write-ahead\n> log, and an authorizer bypass with RIGHT or FULL JOIN USING.\n>\n> An attacker has to supply a database file or SQL text, so the FTS5 and\n> FTS3 issues apply wherever those options are built in; both are on by\n> default in databases/sqlite3.\n",
+    "id": "FreeBSD-2026-0573",
+    "modified": "2026-10-30T00:00:00Z",
+    "published": "2026-10-30T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.vulncheck.com/advisories/sqlite-before-3.54.0-fts5-heap-buffer-overflow-via-fts5mergerowidlists"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119371"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119372"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119373"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119374"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119375"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119376"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119377"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119378"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119379"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119591"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.sqlite.org/releaselog/3_54_0.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "sqlite3 -- multiple vulnerabilities"
+}

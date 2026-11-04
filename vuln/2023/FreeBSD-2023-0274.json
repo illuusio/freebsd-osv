@@ -2,28 +2,17 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:kernel",
-                "name": "FreeBSD-kernel"
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitea"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "13.2"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "13.2_3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "12.4"
-                        },
-                        {
-                            "fixed": "12.4_5"
+                            "fixed": "1.20.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -32,31 +21,30 @@
         }
     ],
     "database_specific": {
-        "discovery": "2023-09-06T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2023-4809"
-            ],
-            "freebsdsa": [
-                "SA-23:10.pf"
-            ]
-        },
-        "vid": "d35373ae-4d34-11ee-8e38-002590c1f29c"
+        "cite": [
+            "https://github.com/go-gitea/gitea/pull/26812"
+        ],
+        "discovery": "2023-08-30T00:00:00Z",
+        "vid": "4061a4b2-4fb1-11ee-acc7-0151f07bc899"
     },
-    "details": "# Problem Description:\n\nWith a \\'scrub fragment reassemble\\' rule, a packet containing multiple\nIPv6 fragment headers would be reassembled, and then immediately\nprocessed. That is, a packet with multiple fragment extension headers\nwould not be recognized as the correct ultimate payload. Instead a\npacket with multiple IPv6 fragment headers would unexpectedly be\ninterpreted as a fragmented packet, rather than as whatever the real\npayload is.\n\n# Impact:\n\nIPv6 fragments may bypass firewall rules written on the assumption all\nfragments have been reassembled and, as a result, be forwarded or\nprocessed by the host.\n",
+    "details": "The Gitea team reports:\n\n> check blocklist for emails when adding them to account\n",
     "id": "FreeBSD-2023-0274",
-    "modified": "2023-09-07T00:00:00Z",
-    "published": "2023-09-07T00:00:00Z",
+    "modified": "2023-09-10T00:00:00Z",
+    "published": "2023-09-10T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4809"
+            "type": "REPORT",
+            "url": "https://github.com/go-gitea/gitea/pull/26812"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-23:10.pf.asc"
+            "type": "WEB",
+            "url": "https://blog.gitea.com/release-of-1.20.4"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/go-gitea/gitea/releases/tag/v1.20.4"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- pf incorrectly handles multiple IPv6 fragment headers"
+    "summary": "gitea -- block user account creation from blocked email domains"
 }

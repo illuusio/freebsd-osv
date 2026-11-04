@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "electron22"
+                "name": "chromium"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "22.3.22"
+                            "fixed": "116.0.5845.140"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "electron24"
+                "name": "ungoogled-chromium"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "24.8.1"
+                            "fixed": "116.0.5845.140"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,70 +41,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/electron/electron/releases/tag/v22.3.22"
+            "https://chromereleases.googleblog.com/2023/08/stable-channel-update-for-desktop_29.html"
         ],
-        "discovery": "2023-08-23T00:00:00Z",
+        "discovery": "2023-08-29T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-4355",
-                "CVE-2023-4354",
-                "CVE-2023-4353",
-                "CVE-2023-4352",
-                "CVE-2023-4351"
+                "CVE-2023-4472"
             ]
         },
-        "vid": "99bc2966-55be-4411-825f-b04017a4c100"
+        "vid": "22fffa69-46fa-11ee-8290-a8a1599412c6"
     },
-    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-4355.\n> - Security: backported fix for CVE-2023-4354.\n> - Security: backported fix for CVE-2023-4353.\n> - Security: backported fix for CVE-2023-4352.\n> - Security: backported fix for CVE-2023-4351.\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 1 security fix:\n>\n> - \\[1472492\\] High CVE-2023-4572: Use after free in MediaStream.\n>   Reported by fwnfwn(@\\_fwnfwn) on 2023-08-12\n",
     "id": "FreeBSD-2023-0232",
-    "modified": "2023-08-24T00:00:00Z",
-    "published": "2023-08-24T00:00:00Z",
+    "modified": "2023-08-30T00:00:00Z",
+    "published": "2023-08-30T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/electron/electron/releases/tag/v22.3.22"
+            "url": "https://chromereleases.googleblog.com/2023/08/stable-channel-update-for-desktop_29.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4355"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-xrw8-8992-37w4"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4354"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-rq4v-7hxq-wpm5"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4353"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-mjq9-8vf6-qh49"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4352"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-vp8r-986v-6qj4"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4351"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-mh2g-52mr-mr5v"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4472"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "electron{22,24} -- multiple vulnerabilities"
+    "summary": "chromium -- use after free in MediaStream"
 }

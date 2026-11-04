@@ -45,10 +45,6 @@
             "url": "http://www.openwall.com/lists/oss-security/2016/09/15/2"
         },
         {
-            "type": "WEB",
-            "url": "\"http://www.openwall.com/lists/oss-security/2016/09/15/2\""
-        },
-        {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2016-7406"
         },

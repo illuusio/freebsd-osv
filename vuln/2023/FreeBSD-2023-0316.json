@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "jenkins"
+                "name": "rt44"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.428"
+                            "fixed": "4.4.6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "jenkins-lts"
+                "name": "rt50"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.414.3"
+                            "fixed": "5.0.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -40,36 +40,38 @@
         }
     ],
     "database_specific": {
-        "cite": [
-            "https://www.jenkins.io/security/advisory/2023-10-18/"
-        ],
         "discovery": "2023-10-18T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-36478",
-                "CVE-2023-44487"
+                "CVE-2023-41259",
+                "CVE-2023-41260",
+                "CVE-2023-45024"
             ]
         },
-        "vid": "1ee26d45-6ddb-11ee-9898-00e081b7aa2d"
+        "vid": "e14b9870-62a4-11ee-897b-000bab9f87f1"
     },
-    "details": "Jenkins Security Advisory:\n\n> # Description\n>\n> ##### (High) SECURITY-3291 / CVE-2023-36478, CVE-2023-44487\n>\n> HTTP/2 denial of service vulnerability in bundled Jetty\n",
+    "details": "Request Tracker reports:\n\nCVE-2023-41259 SECURITY: RT is vulnerable to unvalidated email headers\nin incoming email and the mail-gateway REST interface.\n\nCVE-2023-41260 SECURITY: RT is vulnerable to information leakage via\nresponse messages returned from requests sent via the mail-gateway REST\ninterface.\n\nCVE-2023-45024 SECURITY: RT 5.0 is vulnerable to information leakage via\ntransaction searches made by authenticated users in the transaction\nquery builder.\n",
     "id": "FreeBSD-2023-0316",
     "modified": "2023-10-18T00:00:00Z",
     "published": "2023-10-18T00:00:00Z",
     "references": [
         {
-            "type": "REPORT",
-            "url": "https://www.jenkins.io/security/advisory/2023-10-18/"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-41259"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-36478"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-41260"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-44487"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-45024"
+        },
+        {
+            "type": "WEB",
+            "url": "https://bestpractical.com/request-tracker/"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "jenkins -- HTTP/2 denial of service vulnerability in bundled Jetty"
+    "summary": "Request Tracker -- multiple vulnerabilities"
 }

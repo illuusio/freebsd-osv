@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "roundcube"
+                "name": "electron25"
             },
             "ranges": [
                 {
@@ -12,7 +12,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.6.4,1"
+                            "fixed": "25.9.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "electron26"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.4.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,21 +41,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://roundcube.net/news/2023/10/16/security-update-1.6.4-released"
+            "https://github.com/electron/electron/releases/tag/v25.9.2"
         ],
-        "discovery": "2023-10-16T00:00:00Z",
-        "vid": "d2ad7647-6dd9-11ee-85eb-84a93843eb75"
+        "discovery": "2023-10-18T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2023-5218"
+            ]
+        },
+        "vid": "9000591b-483b-45ac-9c87-b3df3a4198ec"
     },
-    "details": "The Roundcube project reports:\n\n> cross-site scripting (XSS) vulnerability in handling of SVG in HTML\n> messages\n",
+    "details": "Electron developers report:\n\n> This update fixes the following vulnerability:\n>\n> - Security: backported fix for CVE-2023-5218.\n",
     "id": "FreeBSD-2023-0315",
-    "modified": "2023-10-18T00:00:00Z",
-    "published": "2023-10-18T00:00:00Z",
+    "modified": "2023-10-19T00:00:00Z",
+    "published": "2023-10-19T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://roundcube.net/news/2023/10/16/security-update-1.6.4-released"
+            "url": "https://github.com/electron/electron/releases/tag/v25.9.2"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5218"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-cvp3-7vpw-ffh6"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Roundcube -- XSS vulnerability in SVG"
+    "summary": "electron{25,26} -- Use after free in Site Isolation"
 }

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "postgresql-server"
+                "name": "clamav-lts"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "15.4"
+                            "fixed": "1.0.2,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +22,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.postgresql.org/support/security/CVE-2023-39418/"
+            "https://blog.clamav.net/2023/07/2023-08-16-releases.html"
         ],
-        "discovery": "2023-08-10T00:00:00Z",
+        "discovery": "2023-08-15T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-39418"
+                "CVE-2023-20212"
             ]
         },
-        "vid": "59a43a73-3786-11ee-94b4-6cc21735f730"
+        "vid": "8e561cfe-3c59-11ee-b32e-080027f5fec9"
     },
-    "details": "PostgreSQL Project reports\n\n> PostgreSQL 15 introduced the MERGE command, which fails to test new\n> rows against row security policies defined for UPDATE and SELECT. If\n> UPDATE and SELECT policies forbid some row that INSERT policies do not\n> forbid, a user could store such rows. Subsequent consequences are\n> application-dependent. This affects only databases that have used\n> CREATE POLICY to define a row security policy.\n",
+    "details": "The ClamAV project reports:\n\n> There is a possible denial of service vulnerability in the AutoIt file\n> parser.\n",
     "id": "FreeBSD-2023-0224",
-    "modified": "2023-08-10T00:00:00Z",
-    "published": "2023-08-10T00:00:00Z",
+    "modified": "2023-08-16T00:00:00Z",
+    "published": "2023-08-16T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.postgresql.org/support/security/CVE-2023-39418/"
+            "url": "https://blog.clamav.net/2023/07/2023-08-16-releases.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-39418"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-20212"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "postgresql-server -- MERGE fails to enforce UPDATE or SELECT row security policies"
+    "summary": "clamav -- Possible denial of service vulnerability in the AutoIt file parser"
 }

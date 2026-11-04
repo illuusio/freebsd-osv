@@ -3,16 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "strongswan"
+                "name": "electron26"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "5.3.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "5.9.11_3"
+                            "fixed": "26.6.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +22,61 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.strongswan.org/blog/2023/11/20/strongswan-vulnerability-(cve-2023-41913).html"
+            "https://github.com/electron/electron/releases/tag/v26.6.2"
         ],
-        "discovery": "2023-11-20T00:00:00Z",
+        "discovery": "2023-11-30T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-41913"
+                "CVE-2023-6345",
+                "CVE-2023-6346",
+                "CVE-2023-6347",
+                "CVE-2023-6350"
             ]
         },
-        "vid": "a62c0c50-8aa0-11ee-ac0d-00e0670f2660"
+        "vid": "7e1a508f-7167-47b0-b9fc-95f541933a86"
     },
-    "details": "strongSwan reports:\n\n> A vulnerability in charon-tkm related to processing DH public values\n> was discovered in strongSwan that can result in a buffer overflow and\n> potentially remote code execution. All versions since 5.3.0 are\n> affected.\n",
+    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-6345.\n> - Security: backported fix for CVE-2023-6346.\n> - Security: backported fix for CVE-2023-6347.\n> - Security: backported fix for CVE-2023-6350.\n",
     "id": "FreeBSD-2023-0347",
-    "modified": "2023-11-24T00:00:00Z",
-    "published": "2023-11-24T00:00:00Z",
+    "modified": "2023-12-01T00:00:00Z",
+    "published": "2023-12-01T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.strongswan.org/blog/2023/11/20/strongswan-vulnerability-(cve-2023-41913).html"
+            "url": "https://github.com/electron/electron/releases/tag/v26.6.2"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-41913"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6345"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-xm5p-7w7v-qqr5"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6346"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-w427-5x7p-xj8x"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6347"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-6jj9-4hh8-6xpv"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6350"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-wmh6-7xp9-5gh8"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "strongSwan -- vulnerability in charon-tkm"
+    "summary": "electron26 -- multiple vulnerabilities"
 }

@@ -85,7 +85,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "20030000,1"
+                            "introduced": "20030000"
                         }
                     ],
                     "type": "ECOSYSTEM"

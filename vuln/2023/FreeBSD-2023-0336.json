@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "chromium"
+                "name": "postgresql-server"
             },
             "ranges": [
                 {
@@ -12,26 +12,62 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "119.0.6045.123"
+                            "fixed": "16.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ungoogled-chromium"
-            },
-            "ranges": [
+                },
                 {
                     "events": [
                         {
                             "introduced": "0"
                         },
                         {
-                            "fixed": "119.0.6045.123"
+                            "fixed": "15.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "14.10"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "13.13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "12.17"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "11.22"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,30 +77,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://chromereleases.googleblog.com/2023/11/stable-channel-update-for-desktop.html"
+            "https://www.postgresql.org/support/security/CVE-2023-5869/"
         ],
-        "discovery": "2023-11-07T00:00:00Z",
+        "discovery": "2023-11-09T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-5996"
+                "CVE-2023-5869"
             ]
         },
-        "vid": "77fc311d-7e62-11ee-8290-a8a1599412c6"
+        "vid": "0f445859-7f0e-11ee-94b4-6cc21735f730"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 1 security fix:\n>\n> - \\[1497859\\] High CVE-2023-5996: Use after free in WebAudio. Reported\n>   by Huang Xilin of Ant Group Light-Year Security Lab via Tianfu Cup\n>   2023 on 2023-10-30\n",
+    "details": "PostgreSQL Project reports:\n\n> While modifying certain SQL array values, missing overflow checks let\n> authenticated database users write arbitrary bytes to a memory area\n> that facilitates arbitrary code execution. Missing overflow checks\n> also let authenticated database users read a wide area of server\n> memory. The CVE-2021-32027 fix covered some attacks of this\n> description, but it missed others.\n",
     "id": "FreeBSD-2023-0336",
-    "modified": "2023-11-08T00:00:00Z",
-    "published": "2023-11-08T00:00:00Z",
+    "modified": "2023-11-09T00:00:00Z",
+    "published": "2023-11-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2023/11/stable-channel-update-for-desktop.html"
+            "url": "https://www.postgresql.org/support/security/CVE-2023-5869/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5996"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5869"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "chromium -- security update"
+    "summary": "postgresql-server -- Buffer overrun from integer overflow in array modification"
 }

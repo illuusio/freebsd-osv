@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-kerberos"
+                "name": "py37-beaker"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.3.1"
+                            "last_affected": "1.12.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-kerberos"
+                "name": "py38-beaker"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.3.1"
+                            "last_affected": "1.12.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-kerberos"
+                "name": "py39-beaker"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.3.1"
+                            "last_affected": "1.12.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-kerberos"
+                "name": "py310-beaker"
             },
             "ranges": [
                 {
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.3.1"
+                            "last_affected": "1.12.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-kerberos"
+                "name": "py311-beaker"
             },
             "ranges": [
                 {
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.3.1"
+                            "last_affected": "1.12.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,30 +98,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2017-49"
+            "https://osv.dev/vulnerability/PYSEC-2020-216"
         ],
-        "discovery": "2017-08-25T00:00:00Z",
+        "discovery": "2020-06-26T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2015-3206"
+                "CVE-2013-7489"
             ]
         },
-        "vid": "2acdf364-9f8d-4aaf-8d1b-867fdfd771c6"
+        "vid": "b54abe9d-7024-4d10-98b2-180cf1717766"
     },
-    "details": "macosforgebot reports:\n\n> The checkPassword function in python-kerberos does not authenticate\n> the KDC it attempts to communicate with, which allows remote attackers\n> to cause a denial of service (bad response), or have other unspecified\n> impact by performing a man-in-the-middle attack.\n",
+    "details": "matheusbrat reports:\n\n> The Beaker library through 1.12.1 for Python is affected by\n> deserialization of untrusted data, which could lead to arbitrary code\n> execution.\n",
     "id": "FreeBSD-2023-0134",
     "modified": "2023-04-10T00:00:00Z",
     "published": "2023-04-10T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2017-49"
+            "url": "https://osv.dev/vulnerability/PYSEC-2020-216"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2015-3206"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-7489"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-kerberos -- DoS and MitM vulnerabilities"
+    "summary": "py-beaker -- arbitrary code execution vulnerability"
 }

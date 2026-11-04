@@ -22,7 +22,7 @@
     ],
     "database_specific": {
         "cite": [
-            "INSERT URL HERE"
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45417"
         ],
         "discovery": "2022-01-15T00:00:00Z",
         "references": {
@@ -39,7 +39,7 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "INSERT URL HERE"
+            "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-45417"
         },
         {
             "type": "ADVISORY",

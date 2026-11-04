@@ -51,14 +51,6 @@
             "url": "https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.3_.2F_4.3.1_.282017-08-10.29"
         },
         {
-            "type": "WEB",
-            "url": "https://security.gentoo.org/glsa/201709-18"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.3_.2F_4.3.1_.282017-08-10.29"
-        },
-        {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2017-1000115"
         },

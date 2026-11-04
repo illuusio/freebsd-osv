@@ -39,7 +39,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "6.8.99,1"
+                            "introduced": "6.8.99"
                         },
                         {
                             "fixed": "6.8.99.12_1"

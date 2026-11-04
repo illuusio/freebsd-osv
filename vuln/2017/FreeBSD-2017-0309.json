@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.9.4"
+                            "last_affected": "2.9.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -52,23 +52,11 @@
         },
         {
             "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2017/05/15/1"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.securityfocus.com/bid/98556"
         },
         {
             "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2017/05/15/1"
-        },
-        {
-            "type": "WEB",
             "url": "http://www.securityfocus.com/bid/98601"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.openwall.com/lists/oss-security/2017/05/15/1"
         },
         {
             "type": "WEB",

@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.20.0.877"
+                            "last_affected": "1.20.0.877"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -144,7 +144,6 @@
                 "CVE-2017-9224",
                 "CVE-2017-9226",
                 "CVE-2017-9227",
-                "CVE-2017-9228",
                 "CVE-2017-9228"
             ]
         },
@@ -170,10 +169,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2017-9227"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-9228"
         },
         {
             "type": "ADVISORY",

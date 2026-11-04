@@ -3,38 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitlab-ce"
+                "name": "curl"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "15.11.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "15.11.3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "15.10.0"
-                        },
-                        {
-                            "fixed": "15.10.7"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "9.0"
-                        },
-                        {
-                            "fixed": "15.9.8"
+                            "fixed": "8.1.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -44,30 +22,61 @@
     ],
     "database_specific": {
         "cite": [
-            "https://about.gitlab.com/releases/2023/05/10/security-release-gitlab-15-11-3-released/"
+            "https://curl.se/docs/security.html"
         ],
-        "discovery": "2023-05-10T00:00:00Z",
+        "discovery": "2023-03-21T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-2181"
+                "CVE-2023-28319",
+                "CVE-2023-28320",
+                "CVE-2023-28321",
+                "CVE-2023-28322"
             ]
         },
-        "vid": "4a08a4fb-f152-11ed-9c88-001b217b3468"
+        "vid": "a4f8bb03-f52f-11ed-9859-080027083a05"
     },
-    "details": "Gitlab reports:\n\n> Smuggling code changes via merge requests with refs/replace\n",
+    "details": "Wei Chong Tan, Harry Sintonen, and Hiroki Kurosawa reports:\n\n> This update fixes 4 security vulnerabilities:\n>\n> - Medium CVE-2023-28319: UAF in SSH sha256 fingerprint check. Reported\n>   by Wei Chong Tan on 2023-03-21\n> - Low CVE-2023-28320: siglongjmp race condition. Reported by Harry\n>   Sintonen on 2023-04-02\n> - Low CVE-2023-28321: IDN wildcard match. Reported by Hiroki Kurosawa\n>   on 2023-04-17\n> - Low CVE-2023-28322: more POST-after-PUT confusion. Reported by\n>   Hiroki Kurosawa on 2023-04-19\n",
     "id": "FreeBSD-2023-0164",
-    "modified": "2023-05-13T00:00:00Z",
-    "published": "2023-05-13T00:00:00Z",
+    "modified": "2023-05-19T00:00:00Z",
+    "published": "2023-05-19T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://about.gitlab.com/releases/2023/05/10/security-release-gitlab-15-11-3-released/"
+            "url": "https://curl.se/docs/security.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2181"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28319"
+        },
+        {
+            "type": "WEB",
+            "url": "https://curl.se/docs/CVE-2023-28319.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28320"
+        },
+        {
+            "type": "WEB",
+            "url": "https://curl.se/docs/CVE-2023-28320.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28321"
+        },
+        {
+            "type": "WEB",
+            "url": "https://curl.se/docs/CVE-2023-28321.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28322"
+        },
+        {
+            "type": "WEB",
+            "url": "https://curl.se/docs/CVE-2023-28322.html"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Gitlab -- Vulnerability"
+    "summary": "curl -- multiple vulnerabilities"
 }

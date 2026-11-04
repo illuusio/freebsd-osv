@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "173.14.35_2,1"
+                            "introduced": "173.14.35_2"
                         },
                         {
                             "fixed": "295.71"
@@ -20,7 +20,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "96.43.20_3,1"
+                            "introduced": "96.43.20_3"
                         },
                         {
                             "fixed": "173.14.35"
@@ -31,7 +31,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "71.86.15_3,1"
+                            "introduced": "71.86.15_3"
                         },
                         {
                             "fixed": "96.43.20_2"

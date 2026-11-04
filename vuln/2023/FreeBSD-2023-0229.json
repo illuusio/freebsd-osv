@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "mysql-connector-c++"
+                "name": "electron25"
             },
             "ranges": [
                 {
@@ -12,83 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "8.0.33"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "mysql-client57"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "5.7.43"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "mysql-server57"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "5.7.43"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "mysql-client80"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "8.0.34"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "mysql-server80"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "8.0.34"
+                            "fixed": "25.7.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,110 +22,133 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.oracle.com/security-alerts/cpujul2023.html#AppendixMSQL"
+            "https://github.com/electron/electron/releases/tag/v25.7.0"
         ],
-        "discovery": "2023-07-18T00:00:00Z",
+        "discovery": "2023-08-23T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-4899",
-                "CVE-2023-0361",
-                "CVE-2022-4899",
-                "CVE-2022-4899",
-                "CVE-2023-22053",
-                "CVE-2023-22008",
-                "CVE-2023-22046",
-                "CVE-2023-22054",
-                "CVE-2023-22056",
-                "CVE-2023-21950",
-                "CVE-2023-22007",
-                "CVE-2023-22057",
-                "CVE-2023-22033",
-                "CVE-2023-22058",
-                "CVE-2023-22005",
-                "CVE-2023-22048",
-                "CVE-2023-22038"
+                "CVE-2023-4071",
+                "CVE-2023-4070",
+                "CVE-2023-4075",
+                "CVE-2023-4076",
+                "CVE-2023-4074",
+                "CVE-2023-4072",
+                "CVE-2023-4068",
+                "CVE-2023-4073",
+                "CVE-2023-4355",
+                "CVE-2023-4354",
+                "CVE-2023-4353",
+                "CVE-2023-4351"
             ]
         },
-        "vid": "759a5599-3ce8-11ee-a0d1-84a93843eb75"
+        "vid": "5999fc39-72d0-4b99-851c-ade7ff7125c3"
     },
-    "details": "Oracle reports:\n\n> This Critical Patch Update contains 24 new security patches for Oracle\n> MySQL. 11 of these vulnerabilities may be remotely exploitable without\n> authentication, i.e., may be exploited over a network without\n> requiring user credentials.\n",
+    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-4071.\n> - Security: backported fix for CVE-2023-4070.\n> - Security: backported fix for CVE-2023-4075.\n> - Security: backported fix for CVE-2023-4076.\n> - Security: backported fix for CVE-2023-4074.\n> - Security: backported fix for CVE-2023-4072.\n> - Security: backported fix for CVE-2023-4068.\n> - Security: backported fix for CVE-2023-4073.\n> - Security: backported fix for CVE-2023-4355.\n> - Security: backported fix for CVE-2023-4354.\n> - Security: backported fix for CVE-2023-4353.\n> - Security: backported fix for CVE-2023-4351.\n",
     "id": "FreeBSD-2023-0229",
-    "modified": "2023-08-17T00:00:00Z",
-    "published": "2023-08-17T00:00:00Z",
+    "modified": "2023-08-24T00:00:00Z",
+    "published": "2023-08-24T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.oracle.com/security-alerts/cpujul2023.html#AppendixMSQL"
+            "url": "https://github.com/electron/electron/releases/tag/v25.7.0"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-4899"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4071"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0361"
+            "url": "https://github.com/advisories/GHSA-qc3g-vp59-7vwh"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-4899"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4070"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-4899"
+            "url": "https://github.com/advisories/GHSA-9xxv-mx64-rx27"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22053"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4075"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22008"
+            "url": "https://github.com/advisories/GHSA-7332-j628-x48x"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22046"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4076"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22054"
+            "url": "https://github.com/advisories/GHSA-7rfc-cwhj-x2qv"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22056"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4074"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21950"
+            "url": "https://github.com/advisories/GHSA-6j3m-7hm6-qjrx"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22007"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4072"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22057"
+            "url": "https://github.com/advisories/GHSA-9j4r-qr47-rcxp"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22033"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4068"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22058"
+            "url": "https://github.com/advisories/GHSA-wh89-h5f7-hhcr"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22005"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4073"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22048"
+            "url": "https://github.com/advisories/GHSA-g9wf-6ppg-937x"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22038"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4355"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-xrw8-8992-37w4"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4354"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-rq4v-7hxq-wpm5"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4353"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-mjq9-8vf6-qh49"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4351"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-mh2g-52mr-mr5v"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "MySQL -- Multiple vulnerabilities"
+    "summary": "electron25 -- multiple vulnerabilities"
 }

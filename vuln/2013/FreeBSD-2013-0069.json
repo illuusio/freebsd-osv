@@ -86,7 +86,6 @@
             "cvename": [
                 "CVE-2013-1854",
                 "CVE-2013-1856",
-                "CVE-2013-1856",
                 "CVE-2013-1857"
             ]
         },
@@ -104,10 +103,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2013-1854"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-1856"
         },
         {
             "type": "ADVISORY",

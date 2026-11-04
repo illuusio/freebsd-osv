@@ -1,0 +1,62 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "kea"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "2.6.0"
+                        },
+                        {
+                            "fixed": "2.6.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "3.0.0"
+                        },
+                        {
+                            "fixed": "3.0.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://kb.isc.org/docs/cve-2026-3608"
+        ],
+        "discovery": "2026-03-18T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-3608"
+            ]
+        },
+        "vid": "38d8dd83-285c-11f1-9f7b-001b217e4ee5"
+    },
+    "details": "Internet Systems Consortium, Inc. reports:\n\n> Sending a maliciously crafted message to the kea-ctrl-agent,\n> kea-dhcp-ddns, kea-dhcp4, or kea-dhcp6 daemons over any configured API\n> socket or HA listener can cause the receiving daemon to exit with a\n> stack overflow error.\n",
+    "id": "FreeBSD-2026-0579",
+    "modified": "2026-03-25T00:00:00Z",
+    "published": "2026-03-25T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://kb.isc.org/docs/cve-2026-3608"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-3608"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "ISC KEA -- Stack overflow in Kea daemons"
+}

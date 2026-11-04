@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "phpmyfaq"
+                "name": "grafana"
             },
             "ranges": [
                 {
@@ -12,7 +12,100 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.1.13"
+                            "fixed": "8.5.24"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "9.0.0"
+                        },
+                        {
+                            "fixed": "9.2.17"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "9.3.0"
+                        },
+                        {
+                            "fixed": "9.3.13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "9.4.0"
+                        },
+                        {
+                            "fixed": "9.4.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "grafana8"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.5.24"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "grafana9"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.2.17"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "9.3.0"
+                        },
+                        {
+                            "fixed": "9.3.13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "9.4.0"
+                        },
+                        {
+                            "fixed": "9.4.9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,37 +115,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.phpmyfaq.de/security/advisory-2023-04-23"
+            "https://grafana.com/blog/2023/04/26/precautionary-patches-for-grafana-released-following-critical-go-vulnerability-cve-2023-24538/"
         ],
-        "discovery": "2023-04-23T00:00:00Z",
-        "vid": "bb528d7c-e2c6-11ed-a3e6-589cfc0f81b0"
+        "discovery": "2023-04-19T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2023-24538"
+            ]
+        },
+        "vid": "0b85b1cd-e468-11ed-834b-6c3be5272acd"
     },
-    "details": "phpmyfaq developers report:\n\n> XSS\n>\n> email address manipulation\n",
+    "details": "Grafana Labs reports:\n\n> An issue in how go handles backticks (\\`) with Javascript can lead to\n> an injection of arbitrary code into go templates. While Grafana Labs\n> software contains potentially vulnerable versions of go, we have not\n> identified any exploitable use cases at this time.\n>\n> The CVSS score for this vulnerability is 0.0 (adjusted), 9.8 (base).\n",
     "id": "FreeBSD-2023-0146",
-    "modified": "2023-04-24T00:00:00Z",
-    "published": "2023-04-24T00:00:00Z",
+    "modified": "2023-04-26T00:00:00Z",
+    "published": "2023-04-26T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.phpmyfaq.de/security/advisory-2023-04-23"
+            "url": "https://grafana.com/blog/2023/04/26/precautionary-patches-for-grafana-released-following-critical-go-vulnerability-cve-2023-24538/"
         },
         {
-            "type": "WEB",
-            "url": "https://huntr.dev/bounties/20d3a0b3-2693-4bf1-b196-10741201a540/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://huntr.dev/bounties/89005a6d-d019-4cb7-ae88-486d2d44190d/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://huntr.dev/bounties/cee65b6d-b003-4e6a-9d14-89aa94bee43e/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://huntr.dev/bounties/840c8d91-c97e-4116-a9f8-4ab1a38d239b/"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-24538"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "phpmyfaq -- multiple vulnerabilities"
+    "summary": "Grafana -- Critical vulnerability in golang"
 }

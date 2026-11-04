@@ -143,10 +143,6 @@
         },
         {
             "type": "WEB",
-            "url": "https://github.com/erikd/libsndfile/commit/fd0484aba8e51d16af1e3a880f9b8b857b385eb3"
-        },
-        {
-            "type": "WEB",
             "url": "https://github.com/erikd/libsndfile/commit/cd7da8dbf6ee4310d21d9e44b385d6797160d9e8"
         },
         {
@@ -156,10 +152,6 @@
         {
             "type": "WEB",
             "url": "https://github.com/erikd/libsndfile/issues/230"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/erikd/libsndfile/commit/fd0484aba8e51d16af1e3a880f9b8b857b385eb3"
         },
         {
             "type": "ADVISORY",

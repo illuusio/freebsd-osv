@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-WsgiDAV"
+                "name": "py37-borgbackup"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.1.0"
+                            "fixed": "1.2.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-WsgiDAV"
+                "name": "py38-borgbackup"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.1.0"
+                            "fixed": "1.2.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-WsgiDAV"
+                "name": "py39-borgbackup"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.1.0"
+                            "fixed": "1.2.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-WsgiDAV"
+                "name": "py310-borgbackup"
             },
             "ranges": [
                 {
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.1.0"
+                            "fixed": "1.2.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-WsgiDAV"
+                "name": "py311-borgbackup"
             },
             "ranges": [
                 {
@@ -88,7 +88,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.1.0"
+                            "fixed": "1.2.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py312-borgbackup"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.2.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,30 +117,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/GHSA-xx6g-jj35-pxjv"
+            "https://github.com/borgbackup/borg/blob/1.2.5-cvedocs/docs/changes.rst#pre-125-archives-spoofing-vulnerability-cve-2023-36811"
         ],
-        "discovery": "2022-11-11T00:00:00Z",
+        "discovery": "2023-06-13T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-41905"
+                "CVE-2023-36811"
             ]
         },
-        "vid": "1a15b928-5011-4953-8133-d49e24902fe1"
+        "vid": "b8a52e5a-483d-11ee-971d-3df00e0f9020"
     },
-    "details": "> Implementations using this library with directory browsing enabled may\n> be susceptible to Cross Site Scripting (XSS) attacks.\n",
+    "details": "Thomas Waldmann reports:\n\n> A flaw in the cryptographic authentication scheme in Borg allowed an\n> attacker to fake archives and potentially indirectly cause backup data\n> loss in the repository.\n>\n> The attack requires an attacker to be able to\n>\n> - insert files (with no additional headers) into backups\n> - gain write access to the repository\n>\n> This vulnerability does not disclose plaintext to the attacker, nor\n> does it affect the authenticity of existing archives. Creating\n> plausible fake archives may be feasible for empty or small archives,\n> but is unlikely for large archives.\n",
     "id": "FreeBSD-2023-0265",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/GHSA-xx6g-jj35-pxjv"
+            "url": "https://github.com/borgbackup/borg/blob/1.2.5-cvedocs/docs/changes.rst#pre-125-archives-spoofing-vulnerability-cve-2023-36811"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-41905"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-36811"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-WsgiDAV -- XSS vulnerability"
+    "summary": "Borg (Backup) -- flaw in cryptographic authentication scheme in Borg allowed an attacker to fake archives and indirectly cause backup data loss."
 }

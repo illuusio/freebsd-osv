@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-pillow"
+                "name": "p5-MIME-Tools"
             },
             "ranges": [
                 {
@@ -12,121 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "13.0.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py312-pillow"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "13.0.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313-pillow"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "13.0.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py313t-pillow"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "13.0.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py314-pillow"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "13.0.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py314t-pillow"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "13.0.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py315-pillow"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "13.0.0"
+                            "fixed": "5.522,2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -135,223 +21,116 @@
         }
     ],
     "database_specific": {
-        "discovery": "2026-10-17T00:00:00Z",
+        "cite": [
+            "https://metacpan.org/dist/MIME-tools/changes"
+        ],
+        "discovery": "2026-10-27T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2026-96636",
-                "CVE-2026-96637",
-                "CVE-2026-96638",
-                "CVE-2026-96639",
-                "CVE-2026-96640",
-                "CVE-2026-96641",
-                "CVE-2026-96642",
-                "CVE-2026-96643",
-                "CVE-2026-96644",
-                "CVE-2026-96778",
-                "CVE-2026-112390",
-                "CVE-2026-112391",
-                "CVE-2026-112392",
-                "CVE-2026-112393",
-                "CVE-2026-112394",
-                "CVE-2026-112395",
-                "CVE-2026-112396",
-                "CVE-2026-112397",
-                "CVE-2026-112398",
-                "CVE-2026-112399",
-                "CVE-2026-112400",
-                "CVE-2026-112401",
-                "CVE-2026-112402",
-                "CVE-2026-112403",
-                "CVE-2026-112404",
-                "CVE-2026-112405",
-                "CVE-2026-112406",
-                "CVE-2026-112891",
-                "CVE-2026-112892",
-                "CVE-2026-112893",
-                "CVE-2026-112894",
-                "CVE-2026-112895",
-                "CVE-2026-112896",
-                "CVE-2026-112897",
-                "CVE-2026-112898",
-                "CVE-2026-112899",
-                "CVE-2026-112900",
-                "CVE-2026-112901",
-                "CVE-2026-112902",
-                "CVE-2026-114501"
+                "CVE-2026-116264",
+                "CVE-2026-116265",
+                "CVE-2026-116266",
+                "CVE-2026-116267",
+                "CVE-2026-116268",
+                "CVE-2026-116269",
+                "CVE-2026-116270",
+                "CVE-2026-116271",
+                "CVE-2026-116272",
+                "CVE-2026-116273"
             ]
         },
-        "vid": "b9a3fd21-d2af-11f1-bae2-3497f65b111b"
+        "vid": "2b2d5d3e-d2c8-11f1-97dc-40b034429ecf"
     },
-    "details": "The Pillow project published security advisories for issues fixed in\nrelease 13.0.0. They include an argument injection in the Ghostscript\ncall used for EPS images, heap buffer overflows in several image\ndecoders that can lead to code execution, and infinite loops and\nunbounded memory use when opening crafted image files.\n",
+    "details": "MIME-tools project reports:\n\n> Many security issues were addressed (see the following ten CVEs)\n> Issues were brought to my attention, and patches supplied, by the\n> CPANSec security group.\n>\n> - CVE-2026-116264 invalid parameter hides boundary/filename\n> - CVE-2026-116265 RFC 2231 boundary skips ambiguity checks\n> - CVE-2026-116266 boundary changed by decoding not flagged\n> - CVE-2026-116267 indent stored per message per level\n> - CVE-2026-116268 unclosed \\\"(\\\" comments backtrack CPU exhaustion\n> - CVE-2026-116269 RFC 2231 language tag empties filename\n> - CVE-2026-116270 each bad \\\"=?\\\" copies the input into \\$@\n> - CVE-2026-116271 FileUnder reuses a pre-created directory\n> - CVE-2026-116272 comment hides a duplicate boundary\n> - CVE-2026-116273 max_parts and max_depth unlimited\n",
     "id": "FreeBSD-2026-0557",
     "modified": "2026-10-28T00:00:00Z",
     "published": "2026-10-28T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96636"
+            "type": "REPORT",
+            "url": "https://metacpan.org/dist/MIME-tools/changes"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96637"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116264"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96638"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116265"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96639"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116266"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96640"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116267"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96641"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116268"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96642"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116269"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96643"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116270"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96644"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116271"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96778"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116272"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112390"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116273"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112391"
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116264"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112392"
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116265"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112393"
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116266"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112394"
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116267"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112395"
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116268"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112396"
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116269"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112397"
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116270"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112398"
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116271"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112399"
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116272"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112400"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112401"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112402"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112403"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112404"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112405"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112406"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112891"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112892"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112893"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112894"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112895"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112896"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112897"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112898"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112899"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112900"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112901"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112902"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-114501"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/python-pillow/Pillow/security/advisories"
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116273"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Pillow -- multiple vulnerabilities"
+    "summary": "p5-MIME-Tools -- multiple vulnerabilities"
 }

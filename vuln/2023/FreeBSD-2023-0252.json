@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-django-photologue"
+                "name": "py37-httpie"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.15_1"
+                            "fixed": "3.1.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-django-photologue"
+                "name": "py38-httpie"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.15_1"
+                            "fixed": "3.1.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-django-photologue"
+                "name": "py39-httpie"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.15_1"
+                            "fixed": "3.1.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-django-photologue"
+                "name": "py310-httpie"
             },
             "ranges": [
                 {
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.15_1"
+                            "fixed": "3.1.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-django-photologue"
+                "name": "py311-httpie"
             },
             "ranges": [
                 {
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.15_1"
+                            "fixed": "3.1.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,30 +98,48 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/GHSA-287q-jfcp-9vhv"
+            "https://osv.dev/vulnerability/PYSEC-2022-34",
+            "https://osv.dev/vulnerability/PYSEC-2022-167"
         ],
-        "discovery": "2022-12-15T00:00:00Z",
+        "discovery": "2022-03-07T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-4526"
+                "CVE-2022-24737",
+                "CVE-2022-0430"
             ]
         },
-        "vid": "c2c89dea-2859-4231-8f3b-012be0d475ff"
+        "vid": "1e37fa3e-5988-4991-808f-eae98047e2af"
     },
-    "details": "domiee13 reports:\n\n> A vulnerability was found in django-photologue up to 3.15.1 and\n> classified as problematic.\n>\n> Affected by this issue is some unknown functionality of the file\n> photologue/templates/photologue/photo_detail.html of the component\n> Default Template Handler.\n>\n> The manipulation of the argument object.caption leads to cross site\n> scripting.\n>\n> The attack may be launched remotely.\n>\n> Upgrading to version 3.16 is able to address this issue.\n>\n> The name of the patch is 960cb060ce5e2964e6d716ff787c72fc18a371e7.\n>\n> It is recommended to apply a patch to fix this issue.\n>\n> VDB-215906 is the identifier assigned to this vulnerability.\n",
+    "details": "Glyph reports:\n\n> HTTPie is a command-line HTTP client.\n>\n> HTTPie has the practical concept of sessions, which help users to\n> persistently store some of the state that belongs to the outgoing\n> requests and incoming responses on the disk for further usage.\n>\n> Before 3.1.0, HTTPie didn\\'t distinguish between cookies and hosts\n> they belonged.\n>\n> This behavior resulted in the exposure of some cookies when there are\n> redirects originating from the actual host to a third party website.\n>\n> Users are advised to upgrade.\n>\n> There are no known workarounds.\n\n> Exposure of Sensitive Information to an Unauthorized Actor in GitHub\n> repository httpie/httpie prior to 3.1.0.\n",
     "id": "FreeBSD-2023-0252",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/GHSA-287q-jfcp-9vhv"
+            "url": "https://osv.dev/vulnerability/PYSEC-2022-34"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://osv.dev/vulnerability/PYSEC-2022-167"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-4526"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-24737"
+        },
+        {
+            "type": "WEB",
+            "url": "https://osv.dev/vulnerability/GHSA-9w4w-cpc8-h2fq"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-0430"
+        },
+        {
+            "type": "WEB",
+            "url": "https://osv.dev/vulnerability/GHSA-6pc9-xqrg-wfqw"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-django-photologue -- XSS vulnerability"
+    "summary": "py-httpie -- exposure of sensitive information vulnerabilities"
 }

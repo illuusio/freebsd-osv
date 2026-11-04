@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.0.20060920"
+                            "last_affected": "0.0.20060920"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "6.0r79_3"
+                            "last_affected": "6.0r79_3"
                         }
                     ],
                     "type": "ECOSYSTEM"

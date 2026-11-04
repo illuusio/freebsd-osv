@@ -1,0 +1,101 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libressl"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.4.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libressl-devel"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.4.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.vulncheck.com/advisories/libressl-through-4.4.0-crlf-injection-via-ocsp-sendreq-new-request-line"
+        ],
+        "discovery": "2026-10-28T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-118371",
+                "CVE-2026-118372",
+                "CVE-2026-118373",
+                "CVE-2026-118374"
+            ]
+        },
+        "vid": "aafad06c-d519-11f1-8135-8447094a420f"
+    },
+    "details": "VulnCheck reports:\n\n> CVE-2026-118371: LibreSSL through 4.4.0 contains a CRLF injection\n> vulnerability in the libcrypto OCSP_sendreq_new() and OCSP_parse_url()\n> functions, which write unvalidated request paths into the OCSP POST\n> request line. Attackers can embed carriage return and line feed\n> characters in a certificate\\'s Authority Information Access OCSP URI\n> to inject HTTP headers or split requests sent to responders and\n> proxies.\n>\n> CVE-2026-118372: LibreSSL ocspcheck through 4.4.0 contains a CRLF\n> injection vulnerability that allows attackers to inject HTTP headers\n> by embedding CR/LF sequences in a certificate\\'s AIA OCSP URI path.\n> Because url2host() copies the path without rejecting control\n> characters and http_open() places it in the POST request line,\n> attackers can inject headers or split OCSP requests sent to the\n> responder host.\n>\n> CVE-2026-118373: LibreSSL ocspcheck through 4.4.0 contains a cleartext\n> transmission vulnerability because url2host() discards the OCSP URL\n> scheme and http_alloc() only selects TLS for port 443. On-path network\n> attackers can read OCSP requests sent to https responder URLs on\n> non-443 ports, exposing certificate serial numbers, issuer hashes, and\n> nonces.\n>\n> CVE-2026-118374: LibreSSL ocspcheck through 4.4.0 contains a memory\n> exhaustion vulnerability that allows malicious OCSP responders to\n> exhaust memory by sending unbounded HTTP responses. Attackers\n> controlling the responder or intercepting plain HTTP AIA OCSP traffic\n> can stream endless headers or body data to http_head_read() and\n> http_body_read(), denying certificate status checks.\n",
+    "id": "FreeBSD-2026-0581",
+    "modified": "2026-10-31T00:00:00Z",
+    "published": "2026-10-31T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.vulncheck.com/advisories/libressl-through-4.4.0-crlf-injection-via-ocsp-sendreq-new-request-line"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-118371"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-118372"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-118373"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-118374"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118371"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118372"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118373"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-118374"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "LibreSSL -- Multiple OCSP client vulnerabilities"
+}

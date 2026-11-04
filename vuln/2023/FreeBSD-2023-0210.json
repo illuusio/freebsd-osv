@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "virtualbox-ose"
+                "name": "openssh-portable"
             },
             "ranges": [
                 {
@@ -12,7 +12,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "6.1.46"
+                            "fixed": "9.3.p2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssh-portable-hpn"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.3.p2,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssh-portable-gssapi"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.3.p2,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +60,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.oracle.com/security-alerts/cpujul2023.html"
+            "https://www.openssh.com/txt/release-9.3p2"
         ],
-        "discovery": "2023-07-18T00:00:00Z",
+        "discovery": "2023-07-19T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-22018"
+                "CVE-2023-38408"
             ]
         },
-        "vid": "bc90e894-264b-11ee-a468-80fa5b29d485"
+        "vid": "887eb570-27d3-11ee-adba-c80aa9043978"
     },
-    "details": "secalert_us@oracle.com reports:\n\n> Vulnerability in the Oracle VM VirtualBox product of Oracle\n> Virtualization (component: Core). Supported versions that are affected\n> are Prior to 6.1.46 and Prior to 7.0.10. Difficult to exploit\n> vulnerability allows unauthenticated attacker with network access via\n> RDP to compromise Oracle VM VirtualBox. Successful attacks of this\n> vulnerability can result in takeover of Oracle VM VirtualBox. CVSS 3.1\n> Base Score 8.1 (Confidentiality, Integrity and Availability impacts).\n> CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H).\n",
+    "details": "OpenSSH project reports:\n\n> Fix CVE-2023-38408 - a condition where specific libaries loaded via\n> ssh-agent(1)\\'s PKCS#11 support could be abused to achieve remote code\n> execution via a forwarded agent socket if the following conditions are\n> met: \\* Exploitation requires the presence of specific libraries on\n> the victim system. \\* Remote exploitation requires that the agent was\n> forwarded to an attacker-controlled system. Exploitation can also be\n> prevented by starting ssh-agent(1) with an empty PKCS#11/FIDO\n> allowlist (ssh-agent -P \\'\\') or by configuring an allowlist that\n> contains only specific provider libraries. This vulnerability was\n> discovered and demonstrated to be exploitable by the Qualys Security\n> Advisory team.\n",
     "id": "FreeBSD-2023-0210",
-    "modified": "2023-07-19T00:00:00Z",
-    "published": "2023-07-19T00:00:00Z",
+    "modified": "2023-07-21T00:00:00Z",
+    "published": "2023-07-21T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.oracle.com/security-alerts/cpujul2023.html"
+            "url": "https://www.openssh.com/txt/release-9.3p2"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22018"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-22018"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-38408"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "virtualbox-ose -- multiple vulnerabilities"
+    "summary": "OpenSSH -- remote code execution via a forwarded agent socket"
 }

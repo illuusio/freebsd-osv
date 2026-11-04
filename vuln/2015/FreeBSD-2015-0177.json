@@ -240,7 +240,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "20150531,1"
+                            "last_affected": "20150531,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -259,7 +259,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "20150531,1"
+                            "last_affected": "20150531,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -278,7 +278,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "20150531,1"
+                            "last_affected": "20150531,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -297,7 +297,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "20150531,1"
+                            "last_affected": "20150531,1"
                         }
                     ],
                     "type": "ECOSYSTEM"

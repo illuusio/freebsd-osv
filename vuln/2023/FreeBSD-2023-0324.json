@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "xorg-server"
+                "name": "open-vm-tools"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "21.1.9,1"
+                            "fixed": "12.3.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "xephyr"
+                "name": "open-vm-tools-nox11"
             },
             "ranges": [
                 {
@@ -31,83 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "21.1.9,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "xorg-vfbserver"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "21.1.9,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "xorg-nestserver"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "21.1.9,2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "xwayland"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "23.2.2,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "xwayland-devel"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "21.0.99.1.542"
+                            "fixed": "12.3.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -117,35 +41,43 @@
     ],
     "database_specific": {
         "cite": [
-            "https://lists.x.org/archives/xorg-announce/2023-October/003430.html"
+            "https://www.vmware.com/security/advisories/VMSA-2023-0024.html"
         ],
-        "discovery": "2023-10-25T00:00:00Z",
+        "discovery": "2023-10-26T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-5367",
-                "CVE-2023-5380"
+                "CVE-2023-34058",
+                "CVE-2023-34059"
             ]
         },
-        "vid": "9e2fdfc7-e237-4393-9fa5-2d50908c66b3"
+        "vid": "d2505ec7-78ea-11ee-9131-6f01853956d5"
     },
-    "details": "The X.Org project reports:\n\n> - ZDI-CAN-22153/CVE-2023-5367: X.Org server: OOB write in\n>   XIChangeDeviceProperty/RRChangeOutputProperty\n>\n>   When prepending values to an existing property an invalid offset\n>   calculation causes the existing values to be appended at the wrong\n>   offset. The resulting memcpy() would write into memory outside the\n>   heap-allocated array.\n>\n> - ZDI-CAN-21608/CVE-2023-5380: Use-after-free bug in DestroyWindow\n>\n>   This vulnerability requires a legacy multi-screen setup with\n>   multiple protocol screens (\\\"Zaphod\\\"). If the pointer is warped\n>   from one screen to the root window of the other screen, the\n>   enter/leave code may retain a reference to the previous pointer\n>   window. Destroying this window leaves that reference in place, other\n>   windows may then trigger a use-after-free bug when they are\n>   destroyed.\n",
+    "details": "VMware reports:\n\n> This update includes 2 security fixes:\n>\n> - High CVE-2023-34058: SAML token signature bypass vulnerability\n> - High CVE-2023-34059: File descriptor hijack vulnerability in the\n>   vmware-user-suid-wrapper\n",
     "id": "FreeBSD-2023-0324",
-    "modified": "2023-10-25T00:00:00Z",
-    "published": "2023-10-25T00:00:00Z",
+    "modified": "2023-11-01T00:00:00Z",
+    "published": "2023-11-01T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://lists.x.org/archives/xorg-announce/2023-October/003430.html"
+            "url": "https://www.vmware.com/security/advisories/VMSA-2023-0024.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5367"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-34058"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5380"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-34058"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-34059"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-34059"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "xorg-server -- Multiple vulnerabilities"
+    "summary": "open-vm-tools -- Multiple vulnerabilities"
 }

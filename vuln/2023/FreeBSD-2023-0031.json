@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.22.0"
+                            "last_affected": "2.22.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.22.0"
+                            "last_affected": "2.22.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.22.0"
+                            "last_affected": "2.22.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.22.0"
+                            "last_affected": "2.22.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.22.0"
+                            "last_affected": "2.22.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -108,9 +108,9 @@
         },
         "vid": "c3fb48cc-a2ff-11ed-8fbc-6cf0490a8c18"
     },
-    "details": "St\u00c3\u00a9phane Bruckert\n\n> If a malicious URI is passed to the library, the library can be\n> tricked into performing an operation on a different API endpoint than\n> intended.\n",
+    "details": "St\u00e9phane Bruckert\n\n> If a malicious URI is passed to the library, the library can be\n> tricked into performing an operation on a different API endpoint than\n> intended.\n",
     "id": "FreeBSD-2023-0031",
-    "modified": "2023-02-02T00:00:00Z",
+    "modified": "2026-10-29T00:00:00Z",
     "published": "2023-02-02T00:00:00Z",
     "references": [
         {

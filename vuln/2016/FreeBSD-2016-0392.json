@@ -44,11 +44,7 @@
         },
         {
             "type": "WEB",
-            "url": "\"http://www.openwall.com/lists/oss-security/2016/09/08/2\""
-        },
-        {
-            "type": "WEB",
-            "url": "\"http://www.openwall.com/lists/oss-security/2016/09/08/3\""
+            "url": "http://www.openwall.com/lists/oss-security/2016/09/08/3"
         },
         {
             "type": "ADVISORY",

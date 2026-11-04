@@ -22,7 +22,7 @@
     ],
     "database_specific": {
         "cite": [
-            "www.strongswan.org/blog/2014/04/14/strongswan-authentication-bypass-vulnerability-(cve-2014-2338).html"
+            "http://www.strongswan.org/blog/2014/04/14/strongswan-authentication-bypass-vulnerability-%28cve-2014-2338%29.html"
         ],
         "discovery": "2014-03-12T00:00:00Z",
         "references": {
@@ -39,15 +39,11 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "www.strongswan.org/blog/2014/04/14/strongswan-authentication-bypass-vulnerability-(cve-2014-2338).html"
+            "url": "http://www.strongswan.org/blog/2014/04/14/strongswan-authentication-bypass-vulnerability-%28cve-2014-2338%29.html"
         },
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2014-2338"
-        },
-        {
-            "type": "WEB",
-            "url": "http://www.strongswan.org/blog/2014/04/14/strongswan-authentication-bypass-vulnerability-%28cve-2014-2338%29.html"
         }
     ],
     "schema_version": "1.7.0",

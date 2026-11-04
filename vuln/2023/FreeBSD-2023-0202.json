@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitea"
+                "name": "electron22"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.19.4"
+                            "fixed": "22.3.17"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,29 +22,52 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/go-gitea/gitea/pull/25143"
+            "https://github.com/electron/electron/releases/tag/v22.3.17"
         ],
-        "discovery": "2023-06-08T00:00:00Z",
-        "vid": "8ea24413-1b15-11ee-9331-570525adb7f1"
+        "discovery": "2023-07-12T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2023-3422",
+                "CVE-2023-3421",
+                "CVE-2023-3420"
+            ]
+        },
+        "vid": "3446e45d-a51b-486f-9b0e-e4402d91fed6"
     },
-    "details": "The Gitea team reports:\n\n> If redirect_to parameter has set value starting with \\\\\\\\example.com\n> redirect will be created with header Location: /\\\\\\\\example.com that\n> will redirect to example.com domain.\n",
+    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-3422.\n> - Security: backported fix for CVE-2023-3421.\n> - Security: backported fix for CVE-2023-3420.\n",
     "id": "FreeBSD-2023-0202",
-    "modified": "2023-07-05T00:00:00Z",
-    "published": "2023-07-05T00:00:00Z",
+    "modified": "2023-07-14T00:00:00Z",
+    "published": "2023-07-14T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/go-gitea/gitea/pull/25143"
+            "url": "https://github.com/electron/electron/releases/tag/v22.3.17"
         },
         {
-            "type": "WEB",
-            "url": "https://blog.gitea.io/2023/07/gitea-1.19.4-is-released/"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3422"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/go-gitea/gitea/releases/tag/v1.19.4"
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-gqjh-f545-vcx3"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3421"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-943x-93ff-jr62"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3420"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-4297-fx5c-x987"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "gitea -- avoid open HTTP redirects"
+    "summary": "electron22 -- multiple vulnerabilities"
 }

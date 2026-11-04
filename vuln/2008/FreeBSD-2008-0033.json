@@ -142,7 +142,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "0,1"
+                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -211,7 +211,7 @@
         },
         "vid": "12b336c6-fe36-11dc-b09c-001c2514716c"
     },
-    "details": "The Mozilla Foundation reports of multiple security issues in Firefox,\nSeamonkey, and Thunderbird. Several of these issues can probably be used\nto run arbitrary code with the privilege of the user running the\nprogram.\n\n> - [MFSA 2008-19](/security/announce/2008/mfsa2008-19.html) XUL popup\n>   spoofing variant (cross-tab popups)\n> - [MFSA 2008-18](/security/announce/2008/mfsa2008-18.html) Java socket\n>   connection to any local port via LiveConnect\n> - [MFSA 2008-17](/security/announce/2008/mfsa2008-17.html) Privacy\n>   issue with SSL Client Authentication\n> - [MFSA 2008-16](/security/announce/2008/mfsa2008-16.html) HTTP\n>   Referrer spoofing with malformed URLs\n> - [MFSA 2008-15](/security/announce/2008/mfsa2008-15.html) Crashes\n>   with evidence of memory corruption (rv:1.8.1.13)\n> - [MFSA 2008-14](/security/announce/2008/mfsa2008-14.html) JavaScript\n>   privilege escalation and arbitrary code execution\n",
+    "details": "The Mozilla Foundation reports of multiple security issues in Firefox,\nSeamonkey, and Thunderbird. Several of these issues can probably be used\nto run arbitrary code with the privilege of the user running the\nprogram.\n\n> - [MFSA\n>   2008-19](http://www.mozilla.org/security/announce/2008/mfsa2008-19.html)\n>   XUL popup spoofing variant (cross-tab popups)\n> - [MFSA\n>   2008-18](http://www.mozilla.org/security/announce/2008/mfsa2008-18.html)\n>   Java socket connection to any local port via LiveConnect\n> - [MFSA\n>   2008-17](http://www.mozilla.org/security/announce/2008/mfsa2008-17.html)\n>   Privacy issue with SSL Client Authentication\n> - [MFSA\n>   2008-16](http://www.mozilla.org/security/announce/2008/mfsa2008-16.html)\n>   HTTP Referrer spoofing with malformed URLs\n> - [MFSA\n>   2008-15](http://www.mozilla.org/security/announce/2008/mfsa2008-15.html)\n>   Crashes with evidence of memory corruption (rv:1.8.1.13)\n> - [MFSA\n>   2008-14](http://www.mozilla.org/security/announce/2008/mfsa2008-14.html)\n>   JavaScript privilege escalation and arbitrary code execution\n",
     "id": "FreeBSD-2008-0033",
     "modified": "2009-12-12T00:00:00Z",
     "published": "2008-03-30T00:00:00Z",

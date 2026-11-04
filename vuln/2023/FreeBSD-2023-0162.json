@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "postgresql-server"
+                "name": "electron22"
             },
             "ranges": [
                 {
@@ -12,51 +12,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "15.3"
+                            "fixed": "22.3.10"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "electron23"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
                             "introduced": "0"
                         },
                         {
-                            "fixed": "14.8"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "13.11"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "12.15"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "11.20"
+                            "fixed": "23.3.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -66,30 +41,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.postgresql.org/support/security/CVE-2023-2455/"
+            "https://github.com/electron/electron/releases/tag/v22.3.10"
         ],
-        "discovery": "2023-05-11T00:00:00Z",
+        "discovery": "2023-05-17T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-2455"
+                "CVE-2023-29469"
             ]
         },
-        "vid": "4b636f50-f011-11ed-bbae-6cc21735f730"
+        "vid": "b09d77d0-b27c-48ae-b69b-9641bb68b39e"
     },
-    "details": "PostgreSQL Project reports\n\n> While CVE-2016-2193 fixed most interaction between row security and\n> user ID changes, it missed a scenario involving function inlining.\n> This leads to potentially incorrect policies being applied in cases\n> where role-specific policies are used and a given query is planned\n> under one role and then executed under other roles. This scenario can\n> happen under security definer functions or when a common user and\n> query is planned initially and then re-used across multiple SET ROLEs.\n> Applying an incorrect policy may permit a user to complete\n> otherwise-forbidden reads and modifications. This affects only\n> databases that have used CREATE POLICY to define a row security\n> policy.\n",
+    "details": "Electron developers report:\n\n> This update fixes the following vulnerability:\n>\n> - Security: backported fix for CVE-2023-29469\n",
     "id": "FreeBSD-2023-0162",
-    "modified": "2023-05-11T00:00:00Z",
-    "published": "2023-05-11T00:00:00Z",
+    "modified": "2023-05-18T00:00:00Z",
+    "published": "2023-05-18T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.postgresql.org/support/security/CVE-2023-2455/"
+            "url": "https://github.com/electron/electron/releases/tag/v22.3.10"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2455"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-29469"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-7jv7-hr35-fwjr"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "postgresql-server -- Row security policies disregard user ID changes after inlining"
+    "summary": "electron -- vulnerability"
 }

@@ -22,7 +22,7 @@
     ],
     "database_specific": {
         "cite": [
-            "ftp://ftp.hylafax.org/security/CVE-2018-17141.html"
+            "https://www.x41-dsec.de/lab/advisories/x41-2018-008-hylafax/"
         ],
         "discovery": "2018-08-24T00:00:00Z",
         "references": {
@@ -39,15 +39,11 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "ftp://ftp.hylafax.org/security/CVE-2018-17141.html"
+            "url": "https://www.x41-dsec.de/lab/advisories/x41-2018-008-hylafax/"
         },
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2018-17141"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.x41-dsec.de/lab/advisories/x41-2018-008-hylafax/"
         },
         {
             "type": "WEB",

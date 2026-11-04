@@ -3,38 +3,73 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitlab-ce"
+                "name": "electron22"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "16.2.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "16.2.2"
+                            "fixed": "22.3.20"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "electron23"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "16.1.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "16.1.3"
+                            "fixed": "23.3.12"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "electron24"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "9.3.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "16.0.8"
+                            "fixed": "24.7.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "electron25"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "25.4.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -44,95 +79,52 @@
     ],
     "database_specific": {
         "cite": [
-            "https://about.gitlab.com/releases/2023/08/01/security-release-gitlab-16-2-2-released/"
+            "https://github.com/electron/electron/releases/tag/v23.3.12"
         ],
-        "discovery": "2023-08-01T00:00:00Z",
+        "discovery": "2023-08-02T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-3994",
-                "CVE-2023-3364",
-                "CVE-2023-0632",
-                "CVE-2023-3385",
-                "CVE-2023-2164",
-                "CVE-2023-4002",
-                "CVE-2023-4008",
-                "CVE-2023-3993",
-                "CVE-2023-3500",
-                "CVE-2023-3401",
-                "CVE-2023-3900",
-                "CVE-2023-2022",
-                "CVE-2023-4011",
-                "CVE-2023-1210"
+                "CVE-2023-3732",
+                "CVE-2023-3728",
+                "CVE-2023-3730"
             ]
         },
-        "vid": "fa239535-30f6-11ee-aef9-001b217b3468"
+        "vid": "f3a35fb8-2d70-47c9-a516-6aad7eb222b1"
     },
-    "details": "Gitlab reports:\n\n> ReDoS via ProjectReferenceFilter in any Markdown fields\n>\n> ReDoS via AutolinkFilter in any Markdown fields\n>\n> Regex DoS in Harbor Registry search\n>\n> Arbitrary read of files owned by the \\\"git\\\" user via malicious tar.gz\n> file upload using GitLab export functionality\n>\n> Stored XSS in Web IDE Beta via crafted URL\n>\n> securityPolicyProjectAssign mutation does not authorize security\n> policy project ID\n>\n> An attacker can run pipeline jobs as arbitrary user\n>\n> Possible Pages Unique Domain Overwrite\n>\n> Access tokens may have been logged when a query was made to an\n> endpoint\n>\n> Reflected XSS via PlantUML diagram\n>\n> The main branch of a repository with a specially designed name may\n> allow an attacker to create repositories with malicious code\n>\n> Invalid \\'start_sha\\' value on merge requests page may lead to Denial\n> of Service\n>\n> Developers can create pipeline schedules on protected branches even if\n> they don\\'t have access to merge\n>\n> Potential DOS due to lack of pagination while loading license data\n>\n> Leaking emails of newly created users\n",
+    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-3732.\n> - Security: backported fix for CVE-2023-3728.\n> - Security: backported fix for CVE-2023-3730.\n",
     "id": "FreeBSD-2023-0218",
-    "modified": "2023-08-02T00:00:00Z",
-    "published": "2023-08-02T00:00:00Z",
+    "modified": "2023-08-11T00:00:00Z",
+    "published": "2023-08-07T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://about.gitlab.com/releases/2023/08/01/security-release-gitlab-16-2-2-released/"
+            "url": "https://github.com/electron/electron/releases/tag/v23.3.12"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3994"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3732"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3364"
+            "url": "https://github.com/advisories/GHSA-6f46-9vvr-v3j5"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0632"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3728"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3385"
+            "url": "https://github.com/advisories/GHSA-fxgf-5cm8-2f8q"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2164"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3730"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4002"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4008"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3993"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3500"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3401"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3900"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2022"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4011"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-1210"
+            "url": "https://github.com/advisories/GHSA-2gmm-4f9j-mw4p"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Gitlab -- Vulnerabilities"
+    "summary": "electron{22,23,24,25} -- multiple vulnerabilities"
 }

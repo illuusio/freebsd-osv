@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "ghostscript"
+                "name": "chromium"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "10.01.1"
+                            "fixed": "112.0.5615.165"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "ghostscript7-base"
+                "name": "ungoogled-chromium"
             },
             "ranges": [
                 {
@@ -31,140 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "10.01.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ghostscript7-commfont"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "10.01.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ghostscript7-jpnfont"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "10.01.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ghostscript7-korfont"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "10.01.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ghostscript7-x11"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "10.01.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ghostscript8-base"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "10.01.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ghostscript8-x11"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "10.01.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ghostscript9-agpl-base"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "9.56.1_10"
+                            "fixed": "112.0.5615.165"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -174,38 +41,50 @@
     ],
     "database_specific": {
         "cite": [
-            "http://www.openwall.com/lists/oss-security/2023/04/12/4"
+            "https://chromereleases.googleblog.com/2023/04/stable-channel-update-for-desktop_18.html"
         ],
-        "discovery": "2023-03-23T00:00:00Z",
+        "discovery": "2023-04-20T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-28879"
+                "CVE-2023-2133",
+                "CVE-2023-2134",
+                "CVE-2023-2135",
+                "CVE-2023-2136",
+                "CVE-2023-2137"
             ]
         },
-        "vid": "25872b25-da2d-11ed-b715-a1e76793953b"
+        "vid": "90c48c04-d549-4fc0-a503-4775e32d438e"
     },
-    "details": "cve@mitre.org reports:\n\n> In Artifex Ghostscript through 10.01.0, there is a buffer overflow\n> leading to potential corruption of data internal to the PostScript\n> interpreter, in base/sbcp.c. This affects BCPEncode, BCPDecode,\n> TBCPEncode, and TBCPDecode. If the write buffer is filled to one byte\n> less than full, and one then tries to write an escaped character, two\n> bytes are written.\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 8 security fixes:\n>\n> - \\[1429197\\] High CVE-2023-2133: Out of bounds memory access in\n>   Service Worker API. Reported by Rong Jian of VRI on 2023-03-30\n> - \\[1429201\\] High CVE-2023-2134: Out of bounds memory access in\n>   Service Worker API. Reported by Rong Jian of VRI on 2023-03-30\n> - \\[1424337\\] High CVE-2023-2135: Use after free in DevTools. Reported\n>   by Cassidy Kim(@cassidy6564) on 2023-03-14\n> - \\[1432603\\] High CVE-2023-2136: Integer overflow in Skia. Reported\n>   by Cl\u00e9ment Lecigne of Google\\'s Threat Analysis Group on 2023-04-12\n> - \\[1430644\\] Medium CVE-2023-2137: Heap buffer overflow in sqlite.\n>   Reported by Nan Wang(@eternalsakura13) and Guang Gong of 360\n>   Vulnerability Research Institute on 2023-04-05\n",
     "id": "FreeBSD-2023-0140",
-    "modified": "2023-04-28T00:00:00Z",
-    "published": "2023-04-13T00:00:00Z",
+    "modified": "2023-04-20T00:00:00Z",
+    "published": "2023-04-20T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "http://www.openwall.com/lists/oss-security/2023/04/12/4"
+            "url": "https://chromereleases.googleblog.com/2023/04/stable-channel-update-for-desktop_18.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28879"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2133"
         },
         {
             "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-28879"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2134"
         },
         {
-            "type": "WEB",
-            "url": "https://artifex.com/news/critical-security-vulnerability-fixed-in-ghostscript"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2135"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2136"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2137"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "ghostscript -- exploitable buffer overflow in (T)BCP in PS interpreter"
+    "summary": "chromium -- multiple vulnerabilities"
 }

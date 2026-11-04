@@ -2,55 +2,17 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "chromium"
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "13.2"
                         },
                         {
-                            "fixed": "117.0.5938.132"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "ungoogled-chromium"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "117.0.5938.132"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "qt6-webengine"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "6.6.1"
+                            "fixed": "13.2_4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -59,41 +21,31 @@
         }
     ],
     "database_specific": {
-        "cite": [
-            "https://chromereleases.googleblog.com/2023/09/stable-channel-update-for-desktop_27.html"
-        ],
-        "discovery": "2023-09-27T00:00:00Z",
+        "discovery": "2023-10-03T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-5217",
-                "CVE-2023-5186",
-                "CVE-2023-5187"
+                "CVE-2023-5369"
+            ],
+            "freebsdsa": [
+                "SA-23:13.capsicum"
             ]
         },
-        "vid": "6d9c6aae-5eb1-11ee-8290-a8a1599412c6"
+        "vid": "e261e71c-6250-11ee-8e38-002590c1f29c"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 10 security fixes:\n>\n> - \\[1486441\\] High CVE-2023-5217: Heap buffer overflow in vp8 encoding\n>   in libvpx. Reported by Cl\u00e9ment Lecigne of Google\\'s Threat Analysis\n>   Group on 2023-09-25\n> - \\[1478889\\] High CVE-2023-5186: Use after free in Passwords.\n>   Reported by \\[pwn2car\\] on 2023-09-05\n> - \\[1475798\\] High CVE-2023-5187: Use after free in Extensions.\n>   Reported by Thomas Orlita on 2023-08-25\n",
+    "details": "# Problem Description:\n\nThe syscall checked only for the CAP_READ and CAP_WRITE capabilities on\nthe input and output file descriptors, respectively. Using an offset is\nlogically equivalent to seeking, and the syscall must additionally\nrequire the CAP_SEEK capability.\n\n# Impact:\n\nA sandboxed process with only read or write but no seek capability on a\nfile descriptor may be able to read data from or write data to an\narbitrary location within the file corresponding to that file\ndescriptor.\n",
     "id": "FreeBSD-2023-0297",
-    "modified": "2023-09-29T00:00:00Z",
-    "published": "2023-09-29T00:00:00Z",
+    "modified": "2023-10-04T00:00:00Z",
+    "published": "2023-10-04T00:00:00Z",
     "references": [
         {
-            "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2023/09/stable-channel-update-for-desktop_27.html"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5369"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5217"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5186"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5187"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-23:13.capsicum.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "chromium -- multiple vulnerabilities"
+    "summary": "FreeBSD -- copy_file_range insufficient capability rights check"
 }

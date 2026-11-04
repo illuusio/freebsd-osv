@@ -36,7 +36,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "2.5.*,1"
+                            "introduced": "2.5.*"
                         },
                         {
                             "fixed": "2.5.c2"

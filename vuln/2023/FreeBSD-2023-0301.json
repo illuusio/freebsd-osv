@@ -2,17 +2,169 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:kernel",
-                "name": "FreeBSD-kernel"
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-django32"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "13.2"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "13.2_4"
+                            "fixed": "3.2.22"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-django32"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.2.22"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-django32"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.2.22"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-django41"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-django41"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-django41"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-django42"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-django42"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-django42"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -21,31 +173,31 @@
         }
     ],
     "database_specific": {
-        "discovery": "2023-10-03T00:00:00Z",
+        "cite": [
+            "https://www.djangoproject.com/weblog/2023/oct/04/security-releases/"
+        ],
+        "discovery": "2023-10-01T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-5369"
-            ],
-            "freebsdsa": [
-                "SA-23:13.capsicum"
+                "CVE-2023-43665"
             ]
         },
-        "vid": "e261e71c-6250-11ee-8e38-002590c1f29c"
+        "vid": "4f254817-6318-11ee-b2ff-080027de9982"
     },
-    "details": "# Problem Description:\n\nThe syscall checked only for the CAP_READ and CAP_WRITE capabilities on\nthe input and output file descriptors, respectively. Using an offset is\nlogically equivalent to seeking, and the syscall must additionally\nrequire the CAP_SEEK capability.\n\n# Impact:\n\nA sandboxed process with only read or write but no seek capability on a\nfile descriptor may be able to read data from or write data to an\narbitrary location within the file corresponding to that file\ndescriptor.\n",
+    "details": "Django reports:\n\n> CVE-2023-43665: Denial-of-service possibility in\n> django.utils.text.Truncator.\n",
     "id": "FreeBSD-2023-0301",
-    "modified": "2023-10-04T00:00:00Z",
-    "published": "2023-10-04T00:00:00Z",
+    "modified": "2023-10-05T00:00:00Z",
+    "published": "2023-10-05T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5369"
+            "type": "REPORT",
+            "url": "https://www.djangoproject.com/weblog/2023/oct/04/security-releases/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-23:13.capsicum.asc"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-43665"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- copy_file_range insufficient capability rights check"
+    "summary": "Django -- multiple vulnerabilities"
 }

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "openssl"
+                "name": "zeek"
             },
             "ranges": [
                 {
@@ -12,45 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.0.12,1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "openssl31"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.1.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "openssl-quictls"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.0.12"
+                            "fixed": "6.0.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,30 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.openssl.org/news/secadv/20231024.txt"
+            "https://github.com/zeek/zeek/releases/tag/v6.0.2"
         ],
-        "discovery": "2023-10-24T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2023-5363"
-            ]
-        },
-        "vid": "4a4712ae-7299-11ee-85eb-84a93843eb75"
+        "discovery": "2023-10-27T00:00:00Z",
+        "vid": "386a14bb-1a21-41c6-a2cf-08d79213379b"
     },
-    "details": "The OpenSSL team reports:\n\n> Moderate severity: A bug has been identified in the processing of key\n> and initialisation vector (IV) lengths. This can lead to potential\n> truncation or overruns during the initialisation of some symmetric\n> ciphers.\n",
+    "details": "Tim Wojtulewicz of Corelight reports:\n\n> A specially-crafted SSL packet could cause Zeek to leak memory and\n> potentially crash.\n>\n> A specially-crafted series of FTP packets could cause Zeek to log\n> entries for requests that have already been completed, using resources\n> unnecessarily and potentially causing Zeek to lose other traffic.\n>\n> A specially-crafted series of SSL packets could cause Zeek to output a\n> very large number of unnecessary alerts for the same record.\n>\n> A specially-crafted series of SSL packets could cause Zeek to generate\n> very long ssl_history fields in the ssl.log, potentially using a large\n> amount of memory due to unbounded state growth\n>\n> A specially-crafted IEEE802.11 packet could cause Zeek to overflow\n> memory and potentially crash\n",
     "id": "FreeBSD-2023-0322",
-    "modified": "2023-10-24T00:00:00Z",
-    "published": "2023-10-24T00:00:00Z",
+    "modified": "2023-10-27T00:00:00Z",
+    "published": "2023-10-27T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.openssl.org/news/secadv/20231024.txt"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5363"
+            "url": "https://github.com/zeek/zeek/releases/tag/v6.0.2"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "OpenSSL -- potential loss of confidentiality"
+    "summary": "zeek -- potential DoS vulnerabilities"
 }

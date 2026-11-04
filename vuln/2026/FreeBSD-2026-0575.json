@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "weechat"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.10.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/weechat/weechat/releases/tag/v4.10.2"
+        ],
+        "discovery": "2026-10-31T00:00:00Z",
+        "vid": "91ea9062-d50a-11f1-8135-8447094a420f"
+    },
+    "details": "The Weechat project reports:\n\n> - core: integer overflow in dynamic strings when their size exceeds 4\n>   GiB (GHSA-h394-85x4-68c7)\n> - core: heap buffer overflow in charset conversion when the converted\n>   string is more than 4 times longer than the input and contains\n>   invalid chars (GHSA-q32h-5qvq-3936)\n> - irc: limit number of prefix modes in PREFIX of message 005 to\n>   prevent memory exhaustion\n> - irc: escape \\${ in values of variables \\$nick, \\$channel and\n>   \\$server in commands /allchan, /allpv and /allserv, to prevent\n>   evaluation of untrusted values\n> - irc: escape \\${ in server options addresses, nicks, password and\n>   autojoin set from an IRC URL (irc://\\...), to prevent evaluation of\n>   untrusted values\n> - irc: escape \\${ in channel names saved in server option autojoin, to\n>   prevent evaluation of channel names received from the server (for\n>   example on channel forward)\n> - irc: heap buffer overflow in nick prefixes when the server sends an\n>   empty PREFIX in message 005 and the connection is lost before\n>   message 001 (GHSA-xj8h-x2w9-m8m6)\n> - relay: limit size of HTTP headers received from a client to prevent\n>   memory exhaustion (GHSA-h394-85x4-68c7)\n> - relay: fix heap buffer overflow in path of hdata sent to clients\n>   with \\\"weechat\\\" protocol (GHSA-8wr2-x42m-7fxv)\n",
+    "id": "FreeBSD-2026-0575",
+    "modified": "2026-10-31T00:00:00Z",
+    "published": "2026-10-31T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/weechat/weechat/releases/tag/v4.10.2"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Weechat -- Multiple vulnerabilities"
+}

@@ -20,7 +20,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "7.4.*,1"
+                            "introduced": "7.4.*"
                         },
                         {
                             "fixed": "7.4.7"
@@ -31,7 +31,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "8.*,1"
+                            "introduced": "8.*"
                         },
                         {
                             "fixed": "8.0.1"
@@ -61,7 +61,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "7.4.*,1"
+                            "introduced": "7.4.*"
                         },
                         {
                             "fixed": "7.4.7"
@@ -72,7 +72,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "8.*,1"
+                            "introduced": "8.*"
                         },
                         {
                             "fixed": "8.0.1"
@@ -102,7 +102,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "7.4.*,1"
+                            "introduced": "7.4.*"
                         },
                         {
                             "fixed": "7.4.7"
@@ -113,7 +113,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "8.*,1"
+                            "introduced": "8.*"
                         },
                         {
                             "fixed": "8.0.1"
@@ -135,7 +135,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "8.0.1,1"
+                            "last_affected": "8.0.1,1"
                         }
                     ],
                     "type": "ECOSYSTEM"

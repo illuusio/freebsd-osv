@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.8.7,1,1"
+                            "introduced": "1.8.7,1"
                         },
                         {
                             "fixed": "1.8.7.371,1"
@@ -20,7 +20,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.9.3,1,1"
+                            "introduced": "1.9.3,1"
                         },
                         {
                             "fixed": "1.9.3.286,1"

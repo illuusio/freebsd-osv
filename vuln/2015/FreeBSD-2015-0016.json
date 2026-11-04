@@ -23,7 +23,7 @@
                             "introduced": "1.5"
                         },
                         {
-                            "fixed": "1.5.12"
+                            "last_affected": "1.5.12"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -75,7 +75,7 @@
                             "introduced": "1.5"
                         },
                         {
-                            "fixed": "1.5.12"
+                            "last_affected": "1.5.12"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -127,7 +127,7 @@
                             "introduced": "1.5"
                         },
                         {
-                            "fixed": "1.5.12"
+                            "last_affected": "1.5.12"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -179,7 +179,7 @@
                             "introduced": "1.5"
                         },
                         {
-                            "fixed": "1.5.12"
+                            "last_affected": "1.5.12"
                         }
                     ],
                     "type": "ECOSYSTEM"

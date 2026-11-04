@@ -120,6 +120,48 @@
             "https://www.oracle.com/security-alerts/cpujan2021.html#AppendixMSQL"
         ],
         "discovery": "2021-01-23T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2021-2046",
+                "CVE-2021-2020",
+                "CVE-2021-2024",
+                "CVE-2021-2011",
+                "CVE-2021-2006",
+                "CVE-2021-2048",
+                "CVE-2021-2028",
+                "CVE-2021-2122",
+                "CVE-2021-2058",
+                "CVE-2021-2001",
+                "CVE-2021-2016",
+                "CVE-2021-2021",
+                "CVE-2021-2030",
+                "CVE-2021-2031",
+                "CVE-2021-2036",
+                "CVE-2021-2055",
+                "CVE-2021-2060",
+                "CVE-2021-2070",
+                "CVE-2021-2076",
+                "CVE-2021-2065",
+                "CVE-2021-2014",
+                "CVE-2021-2002",
+                "CVE-2021-2012",
+                "CVE-2021-2009",
+                "CVE-2021-2072",
+                "CVE-2021-2081",
+                "CVE-2021-2022",
+                "CVE-2021-2038",
+                "CVE-2021-2061",
+                "CVE-2021-2056",
+                "CVE-2021-2087",
+                "CVE-2021-2088",
+                "CVE-2021-2032",
+                "CVE-2021-2010",
+                "CVE-2021-1998",
+                "CVE-2021-2007",
+                "CVE-2021-2019",
+                "CVE-2021-2042"
+            ]
+        },
         "vid": "31344707-5d87-11eb-929d-d4c9ef517024"
     },
     "details": "Oracle reports:\n\n> This Critical Patch Update contains 34 new security patches for Oracle\n> MySQL Server and 4 for MySQL Client.\n>\n> The highest CVSS v3.1 Base Score of vulnerabilities affecting Oracle\n> MySQL is 6.8.\n",
@@ -132,156 +174,156 @@
             "url": "https://www.oracle.com/security-alerts/cpujan2021.html#AppendixMSQL"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2046"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2046"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2020"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2020"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2024"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2024"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2011"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2011"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2006"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2006"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2048"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2048"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2028"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2028"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2122"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2122"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2058"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2058"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2001"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2001"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2016"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2016"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2021"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2021"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2030"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2030"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2031"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2031"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2036"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2036"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2055"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2055"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2060"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2060"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2070"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2070"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2076"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2076"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2065"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2065"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2014"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2014"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2002"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2002"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2012"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2012"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2009"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2009"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2072"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2072"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2081"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2081"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2022"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2022"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2038"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2038"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2061"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2061"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2056"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2056"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2087"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2087"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2088"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2088"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2032"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2032"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2010"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2010"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-1998"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-1998"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2007"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2007"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2019"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2019"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2021-2042"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2042"
         }
     ],
     "schema_version": "1.7.0",

@@ -12,7 +12,7 @@
                             "introduced": "0.79"
                         },
                         {
-                            "fixed": "1.0.1"
+                            "last_affected": "1.0.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,7 +31,7 @@
                             "introduced": "0.79"
                         },
                         {
-                            "fixed": "1.0.1"
+                            "last_affected": "1.0.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,7 +50,7 @@
                             "introduced": "0.79"
                         },
                         {
-                            "fixed": "1.0.1"
+                            "last_affected": "1.0.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -66,7 +66,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "20030000,1"
+                            "introduced": "20030000"
                         }
                     ],
                     "type": "ECOSYSTEM"

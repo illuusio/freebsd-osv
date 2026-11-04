@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "apache24"
+                "name": "openssl"
             },
             "ranges": [
                 {
@@ -12,7 +12,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.4.58"
+                            "fixed": "3.0.12,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl31"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.1.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl-quictls"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.0.12"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,40 +60,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://dlcdn.apache.org/httpd/CHANGES_2.4.58"
+            "https://www.openssl.org/news/secadv/20231024.txt"
         ],
-        "discovery": "2023-10-19T00:00:00Z",
+        "discovery": "2023-10-24T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-45802",
-                "CVE-2023-43622",
-                "CVE-2023-31122"
+                "CVE-2023-5363"
             ]
         },
-        "vid": "f923205f-6e66-11ee-85eb-84a93843eb75"
+        "vid": "4a4712ae-7299-11ee-85eb-84a93843eb75"
     },
-    "details": "The Apache httpd project reports:\n\n> - CVE-2023-45802: Apache HTTP Server: HTTP/2 stream memory not\n>   reclaimed right away on RST\n> - CVE-2023-43622: Apache HTTP Server: DoS in HTTP/2 with initial\n>   windows size 0\n> - CVE-2023-31122: mod_macro buffer over-read\n",
+    "details": "The OpenSSL team reports:\n\n> Moderate severity: A bug has been identified in the processing of key\n> and initialisation vector (IV) lengths. This can lead to potential\n> truncation or overruns during the initialisation of some symmetric\n> ciphers.\n",
     "id": "FreeBSD-2023-0318",
-    "modified": "2023-10-19T00:00:00Z",
-    "published": "2023-10-19T00:00:00Z",
+    "modified": "2023-10-24T00:00:00Z",
+    "published": "2023-10-24T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://dlcdn.apache.org/httpd/CHANGES_2.4.58"
+            "url": "https://www.openssl.org/news/secadv/20231024.txt"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-45802"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-43622"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-31122"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5363"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Apache httpd -- Multiple vulnerabilities"
+    "summary": "OpenSSL -- potential loss of confidentiality"
 }

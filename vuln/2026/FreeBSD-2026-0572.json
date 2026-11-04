@@ -1,0 +1,258 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpMyAdmin"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpMyAdmin-php82"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpMyAdmin-php83"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpMyAdmin-php84"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpMyAdmin-php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpMyAdmin-php86"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpMyAdmin5"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpMyAdmin5-php82"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpMyAdmin5-php83"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpMyAdmin5-php84"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpMyAdmin5-php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpMyAdmin5-php86"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.vulncheck.com/advisories/phpmyadmin-through-5.2.3-webauthn-two-factor-authentication-bypass-via-customserver"
+        ],
+        "discovery": "2026-10-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-119426",
+                "CVE-2026-119427",
+                "CVE-2026-119428",
+                "CVE-2026-119429",
+                "CVE-2026-119561",
+                "CVE-2026-119562",
+                "CVE-2026-119563"
+            ]
+        },
+        "vid": "e6b90d23-d49d-11f1-bae2-3497f65b111b"
+    },
+    "details": "VulnCheck reports:\n\n> Seven vulnerabilities in phpMyAdmin up to and including 5.2.3 were\n> published on 2026-10-30. The most severe of them, an authentication\n> bypass, is in the WebAuthn second factor: assertion signatures are\n> never verified against the stored public keys, so an attacker who\n> already has the MySQL credentials of a victim can skip the second\n> factor.\n>\n> The others are a server-side request forgery in setup/validate.php,\n> which needs no authentication at all and can be used to probe internal\n> hosts and ports; the removal of two- factor authentication without\n> re-authentication; SQL injection in Central Columns and in the\n> Designer, both running with controluser privileges; stored cross-site\n> scripting in the Designer history; and a missing cross-site request\n> forgery token.\n>\n> There is no fixed release. The phpMyAdmin project has published\n> neither a security announcement nor a new version, and only the\n> request forgery has a fix in the development branch so far.\n",
+    "id": "FreeBSD-2026-0572",
+    "modified": "2026-10-30T00:00:00Z",
+    "published": "2026-10-30T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.vulncheck.com/advisories/phpmyadmin-through-5.2.3-webauthn-two-factor-authentication-bypass-via-customserver"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119426"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119427"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119428"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119429"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119561"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119562"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119563"
+        },
+        {
+            "type": "WEB",
+            "url": "https://abraxaslabs.tech/research/phpmyadmin-webauthn"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "phpMyAdmin -- Multiple vulnerabilities, no fix available"
+}

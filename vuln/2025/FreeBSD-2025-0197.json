@@ -22,7 +22,7 @@
     ],
     "database_specific": {
         "cite": [
-            "null"
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-52560"
         ],
         "discovery": "2025-06-26T00:00:00Z",
         "references": {
@@ -39,15 +39,11 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "null"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-52560"
         },
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2025-52560"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-52560"
         }
     ],
     "schema_version": "1.7.0",

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "typo3-11-php80"
+                "name": "mysql-connector-c++"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "11.5.30"
+                            "fixed": "8.0.33"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "typo3-11-php81"
+                "name": "mysql-client57"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "11.5.30"
+                            "fixed": "5.7.43"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "typo3-12-php80"
+                "name": "mysql-server57"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "12.4.4"
+                            "fixed": "5.7.43"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "typo3-12-php81"
+                "name": "mysql-client80"
             },
             "ranges": [
                 {
@@ -69,7 +69,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "12.4.4"
+                            "fixed": "8.0.34"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mysql-server80"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.0.34"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,44 +98,100 @@
     ],
     "database_specific": {
         "cite": [
-            "https://typo3.org/article/typo3-1211-11520-and-10433-security-releases-published"
+            "https://www.oracle.com/security-alerts/cpujul2023.html#AppendixMSQL"
         ],
-        "discovery": "2023-07-25T00:00:00Z",
+        "discovery": "2023-07-18T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-38500",
-                "CVE-2023-38499",
-                "CVE-2023-37905"
+                "CVE-2022-4899",
+                "CVE-2023-0361",
+                "CVE-2023-22053",
+                "CVE-2023-22008",
+                "CVE-2023-22046",
+                "CVE-2023-22054",
+                "CVE-2023-22056",
+                "CVE-2023-21950",
+                "CVE-2023-22007",
+                "CVE-2023-22057",
+                "CVE-2023-22033",
+                "CVE-2023-22058",
+                "CVE-2023-22005",
+                "CVE-2023-22048",
+                "CVE-2023-22038"
             ]
         },
-        "vid": "b1ac663f-3aa9-11ee-b887-b42e991fc52e"
+        "vid": "759a5599-3ce8-11ee-a0d1-84a93843eb75"
     },
-    "details": "TYPO3 reports:\n\n> TYPO3-CORE-SA-2023-002: By-passing Cross-Site Scripting Protection in\n> HTML Sanitizer\n>\n> TYPO3-CORE-SA-2023-003: Information Disclosure due to Out-of-scope\n> Site Resolution\n>\n> TYPO3-CORE-SA-2023-004: Cross-Site Scripting in CKEditor4 WordCount\n> Plugin\n",
+    "details": "Oracle reports:\n\n> This Critical Patch Update contains 24 new security patches for Oracle\n> MySQL. 11 of these vulnerabilities may be remotely exploitable without\n> authentication, i.e., may be exploited over a network without\n> requiring user credentials.\n",
     "id": "FreeBSD-2023-0225",
-    "modified": "2023-08-14T00:00:00Z",
-    "published": "2023-08-14T00:00:00Z",
+    "modified": "2023-08-17T00:00:00Z",
+    "published": "2023-08-17T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://typo3.org/article/typo3-1211-11520-and-10433-security-releases-published"
+            "url": "https://www.oracle.com/security-alerts/cpujul2023.html#AppendixMSQL"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-38500"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-4899"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-38499"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0361"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-37905"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22053"
         },
         {
-            "type": "WEB",
-            "url": "https://typo3.org/article/typo3-1244-and-11530-security-releases-published"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22008"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22046"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22054"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22056"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21950"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22007"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22057"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22033"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22058"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22005"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22048"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-22038"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "typo3 -- multiple vulnerabilities"
+    "summary": "MySQL -- Multiple vulnerabilities"
 }

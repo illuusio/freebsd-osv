@@ -3,37 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "redis"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "7.0.0"
-                        },
-                        {
-                            "fixed": "7.0.13"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "7.2.0"
-                        },
-                        {
-                            "fixed": "7.2.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "redis-devel"
+                "name": "python38"
             },
             "ranges": [
                 {
@@ -42,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "7.2.0.20230831"
+                            "fixed": "3.8.18"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -52,16 +22,54 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "redis70"
+                "name": "python39"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "7.0.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "7.0.13"
+                            "fixed": "3.9.18"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python310"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.10.13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "python311"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.11.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -71,30 +79,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/redis/redis/security/advisories/GHSA-q4jr-5p56-4xwc"
+            "https://pythoninsider.blogspot.com/2023/08/python-3115-31013-3918-and-3818-is-now.html"
         ],
-        "discovery": "2023-09-06T00:00:00Z",
+        "discovery": "2023-08-22T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-41053"
+                "CVE-2023-40217"
             ]
         },
-        "vid": "6c72b13f-4d1d-11ee-a7f1-080027f5fec9"
+        "vid": "a57472ba-4d84-11ee-bf05-000c29de725b"
     },
-    "details": "yangbodong22011 reports:\n\n> Redis does not correctly identify keys accessed by SORT_RO and, as a\n> result, may grant users executing this command access to keys that are\n> not explicitly authorized by the ACL configuration.\n",
+    "details": "Python reports:\n\n> gh-108310: Fixed an issue where instances of ssl.SSLSocket were\n> vulnerable to a bypass of the TLS handshake and included protections\n> (like certificate verification) and treating sent unencrypted data as\n> if it were post-handshake TLS encrypted data.\n",
     "id": "FreeBSD-2023-0273",
     "modified": "2023-09-07T00:00:00Z",
     "published": "2023-09-07T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/redis/redis/security/advisories/GHSA-q4jr-5p56-4xwc"
+            "url": "https://pythoninsider.blogspot.com/2023/08/python-3115-31013-3918-and-3818-is-now.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-41053"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-40217"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "redis -- Possible bypassing ACL configuration"
+    "summary": "Python -- multiple vulnerabilities"
 }

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "couchdb"
+                "name": "nebula"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.3.2,2"
+                            "fixed": "1.8.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +22,42 @@
     ],
     "database_specific": {
         "cite": [
-            "https://docs.couchdb.org/en/stable/cve/2023-26268.html"
+            "https://github.com/slackhq/nebula/releases/tag/v1.8.1"
         ],
-        "discovery": "2023-05-02T00:00:00Z",
+        "discovery": "2023-10-16T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-26268"
+                "CVE-2023-48795"
             ]
         },
-        "vid": "fd47fcfe-ec69-4000-b9ce-e5e62102c1c7"
+        "vid": "0f7598cc-9fe2-11ee-b47f-901b0e9408dc"
     },
-    "details": "Nick Vatamane reports:\n\n> Design documents with matching document IDs, from databases on the\n> same cluster, may share a mutable Javascript environment when using\n> various design document functions.\n",
+    "details": "Upstream reports:\n\n> Security fix:\n>\n> - Update golang.org/x/crypto, which includes a fix for CVE-2023-48795.\n",
     "id": "FreeBSD-2023-0362",
-    "modified": "2023-12-17T00:00:00Z",
-    "published": "2023-12-17T00:00:00Z",
+    "modified": "2023-12-19T00:00:00Z",
+    "published": "2023-12-19T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://docs.couchdb.org/en/stable/cve/2023-26268.html"
+            "url": "https://github.com/slackhq/nebula/releases/tag/v1.8.1"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-26268"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-48795"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.openssh.com/txt/release-9.6"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/golang/crypto/commit/9d2ee975ef9fe627bf0a6f01c1f69e8ef1d4f05d"
+        },
+        {
+            "type": "WEB",
+            "url": "https://terrapin-attack.com/"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "couchdb -- information sharing via couchjs processes"
+    "summary": "nebula -- security fix for terrapin vulnerability"
 }

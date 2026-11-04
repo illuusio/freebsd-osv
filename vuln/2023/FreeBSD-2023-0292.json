@@ -3,16 +3,73 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "routinator"
+                "name": "electron22"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0.9.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "0.12.2"
+                            "fixed": "22.3.25"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "electron24"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "24.8.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "electron25"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "25.8.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libvpx"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.13.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +79,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://nlnetlabs.nl/downloads/routinator/CVE-2023-39916.txt"
+            "https://github.com/electron/electron/releases/tag/v22.3.25"
         ],
-        "discovery": "2023-09-13T00:00:00Z",
+        "discovery": "2023-09-28T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-39916"
+                "CVE-2023-5217"
             ]
         },
-        "vid": "ea9d1fd2-5d24-11ee-8507-b42e991fc52e"
+        "vid": "2bcd6ba4-d8e2-42e5-9033-b50b722821fb"
     },
-    "details": "sep@nlnetlabs.nl reports:\n\n> NLnet Labs Routinator 0.9.0 up to and including 0.12.1 contains a\n> possible path traversal vulnerability in the optional, off-by-default\n> keep-rrdp-responses feature that allows users to store the content of\n> responses received for RRDP requests. The location of these stored\n> responses is constructed from the URL of the request. Due to\n> insufficient sanitation of the URL, it is possible for an attacker to\n> craft a URL that results in the response being stored outside of the\n> directory specified for it.\n",
+    "details": "Electron developers report:\n\n> This update fixes the following vulnerability:\n>\n> - Security: backported fix for CVE-2023-5217.\n",
     "id": "FreeBSD-2023-0292",
-    "modified": "2023-09-27T00:00:00Z",
-    "published": "2023-09-27T00:00:00Z",
+    "modified": "2023-09-30T00:00:00Z",
+    "published": "2023-09-29T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://nlnetlabs.nl/downloads/routinator/CVE-2023-39916.txt"
+            "url": "https://github.com/electron/electron/releases/tag/v22.3.25"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-39916"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5217"
         },
         {
             "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39916"
+            "url": "https://github.com/advisories/GHSA-qqvq-6xgj-jw8g"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "routinator -- Possible path traversal when storing RRDP responses"
+    "summary": "electron{22,24,25} -- Heap buffer overflow in vp8 encoding in libvpx"
 }

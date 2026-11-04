@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "24.*,1"
+                            "introduced": "24.*"
                         },
                         {
                             "fixed": "24.2"
@@ -20,10 +20,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "23.*,1"
+                            "introduced": "23.*"
                         },
                         {
-                            "fixed": "23.4_2"
+                            "last_affected": "23.4_2"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "libcue"
+                "name": "moonlight-embedded"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.3.0"
+                            "fixed": "2.6.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +22,52 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/lipnitsk/libcue/releases/tag/v2.3.0"
+            "https://github.com/moonlight-stream/moonlight-embedded/releases/tag/v2.6.1"
         ],
-        "discovery": "2023-10-09T00:00:00Z",
+        "discovery": "2022-01-11T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-43641"
+                "CVE-2022-42799",
+                "CVE-2022-42800",
+                "CVE-2022-42801"
             ]
         },
-        "vid": "ae0ee356-6ae1-11ee-bfb6-8c164567ca3c"
+        "vid": "f8c2f741-6be1-11ee-b33a-a04a5edf46d9"
     },
-    "details": "The libcue team reports:\n\n> There is a vulnerability to out-of-bounds array access.\n",
+    "details": "The moonlight-embedded project reports:\n\n> Moonlight Embedded v2.6.1 fixed CVE-2023-42799, CVE-2023-42800, and\n> CVE-2023-42801.\n",
     "id": "FreeBSD-2023-0313",
-    "modified": "2023-10-14T00:00:00Z",
-    "published": "2023-10-14T00:00:00Z",
+    "modified": "2023-10-16T00:00:00Z",
+    "published": "2023-10-16T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/lipnitsk/libcue/releases/tag/v2.3.0"
+            "url": "https://github.com/moonlight-stream/moonlight-embedded/releases/tag/v2.6.1"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-43641"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-42799"
         },
         {
             "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-43641"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-42799"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-42800"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-42800"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-42801"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2022-42801"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "libcue -- out-of-bounds array access"
+    "summary": "moonlight-embedded -- multiple vulnerabilities"
 }

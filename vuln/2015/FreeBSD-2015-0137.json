@@ -22,7 +22,7 @@
     ],
     "database_specific": {
         "cite": [
-            "INSERT URL HERE"
+            "http://lists.preshweb.co.uk/pipermail/dancer-users/2015-June/004621.html"
         ],
         "discovery": "2015-06-12T00:00:00Z",
         "vid": "968d1e74-1740-11e5-a643-40a8f0757fb4"
@@ -34,10 +34,6 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "INSERT URL HERE"
-        },
-        {
-            "type": "WEB",
             "url": "http://lists.preshweb.co.uk/pipermail/dancer-users/2015-June/004621.html"
         }
     ],

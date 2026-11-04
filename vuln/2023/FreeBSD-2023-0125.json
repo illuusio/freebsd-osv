@@ -3,16 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-impacket"
+                "name": "py37-pymatgen"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0.9.10"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "0.9.23"
+                            "last_affected": "2022.9.21"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,16 +22,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-impacket"
+                "name": "py38-pymatgen"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0.9.10"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "0.9.23"
+                            "last_affected": "2022.9.21"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,16 +41,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-impacket"
+                "name": "py39-pymatgen"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0.9.10"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "0.9.23"
+                            "last_affected": "2022.9.21"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,16 +60,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-impacket"
+                "name": "py310-pymatgen"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0.9.10"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "0.9.23"
+                            "last_affected": "2022.9.21"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,16 +79,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-impacket"
+                "name": "py311-pymatgen"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0.9.10"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "0.9.23"
+                            "last_affected": "2022.9.21"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,34 +98,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2021-17"
+            "https://osv.dev/vulnerability/GHSA-5jqp-885w-xj32"
         ],
-        "discovery": "2021-05-05T00:00:00Z",
+        "discovery": "2022-11-10T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2021-31800"
+                "CVE-2022-42964"
             ]
         },
-        "vid": "b692a49c-9ae7-4958-af21-cbf8f5b819ea"
+        "vid": "951b513a-9f42-436d-888d-2162615d0fe4"
     },
-    "details": "asolino reports:\n\n> Multiple path traversal vulnerabilities exist in smbserver.py in\n> Impacket through 0.9.22. An attacker that connects to a running\n> smbserver instance can list and write to arbitrary files via ../\n> directory traversal. This could potentially be abused to achieve\n> arbitrary code execution by replacing /etc/shadow or an SSH authorized\n> key.\n",
+    "details": "> An exponential ReDoS (Regular Expression Denial of Service) can be\n> triggered in the pymatgen PyPI package, when an attacker is able to\n> supply arbitrary input to the GaussianInput.from_string method.\n",
     "id": "FreeBSD-2023-0125",
     "modified": "2023-04-09T00:00:00Z",
     "published": "2023-04-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2021-17"
+            "url": "https://osv.dev/vulnerability/GHSA-5jqp-885w-xj32"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-31800"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-mj63-64x7-57xf"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-42964"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-impacket -- multiple path traversal vulnerabilities"
+    "summary": "py-pymatgen -- regular expression denial of service"
 }

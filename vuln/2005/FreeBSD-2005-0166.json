@@ -46,10 +46,6 @@
         {
             "type": "WEB",
             "url": "http://rpmfind.net/linux/RPM/suse/updates/8.2/i386/rpm/i586/yamt-0.5-1277.i586.html"
-        },
-        {
-            "type": "WEB",
-            "url": "ftp://ftp.suse.com/pub/suse/i386/update/8.2/rpm/src/yamt-0.5-1277.src.rpm"
         }
     ],
     "schema_version": "1.7.0",

@@ -1,0 +1,109 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "p5-HTTP-Body"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.24"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://metacpan.org/dist/HTTP-Body/changes"
+        ],
+        "discovery": "2026-10-26T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-116131",
+                "CVE-2026-116132",
+                "CVE-2026-116133",
+                "CVE-2026-116134",
+                "CVE-2026-116135",
+                "CVE-2026-116285",
+                "CVE-2026-116531"
+            ]
+        },
+        "vid": "005c73c2-d2d1-11f1-97dc-40b034429ecf"
+    },
+    "details": "HTTP-Body oroject reports:\n\n> Multiple security issues:\n>\n> - SECURITY, CVE-2026-116131: urlencoded bodies are limited to\n>   \\$HTTP::Body::UrlEncoded::max_params fields and multipart bodies to\n>   \\$HTTP::Body::MultiPart::max_parts parts (1000 each); reported and\n>   patched by CPANSec\n> - SECURITY, CVE-2026-116132: the temporary file of an upload that is\n>   still incomplete at DESTROY-time is now always deleted; reported and\n>   patched by CPANSec (also fixes RT#84004)\n> - SECURITY, CVE-2026-116133: a multipart body without a boundary or\n>   with a malformed delimiter line no longer takes quadratic time; a\n>   malformed delimiter line now croaks, and padding or an epilogue\n>   after the close delimiter is accepted; reported and patched by\n>   CPANSec\n> - SECURITY, CVE-2026-116134: a multipart part\\'s header block is\n>   limited to \\$HTTP::Body::MultiPart::max_header_size bytes (32768)\n>   and \\$HTTP::Body::MultiPart::max_header_lines lines (100); reported\n>   and patched by CPANSec\n> - SECURITY, CVE-2026-116135: mixed-case percent escapes (e.g. %aB) in\n>   urlencoded bodies are decoded instead of being dropped; reported and\n>   patched by CPANSec\n> - SECURITY, CVE-2026-116285: the chunk size line of a chunked body is\n>   matched in linear instead of quadratic time\n> - SECURITY, CVE-2026-116531: a chunked body is now framed\n>   independently of where the reads feeding add() fall; a read that\n>   split a chunk could leave the parser never reaching \\'done\\',\n>   hanging a server that reads until done\n",
+    "id": "FreeBSD-2026-0558",
+    "modified": "2026-10-28T00:00:00Z",
+    "published": "2026-10-28T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://metacpan.org/dist/HTTP-Body/changes"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116131"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116132"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116133"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116134"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116135"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116285"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116531"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116131"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116132"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116133"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116134"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116135"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116285"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-116531"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "p5-HTTP-Body -- multiple vulnerabilities"
+}

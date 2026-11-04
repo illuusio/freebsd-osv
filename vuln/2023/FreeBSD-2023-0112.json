@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-sentry-sdk"
+                "name": "py37-pycares"
             },
             "ranges": [
                 {
@@ -12,7 +12,83 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.14.0"
+                            "fixed": "4.2.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-pycares"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-pycares"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-pycares"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-pycares"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +98,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/GHSA-29pr-6jr8-q5jm"
+            "https://osv.dev/vulnerability/GHSA-c58j-88f5-h53f"
         ],
-        "discovery": "2023-03-21T00:00:00Z",
+        "discovery": "2021-06-11T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-28117"
+                "CVE-2021-3672"
             ]
         },
-        "vid": "15dae5cc-9ee6-4577-a93e-2ab57780e707"
+        "vid": "43e9ffd4-d6e0-11ed-956f-7054d21a9e2a"
     },
-    "details": "Tom Wolters reports:\n\n> When using the Django integration of the Sentry SDK in a specific\n> configuration it is possible to leak sensitive cookies values,\n> including the session cookie to Sentry.\n>\n> These sensitive cookies could then be used by someone with access to\n> your Sentry issues to impersonate or escalate their privileges within\n> your application.\n",
+    "details": "Philipp Jeitner and Haya Shulman report:\n\n> A flaw was found in c-ares library, where a missing input validation\n> check of host names returned by DNS (Domain Name Servers) can lead to\n> output of wrong hostnames which might potentially lead to Domain\n> Hijacking.\n>\n> The highest threat from this vulnerability is to confidentiality and\n> integrity as well as system availability.\n",
     "id": "FreeBSD-2023-0112",
-    "modified": "2023-04-09T00:00:00Z",
+    "modified": "2026-10-31T00:00:00Z",
     "published": "2023-04-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/GHSA-29pr-6jr8-q5jm"
+            "url": "https://osv.dev/vulnerability/GHSA-c58j-88f5-h53f"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28117"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-3672"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py39-sentry-sdk -- sensitive cookies leak"
+    "summary": "py-pycares -- domain hijacking vulnerability"
 }

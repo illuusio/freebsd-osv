@@ -1,0 +1,80 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpmyfaq-php83"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpmyfaq-php84"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpmyfaq-php85"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.phpmyfaq.de/security/advisory-2026-10-21/"
+        ],
+        "discovery": "2026-10-21T00:00:00Z",
+        "vid": "5cd347f3-d573-11f1-a2bb-50ebf6bdf8e9"
+    },
+    "details": "phpMyFAQ team reports:\n\n> The WebAuthn prepare-login endpoint returns stable credential IDs for\n> existing accounts with registered passkeys and rotating credential IDs\n> for unknown accounts, so an unauthenticated attacker can enumerate\n> user accounts and passkeys.\n>\n> Insufficient authorization checks allow a delegated group\n> administrator to delete groups with higher privileges than their own.\n",
+    "id": "FreeBSD-2026-0585",
+    "modified": "2026-10-31T00:00:00Z",
+    "published": "2026-10-31T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.phpmyfaq.de/security/advisory-2026-10-21/"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "phpmyfaq -- multiple vulnerabilities"
+}

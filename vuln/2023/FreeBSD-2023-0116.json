@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-pycares"
+                "name": "traefik"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.2.0"
+                            "fixed": "2.9.9_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +22,43 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/GHSA-c58j-88f5-h53f"
+            "https://pkg.go.dev/vuln/GO-2023-1704"
         ],
-        "discovery": "2021-06-11T00:00:00Z",
+        "discovery": "2023-03-10T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2021-3672"
+                "CVE-2023-24534",
+                "CVE-2023-29013"
             ]
         },
-        "vid": "43e9ffd4-d6e0-11ed-956f-7054d21a9e2a"
+        "vid": "02e51cb3-d7e4-11ed-9f7a-5404a68ad561"
     },
-    "details": "Philipp Jeitner and Haya Shulman report:\n\n> A flaw was found in c-ares library, where a missing input validation\n> check of host names returned by DNS (Domain Name Servers) can lead to\n> output of wrong hostnames which might potentially lead to Domain\n> Hijacking.\n>\n> The highest threat from this vulnerability is to confidentiality and\n> integrity as well as system availability.\n",
+    "details": "The Go project reports:\n\n> HTTP and MIME header parsing can allocate large amounts of memory,\n> even when parsing small inputs, potentially leading to a denial of\n> service. Certain unusual patterns of input data can cause the common\n> function used to parse HTTP and MIME headers to allocate substantially\n> more memory than required to hold the parsed headers. An attacker can\n> exploit this behavior to cause an HTTP server to allocate large\n> amounts of memory from a small request, potentially leading to memory\n> exhaustion and a denial of service. With fix, header parsing now\n> correctly allocates only the memory required to hold parsed headers.\n",
     "id": "FreeBSD-2023-0116",
-    "modified": "2023-04-09T00:00:00Z",
-    "published": "2023-04-09T00:00:00Z",
+    "modified": "2023-04-07T00:00:00Z",
+    "published": "2023-04-07T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/GHSA-c58j-88f5-h53f"
+            "url": "https://pkg.go.dev/vuln/GO-2023-1704"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-3672"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-24534"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2023-24534"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-29013"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.cve.org/CVERecord?id=CVE-2023-29013"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py39-pycares -- domain hijacking vulnerability"
+    "summary": "traefik -- Use of vulnerable Go modules net/http, net/textproto"
 }

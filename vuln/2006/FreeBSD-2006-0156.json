@@ -20,7 +20,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "2.*,1,1"
+                            "introduced": "2.*,1"
                         },
                         {
                             "fixed": "2.0_1,1"
@@ -191,7 +191,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "0,1"
+                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -207,7 +207,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "0,1"
+                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -223,7 +223,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "0,1"
+                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -96,7 +96,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "0,1"
+                            "introduced": "0"
                         }
                     ],
                     "type": "ECOSYSTEM"

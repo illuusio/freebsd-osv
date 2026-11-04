@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "uriparser"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.0.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/uriparser/uriparser/pull/313"
+        ],
+        "discovery": "2026-05-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-48841"
+            ]
+        },
+        "vid": "d6aba3d5-d549-11f1-95a4-3c7c3fba4204"
+    },
+    "details": "The URIparser project reports:\n\n> - CVE-2026-48841: Protect \\'ComposeQueryEngine\\' from integer\n>   overflow.\n",
+    "id": "FreeBSD-2026-0584",
+    "modified": "2026-10-31T00:00:00Z",
+    "published": "2026-10-31T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/uriparser/uriparser/pull/313"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-48841"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/uriparser/uriparser/blob/uriparser-1.0.3/ChangeLog"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "uriparser -- Integer overflow vulnerability"
+}

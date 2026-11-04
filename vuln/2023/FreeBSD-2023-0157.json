@@ -3,16 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitlab-ce"
+                "name": "postgresql-server"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "15.11.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "15.11.2"
+                            "fixed": "15.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -20,10 +20,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "15.10.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "15.10.6"
+                            "fixed": "14.8"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,10 +31,32 @@
                 {
                     "events": [
                         {
-                            "introduced": "9.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "15.9.7"
+                            "fixed": "13.11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "12.15"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "11.20"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -44,30 +66,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://about.gitlab.com/releases/2023/05/05/critical-security-release-gitlab-15-11-2-released/"
+            "https://www.postgresql.org/support/security/CVE-2023-2454/"
         ],
-        "discovery": "2023-05-05T00:00:00Z",
+        "discovery": "2023-05-11T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-2478"
+                "CVE-2023-2454"
             ]
         },
-        "vid": "89fdbd85-ebd2-11ed-9c88-001b217b3468"
+        "vid": "fbb5a260-f00f-11ed-bbae-6cc21735f730"
     },
-    "details": "Gitlab reports:\n\n> Malicious Runner Attachment via GraphQL\n",
+    "details": "PostgreSQL Project reports\n\n> This enabled an attacker having database-level CREATE privilege to\n> execute arbitrary code as the bootstrap superuser. Database owners\n> have that right by default, and explicit grants may extend it to other\n> users.\n",
     "id": "FreeBSD-2023-0157",
-    "modified": "2023-05-06T00:00:00Z",
-    "published": "2023-05-06T00:00:00Z",
+    "modified": "2023-05-11T00:00:00Z",
+    "published": "2023-05-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://about.gitlab.com/releases/2023/05/05/critical-security-release-gitlab-15-11-2-released/"
+            "url": "https://www.postgresql.org/support/security/CVE-2023-2454/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2478"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2454"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Gitlab -- Multiple Vulnerabilities"
+    "summary": "postgresql-server -- CREATE SCHEMA ... schema elements defeats protective search_path changes"
 }

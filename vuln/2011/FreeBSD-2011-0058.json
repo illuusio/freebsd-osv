@@ -23,7 +23,7 @@
                             "introduced": "1.8"
                         },
                         {
-                            "fixed": "1.8.4"
+                            "last_affected": "1.8.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -34,7 +34,7 @@
                             "introduced": "1.9"
                         },
                         {
-                            "fixed": "1.9"
+                            "last_affected": "1.9"
                         }
                     ],
                     "type": "ECOSYSTEM"

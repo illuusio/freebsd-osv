@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "zookeeper"
+                "name": "chromium"
             },
             "ranges": [
                 {
@@ -12,29 +12,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.7.2"
+                            "fixed": "120.0.6099.109"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "3.8.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "3.8.3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "3.9.0"
-                        },
-                        {
-                            "fixed": "3.9.1"
+                            "fixed": "120.0.6099.109"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -44,34 +41,55 @@
     ],
     "database_specific": {
         "cite": [
-            "http://www.openwall.com/lists/oss-security/2023/10/11/4"
+            "https://chromereleases.googleblog.com/2023/12/stable-channel-update-for-desktop_12.html"
         ],
-        "discovery": "2023-10-11T00:00:00Z",
+        "discovery": "2023-12-12T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-44981"
+                "CVE-2023-6702",
+                "CVE-2023-6703",
+                "CVE-2023-6704",
+                "CVE-2023-6705",
+                "CVE-2023-6706",
+                "CVE-2023-6707"
             ]
         },
-        "vid": "2bc376c0-977e-11ee-b4bc-b42e991fc52e"
+        "vid": "502c9f72-99b3-11ee-86bb-a8a1599412c6"
     },
-    "details": "security@apache.org reports:\n\n> Authorization Bypass Through User-Controlled Key vulnerability in\n> Apache ZooKeeper. If SASL Quorum Peer authentication is enabled in\n> ZooKeeper (quorum.auth.enableSasl=true), the authorization is done by\n> verifying that the instance part in SASL authentication ID is listed\n> in zoo.cfg server list. The instance part in SASL auth ID is optional\n> and if it\\'s missing, like \\'eve@EXAMPLE.COM\\', the authorization\n> check will be skipped.As a result an arbitrary endpoint could join the\n> cluster and begin propagating counterfeit changes to the leader,\n> essentially giving it complete read-write access to the data\n> tree.Quorum Peer authentication is not enabled by default. Users are\n> recommended to upgrade to version 3.9.1, 3.8.3, 3.7.2, which fixes the\n> issue. Alternately ensure the ensemble election/quorum communication\n> is protected by a firewall as this will mitigate the issue. See the\n> documentation for more details on correct cluster administration.\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 9 security fixes:\n>\n> - \\[1501326\\] High CVE-2023-6702: Type Confusion in V8. Reported by\n>   Zhiyi Zhang and Zhunki from Codesafe Team of Legendsec at Qi\\'anxin\n>   Group on 2023-11-10\n> - \\[1502102\\] High CVE-2023-6703: Use after free in Blink. Reported by\n>   Cassidy Kim(@cassidy6564) on 2023-11-14\n> - \\[1504792\\] High CVE-2023-6704: Use after free in libavif. Reported\n>   by Fudan University on 2023-11-23\n> - \\[1505708\\] High CVE-2023-6705: Use after free in WebRTC. Reported\n>   by Cassidy Kim(@cassidy6564) on 2023-11-28\n> - \\[1500921\\] High CVE-2023-6706: Use after free in FedCM. Reported by\n>   anonymous on 2023-11-09\n> - \\[1504036\\] Medium CVE-2023-6707: Use after free in CSS. Reported by\n>   \\@ginggilBesel on 2023-11-21\n",
     "id": "FreeBSD-2023-0356",
-    "modified": "2023-12-10T00:00:00Z",
-    "published": "2023-12-10T00:00:00Z",
+    "modified": "2023-12-13T00:00:00Z",
+    "published": "2023-12-13T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "http://www.openwall.com/lists/oss-security/2023/10/11/4"
+            "url": "https://chromereleases.googleblog.com/2023/12/stable-channel-update-for-desktop_12.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-44981"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6702"
         },
         {
             "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-44981"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6703"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6704"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6705"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6706"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6707"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "apache -- Apache ZooKeeper: Authorization bypass in SASL Quorum Peer Authentication"
+    "summary": "chromium -- multiple security fixes"
 }

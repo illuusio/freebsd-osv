@@ -1,0 +1,143 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mysql-connector-c++"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.10.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mysql-connector-j"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.10.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mysql-connector-odbc"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.10.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py-mysql-connector-python"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.10.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        ],
+        "discovery": "2026-10-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-101625",
+                "CVE-2026-101626",
+                "CVE-2026-101677",
+                "CVE-2026-101678",
+                "CVE-2026-101768",
+                "CVE-2026-101804",
+                "CVE-2026-101806",
+                "CVE-2026-83404"
+            ]
+        },
+        "vid": "24aad1ab-d452-11f1-bae2-3497f65b111b"
+    },
+    "details": "Oracle reports:\n\n> The October 2026 Critical Patch Update contains 98 new security\n> patches for Oracle MySQL, 29 of which may be remotely exploitable\n> without authentication.\n>\n> Eight of them affect the MySQL Connectors. The most severe, in\n> Connector/J, can be exploited over a network without authentication.\n> The fixes are contained in release 26.10.0 of each connector.\n",
+    "id": "FreeBSD-2026-0566",
+    "modified": "2026-10-30T00:00:00Z",
+    "published": "2026-10-30T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.oracle.com/security-alerts/cpuoct2026.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101625"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101626"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101677"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101678"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101768"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101804"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-101806"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-83404"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "MySQL Connectors -- Multiple vulnerabilities"
+}

@@ -110,18 +110,6 @@
         },
         {
             "type": "WEB",
-            "url": "http://secunia.com/advisories/27292"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/27292"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/27290"
-        },
-        {
-            "type": "WEB",
             "url": "http://secunia.com/advisories/27290"
         }
     ],

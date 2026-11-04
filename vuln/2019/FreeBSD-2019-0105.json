@@ -22,7 +22,7 @@
     ],
     "database_specific": {
         "cite": [
-            "INSERT URL HERE"
+            "https://nvd.nist.gov/vuln/detail/CVE-2015-8869"
         ],
         "discovery": "2016-06-13T00:00:00Z",
         "references": {
@@ -39,10 +39,6 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "INSERT URL HERE"
-        },
-        {
-            "type": "ADVISORY",
             "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-8869"
         },
         {

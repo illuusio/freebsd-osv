@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitea"
+                "name": "glpi"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.21.2"
+                            "fixed": "10.0.8,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +22,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/go-gitea/gitea/pull/28406",
-            "https://github.com/go-gitea/gitea/pull/28423"
+            "https://github.com/glpi-project/glpi/releases/tag/10.0.8"
         ],
-        "discovery": "2023-08-30T00:00:00Z",
-        "vid": "482bb980-99a3-11ee-b5f7-6bd56600d90c"
+        "discovery": "2023-07-05T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2023-36808"
+            ]
+        },
+        "vid": "548a4163-6821-11ee-b06f-0050569ceb3a"
     },
-    "details": "The Gitea team reports:\n\n> Fix missing check\n\n> Do some missing checks\n\nBy crafting an API request, attackers can access the contents of issues\neven though the logged-in user does not have access rights to these\nissues.\n",
+    "details": "security-advisories@github.com reports:\n\n> GLPI is a free asset and IT management software package. Starting in\n> version 0.80 and prior to version 10.0.8, Computer Virtual Machine\n> form and GLPI inventory request can be used to perform a SQL injection\n> attack. Version 10.0.8 has a patch for this issue. As a workaround,\n> one may disable native inventory.\n",
     "id": "FreeBSD-2023-0367",
-    "modified": "2023-09-10T00:00:00Z",
-    "published": "2023-09-10T00:00:00Z",
+    "modified": "2023-10-11T00:00:00Z",
+    "published": "2023-10-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/go-gitea/gitea/pull/28406"
+            "url": "https://github.com/glpi-project/glpi/releases/tag/10.0.8"
         },
         {
-            "type": "REPORT",
-            "url": "https://github.com/go-gitea/gitea/pull/28423"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-36808"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/go-gitea/gitea/releases/tag/v1.21.2"
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-36808"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "gitea -- missing permission checks"
+    "summary": "GLPI vulnerable to SQL injection through Computer Virtual Machine information"
 }

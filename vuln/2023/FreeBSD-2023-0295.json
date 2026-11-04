@@ -3,38 +3,54 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitlab-ce"
+                "name": "mediawiki135"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "16.4.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "16.4.1"
+                            "fixed": "1.35.13"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mediawiki139"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "16.3.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "16.3.5"
+                            "fixed": "1.39.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mediawiki140"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "8.15"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "16.2.8"
+                            "fixed": "1.40.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -43,103 +59,31 @@
         }
     ],
     "database_specific": {
-        "discovery": "2023-09-28T00:00:00Z",
+        "cite": [
+            "https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/BRWOWACCHMYRIS7JRTT6XD44X3362MVL/"
+        ],
+        "discovery": "2023-09-01T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-5207",
-                "CVE-2023-5207",
-                "CVE-2023-4379",
-                "CVE-2023-3413",
-                "CVE-2023-3914",
-                "CVE-2023-3115",
-                "CVE-2023-5198",
-                "CVE-2023-4532",
-                "CVE-2023-3917",
-                "CVE-2023-3920",
-                "CVE-2023-0989",
-                "CVE-2023-3906",
-                "CVE-2023-4658",
-                "CVE-2023-3979",
-                "CVE-2023-2233",
-                "CVE-2023-3922"
+                "CVE-2023-3550"
             ]
         },
-        "vid": "6e0ebb4a-5e75-11ee-a365-001b217b3468"
+        "vid": "e59fed96-60da-11ee-9102-000c29de725b"
     },
-    "details": "Attacker can add other projects policy bot as member to their own\nproject and use that bot to trigger pipelines in victims project\n\nGroup import allows impersonation of users in CI pipelines\n\nDevelopers can bypass code owners approval by changing a MR\\'s base\nbranch\n\nLeaking source code of restricted project through a fork\n\nThird party library Consul requires enable-script-checks to be False to\nenable patch\n\nService account not deleted when namespace is deleted allowing access to\ninternal projects\n\nEnforce SSO settings bypassed for public projects for Members without\nidentity\n\nRemoved project member can write to protected branches\n\nUnauthorised association of CI jobs for Machine Learning experiments\n\nForce pipelines to not have access to protected variables and will\nlikely fail using tags\n\nMaintainer can create a fork relationship between existing projects\n\nDisclosure of masked CI variables via processing CI/CD configuration of\nforks\n\nAsset Proxy Bypass using non-ASCII character in asset URI\n\nUnauthorized member can gain Allowed to push and merge access and affect\nintegrity of protected branches\n\nRemoved Developer can continue editing the source code of a public\nproject\n\nA project reporter can leak owner\\'s Sentry instance projects\n\nMath rendering in markdown can escape container and hijack clicks\n",
+    "details": "Mediawikwi reports:\n\n> (T264765, CVE-2023-PENDING) SECURITY: Users without correct permission\n> are incorrectly shown MediaWiki:Missing-revision-permission.\n>\n> (T333050, CVE-2023-PENDING) SECURITY: Fix infinite loop for\n> self-redirects with variants conversion.\n>\n> (T340217, CVE-2023-PENDING) SECURITY: Vector 2022: Numerous unescaped\n> messages leading to potential XSS.\n>\n> (T340220, CVE-2023-PENDING) SECURITY: Vector 2022: vector-intro-page\n> message is assumed to yield a valid title.\n>\n> (T340221, CVE-2023-PENDING) SECURITY: XSS via\n> \\'youhavenewmessagesmanyusers\\' and \\'youhavenewmessages\\' messages.\n>\n> (T341529, CVE-2023-PENDING) SECURITY: diff-multi-sameuser (\\\"X\n> intermediate revisions by the same user not shown\\\") ignores username\n> suppression.\n>\n> (T341565, CVE-2023-3550) SECURITY: Stored XSS when uploading crafted\n> XML file to Special:Upload (non-standard configuration).\n",
     "id": "FreeBSD-2023-0295",
-    "modified": "2023-09-29T00:00:00Z",
-    "published": "2023-09-29T00:00:00Z",
+    "modified": "2023-10-02T00:00:00Z",
+    "published": "2023-10-02T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5207"
+            "type": "REPORT",
+            "url": "https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/BRWOWACCHMYRIS7JRTT6XD44X3362MVL/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5207"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4379"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3413"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3914"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3115"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5198"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4532"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3917"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3920"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0989"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3906"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4658"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3979"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2233"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3922"
-        },
-        {
-            "type": "WEB",
-            "url": "https://about.gitlab.com/releases/2023/09/28/security-release-gitlab-16-4-1-released/"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3550"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Gitlab -- vulnerabilities"
+    "summary": "mediawiki -- multiple vulnerabilities"
 }

@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.6.7"
+                            "last_affected": "1.6.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -44,10 +44,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2021-2322"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.oracle.com/security-alerts/oracle-open-source-cves-outside-other-oracle-public-documents.html"
         },
         {
             "type": "WEB",

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "electron25"
+                "name": "squid"
             },
             "ranges": [
                 {
@@ -12,26 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "25.9.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "electron26"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "26.4.1"
+                            "fixed": "6.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,34 +22,33 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/electron/electron/releases/tag/v25.9.2"
+            "https://github.com/squid-cache/squid/security/advisories?page=1"
         ],
-        "discovery": "2023-10-18T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2023-5218"
-            ]
-        },
-        "vid": "9000591b-483b-45ac-9c87-b3df3a4198ec"
+        "discovery": "2023-10-21T00:00:00Z",
+        "vid": "a8fb8e3a-730d-11ee-ab61-b42e991fc52e"
     },
-    "details": "Electron developers report:\n\n> This update fixes the following vulnerability:\n>\n> - Security: backported fix for CVE-2023-5218.\n",
+    "details": "The squid-cache project reports:\n\n> - Denial of Service in FTP\n> - Request/Response smuggling in HTTP/1.1 and ICAP\n> - Denial of Service in HTTP Digest Authentication\n",
     "id": "FreeBSD-2023-0319",
-    "modified": "2023-10-19T00:00:00Z",
-    "published": "2023-10-19T00:00:00Z",
+    "modified": "2023-10-25T00:00:00Z",
+    "published": "2023-10-25T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/electron/electron/releases/tag/v25.9.2"
+            "url": "https://github.com/squid-cache/squid/security/advisories?page=1"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5218"
+            "type": "WEB",
+            "url": "https://github.com/squid-cache/squid/security/advisories/GHSA-2g3c-pg7q-g59w"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-cvp3-7vpw-ffh6"
+            "type": "WEB",
+            "url": "https://github.com/squid-cache/squid/security/advisories/GHSA-j83v-w3p4-5cqh"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/squid-cache/squid/security/advisories/GHSA-phqj-m8gv-cq4g"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "electron{25,26} -- Use after free in Site Isolation"
+    "summary": "squid -- Multiple vulnerabilities"
 }

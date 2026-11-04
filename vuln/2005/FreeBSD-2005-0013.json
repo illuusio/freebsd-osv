@@ -79,7 +79,7 @@
     ],
     "database_specific": {
         "cite": [
-            "ftp://ftp.vim.org/pub/vim/patches/6.3/6.3.045"
+            "https://ftp.nluug.nl/pub/vim/patches/6.3/6.3.045"
         ],
         "discovery": "2004-12-09T00:00:00Z",
         "references": {
@@ -96,7 +96,7 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "ftp://ftp.vim.org/pub/vim/patches/6.3/6.3.045"
+            "url": "https://ftp.nluug.nl/pub/vim/patches/6.3/6.3.045"
         },
         {
             "type": "ADVISORY",

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "h2o"
+                "name": "libX11"
             },
             "ranges": [
                 {
@@ -12,26 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.2.6"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "h2o-devel"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "2.3.0.d.20231010"
+                            "fixed": "1.8.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,34 +22,40 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/h2o/h2o/issues/3291"
+            "https://lists.x.org/archives/xorg/2023-October/061506.html"
         ],
-        "discovery": "2023-10-10T00:00:00Z",
+        "discovery": "2023-09-22T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-44487"
+                "CVE-2023-43785",
+                "CVE-2023-43786",
+                "CVE-2023-43787"
             ]
         },
-        "vid": "bf545001-b96d-42e4-9d2e-60fdee204a43"
+        "vid": "bd92f1ab-690c-11ee-9ed0-001fc69cd6dc"
     },
-    "details": "Kazuo Okuhu reports:\n\n> H2O is vulnerable to the HTTP/2 Rapid Reset attack. An attacker might\n> be able to consume more than adequate amount of processing power of\n> h2o and the backend servers by mounting the attack.\n",
+    "details": "The X.Org project reports:\n\n> \n>\n> CVE-2023-43785: out-of-bounds memory access in \\_XkbReadKeySyms()\n> : When libX11 is processing the reply from the X server to the\n>   XkbGetMap request, if it detected the number of symbols in the new\n>   map was less than the size of the buffer it had allocated, it always\n>   added room for 128 more symbols, instead of the actual size needed.\n>   While the \\_XkbReadBufferCopyKeySyms() helper function returned an\n>   error if asked to copy more keysyms into the buffer than there was\n>   space allocated for, the caller never checked for an error and\n>   assumed the full set of keysyms was copied into the buffer and could\n>   then try to read out of bounds when accessing the buffer. libX11\n>   1.8.7 has been patched to both fix the size allocated and check for\n>   error returns from \\_XkbReadBufferCopyKeySyms().\n>\n> CVE-2023-43786: stack exhaustion in XPutImage\n> : When splitting a single line of pixels into chunks that fit in a\n>   single request (not using the BIG-REQUESTS extension) to send to the\n>   X server, the code did not take into account the number of bits per\n>   pixel, so would just loop forever finding it needed to send more\n>   pixels than fit in the given request size and not breaking them down\n>   into a small enough chunk to fit. An XPM file was provided that\n>   triggered this bug when loaded via libXpm\\'s XpmReadFileToPixmap()\n>   function, which in turn calls XPutImage() and hit this bug.\n>\n> CVE-2023-43787: integer overflow in XCreateImage() leading to a heap overflow\n> : When creating an image, there was no validation that the\n>   multiplication of the caller-provided width by the visual\\'s\n>   bits_per_pixel did not overflow and thus result in the allocation of\n>   a buffer too small to hold the data that would be copied into it. An\n>   XPM file was provided that triggered this bug when loaded via\n>   libXpm\\'s XpmReadFileToPixmap() function, which in turn calls\n>   XCreateImage() and hit this bug.i\n",
     "id": "FreeBSD-2023-0306",
-    "modified": "2023-10-10T00:00:00Z",
-    "published": "2023-10-10T00:00:00Z",
+    "modified": "2023-10-12T00:00:00Z",
+    "published": "2023-10-12T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/h2o/h2o/issues/3291"
+            "url": "https://lists.x.org/archives/xorg/2023-October/061506.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-44487"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-43785"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/h2o/h2o/security/advisories/GHSA-2m7v-gc89-fjqf"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-43786"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-43787"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "h2o -- HTTP/2 Rapid Reset attack vulnerability"
+    "summary": "11/libX11 multiple vulnerabilities"
 }

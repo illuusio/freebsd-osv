@@ -3,6 +3,44 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
+                "name": "py37-Elixir"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "0.8.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-Elixir"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "0.8.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
                 "name": "py39-Elixir"
             },
             "ranges": [
@@ -12,7 +50,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.8.0"
+                            "last_affected": "0.8.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-Elixir"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "0.8.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-Elixir"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "0.8.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -34,7 +110,7 @@
     },
     "details": "Red Hat Security Response Team reports:\n\n> Elixir 0.8.0 uses Blowfish in CFB mode without constructing a unique\n> initialization vector (IV), which makes it easier for\n> context-dependent users to obtain sensitive information and decrypt\n> the database.\n",
     "id": "FreeBSD-2023-0101",
-    "modified": "2023-03-26T00:00:00Z",
+    "modified": "2026-10-31T00:00:00Z",
     "published": "2023-03-26T00:00:00Z",
     "references": [
         {
@@ -47,5 +123,5 @@
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py39-Elixir -- weak use of cryptography"
+    "summary": "py-Elixir -- weak use of cryptography"
 }

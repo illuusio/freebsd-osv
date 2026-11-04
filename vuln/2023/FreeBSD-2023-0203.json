@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "redis"
+                "name": "openssl30"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "7.0.12"
+                            "fixed": "3.0.9_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "redis-devel"
+                "name": "openssl31"
             },
             "ranges": [
                 {
@@ -31,45 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "7.0.12.20230710"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "redis62"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "6.2.13"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "redis60"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "6.0.20"
+                            "fixed": "3.1.1_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,30 +41,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://groups.google.com/g/redis-db/c/JDjKS0GubsQ"
+            "https://www.openssl.org/news/secadv/20230714.txt"
         ],
-        "discovery": "2023-07-10T00:00:00Z",
+        "discovery": "2023-07-14T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-24834"
+                "CVE-2023-2975"
             ]
         },
-        "vid": "0e254b4a-1f37-11ee-a475-080027f5fec9"
+        "vid": "41c60e16-2405-11ee-a0d1-84a93843eb75"
     },
-    "details": "Redis core team reports:\n\n> A specially crafted Lua script executing in Redis can trigger a heap\n> overflow in the cjson and cmsgpack libraries, and result in heap\n> corruption and potentially remote code execution.\n",
+    "details": "The OpenSSL project reports:\n\n> The AES-SIV cipher implementation contains a bug that causes it to\n> ignore empty associated data entries which are unauthenticated as a\n> consequence.\n",
     "id": "FreeBSD-2023-0203",
-    "modified": "2023-07-10T00:00:00Z",
-    "published": "2023-07-10T00:00:00Z",
+    "modified": "2023-07-16T00:00:00Z",
+    "published": "2023-07-16T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://groups.google.com/g/redis-db/c/JDjKS0GubsQ"
+            "url": "https://www.openssl.org/news/secadv/20230714.txt"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-24834"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2975"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "redis -- Heap overflow in the cjson and cmsgpack libraries"
+    "summary": "OpenSSL -- AES-SIV implementation ignores empty associated data entries"
 }

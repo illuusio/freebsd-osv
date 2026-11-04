@@ -242,10 +242,6 @@
             "url": "https://saltproject.io/security_announcements/active-saltstack-cve-release-2021-feb-25/"
         },
         {
-            "type": "WEB",
-            "url": "\"https://saltproject.io/security_announcements/active-saltstack-cve-release-2021-feb-25/\""
-        },
-        {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2021-3197"
         },

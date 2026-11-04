@@ -3,16 +3,27 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-borgbackup"
+                "name": "redis"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "7.0.0"
                         },
                         {
-                            "fixed": "1.2.5"
+                            "fixed": "7.0.13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "7.2.0"
+                        },
+                        {
+                            "fixed": "7.2.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +33,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-borgbackup"
+                "name": "redis-devel"
             },
             "ranges": [
                 {
@@ -31,7 +42,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.2.5"
+                            "fixed": "7.2.0.20230831"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,73 +52,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-borgbackup"
+                "name": "redis70"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "7.0.0"
                         },
                         {
-                            "fixed": "1.2.5"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py310-borgbackup"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.2.5"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py311-borgbackup"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.2.5"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py312-borgbackup"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "1.2.5"
+                            "fixed": "7.0.13"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -117,30 +71,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/borgbackup/borg/blob/1.2.5-cvedocs/docs/changes.rst#pre-125-archives-spoofing-vulnerability-cve-2023-36811"
+            "https://github.com/redis/redis/security/advisories/GHSA-q4jr-5p56-4xwc"
         ],
-        "discovery": "2023-06-13T00:00:00Z",
+        "discovery": "2023-09-06T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-36811"
+                "CVE-2023-41053"
             ]
         },
-        "vid": "b8a52e5a-483d-11ee-971d-3df00e0f9020"
+        "vid": "6c72b13f-4d1d-11ee-a7f1-080027f5fec9"
     },
-    "details": "Thomas Waldmann reports:\n\n> A flaw in the cryptographic authentication scheme in Borg allowed an\n> attacker to fake archives and potentially indirectly cause backup data\n> loss in the repository.\n>\n> The attack requires an attacker to be able to\n>\n> - insert files (with no additional headers) into backups\n> - gain write access to the repository\n>\n> This vulnerability does not disclose plaintext to the attacker, nor\n> does it affect the authenticity of existing archives. Creating\n> plausible fake archives may be feasible for empty or small archives,\n> but is unlikely for large archives.\n",
+    "details": "yangbodong22011 reports:\n\n> Redis does not correctly identify keys accessed by SORT_RO and, as a\n> result, may grant users executing this command access to keys that are\n> not explicitly authorized by the ACL configuration.\n",
     "id": "FreeBSD-2023-0269",
-    "modified": "2023-08-31T00:00:00Z",
-    "published": "2023-08-31T00:00:00Z",
+    "modified": "2023-09-07T00:00:00Z",
+    "published": "2023-09-07T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/borgbackup/borg/blob/1.2.5-cvedocs/docs/changes.rst#pre-125-archives-spoofing-vulnerability-cve-2023-36811"
+            "url": "https://github.com/redis/redis/security/advisories/GHSA-q4jr-5p56-4xwc"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-36811"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-41053"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Borg (Backup) -- flaw in cryptographic authentication scheme in Borg allowed an attacker to fake archives and indirectly cause backup data loss."
+    "summary": "redis -- Possible bypassing ACL configuration"
 }

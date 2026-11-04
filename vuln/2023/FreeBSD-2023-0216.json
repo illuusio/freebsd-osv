@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "jenkins"
+                "name": "chromium"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.416"
+                            "fixed": "115.0.5790.170"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "jenkins-lts"
+                "name": "ungoogled-chromium"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.401.3"
+                            "fixed": "115.0.5790.170"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,30 +41,80 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.jenkins.io/security/advisory/2023-07-26/"
+            "https://chromereleases.googleblog.com/2023/08/stable-channel-update-for-desktop.html"
         ],
-        "discovery": "2023-07-26T00:00:00Z",
+        "discovery": "2023-08-02T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-39151"
+                "CVE-2023-4068",
+                "CVE-2023-4069",
+                "CVE-2023-4070",
+                "CVE-2023-4071",
+                "CVE-2023-4072",
+                "CVE-2023-4073",
+                "CVE-2023-4074",
+                "CVE-2023-4075",
+                "CVE-2023-4076",
+                "CVE-2023-4077",
+                "CVE-2023-4078"
             ]
         },
-        "vid": "a0321b74-031d-485c-bb76-edd75256a6f0"
+        "vid": "6e4e8e87-9fb8-4e32-9f8e-9b4303f4bfd5"
     },
-    "details": "Jenkins Security Advisory:\n\n> # Description\n>\n> ##### (High) SECURITY-3188 / CVE-2023-39151\n>\n> Stored XSS vulnerability\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 17 security fixes:\n>\n> - \\[1466183\\] High CVE-2023-4068: Type Confusion in V8. Reported by\n>   Jerry on 2023-07-20\n> - \\[1465326\\] High CVE-2023-4069: Type Confusion in V8. Reported by\n>   Man Yue Mo of GitHub Security Lab on 2023-07-17\n> - \\[1462951\\] High CVE-2023-4070: Type Confusion in V8. Reported by\n>   Jerry on 2023-07-07\n> - \\[1458819\\] High CVE-2023-4071: Heap buffer overflow in Visuals.\n>   Reported by Guang and Weipeng Jiang of VRI on 2023-06-28\n> - \\[1464038\\] High CVE-2023-4072: Out of bounds read and write in\n>   WebGL. Reported by Apple Security Engineering and Architecture\n>   (SEAR) on 2023-07-12\n> - \\[1456243\\] High CVE-2023-4073: Out of bounds memory access in\n>   ANGLE. Reported by Jaehun Jeong(@n3sk) of Theori on 2023-06-20\n> - \\[1464113\\] High CVE-2023-4074: Use after free in Blink Task\n>   Scheduling. Reported by Anonymous on 2023-07-12\n> - \\[1457757\\] High CVE-2023-4075: Use after free in Cast. Reported by\n>   Cassidy Kim(@cassidy6564) on 2023-06-25\n> - \\[1459124\\] High CVE-2023-4076: Use after free in WebRTC. Reported\n>   by Natalie Silvanovich of Google Project Zero on 2023-06-29\n> - \\[1451146\\] Medium CVE-2023-4077: Insufficient data validation in\n>   Extensions. Reported by Anonymous on 2023-06-04\n> - \\[1461895\\] Medium CVE-2023-4078: Inappropriate implementation in\n>   Extensions. Reported by Anonymous on 2023-07-04\n",
     "id": "FreeBSD-2023-0216",
-    "modified": "2023-07-26T00:00:00Z",
-    "published": "2023-07-26T00:00:00Z",
+    "modified": "2023-08-04T00:00:00Z",
+    "published": "2023-08-04T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.jenkins.io/security/advisory/2023-07-26/"
+            "url": "https://chromereleases.googleblog.com/2023/08/stable-channel-update-for-desktop.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-39151"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4068"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4069"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4070"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4071"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4072"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4073"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4074"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4075"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4076"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4077"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4078"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "jenkins -- Stored XSS vulnerability"
+    "summary": "chromium -- multiple vulnerabilities"
 }

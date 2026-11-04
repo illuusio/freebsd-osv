@@ -3,126 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-cinder"
+                "name": "py37-impacket"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "0.9.10"
                         },
                         {
-                            "fixed": "12.0.9"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "13.0.0"
-                        },
-                        {
-                            "fixed": "13.0.9"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.0.0"
-                        },
-                        {
-                            "fixed": "14.3.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "15.0.0"
-                        },
-                        {
-                            "fixed": "15.6.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "16.0.0"
-                        },
-                        {
-                            "fixed": "16.4.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "17.0.0"
-                        },
-                        {
-                            "fixed": "17.4.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "18.0.0"
-                        },
-                        {
-                            "fixed": "18.2.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "19.0.0"
-                        },
-                        {
-                            "fixed": "19.2.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "20.0.0"
-                        },
-                        {
-                            "fixed": "20.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "21.0.0"
-                        },
-                        {
-                            "fixed": "21.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "22.0.0"
-                        },
-                        {
-                            "fixed": "22.0.0.0rc2"
+                            "fixed": "0.9.23"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -132,126 +22,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-cinder"
+                "name": "py38-impacket"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "0.9.10"
                         },
                         {
-                            "fixed": "12.0.9"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "13.0.0"
-                        },
-                        {
-                            "fixed": "13.0.9"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.0.0"
-                        },
-                        {
-                            "fixed": "14.3.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "15.0.0"
-                        },
-                        {
-                            "fixed": "15.6.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "16.0.0"
-                        },
-                        {
-                            "fixed": "16.4.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "17.0.0"
-                        },
-                        {
-                            "fixed": "17.4.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "18.0.0"
-                        },
-                        {
-                            "fixed": "18.2.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "19.0.0"
-                        },
-                        {
-                            "fixed": "19.2.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "20.0.0"
-                        },
-                        {
-                            "fixed": "20.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "21.0.0"
-                        },
-                        {
-                            "fixed": "21.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "22.0.0"
-                        },
-                        {
-                            "fixed": "22.0.0.0rc2"
+                            "fixed": "0.9.23"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -261,126 +41,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-cinder"
+                "name": "py39-impacket"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "0.9.10"
                         },
                         {
-                            "fixed": "12.0.9"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "13.0.0"
-                        },
-                        {
-                            "fixed": "13.0.9"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.0.0"
-                        },
-                        {
-                            "fixed": "14.3.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "15.0.0"
-                        },
-                        {
-                            "fixed": "15.6.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "16.0.0"
-                        },
-                        {
-                            "fixed": "16.4.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "17.0.0"
-                        },
-                        {
-                            "fixed": "17.4.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "18.0.0"
-                        },
-                        {
-                            "fixed": "18.2.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "19.0.0"
-                        },
-                        {
-                            "fixed": "19.2.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "20.0.0"
-                        },
-                        {
-                            "fixed": "20.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "21.0.0"
-                        },
-                        {
-                            "fixed": "21.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "22.0.0"
-                        },
-                        {
-                            "fixed": "22.0.0.0rc2"
+                            "fixed": "0.9.23"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -390,126 +60,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-cinder"
+                "name": "py310-impacket"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "0.9.10"
                         },
                         {
-                            "fixed": "12.0.9"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "13.0.0"
-                        },
-                        {
-                            "fixed": "13.0.9"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.0.0"
-                        },
-                        {
-                            "fixed": "14.3.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "15.0.0"
-                        },
-                        {
-                            "fixed": "15.6.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "16.0.0"
-                        },
-                        {
-                            "fixed": "16.4.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "17.0.0"
-                        },
-                        {
-                            "fixed": "17.4.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "18.0.0"
-                        },
-                        {
-                            "fixed": "18.2.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "19.0.0"
-                        },
-                        {
-                            "fixed": "19.2.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "20.0.0"
-                        },
-                        {
-                            "fixed": "20.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "21.0.0"
-                        },
-                        {
-                            "fixed": "21.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "22.0.0"
-                        },
-                        {
-                            "fixed": "22.0.0.0rc2"
+                            "fixed": "0.9.23"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -519,126 +79,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-cinder"
+                "name": "py311-impacket"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "0.9.10"
                         },
                         {
-                            "fixed": "12.0.9"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "13.0.0"
-                        },
-                        {
-                            "fixed": "13.0.9"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "14.0.0"
-                        },
-                        {
-                            "fixed": "14.3.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "15.0.0"
-                        },
-                        {
-                            "fixed": "15.6.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "16.0.0"
-                        },
-                        {
-                            "fixed": "16.4.2"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "17.0.0"
-                        },
-                        {
-                            "fixed": "17.4.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "18.0.0"
-                        },
-                        {
-                            "fixed": "18.2.1"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "19.0.0"
-                        },
-                        {
-                            "fixed": "19.2.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "20.0.0"
-                        },
-                        {
-                            "fixed": "20.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "21.0.0"
-                        },
-                        {
-                            "fixed": "21.1.0"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "22.0.0"
-                        },
-                        {
-                            "fixed": "22.0.0.0rc2"
+                            "fixed": "0.9.23"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -648,30 +98,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/GHSA-qhch-g8qr-p497"
+            "https://osv.dev/vulnerability/PYSEC-2021-17"
         ],
-        "discovery": "2022-05-17T00:00:00Z",
+        "discovery": "2021-05-05T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2014-3641"
+                "CVE-2021-31800"
             ]
         },
-        "vid": "f4a94232-7864-4afb-bbf9-ff2dc8e288d1"
+        "vid": "b692a49c-9ae7-4958-af21-cbf8f5b819ea"
     },
-    "details": "Duncan Thomas reports:\n\n> The (1) GlusterFS and (2) Linux Smbfs drivers in OpenStack Cinder\n> before 2014.1.3 allows remote authenticated users to obtain file data\n> from the Cinder-volume host by cloning and attaching a volume with a\n> crafted qcow2 header.\n",
+    "details": "asolino reports:\n\n> Multiple path traversal vulnerabilities exist in smbserver.py in\n> Impacket through 0.9.22. An attacker that connects to a running\n> smbserver instance can list and write to arbitrary files via ../\n> directory traversal. This could potentially be abused to achieve\n> arbitrary code execution by replacing /etc/shadow or an SSH authorized\n> key.\n",
     "id": "FreeBSD-2023-0121",
     "modified": "2023-04-09T00:00:00Z",
     "published": "2023-04-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/GHSA-qhch-g8qr-p497"
+            "url": "https://osv.dev/vulnerability/PYSEC-2021-17"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2014-3641"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-31800"
+        },
+        {
+            "type": "WEB",
+            "url": "https://osv.dev/vulnerability/GHSA-mj63-64x7-57xf"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-cinder -- data leak"
+    "summary": "py-impacket -- multiple path traversal vulnerabilities"
 }

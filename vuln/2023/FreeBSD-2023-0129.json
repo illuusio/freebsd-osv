@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-pymatgen"
+                "name": "py37-cryptography"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2022.9.21"
+                            "fixed": "39.0.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-pymatgen"
+                "name": "py38-cryptography"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2022.9.21"
+                            "fixed": "39.0.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-pymatgen"
+                "name": "py39-cryptography"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2022.9.21"
+                            "fixed": "39.0.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-pymatgen"
+                "name": "py310-cryptography"
             },
             "ranges": [
                 {
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2022.9.21"
+                            "fixed": "39.0.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-pymatgen"
+                "name": "py311-cryptography"
             },
             "ranges": [
                 {
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2022.9.21"
+                            "fixed": "39.0.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,30 +98,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/GHSA-5jqp-885w-xj32"
+            "https://osv.dev/vulnerability/GHSA-x4qr-2fvf-3mr5"
         ],
-        "discovery": "2022-11-10T00:00:00Z",
+        "discovery": "2023-02-08T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-42964"
+                "CVE-2023-0286"
             ]
         },
-        "vid": "951b513a-9f42-436d-888d-2162615d0fe4"
+        "vid": "c1a8ed1c-2814-4260-82aa-9e37c83aac93"
     },
-    "details": "> An exponential ReDoS (Regular Expression Denial of Service) can be\n> triggered in the pymatgen PyPI package, when an attacker is able to\n> supply arbitrary input to the GaussianInput.from_string method.\n",
+    "details": "> pyca/cryptography\\'s wheels include a statically linked copy of\n> OpenSSL.\n>\n> The versions of OpenSSL included in cryptography 0.8.1-39.0.0 are\n> vulnerable to a security issue.\n>\n> More details about the vulnerabilities themselves can be found in\n> https://www.openssl.org/news/secadv/20221213.txt and\n> https://www.openssl.org/news/secadv/20230207.txt.\n>\n> If you are building cryptography source (\\\"sdist\\\") then you are\n> responsible for upgrading your copy of OpenSSL.\n>\n> Only users installing from wheels built by the cryptography project\n> (i.e., those distributed on PyPI) need to update their cryptography\n> versions.\n",
     "id": "FreeBSD-2023-0129",
-    "modified": "2023-04-09T00:00:00Z",
-    "published": "2023-04-09T00:00:00Z",
+    "modified": "2023-04-10T00:00:00Z",
+    "published": "2023-04-10T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/GHSA-5jqp-885w-xj32"
+            "url": "https://osv.dev/vulnerability/GHSA-x4qr-2fvf-3mr5"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-42964"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0286"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-pymatgen -- regular expression denial of service"
+    "summary": "py-cryptography -- includes a vulnerable copy of OpenSSL"
 }

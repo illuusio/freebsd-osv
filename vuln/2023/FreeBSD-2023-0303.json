@@ -3,16 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "chromium"
+                "name": "curl"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "7.69.0"
                         },
                         {
-                            "fixed": "117.0.5938.149"
+                            "fixed": "8.4.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "ungoogled-chromium"
+                "name": "cmake-core"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "117.0.5938.149"
+                            "fixed": "3.27.8"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,30 +41,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://chromereleases.googleblog.com/2023/10/stable-channel-update-for-desktop.html"
+            "https://curl.se/docs/CVE-2023-38545.html"
         ],
-        "discovery": "2023-10-03T00:00:00Z",
+        "discovery": "2023-09-30T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-5346"
+                "CVE-2023-38545"
             ]
         },
-        "vid": "4e45c45b-629e-11ee-8290-a8a1599412c6"
+        "vid": "d6c19e8c-6806-11ee-9464-b42e991fc52e"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 1 security fix:\n>\n> - \\[1485829\\] High CVE-2023-5346: Type Confusion in V8. Reported by\n>   Amit Kumar on 2023-09-22\n",
+    "details": "The curl team reports:\n\n> This flaw makes curl overflow a heap based buffer in the SOCKS5 proxy\n> handshake. When curl is asked to pass along the hostname to the SOCKS5\n> proxy to allow that to resolve the address instead of it getting done\n> by curl itself, the maximum length that hostname can be is 255 bytes.\n> If the hostname is detected to be longer than 255 bytes, curl switches\n> to local name resolving and instead passes on the resolved address\n> only to the proxy. Due to a bug, the local variable that means \\\"let\n> the host resolve the name\\\" could get the wrong value during a slow\n> SOCKS5 handshake, and contrary to the intention, copy the too long\n> hostname to the target buffer instead of copying just the resolved\n> address there.\n",
     "id": "FreeBSD-2023-0303",
-    "modified": "2023-10-04T00:00:00Z",
-    "published": "2023-10-04T00:00:00Z",
+    "modified": "2023-10-11T00:00:00Z",
+    "published": "2023-10-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2023/10/stable-channel-update-for-desktop.html"
+            "url": "https://curl.se/docs/CVE-2023-38545.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5346"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-38545"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "chromium -- type confusion in v8"
+    "summary": "curl -- SOCKS5 heap buffer overflow"
 }

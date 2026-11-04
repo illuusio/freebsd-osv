@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "postgresql-server"
+                "name": "chromium"
             },
             "ranges": [
                 {
@@ -12,51 +12,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "15.3"
+                            "fixed": "113.0.5672.126"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
                             "introduced": "0"
                         },
                         {
-                            "fixed": "14.8"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "13.11"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "12.15"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "11.20"
+                            "fixed": "113.0.5672.126"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -66,30 +41,55 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.postgresql.org/support/security/CVE-2023-2454/"
+            "https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_16.html"
         ],
-        "discovery": "2023-05-11T00:00:00Z",
+        "discovery": "2023-05-16T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-2454"
+                "CVE-2023-2721",
+                "CVE-2023-2722",
+                "CVE-2023-2723",
+                "CVE-2023-2724",
+                "CVE-2023-2725",
+                "CVE-2023-2726"
             ]
         },
-        "vid": "fbb5a260-f00f-11ed-bbae-6cc21735f730"
+        "vid": "bea52545-f4a7-11ed-8290-a8a1599412c6"
     },
-    "details": "PostgreSQL Project reports\n\n> This enabled an attacker having database-level CREATE privilege to\n> execute arbitrary code as the bootstrap superuser. Database owners\n> have that right by default, and explicit grants may extend it to other\n> users.\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 12 security fixes:\n>\n> - \\[1444360\\] Critical CVE-2023-2721: Use after free in Navigation.\n>   Reported by Guang Gong of Alpha Lab, Qihoo 360 on 2023-05-10\n> - \\[1400905\\] High CVE-2023-2722: Use after free in Autofill UI.\n>   Reported by Rong Jian of VRI on 2022-12-14\n> - \\[1435166\\] High CVE-2023-2723: Use after free in DevTools. Reported\n>   by asnine on 2023-04-21\n> - \\[1433211\\] High CVE-2023-2724: Type Confusion in V8. Reported by\n>   Sergei Glazunov of Google Project Zero on 2023-04-14\n> - \\[1442516\\] High CVE-2023-2725: Use after free in Guest View.\n>   Reported by asnine on 2023-05-04\n> - \\[1442018\\] Medium CVE-2023-2726: Inappropriate implementation in\n>   WebApp Installs. Reported by Ahmed ElMasry on 2023-05-03\n",
     "id": "FreeBSD-2023-0161",
-    "modified": "2023-05-11T00:00:00Z",
-    "published": "2023-05-11T00:00:00Z",
+    "modified": "2023-05-17T00:00:00Z",
+    "published": "2023-05-17T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.postgresql.org/support/security/CVE-2023-2454/"
+            "url": "https://chromereleases.googleblog.com/2023/05/stable-channel-update-for-desktop_16.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2454"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2721"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2722"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2723"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2724"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2725"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2726"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "postgresql-server -- CREATE SCHEMA ... schema elements defeats protective search_path changes"
+    "summary": "chromium -- multiple vulnerabilities"
 }

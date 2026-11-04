@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "clamav"
+                "name": "phpmyfaq-php80"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.1.1,1"
+                            "fixed": "3.1.16"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "clamav-lts"
+                "name": "phpmyfaq-php81"
             },
             "ranges": [
                 {
@@ -31,7 +31,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.0.2,1"
+                            "fixed": "3.1.16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpmyfaq-php82"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.1.16"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpmyfaq-php83"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.1.16"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,30 +79,29 @@
     ],
     "database_specific": {
         "cite": [
-            "https://blog.clamav.net/2023/07/2023-08-16-releases.html"
+            "https://www.phpmyfaq.de/security/advisory-2023-07-16"
         ],
-        "discovery": "2023-08-15T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2023-20197"
-            ]
-        },
-        "vid": "51a59f36-3c58-11ee-b32e-080027f5fec9"
+        "discovery": "2023-07-16T00:00:00Z",
+        "vid": "ddd3fcc9-2bdd-11ee-9af4-589cfc0f81b0"
     },
-    "details": "Steve Smith reports:\n\n> There is a possible denial of service vulnerability in the HFS+ file\n> parser.\n",
+    "details": "phpmyfaq developers report:\n\n> Cross Site Scripting vulnerability\n>\n> CSV injection vulnerability\n",
     "id": "FreeBSD-2023-0227",
-    "modified": "2023-08-16T00:00:00Z",
-    "published": "2023-08-16T00:00:00Z",
+    "modified": "2023-08-23T00:00:00Z",
+    "published": "2023-08-23T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://blog.clamav.net/2023/07/2023-08-16-releases.html"
+            "url": "https://www.phpmyfaq.de/security/advisory-2023-07-16"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-20197"
+            "type": "WEB",
+            "url": "https://huntr.dev/bounties/e891dcbc-2092-49d3-9518-23e37187a5ea/"
+        },
+        {
+            "type": "WEB",
+            "url": "https://huntr.dev/bounties/36149a42-cbd5-445e-a371-e351c899b189/"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "clamav -- Possible denial of service vulnerability in the HFS+ file parser"
+    "summary": "phpmyfaq -- multiple vulnerabilities"
 }

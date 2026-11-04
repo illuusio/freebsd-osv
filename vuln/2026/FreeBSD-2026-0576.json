@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "uriparser"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.0.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/uriparser/uriparser/issues/282"
+        ],
+        "discovery": "2025-12-14T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2025-67899"
+            ]
+        },
+        "vid": "65abbad5-da78-11f0-b6d5-843a4b343614"
+    },
+    "details": "The URIparser project reports:\n\n> uriparser through 0.9.9 allows unbounded recursion and stack\n> consumption, as demonstrated by ParseMustBeSegmentNzNc with large\n> input containing many commas.\n",
+    "id": "FreeBSD-2026-0576",
+    "modified": "2026-10-31T00:00:00Z",
+    "published": "2026-10-31T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/uriparser/uriparser/issues/282"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2025-67899"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "uriparser -- Denial of Service through Unbound Recursion"
+}

@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "6,1"
+                            "introduced": "6"
                         },
                         {
-                            "fixed": "6.4.10"
+                            "last_affected": "6.4.10"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -20,7 +20,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "7,1"
+                            "introduced": "7"
                         },
                         {
                             "fixed": "7.1.315"
@@ -39,10 +39,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "6,1"
+                            "introduced": "6"
                         },
                         {
-                            "fixed": "6.4.10"
+                            "last_affected": "6.4.10"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,7 +50,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "7,1"
+                            "introduced": "7"
                         },
                         {
                             "fixed": "7.1.315"
@@ -69,10 +69,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "6,1"
+                            "introduced": "6"
                         },
                         {
-                            "fixed": "6.4.10"
+                            "last_affected": "6.4.10"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -80,7 +80,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "7,1"
+                            "introduced": "7"
                         },
                         {
                             "fixed": "7.1.315"
@@ -99,10 +99,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "6,1"
+                            "introduced": "6"
                         },
                         {
-                            "fixed": "6.4.10"
+                            "last_affected": "6.4.10"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -110,7 +110,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "7,1"
+                            "introduced": "7"
                         },
                         {
                             "fixed": "7.1.315"
@@ -129,10 +129,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "6,1"
+                            "introduced": "6"
                         },
                         {
-                            "fixed": "6.4.10"
+                            "last_affected": "6.4.10"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -140,7 +140,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "7,1"
+                            "introduced": "7"
                         },
                         {
                             "fixed": "7.1.315"
@@ -159,10 +159,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "6,1"
+                            "introduced": "6"
                         },
                         {
-                            "fixed": "6.4.10"
+                            "last_affected": "6.4.10"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -170,7 +170,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "7,1"
+                            "introduced": "7"
                         },
                         {
                             "fixed": "7.1.315"

@@ -1,0 +1,494 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "libwasmtime"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "36.0.19"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "37.0.0"
+                        },
+                        {
+                            "fixed": "48.0.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "49.0.0"
+                        },
+                        {
+                            "fixed": "49.0.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "wasmtime"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "36.0.19"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "37.0.0"
+                        },
+                        {
+                            "fixed": "48.0.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "49.0.0"
+                        },
+                        {
+                            "fixed": "49.0.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "codemark"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "0.7.30_2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gram-text-editor"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "3.3.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "lapce"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "0.4.6_8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mongodb90"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "9.0.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mongodb90-armv80a"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "9.0.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "moon"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "2.6.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "surfer"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "0.7.0_4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "surrealdb"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "3.2.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "tree-sitter-cli"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "0.26.13_2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "veloren-weekly"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "s20261027"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "veryl"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "0.22.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "vscode"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "1.143.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "waveterm"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "0.14.5_32"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "wizer"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "11.0.3_5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "zed-editor"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.25.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "zeroclaw"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "0.8.0.b.2_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.3",
+            "https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.4"
+        ],
+        "discovery": "2026-10-14T00:00:00Z",
+        "vid": "57e6e702-cd69-11f1-b0e3-74563cf85f9d"
+    },
+    "details": "Wasmtime development team reports:\n\n> - Out-of-bounds zero-length stream writes can panic.\n> - Host panic when component call_async is cancelled under some\n>   conditions.\n> - Panic on erroneous call-to-host from guest realloc call.\n> - Yielding in a component start function can lead to a host panic.\n> - Panic when invoking an async-lifted function via call.\n> - Panic when pending calls are run after a trap.\n> - Stack overflow dropping a long chain of recursive types.\n> - Wasmtime may not properly enforce async-entrypoint requirement.\n> - Panic viewing component model stream or future as the wrong type.\n> - Component-model handle tables are capped only per instance and\n>   charged to no limit.\n> - Exception tags can cause host data structures to be unaligned.\n> - Filesystem sandbox escape when renaming symlinks with trailing\n>   slashes.\n> - Overlapping string transcode in a fused adapter can panic.\n> - Guests can send absolute-form HTTP requests to different hosts.\n> - wasi-http: Request with long url before query parameter crashes\n>   host.\n\n> - wasi-http: Guests can add conflicting content lengths to messages\n> - wasi-http p3: forwarded trailers aren\\'t checked against\n>   is_forbidden_header hook\n> - wasi-http p3: Guests can set incorrect content-length for spliced\n>   response bodies\n> - Cranelift backend on aarch64 can jump to incorrect target on large\n>   Wasm br_table instruction\n> - Panic lowering a host-created component model stream into a guest\n>   that expects a different payload type.\n",
+    "id": "FreeBSD-2026-0582",
+    "modified": "2026-10-21T00:00:00Z",
+    "published": "2026-10-21T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.3"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://github.com/bytecodealliance/wasmtime/releases/tag/v49.0.4"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-93g3-36p8-x2gc"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-3r89-v5mq-j5xf"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-7v24-42x9-pxf7"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-5hhx-4wrr-3j9g"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-m6w2-jwq2-cv2c"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-hmwq-g22x-qjw5"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-wjc8-633q-pwxr"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-vcg5-q8m5-8379"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-63h4-6cx9-pjfj"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-q554-3cjc-rx7p"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-p79w-pv2r-29qp"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-m9f7-9w4p-gv38"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-54p9-vhhq-8f7q"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-5qpp-g3j2-8frx"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-w36r-2hch-9xp9"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-r8xh-cgf7-392j"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-jxcf-8qw5-5c33"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-9prg-84vf-g5fc"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-mghf-wjfp-p5xm"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-9pvw-hwfg-92h5"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "libwasmtime -- Multiple vulnerabilities"
+}

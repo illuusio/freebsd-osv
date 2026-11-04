@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "2.*,1"
+                            "introduced": "2.*"
                         },
                         {
                             "fixed": "2.2.20"
@@ -28,7 +28,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "2.*,1"
+                            "introduced": "2.*"
                         },
                         {
                             "fixed": "2.2.20"
@@ -47,7 +47,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "2.*,1"
+                            "introduced": "2.*"
                         },
                         {
                             "fixed": "2.2.20"
@@ -66,7 +66,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "2.*,1"
+                            "introduced": "2.*"
                         },
                         {
                             "fixed": "2.2.20"
@@ -85,7 +85,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "2.*,1"
+                            "introduced": "2.*"
                         },
                         {
                             "fixed": "2.2.20"

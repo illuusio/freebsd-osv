@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "electron25"
+                "name": "traefik"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "25.9.1"
+                            "fixed": "2.10.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +22,35 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/electron/electron/releases/tag/v25.9.1"
+            "https://github.com/traefik/traefik/security/advisories/GHSA-7v4p-328v-8v5g"
         ],
-        "discovery": "2023-10-11T00:00:00Z",
+        "discovery": "2023-10-10T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-5187"
+                "CVE-2023-39325",
+                "CVE-2023-44487"
             ]
         },
-        "vid": "4281b712-ad6b-4c21-8f66-619a9150691f"
+        "vid": "7a1b2624-6a89-11ee-af06-5404a68ad561"
     },
-    "details": "Electron developers report:\n\n> This update fixes the following vulnerability:\n>\n> - Security: backported fix for CVE-2023-5187.\n",
+    "details": "The traefik authors report:\n\n> There is a vulnerability in GO managing HTTP/2 requests, which impacts\n> Traefik. This vulnerability could be exploited to cause a denial of\n> service.\n",
     "id": "FreeBSD-2023-0308",
-    "modified": "2023-10-12T00:00:00Z",
-    "published": "2023-10-12T00:00:00Z",
+    "modified": "2023-10-14T00:00:00Z",
+    "published": "2023-10-14T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/electron/electron/releases/tag/v25.9.1"
+            "url": "https://github.com/traefik/traefik/security/advisories/GHSA-7v4p-328v-8v5g"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5187"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-39325"
         },
         {
             "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-hg3r-958g-g8vq"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-44487"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "electron25 -- Use after free in extensions vulnerability"
+    "summary": "traefik -- Resource exhaustion by malicious HTTP/2 client"
 }

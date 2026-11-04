@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "chromium"
+                "name": "mysql-connector-java"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "112.0.5615.121"
+                            "fixed": "8.0.33"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "ungoogled-chromium"
+                "name": "mysql-client57"
             },
             "ranges": [
                 {
@@ -31,7 +31,64 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "112.0.5615.121"
+                            "fixed": "5.7.42"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mysql-server57"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.7.42"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mysql-client80"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.0.33"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mysql-server80"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.0.33"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,30 +98,150 @@
     ],
     "database_specific": {
         "cite": [
-            "https://chromereleases.googleblog.com/2023/04/stable-channel-update-for-desktop_14.html"
+            "https://www.oracle.com/security-alerts/cpuapr2023.html#AppendixMSQL"
         ],
-        "discovery": "2023-04-14T00:00:00Z",
+        "discovery": "2023-04-19T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-2033"
+                "CVE-2022-37434",
+                "CVE-2023-21912",
+                "CVE-2023-21980",
+                "CVE-2023-21946",
+                "CVE-2023-21929",
+                "CVE-2023-21971",
+                "CVE-2023-21911",
+                "CVE-2023-21962",
+                "CVE-2023-21919",
+                "CVE-2023-21933",
+                "CVE-2023-21972",
+                "CVE-2023-21966",
+                "CVE-2023-21913",
+                "CVE-2023-21917",
+                "CVE-2023-21920",
+                "CVE-2023-21935",
+                "CVE-2023-21945",
+                "CVE-2023-21976",
+                "CVE-2023-21977",
+                "CVE-2023-21982",
+                "CVE-2023-21953",
+                "CVE-2023-21955",
+                "CVE-2023-21940",
+                "CVE-2023-21947",
+                "CVE-2023-21963"
             ]
         },
-        "vid": "6f0327d4-9902-4042-9b68-6fc2266944bc"
+        "vid": "f504a8d2-e105-11ed-85f6-84a93843eb75"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 2 security fixes:\n>\n> - \\[1432210\\] High CVE-2023-2033: Type Confusion in V8. Reported by\n>   Cl\u00e9ment Lecigne of Google\\'s Threat Analysis Group on 2023-04-11\n",
+    "details": "Oracle reports:\n\n> This Critical Patch Update contains 34 new security patches, plus\n> additional third party patches noted below, for Oracle MySQL. 11 of\n> these vulnerabilities may be remotely exploitable without\n> authentication, i.e., may be exploited over a network without\n> requiring user credentials.\n",
     "id": "FreeBSD-2023-0141",
-    "modified": "2023-04-15T00:00:00Z",
-    "published": "2023-04-15T00:00:00Z",
+    "modified": "2023-04-22T00:00:00Z",
+    "published": "2023-04-22T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2023/04/stable-channel-update-for-desktop_14.html"
+            "url": "https://www.oracle.com/security-alerts/cpuapr2023.html#AppendixMSQL"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2033"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-37434"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21912"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21980"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21946"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21929"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21971"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21911"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21962"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21919"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21933"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21972"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21966"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21913"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21917"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21920"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21935"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21945"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21976"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21977"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21982"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21953"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21955"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21940"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21947"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-21963"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "chromium -- multiple vulnerabilities"
+    "summary": "MySQL -- Multiple vulnerabilities"
 }

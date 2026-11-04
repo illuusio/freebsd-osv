@@ -3,16 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitea"
+                "name": "glpi"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "9.5.0,1"
                         },
                         {
-                            "fixed": "1.21.3"
+                            "fixed": "10.0.8,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,25 +22,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/go-gitea/gitea/pull/28519"
+            "https://github.com/glpi-project/glpi/releases/tag/10.0.8"
         ],
-        "discovery": "2023-12-19T00:00:00Z",
-        "vid": "b2765c89-a052-11ee-bed2-596753f1a87c"
+        "discovery": "2023-07-05T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2023-35939"
+            ]
+        },
+        "vid": "717efd8a-6821-11ee-b06f-0050569ceb3a"
     },
-    "details": "The Gitea team reports:\n\n> Update golang.org/x/crypto\n",
+    "details": "security-advisories@github.com reports:\n\n> GLPI is a free asset and IT management software package. Starting in\n> version 9.5.0 and prior to version 10.0.8, an incorrect rights check\n> on a on a file accessible by an authenticated user (or not for certain\n> actions), allows a threat actor to interact, modify, or see Dashboard\n> data. Version 10.0.8 contains a patch for this issue.\n",
     "id": "FreeBSD-2023-0368",
-    "modified": "2023-12-21T00:00:00Z",
-    "published": "2023-12-21T00:00:00Z",
+    "modified": "2023-10-11T00:00:00Z",
+    "published": "2023-10-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/go-gitea/gitea/pull/28519"
+            "url": "https://github.com/glpi-project/glpi/releases/tag/10.0.8"
         },
         {
-            "type": "WEB",
-            "url": "https://github.com/go-gitea/gitea/releases/tag/v1.21.3"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-35939"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-35939"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "gitea -- Prefix Truncation Attack against ChaCha20-Poly1305 and Encrypt-then-MAC aka Terrapin"
+    "summary": "GLPI vulnerable to unauthorized access to Dashboard data"
 }

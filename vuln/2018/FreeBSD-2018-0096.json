@@ -29,7 +29,6 @@
                 "CVE-2017-7090",
                 "CVE-2017-7091",
                 "CVE-2017-7092",
-                "CVE-2017-7092",
                 "CVE-2017-7093",
                 "CVE-2017-7095",
                 "CVE-2017-7096",
@@ -114,10 +113,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2017-7091"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-7092"
         },
         {
             "type": "ADVISORY",

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-pygments"
+                "name": "py37-flask-security"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.7.4"
+                            "last_affected": "3.0.0_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-pygments"
+                "name": "py38-flask-security"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.7.4"
+                            "last_affected": "3.0.0_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-pygments"
+                "name": "py39-flask-security"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.7.4"
+                            "last_affected": "3.0.0_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-pygments"
+                "name": "py310-flask-security"
             },
             "ranges": [
                 {
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.7.4"
+                            "last_affected": "3.0.0_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-pygments"
+                "name": "py311-flask-security"
             },
             "ranges": [
                 {
@@ -88,102 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.7.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py37-pygments-25"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "2.7.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py38-pygments-25"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "2.7.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py39-pygments-25"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "2.7.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py310-pygments-25"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "2.7.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "py311-pygments-25"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "2.7.4"
+                            "last_affected": "3.0.0_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -193,48 +98,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2021-140",
-            "https://osv.dev/vulnerability/PYSEC-2021-141"
+            "https://osv.dev/vulnerability/GHSA-cg8c-gc2j-2wf7"
         ],
-        "discovery": "2021-03-17T00:00:00Z",
+        "discovery": "2022-08-02T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2021-20270",
-                "CVE-2021-27291"
+                "CVE-2021-23385"
             ]
         },
-        "vid": "cdc685b5-1724-49a1-ad57-2eaab68e9cc0"
+        "vid": "06492bd5-085a-4cc0-9743-e30164bdcb1c"
     },
-    "details": "Red Hat reports:\n\n> An infinite loop in SMLLexer in Pygments versions 1.5 to 2.7.3 may\n> lead to denial of service when performing syntax highlighting of a\n> Standard ML (SML) source file, as demonstrated by input that only\n> contains the \\\"exception\\\" keyword.\n\nBen Caller reports:\n\n> In pygments 1.1+, fixed in 2.7.4, the lexers used to parse programming\n> languages rely heavily on regular expressions.\n>\n> Some of the regular expressions have exponential or cubic worst-case\n> complexity and are vulnerable to ReDoS.\n>\n> By crafting malicious input, an attacker can cause a denial of\n> service.\n",
+    "details": "Snyk reports:\n\n> This affects all versions of package Flask-Security.\n>\n> When using the \\`get_post_logout_redirect\\` and\n> \\`get_post_login_redirect\\` functions, it is possible to bypass URL\n> validation and redirect a user to an arbitrary URL by providing\n> multiple back slashes such as \\`\\\\\\\\\\\\evil.com/path\\`.\n>\n> This vulnerability is only exploitable if an alternative WSGI server\n> other than Werkzeug is used, or the default behaviour of Werkzeug is\n> modified using \\`\\'autocorrect_location_header=False\\`.\n>\n> \\*\\*Note:\\*\\* Flask-Security is not maintained anymore.\n",
     "id": "FreeBSD-2023-0251",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2021-140"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2021-141"
+            "url": "https://osv.dev/vulnerability/GHSA-cg8c-gc2j-2wf7"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-20270"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-9w8r-397f-prfh"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-27291"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-pq64-v7f5-gqh8"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-23385"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-pygments -- multiple DoS vulnerabilities"
+    "summary": "py-flask-security -- user redirect to arbitrary URL vulnerability"
 }

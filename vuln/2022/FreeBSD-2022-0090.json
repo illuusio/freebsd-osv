@@ -21,9 +21,6 @@
         }
     ],
     "database_specific": {
-        "cite": [
-            "mailto:edict@ring.gr.jp"
-        ],
         "discovery": "2022-04-25T00:00:00Z",
         "vid": "17a30a24-c579-11ec-bbbd-0800270512f4"
     },
@@ -33,8 +30,8 @@
     "published": "2022-04-26T00:00:00Z",
     "references": [
         {
-            "type": "REPORT",
-            "url": "mailto:edict@ring.gr.jp"
+            "type": "WEB",
+            "url": "https://cgit.freebsd.org/ports/commit/?id=2140f32d4586"
         }
     ],
     "schema_version": "1.7.0",

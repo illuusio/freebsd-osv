@@ -58,7 +58,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "129,1"
+                            "introduced": "129"
                         },
                         {
                             "fixed": "135"

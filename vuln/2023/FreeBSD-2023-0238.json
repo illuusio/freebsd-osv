@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "13.1"
+                            "introduced": "13.2"
                         },
                         {
-                            "fixed": "13.1_5"
+                            "fixed": "13.2_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -20,10 +20,21 @@
                 {
                     "events": [
                         {
-                            "introduced": "12.3"
+                            "introduced": "13.1"
                         },
                         {
-                            "fixed": "12.3_10"
+                            "fixed": "13.1_8"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.4"
+                        },
+                        {
+                            "fixed": "12.4_3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -32,31 +43,31 @@
         }
     ],
     "database_specific": {
-        "discovery": "2022-11-29T00:00:00Z",
+        "discovery": "2023-06-21T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-23093"
+                "CVE-2023-3326"
             ],
             "freebsdsa": [
-                "SA-22:15.ping"
+                "SA-23:04.pam_krb5"
             ]
         },
-        "vid": "a005aea9-47bb-11ee-8e38-002590c1f29c"
+        "vid": "41af0277-47bf-11ee-8e38-002590c1f29c"
     },
-    "details": "# Problem Description:\n\nping reads raw IP packets from the network to process responses in the\npr_pack() function. As part of processing a response ping has to\nreconstruct the IP header, the ICMP header and if present a \\\"quoted\npacket,\\\" which represents the packet that generated an ICMP error. The\nquoted packet again has an IP header and an ICMP header.\n\nThe pr_pack() copies received IP and ICMP headers into stack buffers for\nfurther processing. In so doing, it fails to take into account the\npossible presence of IP option headers following the IP header in either\nthe response or the quoted packet. When IP options are present,\npr_pack() overflows the destination buffer by up to 40 bytes.\n\n# Impact:\n\nThe memory safety bugs described above can be triggered by a remote\nhost, causing the ping program to crash.\n\nThe ping process runs in a capability mode sandbox on all affected\nversions of FreeBSD and is thus very constrained in how it can interact\nwith the rest of the system at the point where the bug can occur.\n",
+    "details": "# Problem Description:\n\npam_krb5 authenticates the user by essentially running kinit(1) with the\npassword, getting a \\`ticket-granting ticket\\' (tgt) from the Kerberos\nKDC (Key Distribution Center) over the network, as a way to verify the\npassword.\n\nNormally, the system running the pam_krb5 module will also have a\nkeytab, a key provisioned by the KDC. The pam_krb5 module will use the\ntgt to get a service ticket and validate it against the keytab, ensuring\nthe tgt is valid and therefore, the password is valid.\n\nHowever, if a keytab is not provisioned on the system, pam_krb5 has no\nway to validate the response from the KDC, and essentially trusts the\ntgt provided over the network as being valid.\n\n# Impact:\n\nIn a non-default FreeBSD installation that leverages pam_krb5 for\nauthentication and does not have a keytab provisioned, an attacker that\nis able to control both the password and the KDC responses can return a\nvalid tgt, allowing authentication to occur for any user on the system.\n",
     "id": "FreeBSD-2023-0238",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-23093"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3326"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-22:15.ping.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-23:04.pam_krb5.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Stack overflow in ping(8)"
+    "summary": "FreeBSD -- Network authentication attack via pam_krb5"
 }

@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.3.6"
+                            "last_affected": "4.3.6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.3.6"
+                            "last_affected": "4.3.6"
                         }
                     ],
                     "type": "ECOSYSTEM"

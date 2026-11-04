@@ -1,0 +1,110 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openresty"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.31.8.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://openresty.org/en/changelog-1031008.html"
+        ],
+        "discovery": "2026-10-26T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-42530",
+                "CVE-2026-42055",
+                "CVE-2026-48142",
+                "CVE-2026-42533",
+                "CVE-2026-60005",
+                "CVE-2026-56434",
+                "CVE-2026-90439",
+                "CVE-2026-15176",
+                "CVE-2026-93479",
+                "CVE-2026-95101",
+                "CVE-2026-97629",
+                "CVE-2026-97205"
+            ]
+        },
+        "vid": "4d4c2b6e-d433-11f1-a215-a0369f7f7be0"
+    },
+    "details": "The OpenResty developers report:\n\n> The nginx core was upgraded from nginx 1.31.1 to 1.31.8, which\n> incorporates 12 CVE fixes, grouped by the first fixed version: 1.31.2:\n> HTTP/3 use-after-free (CVE-2026-42530), HTTP/2 and gRPC upstream\n> buffer overflow (CVE-2026-42055), and charset conversion buffer\n> overread (CVE-2026-48142); 1.31.3: buffer overflow involving map and\n> regex (CVE-2026-42533), memory disclosure involving slice or\n> background cache updates (CVE-2026-60005), and SSI use-after-free\n> (CVE-2026-56434); 1.31.6: HTTP/3 heap buffer overflow with certain\n> OpenSSL versions and configurations (CVE-2026-90439); 1.31.7: buffer\n> overflow involving alias and rewrite (CVE-2026-15176), buffer overflow\n> during variable expression evaluation (CVE-2026-93479), HTTP/3 request\n> body injection (CVE-2026-95101), TLS session ticket forgery\n> (CVE-2026-97629), and AIO and SSI use-after-free (CVE-2026-97205).\n",
+    "id": "FreeBSD-2026-0565",
+    "modified": "2026-10-30T00:00:00Z",
+    "published": "2026-10-30T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://openresty.org/en/changelog-1031008.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42530"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42055"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-48142"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-42533"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-60005"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-56434"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-90439"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-15176"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-93479"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-95101"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97629"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97205"
+        },
+        {
+            "type": "WEB",
+            "url": "https://nginx.org/en/security_advisories.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "OpenResty -- multiple vulnerabilities in the bundled nginx core"
+}

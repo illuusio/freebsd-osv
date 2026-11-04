@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "9.12.0.a.2016.10.21"
+                            "last_affected": "9.12.0.a.2016.10.21"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "173.14.35_3"
+                            "last_affected": "173.14.35_3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "96.43.23_2"
+                            "last_affected": "96.43.23_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "71.86.15_4"
+                            "last_affected": "71.86.15_4"
                         }
                     ],
                     "type": "ECOSYSTEM"

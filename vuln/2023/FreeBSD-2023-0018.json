@@ -124,7 +124,6 @@
             "cvename": [
                 "CVE-2022-32221",
                 "CVE-2022-24407",
-                "CVE-2022-24407",
                 "CVE-2022-3171",
                 "CVE-2022-1941",
                 "CVE-2023-21868",
@@ -168,10 +167,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2022-32221"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-24407"
         },
         {
             "type": "ADVISORY",

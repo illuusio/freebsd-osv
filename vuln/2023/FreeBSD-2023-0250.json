@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-markdown2"
+                "name": "py37-Flask-Cors"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.4.0"
+                            "fixed": "3.0.9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-markdown2"
+                "name": "py38-Flask-Cors"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.4.0"
+                            "fixed": "3.0.9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-markdown2"
+                "name": "py39-Flask-Cors"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.4.0"
+                            "fixed": "3.0.9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-markdown2"
+                "name": "py310-Flask-Cors"
             },
             "ranges": [
                 {
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.4.0"
+                            "fixed": "3.0.9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-markdown2"
+                "name": "py311-Flask-Cors"
             },
             "ranges": [
                 {
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.4.0"
+                            "fixed": "3.0.9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,34 +98,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2021-20"
+            "https://osv.dev/vulnerability/PYSEC-2020-43"
         ],
-        "discovery": "2021-03-03T00:00:00Z",
+        "discovery": "2020-08-31T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2021-26813"
+                "CVE-2020-25032"
             ]
         },
-        "vid": "c9b3324f-8e03-4ae3-89ce-8098cdc5bfa9"
+        "vid": "252f40cb-618c-47f4-a2cf-1abf30cffbbe"
     },
-    "details": "Ben Caller reports:\n\n> markdown2 \\>=1.0.1.18, fixed in 2.4.0, is affected by a regular\n> expression denial of service vulnerability.\n>\n> If an attacker provides a malicious string, it can make markdown2\n> processing difficult or delayed for an extended period of time.\n",
+    "details": "praetorian-colby-morgan reports:\n\n> An issue was discovered in Flask-CORS (aka CORS Middleware for Flask)\n> before 3.0.9.\n>\n> It allows ../ directory traversal to access private resources because\n> resource matching does not ensure that pathnames are in a canonical\n> format.\n",
     "id": "FreeBSD-2023-0250",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2021-20"
+            "url": "https://osv.dev/vulnerability/PYSEC-2020-43"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-26813"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-25032"
         },
         {
             "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-jr9p-r423-9m2r"
+            "url": "https://osv.dev/vulnerability/GHSA-xc3p-ff3m-f46v"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-markdown2 -- regular expression denial of service vulnerability"
+    "summary": "py-Flask-Cors -- directory traversal vulnerability"
 }

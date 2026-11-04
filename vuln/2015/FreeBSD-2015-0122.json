@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "20000804_3"
+                            "last_affected": "20000804_3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "090315.c_2"
+                            "last_affected": "090315.c_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "090315.c_2"
+                            "last_affected": "090315.c_2"
                         }
                     ],
                     "type": "ECOSYSTEM"

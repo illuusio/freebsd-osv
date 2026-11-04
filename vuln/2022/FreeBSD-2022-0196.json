@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.4.12"
+                            "last_affected": "1.4.12"
                         }
                     ],
                     "type": "ECOSYSTEM"

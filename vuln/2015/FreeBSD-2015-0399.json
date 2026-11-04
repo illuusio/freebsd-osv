@@ -34,7 +34,7 @@
                             "introduced": "3.1.0"
                         },
                         {
-                            "fixed": "3.1.0"
+                            "last_affected": "3.1.0"
                         }
                     ],
                     "type": "ECOSYSTEM"

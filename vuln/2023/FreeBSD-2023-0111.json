@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-py"
+                "name": "py37-setuptools"
             },
             "ranges": [
                 {
@@ -12,7 +12,197 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.11.0"
+                            "fixed": "63.1.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-setuptools"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "63.1.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-setuptools"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "63.1.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-setuptools"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "63.1.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-setuptools"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "63.1.0_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py37-setuptools58"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "58.5.3_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-setuptools58"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "58.5.3_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-setuptools58"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "58.5.3_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-setuptools58"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "58.5.3_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-setuptools58"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "58.5.3_3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py27-setuptools44"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "44.1.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +212,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2022-42969"
+            "https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579"
         ],
-        "discovery": "2022-11-04T00:00:00Z",
+        "discovery": "2022-12-23T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-42969"
+                "CVE-2022-40897"
             ]
         },
-        "vid": "28a37df6-ba1a-4eed-bb64-623fc8e8dfd0"
+        "vid": "1b38aec4-4149-4c7d-851c-3c4de3a1fbd0"
     },
-    "details": "SCH227 reports:\n\n> The py library through 1.11.0 for Python allows remote attackers to\n> conduct a ReDoS (Regular expression Denial of Service) attack via a\n> Subversion repository with crafted info data, because the\n> InfoSvnCommand argument is mishandled.\n",
+    "details": "SCH227 reports:\n\n> Python Packaging Authority (PyPA)\\'s setuptools is a library designed\n> to facilitate packaging Python projects.\n>\n> Setuptools version 65.5.0 and earlier could allow remote attackers to\n> cause a denial of service by fetching malicious HTML from a PyPI\n> package or custom PackageIndex page due to a vulnerable Regular\n> Expression in \\`package_index\\`.\n>\n> This has been patched in version 65.5.1. The patch backported to the\n> revision 63.1.0_1.\n",
     "id": "FreeBSD-2023-0111",
-    "modified": "2023-04-09T00:00:00Z",
+    "modified": "2026-10-31T00:00:00Z",
     "published": "2023-04-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2022-42969"
+            "url": "https://osv.dev/vulnerability/GHSA-r9hx-vwmv-q579"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-42969"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-w596-4wvx-j9j6"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-40897"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py39-py -- Regular expression Denial of Service vulnerability"
+    "summary": "py-setuptools -- denial of service vulnerability"
 }

@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "rsync"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.5.1_1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.vulncheck.com/advisories/rsync-through-3.5.1-denial-of-service-via-hash-search-checksum-collisions"
+        ],
+        "discovery": "2026-11-03T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-119741"
+            ]
+        },
+        "vid": "c70f21b6-d7b4-11f1-bae2-3497f65b111b"
+    },
+    "details": "VulnCheck reports:\n\n> rsync through 3.5.1 contains a denial of service vulnerability in the\n> delta-transfer sender\\'s hash_search() in match.c that allows\n> malicious receivers to trigger unbounded strong-checksum work at\n> consecutive offsets. Unauthenticated attackers pulling from a public\n> daemon module can supply weak checksums colliding with consecutive\n> rolling windows plus non-matching strong checksums, exhausting sender\n> CPU across concurrent connections.\n",
+    "id": "FreeBSD-2026-0595",
+    "modified": "2026-11-03T00:00:00Z",
+    "published": "2026-11-03T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.vulncheck.com/advisories/rsync-through-3.5.1-denial-of-service-via-hash-search-checksum-collisions"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119741"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/RsyncProject/rsync/commit/a7404a9a633cff28ee1602f328b9c3fa69cdbd04"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "net/rsync -- denial of service"
+}

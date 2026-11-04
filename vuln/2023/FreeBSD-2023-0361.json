@@ -3,38 +3,35 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitlab-ce"
+                "name": "chromium"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "16.6.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "16.6.2"
+                            "fixed": "120.0.6099.129"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "16.5.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "16.5.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "8.17.0"
-                        },
-                        {
-                            "fixed": "16.4.4"
+                            "fixed": "120.0.6099.129"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -44,65 +41,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://about.gitlab.com/releases/2023/12/13/security-release-gitlab-16-6-2-released/"
+            "https://chromereleases.googleblog.com/2023/12/stable-channel-update-for-desktop_20.html"
         ],
-        "discovery": "2023-12-13T00:00:00Z",
+        "discovery": "2023-12-20T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-6680",
-                "CVE-2023-6564",
-                "CVE-2023-6051",
-                "CVE-2023-3907",
-                "CVE-2023-5512",
-                "CVE-2023-3904",
-                "CVE-2023-5061",
-                "CVE-2023-3511"
+                "CVE-2023-7024"
             ]
         },
-        "vid": "e2fb85ce-9a3c-11ee-af26-001b217b3468"
+        "vid": "1b2a8e8a-9fd5-11ee-86bb-a8a1599412c6"
     },
-    "details": "Gitlab reports:\n\n> Smartcard authentication allows impersonation of arbitrary user using\n> user\\'s public certificate\n>\n> When subgroup is allowed to merge or push to protected branches,\n> subgroup members with the Developer role may gain the ability to push\n> or merge\n>\n> The GitLab web interface does not ensure the integrity of information\n> when downloading the source code from installation packages or tags\n>\n> Project maintainer can escalate to Project owner using project access\n> token rotate API\n>\n> Omission of Double Encoding in File Names Facilitates the Creation of\n> Repositories with Malicious Content\n>\n> Unvalidated timeSpent value leads to unable to load issues on Issue\n> board\n>\n> Developer can bypass predefined variables via REST API\n>\n> Auditor users can create merge requests on projects they don\\'t have\n> access to\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 1 security fix:\n>\n> - \\[1513170\\] High CVE-2023-7024: Heap buffer overflow in WebRTC.\n>   Reported by Cl\u00e9ment Lecigne and Vlad Stolyarov of Google\\'s Threat\n>   Analysis Group on 2023-12-19\n",
     "id": "FreeBSD-2023-0361",
-    "modified": "2023-12-14T00:00:00Z",
-    "published": "2023-12-14T00:00:00Z",
+    "modified": "2023-12-21T00:00:00Z",
+    "published": "2023-12-21T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://about.gitlab.com/releases/2023/12/13/security-release-gitlab-16-6-2-released/"
+            "url": "https://chromereleases.googleblog.com/2023/12/stable-channel-update-for-desktop_20.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6680"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6564"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6051"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3907"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5512"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3904"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5061"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3511"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-7024"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Gitlab -- vulnerabilities"
+    "summary": "chromium -- security fix"
 }

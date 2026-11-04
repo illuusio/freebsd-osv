@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "phpmyfaq-php80"
+                "name": "gitea"
             },
             "ranges": [
                 {
@@ -12,64 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.1.16"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "phpmyfaq-php81"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.1.16"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "phpmyfaq-php82"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.1.16"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "phpmyfaq-php83"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.1.16"
+                            "fixed": "1.20.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,29 +22,29 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.phpmyfaq.de/security/advisory-2023-07-16"
+            "https://github.com/go-gitea/gitea/pull/25097"
         ],
-        "discovery": "2023-07-16T00:00:00Z",
-        "vid": "ddd3fcc9-2bdd-11ee-9af4-589cfc0f81b0"
+        "discovery": "2023-06-06T00:00:00Z",
+        "vid": "36a37c92-44b1-11ee-b091-6162c1274384"
     },
-    "details": "phpmyfaq developers report:\n\n> Cross Site Scripting vulnerability\n>\n> CSV injection vulnerability\n",
+    "details": "The Gitea team reports:\n\n> Fix API leaking Usermail if not logged in\n>\n> The API should only return the real Mail of a User, if the caller is\n> logged in. The check do to this don\\'t work. This PR fixes this. This\n> not really a security issue, but can lead to Spam.\n",
     "id": "FreeBSD-2023-0231",
-    "modified": "2023-08-23T00:00:00Z",
-    "published": "2023-08-23T00:00:00Z",
+    "modified": "2023-08-27T00:00:00Z",
+    "published": "2023-08-27T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.phpmyfaq.de/security/advisory-2023-07-16"
+            "url": "https://github.com/go-gitea/gitea/pull/25097"
         },
         {
             "type": "WEB",
-            "url": "https://huntr.dev/bounties/e891dcbc-2092-49d3-9518-23e37187a5ea/"
+            "url": "https://blog.gitea.com/release-of-1.20.3"
         },
         {
             "type": "WEB",
-            "url": "https://huntr.dev/bounties/36149a42-cbd5-445e-a371-e351c899b189/"
+            "url": "https://github.com/go-gitea/gitea/releases/tag/v1.20.3"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "phpmyfaq -- multiple vulnerabilities"
+    "summary": "gitea -- information disclosure"
 }

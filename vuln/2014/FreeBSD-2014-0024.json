@@ -74,6 +74,11 @@
             "http://subversion.apache.org/security/"
         ],
         "discovery": "2014-01-10T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2014-0032"
+            ]
+        },
         "vid": "1839f78c-9f2b-11e3-980f-20cf30e32f6d"
     },
     "details": "Subversion Project reports:\n\n> Subversion\\'s mod_dav_svn Apache HTTPD server module will crash when\n> it receives an OPTIONS request against the server root and Subversion\n> is configured to handle the server root and SVNListParentPath is on.\n> This can lead to a DoS. There are no known instances of this problem\n> being exploited in the wild, but the details of how to exploit it have\n> been disclosed on the Subversion development mailing list.\n",
@@ -86,8 +91,8 @@
             "url": "http://subversion.apache.org/security/"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2014-0032"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2014-0032"
         },
         {
             "type": "WEB",

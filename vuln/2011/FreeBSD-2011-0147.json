@@ -20,7 +20,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "11,1"
+                            "introduced": "11"
                         },
                         {
                             "fixed": "11.1r102.55"

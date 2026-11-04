@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "http://piwik.org/blog/2012/02/7775/"
-        },
-        {
-            "type": "WEB",
-            "url": "\"http://piwik.org/blog/2012/02/7775/\""
         }
     ],
     "schema_version": "1.7.0",

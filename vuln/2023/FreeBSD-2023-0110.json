@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-joblib"
+                "name": "py37-sentry-sdk"
             },
             "ranges": [
                 {
@@ -12,7 +12,83 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.2.0"
+                            "fixed": "1.14.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-sentry-sdk"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.14.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-sentry-sdk"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.14.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-sentry-sdk"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.14.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-sentry-sdk"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.14.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +98,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2022-288"
+            "https://osv.dev/vulnerability/GHSA-29pr-6jr8-q5jm"
         ],
-        "discovery": "2022-09-26T00:00:00Z",
+        "discovery": "2023-03-21T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-21797"
+                "CVE-2023-28117"
             ]
         },
-        "vid": "845f8430-d0ee-4134-ae35-480a3e139b8a"
+        "vid": "15dae5cc-9ee6-4577-a93e-2ab57780e707"
     },
-    "details": "jimlinntu reports:\n\n> The package joblib from 0 and before 1.2.0 are vulnerable to Arbitrary\n> Code Execution via the pre_dispatch flag in Parallel() class due to\n> the eval() statement.\n",
+    "details": "Tom Wolters reports:\n\n> When using the Django integration of the Sentry SDK in a specific\n> configuration it is possible to leak sensitive cookies values,\n> including the session cookie to Sentry.\n>\n> These sensitive cookies could then be used by someone with access to\n> your Sentry issues to impersonate or escalate their privileges within\n> your application.\n",
     "id": "FreeBSD-2023-0110",
-    "modified": "2023-04-09T00:00:00Z",
+    "modified": "2026-10-31T00:00:00Z",
     "published": "2023-04-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2022-288"
+            "url": "https://osv.dev/vulnerability/GHSA-29pr-6jr8-q5jm"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-21797"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-6hrg-qmvc-2xh8"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28117"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py39-joblib -- arbitrary code execution"
+    "summary": "py-sentry-sdk -- sensitive cookies leak"
 }

@@ -3,38 +3,92 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "FreeBSD"
+                "name": "py37-markdown2"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "13.2"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "13.2_2"
+                            "fixed": "2.4.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-markdown2"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "13.1"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "13.1_9"
+                            "fixed": "2.4.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-markdown2"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "12.4"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "12.4_4"
+                            "fixed": "2.4.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-markdown2"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.4.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-markdown2"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.4.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -43,31 +97,35 @@
         }
     ],
     "database_specific": {
-        "discovery": "2023-08-01T00:00:00Z",
+        "cite": [
+            "https://osv.dev/vulnerability/PYSEC-2021-20"
+        ],
+        "discovery": "2021-03-03T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-38408"
-            ],
-            "freebsdsa": [
-                "SA-23:08.ssh"
+                "CVE-2021-26813"
             ]
         },
-        "vid": "291d0953-47c1-11ee-8e38-002590c1f29c"
+        "vid": "c9b3324f-8e03-4ae3-89ce-8098cdc5bfa9"
     },
-    "details": "# Problem Description:\n\nThe server may cause ssh-agent to load shared libraries other than those\nrequired for PKCS#11 support. These shared libraries may have side\neffects that occur on load and unload (dlopen and dlclose).\n\n# Impact:\n\nAn attacker with access to a server that accepts a forwarded ssh-agent\nconnection may be able to execute code on the machine running ssh-agent.\nNote that the attack relies on properties of operating system-provided\nlibraries. This has been demonstrated on other operating systems; it is\nunknown whether this attack is possible using the libraries provided by\na FreeBSD installation.\n",
+    "details": "Ben Caller reports:\n\n> markdown2 \\>=1.0.1.18, fixed in 2.4.0, is affected by a regular\n> expression denial of service vulnerability.\n>\n> If an attacker provides a malicious string, it can make markdown2\n> processing difficult or delayed for an extended period of time.\n",
     "id": "FreeBSD-2023-0246",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-38408"
+            "type": "REPORT",
+            "url": "https://osv.dev/vulnerability/PYSEC-2021-20"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-23:08.ssh.asc"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-26813"
+        },
+        {
+            "type": "WEB",
+            "url": "https://osv.dev/vulnerability/GHSA-jr9p-r423-9m2r"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Potential remote code execution via ssh-agent forwarding"
+    "summary": "py-markdown2 -- regular expression denial of service vulnerability"
 }

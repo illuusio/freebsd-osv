@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "postgresql-server"
+                "name": "chromium"
             },
             "ranges": [
                 {
@@ -12,62 +12,64 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "16.1"
+                            "fixed": "119.0.6045.159"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
                             "introduced": "0"
                         },
                         {
-                            "fixed": "15.5"
+                            "fixed": "119.0.6045.159"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "qt5-webengine"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
                             "introduced": "0"
                         },
                         {
-                            "fixed": "14.10"
+                            "fixed": "5.15.16.p5"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "qt6-webengine"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
                             "introduced": "0"
                         },
                         {
-                            "fixed": "13.13"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "12.17"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "11.22"
+                            "fixed": "6.6.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -77,30 +79,35 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.postgresql.org/support/security/CVE-2023-5868/"
+            "https://chromereleases.googleblog.com/2023/11/stable-channel-update-for-desktop_14.html"
         ],
-        "discovery": "2023-11-09T00:00:00Z",
+        "discovery": "2023-11-14T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-5868"
+                "CVE-2023-5997",
+                "CVE-2023-6112"
             ]
         },
-        "vid": "31f45d06-7f0e-11ee-94b4-6cc21735f730"
+        "vid": "0da4db89-84bf-11ee-8290-a8a1599412c6"
     },
-    "details": "PostgreSQL Project reports:\n\n> Certain aggregate function calls receiving \\\"unknown\\\"-type arguments\n> could disclose bytes of server memory from the end of the\n> \\\"unknown\\\"-type value to the next zero byte. One typically gets an\n> \\\"unknown\\\"-type value via a string literal having no type\n> designation. We have not confirmed or ruled out viability of attacks\n> that arrange for presence of notable, confidential information in\n> disclosed bytes.\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 4 security fixes:\n>\n> - \\[1497997\\] High CVE-2023-5997: Use after free in Garbage\n>   Collection. Reported by Anonymous on 2023-10-31\n> - \\[1499298\\] High CVE-2023-6112: Use after free in Navigation.\n>   Reported by Sergei Glazunov of Google Project Zero on 2023-11-04\n",
     "id": "FreeBSD-2023-0341",
-    "modified": "2023-11-09T00:00:00Z",
-    "published": "2023-11-09T00:00:00Z",
+    "modified": "2023-11-16T00:00:00Z",
+    "published": "2023-11-16T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.postgresql.org/support/security/CVE-2023-5868/"
+            "url": "https://chromereleases.googleblog.com/2023/11/stable-channel-update-for-desktop_14.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5868"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-5997"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6112"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "postgresql-server -- Memory disclosure in aggregate function calls"
+    "summary": "chromium -- multiple security fixes"
 }

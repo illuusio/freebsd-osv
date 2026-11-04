@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "samba416"
+                "name": "typo3-11-php80"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.16.11"
+                            "fixed": "11.5.30"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "samba413"
+                "name": "typo3-11-php81"
             },
             "ranges": [
                 {
@@ -31,7 +31,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.13.17_6"
+                            "fixed": "11.5.30"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "typo3-12-php80"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "12.4.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "typo3-12-php81"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "12.4.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,70 +79,44 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.samba.org/samba/latest_news.html#4.18.5"
+            "https://typo3.org/article/typo3-1211-11520-and-10433-security-releases-published"
         ],
-        "discovery": "2023-07-19T00:00:00Z",
+        "discovery": "2023-07-25T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-34967",
-                "CVE-2022-2127",
-                "CVE-2023-34968",
-                "CVE-2023-34966",
-                "CVE-2023-3347"
+                "CVE-2023-38500",
+                "CVE-2023-38499",
+                "CVE-2023-37905"
             ]
         },
-        "vid": "441e1e1a-27a5-11ee-a156-080027f5fec9"
+        "vid": "b1ac663f-3aa9-11ee-b887-b42e991fc52e"
     },
-    "details": "The Samba Team reports:\n\n> \n>\n> CVE-2023-34967: Samba Spotlight mdssvc RPC Request Type Confusion DoS Vulnerability\n> : When parsing Spotlight mdssvc RPC packets, one encoded data\n>   structure is a key-value style dictionary where keys are character\n>   strings and values can be any of the supported types in the mdssvc\n>   protocol. Due to a lack of type checking in callers of the function\n>   dalloc_value_for_key(), which returns the object associated with a\n>   key, a caller may trigger a crash in talloc_get_size() when talloc\n>   detects that the passed in pointer is not a valid talloc pointer. As\n>   RPC worker processes are shared among multiple client connections, a\n>   malicious client can crash the worker process affecting all other\n>   clients that are also served by this worker.\n>\n> CVE-2022-2127: Out-Of-Bounds read in winbind AUTH_CRAP\n> : When doing NTLM authentication, the client sends replies to\n>   cryptographic challenges back to the server. These replies have\n>   variable length. Winbind did not properly bounds-check the lan\n>   manager response length, which despite the lan manager version no\n>   longer being used is still part of the protocol. If the system is\n>   running Samba\\'s ntlm_auth as authentication backend for services\n>   like Squid (or a very unusual configuration with FreeRADIUS), the\n>   vulnarebility is remotely exploitable. If not so configured, or to\n>   exploit this vulnerability locally, the user must have access to the\n>   privileged winbindd UNIX domain socket (a subdirectory with name\n>   \\'winbindd_privileged\\' under \\\"state directory\\\", as set in the\n>   smb.conf). This access is normally only given so special system\n>   services like Squid or FreeRADIUS, use this feature.\n>\n> CVE-2023-34968: Spotlight server-side Share Path Disclosure\n> : As part of the Spotlight protocol, the initial request returns a\n>   path associated with the sharename targeted by the RPC request.\n>   Samba returns the real server-side share path at this point, as well\n>   as returning the absolute server-side path of results in search\n>   queries by clients. Known server side paths could be used to mount\n>   subsequent more serious security attacks or could disclose\n>   confidential information that is part of the path. To mitigate the\n>   issue, Samba will replace the real server-side path with a fake path\n>   constructed from the sharename.\n>\n> CVE-2023-34966: Samba Spotlight mdssvc RPC Request Infinite Loop DoS Vulnerability\n> : When parsing Spotlight mdssvc RPC packets sent by the client, the\n>   core unmarshalling function sl_unpack_loop() did not validate a\n>   field in the network packet that contains the count of elements in\n>   an array-like structure. By passing 0 as the count value, the\n>   attacked function will run in an endless loop consuming 100% CPU.\n>   This bug only affects servers where Spotlight is explicitly enabled\n>   globally or on individual shares with \\\"spotlight = yes\\\".\n>\n> CVE-2023-3347: SMB2 packet signing not enforced\n> : SMB2 packet signing is not enforced if an admin configured \\\"server\n>   signing = required\\\" or for SMB2 connections to Domain Controllers\n>   where SMB2 packet signing is mandatory. SMB2 packet signing is a\n>   mechanism that ensures the integrity and authenticity of data\n>   exchanged between a client and a server using the SMB2 protocol. It\n>   provides protection against certain types of attacks, such as\n>   man-in-the-middle attacks, where an attacker intercepts network\n>   traffic and modifies the SMB2 messages. Both client and server of an\n>   SMB2 connection can require that signing is being used. The\n>   server-side setting in Samba to configure signing to be required is\n>   \\\"server signing = required\\\". Note that on an Samba AD DCs this is\n>   also the default for all SMB2 connections. Unless the client\n>   requires signing which would result in signing being used on the\n>   SMB2 connection, sensitive data might have been modified by an\n>   attacker. Clients connecting to IPC\\$ on an AD DC will require\n>   signed connections being used, so the integrity of these connections\n>   was not affected.\n",
+    "details": "TYPO3 reports:\n\n> TYPO3-CORE-SA-2023-002: By-passing Cross-Site Scripting Protection in\n> HTML Sanitizer\n>\n> TYPO3-CORE-SA-2023-003: Information Disclosure due to Out-of-scope\n> Site Resolution\n>\n> TYPO3-CORE-SA-2023-004: Cross-Site Scripting in CKEditor4 WordCount\n> Plugin\n",
     "id": "FreeBSD-2023-0221",
-    "modified": "2023-08-05T00:00:00Z",
-    "published": "2023-08-05T00:00:00Z",
+    "modified": "2023-08-14T00:00:00Z",
+    "published": "2023-08-14T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.samba.org/samba/latest_news.html#4.18.5"
+            "url": "https://typo3.org/article/typo3-1211-11520-and-10433-security-releases-published"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-34967"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-38500"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-2127"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-38499"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-34968"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-34966"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3347"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-37905"
         },
         {
             "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2023-34967.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2022-2127.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2023-34968.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2023-34966.html"
-        },
-        {
-            "type": "WEB",
-            "url": "https://www.samba.org/samba/security/CVE-2023-3347.html"
+            "url": "https://typo3.org/article/typo3-1244-and-11530-security-releases-published"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "samba -- multiple vulnerabilities"
+    "summary": "typo3 -- multiple vulnerabilities"
 }

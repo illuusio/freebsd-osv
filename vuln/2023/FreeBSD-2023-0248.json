@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-dparse"
+                "name": "py37-django-photologue"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.5.2"
+                            "last_affected": "3.15_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-dparse"
+                "name": "py38-django-photologue"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.5.2"
+                            "last_affected": "3.15_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-dparse"
+                "name": "py39-django-photologue"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.5.2"
+                            "last_affected": "3.15_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-dparse"
+                "name": "py310-django-photologue"
             },
             "ranges": [
                 {
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.5.2"
+                            "last_affected": "3.15_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-dparse"
+                "name": "py311-django-photologue"
             },
             "ranges": [
                 {
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.5.2"
+                            "last_affected": "3.15_1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,34 +98,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2022-301"
+            "https://osv.dev/vulnerability/GHSA-287q-jfcp-9vhv"
         ],
-        "discovery": "2022-10-06T00:00:00Z",
+        "discovery": "2022-12-15T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-39280"
+                "CVE-2022-4526"
             ]
         },
-        "vid": "83b29e3f-886f-439f-b9a8-72e014479ff9"
+        "vid": "c2c89dea-2859-4231-8f3b-012be0d475ff"
     },
-    "details": "yeisonvargasf reports:\n\n> dparse is a parser for Python dependency files.\n>\n> dparse in versions before 0.5.2 contain a regular expression that is\n> vulnerable to a Regular Expression Denial of Service.\n>\n> All the users parsing index server URLs with dparse are impacted by\n> this vulnerability.\n>\n> Users unable to upgrade should avoid passing index server URLs in the\n> source file to be parsed.\n",
+    "details": "domiee13 reports:\n\n> A vulnerability was found in django-photologue up to 3.15.1 and\n> classified as problematic.\n>\n> Affected by this issue is some unknown functionality of the file\n> photologue/templates/photologue/photo_detail.html of the component\n> Default Template Handler.\n>\n> The manipulation of the argument object.caption leads to cross site\n> scripting.\n>\n> The attack may be launched remotely.\n>\n> Upgrading to version 3.16 is able to address this issue.\n>\n> The name of the patch is 960cb060ce5e2964e6d716ff787c72fc18a371e7.\n>\n> It is recommended to apply a patch to fix this issue.\n>\n> VDB-215906 is the identifier assigned to this vulnerability.\n",
     "id": "FreeBSD-2023-0248",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2022-301"
+            "url": "https://osv.dev/vulnerability/GHSA-287q-jfcp-9vhv"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-39280"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-8fg9-p83m-x5pq"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-4526"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-dparse -- REDoS vulnerability"
+    "summary": "py-django-photologue -- XSS vulnerability"
 }

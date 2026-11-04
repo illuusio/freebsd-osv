@@ -38,7 +38,7 @@
         },
         {
             "type": "WEB",
-            "url": "ttps://github.com/go-gitea/gitea/pull/4840"
+            "url": "https://github.com/go-gitea/gitea/pull/4840"
         }
     ],
     "schema_version": "1.7.0",

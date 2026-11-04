@@ -9,10 +9,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "9.3.0,1"
                         },
                         {
-                            "fixed": "10.0.8,1"
+                            "fixed": "10.0.10,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +22,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/glpi-project/glpi/releases/tag/10.0.8"
+            "https://github.com/glpi-project/glpi/security/advisories/GHSA-58wj-8jhx-jpm3"
         ],
-        "discovery": "2023-07-05T00:00:00Z",
+        "discovery": "2023-09-27T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-34106"
+                "CVE-2023-41324"
             ]
         },
-        "vid": "40173815-6827-11ee-b06f-0050569ceb3a"
+        "vid": "95c4ec45-6831-11ee-b06f-0050569ceb3a"
     },
-    "details": "security-advisories@github.com reports:\n\n> GLPI is a free asset and IT management software package. Versions of\n> the software starting with 0.68 and prior to 10.0.8 have an incorrect\n> rights check on a on a file accessible by an authenticated user. This\n> allows access to the list of all users and their personal information.\n> Users should upgrade to version 10.0.8 to receive a patch.\n",
+    "details": "security-advisories@github.com reports:\n\n> GLPI stands for Gestionnaire Libre de Parc Informatique is a Free\n> Asset and IT Management Software package, that provides ITIL Service\n> Desk features, licenses tracking and software auditing. An API user\n> that have read access on users resource can steal accounts of other\n> users. Users are advised to upgrade to version 10.0.10. There are no\n> known workarounds for this vulnerability.\n",
     "id": "FreeBSD-2023-0376",
     "modified": "2023-10-11T00:00:00Z",
     "published": "2023-10-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/glpi-project/glpi/releases/tag/10.0.8"
+            "url": "https://github.com/glpi-project/glpi/security/advisories/GHSA-58wj-8jhx-jpm3"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-34106"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-41324"
         },
         {
             "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-34106"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-41324"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "GLPI vulnerable to unauthorized access to User data"
+    "summary": "Account takeover through API in GLPI"
 }

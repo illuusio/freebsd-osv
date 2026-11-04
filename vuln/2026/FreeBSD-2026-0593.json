@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "hurl"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.1.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/Orange-OpenSource/hurl/blob/master/CHANGELOG.md#8.1.0"
+        ],
+        "discovery": "2026-08-20T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-63481"
+            ]
+        },
+        "vid": "339bd17a-d6fc-11f1-97dc-40b034429ecf"
+    },
+    "details": "Hurl project reports:\n\n> Security Issues Fixed:\n>\n> - Fix CVE-2026-63481 stripping cookie from Cookies section when\n>   redirecting to a different host\n> - Fix escaping headers values in HTML report #5228\n> - Fix symlinks escaping file root #5289\n> - Fix credentials leaking using \\--header and following redirection\n>   #5310\n> - Add explicit nesting limit to JSON Body parsing #5317\n> - Fix escaping capture name in HTML report #5346\n",
+    "id": "FreeBSD-2026-0593",
+    "modified": "2026-11-02T00:00:00Z",
+    "published": "2026-11-02T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/Orange-OpenSource/hurl/blob/master/CHANGELOG.md#8.1.0"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-63481"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-7w2g-9mf9-324m"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "hurl -- multiple vulnerabilities"
+}

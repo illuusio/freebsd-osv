@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "2.2.0,1"
+                            "introduced": "2.2.0"
                         },
                         {
                             "fixed": "2.2.13_6"
@@ -20,7 +20,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "2.3.0,1"
+                            "introduced": "2.3.0"
                         },
                         {
                             "fixed": "2.3.14_2"

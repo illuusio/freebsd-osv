@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "8.2.*,1"
+                            "introduced": "8.2.*"
                         },
                         {
                             "fixed": "8.2.3_11"
@@ -20,7 +20,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "8.3.*,1"
+                            "introduced": "8.3.*"
                         },
                         {
                             "fixed": "8.3.5_10"
@@ -31,7 +31,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "8.4.*,2,1"
+                            "introduced": "8.4.*,2"
                         },
                         {
                             "fixed": "8.4.16,2"
@@ -50,7 +50,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "8.2.*,1"
+                            "introduced": "8.2.*"
                         },
                         {
                             "fixed": "8.2.3_11"
@@ -61,7 +61,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "8.3.*,1"
+                            "introduced": "8.3.*"
                         },
                         {
                             "fixed": "8.3.5_10"
@@ -72,7 +72,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "8.4.*,2,1"
+                            "introduced": "8.4.*,2"
                         },
                         {
                             "fixed": "8.4.16,2"

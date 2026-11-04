@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "14.1.1,1"
+                            "introduced": "14.1.1"
                         },
                         {
                             "fixed": "14.2.9"

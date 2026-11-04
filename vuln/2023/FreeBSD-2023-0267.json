@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "electron24"
+                "name": "py38-django32"
             },
             "ranges": [
                 {
@@ -12,7 +12,216 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "24.8.2"
+                            "fixed": "3.2.21"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-django32"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.2.21"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-django32"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.2.21"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-django32"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.2.21"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-django41"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-django41"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-django41"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-django41"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.1.11"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-django42"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-django42"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-django42"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-django42"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.2.5"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,61 +231,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/electron/electron/releases/tag/v24.8.2"
+            "https://www.djangoproject.com/weblog/2023/sep/04/security-releases/"
         ],
-        "discovery": "2023-08-30T00:00:00Z",
+        "discovery": "2023-09-01T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-4427",
-                "CVE-2023-4428",
-                "CVE-2023-4430",
-                "CVE-2023-4572"
+                "CVE-2023-41164"
             ]
         },
-        "vid": "29f050e9-3ef4-4c5f-8204-503b41caf181"
+        "vid": "8fd4f40a-4b7d-11ee-aa2a-080027de9982"
     },
-    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-4427.\n> - Security: backported fix for CVE-2023-4428.\n> - Security: backported fix for CVE-2023-4430.\n> - Security: backported fix for CVE-2023-4572.\n",
+    "details": "Django reports:\n\n> CVE-2023-41164: Potential denial of service vulnerability in\n> django.utils.encoding.uri_to_iri().\n",
     "id": "FreeBSD-2023-0267",
-    "modified": "2023-08-31T00:00:00Z",
-    "published": "2023-08-31T00:00:00Z",
+    "modified": "2023-09-04T00:00:00Z",
+    "published": "2023-09-04T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/electron/electron/releases/tag/v24.8.2"
+            "url": "https://www.djangoproject.com/weblog/2023/sep/04/security-releases/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4427"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-qqwc-fhxf-4mf3"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4428"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-m56x-9vph-h345"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4430"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-h295-rcc5-87jh"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4572"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-6994-5wq3-gpjv"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-41164"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "electron24 -- multiple vulnerabilities"
+    "summary": "Django -- multiple vulnerabilities"
 }

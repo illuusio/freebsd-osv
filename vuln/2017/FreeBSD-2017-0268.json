@@ -12,7 +12,7 @@
                             "introduced": "2.2.0"
                         },
                         {
-                            "fixed": "2.2.9"
+                            "last_affected": "2.2.9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -23,7 +23,7 @@
                             "introduced": "2.4.0"
                         },
                         {
-                            "fixed": "2.4.1"
+                            "last_affected": "2.4.1"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -47,7 +47,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.7"
+                            "last_affected": "4.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -86,7 +86,7 @@
         },
         {
             "type": "WEB",
-            "url": "ftp://ftp.netbsd.org/pub/NetBSD/security/advisories/NetBSD-SA2004-009.txt.asc"
+            "url": "https://ftp.netbsd.org/pub/NetBSD/security/advisories/NetBSD-SA2004-009.txt.asc"
         },
         {
             "type": "DISCUSSION",

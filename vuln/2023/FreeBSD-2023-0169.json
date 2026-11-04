@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "phpmyfaq"
+                "name": "openssl"
             },
             "ranges": [
                 {
@@ -12,7 +12,64 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.1.14"
+                            "fixed": "1.1.1u,1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl30"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.0.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl31"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.1.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openssl-quictls"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.0.9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,29 +79,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.phpmyfaq.de/security/advisory-2023-04-23"
+            "https://www.openssl.org/news/secadv/20230530.txt"
         ],
-        "discovery": "2023-05-17T00:00:00Z",
-        "vid": "7d6be8d4-f812-11ed-a7ff-589cfc0f81b0"
+        "discovery": "2023-05-30T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2023-2650"
+            ]
+        },
+        "vid": "eb9a3c57-ff9e-11ed-a0d1-84a93843eb75"
     },
-    "details": "phpmyfaq developers report:\n\n> Multiple XSS vulnerabilities\n",
+    "details": "The OpenSSL project reports:\n\n> Severity: Moderate. Processing some specially crafted ASN.1 object\n> identifiers or data containing them may be very slow.\n",
     "id": "FreeBSD-2023-0169",
-    "modified": "2023-05-21T00:00:00Z",
-    "published": "2023-05-21T00:00:00Z",
+    "modified": "2023-05-31T00:00:00Z",
+    "published": "2023-05-31T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.phpmyfaq.de/security/advisory-2023-04-23"
+            "url": "https://www.openssl.org/news/secadv/20230530.txt"
         },
         {
-            "type": "WEB",
-            "url": "https://huntr.dev/bounties/4d89c7cc-fb4c-4b64-9b67-f0189f70a620/"
-        },
-        {
-            "type": "WEB",
-            "url": "https://huntr.dev/bounties/8282d78e-f399-4bf4-8403-f39103a31e78/"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2650"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "phpmyfaq -- multiple vulnerabilities"
+    "summary": "OpenSSL -- Possible DoS translating ASN.1 identifiers"
 }

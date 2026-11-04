@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.7.*,1"
+                            "introduced": "1.7.*"
                         },
                         {
                             "fixed": "1.8.2.p2_2"
@@ -39,7 +39,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.7.*,1"
+                            "introduced": "1.7.*"
                         },
                         {
                             "fixed": "1.8.2.p2_2"
@@ -72,7 +72,7 @@
                             "introduced": "a2001.05.12"
                         },
                         {
-                            "fixed": "a2001.05.26"
+                            "last_affected": "a2001.05.26"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -3,38 +3,35 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitlab-ce"
+                "name": "redis"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "16.1.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "16.1.2"
+                            "fixed": "7.0.12"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "redis-devel"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "16.0.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "16.0.7"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "15.11.0"
-                        },
-                        {
-                            "fixed": "15.11.11"
+                            "fixed": "7.0.12.20230710"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -44,30 +41,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://about.gitlab.com/releases/2023/07/05/security-release-gitlab-16-1-2-released/"
+            "https://groups.google.com/g/redis-db/c/JDjKS0GubsQ"
         ],
-        "discovery": "2023-07-05T00:00:00Z",
+        "discovery": "2023-07-10T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-3484"
+                "CVE-2023-36824"
             ]
         },
-        "vid": "d8972bcd-1b64-11ee-9cd6-001b217b3468"
+        "vid": "6fae2d6c-1f38-11ee-a475-080027f5fec9"
     },
-    "details": "Gitlab reports:\n\n> A user can change the name and path of some public GitLab groups\n",
+    "details": "Redis core team reports:\n\n> Extracting key names from a command and a list of arguments may, in\n> some cases, trigger a heap overflow and result in reading random heap\n> memory, heap corruption and potentially remote code execution.\n> Specifically: using COMMAND GETKEYS\\* and validation of key names in\n> ACL rules.\n",
     "id": "FreeBSD-2023-0200",
-    "modified": "2023-07-05T00:00:00Z",
-    "published": "2023-07-05T00:00:00Z",
+    "modified": "2023-07-10T00:00:00Z",
+    "published": "2023-07-10T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://about.gitlab.com/releases/2023/07/05/security-release-gitlab-16-1-2-released/"
+            "url": "https://groups.google.com/g/redis-db/c/JDjKS0GubsQ"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3484"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-36824"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/redis/redis/security/advisories/GHSA-4cfx-h9gq-xpx3"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Gitlab -- Vulnerabilities"
+    "summary": "redis -- heap overflow in COMMAND GETKEYS and ACL evaluation"
 }

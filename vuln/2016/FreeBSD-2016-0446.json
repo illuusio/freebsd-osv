@@ -98,7 +98,7 @@
     ],
     "database_specific": {
         "cite": [
-            "://www.wireshark.org/docs/relnotes/wireshark-2.2.2.html"
+            "https://www.wireshark.org/docs/relnotes/wireshark-2.2.2.html"
         ],
         "discovery": "2016-11-16T00:00:00Z",
         "references": {
@@ -119,10 +119,6 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "://www.wireshark.org/docs/relnotes/wireshark-2.2.2.html"
-        },
-        {
-            "type": "WEB",
             "url": "https://www.wireshark.org/docs/relnotes/wireshark-2.2.2.html"
         },
         {

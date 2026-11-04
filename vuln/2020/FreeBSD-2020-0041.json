@@ -61,7 +61,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.3.99_6"
+                            "last_affected": "4.3.99_6"
                         }
                     ],
                     "type": "ECOSYSTEM"

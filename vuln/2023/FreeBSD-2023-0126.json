@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-suds"
+                "name": "py37-tensorflow"
             },
             "ranges": [
                 {
@@ -12,7 +12,29 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.0.0"
+                            "fixed": "2.7.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.8.0"
+                        },
+                        {
+                            "fixed": "2.8.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.9.0"
+                        },
+                        {
+                            "fixed": "2.9.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +44,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-suds"
+                "name": "py38-tensorflow"
             },
             "ranges": [
                 {
@@ -31,7 +53,29 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.0.0"
+                            "fixed": "2.7.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.8.0"
+                        },
+                        {
+                            "fixed": "2.8.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.9.0"
+                        },
+                        {
+                            "fixed": "2.9.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +85,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-suds"
+                "name": "py39-tensorflow"
             },
             "ranges": [
                 {
@@ -50,7 +94,29 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.0.0"
+                            "fixed": "2.7.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.8.0"
+                        },
+                        {
+                            "fixed": "2.8.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.9.0"
+                        },
+                        {
+                            "fixed": "2.9.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +126,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-suds"
+                "name": "py310-tensorflow"
             },
             "ranges": [
                 {
@@ -69,7 +135,29 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.0.0"
+                            "fixed": "2.7.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.8.0"
+                        },
+                        {
+                            "fixed": "2.8.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.9.0"
+                        },
+                        {
+                            "fixed": "2.9.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +167,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-suds"
+                "name": "py311-tensorflow"
             },
             "ranges": [
                 {
@@ -88,7 +176,29 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.0.0"
+                            "fixed": "2.7.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.8.0"
+                        },
+                        {
+                            "fixed": "2.8.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.9.0"
+                        },
+                        {
+                            "fixed": "2.9.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,30 +208,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2013-32"
+            "https://osv.dev/vulnerability/GHSA-mgmh-g2v6-mqw5"
         ],
-        "discovery": "2013-09-23T00:00:00Z",
+        "discovery": "2022-09-16T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2013-2217"
+                "CVE-2022-35941"
             ]
         },
-        "vid": "b31f7029-817c-4c1f-b7d3-252de5283393"
+        "vid": "52311651-f100-4720-8c62-0887dad6d321"
     },
-    "details": "SUSE reports:\n\n> cache.py in Suds 0.4, when tempdir is set to None, allows local users\n> to redirect SOAP queries and possibly have other unspecified impact\n> via a symlink attack on a cache file with a predictable name in\n> /tmp/suds/.\n",
+    "details": "Jingyi Shi reports:\n\n> The \\'AvgPoolOp\\' function takes an argument \\`ksize\\` that must be\n> positive but is not checked.\n>\n> A negative \\`ksize\\` can trigger a \\`CHECK\\` failure and crash the\n> program.\n",
     "id": "FreeBSD-2023-0126",
-    "modified": "2023-07-08T00:00:00Z",
+    "modified": "2023-04-09T00:00:00Z",
     "published": "2023-04-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2013-32"
+            "url": "https://osv.dev/vulnerability/GHSA-mgmh-g2v6-mqw5"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2013-2217"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-35941"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-suds -- vulnerable to symlink attacks"
+    "summary": "py-tensorflow -- unchecked argument causing crash"
 }

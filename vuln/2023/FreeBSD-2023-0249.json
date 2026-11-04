@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-markdown2"
+                "name": "py37-flask-caching"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.3.9"
+                            "last_affected": "2.0.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-markdown2"
+                "name": "py38-flask-caching"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.3.9"
+                            "last_affected": "2.0.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-markdown2"
+                "name": "py39-flask-caching"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.3.9"
+                            "last_affected": "2.0.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-markdown2"
+                "name": "py310-flask-caching"
             },
             "ranges": [
                 {
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.3.9"
+                            "last_affected": "2.0.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-markdown2"
+                "name": "py311-flask-caching"
             },
             "ranges": [
                 {
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.3.9"
+                            "last_affected": "2.0.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,34 +98,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2020-65"
+            "https://osv.dev/vulnerability/PYSEC-2021-13"
         ],
-        "discovery": "2020-04-20T00:00:00Z",
+        "discovery": "2021-05-13T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2020-11888"
+                "CVE-2021-33026"
             ]
         },
-        "vid": "cf6f3465-e996-4672-9458-ce803f29fdb7"
+        "vid": "692a5fd5-bb25-4df4-8a0e-eb91581f2531"
     },
-    "details": "TheGrandPew reports:\n\n> python-markdown2 through 2.3.8 allows XSS because element names are\n> mishandled unless a \\\\w+ match succeeds.\n>\n> For example, an attack might use elementname@ or elementname- with an\n> onclick attribute.\n",
+    "details": "subnix reports:\n\n> The Flask-Caching extension through 2.0.2 for Flask relies on Pickle\n> for serialization, which may lead to remote code execution or local\n> privilege escalation.\n>\n> If an attacker gains access to cache storage (e.g., filesystem,\n> Memcached, Redis, etc.), they can construct a crafted payload, poison\n> the cache, and execute Python code.\n",
     "id": "FreeBSD-2023-0249",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2020-65"
+            "url": "https://osv.dev/vulnerability/PYSEC-2021-13"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-11888"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-33026"
         },
         {
             "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-fv3h-8x5j-pvgq"
+            "url": "https://osv.dev/vulnerability/GHSA-656c-6cxf-hvcv"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-markdown2 -- XSS vulnerability"
+    "summary": "py-flask-caching -- remote code execution or local privilege escalation vulnerabilities"
 }

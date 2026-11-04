@@ -12,7 +12,7 @@
                             "introduced": "8.0.0"
                         },
                         {
-                            "fixed": "8.17.6"
+                            "last_affected": "8.17.6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -23,7 +23,7 @@
                             "introduced": "9.0.0"
                         },
                         {
-                            "fixed": "9.0.10"
+                            "last_affected": "9.0.10"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -34,7 +34,7 @@
                             "introduced": "9.1.0"
                         },
                         {
-                            "fixed": "9.1.7"
+                            "last_affected": "9.1.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -45,7 +45,7 @@
                             "introduced": "9.2.0"
                         },
                         {
-                            "fixed": "9.2.7"
+                            "last_affected": "9.2.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -56,7 +56,7 @@
                             "introduced": "9.3.0"
                         },
                         {
-                            "fixed": "9.3.7"
+                            "last_affected": "9.3.7"
                         }
                     ],
                     "type": "ECOSYSTEM"

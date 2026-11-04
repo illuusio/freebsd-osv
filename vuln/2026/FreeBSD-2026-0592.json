@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "phpbb3"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.3.19"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.phpbb.com/community/docs/CHANGELOG.html"
+        ],
+        "discovery": "2026-10-23T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-87901"
+            ]
+        },
+        "vid": "4784d4b8-d6a9-11f1-8a93-a0369f6e85b8"
+    },
+    "details": "The phpBB Team reports:\n\n> - Resend rate limiting incorrectly updating expiration time\n>   (SECURITY-298)\n> - Attachment comment hijacking by other users (SECURITY-300)\n> - Reflected XSS via data passed to registration page (SECURITY-301,\n>   CVE-2026-87901)\n> - Hide oauth provider secrets in ACP (SECURITY-302)\n> - Potential stored XSS for string profile fields when allowing any\n>   character (SECURITY-303)\n> - Missing permission type check when applying role based permissions\n>   (SECURITY-305)\n> - Disclosure of hidden or unapproved topic title when emailing topic\n>   (SECURITY-306)\n> - Banned users can email members despite ban status (SECURITY-307)\n> - Releasing of held private messages missing CSRF protection\n>   (SECURITY-308)\n> - Missing encoding of username in anti abuse header (SECURITY-309)\n> - MCP topic view mixing access checks for post and topic\n>   (SECURITY-310)\n> - Moderators with f_user_lock permission may close other user\\'s\n>   topics (SECURITY-311)\n> - Unauthenticated SMTP command injection via contact form\n>   (SECURITY-312)\n> - Moderators can close/delete reports outside their forum permissions\n>   (SECURITY-313)\n> - MCP make normal action for topics missing check for forum-scoped\n>   moderators (SECURITY-314)\n\nThe fixes were announced with phpBB 3.3.18, but the 3.3.18 downloads did\nnot contain them, so only 3.3.19 ships the fixed code.\n",
+    "id": "FreeBSD-2026-0592",
+    "modified": "2026-11-02T00:00:00Z",
+    "published": "2026-11-02T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.phpbb.com/community/docs/CHANGELOG.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-87901"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.phpbb.com/community/viewtopic.php?t=2675305"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "phpBB -- multiple vulnerabilities"
+}

@@ -1,0 +1,189 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "156.0.8078.79"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "156.0.8078.79"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "linux-chrome"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "156.0.8078.79"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html"
+        ],
+        "discovery": "2026-10-29T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-76024",
+                "CVE-2026-76025",
+                "CVE-2026-76026",
+                "CVE-2026-76027",
+                "CVE-2026-76028",
+                "CVE-2026-76029",
+                "CVE-2026-76030",
+                "CVE-2026-76031",
+                "CVE-2026-119260",
+                "CVE-2026-119261",
+                "CVE-2026-119262",
+                "CVE-2026-119263",
+                "CVE-2026-119264",
+                "CVE-2026-119265",
+                "CVE-2026-119266",
+                "CVE-2026-119267",
+                "CVE-2026-119268",
+                "CVE-2026-119269",
+                "CVE-2026-119270",
+                "CVE-2026-119271",
+                "CVE-2026-119272"
+            ]
+        },
+        "vid": "3749ce48-d5ce-11f1-9bfa-a8a1599412c6"
+    },
+    "details": "Chrome Releases reports:\n\n> This update includes 21 security fixes:\n>\n> - \\[576215540\\] Critical CVE-2026-76024: Memory corruption in\n>   MediaStream.\n> - \\[559780982\\] High CVE-2026-76025: Use after free in FileSystem.\n> - \\[567673200\\] High CVE-2026-76026: Memory corruption in Autofill.\n> - \\[568894475\\] High CVE-2026-76027: Memory corruption in\n>   CacheStorage.\n> - \\[569012015\\] High CVE-2026-76028: Use after free in FileSystem.\n> - \\[572055997\\] High CVE-2026-76029: Memory corruption in Network.\n> - \\[572269631\\] High CVE-2026-76030: Memory corruption in FileSystem.\n> - \\[572556403\\] High CVE-2026-76031: Use after free in Input.\n> - \\[573264074\\] High CVE-2026-119260: Use after free in Frames.\n> - \\[574213633\\] High CVE-2026-119261: Improper input validation in\n>   Skia.\n> - \\[574660146\\] High CVE-2026-119262: Improper input validation in V8.\n> - \\[575143870\\] High CVE-2026-119263: Memory corruption in\n>   GarbageCollection.\n> - \\[575150692\\] High CVE-2026-119264: Memory corruption in Dawn.\n> - \\[575201795\\] High CVE-2026-119265: Memory corruption in Quota.\n> - \\[575202553\\] High CVE-2026-119266: Use after free in Quota.\n> - \\[576203565\\] High CVE-2026-119267: Memory corruption in DOM.\n> - \\[576984708\\] High CVE-2026-119268: Integer overflow in Editing.\n> - \\[577072000\\] High CVE-2026-119269: Use after free in Blink.\n> - \\[577333729\\] High CVE-2026-119270: Improper input validation in\n>   CacheStorage.\n> - \\[577403270\\] High CVE-2026-119271: Use after free in Skia.\n> - \\[569012543\\] Medium CVE-2026-119272: Out of bounds read in\n>   FileSystem.\n",
+    "id": "FreeBSD-2026-0588",
+    "modified": "2026-11-04T00:00:00Z",
+    "published": "2026-11-01T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://chromereleases.googleblog.com/2026/10/stable-channel-update-for-desktop_02107719452.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76024"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76025"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76026"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76027"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76028"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76029"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76030"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-76031"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119260"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119261"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119262"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119263"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119264"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119265"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119266"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119267"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119268"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119269"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119270"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119271"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119272"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "chromium -- security fixes"
+}

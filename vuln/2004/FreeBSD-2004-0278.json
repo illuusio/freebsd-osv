@@ -126,7 +126,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.0.r5_3"
+                            "last_affected": "1.0.r5_3"
                         }
                     ],
                     "type": "ECOSYSTEM"

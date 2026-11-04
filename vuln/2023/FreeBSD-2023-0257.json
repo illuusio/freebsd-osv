@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-httpx013"
+                "name": "py37-Scrapy"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.20.0"
+                            "last_affected": "2.8.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-httpx013"
+                "name": "py38-Scrapy"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.20.0"
+                            "last_affected": "2.8.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-httpx013"
+                "name": "py39-Scrapy"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.20.0"
+                            "last_affected": "2.8.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-httpx013"
+                "name": "py310-Scrapy"
             },
             "ranges": [
                 {
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.20.0"
+                            "last_affected": "2.8.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-httpx013"
+                "name": "py311-Scrapy"
             },
             "ranges": [
                 {
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "0.20.0"
+                            "last_affected": "2.8.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,34 +98,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2022-183"
+            "https://osv.dev/vulnerability/PYSEC-2017-83"
         ],
-        "discovery": "2022-04-28T00:00:00Z",
+        "discovery": "2017-09-05T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2021-41945"
+                "CVE-2017-14158"
             ]
         },
-        "vid": "e831dd5a-7d8e-4818-aa1f-17dd495584ec"
+        "vid": "4eb5dccb-923c-4f18-9cd4-b53f9e28d4d7"
     },
-    "details": "lebr0nli reports:\n\n> Encode OSS httpx \\<=1.0.0.beta0 is affected by improper input\n> validation in \\`httpx.URL\\`, \\`httpx.Client\\` and some functions using\n> \\`httpx.URL.copy_with\\`.\n",
+    "details": "kmike and nramirezuy report:\n\n> Scrapy 1.4 allows remote attackers to cause a denial of service\n> (memory consumption) via large files because arbitrarily many files\n> are read into memory, which is especially problematic if the files are\n> then individually written in a separate thread to a slow storage\n> resource, as demonstrated by interaction between dataReceived (in\n> core/downloader/handlers/http11.py) and S3FilesStore.\n",
     "id": "FreeBSD-2023-0257",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2022-183"
+            "url": "https://osv.dev/vulnerability/PYSEC-2017-83"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-41945"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-14158"
         },
         {
             "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-h8pj-cxx2-jfg2"
+            "url": "https://osv.dev/vulnerability/GHSA-h7wm-ph43-c39p"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-httpx -- input validation vulnerability"
+    "summary": "py-Scrapy -- DoS vulnerability"
 }

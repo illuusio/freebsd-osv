@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "chromium"
+                "name": "mediawiki135"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "114.0.5735.198"
+                            "fixed": "1.35.11"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "ungoogled-chromium"
+                "name": "mediawiki138"
             },
             "ranges": [
                 {
@@ -31,7 +31,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "114.0.5735.198"
+                            "fixed": "1.38.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "mediawiki139"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.39.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,40 +60,40 @@
     ],
     "database_specific": {
         "cite": [
-            "https://chromereleases.googleblog.com/2023/06/stable-channel-update-for-desktop_26.html"
+            "https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/HVT3U3XYY35PSCIQPHMY4VQNF3Q6MHUO/"
         ],
-        "discovery": "2023-06-26T00:00:00Z",
+        "discovery": "2023-04-21T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-3420",
-                "CVE-2023-3421",
-                "CVE-2023-3422"
+                "CVE-2023-29197",
+                "CVE-2023-36674",
+                "CVE-2023-36675"
             ]
         },
-        "vid": "ad05a737-14bd-11ee-8290-a8a1599412c6"
+        "vid": "95dad123-180e-11ee-86ba-080027eda32c"
     },
-    "details": "Chrome Releases reports:\n\n> This update includes 4 security fixes:\n>\n> - \\[1452137\\] High CVE-2023-3420: Type Confusion in V8. Reported by\n>   Man Yue Mo of GitHub Security Lab on 2023-06-07\n> - \\[1447568\\] High CVE-2023-3421: Use after free in Media. Reported by\n>   Piotr Bania of Cisco Talos on 2023-05-22\n> - \\[1450397\\] High CVE-2023-3422: Use after free in Guest View.\n>   Reported by asnine on 2023-06-01\n",
+    "details": "Mediawiki reports:\n\n> (T335203, CVE-2023-29197) Upgrade guzzlehttp/psr7 to \\>= 1.9.1/2.4.5.\n>\n> (T335612, CVE-2023-36674) Manualthumb bypasses badFile lookup.\n>\n> (T332889, CVE-2023-36675) XSS in BlockLogFormatter due to unsafe\n> message use.\n",
     "id": "FreeBSD-2023-0193",
-    "modified": "2023-06-27T00:00:00Z",
-    "published": "2023-06-27T00:00:00Z",
+    "modified": "2023-07-01T00:00:00Z",
+    "published": "2023-07-01T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://chromereleases.googleblog.com/2023/06/stable-channel-update-for-desktop_26.html"
+            "url": "https://lists.wikimedia.org/hyperkitty/list/mediawiki-announce@lists.wikimedia.org/message/HVT3U3XYY35PSCIQPHMY4VQNF3Q6MHUO/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3420"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-29197"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3421"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-36674"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3422"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-36675"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "chromium -- multiple vulnerabilities"
+    "summary": "mediawiki -- multiple vulnerabilities"
 }

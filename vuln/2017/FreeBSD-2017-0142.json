@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "2.3.0,1"
+                            "introduced": "2.3.0"
                         },
                         {
                             "fixed": "2.5.0"

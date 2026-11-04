@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "22.3.13"
+                            "fixed": "22.3.14"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,122 +22,59 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/electron/electron/releases/tag/v22.3.13"
+            "https://github.com/electron/electron/releases/tag/v22.3.14"
         ],
-        "discovery": "2023-06-14T00:00:00Z",
+        "discovery": "2023-06-22T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-2724",
-                "CVE-2023-2723",
-                "CVE-2023-2725",
-                "CVE-2023-2721",
-                "CVE-2023-3079",
-                "CVE-2023-2933",
-                "CVE-2023-2932",
-                "CVE-2023-2931",
-                "CVE-2023-2936",
-                "CVE-2023-2935",
-                "CVE-2023-2930"
+                "CVE-2023-3215",
+                "CVE-2023-3216",
+                "CVE-2023-0698",
+                "CVE-2023-0932"
             ]
         },
-        "vid": "3c3d3dcb-bef7-4d20-9580-b4216b5ff6a2"
+        "vid": "770d88cc-f6dc-4385-bdfe-497f8080c3fb"
     },
-    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-2724.\n> - Security: backported fix for CVE-2023-2723.\n> - Security: backported fix for CVE-2023-2725.\n> - Security: backported fix for CVE-2023-2721.\n> - Security: backported fix for CVE-2023-3079.\n> - Security: backported fix for CVE-2023-2933.\n> - Security: backported fix for CVE-2023-2932.\n> - Security: backported fix for CVE-2023-2931.\n> - Security: backported fix for CVE-2023-2936.\n> - Security: backported fix for CVE-2023-2935.\n> - Security: backported fix for CVE-2023-2930.\n",
+    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-3215.\n> - Security: backported fix for CVE-2023-3216.\n> - Security: backported fix for CVE-2023-0698.\n> - Security: backported fix for CVE-2023-0932.\n",
     "id": "FreeBSD-2023-0186",
-    "modified": "2023-06-16T00:00:00Z",
-    "published": "2023-06-16T00:00:00Z",
+    "modified": "2023-06-22T00:00:00Z",
+    "published": "2023-06-22T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/electron/electron/releases/tag/v22.3.13"
+            "url": "https://github.com/electron/electron/releases/tag/v22.3.14"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2724"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3215"
         },
         {
             "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-j5rv-3m5p-q6rc"
+            "url": "https://github.com/advisories/GHSA-5rw6-vf4w-p4j3"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2723"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3216"
         },
         {
             "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-7797-6fvm-v8xw"
+            "url": "https://github.com/advisories/GHSA-f35r-mcw4-gg3w"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2725"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0698"
         },
         {
             "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-c4fp-wmv9-q4cr"
+            "url": "https://github.com/advisories/GHSA-q6xx-4pmr-m3m4"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2721"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0932"
         },
         {
             "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-5cww-gpqh-ggqj"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3079"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-8mwf-hvfp-6xfg"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2933"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-qrc7-3p69-2jpf"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2932"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-7g49-wq8x-r6rh"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2931"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-w3xh-m877-x3c2"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2936"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-x723-3x32-qg44"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2935"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-5ccq-3h49-vjp2"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2930"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-44xq-533g-gj79"
+            "url": "https://github.com/advisories/GHSA-hh2g-39pc-2575"
         }
     ],
     "schema_version": "1.7.0",

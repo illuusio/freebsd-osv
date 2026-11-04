@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-ansible"
+                "name": "ghostscript"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "7.2.0"
+                            "fixed": "10.01.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-ansible"
+                "name": "ghostscript7-base"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "7.2.0"
+                            "fixed": "10.01.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-ansible"
+                "name": "ghostscript7-commfont"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "7.2.0"
+                            "fixed": "10.01.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-ansible"
+                "name": "ghostscript7-jpnfont"
             },
             "ranges": [
                 {
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "7.2.0"
+                            "fixed": "10.01.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-ansible"
+                "name": "ghostscript7-korfont"
             },
             "ranges": [
                 {
@@ -88,7 +88,83 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "7.2.0"
+                            "fixed": "10.01.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ghostscript7-x11"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.01.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ghostscript8-base"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.01.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ghostscript8-x11"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "10.01.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ghostscript9-agpl-base"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.56.1_10"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,40 +174,38 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2020-220",
-            "https://osv.dev/vulnerability/PYSEC-2020-221"
+            "http://www.openwall.com/lists/oss-security/2023/04/12/4"
         ],
-        "discovery": "2020-10-05T00:00:00Z",
+        "discovery": "2023-03-23T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2020-25635",
-                "CVE-2020-25636"
+                "CVE-2023-28879"
             ]
         },
-        "vid": "e1b77733-a982-442e-8796-a200571bfcf2"
+        "vid": "25872b25-da2d-11ed-b715-a1e76793953b"
     },
-    "details": "abeluck reports:\n\n> A flaw was found in Ansible Base when using the aws_ssm connection\n> plugin as garbage collector is not happening after playbook run is\n> completed.\n>\n> Files would remain in the bucket exposing the data.\n>\n> This issue affects directly data confidentiality.\n\n> A flaw was found in Ansible Base when using the aws_ssm connection\n> plugin as there is no namespace separation for file transfers.\n>\n> Files are written directly to the root bucket, making possible to have\n> collisions when running multiple ansible processes.\n>\n> This issue affects mainly the service availability.\n",
+    "details": "cve@mitre.org reports:\n\n> In Artifex Ghostscript through 10.01.0, there is a buffer overflow\n> leading to potential corruption of data internal to the PostScript\n> interpreter, in base/sbcp.c. This affects BCPEncode, BCPDecode,\n> TBCPEncode, and TBCPDecode. If the write buffer is filled to one byte\n> less than full, and one then tries to write an escaped character, two\n> bytes are written.\n",
     "id": "FreeBSD-2023-0136",
-    "modified": "2023-04-10T00:00:00Z",
-    "published": "2023-04-10T00:00:00Z",
+    "modified": "2023-04-28T00:00:00Z",
+    "published": "2023-04-13T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2020-220"
-        },
-        {
-            "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2020-221"
+            "url": "http://www.openwall.com/lists/oss-security/2023/04/12/4"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-25635"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28879"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-25636"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-28879"
+        },
+        {
+            "type": "WEB",
+            "url": "https://artifex.com/news/critical-security-vulnerability-fixed-in-ghostscript"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-ansible -- multiple vulnerabilities"
+    "summary": "ghostscript -- exploitable buffer overflow in (T)BCP in PS interpreter"
 }

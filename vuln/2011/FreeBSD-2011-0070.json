@@ -22,7 +22,7 @@
     ],
     "database_specific": {
         "cite": [
-            "ftp://ftp.exim.org/pub/exim/ChangeLogs/ChangeLog-4.76",
+            "https://ftp.exim.org/pub/exim/ChangeLogs/ChangeLog-4.76",
             "https://lists.exim.org/lurker/message/20110512.102909.8136175a.en.html"
         ],
         "discovery": "2011-05-10T00:00:00Z",
@@ -41,7 +41,7 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "ftp://ftp.exim.org/pub/exim/ChangeLogs/ChangeLog-4.76"
+            "url": "https://ftp.exim.org/pub/exim/ChangeLogs/ChangeLog-4.76"
         },
         {
             "type": "REPORT",

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "libXpm"
+                "name": "roundcube"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.5.17"
+                            "fixed": "1.6.4,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,35 +22,21 @@
     ],
     "database_specific": {
         "cite": [
-            "https://lists.x.org/archives/xorg/2023-October/061506.html"
+            "https://roundcube.net/news/2023/10/16/security-update-1.6.4-released"
         ],
-        "discovery": "2023-09-22T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2023-43788",
-                "CVE-2023-43789"
-            ]
-        },
-        "vid": "199cdb4d-690d-11ee-9ed0-001fc69cd6dc"
+        "discovery": "2023-10-16T00:00:00Z",
+        "vid": "d2ad7647-6dd9-11ee-85eb-84a93843eb75"
     },
-    "details": "The X.Org project reports:\n\n> \n>\n> CVE-2023-43788: Out of bounds read in XpmCreateXpmImageFromBuffer\n> : An out-of-bounds read is located in ParseComment() when reading from\n>   a memory buffer instead of a file, as it continued to look for the\n>   closing comment marker past the end of the buffer.\n>\n> CVE-2023-43789: Out of bounds read on XPM with corrupted colormap\n> : A corrupted colormap section may cause libXpm to read out of bounds.\n",
+    "details": "The Roundcube project reports:\n\n> cross-site scripting (XSS) vulnerability in handling of SVG in HTML\n> messages\n",
     "id": "FreeBSD-2023-0311",
-    "modified": "2023-10-12T00:00:00Z",
-    "published": "2023-10-12T00:00:00Z",
+    "modified": "2023-10-18T00:00:00Z",
+    "published": "2023-10-18T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://lists.x.org/archives/xorg/2023-October/061506.html"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-43788"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-43789"
+            "url": "https://roundcube.net/news/2023/10/16/security-update-1.6.4-released"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "x11/libXpm multiple vulnerabilities"
+    "summary": "Roundcube -- XSS vulnerability in SVG"
 }

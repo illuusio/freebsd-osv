@@ -20,7 +20,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "*,1,1"
+                            "introduced": "*,1"
                         },
                         {
                             "fixed": "3.0.28,1"
@@ -50,7 +50,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "*,1,1"
+                            "introduced": "*,1"
                         },
                         {
                             "fixed": "3.0.28,1"
@@ -80,7 +80,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "*,1,1"
+                            "introduced": "*,1"
                         },
                         {
                             "fixed": "3.0.28,1"

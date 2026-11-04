@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.1.14.j7_3,1"
+                            "last_affected": "2.1.14.j7_3,1"
                         }
                     ],
                     "type": "ECOSYSTEM"

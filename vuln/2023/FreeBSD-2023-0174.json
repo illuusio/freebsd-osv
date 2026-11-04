@@ -3,16 +3,57 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "php80-kanboard"
+                "name": "grafana"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "9.4.0"
                         },
                         {
-                            "fixed": "1.2.30"
+                            "fixed": "9.4.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "9.5.0"
+                        },
+                        {
+                            "fixed": "9.5.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "grafana9"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "9.4.0"
+                        },
+                        {
+                            "fixed": "9.4.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "9.5.0"
+                        },
+                        {
+                            "fixed": "9.5.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,61 +63,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/kanboard/kanboard/commit/b501ef44bc28ee9cf603a4fa446ee121d66f652f"
+            "https://grafana.com/blog/2023/06/06/grafana-security-release-new-grafana-versions-with-security-fixes-for-cve-2023-2183-and-cve-2023-2801/"
         ],
-        "discovery": "2023-06-05T00:00:00Z",
+        "discovery": "2023-06-06T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-33970",
-                "CVE-2023-33969",
-                "CVE-2023-33968",
-                "CVE-2023-33956"
+                "CVE-2023-2801"
             ]
         },
-        "vid": "bfca647c-0456-11ee-bafd-b42e991fc52e"
+        "vid": "652064ef-056f-11ee-8e16-6c3be5272acd"
     },
-    "details": "Kanboard is project management software that focuses on the Kanban\nmethodology. The last update includes 4 vulnerabilities:\n\nsecurity-advisories@github.com reports:\n\n> - Missing access control in internal task links feature\n> - Stored Cross site scripting in the Task External Link Functionality\n>   in Kanboard\n> - Missing Access Control allows User to move and duplicate tasks in\n>   Kanboard\n> - Parameter based Indirect Object Referencing leading to private file\n>   exposure in Kanboard\n",
+    "details": "Grafana Labs reports:\n\n> We have discovered a vulnerability with Grafana's data source query\n> endpoints that could end up crashing a Grafana instance.\n>\n> If you have public dashboards (PD) enabled, we are scoring this as a\n> CVSS 7.5 High.\n>\n> If you have disabled PD, this vulnerability is still a risk, but\n> triggering the issue requires data source read privileges and access\n> to the Grafana API through a developer script.\n",
     "id": "FreeBSD-2023-0174",
-    "modified": "2023-06-06T00:00:00Z",
-    "published": "2023-06-06T00:00:00Z",
+    "modified": "2023-06-07T00:00:00Z",
+    "published": "2023-06-07T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/kanboard/kanboard/commit/b501ef44bc28ee9cf603a4fa446ee121d66f652f"
+            "url": "https://grafana.com/blog/2023/06/06/grafana-security-release-new-grafana-versions-with-security-fixes-for-cve-2023-2183-and-cve-2023-2801/"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-33970"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-33970"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-33969"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-33969"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-33968"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-33968"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-33956"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-33956"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2801"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Kanboard -- Multiple vulnerabilities"
+    "summary": "Grafana -- Grafana DS proxy race condition"
 }

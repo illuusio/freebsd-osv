@@ -56,7 +56,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.4.16,1"
+                            "last_affected": "2.4.16,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -119,7 +119,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.4.16,1"
+                            "last_affected": "2.4.16,1"
                         }
                     ],
                     "type": "ECOSYSTEM"

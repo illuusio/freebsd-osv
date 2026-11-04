@@ -12,7 +12,7 @@
                             "introduced": "1.9.0"
                         },
                         {
-                            "fixed": "1.9.6"
+                            "last_affected": "1.9.6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,7 +31,7 @@
                             "introduced": "1.0.0"
                         },
                         {
-                            "fixed": "1.8.18"
+                            "last_affected": "1.8.18"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,7 +50,7 @@
                             "introduced": "1.0.0"
                         },
                         {
-                            "fixed": "1.8.18"
+                            "last_affected": "1.8.18"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -61,7 +61,7 @@
                             "introduced": "1.9.0"
                         },
                         {
-                            "fixed": "1.9.6"
+                            "last_affected": "1.9.6"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -35,10 +35,6 @@
         {
             "type": "REPORT",
             "url": "https://piwik.org/changelog/piwik-2-16-2/"
-        },
-        {
-            "type": "WEB",
-            "url": "We have identified and fixed several XSS security issues in this release."
         }
     ],
     "schema_version": "1.7.0",

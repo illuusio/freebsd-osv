@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-tflite"
+                "name": "py37-slixmpp"
             },
             "ranges": [
                 {
@@ -12,29 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.3.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "2.4.0"
-                        },
-                        {
-                            "fixed": "2.4.3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "2.5.0"
-                        },
-                        {
-                            "fixed": "2.5.1"
+                            "fixed": "1.8.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -44,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-tflite"
+                "name": "py38-slixmpp"
             },
             "ranges": [
                 {
@@ -53,29 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.3.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "2.4.0"
-                        },
-                        {
-                            "fixed": "2.4.3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "2.5.0"
-                        },
-                        {
-                            "fixed": "2.5.1"
+                            "fixed": "1.8.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -85,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-tflite"
+                "name": "py39-slixmpp"
             },
             "ranges": [
                 {
@@ -94,29 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.3.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "2.4.0"
-                        },
-                        {
-                            "fixed": "2.4.3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "2.5.0"
-                        },
-                        {
-                            "fixed": "2.5.1"
+                            "fixed": "1.8.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -126,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-tflite"
+                "name": "py310-slixmpp"
             },
             "ranges": [
                 {
@@ -135,29 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.3.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "2.4.0"
-                        },
-                        {
-                            "fixed": "2.4.3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "2.5.0"
-                        },
-                        {
-                            "fixed": "2.5.1"
+                            "fixed": "1.8.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -167,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-tflite"
+                "name": "py311-slixmpp"
             },
             "ranges": [
                 {
@@ -176,29 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.3.4"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "2.4.0"
-                        },
-                        {
-                            "fixed": "2.4.3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                },
-                {
-                    "events": [
-                        {
-                            "introduced": "2.5.0"
-                        },
-                        {
-                            "fixed": "2.5.1"
+                            "fixed": "1.8.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -208,30 +98,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/GHSA-wf5p-c75w-w3wh"
+            "https://osv.dev/vulnerability/GHSA-q6cq-m9gm-6q2f"
         ],
-        "discovery": "2021-08-25T00:00:00Z",
+        "discovery": "2022-12-25T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2021-37689"
+                "CVE-2022-45197"
             ]
         },
-        "vid": "d82bcd2b-5cd6-421c-8179-b3ff0231029f"
+        "vid": "93db4f92-9997-4f4f-8614-3963d9e2b0ec"
     },
-    "details": "Yakun Zhang of Baidu Security reports:\n\n> An attacker can craft a TFLite model that would trigger a null pointer\n> dereference, which would result in a crash and denial of service\n",
+    "details": "> Slixmpp before 1.8.3 lacks SSL Certificate hostname validation in\n> XMLStream, allowing an attacker to pose as any server in the eyes of\n> Slixmpp.\n",
     "id": "FreeBSD-2023-0123",
     "modified": "2023-04-09T00:00:00Z",
     "published": "2023-04-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/GHSA-wf5p-c75w-w3wh"
+            "url": "https://osv.dev/vulnerability/GHSA-q6cq-m9gm-6q2f"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-37689"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-45197"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-tflite -- denial of service vulnerability"
+    "summary": "py-slixmpp -- incomplete SSL certificate validation"
 }

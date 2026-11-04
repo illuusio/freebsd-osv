@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-Scrapy"
+                "name": "py37-WsgiDAV"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.8.0"
+                            "fixed": "4.1.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-Scrapy"
+                "name": "py38-WsgiDAV"
             },
             "ranges": [
                 {
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.8.0"
+                            "fixed": "4.1.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +41,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-Scrapy"
+                "name": "py39-WsgiDAV"
             },
             "ranges": [
                 {
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.8.0"
+                            "fixed": "4.1.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +60,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-Scrapy"
+                "name": "py310-WsgiDAV"
             },
             "ranges": [
                 {
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.8.0"
+                            "fixed": "4.1.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +79,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-Scrapy"
+                "name": "py311-WsgiDAV"
             },
             "ranges": [
                 {
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.8.0"
+                            "fixed": "4.1.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,34 +98,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2017-83"
+            "https://osv.dev/vulnerability/GHSA-xx6g-jj35-pxjv"
         ],
-        "discovery": "2017-09-05T00:00:00Z",
+        "discovery": "2022-11-11T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2017-14158"
+                "CVE-2022-41905"
             ]
         },
-        "vid": "4eb5dccb-923c-4f18-9cd4-b53f9e28d4d7"
+        "vid": "1a15b928-5011-4953-8133-d49e24902fe1"
     },
-    "details": "kmike and nramirezuy report:\n\n> Scrapy 1.4 allows remote attackers to cause a denial of service\n> (memory consumption) via large files because arbitrarily many files\n> are read into memory, which is especially problematic if the files are\n> then individually written in a separate thread to a slow storage\n> resource, as demonstrated by interaction between dataReceived (in\n> core/downloader/handlers/http11.py) and S3FilesStore.\n",
+    "details": "> Implementations using this library with directory browsing enabled may\n> be susceptible to Cross Site Scripting (XSS) attacks.\n",
     "id": "FreeBSD-2023-0261",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2017-83"
+            "url": "https://osv.dev/vulnerability/GHSA-xx6g-jj35-pxjv"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-14158"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-h7wm-ph43-c39p"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-41905"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-Scrapy -- DoS vulnerability"
+    "summary": "py-WsgiDAV -- XSS vulnerability"
 }

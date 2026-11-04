@@ -3,7 +3,83 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
+                "name": "py37-lmdb"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.98"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-lmdb"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.98"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
                 "name": "py39-lmdb"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.98"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-lmdb"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "0.98"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-lmdb"
             },
             "ranges": [
                 {
@@ -42,7 +118,7 @@
     },
     "details": "TeamSeri0us reports:\n\n> An issue was discovered in py-lmdb 0.97. For certain values of\n> md_flags, mdb_node_add does not properly set up a memcpy destination,\n> leading to an invalid write operation. NOTE: this outcome occurs when\n> accessing a data.mdb file supplied by an attacker.\n\n> An issue was discovered in py-lmdb 0.97. For certain values of\n> mp_flags, mdb_page_touch does not properly set up\n> mc-\\>mc_pg\\[mc-\\>top\\], leading to an invalid write operation. NOTE:\n> this outcome occurs when accessing a data.mdb file supplied by an\n> attacker.\n\n> An issue was discovered in py-lmdb 0.97. mdb_node_del does not\n> validate a memmove in the case of an unexpected node-\\>mn_hi, leading\n> to an invalid write operation. NOTE: this outcome occurs when\n> accessing a data.mdb file supplied by an attacker.\n\n> An issue was discovered in py-lmdb 0.97. For certain values of\n> mn_flags, mdb_cursor_set triggers a memcpy with an invalid write\n> operation within mdb_xcursor_init1. NOTE: this outcome occurs when\n> accessing a data.mdb file supplied by an attacker.\n\n> An issue was discovered in py-lmdb 0.97. There is a divide-by-zero\n> error in the function mdb_env_open2 if mdb_env_read_header obtains a\n> zero value for a certain size field. NOTE: this outcome occurs when\n> accessing a data.mdb file supplied by an attacker.\n",
     "id": "FreeBSD-2023-0102",
-    "modified": "2023-03-26T00:00:00Z",
+    "modified": "2026-10-31T00:00:00Z",
     "published": "2023-03-26T00:00:00Z",
     "references": [
         {
@@ -87,5 +163,5 @@
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py39-lmdb -- multiple vulnerabilities"
+    "summary": "py-lmdb -- multiple vulnerabilities"
 }

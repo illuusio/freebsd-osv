@@ -3,16 +3,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-cryptography"
+                "name": "py37-ansible"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "1.8"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "39.0.1"
+                            "last_affected": "7.2.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,16 +22,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-cryptography"
+                "name": "py38-ansible"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "1.8"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "39.0.1"
+                            "last_affected": "7.2.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,16 +41,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-cryptography"
+                "name": "py39-ansible"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "1.8"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "39.0.1"
+                            "last_affected": "7.2.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,16 +60,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-cryptography"
+                "name": "py310-ansible"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "1.8"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "39.0.1"
+                            "last_affected": "7.2.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,16 +79,16 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-cryptography"
+                "name": "py311-ansible"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "1.8"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "39.0.1"
+                            "last_affected": "7.2.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,30 +98,40 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/GHSA-w7pp-m8wf-vj6r"
+            "https://osv.dev/vulnerability/PYSEC-2020-220",
+            "https://osv.dev/vulnerability/PYSEC-2020-221"
         ],
-        "discovery": "2023-02-07T00:00:00Z",
+        "discovery": "2020-10-05T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-23931"
+                "CVE-2020-25635",
+                "CVE-2020-25636"
             ]
         },
-        "vid": "a32ef450-9781-414b-a944-39f2f61677f2"
+        "vid": "e1b77733-a982-442e-8796-a200571bfcf2"
     },
-    "details": "alex reports:\n\n> Previously, \\`Cipher.update_into\\` would accept Python objects which\n> implement the buffer protocol, but provide only immutable buffers.\n>\n> This would allow immutable objects (such as \\`bytes\\`) to be mutated,\n> thus violating fundamental rules of Python.\n>\n> This is a soundness bug \\-- it allows programmers to misuse an API, it\n> cannot be exploited by attacker controlled data alone.\n>\n> This now correctly raises an exception.\n>\n> This issue has been present since \\`update_into\\` was originally\n> introduced in cryptography 1.8.\n",
+    "details": "abeluck reports:\n\n> A flaw was found in Ansible Base when using the aws_ssm connection\n> plugin as garbage collector is not happening after playbook run is\n> completed.\n>\n> Files would remain in the bucket exposing the data.\n>\n> This issue affects directly data confidentiality.\n\n> A flaw was found in Ansible Base when using the aws_ssm connection\n> plugin as there is no namespace separation for file transfers.\n>\n> Files are written directly to the root bucket, making possible to have\n> collisions when running multiple ansible processes.\n>\n> This issue affects mainly the service availability.\n",
     "id": "FreeBSD-2023-0132",
     "modified": "2023-04-10T00:00:00Z",
     "published": "2023-04-10T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/GHSA-w7pp-m8wf-vj6r"
+            "url": "https://osv.dev/vulnerability/PYSEC-2020-220"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://osv.dev/vulnerability/PYSEC-2020-221"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-23931"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-25635"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-25636"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-cryptography -- allows programmers to misuse an API"
+    "summary": "py-ansible -- multiple vulnerabilities"
 }

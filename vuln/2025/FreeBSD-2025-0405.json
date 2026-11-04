@@ -29,8 +29,7 @@
             "cvename": [
                 "CVE-2018-15863",
                 "CVE-2018-15859",
-                "CVE-2018-15861",
-                "CVE-2018-15863"
+                "CVE-2018-15861"
             ]
         },
         "vid": "c7187676-d176-11f0-841f-843a4b343614"
@@ -55,10 +54,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2018-15861"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2018-15863"
         }
     ],
     "schema_version": "1.7.0",

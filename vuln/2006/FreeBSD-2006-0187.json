@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "20060922"
+                            "last_affected": "20060922"
                         }
                     ],
                     "type": "ECOSYSTEM"

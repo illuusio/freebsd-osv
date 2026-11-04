@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-Scrapy"
+                "name": "py37-wagtail"
             },
             "ranges": [
                 {
@@ -12,7 +12,18 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.6.1"
+                            "fixed": "4.1.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "4.2.0"
+                        },
+                        {
+                            "fixed": "4.2.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +33,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-Scrapy"
+                "name": "py38-wagtail"
             },
             "ranges": [
                 {
@@ -31,7 +42,18 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.6.1"
+                            "fixed": "4.1.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "4.2.0"
+                        },
+                        {
+                            "fixed": "4.2.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +63,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-Scrapy"
+                "name": "py39-wagtail"
             },
             "ranges": [
                 {
@@ -50,7 +72,18 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.6.1"
+                            "fixed": "4.1.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "4.2.0"
+                        },
+                        {
+                            "fixed": "4.2.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +93,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-Scrapy"
+                "name": "py310-wagtail"
             },
             "ranges": [
                 {
@@ -69,7 +102,18 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.6.1"
+                            "fixed": "4.1.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "4.2.0"
+                        },
+                        {
+                            "fixed": "4.2.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +123,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-Scrapy"
+                "name": "py311-wagtail"
             },
             "ranges": [
                 {
@@ -88,7 +132,18 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.6.1"
+                            "fixed": "4.1.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "4.2.0"
+                        },
+                        {
+                            "fixed": "4.2.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,34 +153,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2022-159"
+            "https://osv.dev/vulnerability/GHSA-5286-f2rf-35c2"
         ],
-        "discovery": "2022-03-02T00:00:00Z",
+        "discovery": "2023-04-03T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-0577"
+                "CVE-2023-28836"
             ]
         },
-        "vid": "67fe5e5b-549f-4a2a-9834-53f60eaa415e"
+        "vid": "17efbe19-4e72-426a-8016-2b4e001c1378"
     },
-    "details": "ranjit-git reports:\n\n> Exposure of Sensitive Information to an Unauthorized Actor in GitHub\n> repository scrapy/scrapy prior to 2.6.1.\n",
+    "details": "> A stored cross-site scripting (XSS) vulnerability exists on ModelAdmin\n> views within the Wagtail admin interface.\n>\n> A user with a limited-permission editor account for the Wagtail admin\n> could potentially craft pages and documents that, when viewed by a\n> user with higher privileges, could perform actions with that user\\'s\n> credentials.\n>\n> The vulnerability is not exploitable by an ordinary site visitor\n> without access to the Wagtail admin, and only affects sites with\n> ModelAdmin enabled.\n>\n> For page, the vulnerability is in the \\\"Choose a parent page\\\"\n> ModelAdmin view, available when managing pages via ModelAdmin.\n>\n> For documents, the vulnerability is in the ModelAdmin Inspect view\n> when displaying document fields.\n",
     "id": "FreeBSD-2023-0260",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2022-159"
+            "url": "https://osv.dev/vulnerability/GHSA-5286-f2rf-35c2"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-0577"
-        },
-        {
-            "type": "WEB",
-            "url": "https://osv.dev/vulnerability/GHSA-cjvr-mfj7-j4j8"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28836"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-Scrapy -- exposure of sensitive information vulnerability"
+    "summary": "py-wagtail -- stored XSS vulnerability"
 }

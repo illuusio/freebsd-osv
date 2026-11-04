@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "curl"
+                "name": "webp"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "8.3.0"
+                            "fixed": "1.3.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +22,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://curl.se/docs/CVE-2023-38039.html"
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-4863"
         ],
-        "discovery": "2023-09-13T00:00:00Z",
+        "discovery": "2023-09-12T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-38039"
+                "CVE-2023-4863"
             ]
         },
-        "vid": "833b469b-5247-11ee-9667-080027f5fec9"
+        "vid": "4fd7a2fc-5860-11ee-a1b3-dca632daf43b"
     },
-    "details": "selmelc on hackerone reports:\n\n> When curl retrieves an HTTP response, it stores the incoming headers\n> so that they can be accessed later via the libcurl headers API.\n>\n> However, curl did not have a limit in how many or how large headers it\n> would accept in a response, allowing a malicious server to stream an\n> endless series of headers and eventually cause curl to run out of heap\n> memory.\n",
+    "details": "Google Chrome reports:\n\n> Heap buffer overflow in WebP \\... allowed a remote attacker to perform\n> an out of bounds memory write \\...\n",
     "id": "FreeBSD-2023-0285",
-    "modified": "2023-09-13T00:00:00Z",
-    "published": "2023-09-13T00:00:00Z",
+    "modified": "2023-09-21T00:00:00Z",
+    "published": "2023-09-21T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://curl.se/docs/CVE-2023-38039.html"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-4863"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-38039"
-        },
-        {
-            "type": "WEB",
-            "url": "https://curl.se/docs/CVE-2023-38039.html HERE"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4863"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "curl -- HTTP headers eat all memory"
+    "summary": "graphics/webp heap buffer overflow"
 }

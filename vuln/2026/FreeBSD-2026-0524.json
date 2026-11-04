@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.8.14"
+                            "fixed": "1.8.14,1"
                         }
                     ],
                     "type": "ECOSYSTEM"

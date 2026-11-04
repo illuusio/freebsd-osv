@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "phpldapadmin-php80"
+                "name": "redis"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.2.6.2"
+                            "fixed": "7.0.12"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "phpldapadmin-php81"
+                "name": "redis-devel"
             },
             "ranges": [
                 {
@@ -31,7 +31,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.2.6.2"
+                            "fixed": "7.0.12.20230710"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "redis62"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "6.2.13"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "redis60"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "6.0.20"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,34 +79,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://bugs.launchpad.net/ubuntu/+source/phpldapadmin/+bug/1906474"
+            "https://groups.google.com/g/redis-db/c/JDjKS0GubsQ"
         ],
-        "discovery": "2020-12-11T00:00:00Z",
+        "discovery": "2023-07-10T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2020-35132"
+                "CVE-2022-24834"
             ]
         },
-        "vid": "01eeea33-1afa-11ee-8a9b-b42e991fc52e"
+        "vid": "0e254b4a-1f37-11ee-a475-080027f5fec9"
     },
-    "details": "cve@mitre.org reports:\n\n> An XSS issue has been discovered in phpLDAPadmin before 1.2.6.2 that\n> allows users to store malicious values that may be executed by other\n> users at a later time via get_request in lib/function.php.\n",
+    "details": "Redis core team reports:\n\n> A specially crafted Lua script executing in Redis can trigger a heap\n> overflow in the cjson and cmsgpack libraries, and result in heap\n> corruption and potentially remote code execution.\n",
     "id": "FreeBSD-2023-0199",
-    "modified": "2023-07-05T00:00:00Z",
-    "published": "2023-07-05T00:00:00Z",
+    "modified": "2023-07-10T00:00:00Z",
+    "published": "2023-07-10T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://bugs.launchpad.net/ubuntu/+source/phpldapadmin/+bug/1906474"
+            "url": "https://groups.google.com/g/redis-db/c/JDjKS0GubsQ"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-35132"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-35132"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-24834"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "phpldapadmin -- XSS vulnerability"
+    "summary": "redis -- Heap overflow in the cjson and cmsgpack libraries"
 }

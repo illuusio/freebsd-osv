@@ -12,7 +12,7 @@
                             "introduced": "13.2"
                         },
                         {
-                            "fixed": "13.2_1"
+                            "fixed": "13.2_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -23,7 +23,7 @@
                             "introduced": "13.1"
                         },
                         {
-                            "fixed": "13.1_8"
+                            "fixed": "13.1_9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -34,7 +34,7 @@
                             "introduced": "12.4"
                         },
                         {
-                            "fixed": "12.4_3"
+                            "fixed": "12.4_4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -43,31 +43,31 @@
         }
     ],
     "database_specific": {
-        "discovery": "2023-06-21T00:00:00Z",
+        "discovery": "2023-08-01T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-3326"
+                "CVE-2023-38408"
             ],
             "freebsdsa": [
-                "SA-23:04.pam_krb5"
+                "SA-23:08.ssh"
             ]
         },
-        "vid": "41af0277-47bf-11ee-8e38-002590c1f29c"
+        "vid": "291d0953-47c1-11ee-8e38-002590c1f29c"
     },
-    "details": "# Problem Description:\n\npam_krb5 authenticates the user by essentially running kinit(1) with the\npassword, getting a \\`ticket-granting ticket\\' (tgt) from the Kerberos\nKDC (Key Distribution Center) over the network, as a way to verify the\npassword.\n\nNormally, the system running the pam_krb5 module will also have a\nkeytab, a key provisioned by the KDC. The pam_krb5 module will use the\ntgt to get a service ticket and validate it against the keytab, ensuring\nthe tgt is valid and therefore, the password is valid.\n\nHowever, if a keytab is not provisioned on the system, pam_krb5 has no\nway to validate the response from the KDC, and essentially trusts the\ntgt provided over the network as being valid.\n\n# Impact:\n\nIn a non-default FreeBSD installation that leverages pam_krb5 for\nauthentication and does not have a keytab provisioned, an attacker that\nis able to control both the password and the KDC responses can return a\nvalid tgt, allowing authentication to occur for any user on the system.\n",
+    "details": "# Problem Description:\n\nThe server may cause ssh-agent to load shared libraries other than those\nrequired for PKCS#11 support. These shared libraries may have side\neffects that occur on load and unload (dlopen and dlclose).\n\n# Impact:\n\nAn attacker with access to a server that accepts a forwarded ssh-agent\nconnection may be able to execute code on the machine running ssh-agent.\nNote that the attack relies on properties of operating system-provided\nlibraries. This has been demonstrated on other operating systems; it is\nunknown whether this attack is possible using the libraries provided by\na FreeBSD installation.\n",
     "id": "FreeBSD-2023-0242",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3326"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-38408"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-23:04.pam_krb5.asc"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-23:08.ssh.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- Network authentication attack via pam_krb5"
+    "summary": "FreeBSD -- Potential remote code execution via ssh-agent forwarding"
 }

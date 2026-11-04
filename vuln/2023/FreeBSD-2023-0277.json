@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "python38"
+                "name": "chromium"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.8.18"
+                            "fixed": "117.0.5938.62"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +22,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "python39"
+                "name": "ungoogled-chromium"
             },
             "ranges": [
                 {
@@ -31,45 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.9.18"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "python310"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.10.13"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "python311"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.11.5"
+                            "fixed": "117.0.5938.62"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,30 +41,80 @@
     ],
     "database_specific": {
         "cite": [
-            "https://pythoninsider.blogspot.com/2023/08/python-3115-31013-3918-and-3818-is-now.html"
+            "https://chromereleases.googleblog.com/2023/09/stable-channel-update-for-desktop_12.html"
         ],
-        "discovery": "2023-08-22T00:00:00Z",
+        "discovery": "2023-09-12T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-40217"
+                "CVE-2023-4863",
+                "CVE-2023-4900",
+                "CVE-2023-4901",
+                "CVE-2023-4902",
+                "CVE-2023-4903",
+                "CVE-2023-4904",
+                "CVE-2023-4905",
+                "CVE-2023-4906",
+                "CVE-2023-4907",
+                "CVE-2023-4908",
+                "CVE-2023-4909"
             ]
         },
-        "vid": "a57472ba-4d84-11ee-bf05-000c29de725b"
+        "vid": "88754d55-521a-11ee-8290-a8a1599412c6"
     },
-    "details": "Python reports:\n\n> gh-108310: Fixed an issue where instances of ssl.SSLSocket were\n> vulnerable to a bypass of the TLS handshake and included protections\n> (like certificate verification) and treating sent unencrypted data as\n> if it were post-handshake TLS encrypted data.\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 16 security fixes:\n>\n> - \\[1479274\\] Critical CVE-2023-4863: Heap buffer overflow in WebP.\n>   Reported by Apple Security Engineering and Architecture (SEAR) and\n>   The Citizen Lab at The University of Toronto\u02bcs Munk School on\n>   2023-09-06\n> - \\[1430867\\] Medium CVE-2023-4900: Inappropriate implementation in\n>   Custom Tabs. Reported by Levit Nudi from Kenya on 2023-04-06\n> - \\[1459281\\] Medium CVE-2023-4901: Inappropriate implementation in\n>   Prompts. Reported by Kang Ali on 2023-06-29\n> - \\[1454515\\] Medium CVE-2023-4902: Inappropriate implementation in\n>   Input. Reported by Axel Chong on 2023-06-14\n> - \\[1446709\\] Medium CVE-2023-4903: Inappropriate implementation in\n>   Custom Mobile Tabs. Reported by Ahmed ElMasry on 2023-05-18\n> - \\[1453501\\] Medium CVE-2023-4904: Insufficient policy enforcement in\n>   Downloads. Reported by Tudor Enache \\@tudorhacks on 2023-06-09\n> - \\[1441228\\] Medium CVE-2023-4905: Inappropriate implementation in\n>   Prompts. Reported by Hafiizh on 2023-04-29\n> - \\[1449874\\] Low CVE-2023-4906: Insufficient policy enforcement in\n>   Autofill. Reported by Ahmed ElMasry on 2023-05-30\n> - \\[1462104\\] Low CVE-2023-4907: Inappropriate implementation in\n>   Intents. Reported by Mohit Raj (shadow2639) on 2023-07-04\n> - \\[1451543\\] Low CVE-2023-4908: Inappropriate implementation in\n>   Picture in Picture. Reported by Axel Chong on 2023-06-06\n> - \\[1463293\\] Low CVE-2023-4909: Inappropriate implementation in\n>   Interstitials. Reported by Axel Chong on 2023-07-09\n",
     "id": "FreeBSD-2023-0277",
-    "modified": "2023-09-07T00:00:00Z",
-    "published": "2023-09-07T00:00:00Z",
+    "modified": "2023-09-13T00:00:00Z",
+    "published": "2023-09-13T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://pythoninsider.blogspot.com/2023/08/python-3115-31013-3918-and-3818-is-now.html"
+            "url": "https://chromereleases.googleblog.com/2023/09/stable-channel-update-for-desktop_12.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-40217"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4863"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4900"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4901"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4902"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4903"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4904"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4905"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4906"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4907"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4908"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4909"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Python -- multiple vulnerabilities"
+    "summary": "chromium -- multiple vulnerabilities"
 }

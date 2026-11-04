@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.2,1"
+                            "introduced": "1.2"
                         },
                         {
                             "fixed": "1.2.5"
@@ -20,7 +20,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.1,1"
+                            "introduced": "1.1"
                         },
                         {
                             "fixed": "1.1.4"
@@ -39,7 +39,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.2,1"
+                            "introduced": "1.2"
                         },
                         {
                             "fixed": "1.2.5"
@@ -50,7 +50,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.1,1"
+                            "introduced": "1.1"
                         },
                         {
                             "fixed": "1.1.4"
@@ -69,7 +69,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.2,1"
+                            "introduced": "1.2"
                         },
                         {
                             "fixed": "1.2.5"
@@ -80,7 +80,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.1,1"
+                            "introduced": "1.1"
                         },
                         {
                             "fixed": "1.1.4"
@@ -99,7 +99,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.2,1"
+                            "introduced": "1.2"
                         },
                         {
                             "fixed": "1.2.5"
@@ -110,7 +110,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.1,1"
+                            "introduced": "1.1"
                         },
                         {
                             "fixed": "1.1.4"
@@ -129,7 +129,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.2,1"
+                            "introduced": "1.2"
                         },
                         {
                             "fixed": "1.2.5"
@@ -140,7 +140,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.1,1"
+                            "introduced": "1.1"
                         },
                         {
                             "fixed": "1.1.4"
@@ -159,7 +159,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.2,1"
+                            "introduced": "1.2"
                         },
                         {
                             "fixed": "1.2.5"
@@ -170,7 +170,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.1,1"
+                            "introduced": "1.1"
                         },
                         {
                             "fixed": "1.1.4"
@@ -189,7 +189,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.2,1"
+                            "introduced": "1.2"
                         },
                         {
                             "fixed": "1.2.5"
@@ -200,7 +200,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.1,1"
+                            "introduced": "1.1"
                         },
                         {
                             "fixed": "1.1.4"

@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "11.0,1,1"
+                            "introduced": "11.0,1"
                         },
                         {
                             "fixed": "17.0,1"
@@ -115,7 +115,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "11.0,1"
+                            "introduced": "11.0"
                         },
                         {
                             "fixed": "17.0"
@@ -145,7 +145,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "1.9.2.*,1"
+                            "introduced": "1.9.2.*"
                         },
                         {
                             "fixed": "10.0.11"

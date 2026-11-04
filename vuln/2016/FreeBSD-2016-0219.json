@@ -69,7 +69,6 @@
                 "CVE-2016-1673",
                 "CVE-2016-1674",
                 "CVE-2016-1675",
-                "CVE-2016-1672",
                 "CVE-2016-1677",
                 "CVE-2016-1678",
                 "CVE-2016-1679",
@@ -115,10 +114,6 @@
         {
             "type": "ADVISORY",
             "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1675"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2016-1672"
         },
         {
             "type": "ADVISORY",

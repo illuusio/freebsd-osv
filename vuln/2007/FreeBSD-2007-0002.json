@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "4.7,1"
+                            "introduced": "4.7"
                         },
                         {
                             "fixed": "4.7.5"

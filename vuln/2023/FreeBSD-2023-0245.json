@@ -3,27 +3,92 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "FreeBSD"
+                "name": "py37-markdown2"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "13.2"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "13.2_2"
+                            "fixed": "2.3.9"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-markdown2"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "13.1"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "13.1_9"
+                            "fixed": "2.3.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-markdown2"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-markdown2"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-markdown2"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -32,31 +97,35 @@
         }
     ],
     "database_specific": {
-        "discovery": "2023-08-01T00:00:00Z",
+        "cite": [
+            "https://osv.dev/vulnerability/PYSEC-2020-65"
+        ],
+        "discovery": "2020-04-20T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-3494"
-            ],
-            "freebsdsa": [
-                "SA-23:07.bhyve"
+                "CVE-2020-11888"
             ]
         },
-        "vid": "ab437561-47c0-11ee-8e38-002590c1f29c"
+        "vid": "cf6f3465-e996-4672-9458-ce803f29fdb7"
     },
-    "details": "# Problem Description:\n\nThe fwctl driver implements a state machine which is executed when the\nguest accesses certain x86 I/O ports. The interface lets the guest copy\na string into a buffer resident in the bhyve process\\' memory. A bug in\nthe state machine implementation can result in a buffer overflowing when\ncopying this string.\n\n# Impact:\n\nA malicious, privileged software running in a guest VM can exploit the\nbuffer overflow to achieve code execution on the host in the bhyve\nuserspace process, which typically runs as root. Note that bhyve runs in\na Capsicum sandbox, so malicious code is constrained by the capabilities\navailable to the bhyve process.\n",
+    "details": "TheGrandPew reports:\n\n> python-markdown2 through 2.3.8 allows XSS because element names are\n> mishandled unless a \\\\w+ match succeeds.\n>\n> For example, an attack might use elementname@ or elementname- with an\n> onclick attribute.\n",
     "id": "FreeBSD-2023-0245",
     "modified": "2023-08-31T00:00:00Z",
     "published": "2023-08-31T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-3494"
+            "type": "REPORT",
+            "url": "https://osv.dev/vulnerability/PYSEC-2020-65"
         },
         {
             "type": "ADVISORY",
-            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-23:07.bhyve.asc"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-11888"
+        },
+        {
+            "type": "WEB",
+            "url": "https://osv.dev/vulnerability/GHSA-fv3h-8x5j-pvgq"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "FreeBSD -- bhyve privileged guest escape via fwctl"
+    "summary": "py-markdown2 -- XSS vulnerability"
 }

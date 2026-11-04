@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "slurm-wlm"
+                "name": "gitea"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "23.11.1"
+                            "fixed": "1.21.2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,55 +22,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.schedmd.com/news.php?id=283#OPT_283"
+            "https://github.com/go-gitea/gitea/pull/28406",
+            "https://github.com/go-gitea/gitea/pull/28423"
         ],
-        "discovery": "2023-11-29T00:00:00Z",
-        "references": {
-            "cvename": [
-                "CVE-2023-49933",
-                "CVE-2023-49934",
-                "CVE-2023-49935",
-                "CVE-2023-49936",
-                "CVE-2023-49937",
-                "CVE-2023-49938"
-            ]
-        },
-        "vid": "76c2110b-9e97-11ee-ae23-a0f3c100ae18"
+        "discovery": "2023-08-30T00:00:00Z",
+        "vid": "482bb980-99a3-11ee-b5f7-6bd56600d90c"
     },
-    "details": "Slurm releases notes:\n\n> # Description\n>\n> ##### CVE-2023-49933 through CVE-2023-49938\n>\n> Slurm versions 23.11.1, 23.02.7, 22.05.11 are now available and\n> address a number of recently-discovered security issues. They\\'ve been\n> assigned CVE-2023-49933 through CVE-2023-49938.\n",
+    "details": "The Gitea team reports:\n\n> Fix missing check\n\n> Do some missing checks\n\nBy crafting an API request, attackers can access the contents of issues\neven though the logged-in user does not have access rights to these\nissues.\n",
     "id": "FreeBSD-2023-0363",
-    "modified": "2023-12-19T00:00:00Z",
-    "published": "2023-12-19T00:00:00Z",
+    "modified": "2023-09-10T00:00:00Z",
+    "published": "2023-09-10T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.schedmd.com/news.php?id=283#OPT_283"
+            "url": "https://github.com/go-gitea/gitea/pull/28406"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-49933"
+            "type": "REPORT",
+            "url": "https://github.com/go-gitea/gitea/pull/28423"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-49934"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-49935"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-49936"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-49937"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-49938"
+            "type": "WEB",
+            "url": "https://github.com/go-gitea/gitea/releases/tag/v1.21.2"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "slurm-wlm -- Several security issues"
+    "summary": "gitea -- missing permission checks"
 }

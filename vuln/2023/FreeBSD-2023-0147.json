@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "jellyfin"
+                "name": "git"
             },
             "ranges": [
                 {
@@ -12,7 +12,45 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "10.8.10"
+                            "fixed": "2.40.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "git-lite"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.40.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "git-tiny"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.40.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,43 +60,39 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/jellyfin/jellyfin-web/security/advisories/GHSA-89hp-h43h-r5pq"
+            "https://github.com/git/git/security/advisories/GHSA-2hvf-7c8p-28fx"
         ],
-        "discovery": "2023-04-24T00:00:00Z",
+        "discovery": "2023-04-25T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-30626",
-                "CVE-2023-30627"
+                "CVE-2023-25652",
+                "CVE-2023-29007"
             ]
         },
-        "vid": "4ee322e9-e363-11ed-b934-b42e991fc52e"
+        "vid": "d2c6173f-e43b-11ed-a1d7-002590f2a714"
     },
-    "details": "security-advisories@github.com reports:\n\n> Jellyfin is a free-software media system. Versions starting with\n> 10.8.0 and prior to 10.8.10 and prior have a directory traversal\n> vulnerability inside the \\`ClientLogController\\`, specifically\n> \\`/ClientLog/Document\\`. When combined with a cross-site scripting\n> vulnerability (CVE-2023-30627), this can result in file write and\n> arbitrary code execution. Version 10.8.10 has a patch for this issue.\n> There are no known workarounds.\n",
+    "details": "git developers reports:\n\n> This update includes 2 security fixes:\n>\n> - CVE-2023-25652: By feeding specially crafted input to \\`git apply\n>   \\--reject\\`, a path outside the working tree can be overwritten with\n>   partially controlled contents (corresponding to the rejected hunk(s)\n>   from the given patch)\n> - CVE-2023-29007: A specially crafted \\`.gitmodules\\` file with\n>   submodule URLs that are longer than 1024 characters can used to\n>   exploit a bug that can be used to inject arbitrary configuration\n>   into user\\'s git config. This can result in arbitrary execution of\n>   code, by inserting values for core.pager, core.editor and so on\n",
     "id": "FreeBSD-2023-0147",
-    "modified": "2023-04-25T00:00:00Z",
-    "published": "2023-04-25T00:00:00Z",
+    "modified": "2023-04-26T00:00:00Z",
+    "published": "2023-04-26T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/jellyfin/jellyfin-web/security/advisories/GHSA-89hp-h43h-r5pq"
+            "url": "https://github.com/git/git/security/advisories/GHSA-2hvf-7c8p-28fx"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-30626"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-25652"
         },
         {
             "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-30626"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-29007"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-30627"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-30627"
+            "type": "WEB",
+            "url": "https://github.com/git/git/security/advisories/GHSA-v48j-4xgg-4844"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "jellyfin -- Multiple vulnerabilities"
+    "summary": "git -- Multiple vulnerabilities"
 }

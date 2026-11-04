@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "electron25"
+                "name": "chromium"
             },
             "ranges": [
                 {
@@ -12,7 +12,26 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "25.8.0"
+                            "fixed": "116.0.5845.179"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "ungoogled-chromium"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "116.0.5845.179"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,70 +41,45 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/electron/electron/releases/tag/v25.8.0"
+            "https://chromereleases.googleblog.com/2023/09/stable-channel-update-for-desktop.html"
         ],
-        "discovery": "2023-08-30T00:00:00Z",
+        "discovery": "2023-09-05T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-4427",
-                "CVE-2023-4428",
-                "CVE-2023-4429",
-                "CVE-2023-4430",
-                "CVE-2023-4572"
+                "CVE-2023-4761",
+                "CVE-2023-4762",
+                "CVE-2023-4763",
+                "CVE-2023-4764"
             ]
         },
-        "vid": "970dcbe0-a947-41a4-abe9-7aaba87f41fe"
+        "vid": "df0a2fd1-4c92-11ee-8290-a8a1599412c6"
     },
-    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-4427.\n> - Security: backported fix for CVE-2023-4428.\n> - Security: backported fix for CVE-2023-4429.\n> - Security: backported fix for CVE-2023-4430.\n> - Security: backported fix for CVE-2023-4572.\n",
+    "details": "Chrome Releases reports:\n\n> This update includes 4 security fixes:\n>\n> - \\[1476403\\] High CVE-2023-4761: Out of bounds memory access in\n>   FedCM. Reported by DarkNavy on 2023-08-28\n> - \\[1473247\\] High CVE-2023-4762: Type Confusion in V8. Reported by\n>   Rong Jian of VRI on 2023-08-16\n> - \\[1469928\\] High CVE-2023-4763: Use after free in Networks. Reported\n>   by anonymous on 2023-08-03\n> - \\[1447237\\] High CVE-2023-4764: Incorrect security UI in BFCache.\n>   Reported by Irvan Kurniawan (sourc7) on 2023-05-20\n",
     "id": "FreeBSD-2023-0268",
-    "modified": "2023-08-31T00:00:00Z",
-    "published": "2023-08-31T00:00:00Z",
+    "modified": "2023-09-06T00:00:00Z",
+    "published": "2023-09-06T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/electron/electron/releases/tag/v25.8.0"
+            "url": "https://chromereleases.googleblog.com/2023/09/stable-channel-update-for-desktop.html"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4427"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4761"
         },
         {
             "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-qqwc-fhxf-4mf3"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4762"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4428"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4763"
         },
         {
             "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-m56x-9vph-h345"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4429"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-r43m-48vw-xgp3"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4430"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-h295-rcc5-87jh"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4572"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-6994-5wq3-gpjv"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-4764"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "electron25 -- multiple vulnerabilities"
+    "summary": "chromium -- multiple vulnerabilities"
 }

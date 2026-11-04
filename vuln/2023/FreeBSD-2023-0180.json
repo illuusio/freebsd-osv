@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "python37"
+                "name": "vscode"
             },
             "ranges": [
                 {
@@ -12,83 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "3.7.17"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "python38"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.8.17"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "python39"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.9.17"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "python310"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.10.12"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "python311"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "3.11.4"
+                            "fixed": "1.79.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,60 +22,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://pythoninsider.blogspot.com/2023/06/python-3114-31012-3917-3817-3717-and.html"
+            "https://github.com/microsoft/vscode/security/advisories/GHSA-j5wm-6crw-xvmr"
         ],
-        "discovery": "2022-06-08T00:00:00Z",
+        "discovery": "2023-06-13T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-4303",
-                "CVE-2023-2650",
-                "CVE-2023-0286",
-                "CVE-2023-0464",
-                "CVE-2023-0465",
-                "CVE-2023-0466",
-                "CVE-2023-24329"
+                "CVE-2023-33144"
             ]
         },
-        "vid": "d86becfe-05a4-11ee-9d4a-080027eda32c"
+        "vid": "f0250129-fdb8-41ed-aa9e-661ff5026845"
     },
-    "details": "Python reports:\n\n> gh-103142: The version of OpenSSL used in Windows and Mac installers\n> has been upgraded to 1.1.1u to address CVE-2023-2650, CVE-2023-0465,\n> CVE-2023-0466, CVE-2023-0464, as well as CVE-2023-0286, CVE-2022-4303,\n> and CVE-2022-4303 fixed previously in 1.1.1t (gh-101727).\n>\n> gh-102153: urllib.parse.urlsplit() now strips leading C0 control and\n> space characters following the specification for URLs defined by\n> WHATWG in response to CVE-2023-24329.\n>\n> gh-99889: Fixed a security in flaw in uu.decode() that could allow for\n> directory traversal based on the input if no out_file was specified.\n>\n> gh-104049: Do not expose the local on-disk location in directory\n> indexes produced by http.client.SimpleHTTPRequestHandler.\n>\n> gh-101283: subprocess.Popen now uses a safer approach to find cmd.exe\n> when launching with shell=True.\n>\n> gh-103935: trace.\\_\\_main\\_\\_ now uses io.open_code() for files to be\n> executed instead of raw open().\n>\n> gh-102953: The extraction methods in tarfile, and\n> shutil.unpack_archive(), have a new filter argument that allows\n> limiting tar features than may be surprising or dangerous, such as\n> creating files outside the destination directory.\n>\n> gh-102126: Fixed a deadlock at shutdown when clearing thread states if\n> any finalizer tries to acquire the runtime head lock.\n>\n> gh-100892: Fixed a crash due to a race while iterating over thread\n> states in clearing threading.local.\n",
+    "details": "VSCode developers reports:\n\n> VS Code Information Disclosure Vulnerability\n>\n> A information disclosure vulnerability exists in VS Code 1.79.0 and\n> earlier versions on Windows when file system operations are performed\n> on malicious UNC paths. Examples include reading or resolving metadata\n> of such paths. An authorised attacker must send the user a malicious\n> file and convince the user to open it for the vulnerability to occur.\n> Exploiting this vulnerability could allow the disclosure of NTLM\n> hashes.\n",
     "id": "FreeBSD-2023-0180",
-    "modified": "2023-06-08T00:00:00Z",
-    "published": "2023-06-08T00:00:00Z",
+    "modified": "2023-06-13T00:00:00Z",
+    "published": "2023-06-13T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://pythoninsider.blogspot.com/2023/06/python-3114-31012-3917-3817-3717-and.html"
+            "url": "https://github.com/microsoft/vscode/security/advisories/GHSA-j5wm-6crw-xvmr"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-4303"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-33144"
         },
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2650"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0286"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0464"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0465"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0466"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-24329"
+            "type": "WEB",
+            "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2023-33144"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Python -- multiple vulnerabilities"
+    "summary": "vscode -- VS Code Information Disclosure Vulnerability"
 }

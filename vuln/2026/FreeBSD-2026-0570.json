@@ -1,0 +1,68 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "metasploit"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "6.5.7"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "discovery": "2026-08-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-16895",
+                "CVE-2026-87689",
+                "CVE-2026-87690",
+                "CVE-2026-109681",
+                "CVE-2026-109682"
+            ]
+        },
+        "vid": "4488c0db-d45b-11f1-bae2-3497f65b111b"
+    },
+    "details": "Rapid7 published security advisories for issues fixed in releases 6.5.2\nthrough 6.5.7. The credential endpoint of the msf-ws REST API is\nreachable without authentication, authentication in the JSON-RPC service\nis skipped when the database health check fails, a post module writes\nfiles outside the loot directory through a crafted path, and requests\nfollow HTTP redirects and FTP PASV responses to arbitrary hosts.\n",
+    "id": "FreeBSD-2026-0570",
+    "modified": "2026-10-30T00:00:00Z",
+    "published": "2026-10-30T00:00:00Z",
+    "references": [
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16895"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-87689"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-87690"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-109681"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-109682"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/rapid7/metasploit-framework/releases/tag/6.5.7"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "metasploit -- multiple vulnerabilities"
+}

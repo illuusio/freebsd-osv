@@ -42,10 +42,6 @@
             "url": "https://blog.gitea.io/2020/11/gitea-1.12.6-is-released/"
         },
         {
-            "type": "WEB",
-            "url": "Disallow urlencoded new lines in git protocol paths if there is a port"
-        },
-        {
             "type": "REPORT",
             "url": "https://bugs.freebsd.org/bugzilla/show_bug.cgi?id=251296"
         }

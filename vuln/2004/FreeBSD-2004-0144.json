@@ -241,11 +241,11 @@
         },
         {
             "type": "WEB",
-            "url": "ftp://ftp.kde.org/pub/kde/security_patches/post-3.2.3-kdelibs-htmlframes.patch"
+            "url": "https://download.kde.org/security_patches/post-3.2.3-kdelibs-htmlframes.patch"
         },
         {
             "type": "WEB",
-            "url": "ftp://ftp.kde.org/pub/kde/security_patches/post-3.2.3-kdebase-htmlframes.patch"
+            "url": "https://download.kde.org/security_patches/post-3.2.3-kdebase-htmlframes.patch"
         }
     ],
     "schema_version": "1.7.0",

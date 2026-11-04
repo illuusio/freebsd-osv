@@ -1,0 +1,108 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "redmine70"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "7.0.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "redmine61"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "6.1.6"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "redmine60"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "6.0.12"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://www.redmine.org/projects/redmine/wiki/Security_Advisories"
+        ],
+        "discovery": "2026-11-01T00:00:00Z",
+        "vid": "e2cda057-d6a0-11f1-975e-e4434b819e80"
+    },
+    "details": "Redmine reports:\n\n> - High: ReDoS in wiki macro argument parsing (#44657). Affects 6.0.0\n>   and later; fixed in 7.0.3, 6.1.6 and 6.0.12.\n> - High: OAuth token scope is ignored in Project.allowed_to_condition\n>   (#44625). Affects 6.1.0 and later; fixed in 7.0.3 and 6.1.6.\n> - High: Private project names and role assignments leaked via GET\n>   /groups/\\<id\\>.json?include=memberships (#44468). Fixed in 7.0.2,\n>   6.1.5 and 6.0.12.\n> - High: Private/invisible issue subjects leaked via REST API\n>   include=children (#44467). Fixed in 7.0.2, 6.1.5 and 6.0.12.\n> - Moderate: Reflected XSS in attachments#edit_all (unvalidated\n>   back_url) (#44682). Fixed in 7.0.3, 6.1.6 and 6.0.12.\n> - Moderate: OAuth token scopes are bypassed when creating projects\n>   (#44644). Affects 6.1.0 and later; fixed in 7.0.3 and 6.1.6.\n> - Low: validate_back_url accepts URLs that browsers resolve to another\n>   host (#44683). Fixed in 7.0.3, 6.1.6 and 6.0.12.\n",
+    "id": "FreeBSD-2026-0590",
+    "modified": "2026-11-02T00:00:00Z",
+    "published": "2026-11-02T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://www.redmine.org/projects/redmine/wiki/Security_Advisories"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.redmine.org/issues/44657"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.redmine.org/issues/44625"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.redmine.org/issues/44468"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.redmine.org/issues/44467"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.redmine.org/issues/44682"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.redmine.org/issues/44644"
+        },
+        {
+            "type": "WEB",
+            "url": "https://www.redmine.org/issues/44683"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "redmine -- multiple vulnerabilities"
+}

@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "freenginx"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.30.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://freenginx.org/en/CHANGES-1.30"
+        ],
+        "discovery": "2026-10-27T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-97629"
+            ]
+        },
+        "vid": "4784aba5-d6a9-11f1-8a93-a0369f6e85b8"
+    },
+    "details": "The freenginx project reports:\n\n> One of the keys was left uninitialized when using automatic rotation\n> of TLS session ticket keys, making it possible to forge a session and\n> bypass client certificate verification (CVE-2026-97629).\n",
+    "id": "FreeBSD-2026-0591",
+    "modified": "2026-11-02T00:00:00Z",
+    "published": "2026-11-02T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://freenginx.org/en/CHANGES-1.30"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97629"
+        },
+        {
+            "type": "WEB",
+            "url": "https://freenginx.org/en/CHANGES"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "freenginx -- TLS session ticket key left uninitialized"
+}

@@ -47,7 +47,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "2.99,1"
+                            "introduced": "2.99"
                         },
                         {
                             "fixed": "3.0.16"

@@ -124,10 +124,6 @@
         {
             "type": "WEB",
             "url": "https://github.com/erikd/libsndfile/commit/f457b7b5ecfe"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/erikd/libsndfile/commit/60b234301adf"
         }
     ],
     "schema_version": "1.7.0",

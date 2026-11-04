@@ -1,0 +1,82 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "git-lfs"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.8.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/git-lfs/git-lfs/releases/tag/v3.8.1"
+        ],
+        "discovery": "2026-10-22T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-69260",
+                "CVE-2026-69261",
+                "CVE-2026-105802",
+                "CVE-2026-105803"
+            ]
+        },
+        "vid": "cacb4538-d2d0-11f1-8062-64bc58adb10f"
+    },
+    "details": "The Git LFS project reports:\n\n> This release introduces security fixes for four vulnerabilities that\n> have been assigned the identifiers CVE-2026-69260, CVE-2026-69261,\n> CVE-2026-105802, and CVE-2026-105803. These vulnerabilities apply to\n> all of the operating systems supported by Git LFS.\n>\n> CVE-2026-69260: When Git LFS sends a remote command via SSH, it does\n> not properly format the argument it derives from the remote SSH URL.\n> Servers which pass remote commands to a shell without sanitizing their\n> arguments may be induced to execute malicious programs.\n>\n> CVE-2026-69261: After receiving an HTTP redirection, Git LFS may\n> forward Cookie headers to a host other than the one for which they\n> were intended. If credentials or other secrets are stored in HTTP\n> cookies, they may be leaked to a potentially malicious host.\n>\n> CVE-2026-105802: When operating in a malicious repository which\n> contains a submodule, Git LFS may execute an arbitrary program after\n> incorrectly parsing line feed (LF) characters in the submodule\\'s URL.\n>\n> CVE-2026-105803: When operating in a malicious repository, Git LFS may\n> execute an arbitrary program as a custom transfer adapter after\n> incorrectly filtering the options defined in an .lfsconfig file.\n",
+    "id": "FreeBSD-2026-0563",
+    "modified": "2026-10-28T00:00:00Z",
+    "published": "2026-10-28T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/git-lfs/git-lfs/releases/tag/v3.8.1"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-69260"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-69261"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-105802"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-105803"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/git-lfs/git-lfs/security/advisories/GHSA-w3f2-pr6x-wwjc"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/git-lfs/git-lfs/security/advisories/GHSA-x7xj-4j4f-88xr"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/git-lfs/git-lfs/security/advisories/GHSA-xrgv-7vx6-5vx6"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/git-lfs/git-lfs/security/advisories/GHSA-x72p-hmqp-46hw"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "git-lfs -- multiple vulnerabilities"
+}

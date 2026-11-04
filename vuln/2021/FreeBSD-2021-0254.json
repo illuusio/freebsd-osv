@@ -382,6 +382,9 @@
         }
     ],
     "database_specific": {
+        "cite": [
+            "https://access.redhat.com/security/cve/CVE-2021-3620"
+        ],
         "discovery": "2021-06-25T00:00:00Z",
         "references": {
             "cvename": [
@@ -396,12 +399,12 @@
     "published": "2021-10-11T00:00:00Z",
     "references": [
         {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-3620"
+            "type": "REPORT",
+            "url": "https://access.redhat.com/security/cve/CVE-2021-3620"
         },
         {
-            "type": "WEB",
-            "url": "https://access.redhat.com/security/cve/CVE-2021-3620"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-3620"
         },
         {
             "type": "ADVISORY",

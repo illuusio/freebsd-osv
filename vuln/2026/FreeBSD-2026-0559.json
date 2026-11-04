@@ -1,0 +1,55 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "p5-Plack"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.0057"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://metacpan.org/dist/Plack/changes"
+        ],
+        "discovery": "2026-10-25T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-115825"
+            ]
+        },
+        "vid": "3bd1edbf-d2d4-11f1-97dc-40b034429ecf"
+    },
+    "details": "Plack project reports:\n\n> Fix HTTP::Server::PSGI allocating a buffer as large as the declared\n> Content-Length, which let a single request crash the server with \\\"Out\n> of memory!\\\" (CVE-2026-115825).\n",
+    "id": "FreeBSD-2026-0559",
+    "modified": "2026-10-28T00:00:00Z",
+    "published": "2026-10-28T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://metacpan.org/dist/Plack/changes"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-115825"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/cve-2026-115825"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "p5-Plack -- memory allocation vulnerability"
+}

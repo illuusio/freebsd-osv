@@ -2,17 +2,39 @@
     "affected": [
         {
             "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "electron25"
+                "ecosystem": "FreeBSD:kernel",
+                "name": "FreeBSD-kernel"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "0"
+                            "introduced": "14.0"
                         },
                         {
-                            "fixed": "25.9.7"
+                            "fixed": "14.0_2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "13.2"
+                        },
+                        {
+                            "fixed": "13.2_4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "12.4"
+                        },
+                        {
+                            "fixed": "12.4_6"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -21,53 +43,31 @@
         }
     ],
     "database_specific": {
-        "cite": [
-            "https://github.com/electron/electron/releases/tag/v25.9.7"
-        ],
-        "discovery": "2023-12-01T00:00:00Z",
+        "discovery": "2023-12-05T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-6345",
-                "CVE-2023-6346",
-                "CVE-2023-6347"
+                "CVE-2023-6534"
+            ],
+            "freebsdsa": [
+                "SA-23:17.pf"
             ]
         },
-        "vid": "302fc846-860f-482e-a8f6-ee9f254dfacf"
+        "vid": "9cbbc506-93c1-11ee-8e38-002590c1f29c"
     },
-    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-6345.\n> - Security: backported fix for CVE-2023-6346.\n> - Security: backported fix for CVE-2023-6347.\n",
+    "details": "# Problem Description:\n\nAs part of its stateful TCP connection tracking implementation, pf\nperforms sequence number validation on inbound packets. This makes it\ndifficult for a would-be attacker to spoof the sender and inject packets\ninto a TCP stream, since crafted packets must contain sequence numbers\nwhich match the current connection state to avoid being rejected by the\nfirewall.\n\nA bug in the implementation of sequence number validation means that the\nsequence number is not in fact validated, allowing an attacker who is\nable to impersonate the remote host and guess the connection\\'s port\nnumbers to inject packets into the TCP stream.\n\n# Impact:\n\nAn attacker can, with relatively little effort, inject packets into a\nTCP stream destined to a host behind a pf firewall. This could be used\nto implement a denial-of-service attack for hosts behind the firewall,\nfor example by sending TCP RST packets to the host.\n",
     "id": "FreeBSD-2023-0350",
-    "modified": "2023-12-01T00:00:00Z",
-    "published": "2023-12-01T00:00:00Z",
+    "modified": "2023-12-14T00:00:00Z",
+    "published": "2023-12-05T00:00:00Z",
     "references": [
         {
-            "type": "REPORT",
-            "url": "https://github.com/electron/electron/releases/tag/v25.9.7"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6534"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6345"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-xm5p-7w7v-qqr5"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6346"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-w427-5x7p-xj8x"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6347"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-6jj9-4hh8-6xpv"
+            "url": "https://www.freebsd.org/security/advisories/FreeBSD-SA-23:17.pf.asc"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "electron25 -- multiple vulnerabilities"
+    "summary": "FreeBSD -- TCP spoofing vulnerability in pf(4)"
 }

@@ -22,7 +22,7 @@
     ],
     "database_specific": {
         "cite": [
-            "http://.com/advisories/29792"
+            "http://secunia.com/advisories/29792"
         ],
         "discovery": "2008-04-12T00:00:00Z",
         "references": {
@@ -42,7 +42,7 @@
     "references": [
         {
             "type": "REPORT",
-            "url": "http://.com/advisories/29792"
+            "url": "http://secunia.com/advisories/29792"
         },
         {
             "type": "ADVISORY",
@@ -51,10 +51,6 @@
         {
             "type": "ADVISORY",
             "url": "https://www.securityfocus.com/bid/28770/info"
-        },
-        {
-            "type": "WEB",
-            "url": "http://secunia.com/advisories/29792"
         },
         {
             "type": "WEB",

@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "open-vm-tools"
+                "name": "vorbis-tools"
             },
             "ranges": [
                 {
@@ -12,26 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "12.3.5"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "open-vm-tools-nox11"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "12.3.5"
+                            "fixed": "1.4.2_4,3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,43 +22,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://www.vmware.com/security/advisories/VMSA-2023-0024.html"
+            "https://github.com/xiph/vorbis-tools/issues/41"
         ],
-        "discovery": "2023-10-26T00:00:00Z",
+        "discovery": "2023-09-16T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-34058",
-                "CVE-2023-34059"
+                "CVE-2023-43361"
             ]
         },
-        "vid": "d2505ec7-78ea-11ee-9131-6f01853956d5"
+        "vid": "a1a1f81c-7c13-11ee-bcf1-f8b156b6dcc8"
     },
-    "details": "VMware reports:\n\n> This update includes 2 security fixes:\n>\n> - High CVE-2023-34058: SAML token signature bypass vulnerability\n> - High CVE-2023-34059: File descriptor hijack vulnerability in the\n>   vmware-user-suid-wrapper\n",
+    "details": "Frank-Z7 reports:\n\n> Heap buffer overflow when vorbis-tools/oggenc converts WAV files to\n> Ogg files.\n",
     "id": "FreeBSD-2023-0328",
-    "modified": "2023-11-01T00:00:00Z",
-    "published": "2023-11-01T00:00:00Z",
+    "modified": "2023-11-05T00:00:00Z",
+    "published": "2023-11-05T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://www.vmware.com/security/advisories/VMSA-2023-0024.html"
+            "url": "https://github.com/xiph/vorbis-tools/issues/41"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-34058"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-43361"
         },
         {
             "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-34058"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-34059"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-34059"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-43361"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "open-vm-tools -- Multiple vulnerabilities"
+    "summary": "vorbistools -- heap buffer overflow in oggenc"
 }

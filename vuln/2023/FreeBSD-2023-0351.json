@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "electron26"
+                "name": "electron25"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "26.6.2"
+                            "fixed": "25.9.8"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,51 +22,25 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/electron/electron/releases/tag/v26.6.2"
+            "https://github.com/electron/electron/releases/tag/v25.9.8"
         ],
-        "discovery": "2023-11-30T00:00:00Z",
+        "discovery": "2023-12-06T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-6345",
-                "CVE-2023-6346",
-                "CVE-2023-6347",
-                "CVE-2023-6350"
+                "CVE-2023-6350",
+                "CVE-2023-6351"
             ]
         },
-        "vid": "7e1a508f-7167-47b0-b9fc-95f541933a86"
+        "vid": "e07a7754-12a4-4661-b852-fd221d68955f"
     },
-    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-6345.\n> - Security: backported fix for CVE-2023-6346.\n> - Security: backported fix for CVE-2023-6347.\n> - Security: backported fix for CVE-2023-6350.\n",
+    "details": "Electron developers report:\n\n> This update fixes the following vulnerabilities:\n>\n> - Security: backported fix for CVE-2023-6350.\n> - Security: backported fix for CVE-2023-6351.\n",
     "id": "FreeBSD-2023-0351",
-    "modified": "2023-12-01T00:00:00Z",
-    "published": "2023-12-01T00:00:00Z",
+    "modified": "2023-12-07T00:00:00Z",
+    "published": "2023-12-07T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/electron/electron/releases/tag/v26.6.2"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6345"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-xm5p-7w7v-qqr5"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6346"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-w427-5x7p-xj8x"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6347"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://github.com/advisories/GHSA-6jj9-4hh8-6xpv"
+            "url": "https://github.com/electron/electron/releases/tag/v25.9.8"
         },
         {
             "type": "ADVISORY",
@@ -75,8 +49,16 @@
         {
             "type": "ADVISORY",
             "url": "https://github.com/advisories/GHSA-wmh6-7xp9-5gh8"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-6351"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://github.com/advisories/GHSA-47vw-3hx2-6877"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "electron26 -- multiple vulnerabilities"
+    "summary": "electron25 -- multiple vulnerabilities"
 }

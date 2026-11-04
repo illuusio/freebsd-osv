@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "4.0,1,1"
+                            "introduced": "4.0,1"
                         },
                         {
                             "fixed": "9.0,1"
@@ -104,7 +104,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "4.0,1"
+                            "introduced": "4.0"
                         },
                         {
                             "fixed": "9.0"

@@ -12,7 +12,7 @@
                             "introduced": "8.7.0"
                         },
                         {
-                            "fixed": "8.15.7"
+                            "last_affected": "8.15.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -23,7 +23,7 @@
                             "introduced": "8.16.0"
                         },
                         {
-                            "fixed": "8.16.7"
+                            "last_affected": "8.16.7"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -34,7 +34,7 @@
                             "introduced": "8.17.0"
                         },
                         {
-                            "fixed": "8.17.3"
+                            "last_affected": "8.17.3"
                         }
                     ],
                     "type": "ECOSYSTEM"

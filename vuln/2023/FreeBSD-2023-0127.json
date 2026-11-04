@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py37-slixmpp"
+                "name": "py37-tensorflow"
             },
             "ranges": [
                 {
@@ -12,7 +12,29 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.8.3"
+                            "fixed": "2.8.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.9.0"
+                        },
+                        {
+                            "fixed": "2.9.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.10.0"
+                        },
+                        {
+                            "fixed": "2.10.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,7 +44,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py38-slixmpp"
+                "name": "py38-tensorflow"
             },
             "ranges": [
                 {
@@ -31,7 +53,29 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.8.3"
+                            "fixed": "2.8.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.9.0"
+                        },
+                        {
+                            "fixed": "2.9.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.10.0"
+                        },
+                        {
+                            "fixed": "2.10.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -41,7 +85,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-slixmpp"
+                "name": "py39-tensorflow"
             },
             "ranges": [
                 {
@@ -50,7 +94,29 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.8.3"
+                            "fixed": "2.8.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.9.0"
+                        },
+                        {
+                            "fixed": "2.9.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.10.0"
+                        },
+                        {
+                            "fixed": "2.10.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -60,7 +126,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py310-slixmpp"
+                "name": "py310-tensorflow"
             },
             "ranges": [
                 {
@@ -69,7 +135,29 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.8.3"
+                            "fixed": "2.8.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.9.0"
+                        },
+                        {
+                            "fixed": "2.9.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.10.0"
+                        },
+                        {
+                            "fixed": "2.10.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -79,7 +167,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py311-slixmpp"
+                "name": "py311-tensorflow"
             },
             "ranges": [
                 {
@@ -88,7 +176,29 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "1.8.3"
+                            "fixed": "2.8.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.9.0"
+                        },
+                        {
+                            "fixed": "2.9.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.10.0"
+                        },
+                        {
+                            "fixed": "2.10.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,30 +208,40 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/GHSA-q6cq-m9gm-6q2f"
+            "https://osv.dev/vulnerability/GHSA-cqvq-fvhr-v6hc",
+            "https://osv.dev/vulnerability/GHSA-xf83-q765-xm6m"
         ],
-        "discovery": "2022-12-25T00:00:00Z",
+        "discovery": "2022-11-21T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-45197"
+                "CVE-2022-35935",
+                "CVE-2022-35991"
             ]
         },
-        "vid": "93db4f92-9997-4f4f-8614-3963d9e2b0ec"
+        "vid": "ae132c6c-d716-11ed-956f-7054d21a9e2a"
     },
-    "details": "> Slixmpp before 1.8.3 lacks SSL Certificate hostname validation in\n> XMLStream, allowing an attacker to pose as any server in the eyes of\n> Slixmpp.\n",
+    "details": "Kang Hong Jin, Neophytos Christou, \u5218\u529b\u6e90 and Pattarakrit Rattankul\nreport:\n\n> Another instance of CVE-2022-35935, where \\`SobolSample\\` is\n> vulnerable to a denial of service via assumed scalar inputs, was found\n> and fixed.\n\nPattarakrit Rattankul reports:\n\n> Another instance of CVE-2022-35991, where \\`TensorListScatter\\` and\n> \\`TensorListScatterV2\\` crash via non scalar inputs\n> in\\`element_shape\\`, was found in eager mode and fixed.\n",
     "id": "FreeBSD-2023-0127",
     "modified": "2023-04-09T00:00:00Z",
     "published": "2023-04-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/GHSA-q6cq-m9gm-6q2f"
+            "url": "https://osv.dev/vulnerability/GHSA-cqvq-fvhr-v6hc"
+        },
+        {
+            "type": "REPORT",
+            "url": "https://osv.dev/vulnerability/GHSA-xf83-q765-xm6m"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-45197"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-35935"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-35991"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py-slixmpp -- incomplete SSL certificate validation"
+    "summary": "py-tensorflow -- denial of service vulnerability"
 }

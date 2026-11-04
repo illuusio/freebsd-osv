@@ -1,0 +1,71 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "wolfssh"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.6.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/wolfSSL/wolfssh/releases/tag/v1.6.0-stable"
+        ],
+        "discovery": "2026-10-07T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-16516",
+                "CVE-2026-81535",
+                "CVE-2026-83540",
+                "CVE-2026-83742",
+                "CVE-2026-84897"
+            ]
+        },
+        "vid": "61a6b109-d852-11f1-bae2-3497f65b111b"
+    },
+    "details": "wolfSSL reports:\n\n> - CVE-2026-16516 (Critical): wolfSSH did not check that the ECDSA\n>   curve in a server\\'s host key blob matched the negotiated algorithm,\n>   so a man-in-the-middle could substitute a key on another curve and\n>   pass verification with a private key of its own. Also requires a lax\n>   public key check callback.\n> - CVE-2026-83540 (High): wolfSSHd on Windows shared one authentication\n>   context, and the logon token stored in it, across concurrent\n>   connections, so a user with a valid account could end up logged in\n>   as another, more privileged user.\n> - CVE-2026-84897 (Medium): A wolfSSH server accepted the DH group\n>   exchange messages only a server sends from an unauthenticated\n>   client, which made the server run the client-side handler and\n>   primality-test an attacker-chosen group of up to 8192 bits.\n> - CVE-2026-81535 (Medium): With \\--enable-fwd, forwarded-tcpip channel\n>   opens were admitted without consulting the forwarding policy\n>   callback, so a peer could make an endpoint allocate buffers for\n>   forwarding channels the application never authorized.\n> - CVE-2026-83742 (Medium): wolfSSH_RealPath() bounded each path\n>   component by the space left in the output buffer rather than by the\n>   buffer\\'s size, so a crafted SFTP path could write a single\n>   terminating NUL one byte past the end of a stack buffer.\n",
+    "id": "FreeBSD-2026-0597",
+    "modified": "2026-11-04T00:00:00Z",
+    "published": "2026-11-04T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/wolfSSL/wolfssh/releases/tag/v1.6.0-stable"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-16516"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-81535"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-83540"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-83742"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-84897"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "security/wolfssh -- multiple vulnerabilities"
+}

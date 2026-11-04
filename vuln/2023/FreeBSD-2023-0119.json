@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-cinder"
+                "name": "py37-tflite"
             },
             "ranges": [
                 {
@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "14.1.0"
+                            "fixed": "2.3.4"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -20,10 +20,10 @@
                 {
                     "events": [
                         {
-                            "introduced": "15.0.0"
+                            "introduced": "2.4.0"
                         },
                         {
-                            "fixed": "15.2.0"
+                            "fixed": "2.4.3"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,10 +31,174 @@
                 {
                     "events": [
                         {
-                            "introduced": "16.0.0"
+                            "introduced": "2.5.0"
                         },
                         {
-                            "fixed": "15.1.0"
+                            "fixed": "2.5.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-tflite"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.4.0"
+                        },
+                        {
+                            "fixed": "2.4.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.5.0"
+                        },
+                        {
+                            "fixed": "2.5.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-tflite"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.4.0"
+                        },
+                        {
+                            "fixed": "2.4.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.5.0"
+                        },
+                        {
+                            "fixed": "2.5.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-tflite"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.4.0"
+                        },
+                        {
+                            "fixed": "2.4.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.5.0"
+                        },
+                        {
+                            "fixed": "2.5.1"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-tflite"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "2.3.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.4.0"
+                        },
+                        {
+                            "fixed": "2.4.3"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                },
+                {
+                    "events": [
+                        {
+                            "introduced": "2.5.0"
+                        },
+                        {
+                            "fixed": "2.5.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -44,30 +208,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/PYSEC-2020-228"
+            "https://osv.dev/vulnerability/GHSA-wf5p-c75w-w3wh"
         ],
-        "discovery": "2020-06-10T00:00:00Z",
+        "discovery": "2021-08-25T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2020-10755"
+                "CVE-2021-37689"
             ]
         },
-        "vid": "f767d615-01db-47e9-b4ab-07bb8d3409fd"
+        "vid": "d82bcd2b-5cd6-421c-8179-b3ff0231029f"
     },
-    "details": "OpenStack project reports:\n\n> An insecure-credentials flaw was found in all openstack-cinder\n> versions before openstack-cinder 14.1.0, all openstack-cinder 15.x.x\n> versions before openstack-cinder 15.2.0 and all openstack-cinder\n> 16.x.x versions before openstack-cinder 16.1.0.\n>\n> When using openstack-cinder with the Dell EMC ScaleIO or VxFlex OS\n> backend storage driver, credentials for the entire backend are exposed\n> in the \\`\\`connection_info\\`\\` element in all Block Storage v3\n> Attachments API calls containing that element.\n>\n> This flaw enables an end-user to create a volume, make an API call to\n> show the attachment detail information, and retrieve a username and\n> password that may be used to connect to another user\\'s volume.\n>\n> Additionally, these credentials are valid for the ScaleIO or VxFlex OS\n> Management API, should an attacker discover the Management API\n> endpoint.\n",
+    "details": "Yakun Zhang of Baidu Security reports:\n\n> An attacker can craft a TFLite model that would trigger a null pointer\n> dereference, which would result in a crash and denial of service\n",
     "id": "FreeBSD-2023-0119",
     "modified": "2023-04-09T00:00:00Z",
     "published": "2023-04-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/PYSEC-2020-228"
+            "url": "https://osv.dev/vulnerability/GHSA-wf5p-c75w-w3wh"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2020-10755"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2021-37689"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py39-cinder -- insecure-credentials flaw"
+    "summary": "py-tflite -- denial of service vulnerability"
 }

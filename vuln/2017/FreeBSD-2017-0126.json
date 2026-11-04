@@ -26,6 +26,9 @@
         ],
         "discovery": "2017-04-13T00:00:00Z",
         "references": {
+            "cvename": [
+                "CVE-2017-6594"
+            ],
             "freebsdpr": [
                 "ports/219657"
             ]
@@ -42,8 +45,8 @@
             "url": "https://www.h5l.org/advisories.html?show=2017-04-13"
         },
         {
-            "type": "WEB",
-            "url": "CVE-2017-6594"
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2017-6594"
         },
         {
             "type": "REPORT",

@@ -9,7 +9,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "2.2.25_6,1"
+                            "introduced": "2.2.25_6"
                         },
                         {
                             "fixed": "2.2.29"
@@ -28,7 +28,7 @@
                 {
                     "events": [
                         {
-                            "introduced": "2.2.25_6,1"
+                            "introduced": "2.2.25_6"
                         },
                         {
                             "fixed": "2.2.29"

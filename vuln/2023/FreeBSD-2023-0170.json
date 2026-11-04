@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "mariadb1011-server"
+                "name": "php80-kanboard"
             },
             "ranges": [
                 {
@@ -12,83 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "10.11.3"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "mariadb106-server"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "10.6.13"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "mariadb105-server"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "10.5.20"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "mariadb104-server"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "10.4.29"
-                        }
-                    ],
-                    "type": "ECOSYSTEM"
-                }
-            ]
-        },
-        {
-            "package": {
-                "ecosystem": "FreeBSD:ports",
-                "name": "mariadb103-server"
-            },
-            "ranges": [
-                {
-                    "events": [
-                        {
-                            "introduced": "0"
-                        },
-                        {
-                            "fixed": "10.3.39"
+                            "fixed": "1.2.30"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -98,30 +22,61 @@
     ],
     "database_specific": {
         "cite": [
-            "https://mariadb.com/kb/en/security/"
+            "https://github.com/kanboard/kanboard/commit/b501ef44bc28ee9cf603a4fa446ee121d66f652f"
         ],
-        "discovery": "2023-05-10T00:00:00Z",
+        "discovery": "2023-06-05T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2022-47015"
+                "CVE-2023-33970",
+                "CVE-2023-33969",
+                "CVE-2023-33968",
+                "CVE-2023-33956"
             ]
         },
-        "vid": "5d1b1a0a-fd36-11ed-a0d1-84a93843eb75"
+        "vid": "bfca647c-0456-11ee-bafd-b42e991fc52e"
     },
-    "details": "The MariaDB project reports:\n\n> MariaDB Server is vulnerable to Denial of Service. It is possible for\n> function spider_db_mbase::print_warnings to dereference a null\n> pointer.\n",
+    "details": "Kanboard is project management software that focuses on the Kanban\nmethodology. The last update includes 4 vulnerabilities:\n\nsecurity-advisories@github.com reports:\n\n> - Missing access control in internal task links feature\n> - Stored Cross site scripting in the Task External Link Functionality\n>   in Kanboard\n> - Missing Access Control allows User to move and duplicate tasks in\n>   Kanboard\n> - Parameter based Indirect Object Referencing leading to private file\n>   exposure in Kanboard\n",
     "id": "FreeBSD-2023-0170",
-    "modified": "2023-05-28T00:00:00Z",
-    "published": "2023-05-28T00:00:00Z",
+    "modified": "2023-06-06T00:00:00Z",
+    "published": "2023-06-06T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://mariadb.com/kb/en/security/"
+            "url": "https://github.com/kanboard/kanboard/commit/b501ef44bc28ee9cf603a4fa446ee121d66f652f"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-47015"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-33970"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-33970"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-33969"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-33969"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-33968"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-33968"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-33956"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-33956"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "MariaDB -- Nullpointer dereference"
+    "summary": "Kanboard -- Multiple vulnerabilities"
 }

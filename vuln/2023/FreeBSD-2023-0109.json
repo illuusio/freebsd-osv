@@ -3,7 +3,7 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "py39-configobj"
+                "name": "py37-py"
             },
             "ranges": [
                 {
@@ -12,7 +12,83 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "5.0.6_1"
+                            "last_affected": "1.11.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py38-py"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "1.11.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py39-py"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "1.11.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py310-py"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "1.11.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "py311-py"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "last_affected": "1.11.0"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,30 +98,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://osv.dev/vulnerability/GHSA-c33w-24p9-8m24"
+            "https://osv.dev/vulnerability/PYSEC-2022-42969"
         ],
-        "discovery": "2023-04-03T00:00:00Z",
+        "discovery": "2022-11-04T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-26112"
+                "CVE-2022-42969"
             ]
         },
-        "vid": "de970aef-d60e-466b-8e30-1ae945a047f1"
+        "vid": "28a37df6-ba1a-4eed-bb64-623fc8e8dfd0"
     },
-    "details": "DarkTinia reports:\n\n> All versions of the package configobj are vulnerable to Regular\n> Expression Denial of Service (ReDoS) via the validate function, using\n> (.+?)\\\\((.\\*)\\\\).\n>\n> \\*\\*Note:\\*\\* This is only exploitable in the case of a developer,\n> putting the offending value in a server side configuration file.\n",
+    "details": "SCH227 reports:\n\n> The py library through 1.11.0 for Python allows remote attackers to\n> conduct a ReDoS (Regular expression Denial of Service) attack via a\n> Subversion repository with crafted info data, because the\n> InfoSvnCommand argument is mishandled.\n",
     "id": "FreeBSD-2023-0109",
-    "modified": "2023-04-09T00:00:00Z",
+    "modified": "2026-10-31T00:00:00Z",
     "published": "2023-04-09T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://osv.dev/vulnerability/GHSA-c33w-24p9-8m24"
+            "url": "https://osv.dev/vulnerability/PYSEC-2022-42969"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-26112"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-42969"
+        },
+        {
+            "type": "WEB",
+            "url": "https://osv.dev/vulnerability/GHSA-w596-4wvx-j9j6"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "py39-configobj -- vulnerable to Regular Expression Denial of Service"
+    "summary": "py-py -- Regular expression Denial of Service vulnerability"
 }

@@ -12,7 +12,7 @@
                             "introduced": "9.5.0,1"
                         },
                         {
-                            "fixed": "10.0.8,1"
+                            "fixed": "10.0.9,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -22,34 +22,34 @@
     ],
     "database_specific": {
         "cite": [
-            "https://github.com/glpi-project/glpi/releases/tag/10.0.8"
+            "https://github.com/glpi-project/glpi/releases/tag/10.0.9"
         ],
-        "discovery": "2023-07-05T00:00:00Z",
+        "discovery": "2023-07-13T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-35940"
+                "CVE-2023-37278"
             ]
         },
-        "vid": "95fde6bc-6821-11ee-b06f-0050569ceb3a"
+        "vid": "257e1bf0-682f-11ee-b06f-0050569ceb3a"
     },
-    "details": "security-advisories@github.com reports:\n\n> GLPI is a free asset and IT management software package. Starting in\n> version 9.5.0 and prior to version 10.0.8, an incorrect rights check\n> on a file allows an unauthenticated user to be able to access\n> dashboards data. Version 10.0.8 contains a patch for this issue.\n",
+    "details": "security-advisories@github.com reports:\n\n> GLPI is a Free Asset and IT Management Software package, Data center\n> management, ITIL Service Desk, licenses tracking and software\n> auditing. An administrator can trigger SQL injection via dashboards\n> administration. This vulnerability has been patched in version 10.0.9.\n",
     "id": "FreeBSD-2023-0373",
     "modified": "2023-10-11T00:00:00Z",
     "published": "2023-10-11T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://github.com/glpi-project/glpi/releases/tag/10.0.8"
+            "url": "https://github.com/glpi-project/glpi/releases/tag/10.0.9"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-35940"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-37278"
         },
         {
             "type": "ADVISORY",
-            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-35940"
+            "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-37278"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "GLPI vulnerable to unauthenticated access to Dashboard data"
+    "summary": "GLPI vulnerable to SQL injection via dashboard administration"
 }

@@ -3,38 +3,54 @@
         {
             "package": {
                 "ecosystem": "FreeBSD:ports",
-                "name": "gitlab-ce"
+                "name": "redis"
             },
             "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "15.11.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "15.11.1"
+                            "fixed": "7.0.11"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "redis62"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "15.10.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "15.10.5"
+                            "fixed": "6.2.12"
                         }
                     ],
                     "type": "ECOSYSTEM"
-                },
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "redis6"
+            },
+            "ranges": [
                 {
                     "events": [
                         {
-                            "introduced": "9.0"
+                            "introduced": "0"
                         },
                         {
-                            "fixed": "15.9.6"
+                            "fixed": "6.0.19"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -44,70 +60,30 @@
     ],
     "database_specific": {
         "cite": [
-            "https://about.gitlab.com/releases/2023/05/02/security-release-gitlab-15-11-1-released/"
+            "https://github.com/redis/redis/security/advisories/GHSA-hjv8-vjf6-wcr6"
         ],
-        "discovery": "2023-05-02T00:00:00Z",
+        "discovery": "2023-04-17T00:00:00Z",
         "references": {
             "cvename": [
-                "CVE-2023-2182",
-                "CVE-2023-1965",
-                "CVE-2023-1621",
-                "CVE-2023-2069",
-                "CVE-2023-1178",
-                "CVE-2023-0805",
-                "CVE-2023-0756",
-                "CVE-2023-1836",
-                "CVE-2022-4376"
+                "CVE-2023-28856"
             ]
         },
-        "vid": "4ffcccae-e924-11ed-9c88-001b217b3468"
+        "vid": "96b2d4db-ddd2-11ed-b6ea-080027f5fec9"
     },
-    "details": "Gitlab reports:\n\n> Privilege escalation for external users when OIDC is enabled under\n> certain conditions\n>\n> Account takeover through open redirect for Group SAML accounts\n>\n> Users on banned IP addresses can still commit to projects\n>\n> User with developer role (group) can modify Protected branches setting\n> on imported project and leak group CI/CD variables\n>\n> The Gitlab web interface does not guarantee file integrity when\n> downloading source code or installation packages from a tag or from a\n> release.\n>\n> Banned group member continues to have access to the public projects of\n> a public group with the access level as same as before the ban.\n>\n> The main branch of a repository with a specially designed name allows\n> an attacker to create repositories with malicious code.\n>\n> XSS and content injection and iframe injection when viewing raw files\n> on iOS devices\n>\n> Authenticated users can find other users by their private email\n",
+    "details": "Redis core team reports:\n\n> Authenticated users can use the HINCRBYFLOAT command to create an\n> invalid hash field that may later crash Redis on access.\n",
     "id": "FreeBSD-2023-0154",
-    "modified": "2023-05-02T00:00:00Z",
-    "published": "2023-05-02T00:00:00Z",
+    "modified": "2023-05-08T00:00:00Z",
+    "published": "2023-05-08T00:00:00Z",
     "references": [
         {
             "type": "REPORT",
-            "url": "https://about.gitlab.com/releases/2023/05/02/security-release-gitlab-15-11-1-released/"
+            "url": "https://github.com/redis/redis/security/advisories/GHSA-hjv8-vjf6-wcr6"
         },
         {
             "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2182"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-1965"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-1621"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-2069"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-1178"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0805"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-0756"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-1836"
-        },
-        {
-            "type": "ADVISORY",
-            "url": "https://cveawg.mitre.org/api/cve/CVE-2022-4376"
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2023-28856"
         }
     ],
     "schema_version": "1.7.0",
-    "summary": "Gitlab -- Multiple Vulnerabilities"
+    "summary": "redis -- HINCRBYFLOAT can be used to crash a redis-server process"
 }

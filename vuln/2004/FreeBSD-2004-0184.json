@@ -12,7 +12,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.3.8_2"
+                            "last_affected": "4.3.8_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -31,7 +31,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.3.8_2"
+                            "last_affected": "4.3.8_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.3.8_2"
+                            "last_affected": "4.3.8_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -69,7 +69,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.3.8_2"
+                            "last_affected": "4.3.8_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -88,7 +88,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.3.8_2"
+                            "last_affected": "4.3.8_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -107,7 +107,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.3.8_2"
+                            "last_affected": "4.3.8_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -126,7 +126,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "4.3.8_2"
+                            "last_affected": "4.3.8_2"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -145,7 +145,7 @@
                             "introduced": "4"
                         },
                         {
-                            "fixed": "4.3.8_2,1"
+                            "last_affected": "4.3.8_2,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -164,7 +164,7 @@
                             "introduced": "4"
                         },
                         {
-                            "fixed": "4.3.8_2,1"
+                            "last_affected": "4.3.8_2,1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -183,7 +183,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "5.0.1"
+                            "last_affected": "5.0.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -202,7 +202,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "5.0.1"
+                            "last_affected": "5.0.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -221,7 +221,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "5.0.1"
+                            "last_affected": "5.0.1"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -240,7 +240,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "5.0.1,1"
+                            "last_affected": "5.0.1,1"
                         }
                     ],
                     "type": "ECOSYSTEM"

@@ -21,6 +21,9 @@
         }
     ],
     "database_specific": {
+        "cite": [
+            "http://www.sudo.ws/sudo/alerts/sudoedit_escalate.html"
+        ],
         "discovery": "2010-01-29T00:00:00Z",
         "references": {
             "bid": [
@@ -38,12 +41,12 @@
     "published": "2010-03-01T00:00:00Z",
     "references": [
         {
-            "type": "WEB",
-            "url": "http://www.sudo.ws/pipermail/sudo-announce/2010-February/000092.html"
+            "type": "REPORT",
+            "url": "http://www.sudo.ws/sudo/alerts/sudoedit_escalate.html"
         },
         {
             "type": "WEB",
-            "url": "http://www.sudo.ws/sudo/alerts/sudoedit_escalate.html"
+            "url": "http://www.sudo.ws/pipermail/sudo-announce/2010-February/000092.html"
         },
         {
             "type": "WEB",

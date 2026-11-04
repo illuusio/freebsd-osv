@@ -22,7 +22,7 @@
     ],
     "database_specific": {
         "cite": [
-            " https://github.com/Cacti/cacti/commit/93f661d8adcfa6618b11522cdab30e97bada33fd"
+            "https://github.com/Cacti/cacti/commit/93f661d8adcfa6618b11522cdab30e97bada33fd"
         ],
         "discovery": "2017-10-10T00:00:00Z",
         "references": {
@@ -39,15 +39,11 @@
     "references": [
         {
             "type": "REPORT",
-            "url": " https://github.com/Cacti/cacti/commit/93f661d8adcfa6618b11522cdab30e97bada33fd"
+            "url": "https://github.com/Cacti/cacti/commit/93f661d8adcfa6618b11522cdab30e97bada33fd"
         },
         {
             "type": "WEB",
             "url": "http://www.securitytracker.com/id/1039569"
-        },
-        {
-            "type": "WEB",
-            "url": "https://github.com/Cacti/cacti/commit/93f661d8adcfa6618b11522cdab30e97bada33fd"
         },
         {
             "type": "WEB",
