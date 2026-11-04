@@ -347,6 +347,14 @@ def main():
                 try:
                     ranges = []
                     versions = []
+                    # Conversion from VuXML ranges are made like this:
+                    # <lt> → fixed
+                    # <le> → last_affected
+                    # <eq> → introduced + last_affected
+                    # <gt>X → introduced: X
+                    # * as an upper bound → no upper bound at all
+                    #
+                    # type for version numbers is ECOSYSTEM
                     for e in package.findall(namespace + "range"):
                         events = []
                         semver = {"type": "ECOSYSTEM"}
@@ -361,27 +369,23 @@ def main():
                                 event["introduced"] = "0"
                         gt = e.find(namespace + "gt")
                         if gt is not None and len(gt.text) > 0:
+                            # OSV has no exclusive lower bound, so version
+                            # gt.text itself is reported as affected too
                             if gt.text != "*":
-                                # Not correct. Should be fixed
-                                event["introduced"] = gt.text + ",1"
+                                event["introduced"] = gt.text
                             else:
                                 event["introduced"] = "0"
+                        # '*' as upper bound means no upper bound at all
                         le = e.find(namespace + "le")
-                        if le is not None and len(le.text) > 0:
-                            event["fixed"] = le.text
-                            if le.text != "*":
-                                event["fixed"] = le.text
-                            else:
-                                event["fixed"] = "0"
+                        if le is not None and len(le.text) > 0 and le.text != "*":
+                            event["last_affected"] = le.text
                         lt = e.find(namespace + "lt")
-                        if lt is not None and len(lt.text) > 0:
-                            if lt.text != "*":
-                                event["fixed"] = lt.text
-                            else:
-                                event["fixed"] = "0"
-                        if "fixed" in event or "introduced" in event:
-                            if "introduced" not in event:
-                                event["introduced"] = "0"
+                        if lt is not None and len(lt.text) > 0 and lt.text != "*":
+                            event["fixed"] = lt.text
+                        if event and "introduced" not in event:
+                            event["introduced"] = "0"
+                        if not event and e.find(namespace + "eq") is None:
+                            event["introduced"] = "0"
 
                         # Always introduced and fixed after that
                         # just for the sanity
@@ -392,7 +396,7 @@ def main():
                         eq = e.find(namespace + "eq")
                         if eq is not None and len(eq.text) > 0 and eq.text != "*":
                             events.append({"introduced": eq.text})
-                            events.append({"fixed": eq.text})
+                            events.append({"last_affected": eq.text})
 
                         if len(events) > 0:
                             semver["events"] = events

@@ -337,6 +337,74 @@ Detailed documentation on tags and structure can be found in the Official OSV Sc
 
 Additional fields like severity, aliases, and withdrawn are mentioned but not currently used.
 
+### VuXML to OSV Range Conversion Rules:
+1. **`<lt>`** → `fixed`
+   - Example: `<range><lt>2.7.2</lt></range>`
+     ```json
+     "ranges": [{
+         "events": [{
+             "introduced": "0"
+         }, {
+             "fixed": "2.7.2"
+         }],
+         "type": "ECOSYSTEM"
+     }]
+     ```
+
+2. **`<le>`** → `last_affected`
+   - Example: `<range><le>4.21</le></range>`
+     ```json
+     "ranges": [{
+         "events": [{
+             "introduced": "0"
+         }, {
+             "last_affected": "4.21"
+         }],
+         "type": "ECOSYSTEM"
+     }]
+     ```
+
+3. **`<eq>`** → Both `introduced` and `last_affected`
+   - Example: `<range><eq>5.2.0</eq></range>`
+     ```json
+     "ranges": [{
+         "events": [{
+             "introduced": "5.2.0"
+         }, {
+             "last_affected": "5.2.0"
+         }],
+         "type": "ECOSYSTEM"
+     }]
+     ```
+
+4. **`<gt>`** → `introduced`
+   - Example: `<range><gt>7.69.0</gt><lt>8.4.0</lt></range>`
+     ```json
+     "ranges": [{
+         "events": [{
+             "introduced": "7.69.0"
+         }, {
+             "fixed": "8.4.0"
+         }],
+         "type": "ECOSYSTEM"
+     }]
+     ```
+
+5. **Wildcard (`*`)** → Preserved in version strings
+   - Example: `<range><gt>3.2.*</gt><lt>3.2.18</lt></range>`
+     ```json
+     "ranges": [{
+         "events": [{
+             "introduced": "3.2.*"
+         }, {
+             "fixed": "3.2.18"
+         }],
+         "type": "ECOSYSTEM"
+     }]
+     ```
+
+`type` for version numbers is ECOSYSTEM
+
 # Using OSV Repository Makefile Targets
 
 In the [Unofficial outside FreeBSD repository](https://github.com/illuusio/freebsd-osv/blob/main/Makefile), there is a Makefile that makes it easier to maintain OSV Vulnerabilities. While there aren't many targets, they should be sufficient to:
