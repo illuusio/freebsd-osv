@@ -50,7 +50,7 @@
                             "introduced": "0"
                         },
                         {
-                            "fixed": "2.8.1"
+                            "fixed": "2.5.0_9"
                         }
                     ],
                     "type": "ECOSYSTEM"
@@ -72,7 +72,7 @@
     },
     "details": "> Expat 2.8.1 was released yesterday. The key motivation for cutting a\n> release and doing so now was:\n>\n> Fixing vulnerability CVE-2026-45186 that allows easy denial of\n> service.\n>\n> See also https://github.com/libexpat/libexpat/pull/1216\n",
     "id": "FreeBSD-2026-0192",
-    "modified": "2026-05-11T00:00:00Z",
+    "modified": "2026-11-05T00:00:00Z",
     "published": "2026-05-11T00:00:00Z",
     "references": [
         {

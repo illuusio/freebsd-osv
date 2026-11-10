@@ -1,0 +1,146 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gitea"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "28.3.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://blog.gitea.com/release-of-28.3.0/"
+        ],
+        "discovery": "2026-11-01T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-120263",
+                "CVE-2026-118386",
+                "CVE-2026-117635",
+                "CVE-2026-119441",
+                "CVE-2026-116296",
+                "CVE-2026-117685",
+                "CVE-2026-113429",
+                "CVE-2026-118394",
+                "CVE-2026-119625",
+                "CVE-2026-119627",
+                "CVE-2026-112887",
+                "CVE-2026-116474",
+                "CVE-2026-116289",
+                "CVE-2026-117646",
+                "CVE-2026-118395",
+                "CVE-2026-114199",
+                "CVE-2026-117649",
+                "CVE-2026-119533",
+                "CVE-2026-118504",
+                "CVE-2026-117677"
+            ]
+        },
+        "vid": "2053672c-d8f6-11f1-9968-3c7c3fba4204"
+    },
+    "details": "Gitea reports:\n\n> - CVE-2026-120263: With \\'ACCOUNT_LINKING = auto\\' and open\n>   registration, the link-account sign-up form let a user who signed in\n>   through an OAuth2 provider enter the user name or email address of\n>   an existing account, which was then linked to the external identity\n>   and signed in without a password.\n> - CVE-2026-118386: A user with read access could submit a pull request\n>   review whose commit_id named their own commit, on a pull request\n>   whose head branch is in the same repository.\n> - CVE-2026-117635: The \\'public-only\\' token restriction was not\n>   applied to the admin API, so a \\'public-only\\' token of a site\n>   administrator could list the email addresses of all users, create\n>   private organizations and runner registration tokens, and create new\n>   administrators.\n> - CVE-2026-119441: \\'DELETE /api/v1/orgs/{org}/repos\\' did not reject\n>   \\'public-only\\' tokens, so such a token of an organization owner\n>   could delete all repositories of the organization, private ones\n>   included.\n> - CVE-2026-116296: The release, milestone and label API routes did not\n>   reject changes to archived repositories, so a user with write access\n>   could replace release assets, delete releases, and change milestones\n>   and labels of an archived repository.\n> - CVE-2026-117685: The OCI cross-repository blob mount checked access\n>   to the source blob with the user's full permissions instead of the\n>   token's, so a \\'public-only\\' package token could mount a private\n>   blob into a public package and read it.\n> - CVE-2026-113429: The legacy Actions artifact upload stored the\n>   \\'Content-Encoding\\' request header without a check and served it\n>   back as the \\'Content-Type\\' of the download, so a workflow could\n>   upload an artifact that is rendered as HTML on the Gitea origin\n>   (stored XSS) when a victim opens its download link. The header is no\n>   longer stored.\n> - CVE-2026-118394: The OIDC userinfo endpoint read the token scope\n>   only from the \\'Authorization\\' header, so a \\'public-only\\' token\n>   sent as a query parameter received the user's private organizations\n>   and teams in the \\'groups\\' claim.\n> - CVE-2026-119625: \\'/{username}\\' accepted a token sent as HTTP Basic\n>   without checking its scope, so a token with an unrelated scope could\n>   read the owner's private activity through the user feed (\\'.rss\\' /\n>   \\'.atom\\'), and a \\'public-only\\' token could see private\n>   repositories and organizations on the profile pages.\n> - CVE-2026-119627: The web profile pages and RSS/Atom feeds of users\n>   and organizations with limited visibility were shown to\n>   \\'public-only\\' tokens.\n> - CVE-2026-112887: Actions task tokens carry no token scope, and\n>   repository filters treated the negative ID of the Actions system\n>   user as \"no owner filter\", so a job's \\'GITEA_TOKEN\\' could list\n>   every private repository of the instance through \\'GET\n>   /api/v1/user/repos\\'.\n> - CVE-2026-116474: A job's \\'GITEA_TOKEN\\' could add an email address\n>   and a GPG key to the \\'gitea-actions\\' system user, so commits\n>   signed with that key were shown as signed by the instance. Only the\n>   displayed signature status was affected.\n> - CVE-2026-116289: A \\'public-only\\' token with \\'write:organization\\'\n>   of an organization owner could create an organization runner\n>   registration token. A runner registered with it then received jobs,\n>   including their secrets, from the organization's private\n>   repositories.\n> - CVE-2026-117646: The repositories, stars and watching tabs of user\n>   profiles and the organization home page showed private repositories\n>   to \\'public-only\\' tokens.\n> - CVE-2026-118395: The deprecated \\'POST /api/v1/org/{org}/repos\\'\n>   route did not reject \\'public-only\\' tokens, so such a token could\n>   create private repositories in an organization.\n> - CVE-2026-114199: \\'GET /api/v1/users/{username}/heatmap\\' counted\n>   contributions to private repositories for \\'public-only\\' tokens.\n> - CVE-2026-117649: The issue timeline showed private issues that were\n>   linked as dependencies to users who could not read them: the web\n>   page showed their title, and the API returned the full issue\n>   including its body.\n> - CVE-2026-119533: Project boards showed the title, number, state and\n>   repository of private pull requests that referenced an issue on the\n>   board to visitors who could not read them.\n> - CVE-2026-118504: Several issue API routes did not reject changes to\n>   archived repositories, so a user with write access could still\n>   change deadlines, tracked times, stopwatches, reactions, pins and\n>   blocking issues in an archived repository.\n> - CVE-2026-117677: The Helm chart upload inflated the whole archive\n>   before the package size quota was checked, without a size limit, so\n>   a user with package write access could tie up the server with a\n>   small, highly compressed upload. The amount of data inflated is now\n>   bounded.\n",
+    "id": "FreeBSD-2026-0602",
+    "modified": "2026-11-05T00:00:00Z",
+    "published": "2026-11-05T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://blog.gitea.com/release-of-28.3.0/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-120263"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-118386"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-117635"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119441"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116296"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-117685"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-113429"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-118394"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119625"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119627"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112887"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116474"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116289"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-117646"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-118395"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-114199"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-117649"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119533"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-118504"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-117677"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Gitea -- multiple vulnerabilities"
+}

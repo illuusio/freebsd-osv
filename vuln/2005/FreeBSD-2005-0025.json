@@ -32,7 +32,7 @@
         },
         "vid": "184ab9e0-64cd-11d9-9e1e-c296ac722cb3"
     },
-    "details": "The squid patches page notes:\n\n> A malicious gopher server may return a response with very long lines\n> that cause a buffer overflow in Squid.\n>\n> Workaround: Since gopher is very obscure these days, do not allow\n> Squid to any gopher servers. Use an ACL rule like:\n>\n>     acl Gopher proto gopher\n>     http_access deny Gopher\n",
+    "details": "The squid patches page notes:\n\n> A malicious gopher server may return a response with very long lines\n> that cause a buffer overflow in Squid.\n>\n> Workaround: Since gopher is very obscure these days, do not allow\n> Squid to any gopher servers. Use an ACL rule like:\n>\n> acl\u00a0Gopher\u00a0proto\u00a0gopher\\\n> http_access\u00a0deny\u00a0Gopher\n",
     "id": "FreeBSD-2005-0025",
     "modified": "2005-01-22T00:00:00Z",
     "published": "2005-01-12T00:00:00Z",

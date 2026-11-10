@@ -1,0 +1,126 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-bad"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "gstreamer1-plugins-good"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "1.28.9"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://gstreamer.freedesktop.org/security/"
+        ],
+        "discovery": "2026-11-06T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-116611",
+                "CVE-2026-119610",
+                "CVE-2026-121601",
+                "CVE-2026-121611",
+                "CVE-2026-121629"
+            ]
+        },
+        "vid": "de74d92b-4f87-4334-973b-5d24a7c4528a"
+    },
+    "details": "The GStreamer project reports:\n\n> Multiple security issues were identified and fixed in the GStreamer\n> framework.\n>\n> - GStreamer-SA-2026-0093: Out-of-bounds read in MXF demuxer\n> - GStreamer-SA-2026-0094: Use of uninitialized memory in H.265\n>   bitstream parser\n> - GStreamer-SA-2026-0095: Out-of-bounds read in H.264 RTP depayloader\n> - GStreamer-SA-2026-0096: Multiple out-of-bounds reads, null pointer\n>   write and denial of service in the VMnc video decoder\n> - GStreamer-SA-2026-0097: Local file disclosure via manifest\n>   references in adaptive streaming (HLS/DASH) demuxers\n> - GStreamer-SA-2026-0098: Out-of-bounds write and infinite loop when\n>   reading responses from a Festival speech synthesis server\n> - GStreamer-SA-2026-0099: Out-of-bounds read when parsing DVB short\n>   event descriptors\n> - GStreamer-SA-2026-0100: Out-of-bounds write in the RTP raw video\n>   depayloader with crafted stream dimensions\n> - GStreamer-SA-2026-0101: Out-of-bounds write in the ASF muxer when\n>   writing metadata with certain Unicode characters\n",
+    "id": "FreeBSD-2026-0607",
+    "modified": "2026-11-07T00:00:00Z",
+    "published": "2026-11-07T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://gstreamer.freedesktop.org/security/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116611"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119610"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-121601"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-121611"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-121629"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0093.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0094.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0095.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0096.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0097.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0098.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0099.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0100.html"
+        },
+        {
+            "type": "WEB",
+            "url": "https://gstreamer.freedesktop.org/security/sa-2026-0101.html"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "gstreamer1 -- multiple vulnerabilities"
+}

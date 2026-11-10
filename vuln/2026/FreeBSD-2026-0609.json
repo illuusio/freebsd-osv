@@ -1,0 +1,51 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "powerdns"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "5.1.5"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2026-13.html"
+        ],
+        "discovery": "2026-07-10T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-73206"
+            ]
+        },
+        "vid": "eb135656-db92-11f1-83b3-3c7c3fba4204"
+    },
+    "details": "PowerDNS Team reports:\n\n> CVE ID: CVE-2026-73206\\\n> \\\n> A malicious server can send a crafted reply that leads to high\n> resource utilization decompression name pointers in DNS packets.\\\n> \\\n> This is a multi-vendor issue. Multiple DNS vendors are releasing fixed\n> version of their products.\\\n> \\\n> The remedy is: upgrade to a patched version. The patched version\n> imposes limits on the number of decompression done for a single name\n> and for a DNS packet as a whole.\n",
+    "id": "FreeBSD-2026-0609",
+    "modified": "2026-11-08T00:00:00Z",
+    "published": "2026-11-08T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2026-13.html"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73206"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "PowerDNS Authoritative Server -- Denial of Service vulnerability"
+}

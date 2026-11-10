@@ -4,6 +4,1458 @@
             {
                 "package": {
                     "ecosystem": "FreeBSD:ports",
+                    "name": "weechat"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "4.10.4"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://github.com/weechat/weechat/releases/tag/v4.10.3"
+            ],
+            "discovery": "2026-11-09T00:00:00Z",
+            "vid": "e107a804-dc3c-11f1-8135-8447094a420f"
+        },
+        "details": "The Weechat project reports:\n\n> See details on the 9 fixed vulns in linked release notes.\n",
+        "id": "FreeBSD-2026-0612",
+        "modified": "2026-11-09T00:00:00Z",
+        "published": "2026-11-09T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://github.com/weechat/weechat/releases/tag/v4.10.3"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/weechat/weechat/releases/tag/v4.10.4"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "Weechat -- Multiple vulnerabilities"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "roundcube-php82"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "1.7.6,1"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "roundcube-php83"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "1.7.6,1"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "roundcube-php84"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "1.7.6,1"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "roundcube-php85"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "1.7.6,1"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "roundcube-php85"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "1.7.6,1"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://roundcube.net/news/2026/11/09/security-updates-1.6.21-and-1.7.6"
+            ],
+            "discovery": "2026-11-09T00:00:00Z",
+            "vid": "daaf4fec-dc3b-11f1-8135-8447094a420f"
+        },
+        "details": "The Roundcube project reports:\n\n> See linked page for details.\n",
+        "id": "FreeBSD-2026-0611",
+        "modified": "2026-11-09T00:00:00Z",
+        "published": "2026-11-09T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://roundcube.net/news/2026/11/09/security-updates-1.6.21-and-1.7.6"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "Roundcube -- Multiple vulnerabilities"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "openexr"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "3.4.18"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.18"
+            ],
+            "discovery": "2026-11-08T00:00:00Z",
+            "vid": "bb6a3ddb-dc22-11f1-8e49-3c7c3fba4204"
+        },
+        "details": "Cary Phillips reports:\n\n> - CVE Pending (GHSA-PP92-4RV3-WFQ6): A signed-int data-window-origin\n>   overflow in the OpenEXRUtil Image API turns Imf::loadImage into an\n>   attacker-steered out-of-bounds write.\n> - CVE Pending (GHSA-2V77-PVHX-25C3): Integer overflow in legacy\n>   OpenEXR.OutputFile.writePixels() causes heap over-read.\n",
+        "id": "FreeBSD-2026-0610",
+        "modified": "2026-11-09T00:00:00Z",
+        "published": "2026-11-09T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.18"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-PP92-4RV3-WFQ6"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-2V77-PVHX-25C3"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/blob/v3.4.18/CHANGES.md#version-3418-november-7-2026"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "OpenEXR -- 3.4.18 fixes two vulnerabilities"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "powerdns"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "5.1.5"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2026-13.html"
+            ],
+            "discovery": "2026-07-10T00:00:00Z",
+            "references": {
+                "cvename": [
+                    "CVE-2026-73206"
+                ]
+            },
+            "vid": "eb135656-db92-11f1-83b3-3c7c3fba4204"
+        },
+        "details": "PowerDNS Team reports:\n\n> CVE ID: CVE-2026-73206\\\n> \\\n> A malicious server can send a crafted reply that leads to high\n> resource utilization decompression name pointers in DNS packets.\\\n> \\\n> This is a multi-vendor issue. Multiple DNS vendors are releasing fixed\n> version of their products.\\\n> \\\n> The remedy is: upgrade to a patched version. The patched version\n> imposes limits on the number of decompression done for a single name\n> and for a DNS packet as a whole.\n",
+        "id": "FreeBSD-2026-0609",
+        "modified": "2026-11-08T00:00:00Z",
+        "published": "2026-11-08T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://doc.powerdns.com/authoritative/security-advisories/powerdns-advisory-2026-13.html"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-73206"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "PowerDNS Authoritative Server -- Denial of Service vulnerability"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "py311-svglib"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "2.3.3"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "py312-svglib"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "2.3.3"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "py313-svglib"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "2.3.3"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "py313t-svglib"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "2.3.3"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "py314-svglib"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "2.3.3"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "py314t-svglib"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "2.3.3"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "py315-svglib"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "2.3.3"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://github.com/deeplook/svglib/security/advisories/GHSA-xpfm-fw4h-qxwv"
+            ],
+            "discovery": "2026-11-04T00:00:00Z",
+            "vid": "f96ffef6-db4c-11f1-985e-901b0edee044"
+        },
+        "details": "Dinu Gherman reports:\n\n> The 2.3.1 fix for GHSA-555j-qj3j-c8jv stops \\\"renderUse()\\\" after\n> \\\"MAX_USE_EXPANSIONS\\\" (10,000) expansions. But each expansion\n> deep-copies and renders the whole referenced subtree, so the total\n> work is 10,000 \u00d7 (subtree size), and the subtree size is unbounded.\n> Nested \\<use\\> groups whose leaf group holds N rects make about 9,000\n> of the allowed expansions clone that leaf. In svglib 2.3.2, a\n> 2,254-byte SVG takes 68 s, and a 6,454-byte one (200 rects) takes 247\n> s and 2.6 GB RSS. The cost grows linearly with N. Only the SVG needs\n> to be attacker-controlled, as in GHSA-555j. main (6e79811) behaves the\n> same (50 rects: 62 s / 727 MB).\n",
+        "id": "FreeBSD-2026-0608",
+        "modified": "2026-11-08T00:00:00Z",
+        "published": "2026-11-08T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://github.com/deeplook/svglib/security/advisories/GHSA-xpfm-fw4h-qxwv"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "py-svglib -- 2.3.3 remediates a incomplete fix in 2.3.1"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "gstreamer1-plugins-bad"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "1.28.9"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "gstreamer1-plugins-good"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "1.28.9"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://gstreamer.freedesktop.org/security/"
+            ],
+            "discovery": "2026-11-06T00:00:00Z",
+            "references": {
+                "cvename": [
+                    "CVE-2026-116611",
+                    "CVE-2026-119610",
+                    "CVE-2026-121601",
+                    "CVE-2026-121611",
+                    "CVE-2026-121629"
+                ]
+            },
+            "vid": "de74d92b-4f87-4334-973b-5d24a7c4528a"
+        },
+        "details": "The GStreamer project reports:\n\n> Multiple security issues were identified and fixed in the GStreamer\n> framework.\n>\n> - GStreamer-SA-2026-0093: Out-of-bounds read in MXF demuxer\n> - GStreamer-SA-2026-0094: Use of uninitialized memory in H.265\n>   bitstream parser\n> - GStreamer-SA-2026-0095: Out-of-bounds read in H.264 RTP depayloader\n> - GStreamer-SA-2026-0096: Multiple out-of-bounds reads, null pointer\n>   write and denial of service in the VMnc video decoder\n> - GStreamer-SA-2026-0097: Local file disclosure via manifest\n>   references in adaptive streaming (HLS/DASH) demuxers\n> - GStreamer-SA-2026-0098: Out-of-bounds write and infinite loop when\n>   reading responses from a Festival speech synthesis server\n> - GStreamer-SA-2026-0099: Out-of-bounds read when parsing DVB short\n>   event descriptors\n> - GStreamer-SA-2026-0100: Out-of-bounds write in the RTP raw video\n>   depayloader with crafted stream dimensions\n> - GStreamer-SA-2026-0101: Out-of-bounds write in the ASF muxer when\n>   writing metadata with certain Unicode characters\n",
+        "id": "FreeBSD-2026-0607",
+        "modified": "2026-11-07T00:00:00Z",
+        "published": "2026-11-07T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://gstreamer.freedesktop.org/security/"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116611"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119610"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-121601"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-121611"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-121629"
+            },
+            {
+                "type": "WEB",
+                "url": "https://gstreamer.freedesktop.org/security/sa-2026-0093.html"
+            },
+            {
+                "type": "WEB",
+                "url": "https://gstreamer.freedesktop.org/security/sa-2026-0094.html"
+            },
+            {
+                "type": "WEB",
+                "url": "https://gstreamer.freedesktop.org/security/sa-2026-0095.html"
+            },
+            {
+                "type": "WEB",
+                "url": "https://gstreamer.freedesktop.org/security/sa-2026-0096.html"
+            },
+            {
+                "type": "WEB",
+                "url": "https://gstreamer.freedesktop.org/security/sa-2026-0097.html"
+            },
+            {
+                "type": "WEB",
+                "url": "https://gstreamer.freedesktop.org/security/sa-2026-0098.html"
+            },
+            {
+                "type": "WEB",
+                "url": "https://gstreamer.freedesktop.org/security/sa-2026-0099.html"
+            },
+            {
+                "type": "WEB",
+                "url": "https://gstreamer.freedesktop.org/security/sa-2026-0100.html"
+            },
+            {
+                "type": "WEB",
+                "url": "https://gstreamer.freedesktop.org/security/sa-2026-0101.html"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "gstreamer1 -- multiple vulnerabilities"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "keycloak"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "26.8.2"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://github.com/keycloak/keycloak/releases/tag/26.8.2"
+            ],
+            "discovery": "2026-11-05T00:00:00Z",
+            "references": {
+                "cvename": [
+                    "CVE-2026-92358",
+                    "CVE-2026-105305",
+                    "CVE-2026-107623",
+                    "CVE-2026-107889",
+                    "CVE-2026-112201",
+                    "CVE-2026-112208",
+                    "CVE-2026-110932",
+                    "CVE-2026-107123",
+                    "CVE-2026-107124",
+                    "CVE-2026-107602",
+                    "CVE-2026-110931",
+                    "CVE-2026-97367",
+                    "CVE-2026-97174",
+                    "CVE-2026-114232",
+                    "CVE-2026-97847",
+                    "CVE-2026-96547",
+                    "CVE-2026-96457",
+                    "CVE-2026-96460",
+                    "CVE-2026-97848",
+                    "CVE-2026-109081",
+                    "CVE-2026-93998",
+                    "CVE-2026-96453",
+                    "CVE-2026-92857",
+                    "CVE-2026-103112",
+                    "CVE-2026-97175",
+                    "CVE-2026-96447",
+                    "CVE-2026-82965",
+                    "CVE-2026-96448",
+                    "CVE-2026-92855",
+                    "CVE-2026-92856",
+                    "CVE-2026-19688",
+                    "CVE-2026-117691"
+                ]
+            },
+            "vid": "06eeb817-d93d-11f1-908f-3c7c3fba4204"
+        },
+        "details": "The Keycloak Team reports:\n\n> - CVE-2026-92358: Cross-browser fallback proof survives successful\n>   account linking and self-service unlink organizations\n> - CVE-2026-105305: Device Authorization Grant bypasses per-client\n>   minimum.acr.value enforcement authentication\n> - CVE-2026-107623: OIDC DCR read-modify-write silently disables\n>   offline token revocation on backchannel logout oidc\n> - CVE-2026-107889: Stored XSS on the login page via kcSanitize bypass\n>   authentication\n> - CVE-2026-112201: Login-failure upsert trusts MySQL/MariaDB\n>   affected-row count\n> - CVE-2026-112208: Account takeover via stale SSO_AUTH note in\n>   Organization identity-first login (reproduced on 26.8.1)\n> - CVE-2026-110932: Keycloak \\<= 26.8.0 : Unauthenticated persistent\n>   disk exhaustion (theme gzip cache)\n> - CVE-2026-107123: Unauthenticated DoS in Keycloak SAML endpoint\n> - CVE-2026-107124: Session takeover by victim logout with injected\n>   id_token_hint\n> - CVE-2026-107602: Unauthenticated CPU and worker-pool exhaustion\n>   (restart required) via SAML 1.1 KeyInfo parser loop on a legal\n>   ds:KeyName\n> - CVE-2026-110931: Unauthenticated single-request JVM termination\n>   (OutOfMemoryError) via SAML 1.1 AuthorityBinding parser loop,\n>   incomplete fix of CVE-2026-7307\n> - CVE-2026-97367: DCR azp+sid claim substitution via User Property\n>   mappers allows Account REST victim session takeover ---\n>   #YWH-PGM40475-313\n> - CVE-2026-97174: CIBA sub parameter injection causes attacker\n>   authentication to issue victim tokens --- #YWH-PGM40475-289\n> - CVE-2026-114232: UMA user-managed permission resourceType field not\n>   validated --- cross-owner resource access --- #YWH-PGM40475-306\n> - CVE-2026-97847: Client manager can replace a sessionless token\n>   principal and take over the realm --- #YWH-PGM40475-292\n> - CVE-2026-96547: DCR registration-time claim-path gap: attribute\n>   mappers forge realm_access.roles from user-editable fields\n> - CVE-2026-96457: Group-admin DENY bypass via top-level move\n>   (GroupsResource, CVE-2026-9099 regression)\n> - CVE-2026-96460: Token from token exchange can have unlimited\n>   expiration\n> - CVE-2026-97848: \\[SECURITY\\] Protocol mapper with jsonType=JSON\n>   bypasses CVE-2026-16102 fix --- duplicate resource_access claim in\n>   access token; forged resource_access in ID token, userinfo and\n>   introspection response\n> - CVE-2026-109081: Principal with only create-client can inject a role\n>   into the realm default-roles --- #YWH-PGM40475-290\n> - CVE-2026-93998: SAML adapter accepts assertions from the wrong\n>   configured issuer\n> - CVE-2026-96453: kcadm custom truststores trust arbitrary self-signed\n>   certificates\n> - CVE-2026-92857: Identity spoofing: a default-allowed DCR protocol\n>   mapper writes the reserved sub and aud claims\n> - CVE-2026-103112: Account Takeover via Authentication Race\n> - CVE-2026-97175: Unverified IdP email auto-linking enables account\n>   takeover\n> - CVE-2026-96447: Stateless token preferred_username fallback enables\n>   identity rebinding after client recreation\n> - CVE-2026-82965: SAML SOAP endpoint DoS via unbounded XML parsing on\n>   /realms/{realm}/protocol/saml/resolve\n> - CVE-2026-96448: FGAP v2 composite-blind role mapping lets\n>   manage-users assign a wrapper containing realm-admin ---\n>   #YWH-PGM40475-256\n> - CVE-2026-92855: Keycloak SAML Broker Accepts Holder-of-Key\n>   Assertions Without Proof of Key Possession\n> - CVE-2026-92856: Keycloak SAML Identity Broker Ignores\n>   \\`ProxyRestriction\\`, Allowing Forbidden Downstream Assertion\n>   Issuance\n> - CVE-2026-19688: Admin API missing audience check\n> - CVE-2026-117691: SAML redirect binding signature bypass via\n>   percent-encoded parameter name (%53AMLResponse) --- broker login as\n>   any user\n",
+        "id": "FreeBSD-2026-0606",
+        "modified": "2026-11-05T00:00:00Z",
+        "published": "2026-11-05T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://github.com/keycloak/keycloak/releases/tag/26.8.2"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92358"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-105305"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107623"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107889"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112201"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112208"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110932"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107123"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107124"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107602"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110931"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97367"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97174"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-114232"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97847"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96547"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96457"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96460"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97848"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-109081"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-93998"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96453"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92857"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-103112"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97175"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96447"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-82965"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96448"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92855"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92856"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19688"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-117691"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "Keycloak -- multiple vulnerabilities"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "elixir-devel"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "1.20.5"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://github.com/elixir-lang/elixir/releases/tag/v1.20.5"
+            ],
+            "discovery": "2026-10-29T00:00:00Z",
+            "references": {
+                "cvename": [
+                    "CVE-2026-97209"
+                ]
+            },
+            "vid": "3ef78a27-f164-47ab-99b7-30c3e675d70c"
+        },
+        "details": "Elixir reports:\n\n> - \\[mix deps.partition\\] Validate deps.partition configuration with\n>   checksum on multi-user systems (CVE-2026-97209)\n",
+        "id": "FreeBSD-2026-0605",
+        "modified": "2026-11-05T00:00:00Z",
+        "published": "2026-11-05T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://github.com/elixir-lang/elixir/releases/tag/v1.20.5"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97209"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "Elixir -- Mix deps.partition configuration not validated on multi-user systems"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "elixir"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "1.18.6"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    },
+                    {
+                        "events": [
+                            {
+                                "introduced": "1.19.0"
+                            },
+                            {
+                                "fixed": "1.19.7"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "elixir-devel"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "1.20.5"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://github.com/elixir-lang/elixir/releases/tag/v1.19.7"
+            ],
+            "discovery": "2026-10-29T00:00:00Z",
+            "references": {
+                "cvename": [
+                    "CVE-2026-109821",
+                    "CVE-2026-115274"
+                ]
+            },
+            "vid": "c084ccd3-efb8-4fda-aeb9-04bf715d0b55"
+        },
+        "details": "Elixir reports:\n\n> - \\[URI\\] Bind port limits during URI.parse (CVE-2026-109821)\n> - \\[JSON\\] Raise when decoding integers in JSON beyond float64 ranges\n>   (CVE-2026-115274)\n",
+        "id": "FreeBSD-2026-0604",
+        "modified": "2026-11-05T00:00:00Z",
+        "published": "2026-11-05T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://github.com/elixir-lang/elixir/releases/tag/v1.19.7"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-109821"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-115274"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/elixir-lang/elixir/releases/tag/v1.18.6"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/elixir-lang/elixir/releases/tag/v1.20.5"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "Elixir -- multiple vulnerabilities"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "openexr"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "3.4.17"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.17"
+            ],
+            "discovery": "2026-10-31T00:00:00Z",
+            "vid": "1faea94f-d8fc-11f1-9968-3c7c3fba4204"
+        },
+        "details": "Cary Phillips reports:\n\n> This version also addresses a regression introduced in v3.4.14 in\n> reading deep images on big-endian hosts, due to a byte-order bug in\n> the deep sample count table. Little-endian hosts are unaffected.\n>\n> - CVE Pending (GHSA-WHF5-29MJ-GP53): Heap Out-of-Bounds Write via\n>   Signed Integer Overflow in DWAA/DWAB \\'LossyDctDecoder.\n> - CVE Pending (GHSA-VP77-HHRC-M2C3): Subsampled chunk-height miscount:\n>   heap overflow in B44 encoder, NULL dereference in DWA\n>   decoder/encoder.\n> - CVE Pending (GHSA-RXWG-X3WX-PGFH): Heap out-of-bounds write via\n>   32-bit tile-area integer overflow in \\'DeepTiledOutputFile\\'\n>   (deep-image re-save path) --- possible incomplete fix of PR #939.\n> - CVE Pending (GHSA-RJG8-982X-JHC2): Uninitialized Heap Memory\n>   Disclosure in DWA Decompression via Short zlib Stream Mapped to\n>   Success.\n> - CVE Pending (GHSA-J76P-H7GW-VMPF): Heap buffer overflow in the\n>   OpenEXR Python bindings when two RGB channel groups coalesce to the\n>   same key.\n> - CVE Pending (GHSA-G248-596F-9995): Unvalidated extra \\'chlist\\'\n>   header attributes merged into \\'Header::channels()\\' cause a heap\n>   overflow in \\'run_fill\\'.\n> - CVE Pending (GHSA-FRX8-5P4H-J8M7): Heap OOB Write via Integer\n>   Overflow in B44 Chunk Unpacked-Size Computation --- Remote Code\n>   Execution in OpenEXRCore.\n> - CVE Pending (GHSA-638X-X7MR-89XC): Out-of-bounds write at an\n>   attacker-chosen displacement in legacy Python\n>   \\'InputFile.channel()\\'.\n> - CVE Pending (GHSA-3CP4-779M-H837): Use-after-free in OpenEXRCore\n>   \\'exr_copy_unset_attributes()\\' when a channel name exceeds 31\n>   bytes.\n",
+        "id": "FreeBSD-2026-0603",
+        "modified": "2026-11-05T00:00:00Z",
+        "published": "2026-11-05T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.17"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-WHF5-29MJ-GP53"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-VP77-HHRC-M2C3"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-RXWG-X3WX-PGFH"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-RJG8-982X-JHC2"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-J76P-H7GW-VMPF"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-G248-596F-9995"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-FRX8-5P4H-J8M7"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-638X-X7MR-89XC"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-3CP4-779M-H837"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/AcademySoftwareFoundation/openexr/blob/v3.4.17/CHANGES.md#version-3417-october-30-2026"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "OpenEXR -- 3.4.17 fixes multiple vulnerabilities"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "gitea"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "28.3.0"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://blog.gitea.com/release-of-28.3.0/"
+            ],
+            "discovery": "2026-11-01T00:00:00Z",
+            "references": {
+                "cvename": [
+                    "CVE-2026-120263",
+                    "CVE-2026-118386",
+                    "CVE-2026-117635",
+                    "CVE-2026-119441",
+                    "CVE-2026-116296",
+                    "CVE-2026-117685",
+                    "CVE-2026-113429",
+                    "CVE-2026-118394",
+                    "CVE-2026-119625",
+                    "CVE-2026-119627",
+                    "CVE-2026-112887",
+                    "CVE-2026-116474",
+                    "CVE-2026-116289",
+                    "CVE-2026-117646",
+                    "CVE-2026-118395",
+                    "CVE-2026-114199",
+                    "CVE-2026-117649",
+                    "CVE-2026-119533",
+                    "CVE-2026-118504",
+                    "CVE-2026-117677"
+                ]
+            },
+            "vid": "2053672c-d8f6-11f1-9968-3c7c3fba4204"
+        },
+        "details": "Gitea reports:\n\n> - CVE-2026-120263: With \\'ACCOUNT_LINKING = auto\\' and open\n>   registration, the link-account sign-up form let a user who signed in\n>   through an OAuth2 provider enter the user name or email address of\n>   an existing account, which was then linked to the external identity\n>   and signed in without a password.\n> - CVE-2026-118386: A user with read access could submit a pull request\n>   review whose commit_id named their own commit, on a pull request\n>   whose head branch is in the same repository.\n> - CVE-2026-117635: The \\'public-only\\' token restriction was not\n>   applied to the admin API, so a \\'public-only\\' token of a site\n>   administrator could list the email addresses of all users, create\n>   private organizations and runner registration tokens, and create new\n>   administrators.\n> - CVE-2026-119441: \\'DELETE /api/v1/orgs/{org}/repos\\' did not reject\n>   \\'public-only\\' tokens, so such a token of an organization owner\n>   could delete all repositories of the organization, private ones\n>   included.\n> - CVE-2026-116296: The release, milestone and label API routes did not\n>   reject changes to archived repositories, so a user with write access\n>   could replace release assets, delete releases, and change milestones\n>   and labels of an archived repository.\n> - CVE-2026-117685: The OCI cross-repository blob mount checked access\n>   to the source blob with the user's full permissions instead of the\n>   token's, so a \\'public-only\\' package token could mount a private\n>   blob into a public package and read it.\n> - CVE-2026-113429: The legacy Actions artifact upload stored the\n>   \\'Content-Encoding\\' request header without a check and served it\n>   back as the \\'Content-Type\\' of the download, so a workflow could\n>   upload an artifact that is rendered as HTML on the Gitea origin\n>   (stored XSS) when a victim opens its download link. The header is no\n>   longer stored.\n> - CVE-2026-118394: The OIDC userinfo endpoint read the token scope\n>   only from the \\'Authorization\\' header, so a \\'public-only\\' token\n>   sent as a query parameter received the user's private organizations\n>   and teams in the \\'groups\\' claim.\n> - CVE-2026-119625: \\'/{username}\\' accepted a token sent as HTTP Basic\n>   without checking its scope, so a token with an unrelated scope could\n>   read the owner's private activity through the user feed (\\'.rss\\' /\n>   \\'.atom\\'), and a \\'public-only\\' token could see private\n>   repositories and organizations on the profile pages.\n> - CVE-2026-119627: The web profile pages and RSS/Atom feeds of users\n>   and organizations with limited visibility were shown to\n>   \\'public-only\\' tokens.\n> - CVE-2026-112887: Actions task tokens carry no token scope, and\n>   repository filters treated the negative ID of the Actions system\n>   user as \"no owner filter\", so a job's \\'GITEA_TOKEN\\' could list\n>   every private repository of the instance through \\'GET\n>   /api/v1/user/repos\\'.\n> - CVE-2026-116474: A job's \\'GITEA_TOKEN\\' could add an email address\n>   and a GPG key to the \\'gitea-actions\\' system user, so commits\n>   signed with that key were shown as signed by the instance. Only the\n>   displayed signature status was affected.\n> - CVE-2026-116289: A \\'public-only\\' token with \\'write:organization\\'\n>   of an organization owner could create an organization runner\n>   registration token. A runner registered with it then received jobs,\n>   including their secrets, from the organization's private\n>   repositories.\n> - CVE-2026-117646: The repositories, stars and watching tabs of user\n>   profiles and the organization home page showed private repositories\n>   to \\'public-only\\' tokens.\n> - CVE-2026-118395: The deprecated \\'POST /api/v1/org/{org}/repos\\'\n>   route did not reject \\'public-only\\' tokens, so such a token could\n>   create private repositories in an organization.\n> - CVE-2026-114199: \\'GET /api/v1/users/{username}/heatmap\\' counted\n>   contributions to private repositories for \\'public-only\\' tokens.\n> - CVE-2026-117649: The issue timeline showed private issues that were\n>   linked as dependencies to users who could not read them: the web\n>   page showed their title, and the API returned the full issue\n>   including its body.\n> - CVE-2026-119533: Project boards showed the title, number, state and\n>   repository of private pull requests that referenced an issue on the\n>   board to visitors who could not read them.\n> - CVE-2026-118504: Several issue API routes did not reject changes to\n>   archived repositories, so a user with write access could still\n>   change deadlines, tracked times, stopwatches, reactions, pins and\n>   blocking issues in an archived repository.\n> - CVE-2026-117677: The Helm chart upload inflated the whole archive\n>   before the package size quota was checked, without a size limit, so\n>   a user with package write access could tie up the server with a\n>   small, highly compressed upload. The amount of data inflated is now\n>   bounded.\n",
+        "id": "FreeBSD-2026-0602",
+        "modified": "2026-11-05T00:00:00Z",
+        "published": "2026-11-05T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://blog.gitea.com/release-of-28.3.0/"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-120263"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-118386"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-117635"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119441"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116296"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-117685"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-113429"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-118394"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119625"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119627"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112887"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116474"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-116289"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-117646"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-118395"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-114199"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-117649"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119533"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-118504"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-117677"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "Gitea -- multiple vulnerabilities"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "anki"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "26.09.4"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://github.com/ankitects/anki/security/advisories/GHSA-j9v5-m549-cg6c"
+            ],
+            "discovery": "2026-11-04T00:00:00Z",
+            "vid": "117b053d-d8e3-11f1-985e-901b0edee044"
+        },
+        "details": "Anki developers reports:\n\n> On Anki Desktop, a crafted APKG can execute an arbitrary executable\n> after either clicking Show in the import result, opening the imported\n> deck or viewing a note in the editor.\n",
+        "id": "FreeBSD-2026-0601",
+        "modified": "2026-11-05T00:00:00Z",
+        "published": "2026-11-05T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://github.com/ankitects/anki/security/advisories/GHSA-j9v5-m549-cg6c"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "anki -- Malicious APKG can lead to arbitrary code execution via iframes"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "uptime-kuma"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "last_affected": "2.5.8"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "discovery": "2026-10-30T00:00:00Z",
+            "references": {
+                "cvename": [
+                    "CVE-2026-119552"
+                ]
+            },
+            "vid": "7830ba05-0215-40b0-9d9b-e4e4829d9b3c"
+        },
+        "details": "CVE-2026-119552: Uptime Kuma through 2.5.8 contains a race condition in\nthe Socket.IO first-run setup handler that allows unauthenticated\nattackers to create an additional administrator account. Attackers can\nsend concurrent setup requests during the bcrypt hashing window to\nbypass the empty user table check, then modify monitors, API keys, and\nenable disableAuth.\n",
+        "id": "FreeBSD-2026-0600",
+        "modified": "2026-11-05T00:00:00Z",
+        "published": "2026-11-05T00:00:00Z",
+        "references": [
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-119552"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-119552"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "uptime-kuma -- unauthenticated administrator account creation"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "openvox-agent8"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "8.32.0"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "openvox-agent9"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "9.3.0"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "openvox-server8"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "8.18.0"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "openvox-server9"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "9.2.0"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://voxpupuli.org/blog/2026/11/03/critical-cve-updates/"
+            ],
+            "discovery": "2026-11-03T00:00:00Z",
+            "references": {
+                "cvename": [
+                    "CVE-2026-115731"
+                ]
+            },
+            "vid": "923b5da5-d8db-11f1-8d43-18cf5efc6bb4"
+        },
+        "details": "The OpenVoxProject reports:\n\n> The Puppet/OpenVox report is a JSON document the agent sends to the\n> server after each enforcement run. It details what changes were made,\n> any warnings or error messages, and any resources that failed to apply\n> correctly. It also contains a full list of all events that happened,\n> where an event might be \"content \\<foo\\> changed to \\<bar\\>\" or the\n> like. In some circumstances involving custom resource types, an event\n> might include a serialized Ruby object (programming code turned into\n> text) instead of just plain JSON. When the report is processed, these\n> objects are deserialized back into something the compiler can use.\n> Unfortunately a malicious event object can be constructed in such a\n> way that code executes on the server when this happens.\n",
+        "id": "FreeBSD-2026-0599",
+        "modified": "2026-11-05T00:00:00Z",
+        "published": "2026-11-05T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://voxpupuli.org/blog/2026/11/03/critical-cve-updates/"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-115731"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/OpenVoxProject/openvox/security/advisories/GHSA-ffr6-rwpm-p5wq"
+            },
+            {
+                "type": "WEB",
+                "url": "https://portal.perforce.com/s/cve/a91Qi000003IaHpIAK/report-deserialization-code-execution"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "openvox -- Authenticated RCE on OpenVox server via Event Deserialization"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "openvoxdb8"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "8.18.0"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "openvoxdb9"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "9.2.0"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "openvox-server8"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "8.18.0"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            },
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
+                    "name": "openvox-server9"
+                },
+                "ranges": [
+                    {
+                        "events": [
+                            {
+                                "introduced": "0"
+                            },
+                            {
+                                "fixed": "9.2.0"
+                            }
+                        ],
+                        "type": "ECOSYSTEM"
+                    }
+                ]
+            }
+        ],
+        "database_specific": {
+            "cite": [
+                "https://voxpupuli.org/blog/2026/11/03/critical-cve-updates/"
+            ],
+            "discovery": "2026-11-03T00:00:00Z",
+            "references": {
+                "cvename": [
+                    "CVE-2026-115732"
+                ]
+            },
+            "vid": "6cd47e21-d8db-11f1-8d43-18cf5efc6bb4"
+        },
+        "details": "The OpenVoxProject reports:\n\n> Trapperkeeper is the framework we use for running our Clojure based\n> applications and `trapperkeeper-authorization` is the shared\n> authentication library that parses OpenVox's `auth.conf` file and\n> such. This file allows authentication rules to be specified in\n> multiple ways, including plain strings (`foo.example.com`), wildcards\n> (`*.example.com`), or regular expressions (`/lab-\\d{3}.example.com/`).\n> Plain strings and wildcard matches were handled by the same logic and\n> this resulted in wildcard behavior incorrectly showing up in all\n> non-regex rules. The end result of this meant that a certificate name\n> of `evil.target.example.com` would be allowed to impersonate\n> `target.example.com` and access information or perform actions as the\n> target certname. In some non-default configurations, this could even\n> inject exported resources into arbitrary agent catalogs across the\n> infrastructure.\n",
+        "id": "FreeBSD-2026-0598",
+        "modified": "2026-11-05T00:00:00Z",
+        "published": "2026-11-05T00:00:00Z",
+        "references": [
+            {
+                "type": "REPORT",
+                "url": "https://voxpupuli.org/blog/2026/11/03/critical-cve-updates/"
+            },
+            {
+                "type": "ADVISORY",
+                "url": "https://cveawg.mitre.org/api/cve/CVE-2026-115732"
+            },
+            {
+                "type": "WEB",
+                "url": "https://github.com/OpenVoxProject/trapperkeeper-authorization/security/advisories/GHSA-q4hm-33rc-572g"
+            },
+            {
+                "type": "WEB",
+                "url": "https://portal.perforce.com/s/cve/a91Qi000003IaJRIA0/certificate-name-authorization-bypass"
+            }
+        ],
+        "schema_version": "1.7.0",
+        "summary": "openvox -- Flawed Hostname Check allows Puppet Client Impersonation"
+    },
+    {
+        "affected": [
+            {
+                "package": {
+                    "ecosystem": "FreeBSD:ports",
                     "name": "wolfssh"
                 },
                 "ranges": [
@@ -57430,7 +58882,7 @@
                                 "introduced": "0"
                             },
                             {
-                                "fixed": "2.8.1"
+                                "fixed": "2.5.0_9"
                             }
                         ],
                         "type": "ECOSYSTEM"
@@ -57452,7 +58904,7 @@
         },
         "details": "> Expat 2.8.1 was released yesterday. The key motivation for cutting a\n> release and doing so now was:\n>\n> Fixing vulnerability CVE-2026-45186 that allows easy denial of\n> service.\n>\n> See also https://github.com/libexpat/libexpat/pull/1216\n",
         "id": "FreeBSD-2026-0192",
-        "modified": "2026-05-11T00:00:00Z",
+        "modified": "2026-11-05T00:00:00Z",
         "published": "2026-05-11T00:00:00Z",
         "references": [
             {
@@ -236954,7 +238406,7 @@
             },
             "vid": "c71ed065-0600-11eb-8758-e0d55e2a8bf9"
         },
-        "details": "Albert Astals Cid reports:\n\n> ### KDE Project Security Advisory\n>\n>   ------------- ---------------------------------------------------------------------------------\n>   Title         KDE Connect: packet manipulation can be exploited in a Denial of Service attack\n>   Risk Rating   Important\n>   CVE           CVE-2020-26164\n>   Versions      kdeconnect \\<= 20.08.1\n>   Author        Albert Vaca Cintora \\<albertvaka@gmail.com\\>\n>   Date          2 October 2020\n>   ------------- ---------------------------------------------------------------------------------\n>\n> ### Overview\n>\n> An attacker on your local network could send maliciously crafted\n> packets to other hosts running kdeconnect on the network, causing them\n> to use large amounts of CPU, memory or network connections, which\n> could be used in a Denial of Service attack within the network.\n>\n> ### Impact\n>\n> Computers that run kdeconnect are susceptible to DoS attacks from the\n> local network.\n>\n> ### Workaround\n>\n> We advise you to stop KDE Connect when on untrusted networks like\n> those on airports or conferences.\n>\n> Since kdeconnect is dbus activated it is relatively hard to make sure\n> it stays stopped so the brute force approach is to uninstall the\n> kdeconnect package from your system and then run\n>\n>               kquitapp5 kdeconnectd\n>           \n>\n> Just install the package again once you\\'re back in a trusted network.\n>\n> ### Solution\n>\n> KDE Connect 20.08.2 patches several code paths that could result in a\n> DoS.\n>\n> You can apply these patches on top of 20.08.1:\n>\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/f183b5447bad47655c21af87214579f03bf3a163\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/b279c52101d3f7cc30a26086d58de0b5f1c547fa\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/d35b88c1b25fe13715f9170f18674d476ca9acdc\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/b496e66899e5bc9547b6537a7f44ab44dd0aaf38\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/5310eae85dbdf92fba30375238a2481f2e34943e\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/721ba9faafb79aac73973410ee1dd3624ded97a5\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/ae58b9dec49c809b85b5404cee17946116f8a706\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/66c768aa9e7fba30b119c8b801efd49ed1270b0a\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/85b691e40f525e22ca5cc4ebe79c361d71d7dc05\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/48180b46552d40729a36b7431e97bbe2b5379306\n>\n> ### Credits\n>\n> Thanks Matthias Gerstner and the openSUSE security team for reporting\n> the issue.\n>\n> Thanks to Aleix Pol, Nicolas Fella and Albert Vaca Cintora for the\n> patches.\n",
+        "details": "Albert Astals Cid reports:\n\n> ### KDE Project Security Advisory\n>\n>   ------------- ---------------------------------------------------------------------------------\n>   Title         KDE Connect: packet manipulation can be exploited in a Denial of Service attack\n>   Risk Rating   Important\n>   CVE           CVE-2020-26164\n>   Versions      kdeconnect \\<= 20.08.1\n>   Author        Albert Vaca Cintora \\<albertvaka@gmail.com\\>\n>   Date          2 October 2020\n>   ------------- ---------------------------------------------------------------------------------\n>\n> ### Overview\n>\n> An attacker on your local network could send maliciously crafted\n> packets to other hosts running kdeconnect on the network, causing them\n> to use large amounts of CPU, memory or network connections, which\n> could be used in a Denial of Service attack within the network.\n>\n> ### Impact\n>\n> Computers that run kdeconnect are susceptible to DoS attacks from the\n> local network.\n>\n> ### Workaround\n>\n> We advise you to stop KDE Connect when on untrusted networks like\n> those on airports or conferences.\n>\n> Since kdeconnect is dbus activated it is relatively hard to make sure\n> it stays stopped so the brute force approach is to uninstall the\n> kdeconnect package from your system and then run\n>\n> \\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0kquitapp5\u00a0kdeconnectd\\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\n>\n> Just install the package again once you\\'re back in a trusted network.\n>\n> ### Solution\n>\n> KDE Connect 20.08.2 patches several code paths that could result in a\n> DoS.\n>\n> You can apply these patches on top of 20.08.1:\n>\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/f183b5447bad47655c21af87214579f03bf3a163\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/b279c52101d3f7cc30a26086d58de0b5f1c547fa\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/d35b88c1b25fe13715f9170f18674d476ca9acdc\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/b496e66899e5bc9547b6537a7f44ab44dd0aaf38\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/5310eae85dbdf92fba30375238a2481f2e34943e\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/721ba9faafb79aac73973410ee1dd3624ded97a5\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/ae58b9dec49c809b85b5404cee17946116f8a706\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/66c768aa9e7fba30b119c8b801efd49ed1270b0a\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/85b691e40f525e22ca5cc4ebe79c361d71d7dc05\n> - https://invent.kde.org/network/kdeconnect-kde/-/commit/48180b46552d40729a36b7431e97bbe2b5379306\n>\n> ### Credits\n>\n> Thanks Matthias Gerstner and the openSUSE security team for reporting\n> the issue.\n>\n> Thanks to Aleix Pol, Nicolas Fella and Albert Vaca Cintora for the\n> patches.\n",
         "id": "FreeBSD-2020-0263",
         "modified": "2020-10-04T00:00:00Z",
         "published": "2020-10-04T00:00:00Z",
@@ -240065,7 +241517,7 @@
             },
             "vid": "2ed7e8db-e234-11ea-9392-002590bc43be"
         },
-        "details": "Andrew Walker reports:\n\n> ##### Issue 1:\n>\n> Users are always granted permissions to cd into a directory. The check\n> for whether execute is present on directories is a de-facto no-op.\n> This cannot be mitigated without upgrading. Even setting an explicit\n> \\\"deny - execute\\\" NFSv4 ACE will be bypassed.\n>\n> ##### Issue 2:\n>\n> All ACEs for the owner_group (group@) and regular groups\n> (group:\\<foo\\>) are granted the current user. This means that POSIX\n> mode 770 is de-facto 777, and the below ACL is also de-facto 777\n> because the groupmember check for builtin_administrators returns True.\n>\n>     root@TESTBOX[~]# getfacl testfile\n>     # file: testfile\n>     # owner: root\n>     # group: wheel\n>     group:builtin_administrators:rwxpDdaARWcCos:-------:allow\n>           \n",
+        "details": "Andrew Walker reports:\n\n> ##### Issue 1:\n>\n> Users are always granted permissions to cd into a directory. The check\n> for whether execute is present on directories is a de-facto no-op.\n> This cannot be mitigated without upgrading. Even setting an explicit\n> \\\"deny - execute\\\" NFSv4 ACE will be bypassed.\n>\n> ##### Issue 2:\n>\n> All ACEs for the owner_group (group@) and regular groups\n> (group:\\<foo\\>) are granted the current user. This means that POSIX\n> mode 770 is de-facto 777, and the below ACL is also de-facto 777\n> because the groupmember check for builtin_administrators returns True.\n>\n> \\\n> root@TESTBOX\\[\\~\\]#\u00a0getfacl\u00a0testfile\\\n> #\u00a0file:\u00a0testfile\\\n> #\u00a0owner:\u00a0root\\\n> #\u00a0group:\u00a0wheel\\\n> group:builtin_administrators:rwxpDdaARWcCos:\\-\\-\\-\\-\\-\\--:allow\\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\n",
         "id": "FreeBSD-2020-0224",
         "modified": "2020-08-20T00:00:00Z",
         "published": "2020-08-20T00:00:00Z",
@@ -282677,7 +284129,7 @@
             },
             "vid": "22b90fe6-258e-11e9-9c8d-6805ca0b3d42"
         },
-        "details": "Best PRactical Solutions reports:\n\n> \n>      0.06 2019-01-02\n>\n>      - Changes to address CVE-2018-18898 which could allow DDoS-type attacks.\n>        Thanks to Lukas Kramer for reporting the issue and Alex Vandiver for\n>        contributing fixes.\n>        - Fix pathological backtracking for unkown regex\n>        - Fix pathological backtracking in obs-phrase(i.e. obs-display-name)\n>        - Fix pathological backtracking in cfws, quoted strings\n>           \n",
+        "details": "Best PRactical Solutions reports:\n\n> \\\n> \u00a00.06\u00a02019-01-02\\\n> \\\n> \u00a0-\u00a0Changes\u00a0to\u00a0address\u00a0CVE-2018-18898\u00a0which\u00a0could\u00a0allow\u00a0DDoS-type\u00a0attacks.\\\n> \u00a0\u00a0\u00a0Thanks\u00a0to\u00a0Lukas\u00a0Kramer\u00a0for\u00a0reporting\u00a0the\u00a0issue\u00a0and\u00a0Alex\u00a0Vandiver\u00a0for\\\n> \u00a0\u00a0\u00a0contributing\u00a0fixes.\\\n> \u00a0\u00a0\u00a0-\u00a0Fix\u00a0pathological\u00a0backtracking\u00a0for\u00a0unkown\u00a0regex\\\n> \u00a0\u00a0\u00a0-\u00a0Fix\u00a0pathological\u00a0backtracking\u00a0in\u00a0obs-phrase(i.e.\u00a0obs-display-name)\\\n> \u00a0\u00a0\u00a0-\u00a0Fix\u00a0pathological\u00a0backtracking\u00a0in\u00a0cfws,\u00a0quoted\u00a0strings\\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\n",
         "id": "FreeBSD-2019-0026",
         "modified": "2019-01-31T00:00:00Z",
         "published": "2019-01-31T00:00:00Z",
@@ -295711,7 +297163,7 @@
             },
             "vid": "b4f0ad36-94a5-11e8-9007-080027ac955c"
         },
-        "details": "Mark Sapiro reports:\n\n> A URL with a very long text listname such as\n>\n>     http://www.example.com/mailman/listinfo/This_is_a_long_string_with_some_phishing_text\n>\n> will echo the text in the \\\"No such list\\\" error response. This can be\n> used to make a potential victim think the phishing text comes from a\n> trusted site.\n>\n> This issue was discovered by Hammad Qureshi.\n",
+        "details": "Mark Sapiro reports:\n\n> A URL with a very long text listname such as\n>\n> http://www.example.com/mailman/listinfo/This_is_a_long_string_with_some_phishing_text\n>\n> will echo the text in the \\\"No such list\\\" error response. This can be\n> used to make a potential victim think the phishing text comes from a\n> trusted site.\n>\n> This issue was discovered by Hammad Qureshi.\n",
         "id": "FreeBSD-2018-0188",
         "modified": "2018-07-31T00:00:00Z",
         "published": "2018-07-31T00:00:00Z",
@@ -449816,7 +451268,7 @@
             },
             "vid": "d9dbe6e8-84da-11e3-98bd-080027f2d077"
         },
-        "details": "Varnish Cache Project reports:\n\n> If Varnish receives a certain illegal request, and the subroutine\n> \\'vcl_error{}\\' restarts the request, the varnishd worker process will\n> crash with an assert.\n>\n> The varnishd management process will restart the worker process, but\n> there will be a brief interruption of service and the cache will be\n> emptied, causing more traffic to go to the backend.\n>\n> We are releasing this advisory because restarting from vcl_error{} is\n> both fairly common and documented.\n>\n> This is purely a denial of service vulnerability, there is no risk of\n> privilege escalation.\n>\n> Workaround\n>\n> Insert this at the top of your VCL file:\n>\n>             sub vcl_error {\n>                 if (obj.status == 400 || obj.status == 413) {\n>                     return(deliver);\n>                 }\n>             }\n>\n>             Or add this test at the top of your existing vcl_error{}.\n>           \n",
+        "details": "Varnish Cache Project reports:\n\n> If Varnish receives a certain illegal request, and the subroutine\n> \\'vcl_error{}\\' restarts the request, the varnishd worker process will\n> crash with an assert.\n>\n> The varnishd management process will restart the worker process, but\n> there will be a brief interruption of service and the cache will be\n> emptied, causing more traffic to go to the backend.\n>\n> We are releasing this advisory because restarting from vcl_error{} is\n> both fairly common and documented.\n>\n> This is purely a denial of service vulnerability, there is no risk of\n> privilege escalation.\n>\n> Workaround\n>\n> Insert this at the top of your VCL file:\n>\n> \\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0sub\u00a0vcl_error\u00a0{\\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0if\u00a0(obj.status\u00a0==\u00a0400\u00a0\\|\\|\u00a0obj.status\u00a0==\u00a0413)\u00a0{\\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0return(deliver);\\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0}\\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0}\\\n> \\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0Or\u00a0add\u00a0this\u00a0test\u00a0at\u00a0the\u00a0top\u00a0of\u00a0your\u00a0existing\u00a0vcl_error{}.\\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\n",
         "id": "FreeBSD-2014-0010",
         "modified": "2014-01-25T00:00:00Z",
         "published": "2014-01-25T00:00:00Z",
@@ -471364,7 +472816,7 @@
             },
             "vid": "b0f3ab1f-1f3b-11e2-8fe9-0022156e8794"
         },
-        "details": "This vulnerability affects Exim instances built with DKIM enabled (this\nis the default for FreeBSD Exim port) and running verification of DKIM\nsignatures on the incoming mail messages.\n\nPhil Penncock reports:\n\n> This is a SECURITY release, addressing a CRITICAL remote code\n> execution flaw in versions of Exim between 4.70 and 4.80 inclusive,\n> when built with DKIM support (the default).\n>\n> This security vulnerability can be exploited by anyone who can send\n> email from a domain for which they control the DNS.\n>\n> You are not vulnerable if you built Exim with DISABLE_DKIM or if you\n> put this at the start of an ACL plumbed into acl_smtp_connect or\n> acl_smtp_rcpt:\n>\n>     warn control = dkim_disable_verify\n",
+        "details": "This vulnerability affects Exim instances built with DKIM enabled (this\nis the default for FreeBSD Exim port) and running verification of DKIM\nsignatures on the incoming mail messages.\n\nPhil Penncock reports:\n\n> This is a SECURITY release, addressing a CRITICAL remote code\n> execution flaw in versions of Exim between 4.70 and 4.80 inclusive,\n> when built with DKIM support (the default).\n>\n> This security vulnerability can be exploited by anyone who can send\n> email from a domain for which they control the DNS.\n>\n> You are not vulnerable if you built Exim with DISABLE_DKIM or if you\n> put this at the start of an ACL plumbed into acl_smtp_connect or\n> acl_smtp_rcpt:\n>\n> warn\u00a0control\u00a0=\u00a0dkim_disable_verify\n",
         "id": "FreeBSD-2012-0193",
         "modified": "2012-10-26T00:00:00Z",
         "published": "2012-10-26T00:00:00Z",
@@ -486179,7 +487631,7 @@
             },
             "vid": "93688f8f-4935-11e1-89b4-001ec9578670"
         },
-        "details": "The Postfix Admin Team reports:\n\n> Multiple XSS vulnerabilities exist:\\\n> - XSS with \\$\\_GET\\[domain\\] in templates/menu.php and edit-vacation\\\n> - XSS in some create-domain input fields\\\n> - XSS in create-alias and edit-alias error message\\\n> - XSS (by values stored in the database) in fetchmail list view,\n> list-domain and list-virtual\n>\n> Multiple SQL injection issues exist:\\\n> - SQL injection in pacrypt() (if \\$CONF\\[encrypt\\] ==\n> \\'mysql_encrypt\\')\\\n> - SQL injection in backup.php - the dump was not mysql_escape()d,\n> therefore users could inject SQL (for example in the vacation message)\n> which will be executed when restoring the database dump. WARNING:\n> database dumps created with backup.php from 2.3.4 or older might\n> contain malicious SQL. Double-check before using them!\n",
+        "details": "The Postfix Admin Team reports:\n\n> Multiple XSS vulnerabilities exist:\\\n> \\- XSS with \\$\\_GET\\[domain\\] in templates/menu.php and edit-vacation\\\n> \\- XSS in some create-domain input fields\\\n> \\- XSS in create-alias and edit-alias error message\\\n> \\- XSS (by values stored in the database) in fetchmail list view,\n> list-domain and list-virtual\n>\n> Multiple SQL injection issues exist:\\\n> \\- SQL injection in pacrypt() (if \\$CONF\\[encrypt\\] ==\n> \\'mysql_encrypt\\')\\\n> \\- SQL injection in backup.php - the dump was not mysql_escape()d,\n> therefore users could inject SQL (for example in the vacation message)\n> which will be executed when restoring the database dump. WARNING:\n> database dumps created with backup.php from 2.3.4 or older might\n> contain malicious SQL. Double-check before using them!\n",
         "id": "FreeBSD-2012-0019",
         "modified": "2012-01-27T00:00:00Z",
         "published": "2012-01-27T00:00:00Z",
@@ -535147,7 +536599,7 @@
             },
             "vid": "7dbb7197-7b68-11dd-80ba-000bcdf0a03b"
         },
-        "details": "# Problem Description:\n\nVarious user defined input such as mount points, devices, and mount\noptions are prepared and passed as arguments to nmount(2) into the\nkernel. Under certain error conditions, user defined data will be copied\ninto a stack allocated buffer stored in the kernel without sufficient\nbounds checking.\n\n# Impact:\n\nIf the system is configured to allow unprivileged users to mount file\nsystems, it is possible for a local adversary to exploit this\nvulnerability and execute code in the context of the kernel.\n\n# Workaround:\n\nIt is possible to work around this issue by allowing only privileged\nusers to mount file systems by running the following sysctl(8) command:\n\n    # sysctl vfs.usermount=0\n",
+        "details": "# Problem Description:\n\nVarious user defined input such as mount points, devices, and mount\noptions are prepared and passed as arguments to nmount(2) into the\nkernel. Under certain error conditions, user defined data will be copied\ninto a stack allocated buffer stored in the kernel without sufficient\nbounds checking.\n\n# Impact:\n\nIf the system is configured to allow unprivileged users to mount file\nsystems, it is possible for a local adversary to exploit this\nvulnerability and execute code in the context of the kernel.\n\n# Workaround:\n\nIt is possible to work around this issue by allowing only privileged\nusers to mount file systems by running the following sysctl(8) command:\n\n#\u00a0sysctl\u00a0vfs.usermount=0\n",
         "id": "FreeBSD-2008-0095",
         "modified": "2016-08-09T00:00:00Z",
         "published": "2008-09-05T00:00:00Z",
@@ -536138,7 +537590,7 @@
             },
             "vid": "1d96305d-6ae6-11dd-91d5-000c29d47fd7"
         },
-        "details": "A Bugzilla Security Advisory reports:\n\n> When importing bugs using importxml.pl, the \\--attach_path option can\n> be specified, pointing to the directory where attachments to import\n> are stored. If the XML file being read by importxml.pl contains a\n> malicious\n>\n>     ../relative_path/to/local_file\n>\n> node, the script follows this relative path and attaches the local\n> file pointed by it to the bug, making the file public. The security\n> fix makes sure the relative path is always ignored.\n",
+        "details": "A Bugzilla Security Advisory reports:\n\n> When importing bugs using importxml.pl, the \\--attach_path option can\n> be specified, pointing to the directory where attachments to import\n> are stored. If the XML file being read by importxml.pl contains a\n> malicious\n>\n> ../relative_path/to/local_file\n>\n> node, the script follows this relative path and attaches the local\n> file pointed by it to the bug, making the file public. The security\n> fix makes sure the relative path is always ignored.\n",
         "id": "FreeBSD-2008-0085",
         "modified": "2010-05-12T00:00:00Z",
         "published": "2008-08-15T00:00:00Z",
@@ -536383,7 +537835,7 @@
             },
             "vid": "655ee1ec-511b-11dd-80ba-000bcdf0a03b"
         },
-        "details": "# Problem Description:\n\nThe BIND DNS implementation does not randomize the UDP source port when\ndoing remote queries, and the query id alone does not provide adequate\nrandomization.\n\n# Impact:\n\nThe lack of source port randomization reduces the amount of data the\nattacker needs to guess in order to successfully execute a DNS cache\npoisoning attack. This allows the attacker to influence or control the\nresults of DNS queries being returned to users from target systems.\n\n# Workaround:\n\nLimiting the group of machines that can do recursive queries on the DNS\nserver will make it more difficult, but not impossible, for this\nvulnerability to be exploited.\n\nTo limit the machines able to perform recursive queries, add an ACL in\nnamed.conf and limit recursion like the following:\n\n    acl example-acl {\n\n       192.0.2.0/24;\n\n    };\n\n    options {\n\n       recursion yes;\n\n       allow-recursion { example-acl; };\n\n    };\n",
+        "details": "# Problem Description:\n\nThe BIND DNS implementation does not randomize the UDP source port when\ndoing remote queries, and the query id alone does not provide adequate\nrandomization.\n\n# Impact:\n\nThe lack of source port randomization reduces the amount of data the\nattacker needs to guess in order to successfully execute a DNS cache\npoisoning attack. This allows the attacker to influence or control the\nresults of DNS queries being returned to users from target systems.\n\n# Workaround:\n\nLimiting the group of machines that can do recursive queries on the DNS\nserver will make it more difficult, but not impossible, for this\nvulnerability to be exploited.\n\nTo limit the machines able to perform recursive queries, add an ACL in\nnamed.conf and limit recursion like the following:\n\nacl\u00a0example-acl\u00a0{\n\n\u00a0\u00a0\u00a0192.0.2.0/24;\n\n};\n\noptions\u00a0{\n\n\u00a0\u00a0\u00a0recursion\u00a0yes;\n\n\u00a0\u00a0\u00a0allow-recursion\u00a0{\u00a0example-acl;\u00a0};\n\n};\n",
         "id": "FreeBSD-2008-0081",
         "modified": "2016-08-09T00:00:00Z",
         "published": "2008-07-13T00:00:00Z",
@@ -572399,7 +573851,7 @@
             },
             "vid": "e93bc5b0-bb2e-11da-b2fb-000e0c2e438a"
         },
-        "details": "# Problem Description\n\nThe opiepasswd(1) program uses getlogin(2) to identify the user calling\nopiepasswd(1). In some circumstances getlogin(2) will return \\\"root\\\"\neven when running as an unprivileged user. This causes opiepasswd(1) to\nallow an unpriviled user to configure OPIE authentication for the root\nuser.\n\n# Impact\n\nIn certain cases an attacker able to run commands as a non privileged\nusers which have not explicitly logged in, for example CGI scripts run\nby a web server, is able to configure OPIE access for the root user. If\nthe attacker is able to authenticate as root using OPIE authentication,\nfor example if \\\"PermitRootLogin\\\" is set to \\\"yes\\\" in sshd_config or\nthe attacker has access to a local user in the \\\"wheel\\\" group, the\nattacker can gain root privileges.\n\n# Workaround\n\nDisable OPIE authentication in PAM:\n\n    # sed -i \"\" -e /opie/s/^/#/ /etc/pam.d/*\n\nor\n\nRemove the setuid bit from opiepasswd:\n\n    # chflags noschg /usr/bin/opiepasswd\n\n    # chmod 555 /usr/bin/opiepasswd\n\n    # chflags schg /usr/bin/opiepasswd\n",
+        "details": "# Problem Description\n\nThe opiepasswd(1) program uses getlogin(2) to identify the user calling\nopiepasswd(1). In some circumstances getlogin(2) will return \\\"root\\\"\neven when running as an unprivileged user. This causes opiepasswd(1) to\nallow an unpriviled user to configure OPIE authentication for the root\nuser.\n\n# Impact\n\nIn certain cases an attacker able to run commands as a non privileged\nusers which have not explicitly logged in, for example CGI scripts run\nby a web server, is able to configure OPIE access for the root user. If\nthe attacker is able to authenticate as root using OPIE authentication,\nfor example if \\\"PermitRootLogin\\\" is set to \\\"yes\\\" in sshd_config or\nthe attacker has access to a local user in the \\\"wheel\\\" group, the\nattacker can gain root privileges.\n\n# Workaround\n\nDisable OPIE authentication in PAM:\n\n#\u00a0sed\u00a0-i\u00a0\\\"\\\"\u00a0-e\u00a0/opie/s/\\^/#/\u00a0/etc/pam.d/\\*\n\nor\n\nRemove the setuid bit from opiepasswd:\n\n#\u00a0chflags\u00a0noschg\u00a0/usr/bin/opiepasswd\n\n#\u00a0chmod\u00a0555\u00a0/usr/bin/opiepasswd\n\n#\u00a0chflags\u00a0schg\u00a0/usr/bin/opiepasswd\n",
         "id": "FreeBSD-2006-0051",
         "modified": "2006-06-09T00:00:00Z",
         "published": "2006-03-24T00:00:00Z",
@@ -573033,7 +574485,7 @@
             },
             "vid": "6a308e8e-b1b4-11da-b2fb-000e0c2e438a"
         },
-        "details": "# Problem description:\n\nBecause OpenSSH and OpenPAM have conflicting designs (one is event-\ndriven while the other is callback-driven), it is necessary for OpenSSH\nto fork a child process to handle calls to the PAM framework. However,\nif the unprivileged child terminates while PAM authentication is under\nway, the parent process incorrectly believes that the PAM child also\nterminated. The parent process then terminates, and the PAM child is\nleft behind.\n\nDue to the way OpenSSH performs internal accounting, these orphaned PAM\nchildren are counted as pending connections by the master OpenSSH server\nprocess. Once a certain number of orphans has accumulated, the master\ndecides that it is overloaded and stops accepting client connections.\n\n# Impact:\n\nBy repeatedly connecting to a vulnerable server, waiting for a password\nprompt, and closing the connection, an attacker can cause OpenSSH to\nstop accepting client connections until the system restarts or an\nadministrator manually kills the orphaned PAM processes.\n\n# Workaround:\n\nThe following command will show a list of orphaned PAM processes:\n\n    # pgrep -lf 'sshd.*\\[pam\\]'\n\nThe following command will kill orphaned PAM processes:\n\n    # pkill -f 'sshd.*\\[pam\\]'\n\nTo prevent OpenSSH from leaving orphaned PAM processes behind, perform\none of the following:\n\n1.  Disable PAM authentication in OpenSSH. Users will still be able to\n    log in using their Unix password, OPIE or SSH keys.\n\n    To do this, execute the following commands as root:\n\n        # echo 'UsePAM no' >>/etc/ssh/sshd_config\n\n        # echo 'PasswordAuthentication yes' >>/etc/ssh/sshd_config\n\n        # /etc/rc.d/sshd restart\n\n2.  If disabling PAM is not an option - if, for instance, you use RADIUS\n    authentication, or store user passwords in an SQL database - you may\n    instead disable privilege separation. However, this may leave\n    OpenSSH vulnerable to hitherto unknown bugs, and should be\n    considered a last resort.\n\n    To do this, execute the following commands as root:\n\n        # echo 'UsePrivilegeSeparation no' >>/etc/ssh/sshd_config\n\n        # /etc/rc.d/sshd restart\n",
+        "details": "# Problem description:\n\nBecause OpenSSH and OpenPAM have conflicting designs (one is event-\ndriven while the other is callback-driven), it is necessary for OpenSSH\nto fork a child process to handle calls to the PAM framework. However,\nif the unprivileged child terminates while PAM authentication is under\nway, the parent process incorrectly believes that the PAM child also\nterminated. The parent process then terminates, and the PAM child is\nleft behind.\n\nDue to the way OpenSSH performs internal accounting, these orphaned PAM\nchildren are counted as pending connections by the master OpenSSH server\nprocess. Once a certain number of orphans has accumulated, the master\ndecides that it is overloaded and stops accepting client connections.\n\n# Impact:\n\nBy repeatedly connecting to a vulnerable server, waiting for a password\nprompt, and closing the connection, an attacker can cause OpenSSH to\nstop accepting client connections until the system restarts or an\nadministrator manually kills the orphaned PAM processes.\n\n# Workaround:\n\nThe following command will show a list of orphaned PAM processes:\n\n#\u00a0pgrep\u00a0-lf\u00a0\\'sshd.\\*\\\\\\[pam\\\\\\]\\'\n\nThe following command will kill orphaned PAM processes:\n\n#\u00a0pkill\u00a0-f\u00a0\\'sshd.\\*\\\\\\[pam\\\\\\]\\'\n\nTo prevent OpenSSH from leaving orphaned PAM processes behind, perform\none of the following:\n\n1.  Disable PAM authentication in OpenSSH. Users will still be able to\n    log in using their Unix password, OPIE or SSH keys.\n\n    To do this, execute the following commands as root:\n\n    #\u00a0echo\u00a0\\'UsePAM\u00a0no\\'\u00a0\\>\\>/etc/ssh/sshd_config\n\n    #\u00a0echo\u00a0\\'PasswordAuthentication\u00a0yes\\'\u00a0\\>\\>/etc/ssh/sshd_config\n\n    #\u00a0/etc/rc.d/sshd\u00a0restart\n\n2.  If disabling PAM is not an option - if, for instance, you use RADIUS\n    authentication, or store user passwords in an SQL database - you may\n    instead disable privilege separation. However, this may leave\n    OpenSSH vulnerable to hitherto unknown bugs, and should be\n    considered a last resort.\n\n    To do this, execute the following commands as root:\n\n    #\u00a0echo\u00a0\\'UsePrivilegeSeparation\u00a0no\\'\u00a0\\>\\>/etc/ssh/sshd_config\n\n    #\u00a0/etc/rc.d/sshd\u00a0restart\n",
         "id": "FreeBSD-2006-0042",
         "modified": "2016-08-09T00:00:00Z",
         "published": "2006-03-12T00:00:00Z",
@@ -592187,7 +593639,7 @@
             },
             "vid": "180e9a38-060f-4c16-a6b7-49f3505ff22a"
         },
-        "details": "# Problem description and impact\n\nWhen running on processors supporting Hyper-Threading Technology, it is\npossible for a malicious thread to monitor the execution of another\nthread.\n\nInformation may be disclosed to local users, allowing in many cases for\nprivilege escalation. For example, on a multi-user system, it may be\npossible to steal cryptographic keys used in applications such as\nOpenSSH or SSL-enabled web servers.\n\n**NOTE:** Similar problems may exist in other simultaneous\nmultithreading implementations, or even some systems in the absence of\nsimultaneous multithreading. However, current research has only\ndemonstrated this flaw in Hyper-Threading Technology, where shared\nmemory caches are used.\n\n# Workaround\n\nSystems not using processors with Hyper-Threading Technology support are\nnot affected by this issue. On systems which are affected, the security\nflaw can be eliminated by setting the \\\"machdep.hlt_logical_cpus\\\"\ntunable:\n\n    # echo \"machdep.hlt_logical_cpus=1\" >> /boot/loader.conf\n\nThe system must be rebooted in order for tunables to take effect.\n\nUse of this workaround is not recommended on \\\"dual-core\\\" systems, as\nthis workaround will also disable one of the processor cores.\n",
+        "details": "# Problem description and impact\n\nWhen running on processors supporting Hyper-Threading Technology, it is\npossible for a malicious thread to monitor the execution of another\nthread.\n\nInformation may be disclosed to local users, allowing in many cases for\nprivilege escalation. For example, on a multi-user system, it may be\npossible to steal cryptographic keys used in applications such as\nOpenSSH or SSL-enabled web servers.\n\n**NOTE:** Similar problems may exist in other simultaneous\nmultithreading implementations, or even some systems in the absence of\nsimultaneous multithreading. However, current research has only\ndemonstrated this flaw in Hyper-Threading Technology, where shared\nmemory caches are used.\n\n# Workaround\n\nSystems not using processors with Hyper-Threading Technology support are\nnot affected by this issue. On systems which are affected, the security\nflaw can be eliminated by setting the \\\"machdep.hlt_logical_cpus\\\"\ntunable:\n\n#\u00a0echo\u00a0\\\"machdep.hlt_logical_cpus=1\\\"\u00a0\\>\\>\u00a0/boot/loader.conf\n\nThe system must be rebooted in order for tunables to take effect.\n\nUse of this workaround is not recommended on \\\"dual-core\\\" systems, as\nthis workaround will also disable one of the processor cores.\n",
         "id": "FreeBSD-2005-0150",
         "modified": "2005-05-13T00:00:00Z",
         "published": "2005-05-13T00:00:00Z",
@@ -607046,7 +608498,7 @@
             },
             "vid": "7a921e9e-68b1-11d9-9e1e-c296ac722cb3"
         },
-        "details": "The LDAP authentication helper did not strip leading or trailing spaces\nfrom the login name. According to the squid patches page:\n\n> LDAP is very forgiving about spaces in search filters and this could\n> be abused to log in using several variants of the login name, possibly\n> bypassing explicit access controls or confusing accounting.\n>\n> Workaround: Block logins with spaces\n>\n>             acl login_with_spaces proxy_auth_regex [:space:]\n>                 http_access deny login_with_spaces\n>             \n",
+        "details": "The LDAP authentication helper did not strip leading or trailing spaces\nfrom the login name. According to the squid patches page:\n\n> LDAP is very forgiving about spaces in search filters and this could\n> be abused to log in using several variants of the login name, possibly\n> bypassing explicit access controls or confusing accounting.\n>\n> Workaround: Block logins with spaces\n>\n> \\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0acl\u00a0login_with_spaces\u00a0proxy_auth_regex\u00a0\\[:space:\\]\\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0http_access\u00a0deny\u00a0login_with_spaces\\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\n",
         "id": "FreeBSD-2005-0039",
         "modified": "2005-02-08T00:00:00Z",
         "published": "2005-01-19T00:00:00Z",
@@ -608991,7 +610443,7 @@
             },
             "vid": "184ab9e0-64cd-11d9-9e1e-c296ac722cb3"
         },
-        "details": "The squid patches page notes:\n\n> A malicious gopher server may return a response with very long lines\n> that cause a buffer overflow in Squid.\n>\n> Workaround: Since gopher is very obscure these days, do not allow\n> Squid to any gopher servers. Use an ACL rule like:\n>\n>     acl Gopher proto gopher\n>     http_access deny Gopher\n",
+        "details": "The squid patches page notes:\n\n> A malicious gopher server may return a response with very long lines\n> that cause a buffer overflow in Squid.\n>\n> Workaround: Since gopher is very obscure these days, do not allow\n> Squid to any gopher servers. Use an ACL rule like:\n>\n> acl\u00a0Gopher\u00a0proto\u00a0gopher\\\n> http_access\u00a0deny\u00a0Gopher\n",
         "id": "FreeBSD-2005-0025",
         "modified": "2005-01-22T00:00:00Z",
         "published": "2005-01-12T00:00:00Z",
@@ -634632,7 +636084,7 @@
             },
             "vid": "e25566d5-6d3f-11d8-83a4-000a95bc6fae"
         },
-        "details": "Steve Kemp reports (in a Debian bug submission):\n\n> Due to improper bounds checking it is possible for a malicious user to\n> gain a shell with membership group \\'games\\'. (The binary is installed\n> setgid games).\n>\n> Environmental variables are used without being bounds-checked in any\n> way, from the source code:\n>\n>     highscore.c:\n>        /* Use the environment variable if it exists */\n>        if ((str = getenv(\"XBOING_SCORE_FILE\")) != NULL)\n>         strcpy(filename, str);\n>        else\n>         strcpy(filename, HIGH_SCORE_FILE);\n>\n>     misc.c:\n>         if ((ptr = getenv(\"HOME\")) != NULL)\n>         (void) strcpy(dest, ptr);\n>\n> Neither of these checks are boundschecked, and will allow arbitary\n> shell code to be run.\n",
+        "details": "Steve Kemp reports (in a Debian bug submission):\n\n> Due to improper bounds checking it is possible for a malicious user to\n> gain a shell with membership group \\'games\\'. (The binary is installed\n> setgid games).\n>\n> Environmental variables are used without being bounds-checked in any\n> way, from the source code:\n>\n> \\\n> highscore.c:\\\n> \u00a0\u00a0\u00a0/\\*\u00a0Use\u00a0the\u00a0environment\u00a0variable\u00a0if\u00a0it\u00a0exists\u00a0\\*/\\\n> \u00a0\u00a0\u00a0if\u00a0((str\u00a0=\u00a0getenv(\\\"XBOING_SCORE_FILE\\\"))\u00a0!=\u00a0NULL)\\\n> \u00a0\u00a0\u00a0\u00a0strcpy(filename,\u00a0str);\\\n> \u00a0\u00a0\u00a0else\\\n> \u00a0\u00a0\u00a0\u00a0strcpy(filename,\u00a0HIGH_SCORE_FILE);\\\n> \\\n> misc.c:\\\n> \u00a0\u00a0\u00a0\u00a0if\u00a0((ptr\u00a0=\u00a0getenv(\\\"HOME\\\"))\u00a0!=\u00a0NULL)\\\n> \u00a0\u00a0\u00a0\u00a0(void)\u00a0strcpy(dest,\u00a0ptr);\\\n>\n> Neither of these checks are boundschecked, and will allow arbitary\n> shell code to be run.\n",
         "id": "FreeBSD-2004-0038",
         "modified": "2004-03-29T00:00:00Z",
         "published": "2004-03-05T00:00:00Z",

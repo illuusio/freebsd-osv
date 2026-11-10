@@ -43,7 +43,7 @@
         },
         "vid": "7dbb7197-7b68-11dd-80ba-000bcdf0a03b"
     },
-    "details": "# Problem Description:\n\nVarious user defined input such as mount points, devices, and mount\noptions are prepared and passed as arguments to nmount(2) into the\nkernel. Under certain error conditions, user defined data will be copied\ninto a stack allocated buffer stored in the kernel without sufficient\nbounds checking.\n\n# Impact:\n\nIf the system is configured to allow unprivileged users to mount file\nsystems, it is possible for a local adversary to exploit this\nvulnerability and execute code in the context of the kernel.\n\n# Workaround:\n\nIt is possible to work around this issue by allowing only privileged\nusers to mount file systems by running the following sysctl(8) command:\n\n    # sysctl vfs.usermount=0\n",
+    "details": "# Problem Description:\n\nVarious user defined input such as mount points, devices, and mount\noptions are prepared and passed as arguments to nmount(2) into the\nkernel. Under certain error conditions, user defined data will be copied\ninto a stack allocated buffer stored in the kernel without sufficient\nbounds checking.\n\n# Impact:\n\nIf the system is configured to allow unprivileged users to mount file\nsystems, it is possible for a local adversary to exploit this\nvulnerability and execute code in the context of the kernel.\n\n# Workaround:\n\nIt is possible to work around this issue by allowing only privileged\nusers to mount file systems by running the following sysctl(8) command:\n\n#\u00a0sysctl\u00a0vfs.usermount=0\n",
     "id": "FreeBSD-2008-0095",
     "modified": "2016-08-09T00:00:00Z",
     "published": "2008-09-05T00:00:00Z",

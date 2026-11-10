@@ -1,0 +1,116 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvoxdb8"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.18.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvoxdb9"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.2.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvox-server8"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.18.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvox-server9"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.2.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://voxpupuli.org/blog/2026/11/03/critical-cve-updates/"
+        ],
+        "discovery": "2026-11-03T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-115732"
+            ]
+        },
+        "vid": "6cd47e21-d8db-11f1-8d43-18cf5efc6bb4"
+    },
+    "details": "The OpenVoxProject reports:\n\n> Trapperkeeper is the framework we use for running our Clojure based\n> applications and `trapperkeeper-authorization` is the shared\n> authentication library that parses OpenVox's `auth.conf` file and\n> such. This file allows authentication rules to be specified in\n> multiple ways, including plain strings (`foo.example.com`), wildcards\n> (`*.example.com`), or regular expressions (`/lab-\\d{3}.example.com/`).\n> Plain strings and wildcard matches were handled by the same logic and\n> this resulted in wildcard behavior incorrectly showing up in all\n> non-regex rules. The end result of this meant that a certificate name\n> of `evil.target.example.com` would be allowed to impersonate\n> `target.example.com` and access information or perform actions as the\n> target certname. In some non-default configurations, this could even\n> inject exported resources into arbitrary agent catalogs across the\n> infrastructure.\n",
+    "id": "FreeBSD-2026-0598",
+    "modified": "2026-11-05T00:00:00Z",
+    "published": "2026-11-05T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://voxpupuli.org/blog/2026/11/03/critical-cve-updates/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-115732"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/OpenVoxProject/trapperkeeper-authorization/security/advisories/GHSA-q4hm-33rc-572g"
+        },
+        {
+            "type": "WEB",
+            "url": "https://portal.perforce.com/s/cve/a91Qi000003IaJRIA0/certificate-name-authorization-bypass"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "openvox -- Flawed Hostname Check allows Puppet Client Impersonation"
+}

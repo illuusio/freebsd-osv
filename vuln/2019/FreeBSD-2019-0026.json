@@ -32,7 +32,7 @@
         },
         "vid": "22b90fe6-258e-11e9-9c8d-6805ca0b3d42"
     },
-    "details": "Best PRactical Solutions reports:\n\n> \n>      0.06 2019-01-02\n>\n>      - Changes to address CVE-2018-18898 which could allow DDoS-type attacks.\n>        Thanks to Lukas Kramer for reporting the issue and Alex Vandiver for\n>        contributing fixes.\n>        - Fix pathological backtracking for unkown regex\n>        - Fix pathological backtracking in obs-phrase(i.e. obs-display-name)\n>        - Fix pathological backtracking in cfws, quoted strings\n>           \n",
+    "details": "Best PRactical Solutions reports:\n\n> \\\n> \u00a00.06\u00a02019-01-02\\\n> \\\n> \u00a0-\u00a0Changes\u00a0to\u00a0address\u00a0CVE-2018-18898\u00a0which\u00a0could\u00a0allow\u00a0DDoS-type\u00a0attacks.\\\n> \u00a0\u00a0\u00a0Thanks\u00a0to\u00a0Lukas\u00a0Kramer\u00a0for\u00a0reporting\u00a0the\u00a0issue\u00a0and\u00a0Alex\u00a0Vandiver\u00a0for\\\n> \u00a0\u00a0\u00a0contributing\u00a0fixes.\\\n> \u00a0\u00a0\u00a0-\u00a0Fix\u00a0pathological\u00a0backtracking\u00a0for\u00a0unkown\u00a0regex\\\n> \u00a0\u00a0\u00a0-\u00a0Fix\u00a0pathological\u00a0backtracking\u00a0in\u00a0obs-phrase(i.e.\u00a0obs-display-name)\\\n> \u00a0\u00a0\u00a0-\u00a0Fix\u00a0pathological\u00a0backtracking\u00a0in\u00a0cfws,\u00a0quoted\u00a0strings\\\n> \u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\n",
     "id": "FreeBSD-2019-0026",
     "modified": "2019-01-31T00:00:00Z",
     "published": "2019-01-31T00:00:00Z",

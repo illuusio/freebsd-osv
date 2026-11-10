@@ -1,0 +1,54 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openexr"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "3.4.18"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.18"
+        ],
+        "discovery": "2026-11-08T00:00:00Z",
+        "vid": "bb6a3ddb-dc22-11f1-8e49-3c7c3fba4204"
+    },
+    "details": "Cary Phillips reports:\n\n> - CVE Pending (GHSA-PP92-4RV3-WFQ6): A signed-int data-window-origin\n>   overflow in the OpenEXRUtil Image API turns Imf::loadImage into an\n>   attacker-steered out-of-bounds write.\n> - CVE Pending (GHSA-2V77-PVHX-25C3): Integer overflow in legacy\n>   OpenEXR.OutputFile.writePixels() causes heap over-read.\n",
+    "id": "FreeBSD-2026-0610",
+    "modified": "2026-11-09T00:00:00Z",
+    "published": "2026-11-09T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/releases/tag/v3.4.18"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-PP92-4RV3-WFQ6"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/security/advisories/GHSA-2V77-PVHX-25C3"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/AcademySoftwareFoundation/openexr/blob/v3.4.18/CHANGES.md#version-3418-november-7-2026"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "OpenEXR -- 3.4.18 fixes two vulnerabilities"
+}

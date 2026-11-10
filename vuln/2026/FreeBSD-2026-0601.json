@@ -1,0 +1,42 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "anki"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.09.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/ankitects/anki/security/advisories/GHSA-j9v5-m549-cg6c"
+        ],
+        "discovery": "2026-11-04T00:00:00Z",
+        "vid": "117b053d-d8e3-11f1-985e-901b0edee044"
+    },
+    "details": "Anki developers reports:\n\n> On Anki Desktop, a crafted APKG can execute an arbitrary executable\n> after either clicking Show in the import result, opening the imported\n> deck or viewing a note in the editor.\n",
+    "id": "FreeBSD-2026-0601",
+    "modified": "2026-11-05T00:00:00Z",
+    "published": "2026-11-05T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/ankitects/anki/security/advisories/GHSA-j9v5-m549-cg6c"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "anki -- Malicious APKG can lead to arbitrary code execution via iframes"
+}

@@ -1,0 +1,46 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "weechat"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "4.10.4"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/weechat/weechat/releases/tag/v4.10.3"
+        ],
+        "discovery": "2026-11-09T00:00:00Z",
+        "vid": "e107a804-dc3c-11f1-8135-8447094a420f"
+    },
+    "details": "The Weechat project reports:\n\n> See details on the 9 fixed vulns in linked release notes.\n",
+    "id": "FreeBSD-2026-0612",
+    "modified": "2026-11-09T00:00:00Z",
+    "published": "2026-11-09T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/weechat/weechat/releases/tag/v4.10.3"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/weechat/weechat/releases/tag/v4.10.4"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Weechat -- Multiple vulnerabilities"
+}

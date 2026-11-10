@@ -1,0 +1,206 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "keycloak"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "26.8.2"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://github.com/keycloak/keycloak/releases/tag/26.8.2"
+        ],
+        "discovery": "2026-11-05T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-92358",
+                "CVE-2026-105305",
+                "CVE-2026-107623",
+                "CVE-2026-107889",
+                "CVE-2026-112201",
+                "CVE-2026-112208",
+                "CVE-2026-110932",
+                "CVE-2026-107123",
+                "CVE-2026-107124",
+                "CVE-2026-107602",
+                "CVE-2026-110931",
+                "CVE-2026-97367",
+                "CVE-2026-97174",
+                "CVE-2026-114232",
+                "CVE-2026-97847",
+                "CVE-2026-96547",
+                "CVE-2026-96457",
+                "CVE-2026-96460",
+                "CVE-2026-97848",
+                "CVE-2026-109081",
+                "CVE-2026-93998",
+                "CVE-2026-96453",
+                "CVE-2026-92857",
+                "CVE-2026-103112",
+                "CVE-2026-97175",
+                "CVE-2026-96447",
+                "CVE-2026-82965",
+                "CVE-2026-96448",
+                "CVE-2026-92855",
+                "CVE-2026-92856",
+                "CVE-2026-19688",
+                "CVE-2026-117691"
+            ]
+        },
+        "vid": "06eeb817-d93d-11f1-908f-3c7c3fba4204"
+    },
+    "details": "The Keycloak Team reports:\n\n> - CVE-2026-92358: Cross-browser fallback proof survives successful\n>   account linking and self-service unlink organizations\n> - CVE-2026-105305: Device Authorization Grant bypasses per-client\n>   minimum.acr.value enforcement authentication\n> - CVE-2026-107623: OIDC DCR read-modify-write silently disables\n>   offline token revocation on backchannel logout oidc\n> - CVE-2026-107889: Stored XSS on the login page via kcSanitize bypass\n>   authentication\n> - CVE-2026-112201: Login-failure upsert trusts MySQL/MariaDB\n>   affected-row count\n> - CVE-2026-112208: Account takeover via stale SSO_AUTH note in\n>   Organization identity-first login (reproduced on 26.8.1)\n> - CVE-2026-110932: Keycloak \\<= 26.8.0 : Unauthenticated persistent\n>   disk exhaustion (theme gzip cache)\n> - CVE-2026-107123: Unauthenticated DoS in Keycloak SAML endpoint\n> - CVE-2026-107124: Session takeover by victim logout with injected\n>   id_token_hint\n> - CVE-2026-107602: Unauthenticated CPU and worker-pool exhaustion\n>   (restart required) via SAML 1.1 KeyInfo parser loop on a legal\n>   ds:KeyName\n> - CVE-2026-110931: Unauthenticated single-request JVM termination\n>   (OutOfMemoryError) via SAML 1.1 AuthorityBinding parser loop,\n>   incomplete fix of CVE-2026-7307\n> - CVE-2026-97367: DCR azp+sid claim substitution via User Property\n>   mappers allows Account REST victim session takeover ---\n>   #YWH-PGM40475-313\n> - CVE-2026-97174: CIBA sub parameter injection causes attacker\n>   authentication to issue victim tokens --- #YWH-PGM40475-289\n> - CVE-2026-114232: UMA user-managed permission resourceType field not\n>   validated --- cross-owner resource access --- #YWH-PGM40475-306\n> - CVE-2026-97847: Client manager can replace a sessionless token\n>   principal and take over the realm --- #YWH-PGM40475-292\n> - CVE-2026-96547: DCR registration-time claim-path gap: attribute\n>   mappers forge realm_access.roles from user-editable fields\n> - CVE-2026-96457: Group-admin DENY bypass via top-level move\n>   (GroupsResource, CVE-2026-9099 regression)\n> - CVE-2026-96460: Token from token exchange can have unlimited\n>   expiration\n> - CVE-2026-97848: \\[SECURITY\\] Protocol mapper with jsonType=JSON\n>   bypasses CVE-2026-16102 fix --- duplicate resource_access claim in\n>   access token; forged resource_access in ID token, userinfo and\n>   introspection response\n> - CVE-2026-109081: Principal with only create-client can inject a role\n>   into the realm default-roles --- #YWH-PGM40475-290\n> - CVE-2026-93998: SAML adapter accepts assertions from the wrong\n>   configured issuer\n> - CVE-2026-96453: kcadm custom truststores trust arbitrary self-signed\n>   certificates\n> - CVE-2026-92857: Identity spoofing: a default-allowed DCR protocol\n>   mapper writes the reserved sub and aud claims\n> - CVE-2026-103112: Account Takeover via Authentication Race\n> - CVE-2026-97175: Unverified IdP email auto-linking enables account\n>   takeover\n> - CVE-2026-96447: Stateless token preferred_username fallback enables\n>   identity rebinding after client recreation\n> - CVE-2026-82965: SAML SOAP endpoint DoS via unbounded XML parsing on\n>   /realms/{realm}/protocol/saml/resolve\n> - CVE-2026-96448: FGAP v2 composite-blind role mapping lets\n>   manage-users assign a wrapper containing realm-admin ---\n>   #YWH-PGM40475-256\n> - CVE-2026-92855: Keycloak SAML Broker Accepts Holder-of-Key\n>   Assertions Without Proof of Key Possession\n> - CVE-2026-92856: Keycloak SAML Identity Broker Ignores\n>   \\`ProxyRestriction\\`, Allowing Forbidden Downstream Assertion\n>   Issuance\n> - CVE-2026-19688: Admin API missing audience check\n> - CVE-2026-117691: SAML redirect binding signature bypass via\n>   percent-encoded parameter name (%53AMLResponse) --- broker login as\n>   any user\n",
+    "id": "FreeBSD-2026-0606",
+    "modified": "2026-11-05T00:00:00Z",
+    "published": "2026-11-05T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://github.com/keycloak/keycloak/releases/tag/26.8.2"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92358"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-105305"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107623"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107889"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112201"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-112208"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110932"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107123"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107124"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-107602"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-110931"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97367"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97174"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-114232"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97847"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96547"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96457"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96460"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97848"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-109081"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-93998"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96453"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92857"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-103112"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-97175"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96447"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-82965"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-96448"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92855"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-92856"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-19688"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-117691"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "Keycloak -- multiple vulnerabilities"
+}

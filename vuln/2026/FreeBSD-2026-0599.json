@@ -1,0 +1,116 @@
+{
+    "affected": [
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvox-agent8"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.32.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvox-agent9"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.3.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvox-server8"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "8.18.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        },
+        {
+            "package": {
+                "ecosystem": "FreeBSD:ports",
+                "name": "openvox-server9"
+            },
+            "ranges": [
+                {
+                    "events": [
+                        {
+                            "introduced": "0"
+                        },
+                        {
+                            "fixed": "9.2.0"
+                        }
+                    ],
+                    "type": "ECOSYSTEM"
+                }
+            ]
+        }
+    ],
+    "database_specific": {
+        "cite": [
+            "https://voxpupuli.org/blog/2026/11/03/critical-cve-updates/"
+        ],
+        "discovery": "2026-11-03T00:00:00Z",
+        "references": {
+            "cvename": [
+                "CVE-2026-115731"
+            ]
+        },
+        "vid": "923b5da5-d8db-11f1-8d43-18cf5efc6bb4"
+    },
+    "details": "The OpenVoxProject reports:\n\n> The Puppet/OpenVox report is a JSON document the agent sends to the\n> server after each enforcement run. It details what changes were made,\n> any warnings or error messages, and any resources that failed to apply\n> correctly. It also contains a full list of all events that happened,\n> where an event might be \"content \\<foo\\> changed to \\<bar\\>\" or the\n> like. In some circumstances involving custom resource types, an event\n> might include a serialized Ruby object (programming code turned into\n> text) instead of just plain JSON. When the report is processed, these\n> objects are deserialized back into something the compiler can use.\n> Unfortunately a malicious event object can be constructed in such a\n> way that code executes on the server when this happens.\n",
+    "id": "FreeBSD-2026-0599",
+    "modified": "2026-11-05T00:00:00Z",
+    "published": "2026-11-05T00:00:00Z",
+    "references": [
+        {
+            "type": "REPORT",
+            "url": "https://voxpupuli.org/blog/2026/11/03/critical-cve-updates/"
+        },
+        {
+            "type": "ADVISORY",
+            "url": "https://cveawg.mitre.org/api/cve/CVE-2026-115731"
+        },
+        {
+            "type": "WEB",
+            "url": "https://github.com/OpenVoxProject/openvox/security/advisories/GHSA-ffr6-rwpm-p5wq"
+        },
+        {
+            "type": "WEB",
+            "url": "https://portal.perforce.com/s/cve/a91Qi000003IaHpIAK/report-deserialization-code-execution"
+        }
+    ],
+    "schema_version": "1.7.0",
+    "summary": "openvox -- Authenticated RCE on OpenVox server via Event Deserialization"
+}
